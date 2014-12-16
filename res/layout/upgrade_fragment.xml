@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:pull="http://schemas.android.com/apk/res/com.ifoer.expedition.pro">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/nav_head_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textsize_small_S" android:textColor="@color/black" android:id="@id/tv_upgrade_num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/upgrade_num_txt" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textsize_small_S" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/serialnumber_txt" />
+        <TextView android:textSize="@dimen/textsize_small_S" android:gravity="center_vertical" android:id="@id/tv_spinner_serialNo" android:background="@drawable/spinner_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/key_upgrade_serialnum_minwid" android:text="@string/serialnumber_txt" android:drawableRight="@drawable/down_red_arrow" />
+    </LinearLayout>
+    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:background="@drawable/table_head_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:button="@drawable/select_btn_cbox" />
+        <TextView android:textSize="@dimen/textsize_small_S" android:textColor="@color/black" android:gravity="left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="@string/carname_txt" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textsize_small_S" android:textColor="@color/black" android:gravity="left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cur_version_txt" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textsize_small_S" android:textColor="@color/black" android:gravity="left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/upgrade_version_txt" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textsize_small_S" android:textColor="@color/black" android:gravity="left|center" android:id="@id/tv_remarks" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_remarks" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.cnlaunch.x431pro.widget.pulltorefresh.PullToRefreshListView android:id="@id/pull_refresh_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/diver_line" android:dividerHeight="1.0px" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" pull:ptrHeaderTextColor="@color/black" pull:ptrMode="pullFromStart" pull:ptrAnimationStyle="flip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_bottombutton_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/radio_select_all" android:layout_width="0.0dip" android:layout_height="fill_parent" android:checked="false" android:button="@null" android:layout_weight="1.0" style="@style/SelectAll" />
+        <Button android:id="@id/radio_update" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Update" />
+    </LinearLayout>
+</LinearLayout>

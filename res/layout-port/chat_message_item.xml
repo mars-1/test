@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/chat_message_item_logo" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:ellipsize="end" android:id="@id/chat_message_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/chat_message_item_logo" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/delete_member_btn" android:background="@drawable/chat_message_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/chat_message_item_logo" android:layout_alignParentRight="true" />
+</RelativeLayout>

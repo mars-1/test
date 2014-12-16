@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.LayoutRelative android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/face_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerInParent="true" android:contentDescription="{base:width,width:0.1,height:0.17}" />
+    </com.cnlaunch.newgolo.widget.LayoutRelative>
+</LinearLayout>

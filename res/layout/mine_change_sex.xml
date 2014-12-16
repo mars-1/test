@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:gravity="center" android:orientation="vertical" android:id="@id/radiogroup_sex" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:layout_gravity="center_vertical" android:id="@id/radio_male" android:layout_width="fill_parent" android:layout_height="@dimen/mine_item_height" android:layout_marginRight="@dimen/mine_area_margin" android:button="@null" android:text="@string/mine_tv_male" android:drawableRight="@drawable/select_btn_cbox_ring" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
+        <ImageView android:background="@color/diver_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RadioButton android:layout_gravity="center_vertical" android:id="@id/radio_female" android:layout_width="fill_parent" android:layout_height="@dimen/mine_item_height" android:layout_marginRight="@dimen/mine_area_margin" android:button="@null" android:text="@string/mine_tv_female" android:drawableRight="@drawable/select_btn_cbox_ring" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
+        <ImageView android:background="@color/diver_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </RadioGroup>
+</LinearLayout>

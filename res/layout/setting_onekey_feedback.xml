@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_onekey_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/cb_feedback_log_choice" android:background="@drawable/select_checkbox_red" android:focusable="false" android:visibility="invisible" android:clickable="false" android:layout_width="@dimen/datastream_select_size" android:layout_height="@dimen/datastream_select_size" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:button="@null" />
+        <TextView android:gravity="center" android:id="@id/tv_car_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/onekeyfeedback_car_name" android:layout_weight="1.1" style="@style/MiniInfoItemTextStyle" />
+        <TextView android:gravity="center" android:id="@id/tv_car_current_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/onekeyfeedback_car_current_version" android:layout_weight="0.9" style="@style/MiniInfoItemTextStyle" />
+        <TextView android:gravity="center" android:id="@id/tv_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/onekeyfeedback_car_date" android:layout_weight="1.1" style="@style/MiniInfoItemTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_title_line" android:background="@color/mineinfo_item" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/ll_onekey_title" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom_button" android:background="@drawable/shape_bottombutton_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <CheckBox android:id="@id/btn_onekey_feedback_select_all" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="false" android:button="@null" android:text="@string/common_select" android:layout_weight="1.0" style="@style/FragmentButtonBottom.selectall" />
+        <Button android:id="@id/btn_onekey_feedback_next" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setting_onekey_feedback_next" android:layout_weight="1.0" style="@style/FragmentButtonBottom.confirm" />
+        <Button android:id="@id/btn_onekey_feedback_cancel" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" style="@style/FragmentButtonBottom.exit" />
+    </LinearLayout>
+    <ListView android:id="@id/lv_setting_onekey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@null" android:layout_above="@id/ll_bottom_button" android:layout_below="@id/ll_title_line" />
+</RelativeLayout>

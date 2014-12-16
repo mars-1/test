@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cnlaunch.newgolo.widget.LayoutLinear android:orientation="vertical" android:background="#ffcac9cf" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.LayoutRelative android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/contact_search_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="{base:width,width:0.937,height:0.093,top:0.023,bottom:0.023}">
+        <ImageButton android:id="@id/search_logo" android:background="@drawable/contact_search_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:contentDescription="{base:width,width:0.093,height:0.093}" />
+        <EditText android:gravity="center_vertical" android:id="@id/search_input" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/search_clear" android:layout_toRightOf="@id/search_logo" />
+        <ImageButton android:id="@id/search_clear" android:background="@drawable/contact_search_clear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:contentDescription="{base:width,width:0.093,height:0.093}" />
+    </com.cnlaunch.newgolo.widget.LayoutRelative>
+</com.cnlaunch.newgolo.widget.LayoutLinear>

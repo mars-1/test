@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="bluetoothlist_width_size">100</integer>
+    <integer name="bluetoothlist_height_size">75</integer>
+    <integer name="leftmenu_mainsize">50</integer>
+    <integer name="toolItemColumnNum">3</integer>
+    <integer name="carlogoItemColumnNum">3</integer>
+</resources>

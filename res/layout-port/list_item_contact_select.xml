@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/item_title" android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="20.0dip" android:contentDescription="{base:width,height:0.070}">
+        <TextView android:textSize="16.0sp" android:textColor="#ff646464" android:id="@id/sort_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true" android:contentDescription="{base:width,textSize:0.04,left:0.031}" />
+        <TextView android:background="#ffc6c6c6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/item_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="56.0dip" android:contentDescription="{base:width,width:1,height:0.172}">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="56.0dip" android:contentDescription="{base:width,width:1,height:0.1922}">
+                <ImageView android:id="@id/item_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/square_default_head" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="{base:width,width:0.1562,height:0.1562,left:0.031}" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="63.0dip" android:layout_centerVertical="true" android:contentDescription="{base:width,left:0.2032}">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="name" android:singleLine="true" android:contentDescription="{base:width,width:0.625,textSize:0.0546}" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff949494" android:id="@id/item_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="sign" android:singleLine="true" android:contentDescription="{base:width,width:0.625,textSize:0.0468}" />
+                </LinearLayout>
+                <CheckBox android:id="@id/selectCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MySelectCheckBox" />
+                <TextView android:background="#ffc6c6c6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <Button android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/item_del" android:background="#fffe6e0e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" android:contentDescription="{base:width,width:0.234,height:0.172,textSize:0.05}" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

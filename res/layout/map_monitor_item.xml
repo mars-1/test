@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cnlaunch.newgolo.widget.LayoutRelative android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="{base:width,width:0.1,height:0.08}" />
+    <TextView android:id="@id/item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/item_image" android:layout_centerHorizontal="true" />
+</com.cnlaunch.newgolo.widget.LayoutRelative>

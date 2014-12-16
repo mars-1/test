@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffcac9cf" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/contact_search_bg" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="10.0dip" android:contentDescription="{base:width,width:0.8942,height:0.093,left:0.0312,top:0.023,bottom:0.023}">
+        <ImageButton android:id="@id/search_logo" android:background="@drawable/contact_search_logo" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="{base:width,width:0.093,height:0.093}" />
+        <EditText android:gravity="center_vertical" android:id="@id/search_input" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/search_clear" android:layout_toRightOf="@id/search_logo" />
+        <ImageButton android:id="@id/search_clear" android:background="@drawable/contact_search_clear" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="{base:width,width:0.093,height:0.093}" />
+    </RelativeLayout>
+</LinearLayout>

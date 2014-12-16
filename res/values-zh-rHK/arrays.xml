@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="golo_detail_tag_array">
+        <item>其他</item>
+        <item>代駕</item>
+        <item>求援</item>
+        <item>拼車</item>
+        <item>租車</item>
+        <item>的士</item>
+        <item>代辦</item>
+    </string-array>
+</resources>

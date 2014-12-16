@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/base_layout" android:background="?backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_head" android:background="?mainTitleBackgroud" android:layout_width="fill_parent" android:layout_height="@dimen/maintitle_height">
+        <ImageButton android:id="@id/btn_left" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_margin_left" android:src="@drawable/select_btn_menu" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/maintitle_text_size" android:textColor="?textcolor" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/radioGroup_head" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btn_right" android:layout_toRightOf="@id/btn_left" android:layout_centerVertical="true">
+            <RadioButton android:id="@id/btn_all" android:text="@string/diagnose_all_title" style="@style/main_head_button_style" />
+            <RadioButton android:id="@id/btn_america" android:text="@string/diagnose_america_title" style="@style/main_head_button_style" />
+            <RadioButton android:id="@id/btn_europe" android:text="@string/diagnose_europe_title" style="@style/main_head_button_style" />
+            <RadioButton android:id="@id/btn_asia" android:text="@string/diagnose_asia_title" style="@style/main_head_button_style" />
+        </RadioGroup>
+        <TextView android:textSize="@dimen/textsize_large_S" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/btn_right" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/title_btn_margin_right" android:text="@string/common_login" android:singleLine="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/textsize_large_S" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/btn_factory_pattern" android:background="@*android:color/transparent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/title_btn_margin_right" android:text="@string/factory_mode" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ViewFlipper android:id="@id/layout_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

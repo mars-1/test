@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/msg_floating_titlebar" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/msg_floating_voice" android:background="@drawable/carmode_ani_gray_3" android:visibility="invisible" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="20.0dip" />
+    <TextView android:textSize="24.0sp" android:textColor="@color/msg_floating_title_color" android:gravity="center" android:id="@id/msg_floating_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Im Message" android:layout_weight="1.0" />
+    <ImageView android:id="@id/msg_floating_exit" android:background="@drawable/msg_floating_exit" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginRight="15.0dip" />
+    <ImageView android:id="@id/msg_floating_half_full" android:background="@drawable/msg_floating_full" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginRight="15.0dip" />
+    <ImageView android:id="@id/msg_floating_zoom" android:background="@drawable/msg_floating_room_in" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginRight="15.0dip" />
+</LinearLayout>

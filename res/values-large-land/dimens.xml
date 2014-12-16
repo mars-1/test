@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rtu_content_width">600.0dip</dimen>
+    <dimen name="report_text_marign_h">100.0dip</dimen>
+    <dimen name="graph_item_layout_width">224.0dip</dimen>
+    <dimen name="graph_item_layout_height">200.0dip</dimen>
+    <dimen name="caricon_item_width">200.0dip</dimen>
+    <dimen name="caricon_item_height">160.0dip</dimen>
+</resources>

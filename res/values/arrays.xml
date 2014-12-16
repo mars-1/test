@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country">
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Afghanistan</item>
+        <item>Argentina</item>
+        <item>Azerbaijan</item>
+        <item>Oman</item>
+        <item>Egypt</item>
+        <item>Ethiopia</item>
+        <item>Ireland</item>
+        <item>Estonia</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua and Barbuda</item>
+        <item>Austria</item>
+        <item>Australia</item>
+        <item>Barbados</item>
+        <item>Territory of Papua</item>
+        <item>Bahamas</item>
+        <item>Pakistan</item>
+        <item>Paraguay</item>
+        <item>Bahrain</item>
+        <item>Panama</item>
+        <item>Brazil</item>
+        <item>White Russia</item>
+        <item>Bulgaria</item>
+        <item>Belgium</item>
+        <item>Iceland</item>
+        <item>Puerto Rico</item>
+        <item>Poland</item>
+        <item>Bolivia</item>
+        <item>Bhutan</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>North Korea</item>
+        <item>Equatorial Guinea</item>
+        <item>Denmark</item>
+        <item>Grmany</item>
+        <item>East Timor</item>
+        <item>Togo</item>
+        <item>Dominica</item>
+        <item>Gominica</item>
+        <item>Russia</item>
+        <item>Ecuador</item>
+        <item>France</item>
+        <item>Vatican</item>
+        <item>Philippines</item>
+        <item>Finland</item>
+        <item>Congo</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Grenada</item>
+        <item>Greenland</item>
+        <item>Georgia</item>
+        <item>Cuba</item>
+        <item>Kazakstan</item>
+        <item>Haiti</item>
+        <item>Korea</item>
+        <item>Netherlands</item>
+        <item>Honduras</item>
+        <item>Kiribati</item>
+        <item>Djibouti</item>
+        <item>Kyrgyzstan</item>
+        <item>Guinea</item>
+        <item>Canada</item>
+        <item>Ghana</item>
+        <item>Gabon</item>
+        <item>Cambodia</item>
+        <item>Czech</item>
+        <item>Zimbabwe</item>
+        <item>Cameroon</item>
+        <item>Qatar</item>
+        <item>Comoros</item>
+        <item>Cote divoire</item>
+        <item>kuwait</item>
+        <item>Croatia</item>
+        <item>Kenya</item>
+        <item>Latvia</item>
+        <item>Laos</item>
+        <item>Lebanon</item>
+        <item>Lithuania</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Luxembourg</item>
+        <item>Rwanda</item>
+        <item>Romania</item>
+        <item>Malagasy</item>
+        <item>Maldives</item>
+        <item>Malta</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Mali</item>
+        <item>Mauritius</item>
+        <item>Mauritania</item>
+        <item>America</item>
+        <item>Mongolia</item>
+        <item>Bangladesh</item>
+        <item>Peru</item>
+        <item>Burma</item>
+        <item>Moldova</item>
+        <item>Morocco</item>
+        <item>Monaco</item>
+        <item>Mozambique</item>
+        <item>Mexico</item>
+        <item>Namibia</item>
+        <item>South Africa</item>
+        <item>Antarctica</item>
+        <item>Yugoslavia</item>
+        <item>Nepal</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Norway</item>
+        <item>Portugal</item>
+        <item>Japan</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Salvador</item>
+        <item>Sierra leone</item>
+        <item>Senegal</item>
+        <item>Cyprus</item>
+        <item>Seychelles</item>
+        <item>Saudi Arabia</item>
+        <item>Sri Lanka</item>
+        <item>Slovakia</item>
+        <item>Slovene</item>
+        <item>Sudan</item>
+        <item>Somali</item>
+        <item>Tsjikistan</item>
+        <item>Thailand</item>
+        <item>Tanzania</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkomanstan</item>
+        <item>Guatemala</item>
+        <item>Venezuela</item>
+        <item>Brunei Darussalam</item>
+        <item>Uganda</item>
+        <item>Ukiain</item>
+        <item>uruguay</item>
+        <item>Uzbekstan</item>
+        <item>Spain</item>
+        <item>Greece</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>Hungary</item>
+        <item>Syria</item>
+        <item>Jamaica</item>
+        <item>Armenia</item>
+        <item>Yemen</item>
+        <item>Iraq</item>
+        <item>Iran</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>England</item>
+        <item>Jordan</item>
+        <item>Vietnam</item>
+        <item>Zambia</item>
+        <item>Zaire</item>
+        <item>Chad</item>
+        <item>Gibraltar</item>
+        <item>Chile</item>
+        <item>China</item>
+    </string-array>
+    <string-array name="china">
+        <item>Heilongjiang</item>
+        <item>Jilin</item>
+        <item>Liaoning</item>
+        <item>Inner Mongolia</item>
+        <item>Hebei</item>
+        <item>Henan</item>
+        <item>Shandong</item>
+        <item>Shanxi</item>
+        <item>Jiangsu</item>
+        <item>Anhui</item>
+        <item>Shaanxi</item>
+        <item>Ningxia</item>
+        <item>Gansu</item>
+        <item>Qinghai</item>
+        <item>Hubei</item>
+        <item>Hunan</item>
+        <item>Zhejiang</item>
+        <item>Jiangxi</item>
+        <item>Fujian</item>
+        <item>Guizhou</item>
+        <item>Sichuan</item>
+        <item>Guangdong</item>
+        <item>Guangxi</item>
+        <item>Yunnan</item>
+        <item>Hainan</item>
+        <item>Xinjiang</item>
+        <item>Tibet</item>
+        <item>Taiwan</item>
+        <item>Beijing</item>
+        <item>Shanghai</item>
+        <item>Tianjin</item>
+        <item>Chongqing</item>
+        <item>Hong Kong</item>
+        <item>Macao</item>
+    </string-array>
+    <string-array name="Anhui">
+        <item>Anqing</item>
+        <item>Bengbu</item>
+        <item>Bozhou</item>
+        <item>Chaohu</item>
+        <item>Chizhou</item>
+        <item>Chuzhou</item>
+        <item>Fuyang</item>
+        <item>Hefei</item>
+        <item>Huaibei</item>
+        <item>Huainan</item>
+        <item>Huangshan</item>
+        <item>Luan</item>
+        <item>Maanshan</item>
+        <item>Suzhou</item>
+        <item>Tongling</item>
+        <item>Wuhu</item>
+        <item>Xuancheng</item>
+    </string-array>
+    <string-array name="Beijing">
+        <item>Changping</item>
+        <item>Chaoyang</item>
+        <item>Daxing</item>
+        <item>Dongcheng</item>
+        <item>Fangshan</item>
+        <item>Fengtai</item>
+        <item>Haidian</item>
+        <item>Huairou</item>
+        <item>Mentougou</item>
+        <item>Miyun</item>
+        <item>Pinggu</item>
+        <item>Shijingshan</item>
+        <item>Shunyi</item>
+        <item>Tongzhou</item>
+        <item>Xicheng</item>
+        <item>Yanqing</item>
+    </string-array>
+    <string-array name="Chongqing">
+        <item>Aikawa</item>
+        <item>Banan</item>
+        <item>Beibei</item>
+        <item>Bishan</item>
+        <item>Chengkou</item>
+        <item>Dadukou</item>
+        <item>Dazu</item>
+        <item>Dianjing</item>
+        <item>Fengdu</item>
+        <item>Fengjie</item>
+        <item>Fuling</item>
+        <item>Jiangbei</item>
+        <item>Jiangjin</item>
+        <item>Jiulongpo</item>
+        <item>Kaixian</item>
+        <item>Liangping</item>
+        <item>Nanchuan</item>
+        <item>Pengshui</item>
+        <item>Pine Valley</item>
+        <item>Qianjiang</item>
+        <item>Qijiang</item>
+        <item>Rongchang</item>
+        <item>Shapingba</item>
+        <item>Shuangqiao</item>
+        <item>"Nan'an"</item>
+        <item>Tongliang</item>
+        <item>Tongnan</item>
+        <item>Two Rivers</item>
+        <item>Wanzhou</item>
+        <item>Wulong</item>
+        <item>Wushan</item>
+        <item>Wuxi</item>
+        <item>Xiushan</item>
+        <item>Yongchuan</item>
+        <item>Youyang</item>
+        <item>Yubei</item>
+        <item>Yunyang</item>
+        <item>Yuzhong</item>
+        <item>Zhongxian</item>
+        <item>columns</item>
+        <item>Changshou</item>
+    </string-array>
+    <string-array name="Fujian">
+        <item>Fuzhou</item>
+        <item>Longyan</item>
+        <item>Nanping</item>
+        <item>Ningde</item>
+        <item>Putian</item>
+        <item>Quanzhou</item>
+        <item>Sanming</item>
+        <item>Xiamen</item>
+        <item>Zhangzhou</item>
+    </string-array>
+    <string-array name="Gansu">
+        <item>Dingxi</item>
+        <item>Gannan</item>
+        <item>Jiayuguan</item>
+        <item>Jinchang</item>
+        <item>Jiuquan</item>
+        <item>Lanzhou</item>
+        <item>Linxia</item>
+        <item>Longnan</item>
+        <item>Pingliang</item>
+        <item>Qingyang</item>
+        <item>Baiyin</item>
+        <item>TianShui</item>
+        <item>Wuwei</item>
+        <item>Zhangye</item>
+    </string-array>
+    <string-array name="Guangdong">
+        <item>Chaozhou</item>
+        <item>Dongguan</item>
+        <item>Foshan</item>
+        <item>Guangzhou</item>
+        <item>Heyuan</item>
+        <item>Huizhou</item>
+        <item>Jiangmen</item>
+        <item>Jieyang</item>
+        <item>Maoming</item>
+        <item>Meizhou</item>
+        <item>Qingyuan</item>
+        <item>Shantou</item>
+        <item>Shanwei</item>
+        <item>Shaoguan</item>
+        <item>Shenzhen</item>
+        <item>Yangjiang</item>
+        <item>Yunfu</item>
+        <item>Zhanjiang</item>
+        <item>Zhaoqing</item>
+        <item>Zhongshan</item>
+        <item>Zhuhai</item>
+    </string-array>
+    <string-array name="Guangxi">
+        <item>Baise</item>
+        <item>Beihai</item>
+        <item>Chongzuo</item>
+        <item>Fangchenggang</item>
+        <item>Guigang</item>
+        <item>Guilin</item>
+        <item>Hechi</item>
+        <item>Hezhou</item>
+        <item>Laibin</item>
+        <item>Liuzhou</item>
+        <item>Nanning</item>
+        <item>Qinzhou</item>
+        <item>Wuzhou</item>
+        <item>Yulin</item>
+    </string-array>
+    <string-array name="Guizhou">
+        <item>Anshun</item>
+        <item>Bijie</item>
+        <item>Guiyang</item>
+        <item>Liupanshui</item>
+        <item>South Guizhou</item>
+        <item>Southeast</item>
+        <item>Southwest Guizhou</item>
+        <item>Tongren</item>
+        <item>Zunyi</item>
+    </string-array>
+    <string-array name="Hainan">
+        <item>Baoting</item>
+        <item>Changjiang</item>
+        <item>Chengmai</item>
+        <item>Danzhou</item>
+        <item>Dongfang</item>
+        <item>Wuzhishan</item>
+        <item>Haikou</item>
+        <item>"Ding'an"</item>
+        <item>Lingshui</item>
+        <item>Wanning</item>
+        <item>Ledong</item>
+        <item>Nansha</item>
+        <item>Lingao</item>
+        <item>Qionghai</item>
+        <item>Sanya</item>
+        <item>Tunchang</item>
+        <item>Wenchang</item>
+        <item>Baisha</item>
+        <item>Xisha</item>
+        <item>in the sand</item>
+    </string-array>
+    <string-array name="Hebei">
+        <item>Baoding</item>
+        <item>Cangzhou</item>
+        <item>Chengde</item>
+        <item>Handan</item>
+        <item>Hengshui</item>
+        <item>Langfang</item>
+        <item>Qinhuangdao</item>
+        <item>Shijiazhuang</item>
+        <item>Tangshan</item>
+        <item>Xingtai</item>
+        <item>Zhangjiakou</item>
+    </string-array>
+    <string-array name="Heilongjiang">
+        <item>Daqing</item>
+        <item>Harbin</item>
+        <item>Hegang</item>
+        <item>Heihe</item>
+        <item>Jiamusi</item>
+        <item>Jixi</item>
+        <item>Mountains</item>
+        <item>Mudanjiang</item>
+        <item>Qiqihar</item>
+        <item>Qitaihe</item>
+        <item>Shuangyashan</item>
+        <item>Suihua</item>
+        <item>Yichun</item>
+    </string-array>
+    <string-array name="Henan">
+        <item>Anyang</item>
+        <item>Hebi</item>
+        <item>Jiaozuo</item>
+        <item>Jiyuan</item>
+        <item>Kaifeng</item>
+        <item>Luohe</item>
+        <item>Luoyang</item>
+        <item>Nanyang</item>
+        <item>Puyang</item>
+        <item>Sanmenxia</item>
+        <item>Shangqiu</item>
+        <item>Xinxiang</item>
+        <item>Xinyang</item>
+        <item>Xuchang</item>
+        <item>Zhengzhou</item>
+        <item>Zhoukou</item>
+        <item>Zhumadian</item>
+        <item>mesa</item>
+    </string-array>
+    <string-array name="Hong_Kong">
+        <item>Central and Western</item>
+        <item>Eastern</item>
+        <item>Islands</item>
+        <item>Kowloon City</item>
+        <item>Kwai Tsing</item>
+        <item>Kwun Tong</item>
+        <item>North</item>
+        <item>Sai Kung</item>
+        <item>Sha Tin</item>
+        <item>Sham Shui Po</item>
+        <item>Southern</item>
+        <item>Tai Po</item>
+        <item>Tsuen Wan</item>
+        <item>Wan Chai</item>
+        <item>Wong Tai Sin</item>
+        <item>Yau Tsim Mong</item>
+        <item>Yuen Long</item>
+    </string-array>
+    <string-array name="Hubei">
+        <item>Bristol</item>
+        <item>Enshi</item>
+        <item>Ezhou</item>
+        <item>Hunggang</item>
+        <item>Jingmen</item>
+        <item>Jinzhou</item>
+        <item>Qianjiang</item>
+        <item>Shennongjia</item>
+        <item>Shiyan</item>
+        <item>Suizhou</item>
+        <item>Tianmen</item>
+        <item>Wuhan</item>
+        <item>Xinning</item>
+        <item>Xiaogan</item>
+        <item>Yangyang</item>
+        <item>Yellowstone</item>
+        <item>Yichang</item>
+    </string-array>
+    <string-array name="Hunan">
+        <item>Changde</item>
+        <item>Changsha</item>
+        <item>Chenzhou</item>
+        <item>Hengyang</item>
+        <item>Huaihua</item>
+        <item>Loudi</item>
+        <item>Shaoyang</item>
+        <item>Xiangtan</item>
+        <item>Xiangxi</item>
+        <item>Yiyang</item>
+        <item>Yongzhou</item>
+        <item>Yueyang</item>
+        <item>Zhangjiajie</item>
+        <item>Zhuzhou</item>
+    </string-array>
+    <string-array name="Inner_Mongolia">
+        <item>Alxa</item>
+        <item>Baotou</item>
+        <item>Bayannur</item>
+        <item>Bu</item>
+        <item>Chifeng</item>
+        <item>Erdos</item>
+        <item>Gol</item>
+        <item>Hohhot</item>
+        <item>Hulunbeier</item>
+        <item>Tongliao</item>
+        <item>Wuhai</item>
+        <item>Xing</item>
+    </string-array>
+    <string-array name="Jiangsu">
+        <item>Changzhou</item>
+        <item>Huaian</item>
+        <item>Lianyungang</item>
+        <item>Nanjing</item>
+        <item>Suqian</item>
+        <item>Suzhou</item>
+        <item>Taizhou</item>
+        <item>Wuxi</item>
+        <item>Xuzhou</item>
+        <item>Yancheng</item>
+        <item>Yangzhou</item>
+        <item>Zhenjiang</item>
+    </string-array>
+    <string-array name="Jiangxi">
+        <item>Fuzhou</item>
+        <item>Ganzhou</item>
+        <item>Jian</item>
+        <item>Jingdezhen</item>
+        <item>Jiujiang</item>
+        <item>Nanchang</item>
+        <item>Pingxiang</item>
+        <item>Shangrao</item>
+        <item>Xinyu</item>
+        <item>Yichun</item>
+        <item>Yingtan</item>
+    </string-array>
+    <string-array name="Jilin">
+        <item>Changchun</item>
+        <item>Jilin</item>
+        <item>Liaoyuan</item>
+        <item>Songyuan</item>
+        <item>Siping</item>
+        <item>Tonghua</item>
+        <item>Baichen</item>
+        <item>Baishan</item>
+        <item>Yanbian</item>
+    </string-array>
+    <string-array name="Liaoning">
+        <item>Anshan</item>
+        <item>Benxi</item>
+        <item>Chaoyang</item>
+        <item>Dalian</item>
+        <item>Dandong</item>
+        <item>Fushun</item>
+        <item>Fuxin</item>
+        <item>Huludao</item>
+        <item>Jinzhou</item>
+        <item>Liaoyang</item>
+        <item>Panjin</item>
+        <item>Shenyang</item>
+        <item>Tieling</item>
+        <item>Yingkou</item>
+    </string-array>
+    <string-array name="Macao">
+        <item>Cathedral</item>
+        <item>Coloane</item>
+        <item>Fatima</item>
+        <item>St.Anthony</item>
+        <item>St.Lawrence</item>
+        <item>St.Lazarus</item>
+        <item>Taipa</item>
+    </string-array>
+    <string-array name="Ningxia">
+        <item>Guyuan</item>
+        <item>Shizuishan</item>
+        <item>Wuzhong</item>
+        <item>Yinchuan</item>
+        <item>Zhongwei</item>
+    </string-array>
+    <string-array name="Qinghai">
+        <item>Guoluo</item>
+        <item>Haidong</item>
+        <item>Hainan</item>
+        <item>Haixi</item>
+        <item>Huangnan</item>
+        <item>Xining</item>
+        <item>Yushu</item>
+        <item>Haibei</item>
+    </string-array>
+    <string-array name="Shaanxi">
+        <item>Ankang</item>
+        <item>Baoji</item>
+        <item>Hanzhong</item>
+        <item>Shangluo</item>
+        <item>Tongchuan</item>
+        <item>Weinan</item>
+        <item>Xian</item>
+        <item>Xianyang</item>
+        <item>Yanan</item>
+        <item>Yulin</item>
+    </string-array>
+    <string-array name="Shandong">
+        <item>Binzhou</item>
+        <item>Dongying</item>
+        <item>Heze</item>
+        <item>Jinan</item>
+        <item>Jining</item>
+        <item>Laiwu</item>
+        <item>Liaocheng</item>
+        <item>Linyi</item>
+        <item>Qingdao</item>
+        <item>Rizhao</item>
+        <item>Taian</item>
+        <item>Dezhou</item>
+        <item>Weifang</item>
+        <item>Weihai</item>
+        <item>Yantai</item>
+        <item>Zaozhuang</item>
+        <item>Zibo</item>
+    </string-array>
+    <string-array name="Shanghai">
+        <item>Baoshan</item>
+        <item>Changning</item>
+        <item>Chongming</item>
+        <item>Fengxian</item>
+        <item>Hongkou</item>
+        <item>Huangpu</item>
+        <item>Jiading</item>
+        <item>Jing</item>
+        <item>Jinshan</item>
+        <item>Luwan</item>
+        <item>Minhang</item>
+        <item>Po</item>
+        <item>Pudong New District</item>
+        <item>Qingpu</item>
+        <item>Songjiang</item>
+        <item>Xuhui</item>
+        <item>Yangpu</item>
+        <item>Zhabei</item>
+    </string-array>
+    <string-array name="Shanxi">
+        <item>Changzhi</item>
+        <item>Datong</item>
+        <item>Jincheng</item>
+        <item>Jinzhong</item>
+        <item>Linfen</item>
+        <item>Luliang</item>
+        <item>Shuozhou</item>
+        <item>Taiyuan</item>
+        <item>Xinzhou</item>
+        <item>Yangquan</item>
+        <item>Yuncheng</item>
+    </string-array>
+    <string-array name="Sichuan">
+        <item>Aba</item>
+        <item>Chengdu</item>
+        <item>Deyang</item>
+        <item>Dazhou</item>
+        <item>Ganzi</item>
+        <item>Guangyuan</item>
+        <item>Guangan</item>
+        <item>Leshan</item>
+        <item>Liangshan</item>
+        <item>Luzhou</item>
+        <item>Meishan</item>
+        <item>Mianyang</item>
+        <item>Nanchong</item>
+        <item>Neijiang</item>
+        <item>Bazhong</item>
+        <item>Panzhihua</item>
+        <item>Suining</item>
+        <item>Yaan</item>
+        <item>Yibin</item>
+        <item>Zigong</item>
+        <item>Ziyang</item>
+    </string-array>
+    <string-array name="Taiwan">
+        <item>Changhua County</item>
+        <item>Chiayi City</item>
+        <item>Chiayi County</item>
+        <item>Hsinchu City</item>
+        <item>Hsinchu County</item>
+        <item>Hualien County</item>
+        <item>Kaohsiung City</item>
+        <item>Keelung City</item>
+        <item>Kinmen County</item>
+        <item>Lianjiang County</item>
+        <item>Miaoli County</item>
+        <item>Nantou County</item>
+        <item>New Taipei City</item>
+        <item>Penghu County</item>
+        <item>Pingtung County</item>
+        <item>Taichung City</item>
+        <item>Tainan City</item>
+        <item>Taipei</item>
+        <item>Taitung County</item>
+        <item>Taoyuan County</item>
+        <item>Yilan County</item>
+        <item>Yunlin County</item>
+    </string-array>
+    <string-array name="Tianjin">
+        <item>Baodi</item>
+        <item>Binhai New Area</item>
+        <item>Hebei</item>
+        <item>Jinghai</item>
+        <item>Jinnan</item>
+        <item>Jixian</item>
+        <item>Nankai</item>
+        <item>Ninghe</item>
+        <item>Beichen</item>
+        <item>Heping</item>
+        <item>Hongqiao</item>
+        <item>Dongli</item>
+        <item>Xinqing</item>
+        <item>Wuqing</item>
+        <item>Hedong</item>
+        <item>Hexi</item>
+    </string-array>
+    <string-array name="Tibet">
+        <item>Ali</item>
+        <item>Lhasa</item>
+        <item>Nagqu</item>
+        <item>Nyingchi</item>
+        <item>Qamdo</item>
+        <item>Shannan</item>
+        <item>Shigatse</item>
+    </string-array>
+    <string-array name="Xinjiang">
+        <item>Aksu</item>
+        <item>Altay</item>
+        <item>Arar</item>
+        <item>Bayingolin</item>
+        <item>Bortala</item>
+        <item>Changji</item>
+        <item>Figure wooden Shook</item>
+        <item>Hamilton</item>
+        <item>Hotan</item>
+        <item>Lli</item>
+        <item>Karamay</item>
+        <item>Kashgar</item>
+        <item>Kizilsu</item>
+        <item>Shihezi</item>
+        <item>Tacheng</item>
+        <item>Turpan</item>
+        <item>Urumqi</item>
+        <item>Wujiaqu</item>
+    </string-array>
+    <string-array name="month">
+        <item>Jan.</item>
+        <item>Feb.</item>
+        <item>Mar.</item>
+        <item>Apr.</item>
+        <item>May</item>
+        <item>Jun.</item>
+        <item>Jul.</item>
+        <item>Aug.</item>
+        <item>Sep.</item>
+        <item>Oct.</item>
+        <item>Nov.</item>
+        <item>Dec.</item>
+    </string-array>
+    <string-array name="Yunnan">
+        <item>Baoshan</item>
+        <item>Chuxiong</item>
+        <item>Dali</item>
+        <item>Devon</item>
+        <item>Diqing</item>
+        <item>Kunming</item>
+        <item>Lijiang</item>
+        <item>Lincang</item>
+        <item>Nu</item>
+        <item>Puer</item>
+        <item>Qujing</item>
+        <item>Red</item>
+        <item>Wenshan</item>
+        <item>Xishuangbanna</item>
+        <item>Yuxi</item>
+        <item>Zhaotong</item>
+    </string-array>
+    <string-array name="Zhejiang">
+        <item>Hangzhou</item>
+        <item>Huzhou</item>
+        <item>Jiaxing</item>
+        <item>Jinhua</item>
+        <item>Lishui</item>
+        <item>Ningbo</item>
+        <item>Quzhou</item>
+        <item>Shaoxing</item>
+        <item>Taizhou</item>
+        <item>Wenzhou</item>
+        <item>Zhoushan</item>
+    </string-array>
+    <string-array name="date">
+        <item>Year</item>
+        <item>Month</item>
+        <item>Day</item>
+    </string-array>
+    <string-array name="circle">
+        <item>Moments</item>
+        <item>Maintenance</item>
+        <item>Traffic Condition</item>
+    </string-array>
+    <string-array name="traffic_city">
+        <item>Shenzhen</item>
+        <item>Beijing</item>
+        <item>Shanghai</item>
+        <item>Hong Kong</item>
+        <item>Nanjing</item>
+        <item>Guangzhou</item>
+    </string-array>
+    <string-array name="helper_array1">
+        <item>Inspection</item>
+        <item>Remote Diag</item>
+        <item>Local Diag</item>
+        <item>Driving Behavior</item>
+        <item>Clear DTCs</item>
+        <item>One-click Call</item>
+    </string-array>
+    <string-array name="helper_array2">
+        <item>Location</item>
+        <item>Image</item>
+    </string-array>
+    <string-array name="user_guide_1">
+        <item>Inspection</item>
+        <item>Clear DTCs</item>
+        <item>Local Diag</item>
+        <item>Remote Diag</item>
+        <item>Car Monitor</item>
+        <item>Driving Record</item>
+        <item>Security</item>
+        <item>Car File</item>
+        <item>Fuel Monitor</item>
+        <item>Status Monitor</item>
+    </string-array>
+    <string-array name="discharge">
+        <item>0.8L</item>
+        <item>1.0L</item>
+        <item>1.1L</item>
+        <item>1.2L</item>
+        <item>1.3L</item>
+        <item>1.4L</item>
+        <item>1.5L</item>
+        <item>1.6L</item>
+        <item>1.8L</item>
+        <item>2.0L</item>
+        <item>2.2L</item>
+        <item>2.3L</item>
+        <item>2.4L</item>
+        <item>2.5L</item>
+        <item>2.7L</item>
+        <item>2.8L</item>
+        <item>3.0L</item>
+        <item>3.2L</item>
+        <item>3.3L</item>
+        <item>3.4L</item>
+        <item>3.5L</item>
+        <item>3.6L</item>
+        <item>3.7L</item>
+        <item>3.8L</item>
+        <item>4.0L</item>
+        <item>4.2L</item>
+        <item>4.3L</item>
+        <item>4.5L</item>
+        <item>4.6L</item>
+        <item>4.7L</item>
+        <item>4.8L</item>
+        <item>5.2L</item>
+        <item>5.3L</item>
+        <item>5.6L</item>
+        <item>5.7L</item>
+        <item>6.0L</item>
+        <item>6.2L</item>
+        <item>6.3L</item>
+        <item>1.4T</item>
+        <item>1.5T</item>
+        <item>1.6T</item>
+        <item>1.8T</item>
+        <item>2.0T</item>
+        <item>2.2T</item>
+        <item>2.5T</item>
+        <item>3.0T</item>
+        <item>3.8T</item>
+        <item>4.0T</item>
+        <item>4.4T</item>
+        <item>4.7T</item>
+        <item>4.8T</item>
+        <item>5.0T</item>
+        <item>5.5T</item>
+        <item>6.0T</item>
+    </string-array>
+    <string-array name="share_face_value">
+        <item>face_0_happy</item>
+        <item>face_1_cool</item>
+        <item>face_2_satisfied</item>
+        <item>face_3_like</item>
+        <item>face_4_serious</item>
+        <item>face_5_thinking</item>
+        <item>face_6_sad</item>
+        <item>face_7_kiss</item>
+        <item>face_8_upset</item>
+        <item>face_9_angry</item>
+        <item>face_10_shy</item>
+        <item>face_11_speechless</item>
+        <item>face_12_cry</item>
+        <item>face_13_contempt</item>
+        <item>face_14_sly</item>
+        <item>face_15_dizzy</item>
+        <item>face_16_confused</item>
+        <item>face_17_grimace</item>
+        <item>face_18_drool</item>
+        <item>face_19_stunned</item>
+        <item>face_20_silent</item>
+        <item>face_21_intoxicated</item>
+        <item>face_22_cold</item>
+        <item>face_23_sleep</item>
+        <item>face_24_doubt</item>
+        <item>face_25_sick</item>
+        <item>face_26_drunk</item>
+        <item>face_27_poisoned</item>
+    </string-array>
+    <string-array name="identity_tag">
+        <item>Valet-driver</item>
+        <item>Rescue</item>
+        <item>Carpool</item>
+        <item>Rent</item>
+        <item>Taxi</item>
+        <item>Agency</item>
+    </string-array>
+    <string-array name="hobbies">
+        <item>Swimming</item>
+        <item>Singing</item>
+        <item>Basketball</item>
+        <item>Travel</item>
+        <item>Reading</item>
+        <item>Football</item>
+        <item>Photography</item>
+        <item>Dancing</item>
+        <item>Painting</item>
+        <item>Car maintenance</item>
+        <item>X-431</item>
+        <item>Self-driving</item>
+        <item>LAUNCH</item>
+        <item>Cycling</item>
+        <item>Food</item>
+    </string-array>
+    <string-array name="map_search_array1">
+        <item>My Car</item>
+        <item>People</item>
+        <item>Technician</item>
+        <item>Garage</item>
+        <item>4S Shop</item>
+        <item>Gas</item>
+        <item>Car Care</item>
+        <item>Parking Lot</item>
+    </string-array>
+    <string-array name="map_search_array2">
+        <item>Hotel</item>
+        <item>Dining</item>
+        <item>View Spot</item>
+        <item>Bar</item>
+        <item>KTV</item>
+        <item>Hospital</item>
+        <item>Gym</item>
+        <item>Library</item>
+    </string-array>
+    <string-array name="car_text_arrays">
+        <item>Inspection</item>
+        <item>Clear DTCs</item>
+        <item>Reports</item>
+        <item>Remote Diag</item>
+        <item>Self-help Diag</item>
+        <item>Security</item>
+    </string-array>
+    <array name="map_monitor_status_toparray_drawable" />
+    <string-array name="map_monitor_status_toparray_name">
+        <item>Water temp</item>
+        <item>Car speed</item>
+        <item>Engine speed</item>
+        <item>Intake air temp</item>
+        <item>Voltage</item>
+        <item>Mass air flow</item>
+    </string-array>
+    <string-array name="data_stream_name">
+        <item>灯状态(远光灯)</item>
+        <item>灯状态(近光灯)</item>
+        <item>灯状态(示宽灯)</item>
+        <item>灯状态(雾灯)</item>
+        <item>灯状态(左转向)</item>
+        <item>灯状态(右转向)</item>
+        <item>灯状态(危险灯)</item>
+        <item>门状态(左前门)</item>
+        <item>门状态(右前门)</item>
+        <item>门状态(左后门)</item>
+        <item>门状态(右后门)</item>
+        <item>门状态(后备箱箱)</item>
+        <item>门锁(全车锁)</item>
+        <item>门锁(左前门)</item>
+        <item>门锁(右前门)</item>
+        <item>门锁(左后门)</item>
+        <item>门锁(右后门)</item>
+        <item>门锁(后备箱箱)</item>
+        <item>窗状态(左前窗)</item>
+        <item>窗状态(右前窗)</item>
+        <item>窗状态(左后窗)</item>
+        <item>窗状态(右后窗)</item>
+        <item>窗状态(天窗)</item>
+        <item>故障信号(ECM)</item>
+        <item>故障信号(ABS)</item>
+        <item>故障信号(SRS)</item>
+        <item>报警信号(机油)</item>
+        <item>报警信号(胎压)</item>
+        <item>报警信号(保养)</item>
+        <item>安全气囊状态</item>
+        <item>手刹状态</item>
+        <item>刹车状态(脚刹)</item>
+        <item>安全带(驾驶员)</item>
+        <item>安全带(副驾)</item>
+        <item>ACC信号</item>
+        <item>钥匙状态</item>
+        <item>遥控信号</item>
+        <item>雨刮状态</item>
+        <item>空调开关</item>
+        <item>档位</item>
+        <item>里程(总)</item>
+        <item>里程(续航)</item>
+        <item>瞬时油量</item>
+        <item>瞬时油量</item>
+        <item>用油量</item>
+        <item>水温</item>
+        <item>发动机进气温度</item>
+        <item>空调车内温度</item>
+        <item>电池当前电压</item>
+        <item>左前轮轮速</item>
+        <item>右前轮轮速</item>
+        <item>左后轮轮速</item>
+        <item>右后轮轮速</item>
+        <item>车速</item>
+        <item>转速</item>
+        <item>油耗(平均)</item>
+        <item>油耗(瞬时)</item>
+        <item>油耗(瞬时)</item>
+        <item>机油寿命</item>
+        <item>机油压力</item>
+        <item>空气流量</item>
+        <item>进气歧管绝对压力</item>
+        <item>喷油脉宽</item>
+        <item>油门踏板相对位置</item>
+        <item>油门踏板</item>
+        <item>方向盘转角角度</item>
+        <item>方向盘转向角状态</item>
+        <item>滤波后油量</item>
+        <item>滤波后油量</item>
+        <item>累计里程</item>
+    </string-array>
+    <string-array name="msg_sub_global_name">
+        <item>Remote dialog</item>
+        <item>Picture</item>
+        <item>File</item>
+    </string-array>
+    <string-array name="country_list">
+        <item>325</item>
+        <item>137</item>
+        <item>235</item>
+    </string-array>
+    <string-array name="url_list">
+        <item>http://www.alldatapro.com/alldata/PRO~OF1</item>
+        <item>https://www.autodata-online.net/Online/Login/AutodataLogon.aspx</item>
+        <item>http://www.google.com</item>
+        <item>http://www.iatn.net</item>
+        <item>http://www.identifix.com</item>
+        <item>http://www.launchtechusa.com</item>
+        <item>http://www.ondemand5.com</item>
+        <item>http://www.shopkey5.com</item>
+    </string-array>
+    <string-array name="url_title">
+        <item>PRO~OF1</item>
+        <item>AutodataLogon</item>
+        <item>google</item>
+        <item>iatn</item>
+        <item>identifix</item>
+        <item>launchtechusa</item>
+        <item>ondemand5</item>
+        <item>shopkey5</item>
+    </string-array>
+    <string-array name="golo_detail_tag_array">
+        <item>Other</item>
+        <item>Designated Driver</item>
+        <item>Assistance</item>
+        <item>Carpool</item>
+        <item>Car Rental</item>
+        <item>Taxi</item>
+        <item>Agency</item>
+    </string-array>
+</resources>

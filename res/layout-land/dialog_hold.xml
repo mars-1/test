@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cnlaunch.newgolo.widget.LayoutRelative android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.LayoutRelative android:background="@drawable/dialog_hold_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:contentDescription="{base:width,width:0.383,height:0.414}">
+        <com.cnlaunch.newgolo.widget.GoloProgress android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hold_dialog_logo" android:layout_centerHorizontal="true" android:contentDescription="{base:width,width:0.156,height:0.156,top:0.0625}" />
+        <TextView android:textColor="#ff292929" android:gravity="center" android:id="@id/hold_dialog_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请稍候..." android:singleLine="true" android:layout_centerHorizontal="true" android:contentDescription="{base:width,textSize:0.05,width:0.344,top:0.3125}" />
+    </com.cnlaunch.newgolo.widget.LayoutRelative>
+</com.cnlaunch.newgolo.widget.LayoutRelative>

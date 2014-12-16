@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cnlaunch.newgolo.widget.LayoutLinear android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.LayoutRelative android:id="@id/item_title" android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="{base:width,height:0.070}">
+        <TextView android:textColor="#ff646464" android:id="@id/sort_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:contentDescription="{base:width,textSize:0.04,left:0.031}" />
+        <TextView android:background="#ffc6c6c6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </com.cnlaunch.newgolo.widget.LayoutRelative>
+    <com.cnlaunch.newgolo.widget.LayoutLinear android:id="@id/item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="{base:width,width:1,height:0.1922}">
+        <com.cnlaunch.newgolo.widget.LayoutLinear android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.cnlaunch.newgolo.widget.LayoutRelative android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="{base:width,width:1,height:0.1922}">
+                <com.cnlaunch.newgolo.widget.RoundImage android:id="@id/item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/square_default_head" android:layout_centerVertical="true" android:contentDescription="{base:width,width:0.1562,height:0.1562,left:0.031}" />
+                <com.cnlaunch.newgolo.widget.LayoutRelative android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:contentDescription="{base:width,left:0.2032}">
+                    <com.cnlaunch.newgolo.widget.LayoutLinear android:orientation="vertical" android:id="@id/layout_name" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ff000000" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="name" android:singleLine="true" android:contentDescription="{base:width,width:0.65,textSize:0.0546}" />
+                        <TextView android:textColor="#ff949494" android:id="@id/item_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sign" android:singleLine="true" android:layout_below="@id/item_name" android:contentDescription="{base:width,width:0.65,textSize:0.0468}" />
+                    </com.cnlaunch.newgolo.widget.LayoutLinear>
+                    <CheckBox android:gravity="center" android:id="@id/item_check" android:background="@drawable/diasys_check_btn" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_toRightOf="@id/layout_name" android:layout_centerInParent="true" />
+                </com.cnlaunch.newgolo.widget.LayoutRelative>
+                <TextView android:background="#ffc6c6c6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </com.cnlaunch.newgolo.widget.LayoutRelative>
+        </com.cnlaunch.newgolo.widget.LayoutLinear>
+    </com.cnlaunch.newgolo.widget.LayoutLinear>
+</com.cnlaunch.newgolo.widget.LayoutLinear>

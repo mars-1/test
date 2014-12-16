@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="leftmenu_mainsize">70</integer>
+    <integer name="toolItemColumnNum">6</integer>
+    <integer name="carlogoItemColumnNum">6</integer>
+    <integer name="graphgridItemColumnNum">5</integer>
+</resources>

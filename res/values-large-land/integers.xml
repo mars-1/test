@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="leftmenu_mainsize">65</integer>
+    <integer name="toolItemColumnNum">6</integer>
+    <integer name="carlogoItemColumnNum">5</integer>
+    <integer name="graphgridItemColumnNum">4</integer>
+    <integer name="graph_VerticalSpacing">10</integer>
+    <integer name="graph_padding_top">20</integer>
+</resources>

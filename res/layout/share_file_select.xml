@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip">
+        <TextView android:textColor="@color/red" android:id="@id/share_file_select_root_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ListView android:textColor="@color/green" android:id="@id/share_file_select_listview" android:background="#ffffffff" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" />
+    </LinearLayout>
+</LinearLayout>

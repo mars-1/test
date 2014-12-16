@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.LayoutLinear android:orientation="vertical" android:background="@*android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0sp" android:textColor="@*android:color/white" android:gravity="left|center" android:id="@id/plate" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="粤B12345" android:contentDescription="{base:width,height:0.12}" />
+        <TextView android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <Button android:textSize="18.0sp" android:textColor="@*android:color/white" android:gravity="left|center" android:id="@id/setdefault" android:background="@*android:color/black" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="设为默认车辆" android:contentDescription="{base:width,height:0.12}" />
+        <TextView android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <Button android:textSize="18.0sp" android:textColor="@*android:color/white" android:gravity="left|center" android:id="@id/delete" android:background="@*android:color/black" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="删除该车辆" android:contentDescription="{base:width,height:0.12}" />
+    </com.cnlaunch.newgolo.widget.LayoutLinear>
+</RelativeLayout>

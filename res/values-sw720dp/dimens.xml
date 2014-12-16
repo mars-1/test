@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">128.0dip</dimen>
+    <dimen name="customer_item_height">80.0dip</dimen>
+    <dimen name="client_user_image">60.0dip</dimen>
+    <dimen name="customer_title_size">18.0sp</dimen>
+    <dimen name="remind_msg_text_size">18.0sp</dimen>
+    <dimen name="golo_customer_title">24.0sp</dimen>
+    <dimen name="head_titel_txt_size">26.0sp</dimen>
+    <dimen name="customer_search_height">40.0dip</dimen>
+    <dimen name="golo_item_sigature_len">400.0dip</dimen>
+</resources>

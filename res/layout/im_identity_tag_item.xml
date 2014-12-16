@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/identity_id" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/identity_name" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="5.0dip" android:text="奥迪" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    <CheckBox android:id="@id/identity_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MySelectCheckBox" />
+</RelativeLayout>

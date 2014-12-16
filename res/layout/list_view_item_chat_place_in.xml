@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.LayoutRelative android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/chat_list_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    </com.cnlaunch.newgolo.widget.LayoutRelative>
+    <com.cnlaunch.newgolo.widget.LayoutRelative android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.cnlaunch.golo3.ui.utils.RoundImageView android:id="@id/chat_list_item_head" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@drawable/head_image" android:layout_alignParentLeft="true" />
+        <com.cnlaunch.newgolo.widget.LayoutRelative android:id="@id/out_area" android:background="@drawable/chat_activity_list_item_in" android:layout_width="150.0dip" android:layout_height="100.0dip" android:layout_toRightOf="@id/chat_list_item_head">
+            <ImageView android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+            <TextView android:textColor="@color/black" android:id="@id/chat_list_item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="text" android:layout_alignParentBottom="true" />
+        </com.cnlaunch.newgolo.widget.LayoutRelative>
+        <ImageView android:id="@id/chat_list_item_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/msg_state_failed" android:layout_toRightOf="@id/out_area" />
+    </com.cnlaunch.newgolo.widget.LayoutRelative>
+</LinearLayout>

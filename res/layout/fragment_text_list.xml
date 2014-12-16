@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?diagnoseMainBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/lv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ListViewStyle.Title.Linear">
+        <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tv_datastream_title" android:layout_weight="1.0" style="@style/ListViewStyle.Title.TextView" />
+        <TextView android:id="@id/value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tv_datastream_value" android:layout_weight="2.0" style="@style/ListViewStyle.Title.TextView" />
+        <TextView android:id="@id/statue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tv_datastream_unit" android:layout_weight="2.0" style="@style/ListViewStyle.Title.TextView" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/viewPager_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/lv_title">
+        <android.support.v4.view.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+        <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.cnlaunch.x431pro.widget.NoScrollGridView android:id="@id/horizontal_gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/listview_show" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/lv_title" style="@style/ListViewStyle.ListView" />
+</RelativeLayout>

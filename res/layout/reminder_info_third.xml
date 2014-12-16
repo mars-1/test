@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="20.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="7.9">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/reminder_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="您的车辆水温异常，请立刻停下来检查，或寻找最近的维修厂，或者发起远程诊断" android:singleLine="false" />
+        <TextView android:id="@id/dashed" android:background="@drawable/dashed" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="10.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/darkgrey" android:id="@id/reminder_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="21:30" android:layout_weight="0.01" />
+</LinearLayout>

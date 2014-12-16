@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/header_view" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/leftNav" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_left" android:background="@drawable/back_btn_status" android:padding="5.0dip" android:layout_width="35.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="24.0sp" android:ellipsize="marquee" android:gravity="center" android:id="@id/titleName" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" style="@style/headerStyle" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/rightNav" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_right" android:background="@drawable/submit_btn_status" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerInside" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sub_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

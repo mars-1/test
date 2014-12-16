@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/head" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/square_default_head" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/login_top_bg" android:id="@id/nickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="我的分享" />
+        <Button android:textColor="@color/chat_text_color_white" android:id="@id/delete_mf" android:background="@drawable/chat_menu_background" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/deleteF" android:layout_toRightOf="@id/nickName" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/time" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="2013-2-31" android:layout_alignParentRight="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/nickName">
+            <ImageView android:id="@id/fav_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:src="@drawable/chat_voice_logo_in" android:scaleType="fitXY" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/time" android:layout_gravity="center_vertical" android:id="@id/remark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="2013-2-31" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

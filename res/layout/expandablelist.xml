@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.golo3.expandable.CustomExpandableListView android:id="@id/expandable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childIndicator="@null" />
+    <com.cnlaunch.golo3.expandable.CustomLetterView android:id="@id/letter_view" android:layout_width="56.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</RelativeLayout>

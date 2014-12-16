@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/nav_head_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textsize_small_S" android:textColor="@color/black" android:id="@id/tv_statistics" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/down_statistics_txt" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textsize_small_S" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/serialnumber_txt" />
+        <TextView android:textSize="@dimen/textsize_small_S" android:gravity="center_vertical" android:id="@id/tv_spinner_serialNo" android:background="@drawable/spinner_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/key_upgrade_serialnum_minwid" android:text="@string/serialnumber_txt" />
+    </LinearLayout>
+    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:background="@drawable/table_head_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textsize_small_S" android:textColor="@color/black" android:gravity="left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="@string/down_name_txt" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textsize_small_S" android:textColor="@color/black" android:gravity="left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/down_version_txt" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textsize_small_S" android:textColor="@color/black" android:gravity="left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/down_progress_txt" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textsize_small_S" android:textColor="@color/black" android:gravity="left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:text="@string/down_state_txt" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/diver_line" android:dividerHeight="1.0px" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_bottombutton_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/radio_home" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Home" />
+        <Button android:id="@id/radio_download" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Stop" />
+    </LinearLayout>
+</LinearLayout>

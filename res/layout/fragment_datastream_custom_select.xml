@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?diagnoseMainBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_title" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_diagnose_subtitle" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_button_bottom" android:background="@drawable/shape_bottombutton_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <CheckBox android:id="@id/btn_selectall" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:layout_weight="1.0" style="@style/FragmentButtonBottom.selectall" />
+        <Button android:id="@id/btn_pageselectall" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.pageselectall" />
+        <Button android:id="@id/btn_home" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.home" />
+        <RadioButton android:id="@id/btn_print" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.print" />
+        <Button android:id="@id/btn_help" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.help" />
+        <Button android:id="@id/btn_confirm" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.confirm" />
+    </LinearLayout>
+    <GridView android:id="@id/gridview_select" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/linear_button_bottom" android:layout_below="@id/head_title" style="@style/GridViewStyle.GridView" />
+</RelativeLayout>

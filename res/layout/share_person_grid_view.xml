@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:gravity="center" android:id="@id/share_person_gridview" android:background="@drawable/share_person_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@null" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:columnWidth="45.0dip" android:numColumns="auto_fit" />
+</LinearLayout>

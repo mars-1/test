@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/im_title" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip">
+            <TextView android:id="@id/myreport_date_line" android:background="@drawable/myreport_date_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginTop="15.0dip" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ListView android:id="@id/reminder_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:cacheColorHint="#00000000" />
+    </RelativeLayout>
+</LinearLayout>

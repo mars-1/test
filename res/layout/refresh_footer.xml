@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/load_more_view" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/load_more_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="更多" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/loading_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:indeterminate="false" android:indeterminateDrawable="@drawable/progressbar_refresh" android:minWidth="44.0dip" android:minHeight="44.0dip" style="?android:attr/progressBarStyleSmall" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff222222" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_loading" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="#ffffffff" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/msg_add" android:background="@drawable/chat_activity_btn_select" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/msg_voicegroup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/msg_show_text_btn" android:background="@drawable/chat_activity_btn_text" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <Button android:textColor="@color/chat_text_color_dark" android:gravity="center" android:id="@id/msg_send_voice_btn" android:background="@drawable/chat_windows_send" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/record_voice" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/msg_sendgroup" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/msg_voice" android:background="@drawable/chat_activity_btn_voice" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <EditText android:id="@id/msg_content" android:background="@drawable/chat_input_background" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:maxLines="4" android:layout_weight="1.0" android:inputType="textMultiLine" />
+            <Button android:textColor="@color/chat_text_color_dark" android:id="@id/msg_send" android:background="@drawable/chat_windows_send" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/chatSend" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_gray" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tl_button" android:paddingLeft="@dimen/setting_button_left_right" android:paddingRight="@dimen/setting_button_left_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_button_top">
+        <Button android:textSize="@dimen/leftmenu_textsize" android:textColor="@color/white" android:id="@id/btn_check_server" android:layout_width="0.0dip" android:layout_height="@dimen/mine_item_height" android:text="@string/check_server" android:layout_weight="1.0" style="?attr/commomButtonStyle" />
+        <Button android:textSize="@dimen/leftmenu_textsize" android:textColor="@color/white" android:id="@id/btn_upload_log" android:layout_width="0.0dip" android:layout_height="@dimen/mine_item_height" android:text="@string/upload_log" android:layout_weight="1.0" style="?attr/commomButtonStyle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/setting_button_left_right" android:layout_marginTop="@dimen/setting_button_bottom" android:layout_marginRight="@dimen/setting_button_left_right" android:layout_marginBottom="@dimen/setting_button_bottom">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_printOut" android:background="@drawable/mine_info_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:minHeight="48.0dip">
+            <TextView android:textSize="10.0sp" android:gravity="top" android:id="@id/tv_printOutLeft" android:padding="20.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0sp" android:gravity="top" android:id="@id/tv_printOutRight" android:padding="20.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

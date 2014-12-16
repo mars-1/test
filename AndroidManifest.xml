@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="64" android:versionName="3.00.005" android:installLocation="internalOnly" package="com.ifoer.expedition.pro"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <application android:theme="@style/LaunchTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.cnlaunch.x431pro.activity.GDApplication">
+        <activity android:label="@string/app_name" android:name="com.ifoer.pro.expeditionphone.WelcomeActivity" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.vudroid.pdfdroid.PdfViewerActivity" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.cnlaunch.x431pro.activity.info.P_DFScanActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.GuideActivity" android:configChanges="orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.MainActivity" android:launchMode="singleTask" android:configChanges="locale|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/LaunchTheme.Dialog" android:name="com.cnlaunch.x431pro.activity.login.LoginActivity" android:configChanges="orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.cnlaunch.x431pro.activity.login.RegistActivity" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.login.ActivateJointActivity" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.login.RegisterFinishActivity" android:configChanges="orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.login.FindPasswordActivity" android:configChanges="orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.login.ResetPasswordActivity" android:configChanges="orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.login.HowToGetJointVerifyCodeActivity" android:configChanges="orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.login.RegisterProfileActivity" android:configChanges="orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.login.CountrySelectActivity" android:configChanges="orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.pay.BuyMethodActivity" android:configChanges="orientation" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.paypal.android.MEP.PayPalActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.diagnose.DiagnoseActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/LaunchTheme.Dialog" android:name="com.cnlaunch.x431pro.activity.bluetooth.BluetoothActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/LaunchTheme.Dialog" android:name="com.cnlaunch.x431pro.activity.bluetooth.DownloadBinActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/LaunchTheme.Dialog" android:name="com.cnlaunch.x431pro.activity.share.ShareActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.cnlaunch.x431pro.activity.info.InfoActivity" android:launchMode="singleTask" android:configChanges="orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.upgrade.UpgradeActivity" android:launchMode="singleTask" android:configChanges="orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.golo.GoloActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.cnlaunch.x431pro.activity.browser.BrowserActivity" android:launchMode="singleTask" android:configChanges="orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.tools.ToolsActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.cnlaunch.x431pro.activity.mine.MineActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.cnlaunch.x431pro.activity.help.HelpActivity" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="HELP_ACTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="cnlaunch/helpfile" android:scheme="helpfile" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cnlaunch.x431pro.activity.help.HelpShowFileActivity" android:configChanges="orientation" />
+        <receiver android:name="com.cnlaunch.x431pro.activity.setting.SettingLaunchReceiver">
+            <intent-filter>
+                <action android:name="com.cnlaunch.intent.action.SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.cnlaunch.x431pro.activity.setting.SettingActivity" android:launchMode="singleTask" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/LaunchTheme.Dialog" android:name="com.cnlaunch.x431pro.activity.setting.SendDiagnosticLogActivity" android:configChanges="locale|keyboardHidden|orientation" />
+        <uses-library android:name="android.test.runner" />
+        <service android:name="com.cnlaunch.diagnosemodule.service.DiagnoseService" android:persistent="true" android:process="com.cnlaunch.diagnoseservice" android:priority="1000" />
+        <activity android:label="xiaoxi" android:name="com.cnlaunch.newgolo.activity.MessageActivity" android:launchMode="standard" android:configChanges="locale|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.cnlaunch.newgolo.activity.MessageActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="xiaoxi" android:name="com.cnlaunch.newgolo.activity.PublicNewsActivity" android:launchMode="standard" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.cnlaunch.newgolo.activity.ReportActivity" android:launchMode="standard" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.cnlaunch.newgolo.activity.PicturePreviewActivity" android:launchMode="standard" android:configChanges="locale|keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.cnlaunch.golo3.ui.folder.FolderActivity" android:launchMode="standard" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.cnlaunch.newgolo.activity.ShowPictureActivity" android:launchMode="standard" android:configChanges="locale|keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.cnlaunch.golo3.ui.business.MyReport2Activity" android:launchMode="standard" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.golo.RemindInfoActivity" android:launchMode="standard" android:configChanges="locale|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@style/LaunchTheme.Dialog" android:name="com.cnlaunch.x431pro.activity.login.LoginConfictActivity" android:launchMode="standard" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.cnlaunch.x431pro.module.rtu.HomeStartActivity" android:launchMode="standard" android:configChanges="locale|keyboardHidden|orientation" />
+        <provider android:name="com.cnlaunch.newgolo.model.GoloProProvider" android:authorities="com.cnlaunch.golopro.provider" />
+        <provider android:name="com.cnlaunch.newgolo.provider.UserInfoProvider" android:authorities="com.cnlaunch.newgolo.userinfo" />
+        <service android:name="com.cnlaunch.newgolo.service.GoloProService" android:exported="true" />
+        <receiver android:name="com.cnlaunch.framework.network.networkconnection.NetWorkChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.cnlaunch.x431pro.activity.bluetooth.BluetoothConnectReceive">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.cnlaunch.x431pro.receiver.BootUpReceiver" android:enabled="true">
+            <intent-filter>
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.cnlaunch.x431pro.module.golo.model.GoloKeyReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.android.action.golo_press" />
+                <action android:name="com.android.action.golo_long_press" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <instrumentation android:name="android.test.InstrumentationTestRunner" android:targetPackage="com.ifoer.expedition.pro" />
+</manifest>

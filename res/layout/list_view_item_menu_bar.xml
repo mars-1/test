@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/chat_text_color_white" android:id="@id/msg_resend" android:background="@drawable/chat_menu_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/re_send" android:height="32.0dip" />
+    <Button android:textColor="@color/chat_text_color_white" android:id="@id/msg_copy" android:background="@drawable/chat_menu_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/copy_string" android:height="32.0dip" />
+    <Button android:textColor="@color/chat_text_color_white" android:id="@id/msg_forward" android:background="@drawable/chat_menu_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/share_transmit" android:height="32.0dip" />
+    <Button android:textColor="@color/chat_text_color_white" android:id="@id/msg_favorite" android:background="@drawable/chat_menu_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/store_string" android:height="32.0dip" />
+    <Button android:textColor="@color/chat_text_color_white" android:id="@id/msg_del" android:background="@drawable/chat_menu_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deleteF" android:height="32.0dip" />
+</LinearLayout>

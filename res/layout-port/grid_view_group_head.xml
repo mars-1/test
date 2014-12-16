@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cnlaunch.newgolo.widget.LayoutLinear android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.LayoutLinear android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="{base:width,height:0.202}">
+        <com.cnlaunch.newgolo.widget.LayoutRelative android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/chat_setting_user_image" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/square_default_head" android:scaleType="fitXY" />
+            <Button android:id="@id/chat_setting_user_del" android:background="@drawable/group_del_member" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/chat_setting_user_image" android:contentDescription="{base:width,width:0.0469,height:0.0469}" />
+        </com.cnlaunch.newgolo.widget.LayoutRelative>
+        <TextView android:textSize="13.0sp" android:textColor="@color/chat_text_color_dark" android:layout_gravity="center_horizontal" android:id="@id/chat_setting_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Golo" android:singleLine="true" android:contentDescription="{base:width}" />
+    </com.cnlaunch.newgolo.widget.LayoutLinear>
+</com.cnlaunch.newgolo.widget.LayoutLinear>

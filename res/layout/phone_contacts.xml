@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/search_area_top" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/darkgrey" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/search_txt_real_top" android:background="@drawable/search_input_bg" android:paddingLeft="40.0dip" android:paddingTop="0.0dip" android:paddingRight="40.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:inputType="text" style="@style/EditText" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_btn" android:layout_centerVertical="true" />
+            <ImageButton android:layout_gravity="center" android:id="@id/cancle_btn_top" android:background="@drawable/im_search_clean_btn" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView android:id="@id/searchContactsList" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" />
+    <RelativeLayout android:id="@id/contastlistLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ExpandableListView android:id="@id/el_phone_contacts" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@null" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <com.cnlaunch.golo3.constact.AssortView android:id="@id/assort_phone_contacts" android:background="@*android:color/transparent" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

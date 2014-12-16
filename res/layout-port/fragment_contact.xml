@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cnlaunch.newgolo.widget.LayoutRelative android:id="@id/contact_fragment" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.golo3.view.RefreshListView android:id="@id/contact_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" />
+    <com.cnlaunch.newgolo.widget.ListIndex android:id="@id/contact_index" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:contentDescription="{base:width,width:0.0546,right:0.01}" />
+</com.cnlaunch.newgolo.widget.LayoutRelative>

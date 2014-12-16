@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/client_parent" android:background="@drawable/seasrch_bg" android:layout_width="fill_parent" android:layout_height="@dimen/customer_item_height">
+        <ImageView android:id="@id/client_userimage" android:layout_width="@dimen/client_user_image" android:layout_height="@dimen/client_user_image" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_launcher" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/client_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/client_userimage" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/remind_name_text_size" android:textColor="@color/black" android:id="@id/client_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxWidth="@dimen/golo_item_sigature_len" android:text="柳岩 美眉" android:singleLine="true" />
+            <TextView android:textSize="@dimen/remind_msg_text_size" android:textColor="@color/golo_gray_txt" android:id="@id/client_usercar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxWidth="@dimen/golo_item_sigature_len" android:singleLine="true" android:layout_below="@id/client_username" />
+        </LinearLayout>
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/new_msg" android:background="@drawable/msg_new" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/client_content" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/online_status" android:background="@drawable/technician_offline" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/new_msg" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:gravity="right|center" android:id="@id/last_msg_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="00:00" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@id/client_div" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/client_parent" />
+</RelativeLayout>

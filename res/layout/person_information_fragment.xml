@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/mine_info_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_area_margin" android:layout_marginTop="@dimen/mine_area_margin" android:layout_marginRight="@dimen/mine_area_margin">
+        <RelativeLayout android:id="@id/rl_mine_name" android:layout_width="wrap_content" android:layout_height="@dimen/mine_item_height">
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/mine_tv_name" style="@style/MiniInfoItemTextStyle" />
+            <TextView android:gravity="center_vertical" android:id="@id/tv_mine_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" style="@style/MiniInfoItemTextStyle" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/mineinfo_item" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/rl_mine_sex" android:background="@drawable/select_item_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/mine_item_height">
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_tv_sex" style="@style/MiniInfoItemTextStyle" />
+            <TextView android:gravity="center_vertical" android:id="@id/tv_mine_sex" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_alignParentRight="true" style="@style/MiniInfoItemTextStyle" />
+            <ImageView android:visibility="gone" android:layout_marginRight="10.0dip" android:src="@drawable/right_arrow" style="@style/img_arrow_style" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/radiogroup_sex_setting" android:background="@drawable/bg_radio_setting_pink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="@dimen/radio_setting_minwidth" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <RadioButton android:id="@id/radio_female" android:checked="true" android:text="@string/mine_tv_female" android:layout_weight="1.0" style="@style/ItemStyle.setting.RadioButton" />
+                <RadioButton android:id="@id/radio_male" android:text="@string/mine_tv_male" android:layout_weight="1.0" style="@style/ItemStyle.setting.RadioButton" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/mine_info_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_area_margin" android:layout_marginTop="@dimen/mine_area_margin" android:layout_marginRight="@dimen/mine_area_margin">
+        <RelativeLayout android:id="@id/rl_mine_email" android:layout_width="wrap_content" android:layout_height="@dimen/mine_item_height">
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/mine_tv_email" style="@style/MiniInfoItemTextStyle" />
+            <ImageView android:id="@id/img_email" android:layout_marginRight="10.0dip" android:src="@drawable/right_arrow" style="@style/img_arrow_style" />
+            <TextView android:gravity="center_vertical" android:id="@id/tv_mine_email" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/img_email" style="@style/MiniInfoItemTextStyle" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/mineinfo_item" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/rl_mine_phone" android:layout_width="wrap_content" android:layout_height="@dimen/mine_item_height">
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/mine_tv_phone" style="@style/MiniInfoItemTextStyle" />
+            <ImageView android:id="@id/img_phone" android:layout_marginRight="10.0dip" android:src="@drawable/right_arrow" style="@style/img_arrow_style" />
+            <TextView android:gravity="center_vertical" android:id="@id/tv_mine_phone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/img_phone" style="@style/MiniInfoItemTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/mine_info_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_area_margin" android:layout_marginTop="@dimen/mine_area_margin" android:layout_marginRight="@dimen/mine_area_margin">
+        <RelativeLayout android:id="@id/rl_mine_areas" android:layout_width="wrap_content" android:layout_height="@dimen/mine_item_height">
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/mine_tv_areas" style="@style/MiniInfoItemTextStyle" />
+            <ImageView android:id="@id/img_areas" android:layout_marginRight="10.0dip" android:src="@drawable/right_arrow" style="@style/img_arrow_style" />
+            <TextView android:gravity="center_vertical" android:id="@id/tv_mine_areas" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/img_areas" style="@style/MiniInfoItemTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.ImViewPager android:gravity="center" android:id="@id/msg_subview_viewpager" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

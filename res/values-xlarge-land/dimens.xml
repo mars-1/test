@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rtu_content_width">600.0dip</dimen>
+    <dimen name="graph_item_layout_width">224.0dip</dimen>
+    <dimen name="graph_item_layout_height">170.0dip</dimen>
+    <dimen name="leftmenu_button_height">107.0dip</dimen>
+    <dimen name="caricon_item_padding_v">5.0dip</dimen>
+    <dimen name="caricon_item_width">210.0dip</dimen>
+    <dimen name="caricon_item_height">166.0dip</dimen>
+    <dimen name="diagnose_gridcar_pading_top">3.0dip</dimen>
+</resources>

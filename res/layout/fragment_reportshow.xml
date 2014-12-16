@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?diagnoseMainBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_button_bottom" android:background="@drawable/shape_bottombutton_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentBottom="true">
+        <RadioButton android:id="@id/btn_print" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.print" />
+        <Button android:id="@id/btn_share" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.share" />
+        <Button android:id="@id/btn_del" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.del" />
+    </LinearLayout>
+    <ScrollView android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/linear_button_bottom" android:fadeScrollbars="false">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/linear_content" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ReportFragmentMainStyle">
+                <TextView android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ReportContentItemTextStyle" />
+                <TextView android:id="@id/tv_address" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ReportContentItemTextStyle" />
+                <TextView android:id="@id/tv_tel" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ReportContentItemTextStyle" />
+                <TextView android:id="@id/tv_mail" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ReportContentItemTextStyle" />
+                <TextView android:id="@id/tv_platenumber" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ReportContentItemTextStyle" />
+                <TextView android:id="@id/tv_snkey" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ReportContentItemTextStyle" />
+                <TextView android:id="@id/tv_date" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ReportContentItemTextStyle" />
+            </LinearLayout>
+            <com.cnlaunch.x431pro.widget.NoScrollerListView android:id="@id/lv_report" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/linear_content" android:layout_alignParentBottom="true" style="@style/ReportFragmentListViewStyle" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

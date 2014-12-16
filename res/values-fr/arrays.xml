@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="golo_detail_tag_array">
+        <item>Other</item>
+        <item>Designated Driver</item>
+        <item>Assistance</item>
+        <item>Carpool</item>
+        <item>Car Rental</item>
+        <item>Taxi</item>
+        <item>Agency</item>
+    </string-array>
+</resources>

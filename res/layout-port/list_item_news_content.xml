@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cnlaunch.newgolo.widget.LayoutLinear android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffc6c6c6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.cnlaunch.newgolo.widget.LayoutLinear android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="{base:width,height:0.1719}">
+        <ImageView android:id="@id/news_content_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="{base:width,width:0.14375,height:0.14375,left:0.03125,right:0.02344}" />
+        <com.cnlaunch.newgolo.widget.LayoutLinear android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="#ff292929" android:id="@id/news_content_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="texttttttttttttttttttttttttttttttttttttttttttttttttttttt" android:singleLine="true" android:contentDescription="{base:width,right:0.02344,textSize:0.045}" />
+            <TextView android:textColor="#ff292929" android:id="@id/news_content_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="textttttttttttttttttttttttttttttttttttttttttttttttttttttttt" android:singleLine="true" android:contentDescription="{base:width,right:0.02344,textSize:0.045}" />
+        </com.cnlaunch.newgolo.widget.LayoutLinear>
+    </com.cnlaunch.newgolo.widget.LayoutLinear>
+</com.cnlaunch.newgolo.widget.LayoutLinear>

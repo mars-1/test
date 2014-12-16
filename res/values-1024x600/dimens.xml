@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="letters_navigation">14.0sp</dimen>
+    <dimen name="histroy_nickname">230.0dip</dimen>
+    <dimen name="title">72.0dip</dimen>
+    <dimen name="title_button">36.0dip</dimen>
+    <dimen name="title_linearlayout">90.0dip</dimen>
+    <dimen name="login_padding">45.0dip</dimen>
+    <dimen name="login_head">108.0dip</dimen>
+</resources>

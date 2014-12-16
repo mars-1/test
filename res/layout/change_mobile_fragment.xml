@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/et_mine_phone" android:background="@drawable/mine_info_item_bg" android:paddingLeft="10.0dip" android:layout_marginLeft="@dimen/mine_area_margin" android:layout_marginTop="@dimen/mine_area_margin" android:layout_marginRight="@dimen/mine_area_margin" android:hint="@string/mine_et_mobile_phone_Prompt" android:inputType="number" style="@style/setting_edittext_style" />
+    <Button android:textSize="@dimen/leftmenu_textsize" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/but_mine_phone" android:background="@drawable/redbtn_enable_selector" android:layout_width="fill_parent" android:layout_height="@dimen/mine_item_height" android:layout_marginLeft="@dimen/mine_area_margin" android:layout_marginTop="@dimen/mine_area_margin" android:layout_marginRight="@dimen/mine_area_margin" android:button="@null" android:text="@string/mine_but_binding_mobile_phone" style="?attr/commonButtonLongStyle" />
+</LinearLayout>

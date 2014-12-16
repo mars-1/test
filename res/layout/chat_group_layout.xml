@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/sort_key_layout" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="20.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/sort_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/name_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <com.cnlaunch.golo3.ui.utils.RoundImageView android:id="@id/contactLogo" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/head_image" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/rightarrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/enter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@drawable/text_selector" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/contactLogo" />
+        <TextView android:textSize="16.0sp" android:textColor="@drawable/text_gray_selector" android:id="@id/signature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="20.0dip" android:singleLine="true" android:layout_toRightOf="@id/contactLogo" android:layout_below="@id/name" android:layout_alignParentBottom="true" />
+        <CheckBox android:textSize="14.0sp" android:gravity="center" android:id="@id/select_item" android:focusable="false" android:visibility="visible" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:checked="false" android:shadowColor="#7f000000" android:layout_alignParentRight="true" style="@style/check_style" />
+    </RelativeLayout>
+</LinearLayout>

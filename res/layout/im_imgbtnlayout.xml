@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/headlogo" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/square_default_head" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="Clear Location Data" android:layout_below="@id/headlogo" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/chat_activity_list_item_in" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/msg_item_voice_image" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/chat_voice_logo_in" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/msg_item_voice_logo" android:layout_width="11.0dip" android:layout_height="11.0dip" android:layout_marginLeft="11.0dip" android:src="@drawable/chat_voice_unread_logo" android:scaleType="fitXY" android:layout_toRightOf="@id/msg_item_voice_image" android:layout_centerVertical="true" />
+    <TextView android:textColor="#ff222222" android:id="@id/msg_item_voice_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="   3s''" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

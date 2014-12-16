@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.cnlaunch.newgolo.widget.LayoutRelative android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/phone_contact_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" />
+            <com.cnlaunch.newgolo.widget.ListIndex android:id="@id/sidrbar_new" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:contentDescription="{base:width,width:0.0546,right:0.01}" />
+        </com.cnlaunch.newgolo.widget.LayoutRelative>
+    </FrameLayout>
+</LinearLayout>

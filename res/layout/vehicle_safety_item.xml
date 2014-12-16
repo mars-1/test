@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cnlaunch.newgolo.widget.LayoutLinear android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.LayoutLinear android:gravity="left|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="{base:width,width:1,height:0.13}">
+        <CheckBox android:gravity="center" android:id="@id/checkbox" android:background="@drawable/diasys_check_btn" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+        <TextView android:textSize="16.0sp" android:gravity="left|center" android:id="@id/vehicle_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="水温异常" android:contentDescription="{base:width,width:0.28,height:0.13}" />
+    </com.cnlaunch.newgolo.widget.LayoutLinear>
+    <TextView android:id="@id/liner" android:background="@drawable/mapsearch_dash_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="{base:width,width:1,height:0.010}" android:layerType="software" />
+</com.cnlaunch.newgolo.widget.LayoutLinear>

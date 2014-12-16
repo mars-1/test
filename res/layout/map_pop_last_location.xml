@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/headS" android:background="@drawable/map_pop_left" android:layout_width="10.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/content" android:background="@drawable/map_pop_right" android:layout_width="230.0dip" android:layout_height="fill_parent">
+        <TextView android:textColor="@color/black" android:id="@id/map_carName" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="车牌号:粤B123456" />
+        <TextView android:textColor="@color/black" android:id="@id/map_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="时间：12：12" android:layout_alignParentBottom="true" />
+        <TextView android:textColor="@color/black" android:id="@id/map_velocity" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="车速：12km/h" android:layout_alignParentBottom="true" />
+        <TextView android:textColor="@color/black" android:ellipsize="start" android:id="@id/map_mAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="位置:广东省，深圳市福田区龙岗大道11路122项位置:广东省，深圳市福田区龙岗大道11路122项位置:广东省，深圳市福田区龙岗大道11路122项" android:maxLines="2" android:layout_alignParentRight="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.LayoutRelative android:id="@id/chat_list_header_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.cnlaunch.newgolo.widget.GoloProgress android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_progress" android:layout_centerInParent="true" android:contentDescription="{base:width,width:0.06,height:0.06}" />
+    </com.cnlaunch.newgolo.widget.LayoutRelative>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/normal_size" android:gravity="center_vertical" android:id="@id/childName" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:gravity="center" android:id="@id/childtime" android:background="@drawable/contact_add" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="49.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:text="2013-12-16" android:layout_toLeftOf="@id/childBox" android:layout_centerVertical="true" />
+        <CheckBox android:gravity="center" android:id="@id/childBox" android:background="@drawable/diasys_check_btn" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/liner" android:background="#ffc6c6c6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/root_layout" />
+</RelativeLayout>

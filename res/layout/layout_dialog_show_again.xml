@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.46">
+        <TextView android:textSize="14.0sp" android:textColor="@*android:color/darker_gray" android:gravity="center" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.01">
+            <CheckBox android:textColor="@*android:color/darker_gray" android:gravity="start|center" android:id="@id/showAgain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:button="@drawable/select_btn_cbox" android:text="@string/show_again" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

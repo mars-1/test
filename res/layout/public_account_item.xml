@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/public_account" android:background="@drawable/item_bg_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:contentDescription="{base:width,width:1,height:0.1922}"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="56.0dip" android:contentDescription="{base:width,width:1,height:0.1922}">
+        <ImageView android:id="@id/public_logo" android:src="@drawable/im_public_logo" android:contentDescription="{base:width,width:0.14058,height:0.14058,left:0.031}" style="@style/contact_item_head" />
+        <ImageView android:id="@id/rightarrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_total" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="{base:width,width:0.0625,height:0.0625,left:0.8437}" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="66.0dip" android:layout_centerVertical="true" android:contentDescription="{base:width,left:0.2032}">
+            <LinearLayout android:id="@id/ll_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/public_account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dip" android:singleLine="true" android:contentDescription="{base:width,textSize:0.0546}" />
+                <ImageView android:id="@id/golo_official" android:background="@drawable/golo_official" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/item_nick_name" android:contentDescription="{base:width,width:0.0531,height:0.0531,left:0.02,top:0.005}" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/sign_color" android:id="@id/public_account_signature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dip" android:singleLine="true" android:layout_below="@id/ll_content" android:contentDescription="{base:width,width:0.6534,textSize:0.0468}" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

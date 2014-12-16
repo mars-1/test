@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/carver_title" android:paddingLeft="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DiagnoseTitle">
+        <TextView android:id="@id/tv_carname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_carname" android:layout_weight="1.0" style="@style/CarSelectTitleStyle" />
+        <TextView android:id="@id/tv_carver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_carver" android:layout_weight="1.0" style="@style/CarSelectTitleStyle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_button_bottom" android:background="@drawable/shape_bottombutton_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/btn_home" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.home" />
+        <RadioButton android:id="@id/btn_print" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.print" />
+        <Button android:id="@id/btn_check_bluetooth" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.bluetooth" />
+        <Button android:id="@id/btn_help" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.help" />
+        <Button android:id="@id/btn_confirm" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.confirm" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/linear_button_bottom" android:layout_below="@id/carver_title">
+        <ListView android:id="@id/lv_carver" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/softini_title_text_size" android:gravity="top|center" android:id="@id/tv_ini_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/softini_content_text_size" android:gravity="top|left|center" android:id="@id/tv_ini_text" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:maxLines="5" android:lineSpacingMultiplier="1.3" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

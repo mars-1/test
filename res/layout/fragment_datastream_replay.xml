@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?diagnoseMainBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/lv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/ListViewStyle.Title.Linear">
+        <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tv_datastream_title" android:layout_weight="1.0" style="@style/ListViewStyle.Title.TextView" />
+        <TextView android:id="@id/value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tv_datastream_value" android:layout_weight="3.5" style="@style/ListViewStyle.Title.TextView" />
+        <TextView android:id="@id/statue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tv_datastream_unit" android:layout_weight="3.5" style="@style/ListViewStyle.Title.TextView" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_button_bottom" android:background="@drawable/shape_bottombutton_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <CheckBox android:gravity="center_horizontal" android:id="@id/btn_selectall" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:layout_weight="1.0" style="@style/FragmentButtonBottom.selectall" />
+        <Button android:gravity="center_horizontal" android:id="@id/btn_graph" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.graph" />
+        <Button android:gravity="center_horizontal" android:id="@id/btn_combination" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.combination" />
+        <Button android:gravity="center_horizontal" android:id="@id/btn_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.value" />
+        <Button android:textColor="@color/black" android:id="@id/btn_stop" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/btn_stop_reportrecord" android:drawableTop="@drawable/btn_reportstream_stop" android:layout_weight="1.0" style="@style/FragmentButtonBottom.vwbutton" />
+        <Button android:textColor="@color/black" android:id="@id/btn_play" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/btn_play_reportrecord" android:drawableTop="@drawable/btn_reportstream_play" android:layout_weight="1.0" style="@style/FragmentButtonBottom.vwbutton" />
+        <Button android:id="@id/btn_exit" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/btn_exit" android:drawableTop="@drawable/btn_exit_white" android:layout_weight="1.0" style="@style/FragmentButtonBottom.vwbutton" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/datastream_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/linear_button_bottom" android:layout_below="@id/head_title" />
+    <RelativeLayout android:id="@id/v_record" android:background="@color/translucent_bg" android:visibility="gone" android:layout_width="@dimen/record_outside" android:layout_height="wrap_content" android:layout_above="@id/linear_button_bottom" android:layout_centerHorizontal="true">
+        <ProgressBar android:id="@id/pd_indeter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentTop="true" style="?android:attr/progressBarStyleHorizontal" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_below="@id/pd_indeter" android:layout_alignParentRight="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/tv_record_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/tv_record_filename" android:layout_below="@id/pd_indeter" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</RelativeLayout>

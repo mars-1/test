@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cnlaunch.newgolo.widget.LayoutLinear android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.LayoutLinear android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="{base:width,left:0.055,right:0.02}">
+        <com.cnlaunch.newgolo.widget.LayoutRelative android:paddingRight="18.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="{base:width,right:0.125,bottom:0.01}">
+            <com.cnlaunch.newgolo.widget.LayoutLinear android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/chat_menu" android:layout_alignParentRight="true">
+                <com.cnlaunch.newgolo.widget.CornerText android:textColor="@color/chat_text_color_white" android:gravity="center" android:id="@id/chat_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:00" android:contentDescription="{base:width,textSize:0.03,minHeight:0.039}" />
+            </com.cnlaunch.newgolo.widget.LayoutLinear>
+            <com.cnlaunch.newgolo.widget.LayoutLinear android:gravity="right" android:orientation="horizontal" android:id="@id/chat_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <Button android:textColor="@color/chat_text_color_white" android:id="@id/chat_resend" android:background="@drawable/chat_menu_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重发" android:contentDescription="{base:width,width:0.12,height:0.086,right:0.01}" />
+                <Button android:textColor="@color/chat_text_color_white" android:id="@id/chat_copy" android:background="@drawable/chat_menu_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="复制" android:contentDescription="{base:width,width:0.12,height:0.086,right:0.01}" />
+                <Button android:textColor="@color/chat_text_color_white" android:id="@id/chat_forward" android:background="@drawable/chat_menu_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="转发" android:contentDescription="{base:width,width:0.12,height:0.086,right:0.01}" />
+                <Button android:textColor="@color/chat_text_color_white" android:id="@id/chat_favorite" android:background="@drawable/chat_menu_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收藏" android:contentDescription="{base:width,width:0.12,height:0.086,right:0.01}" />
+                <Button android:textColor="@color/chat_text_color_white" android:id="@id/chat_del" android:background="@drawable/chat_menu_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" android:contentDescription="{base:width,width:0.12,height:0.086}" />
+            </com.cnlaunch.newgolo.widget.LayoutLinear>
+        </com.cnlaunch.newgolo.widget.LayoutRelative>
+        <com.cnlaunch.newgolo.widget.LayoutRelative android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.cnlaunch.newgolo.widget.RoundImage android:id="@id/chat_item_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/head_image" android:scaleType="fitXY" android:layout_alignParentRight="true" android:contentDescription="{base:width,width:0.125,height:0.125}" />
+            <com.cnlaunch.newgolo.widget.LayoutRelative android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/chat_item_head">
+                <com.cnlaunch.newgolo.widget.LayoutRelative android:gravity="right" android:id="@id/chat_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="{base:width,right:0.02}">
+                    <ImageView android:id="@id/chat_item_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_error" android:layout_centerInParent="true" android:contentDescription="{base:width,width:0.06,height:0.06}" />
+                    <com.cnlaunch.newgolo.widget.GoloProgress android:id="@id/chat_item_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_progress" android:layout_centerInParent="true" android:contentDescription="{base:width,width:0.06,height:0.06}" />
+                </com.cnlaunch.newgolo.widget.LayoutRelative>
+                <com.cnlaunch.newgolo.widget.LayoutLinear android:gravity="right" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/chat_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/chat_status">
+                    <com.cnlaunch.newgolo.widget.LayoutRelative android:id="@id/chat_item_face" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0px">
+                        <com.cnlaunch.newgolo.widget.CornerImage android:id="@id/chat_item_face_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="{base:width, width:0.25, height:0.25}" />
+                    </com.cnlaunch.newgolo.widget.LayoutRelative>
+                </com.cnlaunch.newgolo.widget.LayoutLinear>
+            </com.cnlaunch.newgolo.widget.LayoutRelative>
+        </com.cnlaunch.newgolo.widget.LayoutRelative>
+    </com.cnlaunch.newgolo.widget.LayoutLinear>
+</com.cnlaunch.newgolo.widget.LayoutLinear>

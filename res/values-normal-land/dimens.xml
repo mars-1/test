@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gd_marginbottom">10.0dip</dimen>
+    <dimen name="jump_marginbottom">10.0dip</dimen>
+    <dimen name="rtu_content_width">500.0dip</dimen>
+    <dimen name="caricon_item_width">130.0dip</dimen>
+    <dimen name="caricon_item_height">103.0dip</dimen>
+    <dimen name="golo_item_sigature_len">300.0dip</dimen>
+</resources>

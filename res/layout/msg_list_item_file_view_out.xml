@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/chat_activity_list_item_out" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/msg_item_file_icon" android:background="@drawable/file_thumb" android:layout_width="46.0dip" android:layout_height="52.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_centerVertical="true" />
+    <TextView android:textColor="#ff222222" android:ellipsize="middle" android:id="@id/msg_item_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="127.0dip" android:text="file.txt" android:singleLine="true" android:layout_toRightOf="@id/msg_item_file_icon" android:layout_alignBottom="@id/msg_item_file_icon" />
+</RelativeLayout>

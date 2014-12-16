@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:background="@color/chat_menu_btn_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/chat_text_color_white" android:id="@id/menu_picture_camera" android:background="@drawable/chat_menu_btn_green" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/photograph" android:layout_centerHorizontal="true" />
+    <Button android:textColor="@color/chat_text_color_white" android:id="@id/menu_picture_gallery" android:background="@drawable/chat_menu_btn_green" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/selectLocalPhotos" android:layout_below="@id/menu_picture_camera" android:layout_centerHorizontal="true" />
+    <Button android:textColor="@color/chat_text_color_white" android:id="@id/menu_picture_cancel" android:background="@drawable/chat_menu_btn_gray" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/cancel" android:layout_below="@id/menu_picture_gallery" android:layout_centerHorizontal="true" />
+</RelativeLayout>

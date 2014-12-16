@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/custom_face_item_logo" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/delete_custom_face_btn" android:background="@drawable/chat_message_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/chat_message_item_logo" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="bluetoothlist_width_size">75</integer>
+    <integer name="bluetoothlist_height_size">75</integer>
+    <integer name="datastream_page_num">4</integer>
+    <integer name="dialog_message_maxline">10</integer>
+    <integer name="current_layout">0</integer>
+    <integer name="leftmenu_mainsize">30</integer>
+    <integer name="toolItemColumnNum">3</integer>
+    <integer name="carlogoItemColumnNum">3</integer>
+    <integer name="datastream_select_num">1</integer>
+    <integer name="share_width_size">90</integer>
+    <integer name="share_height_size">65</integer>
+    <integer name="activetest_button_widthsize">150</integer>
+    <integer name="datastream_imagepage_button_widthsize">30</integer>
+    <integer name="updatebin_width_size">90</integer>
+    <integer name="updatebin_height_size">40</integer>
+    <integer name="golo_detail_carlog_size">64</integer>
+    <integer name="datastream_textlist_num">4</integer>
+    <integer name="datastream_page_maxnum">20</integer>
+    <integer name="datastream_page_count">1</integer>
+    <integer name="graph_page_num">4</integer>
+    <integer name="graphgridItemColumnNum">2</integer>
+    <integer name="graph_HorizontalSpacing">0</integer>
+    <integer name="graph_VerticalSpacing">0</integer>
+    <integer name="graph_padding_left">0</integer>
+    <integer name="graph_padding_top">0</integer>
+    <integer name="graph_padding_right">0</integer>
+    <integer name="graph_padding_bottom">0</integer>
+    <integer name="graph_combined_big_pagenum">4</integer>
+    <integer name="grid_column_count">2</integer>
+    <integer name="isshow_tag_title_flag">1</integer>
+</resources>

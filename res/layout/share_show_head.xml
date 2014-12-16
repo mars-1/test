@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/show_my_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="92.0dip" android:layout_marginLeft="8.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/image_view_my_photo" android:background="@drawable/square_default_head" android:layout_width="92.0dip" android:layout_height="92.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/image_view_my_photo">
+                <TextView android:textSize="24.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/text_my_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="top" android:id="@id/text_my_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:maxLines="2" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/public_progressbar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/progress_rotate" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/show_update_news" android:background="@drawable/cm_cancle_background" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image_new_msg_photo" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/square_default_head" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <TextView android:textColor="@color/white" android:layout_gravity="center" android:id="@id/share_msg_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/show_send_progress" android:background="@drawable/cm_cancle_background" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/progress_rotate" />
+        <TextView android:textColor="@color/white" android:layout_gravity="center" android:id="@id/share_send_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

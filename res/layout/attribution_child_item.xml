@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/RelativeLayout1" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_plat" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/plateName" android:layout_width="wrap_content" android:layout_height="49.0dip" android:layout_marginLeft="30.0dip" android:text="京A" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff959595" android:id="@id/plateCity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="北京市" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:background="#ffc6c6c6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

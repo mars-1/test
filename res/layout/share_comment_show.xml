@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="#ff222222" android:ellipsize="end" android:gravity="left" android:autoLink="web" android:id="@id/share_comment_show_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="1.0dip" android:maxLines="2" android:lineSpacingExtra="-1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_voice" android:background="@drawable/share_voice_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip">
+        <ImageView android:id="@id/iv_voice_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/voice_play_animation" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tv_voice_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_text_size">18.0dip</dimen>
+    <dimen name="size20">20.0dip</dimen>
+    <dimen name="zh18_en15">15.0dip</dimen>
+    <dimen name="zh20_en18">18.0dip</dimen>
+    <dimen name="zh20_en15">15.0sp</dimen>
+    <dimen name="zh48_en40">40.0dip</dimen>
+    <dimen name="zh24_en20">20.0sp</dimen>
+    <dimen name="zh18_en13">13.0sp</dimen>
+    <dimen name="size18">18.0dip</dimen>
+    <dimen name="size15">18.0dip</dimen>
+    <dimen name="size14">14.0dip</dimen>
+    <dimen name="size22">22.0dip</dimen>
+</resources>

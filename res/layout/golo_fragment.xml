@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:pullrefresh="http://schemas.android.com/apk/res/com.ifoer.expedition.pro">
+    <LinearLayout android:orientation="vertical" android:background="@color/golo_search_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@id/confict_hit" android:background="#fffffacd" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/login_conflict_dialog_hit" />
+        <com.cnlaunch.x431pro.widget.ClearEditText android:textSize="@dimen/customer_title_size" android:id="@id/golo_customer_search" android:background="@drawable/search_bar_edit_selector" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/customer_search_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:hint="@string/please_input_key" android:singleLine="true" android:drawableLeft="@drawable/search_icon" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/radioGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/remote_order_linear" android:background="@drawable/select_golo_radio" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/left_menu_size" android:textColor="@color/white" android:gravity="center" android:id="@id/remote_order" android:background="@drawable/customer_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <RadioButton android:id="@id/radio_order" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/golo_order_title" style="@style/golo_main_radio_style" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/bunding_linear" android:background="@drawable/select_golo_radio" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/left_menu_size" android:textColor="@color/white" android:gravity="center" android:id="@id/bunding_allnewcount" android:background="@drawable/customer_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <RadioButton android:id="@id/radio_bind" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/golo_bind_title" style="@style/golo_main_radio_style" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/guanzhu_linear" android:background="@drawable/select_golo_radio" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/left_menu_size" android:textColor="@color/white" android:gravity="center" android:id="@id/focus_allnewcount" android:background="@drawable/customer_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <RadioButton android:id="@id/radio_attention" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/golo_attetion_title" style="@style/golo_main_radio_style" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layout_client" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.cnlaunch.x431pro.widget.pulltorefresh.PullToRefreshListView android:id="@id/list_client" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" pullrefresh:ptrDrawable="@drawable/isgolo" style="@style/ListViewStyle.ListView.golo" />
+        <com.cnlaunch.x431pro.widget.sortlistview.SideBar android:id="@id/assort_client" android:background="@*android:color/transparent" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_remind" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.cnlaunch.x431pro.widget.pulltorefresh.PullToRefreshListView android:id="@id/list_remind" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" pullrefresh:ptrDrawable="@drawable/isgolo" style="@style/ListViewStyle.ListView.golo" />
+        <com.cnlaunch.x431pro.widget.sortlistview.SideBar android:id="@id/assort_remind" android:background="@*android:color/transparent" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

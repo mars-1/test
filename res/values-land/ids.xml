@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="chat_list_item_time" />
+    <item type="id" name="chat_list_item_head" />
+    <item type="id" name="chat_list_item_text" />
+    <item type="id" name="chat_list_item_voice" />
+    <item type="id" name="chat_list_item_image" />
+    <item type="id" name="chat_list_item_status" />
+    <item type="id" name="chat_list_item_length" />
+    <item type="id" name="chat_list_item_content" />
+</resources>

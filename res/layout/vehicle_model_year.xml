@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择年款" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/datetime" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/up" android:background="@drawable/vehicle_up_bg" android:layout_width="50.0dip" android:layout_height="25.0dip" />
+            <TextView android:textSize="23.0sp" android:gravity="center" android:id="@id/years" android:background="@drawable/vehicle_years_bg" android:layout_width="80.0dip" android:layout_height="70.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="2014" />
+            <Button android:id="@id/dowm" android:background="@drawable/vehicle_dowm_bg" android:layout_width="50.0dip" android:layout_height="25.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/cancel" android:background="@drawable/cm_cancle_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" android:text="取消" android:layout_weight="0.5" />
+            <Button android:id="@id/setup" android:background="@drawable/cm_btn_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:text="设定" android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

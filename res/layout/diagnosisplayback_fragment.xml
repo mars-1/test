@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom" android:background="@drawable/shape_bottombutton_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <CheckBox android:id="@id/btn_selectall" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:layout_weight="1.0" style="@style/FragmentButtonBottom.selectall" />
+        <Button android:id="@id/btn_confirm" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/FragmentButtonBottom.confirm" />
+        <Button android:id="@id/btn_delete" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/btn_del" android:drawableTop="@drawable/select_btn_diagnose_del" android:layout_weight="1.0" style="@style/FragmentButtonBottom.help" />
+    </LinearLayout>
+    <GridView android:id="@id/gridview_select" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom" style="@style/GridViewStyle.GridView" />
+</RelativeLayout>

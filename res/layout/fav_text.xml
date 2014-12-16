@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.RoundImage android:id="@id/chat_item_head" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/head_image" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+        <TextView android:id="@id/nickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的分享" />
+        <TextView android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2013-2-31" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/nickName">
+            <ImageView android:id="@id/imageView" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+                <TextView android:ellipsize="end" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" android:singleLine="true" />
+                <TextView android:ellipsize="end" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" android:singleLine="true" />
+                <TextView android:ellipsize="end" android:id="@id/title3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

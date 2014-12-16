@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/shape_cir_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/linear_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:gravity="center_vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tv_bluetoothlist_title" style="@style/DialogTitleTextStyle.bluetooth" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_button_bottom" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:height="110.0dip" android:layout_alignParentBottom="true">
+        <Button android:enabled="false" android:textSize="@dimen/textsize_normal_S" android:layout_gravity="start|center" android:id="@id/btn_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/bluetooth_scaning" android:layout_weight="1.0" style="?attr/commomButtonStyle" />
+        <Button android:textSize="@dimen/textsize_normal_S" android:layout_gravity="start|center" android:id="@id/btn_exit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/btn_cancel" android:layout_weight="1.0" style="@style/DialogStyle_Button_grey" />
+    </LinearLayout>
+    <ListView android:id="@id/listview_show" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/french_gray" android:dividerHeight="1.0dip" android:layout_above="@id/linear_button_bottom" android:layout_below="@id/linear_top" />
+</RelativeLayout>

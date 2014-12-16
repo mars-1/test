@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/contact_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/search_area_top" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/darkgrey" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/search_txt_real_top" android:background="@drawable/search_input_bg" android:paddingLeft="40.0dip" android:paddingTop="0.0dip" android:paddingRight="40.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:inputType="text" style="@style/EditText" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_btn" android:layout_centerVertical="true" />
+            <ImageButton android:layout_gravity="center" android:id="@id/cancle_btn_top" android:background="@drawable/im_search_clean_btn" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/contact_area" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/contactList" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:layout_alignParentTop="true" />
+        <LinearLayout android:id="@id/title_layout" android:background="#ffbcbcbc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_alignParentTop="true">
+            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+        <Button android:id="@id/alphabetButton" android:background="@drawable/im_a_z_normal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+        <RelativeLayout android:id="@id/section_toast_layout" android:background="@color/login_top_bg" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="48.0sp" android:textColor="#ffffffff" android:id="@id/section_toast_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/search_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/darkgrey" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/search_txt_real" android:background="@drawable/search_input_bg" android:paddingLeft="40.0dip" android:paddingTop="0.0dip" android:paddingRight="40.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:inputType="text" style="@style/EditText" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_btn" android:layout_centerVertical="true" />
+            <ImageButton android:layout_gravity="center" android:id="@id/cancle_btn" android:background="@drawable/im_search_clean_btn" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ListView android:id="@id/search_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" />
+    </LinearLayout>
+</LinearLayout>

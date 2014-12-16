@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/head_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="golo小助手" android:layout_below="@id/head_logo" android:layout_centerHorizontal="true" />
+</RelativeLayout>

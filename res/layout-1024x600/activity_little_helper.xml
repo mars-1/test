@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cnlaunch.newgolo.widget.LayoutLinear android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.ChatListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="@color/transparent" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_chat" android:background="@drawable/chat_bottom_bg" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <Button android:id="@id/btn_add" android:background="@drawable/chat_activity_btn_select" android:layout_width="0.0dip" android:layout_height="33.0dip" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_voice" android:background="@drawable/chat_activity_btn_voice" android:layout_width="0.0dip" android:layout_height="33.0dip" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" />
+        <EditText android:id="@id/et_chat" android:background="@drawable/chat_input_background" android:padding="5.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="6.0" android:inputType="textMultiLine" />
+        <Button android:textColor="@color/gray" android:id="@id/btn_send" android:background="@drawable/chat_windows_send" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/chatSend" android:layout_weight="2.0" />
+    </LinearLayout>
+    <com.cnlaunch.newgolo.widget.LayoutRelative android:id="@id/rl_bottom" android:background="@color/gray_bg_helper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="{base:width,width:1,height:0.55}">
+        <android.support.v4.view.ViewPager android:id="@id/guidePages" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/viewGroup" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </com.cnlaunch.newgolo.widget.LayoutRelative>
+</com.cnlaunch.newgolo.widget.LayoutLinear>

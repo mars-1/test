@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/im_title" />
+    <GridView android:scrollbarStyle="insideOverlay" android:id="@id/custom_face_gv" android:background="@drawable/input_bg" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:horizontalSpacing="35.0dip" android:stretchMode="columnWidth" android:columnWidth="100.0dip" android:numColumns="4" />
+</LinearLayout>

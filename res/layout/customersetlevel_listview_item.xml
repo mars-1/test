@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/leftLay" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/customer_head_icon" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/square_default_head" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="fill_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="#ff222222" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/customer_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tonny张" />
+                </LinearLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                        <ImageView android:id="@id/customer_rating_iv1" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/startlet" />
+                        <ImageView android:id="@id/customer_rating_iv2" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/startlet" />
+                        <ImageView android:id="@id/customer_rating_iv3" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/startlet" />
+                        <ImageView android:id="@id/customer_rating_iv4" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/startlet" />
+                        <ImageView android:id="@id/customer_rating_iv5" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/startlet" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="0.0dip" android:layout_alignParentRight="true">
+            <TextView android:textSize="12.0sp" android:textColor="#ff959595" android:id="@id/customer_date" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2013.11.11" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

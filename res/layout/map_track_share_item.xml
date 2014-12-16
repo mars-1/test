@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cnlaunch.newgolo.widget.LayoutRelative android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/shareheadiconly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="{base:width,width:0.14,height:0.14}">
+        <ImageView android:id="@id/item_image" android:layout_width="46.0dip" android:layout_height="46.0dip" />
+    </LinearLayout>
+</com.cnlaunch.newgolo.widget.LayoutRelative>

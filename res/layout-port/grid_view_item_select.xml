@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cnlaunch.newgolo.widget.LayoutRelative android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/mode_select_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="{base:width,width:0.15,height:0.15,top:0.04}" />
+        <TextView android:textColor="@color/chat_text_color_dark" android:id="@id/mode_select_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/mode_select_image" android:layout_centerHorizontal="true" android:contentDescription="{base:width,textSize:0.045}" />
+    </com.cnlaunch.newgolo.widget.LayoutRelative>
+</LinearLayout>
