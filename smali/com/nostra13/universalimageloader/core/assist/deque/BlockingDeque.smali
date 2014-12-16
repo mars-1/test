@@ -3,8 +3,8 @@
 .source "BlockingDeque.java"
 
 # interfaces
-.implements Ljava/util/concurrent/BlockingQueue;
 .implements Lcom/nostra13/universalimageloader/core/assist/deque/Deque;
+.implements Ljava/util/concurrent/BlockingQueue;
 
 
 # annotations

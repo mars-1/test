@@ -37,7 +37,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment;
 
-    .line 303
+    .line 309
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,11 +62,11 @@
     .end annotation
 
     .prologue
-    .line 307
+    .line 313
     .local p1, arg0:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
     if-ltz p3, :cond_0
 
-    .line 308
+    .line 314
     :try_start_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment;
 
@@ -81,7 +81,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 309
+    .line 315
     .local v1, num:Ljava/lang/String;
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment;
 
@@ -104,13 +104,13 @@
 
     if-nez v2, :cond_0
 
-    .line 310
+    .line 316
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment;
 
     #setter for: Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment;->lastestVerisonNum:Ljava/lang/String;
     invoke-static {v2, v1}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment;->access$2(Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment;Ljava/lang/String;)V
 
-    .line 311
+    .line 317
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment;->mContext:Landroid/content/Context;
@@ -126,7 +126,7 @@
 
     invoke-virtual {v2, v3, v1}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 312
+    .line 318
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment;->tv_lastest_num:Landroid/widget/TextView;
@@ -145,17 +145,17 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 318
+    .line 324
     .end local v1           #num:Ljava/lang/String;
     :cond_0
     :goto_0
     return-void
 
-    .line 315
+    .line 321
     :catch_0
     move-exception v0
 
-    .line 316
+    .line 322
     .local v0, e:Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 

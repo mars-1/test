@@ -4,8 +4,8 @@
 
 # interfaces
 .implements Lcom/thoughtworks/xstream/converters/Converter;
-.implements Lcom/thoughtworks/xstream/converters/SingleValueConverter;
 .implements Lcom/thoughtworks/xstream/converters/ErrorReporter;
+.implements Lcom/thoughtworks/xstream/converters/SingleValueConverter;
 
 
 # instance fields

@@ -40,9 +40,9 @@
     .parameter "msg"
 
     .prologue
-    const v1, 0x7f070567
+    const v1, 0x7f070569
 
-    const v3, 0x7f070569
+    const v3, 0x7f07056b
 
     const/4 v2, 0x1
 
@@ -422,7 +422,7 @@
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/FirmwareFixFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/FirmwareFixFragment;
 
-    const v3, 0x7f07056b
+    const v3, 0x7f07056d
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/activity/mine/FirmwareFixFragment;->getString(I)Ljava/lang/String;
 

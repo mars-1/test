@@ -92,7 +92,7 @@
     const/4 v2, 0x1
 
     .line 63
-    const v0, 0x7f0704e8
+    const v0, 0x7f0704ea
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/info/InfoActivity;->setTitle(I)V
 
@@ -104,7 +104,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/info/InfoActivity;->webViewClient:Lcom/cnlaunch/x431pro/activity/info/InfoActivity$InfoWebViewClient;
 
     .line 65
-    const v0, 0x7f0d0025
+    const v0, 0x7f0c0025
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/info/InfoActivity;->findViewById(I)Landroid/view/View;
 

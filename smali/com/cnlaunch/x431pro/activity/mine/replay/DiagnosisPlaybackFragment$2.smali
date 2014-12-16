@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;
 
-    .line 137
+    .line 140
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialog;-><init>()V
 
     return-void
@@ -39,7 +39,7 @@
     .locals 0
 
     .prologue
-    .line 147
+    .line 150
     return-void
 .end method
 
@@ -47,7 +47,7 @@
     .locals 1
 
     .prologue
-    .line 140
+    .line 143
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mReportPath:Ljava/lang/String;
@@ -57,7 +57,7 @@
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/utils/file/FileUtils;->deleteFile(Ljava/lang/String;)Z
 
-    .line 141
+    .line 144
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->fragmentManager:Landroid/app/FragmentManager;
@@ -67,6 +67,6 @@
 
     invoke-virtual {v0}, Landroid/app/FragmentManager;->popBackStack()V
 
-    .line 142
+    .line 145
     return-void
 .end method

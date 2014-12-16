@@ -147,7 +147,7 @@
     .line 56
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/MenuListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/MenuListAdapter$ViewHolder;
 
-    const v0, 0x7f0d006e
+    const v0, 0x7f0c006e
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

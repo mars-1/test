@@ -28,7 +28,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
-    .line 172
+    .line 173
     invoke-direct {p0, p2}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;-><init>(Landroid/view/View;)V
 
     return-void
@@ -42,7 +42,7 @@
     .prologue
     const/16 v2, 0x8
 
-    .line 175
+    .line 176
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->mCurrentActiveType:Ljava/lang/String;
@@ -58,7 +58,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 176
+    .line 177
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->btnCombineGraph:Landroid/widget/Button;
@@ -68,7 +68,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 177
+    .line 178
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->btnMultipleGraph:Landroid/widget/Button;
@@ -80,7 +80,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 178
+    .line 179
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->btnTextList:Landroid/widget/Button;
@@ -90,7 +90,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 179
+    .line 180
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->btnSetMaxMin:Landroid/widget/Button;
@@ -100,7 +100,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 181
+    .line 182
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
@@ -111,13 +111,13 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 182
+    .line 183
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->refreshButton()V
     invoke-static {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->access$9(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;)V
 
-    .line 183
+    .line 184
     const/4 v0, 0x1
 
     return v0

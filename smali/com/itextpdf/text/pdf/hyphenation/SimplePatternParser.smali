@@ -3,8 +3,8 @@
 .source "SimplePatternParser.java"
 
 # interfaces
-.implements Lcom/itextpdf/text/xml/simpleparser/SimpleXMLDocHandler;
 .implements Lcom/itextpdf/text/pdf/hyphenation/PatternConsumer;
+.implements Lcom/itextpdf/text/xml/simpleparser/SimpleXMLDocHandler;
 
 
 # static fields

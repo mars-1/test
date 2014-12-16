@@ -32,7 +32,7 @@
 
     iput p2, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$2;->val$position:I
 
-    .line 165
+    .line 167
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialog;-><init>()V
 
     return-void
@@ -44,7 +44,7 @@
     .locals 0
 
     .prologue
-    .line 182
+    .line 184
     return-void
 .end method
 
@@ -52,7 +52,7 @@
     .locals 6
 
     .prologue
-    .line 169
+    .line 171
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->pathUtils:Lcom/cnlaunch/x431pro/utils/PathUtils;
@@ -97,11 +97,11 @@
 
     move-result-object v0
 
-    .line 171
+    .line 173
     .local v0, filePath:Ljava/lang/String;
     invoke-static {v0}, Lcom/cnlaunch/x431pro/utils/file/FileUtils;->deleteDirectory(Ljava/lang/String;)V
 
-    .line 172
+    .line 174
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->carIconUtils:Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;
@@ -144,7 +144,7 @@
 
     invoke-virtual {v2, v3, v4, v1}, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->removeTheCarVersion(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 174
+    .line 176
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->verlist:Ljava/util/ArrayList;
@@ -156,7 +156,7 @@
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 175
+    .line 177
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SelectCarVerAdapter;
@@ -173,7 +173,7 @@
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SelectCarVerAdapter;->updateList(Ljava/util/ArrayList;)V
 
-    .line 176
+    .line 178
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SelectCarVerAdapter;
@@ -185,7 +185,7 @@
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SelectCarVerAdapter;->setItemIsActive(I)V
 
-    .line 177
+    .line 179
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->mHandler:Landroid/os/Handler;
@@ -201,6 +201,6 @@
 
     invoke-virtual {v1}, Landroid/os/Message;->sendToTarget()V
 
-    .line 178
+    .line 180
     return-void
 .end method

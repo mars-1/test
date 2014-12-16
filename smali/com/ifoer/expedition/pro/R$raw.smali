@@ -23,7 +23,9 @@
 
 .field public static final share_city:I = 0x7f060003
 
-.field public static final waring:I = 0x7f060004
+.field public static final test:I = 0x7f060004
+
+.field public static final waring:I = 0x7f060005
 
 
 # direct methods
@@ -31,7 +33,7 @@
     .locals 0
 
     .prologue
-    .line 5538
+    .line 5570
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

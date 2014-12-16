@@ -177,7 +177,7 @@
     .line 59
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SpeciaFunctionListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SpeciaFunctionListAdapter$ViewHolder;
 
-    const v1, 0x7f0d006e
+    const v1, 0x7f0c006e
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

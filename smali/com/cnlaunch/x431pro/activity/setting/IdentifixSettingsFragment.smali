@@ -26,7 +26,7 @@
 
     .prologue
     .line 22
-    const v0, 0x7f0706a2
+    const v0, 0x7f0706a4
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/setting/IdentifixSettingsFragment;->setTitle(I)V
 
@@ -37,7 +37,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -50,7 +50,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d046d
+    const v1, 0x7f0c048b
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -181,7 +181,7 @@
 
     .line 48
     :pswitch_data_0
-    .packed-switch 0x7f0d046d
+    .packed-switch 0x7f0c048b
         :pswitch_0
     .end packed-switch
 .end method
@@ -194,7 +194,7 @@
 
     .prologue
     .line 42
-    const v0, 0x7f030185
+    const v0, 0x7f030188
 
     .line 43
     const/4 v1, 0x0

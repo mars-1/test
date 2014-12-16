@@ -83,14 +83,16 @@
 
     move-result-object v1
 
-    const v2, 0x7f07058d
+    const v2, 0x7f07058f
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
+    const/4 v2, 0x1
+
     .line 398
-    invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v0, v1, v2}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;Ljava/lang/String;Z)V
 
     .line 400
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$3$3;->this$1:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$3;
@@ -107,8 +109,6 @@
     goto :goto_0
 
     .line 395
-    nop
-
     :pswitch_data_0
     .packed-switch 0x1f6
         :pswitch_0

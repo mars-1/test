@@ -90,7 +90,7 @@
     .line 210
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloActivity$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloActivity;
 
-    const v1, 0x7f0706bf
+    const v1, 0x7f0706c1
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 

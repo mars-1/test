@@ -722,7 +722,7 @@
     .local v4, tv:Landroid/widget/TextView;
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/GraphViewAdapter;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f070695
+    const v8, 0x7f070697
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -785,7 +785,7 @@
 
     .line 102
     .local v6, viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/GraphViewAdapter$ViewHolder;
-    const v7, 0x7f0d0254
+    const v7, 0x7f0c0257
 
     invoke-virtual {p2, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -796,7 +796,7 @@
     iput-object v7, v6, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/GraphViewAdapter$ViewHolder;->mLayout:Landroid/widget/LinearLayout;
 
     .line 103
-    const v7, 0x7f0d017f
+    const v7, 0x7f0c017f
 
     invoke-virtual {p2, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

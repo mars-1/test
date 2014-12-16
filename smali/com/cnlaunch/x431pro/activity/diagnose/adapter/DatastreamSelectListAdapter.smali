@@ -770,7 +770,7 @@
     .line 81
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter$ViewHolder;
 
-    const v1, 0x7f0d0256
+    const v1, 0x7f0c0259
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -783,7 +783,7 @@
     .line 82
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter$ViewHolder;
 
-    const v1, 0x7f0d0255
+    const v1, 0x7f0c0258
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -177,7 +177,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f070540
+    const v4, 0x7f070542
 
     const/16 v5, 0x11
 
@@ -200,7 +200,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d016a
+    const v2, 0x7f0c016a
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -215,7 +215,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d016b
+    const v2, 0x7f0c016b
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -230,7 +230,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d016c
+    const v2, 0x7f0c016c
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -268,7 +268,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d016d
+    const v2, 0x7f0c016d
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -361,7 +361,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0149
+    const v2, 0x7f0c0149
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -451,7 +451,7 @@
     return-object v1
 
     :cond_1
-    const v2, 0x7f070540
+    const v2, 0x7f070542
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/FaultCodeFragment;->getString(I)Ljava/lang/String;
 
@@ -465,7 +465,7 @@
 
     .prologue
     .line 188
-    const v0, 0x7f070504
+    const v0, 0x7f070506
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/FaultCodeFragment;->getString(I)Ljava/lang/String;
 
@@ -555,7 +555,7 @@
     .parameter "activity"
 
     .prologue
-    const v5, 0x7f07070e
+    const v5, 0x7f070710
 
     .line 52
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/BaseDiagnoseFragment;->onAttach(Landroid/app/Activity;)V
@@ -663,7 +663,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f070512
+    const v3, 0x7f070514
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/FaultCodeFragment;->getString(I)Ljava/lang/String;
 
@@ -738,7 +738,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f070504
+    const v3, 0x7f070506
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/FaultCodeFragment;->getString(I)Ljava/lang/String;
 
@@ -754,7 +754,7 @@
     .parameter "v"
 
     .prologue
-    const v13, 0x7f070540
+    const v13, 0x7f070542
 
     const/4 v10, 0x1
 
@@ -772,7 +772,7 @@
 
     .line 143
     .local v3, id:I
-    const v8, 0x7f0d016c
+    const v8, 0x7f0c016c
 
     if-ne v3, v8, :cond_1
 
@@ -823,7 +823,7 @@
 
     .line 150
     :cond_1
-    const v8, 0x7f0d016d
+    const v8, 0x7f0c016d
 
     if-ne v3, v8, :cond_5
 
@@ -869,7 +869,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f070563
+    const v9, 0x7f070565
 
     invoke-virtual {p0, v9}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/FaultCodeFragment;->getString(I)Ljava/lang/String;
 
@@ -885,7 +885,7 @@
     :cond_2
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/FaultCodeFragment;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f070513
+    const v9, 0x7f070515
 
     const/16 v10, 0x11
 
@@ -949,7 +949,7 @@
     :cond_4
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/FaultCodeFragment;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f070540
+    const v9, 0x7f070542
 
     const/16 v10, 0x11
 
@@ -962,7 +962,7 @@
     .line 166
     .end local v5           #position:I
     :cond_5
-    const v8, 0x7f0d016b
+    const v8, 0x7f0c016b
 
     if-ne v3, v8, :cond_0
 

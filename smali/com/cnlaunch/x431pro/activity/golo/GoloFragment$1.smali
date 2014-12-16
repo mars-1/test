@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
-    .line 997
+    .line 996
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
@@ -44,18 +44,18 @@
 
     const/4 v4, 0x0
 
-    .line 1000
+    .line 999
     iget v5, p1, Landroid/os/Message;->what:I
 
     packed-switch v5, :pswitch_data_0
 
-    .line 1078
+    .line 1077
     :cond_0
     :goto_0
     :pswitch_0
     return-void
 
-    .line 1002
+    .line 1001
     :pswitch_1
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -65,7 +65,7 @@
 
     invoke-static {v4}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
-    .line 1003
+    .line 1002
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
@@ -75,7 +75,7 @@
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->onRefreshComplete()V
 
-    .line 1004
+    .line 1003
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -83,13 +83,13 @@
 
     move-result-object v4
 
-    const v5, 0x7f0706bf
+    const v5, 0x7f0706c1
 
     invoke-static {v4, v5}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 1008
+    .line 1007
     :pswitch_2
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -109,7 +109,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 1009
+    .line 1008
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getActivity()Landroid/app/Activity;
@@ -118,7 +118,7 @@
 
     invoke-static {v4}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
-    .line 1011
+    .line 1010
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
@@ -130,7 +130,7 @@
 
     goto :goto_0
 
-    .line 1016
+    .line 1015
     :pswitch_3
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -140,7 +140,7 @@
 
     invoke-static {v4}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
-    .line 1017
+    .line 1016
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -148,21 +148,21 @@
 
     move-result-object v4
 
-    const v5, 0x7f0706c0
+    const v5, 0x7f0706c2
 
     invoke-static {v4, v5}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 1020
+    .line 1019
     :pswitch_4
     iget v0, p1, Landroid/os/Message;->arg1:I
 
-    .line 1021
+    .line 1020
     .local v0, bCount:I
     iget v3, p1, Landroid/os/Message;->arg2:I
 
-    .line 1022
+    .line 1021
     .local v3, gCount:I
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -173,7 +173,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 1023
+    .line 1022
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
@@ -183,7 +183,7 @@
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;->notifyDataSetChanged()V
 
-    .line 1025
+    .line 1024
     :cond_1
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -194,7 +194,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 1026
+    .line 1025
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
@@ -204,7 +204,7 @@
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;->notifyDataSetChanged()V
 
-    .line 1028
+    .line 1027
     :cond_2
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -215,12 +215,12 @@
 
     if-eqz v4, :cond_3
 
-    .line 1029
+    .line 1028
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     invoke-virtual {v4, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updateBDTitle(I)V
 
-    .line 1031
+    .line 1030
     :cond_3
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -231,14 +231,14 @@
 
     if-eqz v4, :cond_0
 
-    .line 1032
+    .line 1031
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     invoke-virtual {v4, v3}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updateGZTilte(I)V
 
     goto/16 :goto_0
 
-    .line 1036
+    .line 1035
     .end local v0           #bCount:I
     .end local v3           #gCount:I
     :pswitch_5
@@ -250,7 +250,7 @@
 
     goto/16 :goto_0
 
-    .line 1040
+    .line 1039
     :pswitch_6
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -270,7 +270,7 @@
 
     if-ne v4, v6, :cond_4
 
-    .line 1041
+    .line 1040
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
@@ -280,7 +280,7 @@
 
     if-nez v4, :cond_5
 
-    .line 1042
+    .line 1041
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     new-instance v5, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
@@ -311,7 +311,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
     invoke-static {v4, v5}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$12(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;)V
 
-    .line 1043
+    .line 1042
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
@@ -328,7 +328,7 @@
 
     invoke-virtual {v4, v5}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 1048
+    .line 1047
     :cond_4
     :goto_1
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -340,7 +340,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 1049
+    .line 1048
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -358,7 +358,7 @@
 
     goto/16 :goto_0
 
-    .line 1045
+    .line 1044
     :cond_5
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -378,7 +378,7 @@
 
     goto :goto_1
 
-    .line 1054
+    .line 1053
     :pswitch_7
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -389,7 +389,7 @@
 
     if-eqz v4, :cond_6
 
-    .line 1055
+    .line 1054
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -410,7 +410,7 @@
 
     invoke-virtual {v4, v5}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updateBDTitle(I)V
 
-    .line 1057
+    .line 1056
     :cond_6
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -421,7 +421,7 @@
 
     if-nez v4, :cond_0
 
-    .line 1058
+    .line 1057
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
@@ -431,7 +431,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 1059
+    .line 1058
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
@@ -443,7 +443,7 @@
 
     goto/16 :goto_0
 
-    .line 1064
+    .line 1063
     :pswitch_8
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -465,7 +465,7 @@
 
     if-nez v5, :cond_0
 
-    .line 1067
+    .line 1066
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -483,7 +483,7 @@
 
     move-result v2
 
-    .line 1068
+    .line 1067
     .local v2, conflict:Z
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -504,14 +504,14 @@
 
     goto :goto_2
 
-    .line 1071
+    .line 1070
     .end local v2           #conflict:Z
     :pswitch_9
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 1072
+    .line 1071
     .local v1, bundle:Landroid/os/Bundle;
     const-string/jumbo v4, "target_id"
 
@@ -523,7 +523,7 @@
 
     invoke-virtual {v1, v4, v5}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 
-    .line 1073
+    .line 1072
     const-string/jumbo v4, "pub_name"
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -535,7 +535,7 @@
 
     invoke-virtual {v1, v4, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1074
+    .line 1073
     const-string/jumbo v4, "pub_id"
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -547,7 +547,7 @@
 
     invoke-virtual {v1, v4, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1075
+    .line 1074
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     const-class v5, Lcom/cnlaunch/x431pro/activity/golo/UserDetailFragment;
@@ -560,7 +560,7 @@
 
     goto/16 :goto_0
 
-    .line 1000
+    .line 999
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1

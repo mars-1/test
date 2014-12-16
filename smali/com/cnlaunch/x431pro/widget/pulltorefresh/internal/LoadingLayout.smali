@@ -285,13 +285,13 @@
 
     move-result-object v5
 
-    const v6, 0x7f03016a
+    const v6, 0x7f03016c
 
     invoke-virtual {v5, v6, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     .line 82
     :goto_0
-    const v5, 0x7f0d03fe
+    const v5, 0x7f0c0414
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/internal/LoadingLayout;->findViewById(I)Landroid/view/View;
 
@@ -304,7 +304,7 @@
     .line 83
     iget-object v5, p0, Lcom/cnlaunch/x431pro/widget/pulltorefresh/internal/LoadingLayout;->mInnerLayout:Landroid/widget/FrameLayout;
 
-    const v6, 0x7f0d0401
+    const v6, 0x7f0c0417
 
     invoke-virtual {v5, v6}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -317,7 +317,7 @@
     .line 84
     iget-object v5, p0, Lcom/cnlaunch/x431pro/widget/pulltorefresh/internal/LoadingLayout;->mInnerLayout:Landroid/widget/FrameLayout;
 
-    const v6, 0x7f0d0400
+    const v6, 0x7f0c0416
 
     invoke-virtual {v5, v6}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -330,7 +330,7 @@
     .line 85
     iget-object v5, p0, Lcom/cnlaunch/x431pro/widget/pulltorefresh/internal/LoadingLayout;->mInnerLayout:Landroid/widget/FrameLayout;
 
-    const v6, 0x7f0d0402
+    const v6, 0x7f0c0418
 
     invoke-virtual {v5, v6}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -343,7 +343,7 @@
     .line 86
     iget-object v5, p0, Lcom/cnlaunch/x431pro/widget/pulltorefresh/internal/LoadingLayout;->mInnerLayout:Landroid/widget/FrameLayout;
 
-    const v6, 0x7f0d03ff
+    const v6, 0x7f0c0415
 
     invoke-virtual {v5, v6}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -387,7 +387,7 @@
     iput v5, v3, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
     .line 105
-    const v5, 0x7f0706b8
+    const v5, 0x7f0706ba
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -396,7 +396,7 @@
     iput-object v5, p0, Lcom/cnlaunch/x431pro/widget/pulltorefresh/internal/LoadingLayout;->mPullLabel:Ljava/lang/CharSequence;
 
     .line 106
-    const v5, 0x7f0706ba
+    const v5, 0x7f0706bc
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -405,7 +405,7 @@
     iput-object v5, p0, Lcom/cnlaunch/x431pro/widget/pulltorefresh/internal/LoadingLayout;->mRefreshingLabel:Ljava/lang/CharSequence;
 
     .line 107
-    const v5, 0x7f0706b9
+    const v5, 0x7f0706bb
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -629,7 +629,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f03016a
+    const v6, 0x7f03016c
 
     invoke-virtual {v5, v6, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -648,7 +648,7 @@
     iput v5, v3, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
     .line 95
-    const v5, 0x7f0706bb
+    const v5, 0x7f0706bd
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -657,7 +657,7 @@
     iput-object v5, p0, Lcom/cnlaunch/x431pro/widget/pulltorefresh/internal/LoadingLayout;->mPullLabel:Ljava/lang/CharSequence;
 
     .line 96
-    const v5, 0x7f0706bd
+    const v5, 0x7f0706bf
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -666,7 +666,7 @@
     iput-object v5, p0, Lcom/cnlaunch/x431pro/widget/pulltorefresh/internal/LoadingLayout;->mRefreshingLabel:Ljava/lang/CharSequence;
 
     .line 97
-    const v5, 0x7f0706bc
+    const v5, 0x7f0706be
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

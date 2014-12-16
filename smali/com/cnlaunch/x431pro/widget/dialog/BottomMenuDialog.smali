@@ -33,7 +33,7 @@
 
     .prologue
     .line 43
-    const v0, 0x7f0a0038
+    const v0, 0x7f080038
 
     invoke-direct {p0, p1, v0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
@@ -62,7 +62,7 @@
 
     .prologue
     .line 58
-    const v0, 0x7f0a0038
+    const v0, 0x7f080038
 
     invoke-direct {p0, p1, v0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
@@ -85,7 +85,7 @@
 
     .prologue
     .line 67
-    const v0, 0x7f0a0038
+    const v0, 0x7f080038
 
     invoke-direct {p0, p1, v0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
@@ -146,7 +146,7 @@
 
     .line 115
     .local v0, id:I
-    const v1, 0x7f0d029a
+    const v1, 0x7f0c029e
 
     if-ne v0, v1, :cond_1
 
@@ -167,7 +167,7 @@
 
     .line 121
     :cond_1
-    const v1, 0x7f0d029b
+    const v1, 0x7f0c029f
 
     if-ne v0, v1, :cond_2
 
@@ -185,7 +185,7 @@
 
     .line 127
     :cond_2
-    const v1, 0x7f0d029c
+    const v1, 0x7f0c02a0
 
     if-ne v0, v1, :cond_0
 
@@ -215,7 +215,7 @@
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
     .line 75
-    const v2, 0x7f0300d5
+    const v2, 0x7f0300d6
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/widget/dialog/BottomMenuDialog;->setContentView(I)V
 
@@ -257,7 +257,7 @@
     invoke-virtual {v1, v2, v3}, Landroid/view/Window;->setLayout(II)V
 
     .line 86
-    const v2, 0x7f0d029a
+    const v2, 0x7f0c029e
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/widget/dialog/BottomMenuDialog;->findViewById(I)Landroid/view/View;
 
@@ -268,7 +268,7 @@
     iput-object v2, p0, Lcom/cnlaunch/x431pro/widget/dialog/BottomMenuDialog;->photographBtn:Landroid/widget/Button;
 
     .line 87
-    const v2, 0x7f0d029b
+    const v2, 0x7f0c029f
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/widget/dialog/BottomMenuDialog;->findViewById(I)Landroid/view/View;
 
@@ -279,7 +279,7 @@
     iput-object v2, p0, Lcom/cnlaunch/x431pro/widget/dialog/BottomMenuDialog;->localPhotosBtn:Landroid/widget/Button;
 
     .line 88
-    const v2, 0x7f0d029c
+    const v2, 0x7f0c02a0
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/widget/dialog/BottomMenuDialog;->findViewById(I)Landroid/view/View;
 

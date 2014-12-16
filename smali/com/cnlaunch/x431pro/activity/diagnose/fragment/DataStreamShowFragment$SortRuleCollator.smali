@@ -39,22 +39,22 @@
     .parameter
 
     .prologue
-    .line 695
+    .line 696
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$SortRuleCollator;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 686
+    .line 687
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$SortRuleCollator;->collator:Ljava/text/RuleBasedCollator;
 
-    .line 696
+    .line 697
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v0
 
-    .line 697
+    .line 698
     .local v0, locale:Ljava/util/Locale;
     invoke-virtual {v0}, Ljava/util/Locale;->getCountry()Ljava/lang/String;
 
@@ -68,7 +68,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 698
+    .line 699
     sget-object v1, Ljava/util/Locale;->CHINA:Ljava/util/Locale;
 
     invoke-static {v1}, Ljava/text/Collator;->getInstance(Ljava/util/Locale;)Ljava/text/Collator;
@@ -79,11 +79,11 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$SortRuleCollator;->collator:Ljava/text/RuleBasedCollator;
 
-    .line 702
+    .line 703
     :goto_0
     return-void
 
-    .line 700
+    .line 701
     :cond_0
     invoke-static {v0}, Ljava/text/Collator;->getInstance(Ljava/util/Locale;)Ljava/text/Collator;
 
@@ -104,18 +104,18 @@
     .parameter "rhs"
 
     .prologue
-    .line 690
+    .line 691
     invoke-virtual {p1}, Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;->getTitle()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 691
+    .line 692
     .local v0, strl:Ljava/lang/String;
     invoke-virtual {p2}, Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;->getTitle()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 692
+    .line 693
     .local v1, strr:Ljava/lang/String;
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$SortRuleCollator;->collator:Ljava/text/RuleBasedCollator;
 

@@ -3,8 +3,8 @@
 .source "CloseableListIterator.java"
 
 # interfaces
-.implements Ljava/util/ListIterator;
 .implements Ljava/io/Closeable;
+.implements Ljava/util/ListIterator;
 
 
 # annotations

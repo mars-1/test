@@ -242,9 +242,9 @@
     .prologue
     const/4 v4, 0x0
 
-    const v9, 0x7f0203a7
+    const v9, 0x7f0203ab
 
-    const v8, 0x7f0203a5
+    const v8, 0x7f0203a9
 
     const/4 v7, 0x1
 
@@ -275,14 +275,14 @@
     .restart local v1       #holder:Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter$ViewHolder;
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v3, 0x7f0301ac
+    const v3, 0x7f0301af
 
     invoke-virtual {v2, v3, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
 
     .line 113
-    const v2, 0x7f0d04c6
+    const v2, 0x7f0c04df
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -293,7 +293,7 @@
     iput-object v2, v1, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter$ViewHolder;->tv_name_item:Landroid/widget/TextView;
 
     .line 114
-    const v2, 0x7f0d04c7
+    const v2, 0x7f0c04e0
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -304,7 +304,7 @@
     iput-object v2, v1, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter$ViewHolder;->tv_version_item:Landroid/widget/TextView;
 
     .line 115
-    const v2, 0x7f0d04c8
+    const v2, 0x7f0c04e1
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -315,7 +315,7 @@
     iput-object v2, v1, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter$ViewHolder;->pb_progress_item:Landroid/widget/ProgressBar;
 
     .line 116
-    const v2, 0x7f0d04c9
+    const v2, 0x7f0c04e2
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -417,7 +417,7 @@
     .line 129
     iget-object v2, v1, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter$ViewHolder;->tv_state_item:Landroid/widget/TextView;
 
-    const v3, 0x7f0205dd
+    const v3, 0x7f0205e1
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
@@ -602,7 +602,7 @@
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f07057f
+    const v4, 0x7f070581
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -618,7 +618,7 @@
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f070580
+    const v4, 0x7f070582
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -645,7 +645,7 @@
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f070585
+    const v4, 0x7f070587
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -661,7 +661,7 @@
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f070581
+    const v4, 0x7f070583
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -677,7 +677,7 @@
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f070582
+    const v4, 0x7f070584
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -693,7 +693,7 @@
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f070583
+    const v4, 0x7f070585
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -709,7 +709,7 @@
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f070584
+    const v4, 0x7f070586
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -725,7 +725,7 @@
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f070586
+    const v4, 0x7f070588
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -741,7 +741,7 @@
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f070587
+    const v4, 0x7f070589
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$6;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
-    .line 463
+    .line 466
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,13 +43,13 @@
     .parameter "v"
 
     .prologue
-    .line 466
+    .line 469
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$6;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->regainMainView()V
     invoke-static {v1}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$10(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 468
+    .line 471
     :try_start_0
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$6;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -60,14 +60,14 @@
 
     if-nez v1, :cond_0
 
-    .line 469
+    .line 472
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/Tools;->isUSAProject()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 470
+    .line 473
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$6;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     new-instance v2, Lcom/cnlaunch/x431pro/activity/diagnose/CarIconFragmentForUSA;
@@ -77,7 +77,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->baseFragment:Lcom/cnlaunch/x431pro/activity/BaseFragment;
     invoke-static {v1, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$23(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;Lcom/cnlaunch/x431pro/activity/BaseFragment;)V
 
-    .line 475
+    .line 478
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$6;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
@@ -108,11 +108,11 @@
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->addFragmentStack(Landroid/app/Fragment;Ljava/lang/String;Z)V
 
-    .line 479
+    .line 482
     :goto_1
     return-void
 
-    .line 472
+    .line 475
     :cond_1
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$6;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -127,11 +127,11 @@
 
     goto :goto_0
 
-    .line 476
+    .line 479
     :catch_0
     move-exception v0
 
-    .line 477
+    .line 480
     .local v0, e:Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 

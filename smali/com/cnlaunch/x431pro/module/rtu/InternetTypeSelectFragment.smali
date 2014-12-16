@@ -50,7 +50,7 @@
     .parameter "savedInstanceState"
 
     .prologue
-    const v2, 0x7f07072c
+    const v2, 0x7f07072e
 
     .line 28
     invoke-super {p0, p1, p2, p3}, Lcom/cnlaunch/x431pro/module/rtu/BaseSelectFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
@@ -62,7 +62,7 @@
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/module/rtu/InternetTypeSelectFragment;->setTitle(I)V
 
     .line 30
-    const v1, 0x7f0706fb
+    const v1, 0x7f0706fd
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/module/rtu/InternetTypeSelectFragment;->setMessage(I)V
 

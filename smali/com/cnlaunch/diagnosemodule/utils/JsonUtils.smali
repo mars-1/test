@@ -584,13 +584,7 @@
 
     .line 158
     :cond_d
-    invoke-static {p2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v10
-
-    add-int/lit8 v10, v10, 0x30
-
-    invoke-static {v10}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->intToTwoHexBytes(I)[B
+    invoke-static {p2}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->hexStringToBytes(Ljava/lang/String;)[B
 
     move-result-object v2
 

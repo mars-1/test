@@ -37,7 +37,7 @@
     .parameter
 
     .prologue
-    .line 243
+    .line 244
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment$SortRuleCollator;->this$0:Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,7 +53,7 @@
     .parameter "rhs"
 
     .prologue
-    .line 246
+    .line 247
     invoke-virtual {p1}, Lcom/cnlaunch/x431pro/utils/db/CarVersion;->getVersionNo()Ljava/lang/String;
 
     move-result-object v4
@@ -70,7 +70,7 @@
 
     move-result-wide v0
 
-    .line 247
+    .line 248
     .local v0, doublelhs:D
     invoke-virtual {p2}, Lcom/cnlaunch/x431pro/utils/db/CarVersion;->getVersionNo()Ljava/lang/String;
 
@@ -88,7 +88,7 @@
 
     move-result-wide v2
 
-    .line 248
+    .line 249
     .local v2, doublerhs:D
     cmpl-double v4, v2, v0
 

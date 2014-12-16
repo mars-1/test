@@ -586,7 +586,7 @@
     .line 863
     iget-object v3, p0, Lcom/cnlaunch/x431pro/widget/slidingmenu/CustomViewAbove;->mSelectedView:Landroid/view/View;
 
-    const v4, 0x7f0d0030
+    const v4, 0x7f0c0030
 
     invoke-virtual {v3, v4}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -3518,7 +3518,7 @@
     .prologue
     const/4 v1, 0x0
 
-    const v2, 0x7f0d0030
+    const v2, 0x7f0c0030
 
     .line 881
     iget-object v0, p0, Lcom/cnlaunch/x431pro/widget/slidingmenu/CustomViewAbove;->mSelectedView:Landroid/view/View;

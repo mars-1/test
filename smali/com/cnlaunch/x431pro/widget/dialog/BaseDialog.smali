@@ -83,12 +83,12 @@
     invoke-virtual {v1, v2}, Landroid/content/Context;->setTheme(I)V
 
     .line 72
-    const v1, 0x7f0300d4
+    const v1, 0x7f0300d5
 
     invoke-super {p0, v1}, Landroid/app/Dialog;->setContentView(I)V
 
     .line 74
-    const v1, 0x7f0d004d
+    const v1, 0x7f0c004d
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->findViewById(I)Landroid/view/View;
 
@@ -99,7 +99,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->tvTitle:Landroid/widget/TextView;
 
     .line 76
-    const v1, 0x7f0d0070
+    const v1, 0x7f0c0070
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->findViewById(I)Landroid/view/View;
 
@@ -110,7 +110,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->mContentCustom:Landroid/widget/FrameLayout;
 
     .line 78
-    const v1, 0x7f0d0297
+    const v1, 0x7f0c029b
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->findViewById(I)Landroid/view/View;
 
@@ -121,7 +121,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->mContentMessage:Landroid/widget/TextView;
 
     .line 80
-    const v1, 0x7f0d0295
+    const v1, 0x7f0c0299
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->findViewById(I)Landroid/view/View;
 
@@ -130,7 +130,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->mMessagePanle:Landroid/view/View;
 
     .line 82
-    const v1, 0x7f0d007e
+    const v1, 0x7f0c007e
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->findViewById(I)Landroid/view/View;
 
@@ -141,7 +141,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->btnAlpha:Landroid/widget/Button;
 
     .line 83
-    const v1, 0x7f0d0298
+    const v1, 0x7f0c029c
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->findViewById(I)Landroid/view/View;
 
@@ -152,7 +152,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->btnBeta:Landroid/widget/Button;
 
     .line 84
-    const v1, 0x7f0d0299
+    const v1, 0x7f0c029d
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->findViewById(I)Landroid/view/View;
 
@@ -342,9 +342,9 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f0d007e -> :sswitch_0
-        0x7f0d0298 -> :sswitch_1
-        0x7f0d0299 -> :sswitch_2
+        0x7f0c007e -> :sswitch_0
+        0x7f0c029c -> :sswitch_1
+        0x7f0c029d -> :sswitch_2
     .end sparse-switch
 .end method
 
@@ -509,7 +509,7 @@
 
     .prologue
     .line 139
-    const v0, 0x7f0d004e
+    const v0, 0x7f0c004e
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->findViewById(I)Landroid/view/View;
 
@@ -528,7 +528,7 @@
     .parameter "button"
 
     .prologue
-    const v1, 0x7f020519
+    const v1, 0x7f02051d
 
     .line 384
     const/4 v0, 0x1

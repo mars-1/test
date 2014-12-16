@@ -91,7 +91,7 @@
     const/4 v3, 0x0
 
     .line 47
-    const v0, 0x7f0705eb
+    const v0, 0x7f070723
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/setting/OrientationSetting;->setTitle(I)V
 
@@ -102,7 +102,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -115,7 +115,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d047a
+    const v1, 0x7f0c0498
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -135,7 +135,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d047b
+    const v1, 0x7f0c0499
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -155,7 +155,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0479
+    const v1, 0x7f0c0497
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -175,7 +175,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d047c
+    const v1, 0x7f0c049a
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -429,9 +429,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f0704fa
+    const v2, 0x7f0704fc
 
-    const v3, 0x7f070724
+    const v3, 0x7f070726
 
     invoke-virtual {v0, v1, v2, v3, v4}, Lcom/cnlaunch/x431pro/activity/setting/OrientationSetting$2;->showDialog(Landroid/content/Context;IIZ)V
 
@@ -441,7 +441,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0d0479
+    .packed-switch 0x7f0c0497
         :pswitch_2
         :pswitch_0
         :pswitch_1
@@ -457,7 +457,7 @@
 
     .prologue
     .line 43
-    const v0, 0x7f030188
+    const v0, 0x7f03018b
 
     const/4 v1, 0x0
 

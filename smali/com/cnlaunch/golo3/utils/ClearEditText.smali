@@ -3,8 +3,8 @@
 .source "ClearEditText.java"
 
 # interfaces
-.implements Landroid/view/View$OnFocusChangeListener;
 .implements Landroid/text/TextWatcher;
+.implements Landroid/view/View$OnFocusChangeListener;
 
 
 # instance fields

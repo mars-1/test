@@ -3,9 +3,9 @@
 .source "DashoA13*.."
 
 # interfaces
+.implements Ljava/io/Serializable;
 .implements Ljava/security/PublicKey;
 .implements Ljavax/crypto/interfaces/DHPublicKey;
-.implements Ljava/io/Serializable;
 
 
 # static fields

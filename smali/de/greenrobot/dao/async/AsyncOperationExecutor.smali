@@ -3,8 +3,8 @@
 .source "AsyncOperationExecutor.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
 .implements Landroid/os/Handler$Callback;
+.implements Ljava/lang/Runnable;
 
 
 # annotations

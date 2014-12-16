@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity$1;->this$0:Lcom/cnlaunch/x431pro/activity/login/LoginActivity;
 
-    .line 70
+    .line 71
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
@@ -40,20 +40,20 @@
     .parameter "msg"
 
     .prologue
-    .line 73
+    .line 74
     iget v1, p1, Landroid/os/Message;->what:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 82
+    .line 83
     :goto_0
     return-void
 
-    .line 75
+    .line 76
     :pswitch_0
     iget v0, p1, Landroid/os/Message;->arg1:I
 
-    .line 76
+    .line 77
     .local v0, loginResult:I
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity$1;->this$0:Lcom/cnlaunch/x431pro/activity/login/LoginActivity;
 
@@ -62,7 +62,7 @@
 
     goto :goto_0
 
-    .line 79
+    .line 80
     .end local v0           #loginResult:I
     :pswitch_1
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity$1;->this$0:Lcom/cnlaunch/x431pro/activity/login/LoginActivity;
@@ -71,7 +71,7 @@
 
     goto :goto_0
 
-    .line 73
+    .line 74
     :pswitch_data_0
     .packed-switch 0x7b
         :pswitch_0

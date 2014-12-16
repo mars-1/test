@@ -15,8 +15,11 @@
         </LinearLayout>
     </LinearLayout>
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_btn_layout" android:layout_below="@id/head_title">
-        <GridView android:id="@id/grid_specia_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="2" />
-        <View android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="1.0dip" />
-        <GridView android:id="@id/grid_specia_value" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="3.0dip" android:verticalSpacing="10.0dip" android:numColumns="2" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/specia_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <ListView android:id="@id/specia_value" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <GridView android:id="@id/grid_specia_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="2" />
+        <View android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <GridView android:id="@id/grid_specia_value" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="3.0dip" android:verticalSpacing="10.0dip" android:numColumns="2" android:layout_weight="1.0" />
     </LinearLayout>
 </RelativeLayout>

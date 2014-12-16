@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
-    .line 519
+    .line 522
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -51,12 +51,12 @@
 
     const/4 v8, 0x1
 
-    .line 523
+    .line 526
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 524
+    .line 527
     .local v0, action:Ljava/lang/String;
     const-string/jumbo v4, "Sanda"
 
@@ -80,7 +80,7 @@
 
     invoke-static {v4, v5}, Lcom/cnlaunch/framework/utils/NLog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 525
+    .line 528
     const-string/jumbo v4, "com.cnlaunch.pro.InitClientMessager"
 
     invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -89,12 +89,12 @@
 
     if-eqz v4, :cond_1
 
-    .line 527
+    .line 530
     invoke-static {v11, v9}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
 
     move-result-object v2
 
-    .line 528
+    .line 531
     .local v2, message:Landroid/os/Message;
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -105,19 +105,19 @@
 
     iput-object v4, v2, Landroid/os/Message;->replyTo:Landroid/os/Messenger;
 
-    .line 529
+    .line 532
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->sendServerMessage(Landroid/os/Message;)V
     invoke-static {v4, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$8(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;Landroid/os/Message;)V
 
-    .line 648
+    .line 651
     .end local v2           #message:Landroid/os/Message;
     :cond_0
     :goto_0
     return-void
 
-    .line 530
+    .line 533
     :cond_1
     const-string/jumbo v4, "com.cnlaunch.diagnose.exit"
 
@@ -127,7 +127,7 @@
 
     if-eqz v4, :cond_4
 
-    .line 531
+    .line 534
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
@@ -140,7 +140,7 @@
 
     if-ge v4, v10, :cond_2
 
-    .line 532
+    .line 535
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mRemoteDiagHandler:Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;
@@ -154,7 +154,7 @@
 
     goto :goto_0
 
-    .line 535
+    .line 538
     :cond_2
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/Tools;->isUSAProject()Z
 
@@ -162,41 +162,41 @@
 
     if-eqz v4, :cond_3
 
-    .line 536
+    .line 539
     sget-boolean v4, Lcom/cnlaunch/x431pro/common/Constants;->FactoryPattern:Z
 
     if-nez v4, :cond_3
 
-    .line 537
+    .line 540
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->tryDiagTime()V
     invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$9(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 538
+    .line 541
     sput-boolean v9, Lcom/cnlaunch/x431pro/common/Constants;->StartDiagFlag:Z
 
-    .line 541
+    .line 544
     :cond_3
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->regainMainView()V
     invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$10(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 542
+    .line 545
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->doOnExitDiagnose()V
     invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$11(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 543
+    .line 546
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->disconnectBluetooth()V
 
     goto :goto_0
 
-    .line 545
+    .line 548
     :cond_4
     const-string/jumbo v4, "com.cnlaunch.diagnose.err"
 
@@ -206,7 +206,7 @@
 
     if-eqz v4, :cond_6
 
-    .line 547
+    .line 550
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mDiagnoseUIDataBusiness:Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;
@@ -218,7 +218,7 @@
 
     invoke-virtual {v4, v5, v8}, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;->closeAlertDialog(Ljava/lang/String;Z)V
 
-    .line 548
+    .line 551
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
@@ -231,33 +231,33 @@
 
     if-eqz v4, :cond_5
 
-    .line 549
+    .line 552
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->exitDiagDialog()V
     invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$12(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 550
+    .line 553
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->unbindDiagnoseServer()V
     invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$13(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 552
+    .line 555
     :cond_5
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->regainMainView()V
     invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$10(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 553
+    .line 556
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->disconnectBluetooth()V
 
     goto :goto_0
 
-    .line 554
+    .line 557
     :cond_6
     const-string/jumbo v4, "android.bluetooth.device.action.ACL_DISCONNECTED"
 
@@ -267,7 +267,7 @@
 
     if-eqz v4, :cond_9
 
-    .line 555
+    .line 558
     const-string/jumbo v4, "DiagnoseActivity"
 
     new-array v5, v8, [Ljava/lang/Object;
@@ -278,14 +278,14 @@
 
     invoke-static {v4, v5}, Lcom/cnlaunch/framework/utils/NLog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 556
+    .line 559
     invoke-static {}, Lcom/cnlaunch/x431pro/activity/MainActivity;->isDiagFlag()Z
 
     move-result v4
 
     if-eqz v4, :cond_7
 
-    .line 557
+    .line 560
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mDiagnoseUIDataBusiness:Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;
@@ -297,7 +297,7 @@
 
     invoke-virtual {v4, v5, v8}, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;->closeAlertDialog(Ljava/lang/String;Z)V
 
-    .line 559
+    .line 562
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
@@ -328,26 +328,26 @@
 
     if-eq v4, v8, :cond_0
 
-    .line 562
+    .line 565
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->exitDiagDialog()V
     invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$12(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 563
+    .line 566
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->unbindDiagnoseServer()V
     invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$13(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 564
+    .line 567
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->disconnectBluetooth()V
 
     goto/16 :goto_0
 
-    .line 566
+    .line 569
     :cond_7
     invoke-static {}, Lcom/cnlaunch/physics/bluetooth/BluetoothManager;->getInstance()Lcom/cnlaunch/physics/bluetooth/BluetoothManager;
 
@@ -359,7 +359,7 @@
 
     if-eqz v4, :cond_8
 
-    .line 567
+    .line 570
     const-string/jumbo v4, "DiagnoseActivity"
 
     new-array v5, v8, [Ljava/lang/Object;
@@ -372,13 +372,13 @@
 
     goto/16 :goto_0
 
-    .line 570
+    .line 573
     :cond_8
     sget-boolean v4, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->driviceConnStatus:Z
 
     if-eqz v4, :cond_0
 
-    .line 571
+    .line 574
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mDiagnoseUIDataBusiness:Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;
@@ -390,18 +390,18 @@
 
     invoke-virtual {v4, v5, v8}, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;->closeAlertDialog(Ljava/lang/String;Z)V
 
-    .line 572
+    .line 575
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->disconnectBluetooth()V
 
-    .line 573
+    .line 576
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->exitDiagDialog()V
     invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$12(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 574
+    .line 577
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->unbindDiagnoseServer()V
@@ -409,7 +409,7 @@
 
     goto/16 :goto_0
 
-    .line 580
+    .line 583
     :cond_9
     const-string/jumbo v4, "LaunchRemoteDiag"
 
@@ -419,7 +419,7 @@
 
     if-eqz v4, :cond_b
 
-    .line 581
+    .line 584
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->isRemoteDiagnoseConnected:Z
@@ -429,7 +429,7 @@
 
     if-eqz v4, :cond_a
 
-    .line 582
+    .line 585
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mContext:Landroid/content/Context;
@@ -437,7 +437,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f070702
+    const v5, 0x7f070704
 
     const/16 v6, 0x11
 
@@ -445,14 +445,14 @@
 
     goto/16 :goto_0
 
-    .line 585
+    .line 588
     :cond_a
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #setter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->isRemoteDiagnoseConnected:Z
     invoke-static {v4, v8}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$15(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;Z)V
 
-    .line 587
+    .line 590
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     const-string/jumbo v4, "RemoteDiagInfo"
@@ -466,7 +466,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->remoteDiagInfo:Lcom/cnlaunch/x431pro/module/diagnose/model/RemoteDiagRunningInfo;
     invoke-static {v5, v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$16(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;Lcom/cnlaunch/x431pro/module/diagnose/model/RemoteDiagRunningInfo;)V
 
-    .line 588
+    .line 591
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->remoteDiagInfo:Lcom/cnlaunch/x431pro/module/diagnose/model/RemoteDiagRunningInfo;
@@ -484,7 +484,7 @@
 
     invoke-virtual {v4, v5}, Lcom/cnlaunch/x431pro/module/diagnose/model/RemoteDiagRunningInfo;->setLan(Ljava/lang/String;)V
 
-    .line 589
+    .line 592
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->remoteDiagInfo:Lcom/cnlaunch/x431pro/module/diagnose/model/RemoteDiagRunningInfo;
@@ -511,14 +511,14 @@
 
     invoke-virtual {v4, v5}, Lcom/cnlaunch/x431pro/module/diagnose/model/RemoteDiagRunningInfo;->setUserID(Ljava/lang/String;)V
 
-    .line 590
+    .line 593
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v4, v8}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->launchRemoteDiag(I)V
 
     goto/16 :goto_0
 
-    .line 591
+    .line 594
     :cond_b
     const-string/jumbo v4, "StopRemotoDiagnose"
 
@@ -528,7 +528,7 @@
 
     if-eqz v4, :cond_e
 
-    .line 592
+    .line 595
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
@@ -541,7 +541,7 @@
 
     if-ge v4, v10, :cond_c
 
-    .line 593
+    .line 596
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mRemoteDiagHandler:Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;
@@ -557,7 +557,7 @@
 
     if-ge v4, v5, :cond_0
 
-    .line 594
+    .line 597
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mRemoteDiagHandler:Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;
@@ -567,26 +567,26 @@
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->dimissAllDialog()V
 
-    .line 595
+    .line 598
     invoke-static {v11, v12}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
 
     move-result-object v3
 
-    .line 596
+    .line 599
     .local v3, msg:Landroid/os/Message;
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->sendServerMessage(Landroid/os/Message;)V
     invoke-static {v4, v3}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$8(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;Landroid/os/Message;)V
 
-    .line 597
+    .line 600
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v4, v8}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->exitDiagnoseRunning(I)V
 
     goto/16 :goto_0
 
-    .line 600
+    .line 603
     .end local v3           #msg:Landroid/os/Message;
     :cond_c
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/Tools;->isUSAProject()Z
@@ -595,21 +595,21 @@
 
     if-eqz v4, :cond_d
 
-    .line 601
+    .line 604
     sget-boolean v4, Lcom/cnlaunch/x431pro/common/Constants;->FactoryPattern:Z
 
     if-nez v4, :cond_d
 
-    .line 602
+    .line 605
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->tryDiagTime()V
     invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$9(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 603
+    .line 606
     sput-boolean v9, Lcom/cnlaunch/x431pro/common/Constants;->StartDiagFlag:Z
 
-    .line 606
+    .line 609
     :cond_d
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -618,7 +618,7 @@
 
     goto/16 :goto_0
 
-    .line 608
+    .line 611
     :cond_e
     const-string/jumbo v4, "BluetoothBackgroundConnectSuccess"
 
@@ -628,7 +628,7 @@
 
     if-eqz v4, :cond_f
 
-    .line 609
+    .line 612
     const-string/jumbo v4, "isFix"
 
     invoke-virtual {p2, v4, v9}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
@@ -637,10 +637,10 @@
 
     if-nez v4, :cond_0
 
-    .line 611
+    .line 614
     sput-boolean v8, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->driviceConnStatus:Z
 
-    .line 612
+    .line 615
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mBluetoothConnectWaitDialog:Lcom/cnlaunch/x431pro/activity/diagnose/view/DiagnoseWaitDialog;
@@ -652,7 +652,7 @@
 
     goto/16 :goto_0
 
-    .line 615
+    .line 618
     :cond_f
     const-string/jumbo v4, "BluetoothBackgroundConnectFail"
 
@@ -662,7 +662,7 @@
 
     if-eqz v4, :cond_10
 
-    .line 616
+    .line 619
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mBluetoothConnectWaitDialog:Lcom/cnlaunch/x431pro/activity/diagnose/view/DiagnoseWaitDialog;
@@ -672,7 +672,7 @@
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/view/DiagnoseWaitDialog;->hide()V
 
-    .line 617
+    .line 620
     invoke-static {}, Lcom/cnlaunch/physics/bluetooth/BluetoothManager;->getInstance()Lcom/cnlaunch/physics/bluetooth/BluetoothManager;
 
     move-result-object v4
@@ -683,12 +683,12 @@
 
     if-eqz v4, :cond_0
 
-    .line 618
+    .line 621
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 619
+    .line 622
     .local v1, bluetoothActivityStartIntent:Landroid/content/Intent;
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -701,21 +701,21 @@
 
     invoke-virtual {v1, v4, v5}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 620
+    .line 623
     const-string/jumbo v4, "Lib_path"
 
     sget-object v5, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->DIAGNOSE_LIB_PATH:Ljava/lang/String;
 
     invoke-virtual {v1, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 621
+    .line 624
     const-string/jumbo v4, "Lib_language"
 
     sget-object v5, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->DIAGNOSE_LANGUAGE:Ljava/lang/String;
 
     invoke-virtual {v1, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 622
+    .line 625
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mContext:Landroid/content/Context;
@@ -727,7 +727,7 @@
 
     goto/16 :goto_0
 
-    .line 624
+    .line 627
     .end local v1           #bluetoothActivityStartIntent:Landroid/content/Intent;
     :cond_10
     const-string/jumbo v4, "screen_change"
@@ -738,7 +738,7 @@
 
     if-eqz v4, :cond_11
 
-    .line 625
+    .line 628
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->refrshGridViewColumns()V
@@ -746,7 +746,7 @@
 
     goto/16 :goto_0
 
-    .line 626
+    .line 629
     :cond_11
     const-string/jumbo v4, "JumpDownloadBin"
 
@@ -756,7 +756,7 @@
 
     if-eqz v4, :cond_12
 
-    .line 627
+    .line 630
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     sget-object v5, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->DIAGNOSE_LIB_PATH:Ljava/lang/String;
@@ -767,7 +767,7 @@
 
     goto/16 :goto_0
 
-    .line 628
+    .line 631
     :cond_12
     const-string/jumbo v4, "NativeMethodNoFind"
 
@@ -777,7 +777,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 630
+    .line 633
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mDiagnoseUIDataBusiness:Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;
@@ -787,7 +787,7 @@
 
     if-eqz v4, :cond_13
 
-    .line 631
+    .line 634
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mDiagnoseUIDataBusiness:Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;
@@ -799,7 +799,7 @@
 
     invoke-virtual {v4, v5, v8}, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;->closeAlertDialog(Ljava/lang/String;Z)V
 
-    .line 633
+    .line 636
     :cond_13
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -813,7 +813,7 @@
 
     if-ge v4, v10, :cond_14
 
-    .line 634
+    .line 637
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mRemoteDiagHandler:Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;
@@ -823,26 +823,26 @@
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->dimissAllDialog()V
 
-    .line 635
+    .line 638
     invoke-static {v11, v12}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
 
     move-result-object v3
 
-    .line 636
+    .line 639
     .restart local v3       #msg:Landroid/os/Message;
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->sendServerMessage(Landroid/os/Message;)V
     invoke-static {v4, v3}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$8(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;Landroid/os/Message;)V
 
-    .line 637
+    .line 640
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v4, v8}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->exitDiagnoseRunning(I)V
 
     goto/16 :goto_0
 
-    .line 639
+    .line 642
     .end local v3           #msg:Landroid/os/Message;
     :cond_14
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/Tools;->isUSAProject()Z
@@ -851,21 +851,21 @@
 
     if-eqz v4, :cond_15
 
-    .line 640
+    .line 643
     sget-boolean v4, Lcom/cnlaunch/x431pro/common/Constants;->FactoryPattern:Z
 
     if-nez v4, :cond_15
 
-    .line 641
+    .line 644
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->tryDiagTime()V
     invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$9(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 642
+    .line 645
     sput-boolean v9, Lcom/cnlaunch/x431pro/common/Constants;->StartDiagFlag:Z
 
-    .line 645
+    .line 648
     :cond_15
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 

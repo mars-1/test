@@ -7,14 +7,6 @@
 .implements Landroid/view/View$OnFocusChangeListener;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/cnlaunch/x431pro/activity/login/RegistActivity$RegisterTextWatcher;
-    }
-.end annotation
-
-
 # static fields
 .field private static final REQUEST_COUNTRYINFO_CODE:I = 0x1
 
@@ -291,49 +283,49 @@
 
     const/4 v4, 0x0
 
-    .line 691
+    .line 670
     sparse-switch p1, :sswitch_data_0
 
-    .line 709
+    .line 688
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f070676
+    const v3, 0x7f070678
 
     invoke-static {v2, v3}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
-    .line 712
+    .line 691
     :goto_0
     return-void
 
-    .line 693
+    .line 672
     :sswitch_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_username:Landroid/widget/CheckBox;
 
     invoke-direct {p0, v2, v4, v4}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
-    .line 694
+    .line 673
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
     invoke-virtual {v2, v5}, Landroid/widget/EditText;->setFocusableInTouchMode(Z)V
 
-    .line 695
+    .line 674
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->requestFocusFromTouch()Z
 
-    .line 696
+    .line 675
     new-array v0, v3, [I
 
-    .line 697
+    .line 676
     .local v0, location:[I
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->getLocationOnScreen([I)V
 
-    .line 698
+    .line 677
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f070671
+    const v3, 0x7f070673
 
     aget v4, v0, v4
 
@@ -345,36 +337,36 @@
 
     goto :goto_0
 
-    .line 701
+    .line 680
     .end local v0           #location:[I
     :sswitch_1
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_username:Landroid/widget/CheckBox;
 
     invoke-direct {p0, v2, v4, v4}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
-    .line 702
+    .line 681
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
     invoke-virtual {v2, v5}, Landroid/widget/EditText;->setFocusableInTouchMode(Z)V
 
-    .line 703
+    .line 682
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->requestFocusFromTouch()Z
 
-    .line 704
+    .line 683
     new-array v1, v3, [I
 
-    .line 705
+    .line 684
     .local v1, location2:[I
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
     invoke-virtual {v2, v1}, Landroid/widget/EditText;->getLocationOnScreen([I)V
 
-    .line 706
+    .line 685
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f070672
+    const v3, 0x7f070674
 
     aget v4, v1, v4
 
@@ -386,7 +378,7 @@
 
     goto :goto_0
 
-    .line 691
+    .line 670
     nop
 
     :sswitch_data_0
@@ -401,43 +393,23 @@
     .parameter "code"
 
     .prologue
-    .line 667
+    .line 646
     sparse-switch p1, :sswitch_data_0
 
-    .line 685
+    .line 664
     :goto_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f070683
+    const v1, 0x7f070685
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
-    .line 688
+    .line 667
     :goto_1
     return-void
 
-    .line 669
+    .line 648
     :sswitch_0
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
-
-    const v1, 0x7f070678
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
-
-    goto :goto_1
-
-    .line 672
-    :sswitch_1
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
-
-    const v1, 0x7f070679
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
-
-    goto :goto_1
-
-    .line 675
-    :sswitch_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     const v1, 0x7f07067a
@@ -446,8 +418,8 @@
 
     goto :goto_1
 
-    .line 678
-    :sswitch_3
+    .line 651
+    :sswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     const v1, 0x7f07067b
@@ -456,17 +428,37 @@
 
     goto :goto_1
 
-    .line 683
-    :sswitch_4
+    .line 654
+    :sswitch_2
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
+
+    const v1, 0x7f07067c
+
+    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
+
+    goto :goto_1
+
+    .line 657
+    :sswitch_3
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     const v1, 0x7f07067d
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
+    goto :goto_1
+
+    .line 662
+    :sswitch_4
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
+
+    const v1, 0x7f07067f
+
+    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
+
     goto :goto_0
 
-    .line 667
+    .line 646
     nop
 
     :sswitch_data_0
@@ -565,7 +557,7 @@
     .parameter
 
     .prologue
-    .line 1089
+    .line 1068
     invoke-direct {p0, p1, p2, p3}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
     return-void
@@ -922,136 +914,132 @@
 .end method
 
 .method private getModelClassMember(Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/user/model/Country;
-    .locals 9
+    .locals 8
     .parameter "filePath"
 
     .prologue
-    .line 1132
+    .line 1105
     new-instance v0, Lcom/cnlaunch/x431pro/module/user/model/Country;
 
     invoke-direct {v0}, Lcom/cnlaunch/x431pro/module/user/model/Country;-><init>()V
 
-    .line 1133
+    .line 1106
     .local v0, country:Lcom/cnlaunch/x431pro/module/user/model/Country;
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
-    .line 1135
-    .local v5, reader:Ljava/io/BufferedReader;
+    .line 1108
+    .local v4, reader:Ljava/io/BufferedReader;
     :try_start_0
-    new-instance v6, Ljava/io/BufferedReader;
+    new-instance v5, Ljava/io/BufferedReader;
 
-    new-instance v7, Ljava/io/FileReader;
+    new-instance v6, Ljava/io/FileReader;
 
-    invoke-direct {v7, p1}, Ljava/io/FileReader;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, p1}, Ljava/io/FileReader;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {v6, v7}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+    invoke-direct {v5, v6}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_a
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_4
 
-    .line 1136
-    .end local v5           #reader:Ljava/io/BufferedReader;
-    .local v6, reader:Ljava/io/BufferedReader;
-    const/4 v3, 0x0
+    .line 1109
+    .end local v4           #reader:Ljava/io/BufferedReader;
+    .local v5, reader:Ljava/io/BufferedReader;
+    const/4 v2, 0x0
 
-    .line 1137
-    .local v3, line:Ljava/lang/String;
+    .line 1110
+    .local v2, line:Ljava/lang/String;
     :cond_0
     :goto_0
     :try_start_1
-    invoke-virtual {v6}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
     .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_9
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_8
 
-    move-result-object v3
+    move-result-object v2
 
-    if-nez v3, :cond_2
+    if-nez v2, :cond_2
 
-    .line 1154
-    if-eqz v6, :cond_4
+    .line 1126
+    if-eqz v5, :cond_4
 
-    .line 1156
+    .line 1128
     :try_start_2
-    invoke-virtual {v6}, Ljava/io/BufferedReader;->close()V
+    invoke-virtual {v5}, Ljava/io/BufferedReader;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_7
 
-    move-object v5, v6
+    move-object v4, v5
 
-    .line 1162
-    .end local v3           #line:Ljava/lang/String;
-    .end local v6           #reader:Ljava/io/BufferedReader;
-    .restart local v5       #reader:Ljava/io/BufferedReader;
+    .line 1134
+    .end local v2           #line:Ljava/lang/String;
+    .end local v5           #reader:Ljava/io/BufferedReader;
+    .restart local v4       #reader:Ljava/io/BufferedReader;
     :cond_1
     :goto_1
     return-object v0
 
-    .line 1138
-    .end local v5           #reader:Ljava/io/BufferedReader;
-    .restart local v3       #line:Ljava/lang/String;
-    .restart local v6       #reader:Ljava/io/BufferedReader;
+    .line 1111
+    .end local v4           #reader:Ljava/io/BufferedReader;
+    .restart local v2       #line:Ljava/lang/String;
+    .restart local v5       #reader:Ljava/io/BufferedReader;
     :cond_2
     :try_start_3
-    const-string/jumbo v7, "\\|"
+    const-string/jumbo v6, "\\|"
 
-    invoke-virtual {v3, v7}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v2, v6}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v3
 
-    .line 1139
-    .local v4, members:[Ljava/lang/String;
-    array-length v2, v4
+    .line 1112
+    .local v3, members:[Ljava/lang/String;
+    if-eqz v3, :cond_0
 
-    .line 1140
-    .local v2, l:I
-    if-eqz v4, :cond_0
+    array-length v6, v3
 
-    array-length v7, v4
+    const/4 v7, 0x4
 
-    const/4 v8, 0x4
+    if-ne v6, v7, :cond_0
 
-    if-ne v7, v8, :cond_0
+    .line 1113
+    const/4 v6, 0x0
 
-    .line 1141
-    const/4 v7, 0x0
+    aget-object v6, v3, v6
 
-    aget-object v7, v4, v7
+    invoke-virtual {v0, v6}, Lcom/cnlaunch/x431pro/module/user/model/Country;->setDisplay(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v7}, Lcom/cnlaunch/x431pro/module/user/model/Country;->setDisplay(Ljava/lang/String;)V
+    .line 1114
+    const/4 v6, 0x1
 
-    .line 1142
-    const/4 v7, 0x1
+    aget-object v6, v3, v6
 
-    aget-object v7, v4, v7
+    invoke-virtual {v0, v6}, Lcom/cnlaunch/x431pro/module/user/model/Country;->setNcode(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v7}, Lcom/cnlaunch/x431pro/module/user/model/Country;->setNcode(Ljava/lang/String;)V
+    .line 1115
+    const/4 v6, 0x2
 
-    .line 1143
-    const/4 v7, 0x2
+    aget-object v6, v3, v6
 
-    aget-object v7, v4, v7
+    invoke-static {v6}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    invoke-static {v7}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    move-result v6
 
-    move-result v7
+    invoke-virtual {v0, v6}, Lcom/cnlaunch/x431pro/module/user/model/Country;->setIs_sms(I)V
 
-    invoke-virtual {v0, v7}, Lcom/cnlaunch/x431pro/module/user/model/Country;->setIs_sms(I)V
+    .line 1116
+    const/4 v6, 0x3
 
-    .line 1144
-    const/4 v7, 0x3
+    aget-object v6, v3, v6
 
-    aget-object v7, v4, v7
+    invoke-static {v6}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    invoke-static {v7}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    move-result v6
 
-    move-result v7
-
-    invoke-virtual {v0, v7}, Lcom/cnlaunch/x431pro/module/user/model/Country;->setPre_code(I)V
+    invoke-virtual {v0, v6}, Lcom/cnlaunch/x431pro/module/user/model/Country;->setPre_code(I)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
     .catch Ljava/io/FileNotFoundException; {:try_start_3 .. :try_end_3} :catch_0
@@ -1060,52 +1048,51 @@
 
     goto :goto_0
 
-    .line 1147
-    .end local v2           #l:I
-    .end local v4           #members:[Ljava/lang/String;
+    .line 1119
+    .end local v3           #members:[Ljava/lang/String;
     :catch_0
     move-exception v1
 
-    move-object v5, v6
+    move-object v4, v5
 
-    .line 1148
-    .end local v3           #line:Ljava/lang/String;
-    .end local v6           #reader:Ljava/io/BufferedReader;
+    .line 1120
+    .end local v2           #line:Ljava/lang/String;
+    .end local v5           #reader:Ljava/io/BufferedReader;
     .local v1, e:Ljava/io/FileNotFoundException;
-    .restart local v5       #reader:Ljava/io/BufferedReader;
+    .restart local v4       #reader:Ljava/io/BufferedReader;
     :goto_2
     :try_start_4
     invoke-static {v1}, Lcom/cnlaunch/framework/utils/NLog;->e(Ljava/lang/Throwable;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 1154
-    if-eqz v5, :cond_1
+    .line 1126
+    if-eqz v4, :cond_1
 
-    .line 1156
+    .line 1128
     :try_start_5
-    invoke-virtual {v5}, Ljava/io/BufferedReader;->close()V
+    invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_1
 
     goto :goto_1
 
-    .line 1157
+    .line 1129
     :catch_1
     move-exception v1
 
-    .line 1158
+    .line 1130
     .local v1, e:Ljava/io/IOException;
     invoke-static {v1}, Lcom/cnlaunch/framework/utils/NLog;->e(Ljava/lang/Throwable;)V
 
     goto :goto_1
 
-    .line 1149
+    .line 1121
     .end local v1           #e:Ljava/io/IOException;
     :catch_2
     move-exception v1
 
-    .line 1150
+    .line 1122
     .restart local v1       #e:Ljava/io/IOException;
     :goto_3
     :try_start_6
@@ -1113,32 +1100,32 @@
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
-    .line 1154
-    if-eqz v5, :cond_1
+    .line 1126
+    if-eqz v4, :cond_1
 
-    .line 1156
+    .line 1128
     :try_start_7
-    invoke-virtual {v5}, Ljava/io/BufferedReader;->close()V
+    invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
     :try_end_7
     .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_3
 
     goto :goto_1
 
-    .line 1157
+    .line 1129
     :catch_3
     move-exception v1
 
-    .line 1158
+    .line 1130
     invoke-static {v1}, Lcom/cnlaunch/framework/utils/NLog;->e(Ljava/lang/Throwable;)V
 
     goto :goto_1
 
-    .line 1151
+    .line 1123
     .end local v1           #e:Ljava/io/IOException;
     :catch_4
     move-exception v1
 
-    .line 1152
+    .line 1124
     .local v1, e:Ljava/lang/Exception;
     :goto_4
     :try_start_8
@@ -1146,115 +1133,115 @@
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
-    .line 1154
-    if-eqz v5, :cond_1
+    .line 1126
+    if-eqz v4, :cond_1
 
-    .line 1156
+    .line 1128
     :try_start_9
-    invoke-virtual {v5}, Ljava/io/BufferedReader;->close()V
+    invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
     :try_end_9
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_5
 
     goto :goto_1
 
-    .line 1157
+    .line 1129
     :catch_5
     move-exception v1
 
-    .line 1158
+    .line 1130
     .local v1, e:Ljava/io/IOException;
     invoke-static {v1}, Lcom/cnlaunch/framework/utils/NLog;->e(Ljava/lang/Throwable;)V
 
     goto :goto_1
 
-    .line 1153
+    .line 1125
     .end local v1           #e:Ljava/io/IOException;
     :catchall_0
-    move-exception v7
+    move-exception v6
 
-    .line 1154
+    .line 1126
     :goto_5
-    if-eqz v5, :cond_3
+    if-eqz v4, :cond_3
 
-    .line 1156
+    .line 1128
     :try_start_a
-    invoke-virtual {v5}, Ljava/io/BufferedReader;->close()V
+    invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
     :try_end_a
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_6
 
-    .line 1161
+    .line 1133
     :cond_3
     :goto_6
-    throw v7
+    throw v6
 
-    .line 1157
+    .line 1129
     :catch_6
     move-exception v1
 
-    .line 1158
+    .line 1130
     .restart local v1       #e:Ljava/io/IOException;
     invoke-static {v1}, Lcom/cnlaunch/framework/utils/NLog;->e(Ljava/lang/Throwable;)V
 
     goto :goto_6
 
-    .line 1157
+    .line 1129
     .end local v1           #e:Ljava/io/IOException;
-    .end local v5           #reader:Ljava/io/BufferedReader;
-    .restart local v3       #line:Ljava/lang/String;
-    .restart local v6       #reader:Ljava/io/BufferedReader;
+    .end local v4           #reader:Ljava/io/BufferedReader;
+    .restart local v2       #line:Ljava/lang/String;
+    .restart local v5       #reader:Ljava/io/BufferedReader;
     :catch_7
     move-exception v1
 
-    .line 1158
+    .line 1130
     .restart local v1       #e:Ljava/io/IOException;
     invoke-static {v1}, Lcom/cnlaunch/framework/utils/NLog;->e(Ljava/lang/Throwable;)V
 
     .end local v1           #e:Ljava/io/IOException;
     :cond_4
-    move-object v5, v6
+    move-object v4, v5
 
-    .end local v6           #reader:Ljava/io/BufferedReader;
-    .restart local v5       #reader:Ljava/io/BufferedReader;
+    .end local v5           #reader:Ljava/io/BufferedReader;
+    .restart local v4       #reader:Ljava/io/BufferedReader;
     goto :goto_1
 
-    .line 1153
-    .end local v5           #reader:Ljava/io/BufferedReader;
-    .restart local v6       #reader:Ljava/io/BufferedReader;
-    :catchall_1
-    move-exception v7
-
-    move-object v5, v6
-
-    .end local v6           #reader:Ljava/io/BufferedReader;
+    .line 1125
+    .end local v4           #reader:Ljava/io/BufferedReader;
     .restart local v5       #reader:Ljava/io/BufferedReader;
+    :catchall_1
+    move-exception v6
+
+    move-object v4, v5
+
+    .end local v5           #reader:Ljava/io/BufferedReader;
+    .restart local v4       #reader:Ljava/io/BufferedReader;
     goto :goto_5
 
-    .line 1151
-    .end local v5           #reader:Ljava/io/BufferedReader;
-    .restart local v6       #reader:Ljava/io/BufferedReader;
+    .line 1123
+    .end local v4           #reader:Ljava/io/BufferedReader;
+    .restart local v5       #reader:Ljava/io/BufferedReader;
     :catch_8
     move-exception v1
 
-    move-object v5, v6
+    move-object v4, v5
 
-    .end local v6           #reader:Ljava/io/BufferedReader;
-    .restart local v5       #reader:Ljava/io/BufferedReader;
+    .end local v5           #reader:Ljava/io/BufferedReader;
+    .restart local v4       #reader:Ljava/io/BufferedReader;
     goto :goto_4
 
-    .line 1149
-    .end local v5           #reader:Ljava/io/BufferedReader;
-    .restart local v6       #reader:Ljava/io/BufferedReader;
+    .line 1121
+    .end local v4           #reader:Ljava/io/BufferedReader;
+    .restart local v5       #reader:Ljava/io/BufferedReader;
     :catch_9
     move-exception v1
 
-    move-object v5, v6
+    move-object v4, v5
 
-    .end local v6           #reader:Ljava/io/BufferedReader;
-    .restart local v5       #reader:Ljava/io/BufferedReader;
+    .end local v5           #reader:Ljava/io/BufferedReader;
+    .restart local v4       #reader:Ljava/io/BufferedReader;
     goto :goto_3
 
-    .line 1147
-    .end local v3           #line:Ljava/lang/String;
+    .line 1119
+    .end local v2           #line:Ljava/lang/String;
     :catch_a
     move-exception v1
 
@@ -1265,7 +1252,7 @@
     .locals 5
 
     .prologue
-    .line 651
+    .line 630
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/PathUtils;->getAssetsPath()Ljava/lang/String;
@@ -1288,13 +1275,13 @@
 
     move-result-object v2
 
-    .line 652
+    .line 631
     .local v2, path:Ljava/lang/String;
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 653
+    .line 632
     .local v1, file:Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
@@ -1302,14 +1289,14 @@
 
     if-eqz v3, :cond_0
 
-    .line 655
+    .line 634
     invoke-static {v2}, Landroid/graphics/drawable/Drawable;->createFromPath(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
     iput-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->drawable:Landroid/graphics/drawable/Drawable;
 
-    .line 663
+    .line 642
     :goto_0
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->image_picture_identifycode:Landroid/widget/ImageView;
 
@@ -1317,10 +1304,10 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 664
+    .line 643
     return-void
 
-    .line 658
+    .line 637
     :cond_0
     :try_start_0
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->getAssets()Landroid/content/res/AssetManager;
@@ -1345,11 +1332,11 @@
 
     goto :goto_0
 
-    .line 659
+    .line 638
     :catch_0
     move-exception v0
 
-    .line 660
+    .line 639
     .local v0, e:Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
@@ -1360,9 +1347,9 @@
     .locals 10
 
     .prologue
-    const v9, 0x7f0d02be
+    const v9, 0x7f0c02c2
 
-    const v8, 0x7f0d02bd
+    const v8, 0x7f0c02c1
 
     const/16 v7, 0x8
 
@@ -1370,7 +1357,7 @@
 
     const/4 v5, 0x0
 
-    .line 275
+    .line 253
     new-instance v2, Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
@@ -1379,18 +1366,18 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->action:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
-    .line 276
+    .line 254
     const-string/jumbo v2, "codepic.png"
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->loadcodePic:Ljava/lang/String;
 
-    .line 277
+    .line 255
     const-string/jumbo v2, "countryInfo.ini"
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->tempCountryInfo:Ljava/lang/String;
 
-    .line 279
-    const v2, 0x7f0d02a6
+    .line 257
+    const v2, 0x7f0c02aa
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1400,8 +1387,8 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
-    .line 280
-    const v2, 0x7f0d02c3
+    .line 258
+    const v2, 0x7f0c02c7
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1411,13 +1398,13 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_zipcode:Landroid/widget/EditText;
 
-    .line 282
+    .line 260
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_zipcode:Landroid/widget/EditText;
 
     invoke-virtual {v2, v7}, Landroid/widget/EditText;->setVisibility(I)V
 
-    .line 284
-    const v2, 0x7f0d02c2
+    .line 262
+    const v2, 0x7f0c02c6
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1427,8 +1414,8 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_email:Landroid/widget/EditText;
 
-    .line 285
-    const v2, 0x7f0d02af
+    .line 263
+    const v2, 0x7f0c02b3
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1438,8 +1425,8 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_password:Landroid/widget/EditText;
 
-    .line 286
-    const v2, 0x7f0d02c0
+    .line 264
+    const v2, 0x7f0c02c4
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1449,8 +1436,8 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_confirmpass:Landroid/widget/EditText;
 
-    .line 287
-    const v2, 0x7f0d02c8
+    .line 265
+    const v2, 0x7f0c02cc
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1460,7 +1447,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_identifycode:Landroid/widget/EditText;
 
-    .line 288
+    .line 266
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_identifycode:Landroid/widget/EditText;
 
     const/4 v3, 0x1
@@ -1475,8 +1462,8 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
-    .line 289
-    const v2, 0x7f0d02c6
+    .line 267
+    const v2, 0x7f0c02ca
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1486,24 +1473,24 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->spin_country:Landroid/widget/Spinner;
 
-    .line 290
+    .line 268
     const/4 v2, 0x0
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->countryInfo:Lcom/cnlaunch/x431pro/module/user/model/Country;
 
-    .line 292
+    .line 270
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/Tools;->isUSAProject()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 293
+    .line 271
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_zipcode:Landroid/widget/EditText;
 
     invoke-virtual {v2, v7}, Landroid/widget/EditText;->setVisibility(I)V
 
-    .line 295
+    .line 273
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/PathUtils;->getAssetsPath()Ljava/lang/String;
@@ -1526,13 +1513,13 @@
 
     move-result-object v1
 
-    .line 296
+    .line 274
     .local v1, filePath:Ljava/lang/String;
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 297
+    .line 275
     .local v0, file:Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -1540,19 +1527,19 @@
 
     if-eqz v2, :cond_0
 
-    .line 298
+    .line 276
     invoke-direct {p0, v1}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->getModelClassMember(Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/user/model/Country;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->countryInfo:Lcom/cnlaunch/x431pro/module/user/model/Country;
 
-    .line 299
+    .line 277
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->promptDisplay:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->clear()V
 
-    .line 300
+    .line 278
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->promptDisplay:Ljava/util/ArrayList;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->countryInfo:Lcom/cnlaunch/x431pro/module/user/model/Country;
@@ -1563,7 +1550,7 @@
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 301
+    .line 279
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->countryInfo:Lcom/cnlaunch/x431pro/module/user/model/Country;
 
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/module/user/model/Country;->getNcode()Ljava/lang/String;
@@ -1572,7 +1559,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->nationId:Ljava/lang/String;
 
-    .line 305
+    .line 283
     .end local v0           #file:Ljava/io/File;
     .end local v1           #filePath:Ljava/lang/String;
     :cond_0
@@ -1580,7 +1567,7 @@
 
     invoke-virtual {v2, v6}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 308
+    .line 286
     invoke-virtual {p0, v8}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1589,7 +1576,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_username:Landroid/widget/CheckBox;
 
-    .line 309
+    .line 287
     invoke-virtual {p0, v9}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1598,8 +1585,8 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_password:Landroid/widget/CheckBox;
 
-    .line 310
-    const v2, 0x7f0d02bf
+    .line 288
+    const v2, 0x7f0c02c3
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1609,8 +1596,8 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_confirm_password:Landroid/widget/CheckBox;
 
-    .line 311
-    const v2, 0x7f0d02c1
+    .line 289
+    const v2, 0x7f0c02c5
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1620,8 +1607,8 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_email:Landroid/widget/CheckBox;
 
-    .line 312
-    const v2, 0x7f0d02c5
+    .line 290
+    const v2, 0x7f0c02c9
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1631,8 +1618,8 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_zipcode:Landroid/widget/CheckBox;
 
-    .line 313
-    const v2, 0x7f0d02c7
+    .line 291
+    const v2, 0x7f0c02cb
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1642,8 +1629,8 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_identifycode:Landroid/widget/CheckBox;
 
-    .line 315
-    const v2, 0x7f0d02c9
+    .line 293
+    const v2, 0x7f0c02cd
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1653,10 +1640,10 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->image_picture_identifycode:Landroid/widget/ImageView;
 
-    .line 317
+    .line 295
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->initIdentifycodePic()V
 
-    .line 319
+    .line 297
     invoke-virtual {p0, v8}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1665,7 +1652,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_username:Landroid/widget/CheckBox;
 
-    .line 320
+    .line 298
     invoke-virtual {p0, v9}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1674,8 +1661,8 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_password:Landroid/widget/CheckBox;
 
-    .line 321
-    const v2, 0x7f0d02bf
+    .line 299
+    const v2, 0x7f0c02c3
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1685,8 +1672,8 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_confirm_password:Landroid/widget/CheckBox;
 
-    .line 322
-    const v2, 0x7f0d02c1
+    .line 300
+    const v2, 0x7f0c02c5
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1696,8 +1683,8 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_email:Landroid/widget/CheckBox;
 
-    .line 323
-    const v2, 0x7f0d02c5
+    .line 301
+    const v2, 0x7f0c02c9
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1707,8 +1694,8 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_zipcode:Landroid/widget/CheckBox;
 
-    .line 324
-    const v2, 0x7f0d02c7
+    .line 302
+    const v2, 0x7f0c02cb
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1718,7 +1705,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_identifycode:Landroid/widget/CheckBox;
 
-    .line 326
+    .line 304
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_username:Landroid/widget/CheckBox;
 
     invoke-virtual {v2}, Landroid/widget/CheckBox;->isChecked()Z
@@ -1727,12 +1714,12 @@
 
     if-nez v2, :cond_1
 
-    .line 327
+    .line 305
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_username:Landroid/widget/CheckBox;
 
     invoke-direct {p0, v2, v6, v5}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
-    .line 329
+    .line 307
     :cond_1
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_password:Landroid/widget/CheckBox;
 
@@ -1742,12 +1729,12 @@
 
     if-nez v2, :cond_2
 
-    .line 330
+    .line 308
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_password:Landroid/widget/CheckBox;
 
     invoke-direct {p0, v2, v6, v5}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
-    .line 332
+    .line 310
     :cond_2
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_confirm_password:Landroid/widget/CheckBox;
 
@@ -1757,12 +1744,12 @@
 
     if-nez v2, :cond_3
 
-    .line 333
+    .line 311
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_confirm_password:Landroid/widget/CheckBox;
 
     invoke-direct {p0, v2, v6, v5}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
-    .line 335
+    .line 313
     :cond_3
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_email:Landroid/widget/CheckBox;
 
@@ -1772,12 +1759,12 @@
 
     if-nez v2, :cond_4
 
-    .line 336
+    .line 314
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_email:Landroid/widget/CheckBox;
 
     invoke-direct {p0, v2, v6, v5}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
-    .line 338
+    .line 316
     :cond_4
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_zipcode:Landroid/widget/CheckBox;
 
@@ -1787,12 +1774,12 @@
 
     if-nez v2, :cond_5
 
-    .line 339
+    .line 317
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_zipcode:Landroid/widget/CheckBox;
 
     invoke-direct {p0, v2, v6, v5}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
-    .line 341
+    .line 319
     :cond_5
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_identifycode:Landroid/widget/CheckBox;
 
@@ -1802,14 +1789,14 @@
 
     if-nez v2, :cond_6
 
-    .line 342
+    .line 320
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_identifycode:Landroid/widget/CheckBox;
 
     invoke-direct {p0, v2, v6, v5}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
-    .line 345
+    .line 323
     :cond_6
-    const v2, 0x7f0d02ca
+    const v2, 0x7f0c02ce
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1819,13 +1806,13 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->bt_refresh:Landroid/widget/Button;
 
-    .line 346
+    .line 324
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->bt_refresh:Landroid/widget/Button;
 
     invoke-virtual {v2, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 348
-    const v2, 0x7f0d02cc
+    .line 326
+    const v2, 0x7f0c02d0
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->findViewById(I)Landroid/view/View;
 
@@ -1835,57 +1822,57 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->btn_regist:Landroid/widget/Button;
 
-    .line 349
+    .line 327
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->btn_regist:Landroid/widget/Button;
 
     invoke-virtual {v2, v5}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 350
+    .line 328
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->btn_regist:Landroid/widget/Button;
 
     invoke-virtual {v2, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 352
+    .line 330
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->image_picture_identifycode:Landroid/widget/ImageView;
 
     invoke-virtual {v2, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 353
+    .line 331
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_identifycode:Landroid/widget/EditText;
 
     invoke-virtual {v2, p0}, Landroid/widget/EditText;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 355
+    .line 333
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
     invoke-virtual {v2, p0}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    .line 356
+    .line 334
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_password:Landroid/widget/EditText;
 
     invoke-virtual {v2, p0}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    .line 357
+    .line 335
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_confirmpass:Landroid/widget/EditText;
 
     invoke-virtual {v2, p0}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    .line 358
+    .line 336
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_email:Landroid/widget/EditText;
 
     invoke-virtual {v2, p0}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    .line 359
+    .line 337
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_zipcode:Landroid/widget/EditText;
 
     invoke-virtual {v2, p0}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    .line 360
+    .line 338
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_identifycode:Landroid/widget/EditText;
 
     invoke-virtual {v2, p0}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    .line 361
+    .line 339
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -1898,7 +1885,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->username:Ljava/lang/String;
 
-    .line 362
+    .line 340
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_password:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -1911,7 +1898,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
 
-    .line 363
+    .line 341
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_confirmpass:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -1924,7 +1911,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->confirmpass:Ljava/lang/String;
 
-    .line 364
+    .line 342
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_email:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -1937,7 +1924,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->email:Ljava/lang/String;
 
-    .line 365
+    .line 343
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_zipcode:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -1950,7 +1937,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->zipcode:Ljava/lang/String;
 
-    .line 374
+    .line 345
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
     new-instance v3, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$2;
@@ -1959,7 +1946,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 405
+    .line 376
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_password:Landroid/widget/EditText;
 
     new-instance v3, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$3;
@@ -1968,7 +1955,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 449
+    .line 420
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_confirmpass:Landroid/widget/EditText;
 
     new-instance v3, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;
@@ -1977,7 +1964,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 485
+    .line 456
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_email:Landroid/widget/EditText;
 
     new-instance v3, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$5;
@@ -1986,7 +1973,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 515
+    .line 486
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_zipcode:Landroid/widget/EditText;
 
     new-instance v3, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$6;
@@ -1995,7 +1982,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 542
+    .line 521
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_identifycode:Landroid/widget/EditText;
 
     new-instance v3, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;
@@ -2004,7 +1991,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 574
+    .line 553
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->spin_country:Landroid/widget/Spinner;
 
     new-instance v3, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$8;
@@ -2013,7 +2000,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    .line 594
+    .line 573
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->spin_country:Landroid/widget/Spinner;
 
     new-instance v3, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$9;
@@ -2022,7 +2009,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/Spinner;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 632
+    .line 611
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->btn_regist:Landroid/widget/Button;
 
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->isRegisterBtnEnable()Z
@@ -2031,7 +2018,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 633
+    .line 612
     return-void
 .end method
 
@@ -2042,18 +2029,18 @@
     .parameter "flag"
 
     .prologue
-    .line 1090
+    .line 1069
     invoke-virtual {p1, p2}, Landroid/widget/CheckBox;->setVisibility(I)V
 
-    .line 1091
+    .line 1070
     invoke-virtual {p1, p3}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 1092
+    .line 1071
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/widget/CheckBox;->setClickable(Z)V
 
-    .line 1093
+    .line 1072
     return-void
 .end method
 
@@ -2069,10 +2056,10 @@
     .end annotation
 
     .prologue
-    .line 716
+    .line 695
     packed-switch p1, :pswitch_data_0
 
-    .line 760
+    .line 739
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->doInBackground(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -2080,7 +2067,7 @@
     :goto_0
     return-object v0
 
-    .line 740
+    .line 719
     :pswitch_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->action:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
@@ -2108,7 +2095,7 @@
 
     goto :goto_0
 
-    .line 751
+    .line 730
     :pswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->action:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
@@ -2126,7 +2113,7 @@
 
     goto :goto_0
 
-    .line 753
+    .line 732
     :pswitch_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->action:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
@@ -2140,7 +2127,7 @@
 
     goto :goto_0
 
-    .line 755
+    .line 734
     :pswitch_3
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->action:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
@@ -2154,7 +2141,7 @@
 
     goto :goto_0
 
-    .line 716
+    .line 695
     nop
 
     :pswitch_data_0
@@ -2170,7 +2157,7 @@
     .locals 1
 
     .prologue
-    .line 636
+    .line 615
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_username:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
@@ -2179,7 +2166,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 637
+    .line 616
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_password:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
@@ -2188,7 +2175,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 638
+    .line 617
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_confirm_password:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
@@ -2197,7 +2184,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 639
+    .line 618
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_email:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
@@ -2206,7 +2193,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 640
+    .line 619
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_zipcode:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
@@ -2215,7 +2202,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 641
+    .line 620
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_identifycode:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
@@ -2224,10 +2211,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 643
+    .line 622
     const/4 v0, 0x1
 
-    .line 645
+    .line 624
     :goto_0
     return v0
 
@@ -2246,28 +2233,28 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 1102
+    .line 1080
     invoke-super {p0, p1, p2, p3}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 1104
+    .line 1082
     if-ne p1, v5, :cond_0
 
-    .line 1105
+    .line 1083
     if-ne p2, v5, :cond_0
 
-    .line 1106
+    .line 1084
     new-instance v3, Lcom/cnlaunch/x431pro/module/user/model/Country;
 
     invoke-direct {v3}, Lcom/cnlaunch/x431pro/module/user/model/Country;-><init>()V
 
     iput-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->countryInfo:Lcom/cnlaunch/x431pro/module/user/model/Country;
 
-    .line 1107
+    .line 1085
     invoke-virtual {p3}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 1108
+    .line 1086
     .local v0, bundle:Landroid/os/Bundle;
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->countryInfo:Lcom/cnlaunch/x431pro/module/user/model/Country;
 
@@ -2279,7 +2266,7 @@
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/module/user/model/Country;->setDisplay(Ljava/lang/String;)V
 
-    .line 1109
+    .line 1087
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->countryInfo:Lcom/cnlaunch/x431pro/module/user/model/Country;
 
     const-string/jumbo v4, "ncode"
@@ -2290,7 +2277,7 @@
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/module/user/model/Country;->setNcode(Ljava/lang/String;)V
 
-    .line 1110
+    .line 1088
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->countryInfo:Lcom/cnlaunch/x431pro/module/user/model/Country;
 
     const-string/jumbo v4, "is_sms"
@@ -2305,7 +2292,7 @@
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/module/user/model/Country;->setIs_sms(I)V
 
-    .line 1111
+    .line 1089
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->countryInfo:Lcom/cnlaunch/x431pro/module/user/model/Country;
 
     const-string/jumbo v4, "pre_code"
@@ -2320,7 +2307,7 @@
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/module/user/model/Country;->setPre_code(I)V
 
-    .line 1118
+    .line 1091
     new-instance v3, Ljava/lang/StringBuilder;
 
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->countryInfo:Lcom/cnlaunch/x431pro/module/user/model/Country;
@@ -2345,7 +2332,7 @@
 
     move-result-object v2
 
-    .line 1119
+    .line 1092
     .local v2, strCountryInfo:Ljava/lang/String;
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2375,7 +2362,7 @@
 
     move-result-object v2
 
-    .line 1120
+    .line 1093
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -2404,7 +2391,7 @@
 
     move-result-object v2
 
-    .line 1121
+    .line 1094
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -2433,7 +2420,7 @@
 
     move-result-object v2
 
-    .line 1123
+    .line 1096
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/PathUtils;->getAssetsPath()Ljava/lang/String;
@@ -2456,18 +2443,18 @@
 
     move-result-object v1
 
-    .line 1124
+    .line 1097
     .local v1, filePath:Ljava/lang/String;
     invoke-static {v2, v1}, Lcom/cnlaunch/x431pro/utils/file/FileUtils;->saveFile(Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 1126
+    .line 1099
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_zipcode:Landroid/widget/CheckBox;
 
     const/4 v4, 0x0
 
     invoke-direct {p0, v3, v4, v5}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
-    .line 1129
+    .line 1102
     .end local v0           #bundle:Landroid/os/Bundle;
     .end local v1           #filePath:Ljava/lang/String;
     .end local v2           #strCountryInfo:Ljava/lang/String;
@@ -2480,21 +2467,21 @@
     .parameter "v"
 
     .prologue
-    const v2, 0x7f07064e
+    const v2, 0x7f070650
 
-    .line 890
+    .line 869
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
     packed-switch v0, :pswitch_data_0
 
-    .line 943
+    .line 922
     :goto_0
     :pswitch_0
     return-void
 
-    .line 892
+    .line 871
     :pswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
@@ -2508,12 +2495,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->username:Ljava/lang/String;
 
-    .line 894
+    .line 873
     const-string/jumbo v0, ""
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->zipcode:Ljava/lang/String;
 
-    .line 895
+    .line 874
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_email:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -2526,7 +2513,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->email:Ljava/lang/String;
 
-    .line 896
+    .line 875
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_password:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -2539,7 +2526,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
 
-    .line 897
+    .line 876
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_confirmpass:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -2552,7 +2539,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->confirmpass:Ljava/lang/String;
 
-    .line 898
+    .line 877
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_identifycode:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -2565,7 +2552,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->validcode:Ljava/lang/String;
 
-    .line 900
+    .line 879
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->username:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -2574,14 +2561,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 901
+    .line 880
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 905
+    .line 884
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
 
@@ -2591,14 +2578,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 906
+    .line 885
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 910
+    .line 889
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->confirmpass:Ljava/lang/String;
 
@@ -2608,14 +2595,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 911
+    .line 890
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 915
+    .line 894
     :cond_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
 
@@ -2627,16 +2614,16 @@
 
     if-nez v0, :cond_3
 
-    .line 916
+    .line 895
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f070653
+    const v1, 0x7f070655
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 920
+    .line 899
     :cond_3
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->email:Ljava/lang/String;
 
@@ -2646,14 +2633,14 @@
 
     if-eqz v0, :cond_4
 
-    .line 921
+    .line 900
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto/16 :goto_0
 
-    .line 925
+    .line 904
     :cond_4
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->validcode:Ljava/lang/String;
 
@@ -2663,27 +2650,27 @@
 
     if-eqz v0, :cond_5
 
-    .line 926
+    .line 905
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto/16 :goto_0
 
-    .line 929
+    .line 908
     :cond_5
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;)V
 
-    .line 930
+    .line 909
     const/16 v0, 0xc8
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->request(I)V
 
     goto/16 :goto_0
 
-    .line 934
+    .line 913
     :pswitch_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
@@ -2697,7 +2684,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->username:Ljava/lang/String;
 
-    .line 935
+    .line 914
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->username:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -2706,14 +2693,14 @@
 
     if-eqz v0, :cond_6
 
-    .line 936
+    .line 915
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto/16 :goto_0
 
-    .line 939
+    .line 918
     :cond_6
     const/16 v0, 0xc9
 
@@ -2721,11 +2708,11 @@
 
     goto/16 :goto_0
 
-    .line 890
+    .line 869
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0d02ca
+    .packed-switch 0x7f0c02ce
         :pswitch_2
         :pswitch_0
         :pswitch_1
@@ -2737,17 +2724,17 @@
     .parameter "newConfig"
 
     .prologue
-    .line 1096
+    .line 1075
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 1097
+    .line 1076
     const-string/jumbo v0, "weizewei"
 
     const-string/jumbo v1, "RegistActivity onConfigurationChanged"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1098
+    .line 1077
     return-void
 .end method
 
@@ -2756,20 +2743,20 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 257
+    .line 235
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 258
-    const v0, 0x7f0300ef
+    .line 236
+    const v0, 0x7f0300f0
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->setContentView(I)V
 
-    .line 259
+    .line 237
     const/16 v0, 0x8
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->setHeadVisibility(I)V
 
-    .line 261
+    .line 239
     return-void
 .end method
 
@@ -2782,28 +2769,28 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 860
+    .line 839
     invoke-super {p0, p1, p2, p3}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onFailure(IILjava/lang/Object;)V
 
-    .line 861
+    .line 840
     packed-switch p1, :pswitch_data_0
 
-    .line 886
+    .line 865
     :goto_0
     return-void
 
-    .line 864
+    .line 843
     :pswitch_0
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->setResult(I)V
 
-    .line 866
+    .line 845
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
     goto :goto_0
 
-    .line 869
+    .line 848
     :pswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
@@ -2811,7 +2798,7 @@
 
     goto :goto_0
 
-    .line 878
+    .line 857
     :pswitch_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->handle:Landroid/os/Handler;
 
@@ -2821,18 +2808,18 @@
 
     goto :goto_0
 
-    .line 881
+    .line 860
     :pswitch_3
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
-    .line 882
+    .line 861
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_identifycode:Landroid/widget/CheckBox;
 
     invoke-direct {p0, v0, v1, v1}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
-    .line 883
+    .line 862
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->btn_regist:Landroid/widget/Button;
 
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->isRegisterBtnEnable()Z
@@ -2843,7 +2830,7 @@
 
     goto :goto_0
 
-    .line 861
+    .line 840
     :pswitch_data_0
     .packed-switch 0xc8
         :pswitch_0
@@ -2859,9 +2846,9 @@
     .parameter "arg1"
 
     .prologue
-    const v8, 0x7f070653
+    const v8, 0x7f070655
 
-    const v7, 0x7f07064f
+    const v7, 0x7f070651
 
     const/4 v6, 0x2
 
@@ -2869,23 +2856,23 @@
 
     const/4 v4, 0x0
 
-    .line 962
+    .line 941
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v2
 
     sparse-switch v2, :sswitch_data_0
 
-    .line 1078
+    .line 1057
     :cond_0
     :goto_0
     return-void
 
-    .line 964
+    .line 943
     :sswitch_0
     if-nez p2, :cond_0
 
-    .line 965
+    .line 944
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -2896,7 +2883,7 @@
 
     move-result-object v1
 
-    .line 966
+    .line 945
     .local v1, name:Ljava/lang/String;
     invoke-static {v1}, Lcom/cnlaunch/x431pro/utils/StringUtils;->isAcount(Ljava/lang/String;)Ljava/lang/Boolean;
 
@@ -2908,10 +2895,10 @@
 
     if-eqz v2, :cond_1
 
-    .line 967
+    .line 946
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->username:Ljava/lang/String;
 
-    .line 968
+    .line 947
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_identifycode:Landroid/widget/CheckBox;
 
     invoke-virtual {v2}, Landroid/widget/CheckBox;->isChecked()Z
@@ -2920,14 +2907,14 @@
 
     if-nez v2, :cond_0
 
-    .line 969
+    .line 948
     const/16 v2, 0xc9
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->request(I)V
 
     goto :goto_0
 
-    .line 972
+    .line 951
     :cond_1
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
@@ -2935,19 +2922,19 @@
 
     if-nez v2, :cond_2
 
-    .line 973
+    .line 952
     new-array v0, v6, [I
 
-    .line 974
+    .line 953
     .local v0, location:[I
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->getLocationOnScreen([I)V
 
-    .line 975
+    .line 954
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f07062f
+    const v3, 0x7f070631
 
     aget v4, v0, v4
 
@@ -2959,7 +2946,7 @@
 
     goto :goto_0
 
-    .line 976
+    .line 955
     .end local v0           #location:[I
     :cond_2
     invoke-virtual {v1}, Ljava/lang/String;->length()I
@@ -2970,19 +2957,19 @@
 
     if-ge v2, v3, :cond_3
 
-    .line 977
+    .line 956
     new-array v0, v6, [I
 
-    .line 978
+    .line 957
     .restart local v0       #location:[I
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->getLocationOnScreen([I)V
 
-    .line 979
+    .line 958
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f070650
+    const v3, 0x7f070652
 
     aget v4, v0, v4
 
@@ -2994,21 +2981,21 @@
 
     goto :goto_0
 
-    .line 981
+    .line 960
     .end local v0           #location:[I
     :cond_3
     new-array v0, v6, [I
 
-    .line 982
+    .line 961
     .restart local v0       #location:[I
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_username:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->getLocationOnScreen([I)V
 
-    .line 983
+    .line 962
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f070651
+    const v3, 0x7f070653
 
     aget v4, v0, v4
 
@@ -3020,13 +3007,13 @@
 
     goto :goto_0
 
-    .line 989
+    .line 968
     .end local v0           #location:[I
     .end local v1           #name:Ljava/lang/String;
     :sswitch_1
     if-nez p2, :cond_0
 
-    .line 990
+    .line 969
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_password:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -3039,7 +3026,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
 
-    .line 991
+    .line 970
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_confirmpass:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -3052,7 +3039,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->confirmpass:Ljava/lang/String;
 
-    .line 992
+    .line 971
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->isEmpty()Z
@@ -3071,7 +3058,7 @@
 
     if-nez v2, :cond_0
 
-    .line 999
+    .line 978
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
 
     invoke-static {v2}, Lcom/cnlaunch/x431pro/utils/StringUtils;->isAcountPassword(Ljava/lang/String;)Z
@@ -3080,16 +3067,16 @@
 
     if-nez v2, :cond_5
 
-    .line 1000
+    .line 979
     new-array v0, v6, [I
 
-    .line 1001
+    .line 980
     .restart local v0       #location:[I
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_password:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->getLocationOnScreen([I)V
 
-    .line 1002
+    .line 981
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->length()I
@@ -3108,10 +3095,10 @@
 
     if-ge v2, v3, :cond_4
 
-    .line 1003
+    .line 982
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f070681
+    const v3, 0x7f070683
 
     aget v4, v0, v4
 
@@ -3123,7 +3110,7 @@
 
     goto/16 :goto_0
 
-    .line 1005
+    .line 984
     :cond_4
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
@@ -3137,7 +3124,7 @@
 
     goto/16 :goto_0
 
-    .line 1008
+    .line 987
     .end local v0           #location:[I
     :cond_5
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->confirmpass:Ljava/lang/String;
@@ -3154,7 +3141,7 @@
 
     if-nez v2, :cond_0
 
-    .line 1009
+    .line 988
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->confirmpass:Ljava/lang/String;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
@@ -3173,16 +3160,16 @@
 
     if-nez v2, :cond_6
 
-    .line 1010
+    .line 989
     new-array v0, v6, [I
 
-    .line 1011
+    .line 990
     .restart local v0       #location:[I
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_confirmpass:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->getLocationOnScreen([I)V
 
-    .line 1012
+    .line 991
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     aget v3, v0, v4
@@ -3195,7 +3182,7 @@
 
     goto/16 :goto_0
 
-    .line 1013
+    .line 992
     .end local v0           #location:[I
     :cond_6
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
@@ -3206,11 +3193,11 @@
 
     goto/16 :goto_0
 
-    .line 1024
+    .line 1003
     :sswitch_2
     if-nez p2, :cond_0
 
-    .line 1025
+    .line 1004
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_password:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -3223,7 +3210,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
 
-    .line 1026
+    .line 1005
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_confirmpass:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -3236,7 +3223,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->confirmpass:Ljava/lang/String;
 
-    .line 1027
+    .line 1006
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
 
     invoke-static {v2}, Lcom/cnlaunch/x431pro/utils/StringUtils;->isAcountPassword(Ljava/lang/String;)Z
@@ -3245,16 +3232,16 @@
 
     if-nez v2, :cond_7
 
-    .line 1028
+    .line 1007
     new-array v0, v6, [I
 
-    .line 1029
+    .line 1008
     .restart local v0       #location:[I
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_password:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->getLocationOnScreen([I)V
 
-    .line 1030
+    .line 1009
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     aget v3, v0, v4
@@ -3267,7 +3254,7 @@
 
     goto/16 :goto_0
 
-    .line 1032
+    .line 1011
     .end local v0           #location:[I
     :cond_7
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->confirmpass:Ljava/lang/String;
@@ -3280,16 +3267,16 @@
 
     if-nez v2, :cond_0
 
-    .line 1033
+    .line 1012
     new-array v0, v6, [I
 
-    .line 1034
+    .line 1013
     .restart local v0       #location:[I
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_confirmpass:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->getLocationOnScreen([I)V
 
-    .line 1035
+    .line 1014
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     aget v3, v0, v4
@@ -3302,12 +3289,12 @@
 
     goto/16 :goto_0
 
-    .line 1043
+    .line 1022
     .end local v0           #location:[I
     :sswitch_3
     if-nez p2, :cond_0
 
-    .line 1044
+    .line 1023
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_email:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -3320,7 +3307,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->email:Ljava/lang/String;
 
-    .line 1045
+    .line 1024
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->email:Ljava/lang/String;
 
     if-eqz v2, :cond_0
@@ -3335,7 +3322,7 @@
 
     if-nez v2, :cond_0
 
-    .line 1046
+    .line 1025
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->email:Ljava/lang/String;
 
     invoke-static {v2}, Lcom/cnlaunch/x431pro/utils/StringUtils;->isEmail(Ljava/lang/String;)Z
@@ -3344,19 +3331,19 @@
 
     if-nez v2, :cond_0
 
-    .line 1047
+    .line 1026
     new-array v0, v6, [I
 
-    .line 1048
+    .line 1027
     .restart local v0       #location:[I
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_email:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->getLocationOnScreen([I)V
 
-    .line 1049
+    .line 1028
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f07067b
+    const v3, 0x7f07067d
 
     aget v4, v0, v4
 
@@ -3368,12 +3355,12 @@
 
     goto/16 :goto_0
 
-    .line 1062
+    .line 1041
     .end local v0           #location:[I
     :sswitch_4
     if-nez p2, :cond_0
 
-    .line 1063
+    .line 1042
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_zipcode:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -3386,7 +3373,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->zipcode:Ljava/lang/String;
 
-    .line 1064
+    .line 1043
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->zipcode:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->length()I
@@ -3395,19 +3382,19 @@
 
     if-nez v2, :cond_8
 
-    .line 1065
+    .line 1044
     new-array v0, v6, [I
 
-    .line 1066
+    .line 1045
     .restart local v0       #location:[I
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_zipcode:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->getLocationOnScreen([I)V
 
-    .line 1067
+    .line 1046
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f07067e
+    const v3, 0x7f070680
 
     aget v4, v0, v4
 
@@ -3419,7 +3406,7 @@
 
     goto/16 :goto_0
 
-    .line 1068
+    .line 1047
     .end local v0           #location:[I
     :cond_8
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->zipcode:Ljava/lang/String;
@@ -3438,19 +3425,19 @@
 
     if-nez v2, :cond_0
 
-    .line 1069
+    .line 1048
     new-array v0, v6, [I
 
-    .line 1070
+    .line 1049
     .restart local v0       #location:[I
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_zipcode:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->getLocationOnScreen([I)V
 
-    .line 1071
+    .line 1050
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f07067d
+    const v3, 0x7f07067f
 
     aget v4, v0, v4
 
@@ -3462,14 +3449,14 @@
 
     goto/16 :goto_0
 
-    .line 962
+    .line 941
     :sswitch_data_0
     .sparse-switch
-        0x7f0d02a6 -> :sswitch_0
-        0x7f0d02af -> :sswitch_1
-        0x7f0d02c0 -> :sswitch_2
-        0x7f0d02c2 -> :sswitch_3
-        0x7f0d02c3 -> :sswitch_4
+        0x7f0c02aa -> :sswitch_0
+        0x7f0c02b3 -> :sswitch_1
+        0x7f0c02c4 -> :sswitch_2
+        0x7f0c02c6 -> :sswitch_3
+        0x7f0c02c7 -> :sswitch_4
     .end sparse-switch
 .end method
 
@@ -3479,7 +3466,7 @@
     .parameter "event"
 
     .prologue
-    .line 947
+    .line 926
     const/4 v1, 0x4
 
     if-ne p1, v1, :cond_1
@@ -3490,14 +3477,14 @@
 
     if-nez v1, :cond_1
 
-    .line 949
+    .line 928
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/Tools;->isUSAProject()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 950
+    .line 929
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/PathUtils;->getAssetsPath()Ljava/lang/String;
@@ -3520,19 +3507,19 @@
 
     move-result-object v0
 
-    .line 951
+    .line 930
     .local v0, filePath:Ljava/lang/String;
     invoke-static {v0}, Lcom/cnlaunch/x431pro/utils/file/FileUtils;->deleteFile(Ljava/lang/String;)Z
 
-    .line 954
+    .line 933
     .end local v0           #filePath:Ljava/lang/String;
     :cond_0
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->finish()V
 
-    .line 955
+    .line 934
     const/4 v1, 0x1
 
-    .line 957
+    .line 936
     :goto_0
     return v1
 
@@ -3548,25 +3535,25 @@
     .locals 1
 
     .prologue
-    .line 266
+    .line 244
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onResume()V
 
-    .line 267
+    .line 245
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->initViews()V
 
-    .line 268
+    .line 246
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/Tools;->isUSAProject()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 269
+    .line 247
     const/16 v0, 0xca
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->request(I)V
 
-    .line 271
+    .line 249
     :cond_0
     return-void
 .end method
@@ -3583,29 +3570,29 @@
 
     const/4 v7, 0x0
 
-    .line 765
+    .line 744
     packed-switch p1, :pswitch_data_0
 
-    .line 856
+    .line 835
     :cond_0
     :goto_0
     return-void
 
-    .line 767
+    .line 746
     :pswitch_0
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     invoke-static {v5}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
-    .line 768
+    .line 747
     if-eqz p2, :cond_0
 
     move-object v4, p2
 
-    .line 769
+    .line 748
     check-cast v4, Lcom/cnlaunch/x431pro/module/user/model/RegistResponse;
 
-    .line 770
+    .line 749
     .local v4, res:Lcom/cnlaunch/x431pro/module/user/model/RegistResponse;
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/module/user/model/RegistResponse;->getCode()I
 
@@ -3617,32 +3604,32 @@
 
     if-eqz v5, :cond_2
 
-    .line 772
+    .line 751
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f070659
+    const v6, 0x7f07065b
 
     invoke-static {v5, v6}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
-    .line 774
+    .line 753
     new-instance v2, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     invoke-direct {v2, v5}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;-><init>(Landroid/content/Context;)V
 
-    .line 775
+    .line 754
     .local v2, lf:Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
     invoke-virtual {v2, v8}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->setRegisterLogin(Z)V
 
-    .line 776
+    .line 755
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->username:Ljava/lang/String;
 
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
 
     invoke-virtual {v2, v5, v6}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->Login(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 779
+    .line 758
     new-instance v1, Landroid/content/Intent;
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
@@ -3651,7 +3638,7 @@
 
     invoke-direct {v1, v5, v6}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 780
+    .line 759
     .local v1, intent:Landroid/content/Intent;
     const-string/jumbo v5, "UserName"
 
@@ -3659,29 +3646,29 @@
 
     invoke-virtual {v1, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 781
+    .line 760
     const-string/jumbo v5, "PassWord"
 
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
 
     invoke-virtual {v1, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 782
+    .line 761
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 785
+    .line 764
     const/4 v5, -0x1
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->setResult(I)V
 
-    .line 787
+    .line 766
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/Tools;->isUSAProject()Z
 
     move-result v5
 
     if-nez v5, :cond_1
 
-    .line 789
+    .line 768
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/PathUtils;->getAssetsPath()Ljava/lang/String;
@@ -3704,18 +3691,18 @@
 
     move-result-object v0
 
-    .line 790
+    .line 769
     .local v0, filePath:Ljava/lang/String;
     invoke-static {v0}, Lcom/cnlaunch/x431pro/utils/file/FileUtils;->deleteFile(Ljava/lang/String;)Z
 
-    .line 793
+    .line 772
     .end local v0           #filePath:Ljava/lang/String;
     :cond_1
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->finish()V
 
     goto :goto_0
 
-    .line 795
+    .line 774
     .end local v1           #intent:Landroid/content/Intent;
     .end local v2           #lf:Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
     :cond_2
@@ -3725,27 +3712,27 @@
 
     invoke-direct {p0, v5}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->RegisterFailPrompt(I)V
 
-    .line 798
+    .line 777
     invoke-virtual {p0, v7}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->setResult(I)V
 
     goto :goto_0
 
-    .line 803
+    .line 782
     .end local v4           #res:Lcom/cnlaunch/x431pro/module/user/model/RegistResponse;
     :pswitch_1
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
     invoke-static {v5}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
-    .line 804
+    .line 783
     if-eqz p2, :cond_0
 
     move-object v4, p2
 
-    .line 805
+    .line 784
     check-cast v4, Lcom/cnlaunch/x431pro/module/base/CommonResponse;
 
-    .line 806
+    .line 785
     .local v4, res:Lcom/cnlaunch/x431pro/module/base/CommonResponse;
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/module/base/CommonResponse;->getCode()I
 
@@ -3757,12 +3744,12 @@
 
     if-eqz v5, :cond_3
 
-    .line 807
+    .line 786
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_username:Landroid/widget/CheckBox;
 
     invoke-direct {p0, v5, v7, v8}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
-    .line 808
+    .line 787
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/module/base/CommonResponse;->getData()Ljava/lang/Object;
 
     move-result-object v5
@@ -3805,14 +3792,14 @@
 
     iput-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->url:Ljava/lang/String;
 
-    .line 809
+    .line 788
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->handle:Landroid/os/Handler;
 
     invoke-virtual {v5, v9}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     goto/16 :goto_0
 
-    .line 811
+    .line 790
     :cond_3
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/module/base/CommonResponse;->getCode()I
 
@@ -3820,24 +3807,24 @@
 
     invoke-direct {p0, v5}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->GetIdentifyCodeFailPrompt(I)V
 
-    .line 812
+    .line 791
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_username:Landroid/widget/CheckBox;
 
     invoke-direct {p0, v5, v7, v7}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
     goto/16 :goto_0
 
-    .line 830
+    .line 809
     .end local v4           #res:Lcom/cnlaunch/x431pro/module/base/CommonResponse;
     :pswitch_2
     if-eqz p2, :cond_4
 
     move-object v4, p2
 
-    .line 831
+    .line 810
     check-cast v4, Lcom/cnlaunch/x431pro/module/user/model/CountryListResponse;
 
-    .line 832
+    .line 811
     .local v4, res:Lcom/cnlaunch/x431pro/module/user/model/CountryListResponse;
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/module/user/model/CountryListResponse;->getCode()I
 
@@ -3849,7 +3836,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 833
+    .line 812
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/module/user/model/CountryListResponse;->getData()Ljava/util/List;
 
     move-result-object v5
@@ -3858,14 +3845,14 @@
 
     iput-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->listCountry:Ljava/util/ArrayList;
 
-    .line 834
+    .line 813
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->handle:Landroid/os/Handler;
 
     invoke-virtual {v5, v8}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     goto/16 :goto_0
 
-    .line 837
+    .line 816
     .end local v4           #res:Lcom/cnlaunch/x431pro/module/user/model/CountryListResponse;
     :cond_4
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->handle:Landroid/os/Handler;
@@ -3876,7 +3863,7 @@
 
     goto/16 :goto_0
 
-    .line 841
+    .line 820
     :pswitch_3
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
@@ -3884,10 +3871,10 @@
 
     move-object v4, p2
 
-    .line 842
+    .line 821
     check-cast v4, Lcom/cnlaunch/x431pro/module/base/CommonResponse;
 
-    .line 843
+    .line 822
     .local v4, res:Lcom/cnlaunch/x431pro/module/base/CommonResponse;
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/module/base/CommonResponse;->getCode()I
 
@@ -3899,12 +3886,12 @@
 
     if-eqz v5, :cond_5
 
-    .line 844
+    .line 823
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_identifycode:Landroid/widget/CheckBox;
 
     invoke-direct {p0, v5, v7, v8}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
-    .line 853
+    .line 832
     :goto_1
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->btn_regist:Landroid/widget/Button;
 
@@ -3916,30 +3903,30 @@
 
     goto/16 :goto_0
 
-    .line 846
+    .line 825
     :cond_5
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_identifycode:Landroid/widget/CheckBox;
 
     invoke-direct {p0, v5, v7, v7}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
 
-    .line 847
+    .line 826
     const/16 v5, 0xc9
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->request(I)V
 
-    .line 848
+    .line 827
     new-array v3, v9, [I
 
-    .line 849
+    .line 828
     .local v3, location:[I
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->edit_identifycode:Landroid/widget/EditText;
 
     invoke-virtual {v5, v3}, Landroid/widget/EditText;->getLocationOnScreen([I)V
 
-    .line 850
+    .line 829
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f070679
+    const v6, 0x7f07067b
 
     aget v7, v3, v7
 
@@ -3951,7 +3938,7 @@
 
     goto :goto_1
 
-    .line 765
+    .line 744
     :pswitch_data_0
     .packed-switch 0xc8
         :pswitch_0
@@ -3969,14 +3956,14 @@
     .parameter "y"
 
     .prologue
-    .line 220
+    .line 223
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    .line 221
+    .line 224
     .local v0, factory:Landroid/view/LayoutInflater;
-    const v4, 0x7f0300f1
+    const v4, 0x7f0300f3
 
     const/4 v5, 0x0
 
@@ -3984,9 +3971,9 @@
 
     move-result-object v1
 
-    .line 222
+    .line 225
     .local v1, setView:Landroid/view/View;
-    const v4, 0x7f0d02ab
+    const v4, 0x7f0c02af
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3994,11 +3981,11 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    .line 223
+    .line 226
     .local v3, tv:Landroid/widget/TextView;
     invoke-virtual {v3, p2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 224
+    .line 227
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
@@ -4017,18 +4004,18 @@
 
     move-result-object v2
 
-    .line 225
+    .line 228
     .local v2, toast:Landroid/widget/Toast;
     const/16 v4, 0x33
 
     invoke-virtual {v2, v4, p3, p4}, Landroid/widget/Toast;->setGravity(III)V
 
-    .line 226
+    .line 229
     invoke-virtual {v2, v1}, Landroid/widget/Toast;->setView(Landroid/view/View;)V
 
-    .line 227
+    .line 230
     invoke-virtual {v2}, Landroid/widget/Toast;->show()V
 
-    .line 228
+    .line 231
     return-void
 .end method

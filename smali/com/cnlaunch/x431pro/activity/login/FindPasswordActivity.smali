@@ -93,7 +93,7 @@
     sparse-switch p1, :sswitch_data_0
 
     .line 104
-    const v0, 0x7f070676
+    const v0, 0x7f070678
 
     invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -103,7 +103,7 @@
 
     .line 92
     :sswitch_0
-    const v0, 0x7f070671
+    const v0, 0x7f070673
 
     invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -111,7 +111,7 @@
 
     .line 95
     :sswitch_1
-    const v0, 0x7f070672
+    const v0, 0x7f070674
 
     invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -119,7 +119,7 @@
 
     .line 98
     :sswitch_2
-    const v0, 0x7f070673
+    const v0, 0x7f070675
 
     invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -127,7 +127,7 @@
 
     .line 101
     :sswitch_3
-    const v0, 0x7f070674
+    const v0, 0x7f070676
 
     invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -166,7 +166,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 72
-    const v0, 0x7f0d02a9
+    const v0, 0x7f0c02ad
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/FindPasswordActivity;->findViewById(I)Landroid/view/View;
 
@@ -203,7 +203,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setSelection(I)V
 
     .line 75
-    const v0, 0x7f0d02a7
+    const v0, 0x7f0c02ab
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/FindPasswordActivity;->findViewById(I)Landroid/view/View;
 
@@ -325,7 +325,7 @@
     if-eqz v0, :cond_0
 
     .line 157
-    const v0, 0x7f07067f
+    const v0, 0x7f070681
 
     invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -344,7 +344,7 @@
 
     .line 152
     :pswitch_data_0
-    .packed-switch 0x7f0d02a7
+    .packed-switch 0x7f0c02ab
         :pswitch_0
     .end packed-switch
 .end method
@@ -358,7 +358,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 62
-    const v1, 0x7f0300e0
+    const v1, 0x7f0300e1
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/login/FindPasswordActivity;->setContentView(I)V
 
@@ -506,7 +506,7 @@
     if-eqz v2, :cond_1
 
     .line 127
-    const v2, 0x7f070686
+    const v2, 0x7f070688
 
     invoke-static {p0, v2}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 

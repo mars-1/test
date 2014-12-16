@@ -29,15 +29,15 @@
 
 .field public static final behindWidth:I = 0x7f010064
 
-.field public static final border_color:I = 0x7f010003
+.field public static final border_color:I = 0x7f010001
 
-.field public static final border_thickness:I = 0x7f010002
+.field public static final border_thickness:I = 0x7f010000
 
 .field public static final btnsize:I = 0x7f010036
 
 .field public static final checkable:I = 0x7f010024
 
-.field public static final circleColor:I = 0x7f010006
+.field public static final circleColor:I = 0x7f010004
 
 .field public static final collapsedHeight:I = 0x7f010019
 
@@ -59,9 +59,9 @@
 
 .field public static final diagnoseButtonTextColor:I = 0x7f01003d
 
-.field public static final diagnoseDialogButtonStyle:I = 0x7f010000
+.field public static final diagnoseDialogButtonStyle:I = 0x7f010017
 
-.field public static final diagnoseDialogTitleBackground:I = 0x7f010001
+.field public static final diagnoseDialogTitleBackground:I = 0x7f010018
 
 .field public static final diagnoseItemBackground:I = 0x7f010042
 
@@ -151,9 +151,9 @@
 
 .field public static final ptrSubHeaderTextAppearance:I = 0x7f010058
 
-.field public static final radius:I = 0x7f010004
+.field public static final radius:I = 0x7f010002
 
-.field public static final ringColor:I = 0x7f010007
+.field public static final ringColor:I = 0x7f010005
 
 .field public static final selectable:I = 0x7f010025
 
@@ -171,7 +171,7 @@
 
 .field public static final slidingMenuLayout:I = 0x7f01003e
 
-.field public static final strokeWidth:I = 0x7f010005
+.field public static final strokeWidth:I = 0x7f010003
 
 .field public static final summary:I = 0x7f010028
 
@@ -203,39 +203,39 @@
 
 .field public static final swipeOpenOnLongPress:I = 0x7f01006d
 
-.field public static final switchMinWidth:I = 0x7f01000f
+.field public static final switchMinWidth:I = 0x7f01000d
 
-.field public static final switchPadding:I = 0x7f010010
+.field public static final switchPadding:I = 0x7f01000e
 
-.field public static final switchStyle:I = 0x7f010008
+.field public static final switchStyle:I = 0x7f010006
 
-.field public static final switchTextAppearance:I = 0x7f01000e
+.field public static final switchTextAppearance:I = 0x7f01000c
 
-.field public static final textAllCaps:I = 0x7f010018
+.field public static final textAllCaps:I = 0x7f010016
 
-.field public static final textColor:I = 0x7f010011
+.field public static final textColor:I = 0x7f01000f
 
-.field public static final textColorHighlight:I = 0x7f010015
+.field public static final textColorHighlight:I = 0x7f010013
 
-.field public static final textColorHint:I = 0x7f010016
+.field public static final textColorHint:I = 0x7f010014
 
-.field public static final textColorLink:I = 0x7f010017
+.field public static final textColorLink:I = 0x7f010015
 
-.field public static final textOff:I = 0x7f01000c
+.field public static final textOff:I = 0x7f01000a
 
-.field public static final textOn:I = 0x7f01000b
+.field public static final textOn:I = 0x7f010009
 
-.field public static final textSize:I = 0x7f010012
+.field public static final textSize:I = 0x7f010010
 
-.field public static final textStyle:I = 0x7f010013
+.field public static final textStyle:I = 0x7f010011
 
 .field public static final textcolor:I = 0x7f010038
 
 .field public static final textsize:I = 0x7f010035
 
-.field public static final thumb:I = 0x7f010009
+.field public static final thumb:I = 0x7f010007
 
-.field public static final thumbTextPadding:I = 0x7f01000d
+.field public static final thumbTextPadding:I = 0x7f01000b
 
 .field public static final tipsize:I = 0x7f010037
 
@@ -247,9 +247,9 @@
 
 .field public static final touchModeAbove:I = 0x7f010066
 
-.field public static final track:I = 0x7f01000a
+.field public static final track:I = 0x7f010008
 
-.field public static final typeface:I = 0x7f010014
+.field public static final typeface:I = 0x7f010012
 
 .field public static final viewAbove:I = 0x7f010061
 

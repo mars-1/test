@@ -437,7 +437,7 @@
     .line 75
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ActiveTestShowListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ActiveTestShowListAdapter$ViewHolder;
 
-    const v0, 0x7f0d0255
+    const v0, 0x7f0c0258
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -450,7 +450,7 @@
     .line 76
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ActiveTestShowListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ActiveTestShowListAdapter$ViewHolder;
 
-    const v0, 0x7f0d006e
+    const v0, 0x7f0c006e
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -463,7 +463,7 @@
     .line 77
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ActiveTestShowListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ActiveTestShowListAdapter$ViewHolder;
 
-    const v0, 0x7f0d013f
+    const v0, 0x7f0c013f
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -476,7 +476,7 @@
     .line 78
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ActiveTestShowListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ActiveTestShowListAdapter$ViewHolder;
 
-    const v0, 0x7f0d0257
+    const v0, 0x7f0c025a
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

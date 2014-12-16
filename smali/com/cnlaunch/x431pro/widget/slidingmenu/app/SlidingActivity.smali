@@ -135,14 +135,14 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f0d0289 -> :sswitch_1
-        0x7f0d028b -> :sswitch_2
-        0x7f0d02d8 -> :sswitch_0
-        0x7f0d02d9 -> :sswitch_0
-        0x7f0d02da -> :sswitch_0
-        0x7f0d02db -> :sswitch_0
-        0x7f0d02dc -> :sswitch_0
-        0x7f0d02dd -> :sswitch_0
+        0x7f0c028d -> :sswitch_1
+        0x7f0c028f -> :sswitch_2
+        0x7f0c02ef -> :sswitch_0
+        0x7f0c02f0 -> :sswitch_0
+        0x7f0c02f1 -> :sswitch_0
+        0x7f0c02f2 -> :sswitch_0
+        0x7f0c02f3 -> :sswitch_0
+        0x7f0c02f4 -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -169,7 +169,7 @@
     invoke-virtual {v1, p1}, Lcom/cnlaunch/x431pro/widget/slidingmenu/app/SlidingActivityHelper;->onCreate(Landroid/os/Bundle;)V
 
     .line 38
-    const v1, 0x7f0301a4
+    const v1, 0x7f0301a7
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/slidingmenu/app/SlidingActivity;->setBehindContentView(I)V
 
@@ -195,14 +195,14 @@
     .line 43
     iget-object v1, p0, Lcom/cnlaunch/x431pro/widget/slidingmenu/app/SlidingActivity;->slidingMenu:Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;
 
-    const v2, 0x7f0c00e9
+    const v2, 0x7f0b00e9
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;->setShadowWidthRes(I)V
 
     .line 44
     iget-object v1, p0, Lcom/cnlaunch/x431pro/widget/slidingmenu/app/SlidingActivity;->slidingMenu:Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;
 
-    const v2, 0x7f02059f
+    const v2, 0x7f0205a3
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;->setShadowDrawable(I)V
 
@@ -235,7 +235,7 @@
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;->setTouchModeAbove(I)V
 
     .line 49
-    const v1, 0x7f0d02d8
+    const v1, 0x7f0c02ef
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/slidingmenu/app/SlidingActivity;->findViewById(I)Landroid/view/View;
 
@@ -251,7 +251,7 @@
     invoke-virtual {v1, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 51
-    const v1, 0x7f0d02d9
+    const v1, 0x7f0c02f0
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/slidingmenu/app/SlidingActivity;->findViewById(I)Landroid/view/View;
 
@@ -267,7 +267,7 @@
     invoke-virtual {v1, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 53
-    const v1, 0x7f0d02db
+    const v1, 0x7f0c02f2
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/slidingmenu/app/SlidingActivity;->findViewById(I)Landroid/view/View;
 
@@ -283,7 +283,7 @@
     invoke-virtual {v1, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 55
-    const v1, 0x7f0d02da
+    const v1, 0x7f0c02f1
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/slidingmenu/app/SlidingActivity;->findViewById(I)Landroid/view/View;
 
@@ -299,7 +299,7 @@
     invoke-virtual {v1, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 57
-    const v1, 0x7f0d02dc
+    const v1, 0x7f0c02f3
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/slidingmenu/app/SlidingActivity;->findViewById(I)Landroid/view/View;
 
@@ -315,7 +315,7 @@
     invoke-virtual {v1, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 59
-    const v1, 0x7f0d02de
+    const v1, 0x7f0c02f5
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/slidingmenu/app/SlidingActivity;->findViewById(I)Landroid/view/View;
 
@@ -331,7 +331,7 @@
     invoke-virtual {v1, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 61
-    const v1, 0x7f0d02dd
+    const v1, 0x7f0c02f4
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/widget/slidingmenu/app/SlidingActivity;->findViewById(I)Landroid/view/View;
 

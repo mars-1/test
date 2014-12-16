@@ -249,7 +249,7 @@
     move-result-object v3
 
     .line 51
-    const v4, 0x7f030136
+    const v4, 0x7f030138
 
     const/4 v5, 0x0
 
@@ -259,7 +259,7 @@
     move-result-object p2
 
     .line 53
-    const v3, 0x7f0d035e
+    const v3, 0x7f0c0375
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -271,7 +271,7 @@
     iput-object v3, v2, Lcom/cnlaunch/x431pro/activity/mine/adapter/AreaAdapter$ViewHolder;->tv_area_name:Landroid/widget/TextView;
 
     .line 54
-    const v3, 0x7f0d035d
+    const v3, 0x7f0c0374
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -40,7 +40,7 @@
 
     .prologue
     .line 38
-    const v0, 0x7f0d004f
+    const v0, 0x7f0c004f
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/LoginConfictActivity;->findViewById(I)Landroid/view/View;
 
@@ -56,7 +56,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 40
-    const v0, 0x7f0d0050
+    const v0, 0x7f0c0050
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/LoginConfictActivity;->findViewById(I)Landroid/view/View;
 
@@ -72,7 +72,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 42
-    const v0, 0x7f0d02a0
+    const v0, 0x7f0c02a4
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/LoginConfictActivity;->findViewById(I)Landroid/view/View;
 
@@ -85,12 +85,12 @@
     .line 43
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginConfictActivity;->msg_txt:Landroid/widget/TextView;
 
-    const v1, 0x7f070693
+    const v1, 0x7f070695
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 44
-    const v0, 0x7f0d004d
+    const v0, 0x7f0c004d
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/LoginConfictActivity;->findViewById(I)Landroid/view/View;
 
@@ -103,7 +103,7 @@
     .line 45
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginConfictActivity;->title_txt:Landroid/widget/TextView;
 
-    const v1, 0x7f070692
+    const v1, 0x7f070694
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -232,7 +232,7 @@
 
     .line 60
     :pswitch_data_0
-    .packed-switch 0x7f0d004f
+    .packed-switch 0x7f0c004f
         :pswitch_0
         :pswitch_1
     .end packed-switch

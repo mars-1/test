@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/CarIconFragmentForUSA$1;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/CarIconFragmentForUSA;
 
-    .line 133
+    .line 134
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -41,12 +41,12 @@
     .parameter "intent"
 
     .prologue
-    .line 136
+    .line 137
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 137
+    .line 138
     .local v0, action:Ljava/lang/String;
     const-string/jumbo v1, "softs_updated"
 
@@ -56,7 +56,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 138
+    .line 139
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/CarIconFragmentForUSA$1;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/CarIconFragmentForUSA;
 
     const/16 v2, 0x271b
@@ -65,7 +65,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/cnlaunch/x431pro/activity/diagnose/CarIconFragmentForUSA;->request(IZ)V
 
-    .line 140
+    .line 141
     :cond_0
     return-void
 .end method

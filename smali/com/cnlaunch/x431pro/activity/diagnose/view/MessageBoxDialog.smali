@@ -94,7 +94,7 @@
     .line 68
     new-instance v3, Landroid/app/ProgressDialog;
 
-    const v4, 0x7f0a00ba
+    const v4, 0x7f0800ba
 
     invoke-direct {v3, p1, v4}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;I)V
 
@@ -112,7 +112,7 @@
 
     .line 71
     .local v0, inflater:Landroid/view/LayoutInflater;
-    const v3, 0x7f030166
+    const v3, 0x7f030168
 
     const/4 v4, 0x0
 
@@ -122,7 +122,7 @@
 
     .line 72
     .local v1, layout:Landroid/view/View;
-    const v3, 0x7f0d006e
+    const v3, 0x7f0c006e
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -228,7 +228,7 @@
     .line 36
     new-instance v3, Landroid/app/ProgressDialog;
 
-    const v4, 0x7f0a00ba
+    const v4, 0x7f0800ba
 
     invoke-direct {v3, p1, v4}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;I)V
 
@@ -246,7 +246,7 @@
 
     .line 39
     .local v0, inflater:Landroid/view/LayoutInflater;
-    const v3, 0x7f030166
+    const v3, 0x7f030168
 
     const/4 v4, 0x0
 
@@ -256,7 +256,7 @@
 
     .line 40
     .local v1, layout:Landroid/view/View;
-    const v3, 0x7f0d006e
+    const v3, 0x7f0c006e
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

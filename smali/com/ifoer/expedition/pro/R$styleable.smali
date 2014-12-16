@@ -247,18 +247,18 @@
 
     const/16 v2, 0x8
 
-    .line 9194
+    .line 9253
     new-array v0, v4, [I
 
-    .line 9195
+    .line 9254
     const v1, 0x1010107
 
     aput v1, v0, v3
 
-    .line 9194
+    .line 9253
     sput-object v0, Lcom/ifoer/expedition/pro/R$styleable;->CompoundButton:[I
 
-    .line 9247
+    .line 9306
     const/16 v0, 0x12
 
     new-array v0, v0, [I
@@ -267,7 +267,7 @@
 
     sput-object v0, Lcom/ifoer/expedition/pro/R$styleable;->Preference:[I
 
-    .line 9556
+    .line 9615
     const/16 v0, 0x13
 
     new-array v0, v0, [I
@@ -276,7 +276,7 @@
 
     sput-object v0, Lcom/ifoer/expedition/pro/R$styleable;->PullToRefresh:[I
 
-    .line 9862
+    .line 9921
     const/16 v0, 0xd
 
     new-array v0, v0, [I
@@ -285,7 +285,7 @@
 
     sput-object v0, Lcom/ifoer/expedition/pro/R$styleable;->SlidingMenu:[I
 
-    .line 10064
+    .line 10123
     const/4 v0, 0x5
 
     new-array v0, v0, [I
@@ -294,14 +294,14 @@
 
     sput-object v0, Lcom/ifoer/expedition/pro/R$styleable;->SlidingUpPanelLayout:[I
 
-    .line 10163
+    .line 10222
     new-array v0, v2, [I
 
     fill-array-data v0, :array_4
 
     sput-object v0, Lcom/ifoer/expedition/pro/R$styleable;->StaggeredGridView:[I
 
-    .line 10321
+    .line 10380
     const/16 v0, 0xc
 
     new-array v0, v0, [I
@@ -310,32 +310,32 @@
 
     sput-object v0, Lcom/ifoer/expedition/pro/R$styleable;->SwipeListView:[I
 
-    .line 10519
+    .line 10578
     new-array v0, v2, [I
 
     fill-array-data v0, :array_6
 
     sput-object v0, Lcom/ifoer/expedition/pro/R$styleable;->Switch:[I
 
-    .line 10655
+    .line 10714
     new-array v0, v4, [I
 
-    .line 10656
-    const v1, 0x7f010008
+    .line 10715
+    const v1, 0x7f010006
 
     aput v1, v0, v3
 
-    .line 10655
+    .line 10714
     sput-object v0, Lcom/ifoer/expedition/pro/R$styleable;->Switch_Style:[I
 
-    .line 10694
+    .line 10753
     new-array v0, v2, [I
 
     fill-array-data v0, :array_7
 
     sput-object v0, Lcom/ifoer/expedition/pro/R$styleable;->TextAppearance:[I
 
-    .line 10849
+    .line 10908
     const/4 v0, 0x6
 
     new-array v0, v0, [I
@@ -344,10 +344,10 @@
 
     sput-object v0, Lcom/ifoer/expedition/pro/R$styleable;->roundedimageview:[I
 
-    .line 10945
+    .line 11004
     return-void
 
-    .line 9247
+    .line 9306
     :array_0
     .array-data 0x4
         0x1et 0x0t 0x1t 0x7ft
@@ -370,7 +370,7 @@
         0x2ft 0x0t 0x1t 0x7ft
     .end array-data
 
-    .line 9556
+    .line 9615
     :array_1
     .array-data 0x4
         0x4dt 0x0t 0x1t 0x7ft
@@ -394,7 +394,7 @@
         0x5ft 0x0t 0x1t 0x7ft
     .end array-data
 
-    .line 9862
+    .line 9921
     :array_2
     .array-data 0x4
         0x60t 0x0t 0x1t 0x7ft
@@ -412,7 +412,7 @@
         0x6ct 0x0t 0x1t 0x7ft
     .end array-data
 
-    .line 10064
+    .line 10123
     :array_3
     .array-data 0x4
         0x19t 0x0t 0x1t 0x7ft
@@ -422,7 +422,7 @@
         0x1dt 0x0t 0x1t 0x7ft
     .end array-data
 
-    .line 10163
+    .line 10222
     :array_4
     .array-data 0x4
         0x45t 0x0t 0x1t 0x7ft
@@ -435,7 +435,7 @@
         0x4ct 0x0t 0x1t 0x7ft
     .end array-data
 
-    .line 10321
+    .line 10380
     :array_5
     .array-data 0x4
         0x6dt 0x0t 0x1t 0x7ft
@@ -452,41 +452,41 @@
         0x78t 0x0t 0x1t 0x7ft
     .end array-data
 
-    .line 10519
+    .line 10578
     :array_6
     .array-data 0x4
+        0x7t 0x0t 0x1t 0x7ft
+        0x8t 0x0t 0x1t 0x7ft
         0x9t 0x0t 0x1t 0x7ft
         0xat 0x0t 0x1t 0x7ft
         0xbt 0x0t 0x1t 0x7ft
         0xct 0x0t 0x1t 0x7ft
         0xdt 0x0t 0x1t 0x7ft
         0xet 0x0t 0x1t 0x7ft
-        0xft 0x0t 0x1t 0x7ft
-        0x10t 0x0t 0x1t 0x7ft
     .end array-data
 
-    .line 10694
+    .line 10753
     :array_7
     .array-data 0x4
+        0xft 0x0t 0x1t 0x7ft
+        0x10t 0x0t 0x1t 0x7ft
         0x11t 0x0t 0x1t 0x7ft
         0x12t 0x0t 0x1t 0x7ft
         0x13t 0x0t 0x1t 0x7ft
         0x14t 0x0t 0x1t 0x7ft
         0x15t 0x0t 0x1t 0x7ft
         0x16t 0x0t 0x1t 0x7ft
-        0x17t 0x0t 0x1t 0x7ft
-        0x18t 0x0t 0x1t 0x7ft
     .end array-data
 
-    .line 10849
+    .line 10908
     :array_8
     .array-data 0x4
+        0x0t 0x0t 0x1t 0x7ft
+        0x1t 0x0t 0x1t 0x7ft
         0x2t 0x0t 0x1t 0x7ft
         0x3t 0x0t 0x1t 0x7ft
         0x4t 0x0t 0x1t 0x7ft
         0x5t 0x0t 0x1t 0x7ft
-        0x6t 0x0t 0x1t 0x7ft
-        0x7t 0x0t 0x1t 0x7ft
     .end array-data
 .end method
 
@@ -494,7 +494,7 @@
     .locals 0
 
     .prologue
-    .line 9183
+    .line 9242
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

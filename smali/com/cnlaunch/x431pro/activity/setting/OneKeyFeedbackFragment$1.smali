@@ -37,7 +37,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;
 
-    .line 131
+    .line 120
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +62,7 @@
     .end annotation
 
     .prologue
-    .line 134
+    .line 123
     .local p1, arg0:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -70,13 +70,13 @@
 
     check-cast v0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
 
-    .line 136
+    .line 125
     .local v0, holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
     iget-object v1, v0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->cb_feedback_log_choice:Landroid/widget/CheckBox;
 
     invoke-virtual {v1}, Landroid/widget/CheckBox;->toggle()V
 
-    .line 137
+    .line 126
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
@@ -104,6 +104,12 @@
 
     invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 138
+    .line 128
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;
+
+    #calls: Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->refreshBtnSelect()V
+    invoke-static {v1}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->access$1(Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;)V
+
+    .line 129
     return-void
 .end method

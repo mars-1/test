@@ -3,8 +3,8 @@
 .source "ClearEditText.java"
 
 # interfaces
-.implements Landroid/view/View$OnFocusChangeListener;
 .implements Landroid/text/TextWatcher;
+.implements Landroid/view/View$OnFocusChangeListener;
 
 
 # instance fields
@@ -85,7 +85,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0204ec
+    const v1, 0x7f0204f0
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

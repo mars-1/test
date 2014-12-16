@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final diagnoseDialogButtonStyle:I = 0x7f010000
+.field public static final diagnoseDialogButtonStyle:I = 0x7f010017
 
-.field public static final diagnoseDialogTitleBackground:I = 0x7f010001
+.field public static final diagnoseDialogTitleBackground:I = 0x7f010018
 
 
 # direct methods

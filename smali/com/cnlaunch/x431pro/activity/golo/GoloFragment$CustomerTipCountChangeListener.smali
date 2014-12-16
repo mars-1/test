@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1404
+    .line 1403
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .parameter
 
     .prologue
-    .line 1404
+    .line 1403
     invoke-direct {p0, p1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;-><init>(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;)V
 
     return-void
@@ -52,7 +52,7 @@
     .parameter
 
     .prologue
-    .line 1404
+    .line 1403
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     return-object v0
@@ -66,7 +66,7 @@
     .parameter "count"
 
     .prologue
-    .line 1408
+    .line 1407
     const-string/jumbo v0, "GoloFragment"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -95,7 +95,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1410
+    .line 1409
     const-string/jumbo v0, "update_new_tip_count"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
@@ -104,11 +104,11 @@
 
     if-eqz v0, :cond_0
 
-    .line 1429
+    .line 1428
     :goto_0
     return-void
 
-    .line 1413
+    .line 1412
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 

@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity$1;->this$0:Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;
 
-    .line 47
+    .line 50
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,11 +43,11 @@
     .parameter "v"
 
     .prologue
-    .line 51
+    .line 54
     iget-object v0, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity$1;->this$0:Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;
 
     invoke-virtual {v0}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->finish()V
 
-    .line 52
+    .line 55
     return-void
 .end method

@@ -74,7 +74,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 31
-    const v1, 0x7f0704ef
+    const v1, 0x7f0704f1
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/help/HelpShowFileFragment;->setTitle(I)V
 
@@ -83,7 +83,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d04bb
+    const v2, 0x7f0c04d4
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -201,7 +201,7 @@
 
     .prologue
     .line 96
-    const v0, 0x7f0301a1
+    const v0, 0x7f0301a4
 
     const/4 v1, 0x0
 
@@ -248,7 +248,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d04bb
+    const v1, 0x7f0c04d4
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

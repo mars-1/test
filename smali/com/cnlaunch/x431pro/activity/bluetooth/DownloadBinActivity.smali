@@ -333,7 +333,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f09000d
+    const v7, 0x7f0d000d
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -345,7 +345,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f09000e
+    const v7, 0x7f0d000e
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -457,7 +457,7 @@
     .line 82
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/DownloadBinActivity;->mainView:Landroid/view/View;
 
-    const v4, 0x7f0d00fa
+    const v4, 0x7f0c00fa
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -470,7 +470,7 @@
     .line 83
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/DownloadBinActivity;->mainView:Landroid/view/View;
 
-    const v4, 0x7f0d00f9
+    const v4, 0x7f0c00f9
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -483,7 +483,7 @@
     .line 84
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/DownloadBinActivity;->mainView:Landroid/view/View;
 
-    const v4, 0x7f0d00f8
+    const v4, 0x7f0c00f8
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -496,7 +496,7 @@
     .line 85
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/DownloadBinActivity;->mainView:Landroid/view/View;
 
-    const v4, 0x7f0d00fb
+    const v4, 0x7f0c00fb
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -509,7 +509,7 @@
     .line 86
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/DownloadBinActivity;->mainView:Landroid/view/View;
 
-    const v4, 0x7f0d00fc
+    const v4, 0x7f0c00fc
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -522,7 +522,7 @@
     .line 87
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/DownloadBinActivity;->mainView:Landroid/view/View;
 
-    const v4, 0x7f0d00fd
+    const v4, 0x7f0c00fd
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -570,7 +570,7 @@
     .local v2, ver:Ljava/lang/String;
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/DownloadBinActivity;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f070565
+    const v4, 0x7f070567
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -695,7 +695,7 @@
     .line 135
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/DownloadBinActivity;->mBtnUpdate:Landroid/widget/Button;
 
-    const v1, 0x7f070038
+    const v1, 0x7f07001f
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
@@ -808,7 +808,7 @@
 
     .line 107
     :pswitch_data_0
-    .packed-switch 0x7f0d00fd
+    .packed-switch 0x7f0c00fd
         :pswitch_0
     .end packed-switch
 .end method
@@ -906,7 +906,7 @@
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/DownloadBinActivity;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a00ba
+    const v3, 0x7f0800ba
 
     invoke-direct {v1, v2, v3}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;I)V
 
@@ -964,7 +964,7 @@
     .line 144
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/DownloadBinActivity;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f07056b
+    const v1, 0x7f07056d
 
     const/16 v2, 0x11
 

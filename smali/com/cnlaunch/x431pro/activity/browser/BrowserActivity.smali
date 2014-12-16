@@ -25,7 +25,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 12
-    const v0, 0x7f0300d1
+    const v0, 0x7f0300d2
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/browser/BrowserActivity;->setContentView(I)V
 

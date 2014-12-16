@@ -91,7 +91,7 @@
 
     move-result-object v5
 
-    const/high16 v6, 0x7f09
+    const/high16 v6, 0x7f0d
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -103,7 +103,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f090001
+    const v6, 0x7f0d0001
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -235,7 +235,7 @@
 
     .prologue
     .line 84
-    const v1, 0x7f0d043d
+    const v1, 0x7f0c045b
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->findViewById(I)Landroid/view/View;
 
@@ -246,7 +246,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->btn_feed_back_sure:Landroid/widget/Button;
 
     .line 85
-    const v1, 0x7f0d0437
+    const v1, 0x7f0c0455
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->findViewById(I)Landroid/view/View;
 
@@ -257,7 +257,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->et_feed_back_remark:Landroid/widget/EditText;
 
     .line 86
-    const v1, 0x7f0d0435
+    const v1, 0x7f0c0453
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->findViewById(I)Landroid/view/View;
 
@@ -288,7 +288,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 91
-    const v1, 0x7f0d043c
+    const v1, 0x7f0c045a
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->findViewById(I)Landroid/view/View;
 
@@ -299,7 +299,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->pb_feed_back_progressBar:Landroid/widget/ProgressBar;
 
     .line 92
-    const v1, 0x7f0d043b
+    const v1, 0x7f0c0459
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->findViewById(I)Landroid/view/View;
 
@@ -310,7 +310,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->tv__commit_log_num:Landroid/widget/TextView;
 
     .line 93
-    const v1, 0x7f0d0439
+    const v1, 0x7f0c0457
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->findViewById(I)Landroid/view/View;
 
@@ -534,7 +534,7 @@
     if-nez v5, :cond_1
 
     .line 114
-    const v5, 0x7f070729
+    const v5, 0x7f07072b
 
     const/16 v6, 0x11
 
@@ -744,7 +744,7 @@
 
     .line 100
     :pswitch_data_0
-    .packed-switch 0x7f0d043d
+    .packed-switch 0x7f0c045b
         :pswitch_0
     .end packed-switch
 .end method
@@ -773,7 +773,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseDialogActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 68
-    const v1, 0x7f03017f
+    const v1, 0x7f030182
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->setContentView(I)V
 
@@ -853,7 +853,7 @@
     .parameter "result"
 
     .prologue
-    const v3, 0x7f0705f2
+    const v3, 0x7f0705f4
 
     const/16 v1, 0x8
 
@@ -904,7 +904,7 @@
     .line 248
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0704dd
+    const v1, 0x7f0704df
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -937,7 +937,7 @@
     .line 261
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0704de
+    const v1, 0x7f0704e0
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -1017,7 +1017,7 @@
     .line 312
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f07071e
+    const v1, 0x7f070720
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -1038,7 +1038,7 @@
     .parameter "result"
 
     .prologue
-    const v12, 0x7f070044
+    const v12, 0x7f07002b
 
     const/4 v11, -0x1
 
@@ -1249,9 +1249,9 @@
     .line 170
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
 
-    const v4, 0x7f0705f8
+    const v4, 0x7f0705fa
 
-    const v5, 0x7f0705f1
+    const v5, 0x7f0705f3
 
     invoke-direct {v2, p0, v4, v5, v9}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;-><init>(Landroid/content/Context;IIZ)V
 
@@ -1311,9 +1311,9 @@
     .line 188
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
 
-    const v4, 0x7f0705f8
+    const v4, 0x7f0705fa
 
-    const v5, 0x7f0706d2
+    const v5, 0x7f0706d4
 
     invoke-direct {v2, p0, v4, v5, v9}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;-><init>(Landroid/content/Context;IIZ)V
 
@@ -1342,9 +1342,9 @@
     :cond_6
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
 
-    const v4, 0x7f0705f8
+    const v4, 0x7f0705fa
 
-    const v5, 0x7f0706d3
+    const v5, 0x7f0706d5
 
     invoke-direct {v2, p0, v4, v5, v9}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;-><init>(Landroid/content/Context;IIZ)V
 
@@ -1415,13 +1415,13 @@
     .line 219
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
 
-    const v4, 0x7f0705f8
+    const v4, 0x7f0705fa
 
     invoke-virtual {p0, v4}, Lcom/cnlaunch/x431pro/activity/setting/SendDiagnosticLogActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    const v5, 0x7f0706d4
+    const v5, 0x7f0706d6
 
     const/4 v6, 0x2
 

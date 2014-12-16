@@ -80,16 +80,15 @@
     .line 259
     iget v0, p0, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;->id:I
 
-    packed-switch v0, :pswitch_data_0
+    sparse-switch v0, :sswitch_data_0
 
     .line 288
     :cond_0
     :goto_0
-    :pswitch_0
     return-void
 
     .line 261
-    :pswitch_1
+    :sswitch_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;->this$0:Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;->edit_garage_name:Landroid/widget/EditText;
@@ -127,7 +126,7 @@
     goto :goto_0
 
     .line 266
-    :pswitch_2
+    :sswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;->this$0:Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;->edit_company_address:Landroid/widget/EditText;
@@ -165,7 +164,7 @@
     goto :goto_0
 
     .line 271
-    :pswitch_3
+    :sswitch_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;->this$0:Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;->edit_telephone:Landroid/widget/EditText;
@@ -203,7 +202,7 @@
     goto :goto_0
 
     .line 276
-    :pswitch_4
+    :sswitch_3
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;->this$0:Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;->edit_fax:Landroid/widget/EditText;
@@ -241,7 +240,7 @@
     goto :goto_0
 
     .line 281
-    :pswitch_5
+    :sswitch_4
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;->this$0:Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;->edit_license_plate_number:Landroid/widget/EditText;
@@ -299,16 +298,12 @@
     .line 259
     nop
 
-    :pswitch_data_0
-    .packed-switch 0x7f0d0381
-        :pswitch_1
-        :pswitch_0
-        :pswitch_2
-        :pswitch_0
-        :pswitch_3
-        :pswitch_0
-        :pswitch_4
-        :pswitch_0
-        :pswitch_5
-    .end packed-switch
+    :sswitch_data_0
+    .sparse-switch
+        0x7f0c02e3 -> :sswitch_3
+        0x7f0c0398 -> :sswitch_0
+        0x7f0c039a -> :sswitch_1
+        0x7f0c039c -> :sswitch_2
+        0x7f0c039f -> :sswitch_4
+    .end sparse-switch
 .end method

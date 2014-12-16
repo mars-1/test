@@ -57,17 +57,6 @@
     .end annotation
 .end field
 
-.field temp_diagnosis_log:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List",
-            "<",
-            "Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field private temp_isSelected:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -85,36 +74,29 @@
     .locals 1
 
     .prologue
-    .line 48
+    .line 47
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/BaseFragment;-><init>()V
 
-    .line 61
+    .line 59
     const-string/jumbo v0, ""
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mSerialNo:Ljava/lang/String;
 
-    .line 62
+    .line 60
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->set_filename:Ljava/util/List;
 
-    .line 63
+    .line 61
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->temp_isSelected:Ljava/util/List;
 
-    .line 64
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->temp_diagnosis_log:Ljava/util/List;
-
-    .line 48
+    .line 47
     return-void
 .end method
 
@@ -123,14 +105,25 @@
     .parameter
 
     .prologue
-    .line 58
+    .line 56
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
 
     return-object v0
 .end method
 
+.method static synthetic access$1(Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;)V
+    .locals 0
+    .parameter
+
+    .prologue
+    .line 133
+    invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->refreshBtnSelect()V
+
+    return-void
+.end method
+
 .method private initViews()V
-    .locals 3
+    .locals 5
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "NewApi"
@@ -138,19 +131,23 @@
     .end annotation
 
     .prologue
-    .line 112
-    const v0, 0x7f0705ee
+    const/4 v4, 0x1
+
+    const/4 v3, 0x0
+
+    .line 98
+    const v0, 0x7f0705f0
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->setTitle(I)V
 
-    .line 113
+    .line 99
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -158,23 +155,23 @@
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->setLeftImage(Landroid/graphics/drawable/Drawable;)V
 
-    .line 114
+    .line 100
     new-instance v0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mContext:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
 
-    invoke-direct {v0, v1, v2}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;-><init>(Landroid/content/Context;Ljava/util/Vector;)V
+    invoke-direct {v0, v1, v2, p0}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;-><init>(Landroid/content/Context;Ljava/util/Vector;Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;)V
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
 
-    .line 115
+    .line 101
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0477
+    const v1, 0x7f0c0495
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -184,19 +181,19 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->lv_setting_onekey:Landroid/widget/ListView;
 
-    .line 116
+    .line 102
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->lv_setting_onekey:Landroid/widget/ListView;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 117
+    .line 103
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0474
+    const v1, 0x7f0c0492
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -206,12 +203,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
 
-    .line 120
+    .line 106
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0475
+    const v1, 0x7f0c0493
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -221,7 +218,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_next:Landroid/widget/Button;
 
-    .line 121
+    .line 107
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
@@ -230,31 +227,37 @@
 
     if-nez v0, :cond_0
 
-    .line 122
+    .line 108
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_next:Landroid/widget/Button;
 
-    const/4 v1, 0x0
+    invoke-virtual {v0, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
+    .line 109
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
 
-    .line 140
+    invoke-virtual {v0, v3}, Landroid/widget/CheckBox;->setEnabled(Z)V
+
+    .line 131
     :goto_0
     return-void
 
-    .line 125
+    .line 112
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_next:Landroid/widget/Button;
 
-    const/4 v1, 0x1
+    invoke-virtual {v0, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
+    .line 113
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
 
-    .line 127
+    invoke-virtual {v0, v4}, Landroid/widget/CheckBox;->setEnabled(Z)V
+
+    .line 116
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0476
+    const v1, 0x7f0c0494
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -264,22 +267,22 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_cancel:Landroid/widget/Button;
 
-    .line 128
+    .line 117
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, p0}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 129
+    .line 118
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_next:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 130
+    .line 119
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_cancel:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 131
+    .line 120
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->lv_setting_onekey:Landroid/widget/ListView;
 
     new-instance v1, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment$1;
@@ -287,6 +290,107 @@
     invoke-direct {v1, p0}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment$1;-><init>(Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+
+    goto :goto_0
+.end method
+
+.method private refreshBtnSelect()V
+    .locals 3
+
+    .prologue
+    .line 134
+    const/4 v0, 0x0
+
+    .line 135
+    .local v0, i:I
+    :goto_0
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
+
+    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/util/HashMap;->size()I
+
+    move-result v1
+
+    if-lt v0, v1, :cond_1
+
+    .line 142
+    :goto_1
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
+
+    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/util/HashMap;->size()I
+
+    move-result v1
+
+    if-ne v0, v1, :cond_0
+
+    .line 143
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    const v2, 0x7f0704e6
+
+    invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setText(I)V
+
+    .line 144
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setChecked(Z)V
+
+    .line 146
+    :cond_0
+    return-void
+
+    .line 136
+    :cond_1
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
+
+    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
+
+    move-result-object v1
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Boolean;
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    .line 137
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    const v2, 0x7f0704e7
+
+    invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setText(I)V
+
+    .line 138
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setChecked(Z)V
+
+    goto :goto_1
+
+    .line 135
+    :cond_2
+    add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 .end method
@@ -304,7 +408,7 @@
 
     const/4 v7, 0x0
 
-    .line 190
+    .line 197
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v4}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -319,49 +423,99 @@
 
     iput-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mSerialNo:Ljava/lang/String;
 
-    .line 191
+    .line 198
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil;->getDiagnoseLogFileList()Ljava/util/Vector;
 
     move-result-object v4
 
     iput-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->diagnosis_log:Ljava/util/Vector;
 
-    .line 193
+    .line 200
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->set_filename:Ljava/util/List;
 
-    if-eqz v4, :cond_2
+    if-eqz v4, :cond_1
 
-    .line 194
+    .line 201
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->set_filename:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->clear()V
 
-    .line 199
+    .line 206
     :goto_0
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->temp_isSelected:Ljava/util/List;
+    const/4 v1, 0x0
+
+    .local v1, i:I
+    :goto_1
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
+
+    invoke-virtual {v4}, Ljava/util/Vector;->size()I
+
+    move-result v4
+
+    if-lt v1, v4, :cond_2
+
+    .line 210
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
 
     if-eqz v4, :cond_3
 
-    .line 200
+    .line 211
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
+
+    invoke-virtual {v4}, Ljava/util/Vector;->clear()V
+
+    .line 216
+    :goto_2
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mSerialNo:Ljava/lang/String;
+
+    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    .line 217
+    const/4 v1, 0x0
+
+    :goto_3
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->diagnosis_log:Ljava/util/Vector;
+
+    invoke-virtual {v4}, Ljava/util/Vector;->size()I
+
+    move-result v4
+
+    if-lt v1, v4, :cond_4
+
+    .line 230
+    :cond_0
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->temp_isSelected:Ljava/util/List;
+
+    if-eqz v4, :cond_6
+
+    .line 231
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->temp_isSelected:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->clear()V
 
-    .line 205
-    :goto_1
+    .line 232
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    invoke-virtual {v4, v7}, Landroid/widget/CheckBox;->setEnabled(Z)V
+
+    .line 238
+    :goto_4
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
 
     move-result-object v4
 
-    if-eqz v4, :cond_0
+    if-eqz v4, :cond_9
 
-    .line 206
+    .line 239
     const/4 v1, 0x0
 
-    .local v1, i:I
-    :goto_2
+    :goto_5
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
@@ -372,150 +526,161 @@
 
     move-result v4
 
-    if-lt v1, v4, :cond_4
-
-    .line 213
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
-
-    invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/util/HashMap;->clear()V
-
-    .line 216
-    .end local v1           #i:I
-    :cond_0
-    const/4 v1, 0x0
-
-    .restart local v1       #i:I
-    :goto_3
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
-
-    invoke-virtual {v4}, Ljava/util/Vector;->size()I
-
-    move-result v4
-
-    if-lt v1, v4, :cond_6
-
-    .line 220
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
-
-    if-eqz v4, :cond_7
-
-    .line 221
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
-
-    invoke-virtual {v4}, Ljava/util/Vector;->clear()V
-
-    .line 226
-    :goto_4
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mSerialNo:Ljava/lang/String;
-
-    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_1
-
-    .line 227
-    const/4 v1, 0x0
-
-    :goto_5
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->diagnosis_log:Ljava/util/Vector;
-
-    invoke-virtual {v4}, Ljava/util/Vector;->size()I
-
-    move-result v4
-
-    if-lt v1, v4, :cond_8
-
-    .line 234
-    :cond_1
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
-
-    invoke-virtual {v4}, Ljava/util/Vector;->size()I
-
-    move-result v4
-
-    if-nez v4, :cond_a
-
-    .line 235
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_next:Landroid/widget/Button;
-
-    invoke-virtual {v4, v7}, Landroid/widget/Button;->setEnabled(Z)V
-
-    .line 240
-    :goto_6
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
-
-    invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_b
-
-    .line 241
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
-
-    invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/util/HashMap;->clear()V
+    if-lt v1, v4, :cond_7
 
     .line 246
-    :goto_7
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
+
+    invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/util/HashMap;->clear()V
+
+    .line 251
+    :goto_6
     const/4 v1, 0x0
 
-    :goto_8
+    :goto_7
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
 
     invoke-virtual {v4}, Ljava/util/Vector;->size()I
 
     move-result v4
 
-    if-lt v1, v4, :cond_c
+    if-lt v1, v4, :cond_a
 
-    .line 259
+    .line 264
+    invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->selectAllChanged()V
+
+    .line 266
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
 
     invoke-virtual {v4, v5}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->setmList(Ljava/util/Vector;)V
 
-    .line 260
+    .line 267
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->notifyDataSetChanged()V
 
-    .line 261
+    .line 268
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->lv_setting_onekey:Landroid/widget/ListView;
+
+    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
+
+    invoke-virtual {v4, v5}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
+
+    .line 269
+    invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->refreshBtnSelect()V
+
+    .line 270
     return-void
 
-    .line 196
+    .line 203
     .end local v1           #i:I
-    :cond_2
+    :cond_1
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->set_filename:Ljava/util/List;
 
-    goto/16 :goto_0
+    goto :goto_0
 
-    .line 202
+    .line 207
+    .restart local v1       #i:I
+    :cond_2
+    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->set_filename:Ljava/util/List;
+
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
+
+    invoke-virtual {v4, v1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
+
+    invoke-virtual {v4}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getFilename()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-interface {v5, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 206
+    add-int/lit8 v1, v1, 0x1
+
+    goto/16 :goto_1
+
+    .line 213
     :cond_3
+    new-instance v4, Ljava/util/Vector;
+
+    invoke-direct {v4}, Ljava/util/Vector;-><init>()V
+
+    iput-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
+
+    goto/16 :goto_2
+
+    .line 218
+    :cond_4
+    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mSerialNo:Ljava/lang/String;
+
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->diagnosis_log:Ljava/util/Vector;
+
+    invoke-virtual {v4, v1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
+
+    invoke-virtual {v4}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getDeviceSN()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_5
+
+    .line 219
+    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
+
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->diagnosis_log:Ljava/util/Vector;
+
+    invoke-virtual {v4, v1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
+
+    invoke-virtual {v5, v4}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
+
+    .line 217
+    :cond_5
+    add-int/lit8 v1, v1, 0x1
+
+    goto/16 :goto_3
+
+    .line 234
+    :cond_6
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->temp_isSelected:Ljava/util/List;
 
-    goto/16 :goto_1
+    .line 235
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
 
-    .line 207
-    .restart local v1       #i:I
-    :cond_4
+    invoke-virtual {v4, v6}, Landroid/widget/CheckBox;->setEnabled(Z)V
+
+    goto/16 :goto_4
+
+    .line 240
+    :cond_7
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
@@ -536,9 +701,9 @@
 
     move-result v4
 
-    if-eqz v4, :cond_5
+    if-eqz v4, :cond_8
 
-    .line 208
+    .line 241
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->temp_isSelected:Ljava/util/List;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -547,14 +712,14 @@
 
     invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 206
-    :goto_9
+    .line 239
+    :goto_8
     add-int/lit8 v1, v1, 0x1
 
-    goto/16 :goto_2
+    goto/16 :goto_5
 
-    .line 210
-    :cond_5
+    .line 243
+    :cond_8
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->temp_isSelected:Ljava/util/List;
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -563,102 +728,20 @@
 
     invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto :goto_9
+    goto :goto_8
 
-    .line 217
-    :cond_6
-    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->set_filename:Ljava/util/List;
-
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
-
-    invoke-virtual {v4, v1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
-
-    invoke-virtual {v4}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getFilename()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-interface {v5, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 216
-    add-int/lit8 v1, v1, 0x1
-
-    goto/16 :goto_3
-
-    .line 223
-    :cond_7
-    new-instance v4, Ljava/util/Vector;
-
-    invoke-direct {v4}, Ljava/util/Vector;-><init>()V
-
-    iput-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
-
-    goto/16 :goto_4
-
-    .line 228
-    :cond_8
-    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mSerialNo:Ljava/lang/String;
-
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->diagnosis_log:Ljava/util/Vector;
-
-    invoke-virtual {v4, v1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
-
-    invoke-virtual {v4}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getDeviceSN()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_9
-
-    .line 229
-    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
-
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->diagnosis_log:Ljava/util/Vector;
-
-    invoke-virtual {v4, v1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
-
-    invoke-virtual {v5, v4}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
-
-    .line 227
+    .line 248
     :cond_9
-    add-int/lit8 v1, v1, 0x1
-
-    goto/16 :goto_5
-
-    .line 237
-    :cond_a
-    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_next:Landroid/widget/Button;
-
-    invoke-virtual {v4, v6}, Landroid/widget/Button;->setEnabled(Z)V
-
-    goto/16 :goto_6
-
-    .line 243
-    :cond_b
     new-instance v4, Ljava/util/HashMap;
 
     invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
 
     invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->setIsSelected(Ljava/util/HashMap;)V
 
-    goto/16 :goto_7
+    goto/16 :goto_6
 
-    .line 247
-    :cond_c
+    .line 252
+    :cond_a
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
@@ -675,26 +758,26 @@
 
     invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 248
+    .line 253
     const/4 v2, 0x0
 
     .local v2, j:I
-    :goto_a
+    :goto_9
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->set_filename:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->size()I
 
     move-result v4
 
-    if-lt v2, v4, :cond_d
+    if-lt v2, v4, :cond_b
 
-    .line 246
+    .line 251
     add-int/lit8 v1, v1, 0x1
 
-    goto/16 :goto_8
+    goto/16 :goto_7
 
-    .line 249
-    :cond_d
+    .line 254
+    :cond_b
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->set_filename:Ljava/util/List;
 
     invoke-interface {v4, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -703,7 +786,7 @@
 
     check-cast v3, Ljava/lang/String;
 
-    .line 250
+    .line 255
     .local v3, temp_file:Ljava/lang/String;
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
 
@@ -717,15 +800,15 @@
 
     move-result-object v0
 
-    .line 251
+    .line 256
     .local v0, file:Ljava/lang/String;
     invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
-    if-eqz v4, :cond_e
+    if-eqz v4, :cond_c
 
-    .line 252
+    .line 257
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
@@ -746,11 +829,11 @@
 
     invoke-virtual {v5, v6, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 248
-    :cond_e
+    .line 253
+    :cond_c
     add-int/lit8 v2, v2, 0x1
 
-    goto :goto_a
+    goto :goto_9
 .end method
 
 
@@ -760,10 +843,10 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 69
+    .line 65
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
-    .line 70
+    .line 66
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -778,21 +861,21 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mSerialNo:Ljava/lang/String;
 
-    .line 71
+    .line 67
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil;->getDiagnoseLogFileList()Ljava/util/Vector;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->diagnosis_log:Ljava/util/Vector;
 
-    .line 72
+    .line 68
     new-instance v1, Ljava/util/Vector;
 
     invoke-direct {v1}, Ljava/util/Vector;-><init>()V
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
 
-    .line 73
+    .line 69
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mSerialNo:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -801,7 +884,7 @@
 
     if-nez v1, :cond_2
 
-    .line 74
+    .line 70
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -814,15 +897,15 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 82
+    .line 78
     .end local v0           #i:I
     :goto_1
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->initViews()V
 
-    .line 83
+    .line 79
     return-void
 
-    .line 75
+    .line 71
     .restart local v0       #i:I
     :cond_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mSerialNo:Ljava/lang/String;
@@ -845,7 +928,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 76
+    .line 72
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->diagnosis_log:Ljava/util/Vector;
@@ -858,13 +941,13 @@
 
     invoke-virtual {v2, v1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
-    .line 74
+    .line 70
     :cond_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 80
+    .line 76
     .end local v0           #i:I
     :cond_2
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mContext:Landroid/content/Context;
@@ -873,7 +956,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f07058f
+    const v3, 0x7f070591
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -889,24 +972,24 @@
     .parameter "v"
 
     .prologue
-    const v6, 0x7f0704e5
+    const v6, 0x7f0704e7
 
-    .line 144
+    .line 149
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v5
 
     packed-switch v5, :pswitch_data_0
 
-    .line 187
+    .line 194
     :goto_0
     return-void
 
-    .line 146
+    .line 151
     :pswitch_0
     const/4 v0, 0x0
 
-    .line 147
+    .line 152
     .local v0, checkFlag:Z
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
 
@@ -918,7 +1001,7 @@
 
     move-result-object v4
 
-    .line 148
+    .line 153
     .local v4, selectTxt:Ljava/lang/String;
     invoke-virtual {p0, v6}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->getString(I)Ljava/lang/String;
 
@@ -930,17 +1013,17 @@
 
     if-eqz v5, :cond_0
 
-    .line 149
+    .line 154
     const/4 v0, 0x0
 
-    .line 150
+    .line 155
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
 
-    const v6, 0x7f0704e4
+    const v6, 0x7f0704e6
 
     invoke-virtual {v5, v6}, Landroid/widget/CheckBox;->setText(I)V
 
-    .line 155
+    .line 160
     :goto_1
     const/4 v3, 0x0
 
@@ -954,26 +1037,31 @@
 
     if-lt v3, v5, :cond_1
 
-    .line 158
+    .line 164
+    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_next:Landroid/widget/Button;
+
+    invoke-virtual {v5, v0}, Landroid/widget/Button;->setEnabled(Z)V
+
+    .line 165
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
 
     invoke-virtual {v5}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->notifyDataSetChanged()V
 
     goto :goto_0
 
-    .line 152
+    .line 157
     .end local v3           #i:I
     :cond_0
     const/4 v0, 0x1
 
-    .line 153
+    .line 158
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
 
     invoke-virtual {v5, v6}, Landroid/widget/CheckBox;->setText(I)V
 
     goto :goto_1
 
-    .line 156
+    .line 161
     .restart local v3       #i:I
     :cond_1
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
@@ -992,12 +1080,12 @@
 
     invoke-virtual {v5, v6, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 155
+    .line 160
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_2
 
-    .line 163
+    .line 170
     .end local v0           #checkFlag:Z
     .end local v3           #i:I
     .end local v4           #selectTxt:Ljava/lang/String;
@@ -1010,26 +1098,26 @@
 
     if-nez v5, :cond_2
 
-    .line 164
+    .line 171
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0704dd
+    const v6, 0x7f0704df
 
     invoke-static {v5, v6}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 167
+    .line 174
     :cond_2
     const/4 v2, 0x1
 
-    .line 168
+    .line 175
     .local v2, hasUpgrade:Z
     new-instance v1, Ljava/util/Vector;
 
     invoke-direct {v1}, Ljava/util/Vector;-><init>()V
 
-    .line 169
+    .line 176
     .local v1, feedbackListFile:Ljava/util/Vector;,"Ljava/util/Vector<Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;>;"
     const/4 v3, 0x0
 
@@ -1043,19 +1131,19 @@
 
     if-lt v3, v5, :cond_3
 
-    .line 176
+    .line 183
     if-eqz v2, :cond_5
 
-    .line 177
+    .line 184
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0704e6
+    const v6, 0x7f0704e8
 
     invoke-static {v5, v6}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 170
+    .line 177
     :cond_3
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
 
@@ -1079,7 +1167,7 @@
 
     if-eqz v5, :cond_4
 
-    .line 171
+    .line 178
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->items_diagnosis_log:Ljava/util/Vector;
 
     invoke-virtual {v5, v3}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
@@ -1090,16 +1178,16 @@
 
     invoke-virtual {v1, v5}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
-    .line 172
+    .line 179
     const/4 v2, 0x0
 
-    .line 169
+    .line 176
     :cond_4
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_3
 
-    .line 179
+    .line 186
     :cond_5
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mContext:Landroid/content/Context;
 
@@ -1107,22 +1195,24 @@
 
     goto/16 :goto_0
 
-    .line 184
+    .line 191
     .end local v1           #feedbackListFile:Ljava/util/Vector;,"Ljava/util/Vector<Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;>;"
     .end local v2           #hasUpgrade:Z
     .end local v3           #i:I
     :pswitch_2
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->mainActivity:Lcom/cnlaunch/x431pro/activity/MainActivity;
 
-    const v6, 0x7f0d02d8
+    const v6, 0x7f0c02ef
 
     invoke-virtual {v5, v6}, Lcom/cnlaunch/x431pro/activity/MainActivity;->showActivity(I)V
 
     goto/16 :goto_0
 
-    .line 144
+    .line 149
+    nop
+
     :pswitch_data_0
-    .packed-switch 0x7f0d0474
+    .packed-switch 0x7f0c0492
         :pswitch_0
         :pswitch_1
         :pswitch_2
@@ -1136,8 +1226,8 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 87
-    const v0, 0x7f030187
+    .line 83
+    const v0, 0x7f03018a
 
     const/4 v1, 0x0
 
@@ -1152,12 +1242,189 @@
     .locals 0
 
     .prologue
-    .line 93
+    .line 89
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onResume()V
 
-    .line 104
+    .line 90
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->refreshView()V
 
-    .line 105
+    .line 91
     return-void
+.end method
+
+.method public selectAllChanged()V
+    .locals 8
+
+    .prologue
+    const v7, 0x7f0704e6
+
+    const/4 v6, 0x1
+
+    const/4 v5, 0x0
+
+    .line 276
+    const/4 v2, 0x0
+
+    .line 277
+    .local v2, selected:Z
+    const/4 v1, 0x0
+
+    .line 278
+    .local v1, listSize:I
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
+
+    invoke-virtual {v3}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_0
+
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
+
+    invoke-virtual {v3}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/util/HashMap;->size()I
+
+    move-result v3
+
+    if-lez v3, :cond_0
+
+    .line 279
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
+
+    invoke-virtual {v3}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/util/HashMap;->size()I
+
+    move-result v1
+
+    .line 280
+    const/4 v0, 0x0
+
+    .local v0, i:I
+    :goto_0
+    if-lt v0, v1, :cond_1
+
+    .line 288
+    .end local v0           #i:I
+    :cond_0
+    :goto_1
+    if-eqz v2, :cond_3
+
+    .line 289
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    invoke-virtual {v3, v6}, Landroid/widget/CheckBox;->setEnabled(Z)V
+
+    .line 290
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    invoke-virtual {v3, v6}, Landroid/widget/CheckBox;->setChecked(Z)V
+
+    .line 291
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    const v4, 0x7f0704e7
+
+    invoke-virtual {v3, v4}, Landroid/widget/CheckBox;->setText(I)V
+
+    .line 292
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_next:Landroid/widget/Button;
+
+    invoke-virtual {v3, v6}, Landroid/widget/Button;->setEnabled(Z)V
+
+    .line 304
+    :goto_2
+    return-void
+
+    .line 281
+    .restart local v0       #i:I
+    :cond_1
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->adapter:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;
+
+    invoke-virtual {v3}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
+
+    move-result-object v3
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/Boolean;
+
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    .line 282
+    const/4 v2, 0x1
+
+    .line 283
+    goto :goto_1
+
+    .line 280
+    :cond_2
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 293
+    .end local v0           #i:I
+    :cond_3
+    if-lez v1, :cond_4
+
+    .line 294
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    invoke-virtual {v3, v6}, Landroid/widget/CheckBox;->setEnabled(Z)V
+
+    .line 295
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    invoke-virtual {v3, v5}, Landroid/widget/CheckBox;->setChecked(Z)V
+
+    .line 296
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    invoke-virtual {v3, v7}, Landroid/widget/CheckBox;->setText(I)V
+
+    .line 297
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_next:Landroid/widget/Button;
+
+    invoke-virtual {v3, v5}, Landroid/widget/Button;->setEnabled(Z)V
+
+    goto :goto_2
+
+    .line 299
+    :cond_4
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    invoke-virtual {v3, v5}, Landroid/widget/CheckBox;->setChecked(Z)V
+
+    .line 300
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    invoke-virtual {v3, v7}, Landroid/widget/CheckBox;->setText(I)V
+
+    .line 301
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_select_all:Landroid/widget/CheckBox;
+
+    invoke-virtual {v3, v5}, Landroid/widget/CheckBox;->setEnabled(Z)V
+
+    .line 302
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;->btn_onekey_feedback_next:Landroid/widget/Button;
+
+    invoke-virtual {v3, v5}, Landroid/widget/Button;->setEnabled(Z)V
+
+    goto :goto_2
 .end method

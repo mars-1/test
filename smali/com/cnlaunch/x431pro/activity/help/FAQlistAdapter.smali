@@ -205,7 +205,7 @@
     invoke-virtual {v0, v8}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 84
-    const v8, 0x7f0d021d
+    const v8, 0x7f0c0220
 
     invoke-virtual {v7, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -215,7 +215,7 @@
 
     .line 85
     .local v3, ll2:Landroid/widget/LinearLayout;
-    const v8, 0x7f0d021e
+    const v8, 0x7f0c0221
 
     invoke-virtual {v7, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -244,7 +244,7 @@
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 88
-    const v8, 0x7f0d021f
+    const v8, 0x7f0c0222
 
     invoke-virtual {v7, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -293,7 +293,7 @@
 
     const/4 v9, 0x0
 
-    const v10, 0x7f020480
+    const v10, 0x7f020484
 
     const/4 v11, 0x0
 
@@ -329,7 +329,7 @@
 
     const/4 v9, 0x0
 
-    const v10, 0x7f02012b
+    const v10, 0x7f02012c
 
     const/4 v11, 0x0
 

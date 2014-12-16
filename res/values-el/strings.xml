@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">Έκθεση διάγνωσης σφάλματος αυτοκινήτου</string>
+    <string name="print_success">Επιτυχημένη εκτύπωση</string>
+    <string name="print_jam">Κολλημένη εκτύπωση χατιών</string>
+    <string name="print_will_nopaper">Ο εκτυπωτής δεν θα έχει τα χαρτία</string>
+    <string name="print_no_paper">Ο εκτυπωτής δεν έχει τα χαρτία</string>
+    <string name="print_actuator_fault">Σφάλμα εκτυπωτή</string>
+    <string name="print_head_overheating">Η κεφαλή εκτυπωτή είναι πολύ ζέστη</string>
+    <string name="print_connect_printer">Συνδέστε τον εκτυπωτή Wi-Fi πρώτα</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">Επιβεβαιώσετε</string>
     <string name="bluetooth_close_connected">Αποσυνδέστε:</string>
     <string name="bluetooth_connecting">Συνδέεται</string>
     <string name="bluetooth_no_search_device">Δεν βρήκε το bluetooth για σύνδεση,ελέγξτε αν το bluetooth είναι στο εύρος αναζητήσης,ή παροχή ρεύματος είναι ενεργοποιημένη</string>
@@ -15,18 +27,6 @@
     <string name="no">Όχι</string>
     <string name="tv_unconnect">Δεν συνδέεται</string>
     <string name="tv_unpair">Δεν αντιστοιχεί</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">Έκθεση διάγνωσης σφάλματος αυτοκινήτου</string>
-    <string name="print_success">Επιτυχημένη εκτύπωση</string>
-    <string name="print_jam">Κολλημένη εκτύπωση χατιών</string>
-    <string name="print_will_nopaper">Ο εκτυπωτής δεν θα έχει τα χαρτία</string>
-    <string name="print_no_paper">Ο εκτυπωτής δεν έχει τα χαρτία</string>
-    <string name="print_actuator_fault">Σφάλμα εκτυπωτή</string>
-    <string name="print_head_overheating">Η κεφαλή εκτυπωτή είναι πολύ ζέστη</string>
-    <string name="print_connect_printer">Συνδέστε τον εκτυπωτή Wi-Fi πρώτα</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">Επιβεβαιώσετε</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

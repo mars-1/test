@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">차량 진단 리포트</string>
+    <string name="print_success">프린트 성공!</string>
+    <string name="print_jam">프린터 용지 걸림</string>
+    <string name="print_will_nopaper">프린터 용지가 곧 없어집니다</string>
+    <string name="print_no_paper">프린터에 용지가 없습니다</string>
+    <string name="print_actuator_fault">프린터 고장!</string>
+    <string name="print_head_overheating">프린터 과열</string>
+    <string name="print_connect_printer">Wi-Fi 프린터를 먼저 연결하십시오</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">확인</string>
     <string name="bluetooth_close_connected">연결 차단:</string>
     <string name="bluetooth_connecting">연결</string>
     <string name="bluetooth_no_search_device">블루투스 커넥터가 감지되지 않았습니다. 커넥터에 전원이 공급되어 있는지 확인하고 검색을 새로고침 하십시오</string>
@@ -15,18 +27,6 @@
     <string name="no">아니오</string>
     <string name="tv_unconnect">연결되지 않음</string>
     <string name="tv_unpair">페어링되지 않음</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">차량 진단 리포트</string>
-    <string name="print_success">프린트 성공!</string>
-    <string name="print_jam">프린터 용지 걸림</string>
-    <string name="print_will_nopaper">프린터 용지가 곧 없어집니다</string>
-    <string name="print_no_paper">프린터에 용지가 없습니다</string>
-    <string name="print_actuator_fault">프린터 고장!</string>
-    <string name="print_head_overheating">프린터 과열</string>
-    <string name="print_connect_printer">Wi-Fi 프린터를 먼저 연결하십시오</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">확인</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

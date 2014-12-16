@@ -153,7 +153,7 @@
     move-result-object p2
 
     .line 152
-    const v2, 0x7f0d01fc
+    const v2, 0x7f0c01ff
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -164,7 +164,7 @@
     iput-object v2, v1, Lcom/cnlaunch/x431pro/widget/DropdownEditText$DropdownUsernameAdapter$ViewHolder;->text:Landroid/widget/TextView;
 
     .line 153
-    const v2, 0x7f0d025d
+    const v2, 0x7f0c0260
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

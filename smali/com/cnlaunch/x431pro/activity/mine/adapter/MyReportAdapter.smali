@@ -146,7 +146,7 @@
     .line 66
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/adapter/MyReportAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v2, 0x7f03013c
+    const v2, 0x7f03013e
 
     const/4 v3, 0x0
 
@@ -157,7 +157,7 @@
     .line 67
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/adapter/MyReportAdapter;->holder:Lcom/cnlaunch/x431pro/activity/mine/adapter/MyReportAdapter$ViewHolder;
 
-    const v1, 0x7f0d0376
+    const v1, 0x7f0c038d
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -170,7 +170,7 @@
     .line 68
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/adapter/MyReportAdapter;->holder:Lcom/cnlaunch/x431pro/activity/mine/adapter/MyReportAdapter$ViewHolder;
 
-    const v1, 0x7f0d0377
+    const v1, 0x7f0c038e
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -183,7 +183,7 @@
     .line 69
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/adapter/MyReportAdapter;->holder:Lcom/cnlaunch/x431pro/activity/mine/adapter/MyReportAdapter$ViewHolder;
 
-    const v1, 0x7f0d0378
+    const v1, 0x7f0c038f
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -196,7 +196,7 @@
     .line 70
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/adapter/MyReportAdapter;->holder:Lcom/cnlaunch/x431pro/activity/mine/adapter/MyReportAdapter$ViewHolder;
 
-    const v1, 0x7f0d0379
+    const v1, 0x7f0c0390
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

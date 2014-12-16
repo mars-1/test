@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$8;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
-    .line 865
+    .line 868
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
     return-void
@@ -39,7 +39,7 @@
     .locals 5
 
     .prologue
-    .line 867
+    .line 870
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$8;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-static {v3}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -52,7 +52,7 @@
 
     move-result-object v2
 
-    .line 868
+    .line 871
     .local v2, serialNo:Ljava/lang/String;
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$8;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -66,11 +66,11 @@
 
     move-result-object v1
 
-    .line 870
+    .line 873
     .local v1, name:Ljava/lang/String;
     const-string/jumbo v0, ""
 
-    .line 871
+    .line 874
     .local v0, address:Ljava/lang/String;
     invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -78,7 +78,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 872
+    .line 875
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$8;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-static {v3}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -91,7 +91,7 @@
 
     move-result-object v0
 
-    .line 874
+    .line 877
     :cond_0
     invoke-static {}, Lcom/cnlaunch/physics/bluetooth/BluetoothManager;->getInstance()Lcom/cnlaunch/physics/bluetooth/BluetoothManager;
 
@@ -99,6 +99,6 @@
 
     invoke-virtual {v3, v2, v0}, Lcom/cnlaunch/physics/bluetooth/BluetoothManager;->autoBluetoothConnect(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 875
+    .line 878
     return-void
 .end method

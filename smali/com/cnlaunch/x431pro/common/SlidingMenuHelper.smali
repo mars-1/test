@@ -35,7 +35,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b0042
+    const v9, 0x7f090042
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -47,7 +47,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b0043
+    const v9, 0x7f090043
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -393,15 +393,15 @@
     .line 160
     new-instance v0, Lcom/cnlaunch/x431pro/common/SlidingMenuHelper$1;
 
-    const v1, 0x7f0704e9
+    const v1, 0x7f0704eb
 
-    const v2, 0x7f0706a0
+    const v2, 0x7f0706a2
 
     invoke-direct {v0, p0, v1, v2, p0}, Lcom/cnlaunch/x431pro/common/SlidingMenuHelper$1;-><init>(Landroid/content/Context;IILandroid/content/Context;)V
 
     .line 173
     .local v0, tipDialog:Lcom/cnlaunch/x431pro/widget/dialog/TipDialog;
-    const v1, 0x7f070044
+    const v1, 0x7f07002b
 
     const/4 v2, 0x1
 
@@ -528,7 +528,7 @@
 
     .line 79
     :cond_2
-    const v5, 0x7f0706a3
+    const v5, 0x7f0706a5
 
     invoke-static {p0, v5}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -663,7 +663,7 @@
 
     .line 53
     :cond_2
-    const v6, 0x7f0706a3
+    const v6, 0x7f0706a5
 
     invoke-static {p0, v6}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 

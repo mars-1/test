@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">Fordonsdiagnostikrapport</string>
+    <string name="print_success">Utskrift lyckades!</string>
+    <string name="print_jam">Pappersstopp</string>
+    <string name="print_will_nopaper">Skrivaren är snart tom på papper</string>
+    <string name="print_no_paper">Skrivaren har slut på papper</string>
+    <string name="print_actuator_fault">Skrivarfel!</string>
+    <string name="print_head_overheating">Skrivaren är överhettad</string>
+    <string name="print_connect_printer">Anslut till din Wi-Fi-skrivare först</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">Bekräfta</string>
     <string name="bluetooth_close_connected">Koppla ifrån:</string>
     <string name="bluetooth_connecting">Koppla:</string>
     <string name="bluetooth_no_search_device">Bluetooth-anslutningen upptäcktes inte, kontrollera att kontakten är påslagen och uppdatera din sökning</string>
@@ -15,18 +27,6 @@
     <string name="no">No</string>
     <string name="tv_unconnect">Inte ansluten</string>
     <string name="tv_unpair">Inte parad</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">Fordonsdiagnostikrapport</string>
-    <string name="print_success">Utskrift lyckades!</string>
-    <string name="print_jam">Pappersstopp</string>
-    <string name="print_will_nopaper">Skrivaren är snart tom på papper</string>
-    <string name="print_no_paper">Skrivaren har slut på papper</string>
-    <string name="print_actuator_fault">Skrivarfel!</string>
-    <string name="print_head_overheating">Skrivaren är överhettad</string>
-    <string name="print_connect_printer">Anslut till din Wi-Fi-skrivare först</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">Bekräfta</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

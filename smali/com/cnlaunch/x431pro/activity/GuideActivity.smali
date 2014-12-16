@@ -57,7 +57,7 @@
 
     .prologue
     .line 129
-    const v2, 0x7f0d0151
+    const v2, 0x7f0c0151
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/GuideActivity;->findViewById(I)Landroid/view/View;
 
@@ -91,7 +91,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09000c
+    const v3, 0x7f0d000c
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -144,7 +144,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 46
-    const v1, 0x7f0300e1
+    const v1, 0x7f0300e2
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/GuideActivity;->setContentView(I)V
 
@@ -194,7 +194,7 @@
     .line 58
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/GuideActivity;->pageViews:Ljava/util/ArrayList;
 
-    const v2, 0x7f0300e2
+    const v2, 0x7f0300e3
 
     invoke-virtual {v0, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -213,7 +213,7 @@
     .line 61
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/GuideActivity;->pageViews:Ljava/util/ArrayList;
 
-    const v2, 0x7f0300e3
+    const v2, 0x7f0300e4
 
     invoke-virtual {v0, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -232,7 +232,7 @@
     .line 64
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/GuideActivity;->pageViews:Ljava/util/ArrayList;
 
-    const v2, 0x7f0300e4
+    const v2, 0x7f0300e5
 
     invoke-virtual {v0, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -251,7 +251,7 @@
     .line 67
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/GuideActivity;->pageViews:Ljava/util/ArrayList;
 
-    const v2, 0x7f0300e5
+    const v2, 0x7f0300e6
 
     invoke-virtual {v0, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -270,7 +270,7 @@
     .line 70
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/GuideActivity;->pageViews:Ljava/util/ArrayList;
 
-    const v2, 0x7f0300e6
+    const v2, 0x7f0300e7
 
     invoke-virtual {v0, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -289,7 +289,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/GuideActivity;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ViewPagerAdapter;
 
     .line 74
-    const v1, 0x7f0d0044
+    const v1, 0x7f0c0044
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/GuideActivity;->findViewById(I)Landroid/view/View;
 
@@ -300,7 +300,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/GuideActivity;->guidePages:Landroid/support/v4/view/ViewPager;
 
     .line 75
-    const v1, 0x7f0d02aa
+    const v1, 0x7f0c02ae
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/GuideActivity;->findViewById(I)Landroid/view/View;
 

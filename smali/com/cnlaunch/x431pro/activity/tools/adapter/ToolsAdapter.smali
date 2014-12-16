@@ -144,7 +144,7 @@
     .line 76
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/tools/adapter/ToolsAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0301aa
+    const v1, 0x7f0301ad
 
     const/4 v2, 0x0
 
@@ -155,7 +155,7 @@
     .line 77
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/tools/adapter/ToolsAdapter;->holder:Lcom/cnlaunch/x431pro/activity/tools/adapter/ToolsAdapter$ViewHolder;
 
-    const v0, 0x7f0d0080
+    const v0, 0x7f0c0080
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -168,7 +168,7 @@
     .line 78
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/tools/adapter/ToolsAdapter;->holder:Lcom/cnlaunch/x431pro/activity/tools/adapter/ToolsAdapter$ViewHolder;
 
-    const v0, 0x7f0d004d
+    const v0, 0x7f0c004d
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

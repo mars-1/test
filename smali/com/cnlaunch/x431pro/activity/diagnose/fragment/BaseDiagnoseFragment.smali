@@ -3,9 +3,9 @@
 .source "BaseDiagnoseFragment.java"
 
 # interfaces
+.implements Landroid/view/View$OnClickListener;
 .implements Lcom/cnlaunch/x431pro/activity/diagnose/listenter/OnDiagnoseDataUpdateListenter;
 .implements Lcom/cnlaunch/x431pro/activity/diagnose/listenter/OnKeyDownListenter;
-.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
@@ -51,7 +51,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0143
+    const v1, 0x7f0c0143
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -66,7 +66,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0149
+    const v1, 0x7f0c0149
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -81,7 +81,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0148
+    const v1, 0x7f0c0148
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -256,7 +256,7 @@
 
     .prologue
     .line 218
-    const v0, 0x7f070557
+    const v0, 0x7f070559
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/BaseDiagnoseFragment;->getString(I)Ljava/lang/String;
 
@@ -280,7 +280,7 @@
 
     .prologue
     .line 213
-    const v0, 0x7f0706a7
+    const v0, 0x7f0706a9
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/BaseDiagnoseFragment;->getString(I)Ljava/lang/String;
 
@@ -422,7 +422,7 @@
 
     .line 152
     .local v0, id:I
-    const v1, 0x7f0d0143
+    const v1, 0x7f0c0143
 
     if-ne v0, v1, :cond_1
 
@@ -455,7 +455,7 @@
 
     .line 156
     :cond_1
-    const v1, 0x7f0d0149
+    const v1, 0x7f0c0149
 
     if-ne v0, v1, :cond_0
 
@@ -468,7 +468,7 @@
 
     invoke-direct {v1, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0704fb
+    const v2, 0x7f0704fd
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/BaseDiagnoseFragment;->getString(I)Ljava/lang/String;
 
@@ -584,7 +584,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0142
+    const v5, 0x7f0c0142
 
     invoke-virtual {v4, v5}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -639,7 +639,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0293
+    const v5, 0x7f0c0297
 
     invoke-virtual {v4, v5}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -788,8 +788,10 @@
             ">;",
             "Ljava/util/ArrayList",
             "<",
+            "Ljava/util/ArrayList",
+            "<",
             "Lcom/cnlaunch/diagnosemodule/bean/BasicSpeciaFunctionBean;",
-            ">;",
+            ">;>;",
             "Ljava/util/ArrayList",
             "<",
             "Lcom/cnlaunch/diagnosemodule/bean/BasicButtonBean;",
@@ -800,7 +802,7 @@
     .prologue
     .line 119
     .local p1, titleList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicSpeciaFunctionBean;>;"
-    .local p2, valueList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicSpeciaFunctionBean;>;"
+    .local p2, valueList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicSpeciaFunctionBean;>;>;"
     .local p3, buttonList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicButtonBean;>;"
     return-void
 .end method

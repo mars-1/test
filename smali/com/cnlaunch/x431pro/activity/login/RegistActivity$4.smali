@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
-    .line 449
+    .line 420
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +45,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 465
+    .line 436
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
@@ -66,7 +66,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->password:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->access$18(Lcom/cnlaunch/x431pro/activity/login/RegistActivity;Ljava/lang/String;)V
 
-    .line 466
+    .line 437
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
@@ -87,7 +87,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->confirmpass:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->access$20(Lcom/cnlaunch/x431pro/activity/login/RegistActivity;Ljava/lang/String;)V
 
-    .line 468
+    .line 439
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->confirmpass:Ljava/lang/String;
@@ -112,7 +112,7 @@
 
     if-lt v0, v1, :cond_3
 
-    .line 469
+    .line 440
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->checkbox_password:Landroid/widget/CheckBox;
@@ -126,7 +126,7 @@
 
     if-nez v0, :cond_0
 
-    .line 470
+    .line 441
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->confirmpass:Ljava/lang/String;
@@ -147,7 +147,7 @@
 
     if-nez v0, :cond_1
 
-    .line 471
+    .line 442
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
@@ -160,7 +160,7 @@
     #calls: Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
     invoke-static {v0, v1, v3, v3}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->access$15(Lcom/cnlaunch/x431pro/activity/login/RegistActivity;Landroid/widget/CheckBox;IZ)V
 
-    .line 482
+    .line 453
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
@@ -178,10 +178,10 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 483
+    .line 454
     return-void
 
-    .line 472
+    .line 443
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
@@ -196,7 +196,7 @@
 
     if-nez v0, :cond_2
 
-    .line 473
+    .line 444
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
@@ -211,7 +211,7 @@
 
     goto :goto_0
 
-    .line 475
+    .line 446
     :cond_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
@@ -229,7 +229,7 @@
 
     goto :goto_0
 
-    .line 478
+    .line 449
     :cond_3
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
@@ -244,7 +244,7 @@
 
     if-nez v0, :cond_0
 
-    .line 479
+    .line 450
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
@@ -270,7 +270,7 @@
     .parameter "after"
 
     .prologue
-    .line 461
+    .line 432
     return-void
 .end method
 
@@ -282,6 +282,6 @@
     .parameter "count"
 
     .prologue
-    .line 455
+    .line 426
     return-void
 .end method

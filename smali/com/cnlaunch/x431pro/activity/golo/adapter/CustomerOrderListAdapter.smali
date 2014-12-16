@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020239
+    const v1, 0x7f02023a
 
     invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;->showImageForEmptyUri(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;
 
@@ -256,7 +256,7 @@
     .line 62
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/adapter/CustomerOrderListAdapter;->holder:Lcom/cnlaunch/x431pro/activity/golo/adapter/CustomerOrderListAdapter$ViewHolder;
 
-    const v1, 0x7f0d01e0
+    const v1, 0x7f0c01e3
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -269,7 +269,7 @@
     .line 63
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/adapter/CustomerOrderListAdapter;->holder:Lcom/cnlaunch/x431pro/activity/golo/adapter/CustomerOrderListAdapter$ViewHolder;
 
-    const v1, 0x7f0d01de
+    const v1, 0x7f0c01e1
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -282,7 +282,7 @@
     .line 64
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/adapter/CustomerOrderListAdapter;->holder:Lcom/cnlaunch/x431pro/activity/golo/adapter/CustomerOrderListAdapter$ViewHolder;
 
-    const v1, 0x7f0d017f
+    const v1, 0x7f0c017f
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -295,7 +295,7 @@
     .line 65
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/adapter/CustomerOrderListAdapter;->holder:Lcom/cnlaunch/x431pro/activity/golo/adapter/CustomerOrderListAdapter$ViewHolder;
 
-    const v1, 0x7f0d01dd
+    const v1, 0x7f0c01e0
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

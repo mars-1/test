@@ -559,7 +559,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d01d0
+    const v2, 0x7f0c01d0
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -601,7 +601,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d004f
+    const v2, 0x7f0c004f
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -616,7 +616,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d01cf
+    const v2, 0x7f0c01cf
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -641,7 +641,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d01d2
+    const v2, 0x7f0c01d3
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -656,7 +656,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d01d1
+    const v2, 0x7f0c01d2
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -963,7 +963,7 @@
     const/4 v5, 0x0
 
     .line 250
-    const v1, 0x7f0704fd
+    const v1, 0x7f0704ff
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/SelectSoftVersionFragment;->getString(I)Ljava/lang/String;
 
@@ -1034,7 +1034,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0704fa
+    const v3, 0x7f0704fc
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/diagnose/SelectSoftVersionFragment;->getString(I)Ljava/lang/String;
 
@@ -1202,7 +1202,7 @@
 
     .prologue
     .line 245
-    const v0, 0x7f0704ff
+    const v0, 0x7f070501
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/SelectSoftVersionFragment;->getString(I)Ljava/lang/String;
 
@@ -1436,7 +1436,7 @@
 
     .line 181
     :cond_1
-    const v4, 0x7f0d004f
+    const v4, 0x7f0c004f
 
     if-ne v1, v4, :cond_2
 
@@ -1447,7 +1447,7 @@
 
     .line 183
     :cond_2
-    const v4, 0x7f0d01cf
+    const v4, 0x7f0c01cf
 
     if-ne v1, v4, :cond_0
 

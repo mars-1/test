@@ -3,8 +3,8 @@
 .source "BaseViewerActivity.java"
 
 # interfaces
-.implements Lorg/vudroid/core/events/DecodingProgressListener;
 .implements Lorg/vudroid/core/events/CurrentPageListener;
+.implements Lorg/vudroid/core/events/DecodingProgressListener;
 
 
 # static fields

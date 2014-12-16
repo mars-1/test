@@ -567,7 +567,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0150
+    const v3, 0x7f0c0150
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -582,7 +582,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0151
+    const v3, 0x7f0c0151
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -628,7 +628,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09000c
+    const v3, 0x7f0d000c
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1004,9 +1004,9 @@
     .parameter "position"
 
     .prologue
-    const v8, 0x7f070695
+    const v8, 0x7f070697
 
-    const v4, 0x7f070694
+    const v4, 0x7f070696
 
     const/4 v7, 0x4
 

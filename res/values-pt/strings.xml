@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">Relatório de diagnóstico de veículos</string>
+    <string name="print_success">A impressão foi um sucesso!</string>
+    <string name="print_jam">Atolamento de papel</string>
+    <string name="print_will_nopaper">A impressora estará falta de papel em breve</string>
+    <string name="print_no_paper">A impressora está sem papel</string>
+    <string name="print_actuator_fault">Falha na impressora!</string>
+    <string name="print_head_overheating">A impressora está superaquecenda</string>
+    <string name="print_connect_printer">Por favor, conecte sua Wi-Fi impressora primeira</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">Confirme</string>
     <string name="bluetooth_close_connected">Desconectando:</string>
     <string name="bluetooth_connecting">Ligando</string>
     <string name="bluetooth_no_search_device">O conector do bluetooth não foi detectado. Verifique se o conector está ligado e refresca a busca</string>
@@ -15,18 +27,6 @@
     <string name="no">Não</string>
     <string name="tv_unconnect">Não está conectado</string>
     <string name="tv_unpair">Não emparceirado</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">Relatório de diagnóstico de veículos</string>
-    <string name="print_success">A impressão foi um sucesso!</string>
-    <string name="print_jam">Atolamento de papel</string>
-    <string name="print_will_nopaper">A impressora estará falta de papel em breve</string>
-    <string name="print_no_paper">A impressora está sem papel</string>
-    <string name="print_actuator_fault">Falha na impressora!</string>
-    <string name="print_head_overheating">A impressora está superaquecenda</string>
-    <string name="print_connect_printer">Por favor, conecte sua Wi-Fi impressora primeira</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">Confirme</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

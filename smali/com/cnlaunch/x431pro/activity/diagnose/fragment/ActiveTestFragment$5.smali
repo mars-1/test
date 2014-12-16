@@ -40,7 +40,7 @@
 
     iput-object p3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$5;->val$btnChoose:Landroid/widget/TextView;
 
-    .line 272
+    .line 273
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -53,12 +53,12 @@
     .parameter "v"
 
     .prologue
-    .line 275
+    .line 276
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 276
+    .line 277
     .local v1, spinnerlist:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
     const/4 v0, 0x0
 
@@ -72,7 +72,7 @@
 
     if-lt v0, v2, :cond_1
 
-    .line 279
+    .line 280
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$5;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
@@ -82,7 +82,7 @@
 
     if-nez v2, :cond_0
 
-    .line 280
+    .line 281
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$5;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     new-instance v3, Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
@@ -99,7 +99,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
     invoke-static {v2, v3}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->access$12(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;)V
 
-    .line 282
+    .line 283
     :cond_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$5;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
@@ -116,7 +116,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;->setListViewWidth(I)V
 
-    .line 283
+    .line 284
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$5;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
@@ -134,7 +134,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 289
+    .line 290
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$5;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
@@ -146,10 +146,10 @@
 
     invoke-virtual {v2, v3, v1}, Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;->show(Landroid/view/View;Ljava/util/List;)V
 
-    .line 290
+    .line 291
     return-void
 
-    .line 277
+    .line 278
     :cond_1
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$5;->val$activeTestButton:Ljava/util/ArrayList;
 
@@ -165,7 +165,7 @@
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 276
+    .line 277
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0

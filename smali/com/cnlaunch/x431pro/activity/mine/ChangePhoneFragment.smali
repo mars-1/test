@@ -81,12 +81,12 @@
     .locals 9
 
     .prologue
-    const v8, 0x7f0706db
+    const v8, 0x7f0706dd
 
     const/4 v7, 0x0
 
     .line 54
-    const v5, 0x7f0705ac
+    const v5, 0x7f0705ae
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/mine/ChangePhoneFragment;->setTitle(I)V
 
@@ -97,7 +97,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f020521
+    const v6, 0x7f020525
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -110,7 +110,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d0089
+    const v6, 0x7f0c0089
 
     invoke-virtual {v5, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -125,7 +125,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d008a
+    const v6, 0x7f0c008a
 
     invoke-virtual {v5, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -174,7 +174,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f070747
+    const v6, 0x7f070749
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -506,7 +506,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0706dc
+    const v2, 0x7f0706de
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -594,7 +594,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0705e7
+    const v3, 0x7f0705e9
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -612,7 +612,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0706dc
+    const v3, 0x7f0706de
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

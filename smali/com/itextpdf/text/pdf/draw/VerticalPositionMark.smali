@@ -3,8 +3,8 @@
 .source "VerticalPositionMark.java"
 
 # interfaces
-.implements Lcom/itextpdf/text/pdf/draw/DrawInterface;
 .implements Lcom/itextpdf/text/Element;
+.implements Lcom/itextpdf/text/pdf/draw/DrawInterface;
 
 
 # instance fields

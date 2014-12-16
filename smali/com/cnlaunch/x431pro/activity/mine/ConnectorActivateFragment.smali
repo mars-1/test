@@ -177,7 +177,7 @@
     :sswitch_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0705c8
+    const v1, 0x7f0705ca
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -187,7 +187,7 @@
     :sswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0705c9
+    const v1, 0x7f0705cb
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -197,7 +197,7 @@
     :sswitch_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0705ca
+    const v1, 0x7f0705cc
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -207,7 +207,7 @@
     :sswitch_3
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0705cb
+    const v1, 0x7f0705cd
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -217,7 +217,7 @@
     :sswitch_4
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0705cc
+    const v1, 0x7f0705ce
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -227,7 +227,7 @@
     :sswitch_5
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0706e4
+    const v1, 0x7f0706e6
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -424,7 +424,7 @@
     .line 385
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0705cd
+    const v2, 0x7f0705cf
 
     invoke-static {v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -445,7 +445,7 @@
     .line 389
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0705ce
+    const v2, 0x7f0705d0
 
     invoke-static {v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -485,7 +485,7 @@
     :cond_2
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0706d5
+    const v2, 0x7f0706d7
 
     invoke-static {v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -524,7 +524,7 @@
     :cond_4
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0706d8
+    const v2, 0x7f0706da
 
     invoke-static {v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -549,7 +549,7 @@
 
     .prologue
     .line 124
-    const v0, 0x7f07059e
+    const v0, 0x7f0705a0
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->setTitle(I)V
 
@@ -560,7 +560,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -641,7 +641,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0360
+    const v1, 0x7f0c0377
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -656,7 +656,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d02af
+    const v1, 0x7f0c02b3
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -671,7 +671,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0364
+    const v1, 0x7f0c037b
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -691,7 +691,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0361
+    const v1, 0x7f0c0378
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -706,7 +706,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0362
+    const v1, 0x7f0c0379
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -721,7 +721,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0363
+    const v1, 0x7f0c037a
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -997,7 +997,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0d0363
+    .packed-switch 0x7f0c037a
         :pswitch_0
         :pswitch_1
     .end packed-switch
@@ -1011,7 +1011,7 @@
 
     .prologue
     .line 117
-    const v0, 0x7f030138
+    const v0, 0x7f03013a
 
     const/4 v1, 0x0
 
@@ -1051,7 +1051,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mainActivity:Lcom/cnlaunch/x431pro/activity/MainActivity;
 
-    const v1, 0x7f0d02da
+    const v1, 0x7f0c02f1
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/activity/MainActivity;->showActivity(I)V
 
@@ -1141,7 +1141,7 @@
     .line 447
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0706de
+    const v4, 0x7f0706e0
 
     aget v5, v1, v5
 
@@ -1200,7 +1200,7 @@
     .line 432
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0706d5
+    const v4, 0x7f0706d7
 
     aget v5, v1, v5
 
@@ -1235,7 +1235,7 @@
     .line 436
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0706dd
+    const v4, 0x7f0706df
 
     aget v5, v1, v5
 
@@ -1252,8 +1252,8 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f0d02af -> :sswitch_0
-        0x7f0d0360 -> :sswitch_1
+        0x7f0c02b3 -> :sswitch_0
+        0x7f0c0377 -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -1279,7 +1279,7 @@
     .parameter "result"
 
     .prologue
-    const v9, 0x7f0705c7
+    const v9, 0x7f0705c9
 
     const/4 v12, 0x1
 
@@ -1316,7 +1316,7 @@
     .line 252
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f0705c6
+    const v9, 0x7f0705c8
 
     invoke-static {v8, v9}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -1615,7 +1615,7 @@
     :goto_3
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/mine/ConnectorActivateFragment;->mainActivity:Lcom/cnlaunch/x431pro/activity/MainActivity;
 
-    const v9, 0x7f0d02da
+    const v9, 0x7f0c02f1
 
     invoke-virtual {v8, v9}, Lcom/cnlaunch/x431pro/activity/MainActivity;->showActivity(I)V
 
@@ -1717,7 +1717,7 @@
 
     .line 464
     .local v0, factory:Landroid/view/LayoutInflater;
-    const v4, 0x7f0300f1
+    const v4, 0x7f0300f3
 
     const/4 v5, 0x0
 
@@ -1727,7 +1727,7 @@
 
     .line 465
     .local v1, setView:Landroid/view/View;
-    const v4, 0x7f0d02ab
+    const v4, 0x7f0c02af
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

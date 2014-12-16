@@ -105,7 +105,7 @@
 
     iget-object v1, v1, Lcom/cnlaunch/x431pro/activity/BaseActivity;->btn_right:Landroid/widget/TextView;
 
-    const v2, 0x7f070628
+    const v2, 0x7f07062a
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 

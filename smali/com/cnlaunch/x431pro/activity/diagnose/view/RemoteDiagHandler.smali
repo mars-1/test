@@ -103,7 +103,7 @@
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f070542
+    const v2, 0x7f070544
 
     const/4 v3, 0x0
 
@@ -114,7 +114,7 @@
     .line 133
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->mDialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
 
-    const v1, 0x7f070044
+    const v1, 0x7f07002b
 
     new-instance v2, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler$1;
 
@@ -125,7 +125,7 @@
     .line 140
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->mDialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
 
-    const v1, 0x7f07050f
+    const v1, 0x7f070511
 
     const/4 v2, 0x0
 
@@ -153,7 +153,7 @@
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f070542
+    const v2, 0x7f070544
 
     const/4 v3, 0x0
 
@@ -164,7 +164,7 @@
     .line 148
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->mDialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
 
-    const v1, 0x7f070044
+    const v1, 0x7f07002b
 
     const/4 v2, 0x1
 
@@ -198,9 +198,9 @@
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f070542
+    const v2, 0x7f070544
 
-    const v3, 0x7f0706fa
+    const v3, 0x7f0706fc
 
     const/4 v4, 0x0
 
@@ -211,7 +211,7 @@
     .line 173
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->mDialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
 
-    const v1, 0x7f070524
+    const v1, 0x7f070526
 
     new-instance v2, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler$4;
 
@@ -222,7 +222,7 @@
     .line 179
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->mDialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
 
-    const v1, 0x7f0706f9
+    const v1, 0x7f0706fb
 
     new-instance v2, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler$5;
 
@@ -252,7 +252,7 @@
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f070542
+    const v2, 0x7f070544
 
     const/4 v3, 0x0
 
@@ -263,7 +263,7 @@
     .line 160
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->mDialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
 
-    const v1, 0x7f070044
+    const v1, 0x7f07002b
 
     const/4 v2, 0x1
 
@@ -318,7 +318,7 @@
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0704fa
+    const v2, 0x7f0704fc
 
     invoke-direct {v0, v1, v3, v2, p1}, Lcom/cnlaunch/x431pro/widget/dialog/WaitDialog;-><init>(Landroid/content/Context;ZII)V
 
@@ -468,7 +468,7 @@
 
     .line 68
     :sswitch_0
-    const v0, 0x7f070543
+    const v0, 0x7f070545
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->waitProgressDialog(I)V
 
@@ -476,7 +476,7 @@
 
     .line 71
     :sswitch_1
-    const v0, 0x7f070544
+    const v0, 0x7f070546
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->showFailDialog(I)V
 
@@ -484,7 +484,7 @@
 
     .line 74
     :sswitch_2
-    const v0, 0x7f070545
+    const v0, 0x7f070547
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->waitProgressDialog(I)V
 
@@ -492,7 +492,7 @@
 
     .line 77
     :sswitch_3
-    const v0, 0x7f070546
+    const v0, 0x7f070548
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->showFailDialog(I)V
 
@@ -500,7 +500,7 @@
 
     .line 80
     :sswitch_4
-    const v0, 0x7f070547
+    const v0, 0x7f070549
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->waitProgressDialog(I)V
 
@@ -513,7 +513,7 @@
 
     .line 84
     :sswitch_5
-    const v0, 0x7f070548
+    const v0, 0x7f07054a
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->showFailDialog(I)V
 
@@ -521,7 +521,7 @@
 
     .line 87
     :sswitch_6
-    const v0, 0x7f070549
+    const v0, 0x7f07054b
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->waitProgressDialog(I)V
 
@@ -534,7 +534,7 @@
 
     .line 91
     :sswitch_7
-    const v0, 0x7f07054a
+    const v0, 0x7f07054c
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->showFailDialog(I)V
 
@@ -542,7 +542,7 @@
 
     .line 94
     :sswitch_8
-    const v0, 0x7f07054b
+    const v0, 0x7f07054d
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->showStopDialog(I)V
 
@@ -550,7 +550,7 @@
 
     .line 97
     :sswitch_9
-    const v0, 0x7f07054c
+    const v0, 0x7f07054e
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->showStopDialog(I)V
 
@@ -558,7 +558,7 @@
 
     .line 100
     :sswitch_a
-    const v0, 0x7f07054d
+    const v0, 0x7f07054f
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->showFailDialog(I)V
 
@@ -568,7 +568,7 @@
     :sswitch_b
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f07054e
+    const v1, 0x7f070550
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -576,7 +576,7 @@
 
     .line 106
     :sswitch_c
-    const v0, 0x7f07054f
+    const v0, 0x7f070551
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->showExitDiag(I)V
 
@@ -590,7 +590,7 @@
 
     .line 112
     :sswitch_e
-    const v0, 0x7f0706f7
+    const v0, 0x7f0706f9
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->waitProgressDialog(I)V
 

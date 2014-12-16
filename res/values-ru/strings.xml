@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">Отчет о диагностике автомобиля</string>
+    <string name="print_success">Печать была выполнена успешно!</string>
+    <string name="print_jam">Заминание бумаги</string>
+    <string name="print_will_nopaper">Скоро нет бумаги в принтере</string>
+    <string name="print_no_paper">Нет бумаги в принтере</string>
+    <string name="print_actuator_fault">Неисправность принтера!</string>
+    <string name="print_head_overheating">Принтер перегревается</string>
+    <string name="print_connect_printer">Сначала пожалуйста, подключите принтер Wi-Fi</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">Подтверждение</string>
     <string name="bluetooth_close_connected">Разъединение:</string>
     <string name="bluetooth_connecting">Соединение</string>
     <string name="bluetooth_no_search_device">Разъем Bluetooth не был обнаружен, проверьте, что разъём подключён правильно и обновите свой поиск</string>
@@ -15,18 +27,6 @@
     <string name="no">Нет</string>
     <string name="tv_unconnect">Не подключен</string>
     <string name="tv_unpair">Не спаривается</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">Отчет о диагностике автомобиля</string>
-    <string name="print_success">Печать была выполнена успешно!</string>
-    <string name="print_jam">Заминание бумаги</string>
-    <string name="print_will_nopaper">Скоро нет бумаги в принтере</string>
-    <string name="print_no_paper">Нет бумаги в принтере</string>
-    <string name="print_actuator_fault">Неисправность принтера!</string>
-    <string name="print_head_overheating">Принтер перегревается</string>
-    <string name="print_connect_printer">Сначала пожалуйста, подключите принтер Wi-Fi</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">Подтверждение</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

@@ -40,7 +40,7 @@
 
     iput-object p3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$2;->val$btnChoose:Landroid/widget/TextView;
 
-    .line 209
+    .line 247
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -53,12 +53,12 @@
     .parameter "v"
 
     .prologue
-    .line 213
+    .line 251
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 214
+    .line 252
     .local v1, spinnerlist:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
     const/4 v0, 0x0
 
@@ -72,14 +72,17 @@
 
     if-lt v0, v2, :cond_1
 
-    .line 217
+    .line 255
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;
 
-    iget-object v2, v2, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+    #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+    invoke-static {v2}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->access$0(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;)Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+
+    move-result-object v2
 
     if-nez v2, :cond_0
 
-    .line 218
+    .line 256
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;
 
     new-instance v3, Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
@@ -87,19 +90,23 @@
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->mContext:Landroid/content/Context;
-    invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->access$0(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;)Landroid/content/Context;
+    invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->access$1(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;)Landroid/content/Context;
 
     move-result-object v4
 
     invoke-direct {v3, v4}, Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, v2, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+    #setter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+    invoke-static {v2, v3}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->access$2(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;)V
 
-    .line 220
+    .line 258
     :cond_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;
 
-    iget-object v2, v2, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+    #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+    invoke-static {v2}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->access$0(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;)Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+
+    move-result-object v2
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$2;->val$btnChoose:Landroid/widget/TextView;
 
@@ -109,10 +116,13 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;->setListViewWidth(I)V
 
-    .line 221
+    .line 259
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;
 
-    iget-object v2, v2, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+    #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+    invoke-static {v2}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->access$0(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;)Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+
+    move-result-object v2
 
     new-instance v3, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$2$1;
 
@@ -124,19 +134,22 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 227
+    .line 265
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;
 
-    iget-object v2, v2, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+    #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->spinner:Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+    invoke-static {v2}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->access$0(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;)Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;
+
+    move-result-object v2
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$2;->val$btnChoose:Landroid/widget/TextView;
 
     invoke-virtual {v2, v3, v1}, Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;->show(Landroid/view/View;Ljava/util/List;)V
 
-    .line 228
+    .line 266
     return-void
 
-    .line 215
+    .line 253
     :cond_1
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$2;->val$buttonList:Ljava/util/ArrayList;
 
@@ -152,7 +165,7 @@
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 214
+    .line 252
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0

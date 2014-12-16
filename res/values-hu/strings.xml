@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">Járm megállapítási jelentése</string>
+    <string name="print_success">Nyomtatás sikeres volt</string>
+    <string name="print_jam">Papír hibája</string>
+    <string name="print_will_nopaper">A nyomtatóban hamarosan nem lesz papír</string>
+    <string name="print_no_paper">A nyomtatóban már nincs papír</string>
+    <string name="print_actuator_fault">Nyomtató hibája</string>
+    <string name="print_head_overheating">A nyomtató túlmelegedik</string>
+    <string name="print_connect_printer">Legyen szíves kapcsolni a Wi-Fi-t a nyomtatóhoz első sorban</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">Igazolva</string>
     <string name="bluetooth_close_connected">Kikapcsolás:</string>
     <string name="bluetooth_connecting">Bekapcsolás</string>
     <string name="bluetooth_no_search_device">Bluetooth csatlakozó még nem felfedezték, legyen szíves beigazolni, hogy a csatlakozót bekapcsolják és felfrissítik a kereséset.</string>
@@ -15,18 +27,6 @@
     <string name="no">Nem</string>
     <string name="tv_unconnect">Nem kapcsolódva</string>
     <string name="tv_unpair">Nem párosítva</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">Járm megállapítási jelentése</string>
-    <string name="print_success">Nyomtatás sikeres volt</string>
-    <string name="print_jam">Papír hibája</string>
-    <string name="print_will_nopaper">A nyomtatóban hamarosan nem lesz papír</string>
-    <string name="print_no_paper">A nyomtatóban már nincs papír</string>
-    <string name="print_actuator_fault">Nyomtató hibája</string>
-    <string name="print_head_overheating">A nyomtató túlmelegedik</string>
-    <string name="print_connect_printer">Legyen szíves kapcsolni a Wi-Fi-t a nyomtatóhoz első sorban</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">Igazolva</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

@@ -1,11 +1,14 @@
 .class Lcom/cnlaunch/x431pro/activity/login/LoginFunction$1;
-.super Landroid/os/Handler;
+.super Ljava/lang/Object;
 .source "LoginFunction.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->showLoginConflictDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,57 +30,54 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$1;->this$0:Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
 
-    .line 104
-    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
+    .line 720
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public handleMessage(Landroid/os/Message;)V
-    .locals 3
-    .parameter "msg"
+.method public onClick(Landroid/view/View;)V
+    .locals 4
+    .parameter "arg0"
 
     .prologue
-    .line 107
-    iget v0, p1, Landroid/os/Message;->what:I
+    .line 723
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$1;->this$0:Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
 
-    packed-switch v0, :pswitch_data_0
+    #getter for: Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
+    invoke-static {v2}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->access$0(Lcom/cnlaunch/x431pro/activity/login/LoginFunction;)Lcom/cnlaunch/framework/common/PreferencesManager;
 
-    .line 114
-    :goto_0
+    move-result-object v2
+
+    const-string/jumbo v3, "login_username"
+
+    invoke-virtual {v2, v3}, Lcom/cnlaunch/framework/common/PreferencesManager;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 724
+    .local v0, name:Ljava/lang/String;
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$1;->this$0:Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
+
+    #getter for: Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
+    invoke-static {v2}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->access$0(Lcom/cnlaunch/x431pro/activity/login/LoginFunction;)Lcom/cnlaunch/framework/common/PreferencesManager;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "login_password"
+
+    invoke-virtual {v2, v3}, Lcom/cnlaunch/framework/common/PreferencesManager;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 725
+    .local v1, pass:Ljava/lang/String;
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$1;->this$0:Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
+
+    invoke-virtual {v2, v0, v1}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->Login(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 726
     return-void
-
-    .line 109
-    :pswitch_0
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$1;->this$0:Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
-
-    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
-
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$1;->this$0:Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
-
-    iget-object v1, v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    const v2, 0x7f070752
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;Ljava/lang/String;)V
-
-    goto :goto_0
-
-    .line 107
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x2
-        :pswitch_0
-    .end packed-switch
 .end method

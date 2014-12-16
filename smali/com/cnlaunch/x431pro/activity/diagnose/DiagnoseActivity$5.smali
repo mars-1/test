@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$5;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
-    .line 1366
+    .line 1369
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
@@ -40,16 +40,16 @@
     .parameter "msg"
 
     .prologue
-    .line 1368
+    .line 1371
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 1375
+    .line 1378
     :goto_0
     return-void
 
-    .line 1370
+    .line 1373
     :pswitch_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$5;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -58,7 +58,7 @@
 
     goto :goto_0
 
-    .line 1368
+    .line 1371
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

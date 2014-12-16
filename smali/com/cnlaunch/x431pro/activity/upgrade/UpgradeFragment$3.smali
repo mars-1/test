@@ -51,9 +51,9 @@
     .parameter "msg"
 
     .prologue
-    const v4, 0x7f070591
+    const v4, 0x7f070593
 
-    const v11, 0x7f070044
+    const v11, 0x7f07002b
 
     const/4 v10, 0x1
 
@@ -161,7 +161,7 @@
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$3;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
-    const v4, 0x7f070594
+    const v4, 0x7f070596
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->getString(I)Ljava/lang/String;
 
@@ -221,7 +221,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0704e5
+    const v3, 0x7f0704e7
 
     invoke-virtual {v2, v3}, Landroid/widget/RadioButton;->setText(I)V
 
@@ -261,7 +261,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0704e4
+    const v3, 0x7f0704e6
 
     invoke-virtual {v2, v3}, Landroid/widget/RadioButton;->setText(I)V
 
@@ -296,7 +296,7 @@
 
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$3;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
-    const v5, 0x7f070592
+    const v5, 0x7f070594
 
     new-array v6, v10, [Ljava/lang/Object;
 
@@ -361,7 +361,7 @@
     invoke-direct {v2, v3}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;-><init>(Landroid/content/Context;)V
 
     .line 338
-    const v3, 0x7f070593
+    const v3, 0x7f070595
 
     .line 337
     invoke-virtual {v2, v4, v3}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->show(II)V
@@ -619,10 +619,10 @@
     move-result-object v2
 
     .line 363
-    const v3, 0x7f070692
+    const v3, 0x7f070694
 
     .line 364
-    const v4, 0x7f070693
+    const v4, 0x7f070695
 
     .line 362
     invoke-direct {v0, v2, v3, v4}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;-><init>(Landroid/content/Context;II)V
@@ -637,7 +637,7 @@
     invoke-virtual {v0, v11, v10, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 373
-    const v2, 0x7f070042
+    const v2, 0x7f070029
 
     invoke-virtual {v0, v2, v10, v9}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setBetaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
@@ -842,9 +842,9 @@
     invoke-direct {v2, p0, v3}, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$3$4;-><init>(Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$3;Landroid/content/Context;)V
 
     .line 439
-    const v3, 0x7f0704ea
+    const v3, 0x7f0704ec
 
-    const v4, 0x7f07058f
+    const v4, 0x7f070591
 
     invoke-virtual {v2, v3, v4}, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$3$4;->show(II)V
 

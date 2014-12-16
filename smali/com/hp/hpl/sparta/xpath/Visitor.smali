@@ -2,5 +2,5 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/hp/hpl/sparta/xpath/NodeTestVisitor;
 .implements Lcom/hp/hpl/sparta/xpath/BooleanExprVisitor;
+.implements Lcom/hp/hpl/sparta/xpath/NodeTestVisitor;

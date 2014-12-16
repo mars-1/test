@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
-    .line 1433
+    .line 1432
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
     .parameter
 
     .prologue
-    .line 1433
+    .line 1432
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     return-object v0
@@ -56,7 +56,7 @@
     .parameter "status"
 
     .prologue
-    .line 1437
+    .line 1436
     const-string/jumbo v0, "GoloFragment"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -85,7 +85,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1438
+    .line 1437
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -100,7 +100,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 1439
+    .line 1438
     :cond_0
     const-string/jumbo v0, "GoloFragment"
 
@@ -108,11 +108,11 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1459
+    .line 1458
     :goto_0
     return-void
 
-    .line 1443
+    .line 1442
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 

@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">汽車故障診斷報告</string>
+    <string name="print_success">列印成功！</string>
+    <string name="print_jam">印表機卡紙</string>
+    <string name="print_will_nopaper">印表機即將缺紙</string>
+    <string name="print_no_paper">印表機缺紙</string>
+    <string name="print_actuator_fault">印表機故障</string>
+    <string name="print_head_overheating">打印頭過熱</string>
+    <string name="print_connect_printer">請先連接Wi-Fi印表機</string>
+    <string name="cancel">取消</string>
+    <string name="btn_confirm">確定</string>
     <string name="bluetooth_close_connected">斷開連接：</string>
     <string name="bluetooth_connecting">連接中</string>
     <string name="bluetooth_no_search_device">沒有搜索到要連接的藍牙，請檢查藍牙是否在搜索範圍內，或者是否通電？</string>
@@ -15,28 +27,16 @@
     <string name="no">否</string>
     <string name="tv_unconnect">未連接</string>
     <string name="tv_unpair">未配對</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">汽車故障診斷報告</string>
-    <string name="print_success">列印成功！</string>
-    <string name="print_jam">印表機卡紙</string>
-    <string name="print_will_nopaper">印表機即將缺紙</string>
-    <string name="print_no_paper">印表機缺紙</string>
-    <string name="print_actuator_fault">印表機故障</string>
-    <string name="print_head_overheating">打印頭過熱</string>
-    <string name="print_connect_printer">請先連接Wi-Fi印表機</string>
-    <string name="cancel">取消</string>
-    <string name="btn_confirm">確定</string>
     <string name="DEMO_zh">DEMO</string>
     <string name="DEMO">Demo</string>
     <string name="EOBD2_zh">OBDII&amp;EOBD</string>
     <string name="EOBD2">EOBD</string>
     <string name="resetoil_zh">機油燈歸零</string>
-    <string name="resetoil">Reset Oil</string>
+    <string name="resetoil">RESET OIL</string>
     <string name="resetbrake_zh">刹車片歸零</string>
-    <string name="resetbrake">Reset Brake</string>
-    <string name="resetsas_zh">轉向角度感測器復位</string>
-    <string name="resetsas">Reset SAS</string>
+    <string name="resetbrake">RESET BRAKE</string>
+    <string name="resetsas_zh">轉向角復位</string>
+    <string name="resetsas">RESET SAS</string>
     <string name="EOBD2CAN_zh">OBD CAN</string>
     <string name="EOBD2CAN">OBD CAN</string>
     <string name="OBD_Heavy_Duty_zh">重型車標準</string>
@@ -76,7 +76,7 @@
     <string name="USAFORD_zh">福特</string>
     <string name="USAFORD">FORD</string>
     <string name="DS_DACIA_zh">達西亞柴油版</string>
-    <string name="DS_DACIA">DIACIA</string>
+    <string name="DS_DACIA">DACIA</string>
     <string name="DS_AUDI_zh">奧迪柴油版</string>
     <string name="DS_AUDI">AUDI</string>
     <string name="DS_BENZ_zh">賓士柴油版</string>
@@ -172,7 +172,7 @@
     <string name="CITROEN_zh">雪鐵龍</string>
     <string name="CITROEN">CITROEN</string>
     <string name="DACIA_zh">達西亞</string>
-    <string name="DACIA">DIACIA</string>
+    <string name="DACIA">DACIA</string>
     <string name="DAF_zh">達夫</string>
     <string name="DAF" />
     <string name="EUROFORD_zh">歐洲福特</string>
@@ -340,7 +340,7 @@
     <string name="DIAS_zh">聯創專用</string>
     <string name="DIAS">DIAS</string>
     <string name="CHANGCHENG_zh">長城汽車</string>
-    <string name="CHANGCHENG">CHANGCHENG</string>
+    <string name="CHANGCHENG">GREAT WALL</string>
     <string name="CHANGCHENGZY_zh">長城汽車專用</string>
     <string name="CHANGCHENGZY">CHANGCHENGZY</string>
     <string name="CHANGCHENGKEYZY_zh">長城防盜鑰匙匹配專用</string>
@@ -911,6 +911,8 @@
     <string name="tjyqzy_zh">TJYQZY</string>
     <string name="liujizy">LIUJIZY</string>
     <string name="liujizy_zh">柳機專用</string>
+    <string name="hcxy">HCXY</string>
+    <string name="hcxy_zh">華晨鑫源</string>
     <string name="alto_zh">江南奧拓</string>
     <string name="alto">ALTO</string>
     <string name="aokesi_zh">奧克斯</string>

@@ -624,7 +624,7 @@
     const/4 v5, 0x0
 
     .line 218
-    const v3, 0x7f0705ef
+    const v3, 0x7f0705f1
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->setTitle(I)V
 
@@ -635,7 +635,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f020521
+    const v4, 0x7f020525
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -757,7 +757,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d044d
+    const v4, 0x7f0c046b
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -777,7 +777,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d044e
+    const v4, 0x7f0c046c
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -811,7 +811,7 @@
     .line 241
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0704dd
+    const v4, 0x7f0704df
 
     invoke-static {v3, v4}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -829,7 +829,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0450
+    const v4, 0x7f0c046e
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -853,7 +853,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0451
+    const v4, 0x7f0c046f
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -3591,7 +3591,7 @@
     .line 651
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f07006c
+    const v8, 0x7f070053
 
     const/16 v9, 0x11
 
@@ -3672,7 +3672,7 @@
     .line 660
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0705f6
+    const v8, 0x7f0705f8
 
     invoke-static {v7, v8}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;I)V
 
@@ -3687,7 +3687,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0d044d
+    .packed-switch 0x7f0c046b
         :pswitch_0
         :pswitch_1
     .end packed-switch
@@ -3701,7 +3701,7 @@
 
     .prologue
     .line 193
-    const v0, 0x7f030182
+    const v0, 0x7f030185
 
     const/4 v1, 0x0
 
@@ -4792,7 +4792,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070019
+    const/high16 v1, 0x7f07
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4805,7 +4805,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070616
+    const v1, 0x7f070618
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4818,7 +4818,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070619
+    const v1, 0x7f07061b
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4831,7 +4831,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070622
+    const v1, 0x7f070624
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4844,7 +4844,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f07061a
+    const v1, 0x7f07061c
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4857,7 +4857,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070620
+    const v1, 0x7f070622
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4870,7 +4870,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f07061c
+    const v1, 0x7f07061e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4883,7 +4883,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f07061b
+    const v1, 0x7f07061d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4896,7 +4896,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f07061d
+    const v1, 0x7f07061f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4909,7 +4909,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070621
+    const v1, 0x7f070623
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4922,7 +4922,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f07061f
+    const v1, 0x7f070621
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4935,7 +4935,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f07061e
+    const v1, 0x7f070620
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4948,7 +4948,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070623
+    const v1, 0x7f070625
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4961,7 +4961,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070624
+    const v1, 0x7f070626
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4974,7 +4974,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070625
+    const v1, 0x7f070627
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -7404,7 +7404,7 @@
 
     move-result v31
 
-    if-nez v31, :cond_29
+    if-nez v31, :cond_2a
 
     .line 1042
     invoke-virtual/range {v24 .. v24}, Lcom/cnlaunch/x431pro/module/config/model/ConfigRespose;->getData()Lcom/cnlaunch/x431pro/module/config/model/ConfigData;
@@ -7453,7 +7453,7 @@
 
     move-result v32
 
-    if-nez v32, :cond_26
+    if-nez v32, :cond_27
 
     .line 1053
     const-string/jumbo v31, "CN"
@@ -7482,7 +7482,7 @@
 
     move-result v31
 
-    if-eqz v31, :cond_27
+    if-eqz v31, :cond_28
 
     .line 1054
     :cond_23
@@ -7677,7 +7677,7 @@
 
     move-result v32
 
-    if-nez v32, :cond_28
+    if-nez v32, :cond_29
 
     .line 1072
     move-object/from16 v0, p0
@@ -7708,7 +7708,7 @@
 
     move-result v31
 
-    if-eqz v31, :cond_2d
+    if-nez v31, :cond_25
 
     move-object/from16 v0, p0
 
@@ -7720,9 +7720,10 @@
 
     move-result v31
 
-    if-eqz v31, :cond_2d
+    if-eqz v31, :cond_2e
 
     .line 1098
+    :cond_25
     new-instance v3, Landroid/content/Intent;
 
     move-object/from16 v0, p0
@@ -7758,7 +7759,7 @@
 
     move-result v31
 
-    if-nez v31, :cond_25
+    if-nez v31, :cond_26
 
     const-string/jumbo v31, "TW"
 
@@ -7772,10 +7773,10 @@
 
     move-result v31
 
-    if-eqz v31, :cond_2c
+    if-eqz v31, :cond_2d
 
     .line 1102
-    :cond_25
+    :cond_26
     const-string/jumbo v17, "\n\u68c0\u6d4b\u5b8c\u6bd5\u3002\n"
 
     .line 1103
@@ -7867,7 +7868,7 @@
     .end local v17           #logover:Ljava/lang/String;
     .restart local v7       #checkTime:D
     .restart local v24       #response:Lcom/cnlaunch/x431pro/module/config/model/ConfigRespose;
-    :cond_26
+    :cond_27
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v27
@@ -7912,7 +7913,7 @@
 
     .line 1061
     .end local v27           #temp:Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment$DoInformation;
-    :cond_27
+    :cond_28
     new-instance v31, Ljava/lang/StringBuilder;
 
     const-string/jumbo v32, "\nTesting config\uff1a\nTesting config results:Success,Time of "
@@ -8090,7 +8091,7 @@
     goto/16 :goto_11
 
     .line 1069
-    :cond_28
+    :cond_29
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v29
@@ -8149,7 +8150,7 @@
     .end local v7           #checkTime:D
     .end local v18           #logtemp:Ljava/lang/String;
     .end local v29           #url:Lcom/cnlaunch/x431pro/module/config/model/ConfigUrl;
-    :cond_29
+    :cond_2a
     new-instance v10, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment$ErrorMsg;
 
     move-object/from16 v0, p0
@@ -8200,7 +8201,7 @@
 
     move-result v31
 
-    if-nez v31, :cond_2a
+    if-nez v31, :cond_2b
 
     const-string/jumbo v31, "TW"
 
@@ -8214,10 +8215,10 @@
 
     move-result v31
 
-    if-eqz v31, :cond_2b
+    if-eqz v31, :cond_2c
 
     .line 1081
-    :cond_2a
+    :cond_2b
     const-string/jumbo v18, "\u914d\u7f6e\u4e0b\u53d1\u68c0\u6d4b:\n"
 
     .line 1082
@@ -8289,7 +8290,7 @@
 
     .line 1086
     .end local v18           #logtemp:Ljava/lang/String;
-    :cond_2b
+    :cond_2c
     const-string/jumbo v18, "Testing config:\n"
 
     .line 1087
@@ -8352,7 +8353,7 @@
     .end local v18           #logtemp:Ljava/lang/String;
     .end local v24           #response:Lcom/cnlaunch/x431pro/module/config/model/ConfigRespose;
     .restart local v3       #LoginIntent:Landroid/content/Intent;
-    :cond_2c
+    :cond_2d
     const-string/jumbo v17, "\nServer test is done. \n"
 
     .line 1106
@@ -8374,7 +8375,7 @@
     .line 1113
     .end local v3           #LoginIntent:Landroid/content/Intent;
     .end local v17           #logover:Ljava/lang/String;
-    :cond_2d
+    :cond_2e
     const/16 v31, 0x835
 
     move-object/from16 v0, p0
@@ -8415,13 +8416,13 @@
 
     move-result-object v31
 
-    :cond_2e
+    :cond_2f
     :goto_16
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v32
 
-    if-nez v32, :cond_32
+    if-nez v32, :cond_33
 
     move-object/from16 v23, p2
 
@@ -8455,7 +8456,7 @@
 
     move-result v31
 
-    if-nez v31, :cond_2f
+    if-nez v31, :cond_30
 
     const-string/jumbo v31, "TW"
 
@@ -8469,10 +8470,10 @@
 
     move-result v31
 
-    if-eqz v31, :cond_33
+    if-eqz v31, :cond_34
 
     .line 1134
-    :cond_2f
+    :cond_30
     new-instance v31, Ljava/lang/StringBuilder;
 
     const-string/jumbo v32, "\n\u83b7\u53d6\u8f6f\u4ef6\u4e0b\u8f7d\u4fe1\u606f\u7ed3\u679c\uff1a\u6210\u529f\uff0c\u8017\u65f6"
@@ -8504,7 +8505,7 @@
 
     move-object/from16 v31, v0
 
-    if-eqz v31, :cond_35
+    if-eqz v31, :cond_36
 
     move-object/from16 v0, p0
 
@@ -8516,7 +8517,7 @@
 
     move-result v31
 
-    if-lez v31, :cond_35
+    if-lez v31, :cond_36
 
     .line 1142
     move-object/from16 v0, p0
@@ -8534,113 +8535,10 @@
 
     move-result v32
 
-    if-nez v32, :cond_34
+    if-nez v32, :cond_35
 
     .line 1168
     :goto_19
-    const-string/jumbo v31, "CN"
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->country_lang:Ljava/lang/String;
-
-    move-object/from16 v32, v0
-
-    invoke-virtual/range {v31 .. v32}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v31
-
-    if-nez v31, :cond_30
-
-    const-string/jumbo v31, "TW"
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->country_lang:Ljava/lang/String;
-
-    move-object/from16 v32, v0
-
-    invoke-virtual/range {v31 .. v32}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v31
-
-    if-eqz v31, :cond_3c
-
-    .line 1169
-    :cond_30
-    const-string/jumbo v31, "\n\u83b7\u53d6\u8bca\u65ad\u8f6f\u4ef6\u4fe1\u606f:\n"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v31
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v16
-
-    .line 1174
-    :goto_1a
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->diagSoftList:Ljava/util/List;
-
-    move-object/from16 v31, v0
-
-    if-eqz v31, :cond_3e
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->diagSoftList:Ljava/util/List;
-
-    move-object/from16 v31, v0
-
-    invoke-interface/range {v31 .. v31}, Ljava/util/List;->size()I
-
-    move-result v31
-
-    if-lez v31, :cond_3e
-
-    .line 1175
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->diagSoftList:Ljava/util/List;
-
-    move-object/from16 v31, v0
-
-    invoke-interface/range {v31 .. v31}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v31
-
-    :goto_1b
-    invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v32
-
-    if-nez v32, :cond_3d
-
-    .line 1206
-    :goto_1c
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->downloadList:Ljava/util/List;
-
-    move-object/from16 v31, v0
-
-    if-eqz v31, :cond_47
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->downloadList:Ljava/util/List;
-
-    move-object/from16 v31, v0
-
-    invoke-interface/range {v31 .. v31}, Ljava/util/List;->size()I
-
-    move-result v31
-
-    if-lez v31, :cond_47
-
-    .line 1207
     const-string/jumbo v31, "CN"
 
     move-object/from16 v0, p0
@@ -8667,10 +8565,113 @@
 
     move-result v31
 
-    if-eqz v31, :cond_45
+    if-eqz v31, :cond_3d
+
+    .line 1169
+    :cond_31
+    const-string/jumbo v31, "\n\u83b7\u53d6\u8bca\u65ad\u8f6f\u4ef6\u4fe1\u606f:\n"
+
+    move-object/from16 v0, v16
+
+    move-object/from16 v1, v31
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v16
+
+    .line 1174
+    :goto_1a
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->diagSoftList:Ljava/util/List;
+
+    move-object/from16 v31, v0
+
+    if-eqz v31, :cond_3f
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->diagSoftList:Ljava/util/List;
+
+    move-object/from16 v31, v0
+
+    invoke-interface/range {v31 .. v31}, Ljava/util/List;->size()I
+
+    move-result v31
+
+    if-lez v31, :cond_3f
+
+    .line 1175
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->diagSoftList:Ljava/util/List;
+
+    move-object/from16 v31, v0
+
+    invoke-interface/range {v31 .. v31}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v31
+
+    :goto_1b
+    invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v32
+
+    if-nez v32, :cond_3e
+
+    .line 1206
+    :goto_1c
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->downloadList:Ljava/util/List;
+
+    move-object/from16 v31, v0
+
+    if-eqz v31, :cond_48
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->downloadList:Ljava/util/List;
+
+    move-object/from16 v31, v0
+
+    invoke-interface/range {v31 .. v31}, Ljava/util/List;->size()I
+
+    move-result v31
+
+    if-lez v31, :cond_48
+
+    .line 1207
+    const-string/jumbo v31, "CN"
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->country_lang:Ljava/lang/String;
+
+    move-object/from16 v32, v0
+
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v31
+
+    if-nez v31, :cond_32
+
+    const-string/jumbo v31, "TW"
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->country_lang:Ljava/lang/String;
+
+    move-object/from16 v32, v0
+
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v31
+
+    if-eqz v31, :cond_46
 
     .line 1208
-    :cond_31
+    :cond_32
     const-string/jumbo v31, "\n\u83b7\u53d6\u8bca\u65ad\u56fa\u4ef6\u5305\u548cDemo\u8f6f\u4ef6\u5305\u4fe1\u606f:\n"
 
     move-object/from16 v0, v16
@@ -8698,7 +8699,7 @@
 
     move-result v32
 
-    if-nez v32, :cond_46
+    if-nez v32, :cond_47
 
     .line 1216
     move-object/from16 v0, p0
@@ -8727,7 +8728,7 @@
     .line 1122
     .end local v16           #logTemp:Ljava/lang/String;
     .end local v23           #resTemp:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;>;"
-    :cond_32
+    :cond_33
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v27
@@ -8746,7 +8747,7 @@
 
     move-result v32
 
-    if-eqz v32, :cond_2e
+    if-eqz v32, :cond_2f
 
     .line 1124
     new-instance v32, Ljava/util/Date;
@@ -8773,7 +8774,7 @@
     .line 1136
     .end local v27           #temp:Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment$DoInformation;
     .restart local v23       #resTemp:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;>;"
-    :cond_33
+    :cond_34
     new-instance v31, Ljava/lang/StringBuilder;
 
     const-string/jumbo v32, "\nThe software download information results:Success,Time of "
@@ -8803,7 +8804,7 @@
     goto/16 :goto_17
 
     .line 1142
-    :cond_34
+    :cond_35
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v4
@@ -8862,7 +8863,7 @@
 
     .line 1147
     .end local v4           #bean:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
-    :cond_35
+    :cond_36
     const-string/jumbo v31, "CN"
 
     move-object/from16 v0, p0
@@ -8875,7 +8876,7 @@
 
     move-result v31
 
-    if-nez v31, :cond_36
+    if-nez v31, :cond_37
 
     const-string/jumbo v31, "TW"
 
@@ -8889,10 +8890,10 @@
 
     move-result v31
 
-    if-eqz v31, :cond_3a
+    if-eqz v31, :cond_3b
 
     .line 1148
-    :cond_36
+    :cond_37
     const-string/jumbo v18, "\u83b7\u53d6\u516c\u5171\u8f6f\u4ef6\u4fe1\u606f:\n"
 
     .line 1149
@@ -8907,16 +8908,16 @@
 
     move-result-object v31
 
-    :cond_37
+    :cond_38
     :goto_1f
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v32
 
-    if-nez v32, :cond_39
+    if-nez v32, :cond_3a
 
     .line 1165
-    :cond_38
+    :cond_39
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->logFilePath:Ljava/lang/String;
@@ -8932,7 +8933,7 @@
     goto/16 :goto_19
 
     .line 1149
-    :cond_39
+    :cond_3a
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v27
@@ -8951,7 +8952,7 @@
 
     move/from16 v1, v33
 
-    if-ne v0, v1, :cond_37
+    if-ne v0, v1, :cond_38
 
     .line 1151
     new-instance v32, Ljava/lang/StringBuilder;
@@ -9007,7 +9008,7 @@
     .line 1155
     .end local v18           #logtemp:Ljava/lang/String;
     .end local v27           #temp:Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment$ErrorMsg;
-    :cond_3a
+    :cond_3b
     const-string/jumbo v18, "The public software information:\n"
 
     .line 1156
@@ -9022,13 +9023,13 @@
 
     move-result-object v31
 
-    :cond_3b
+    :cond_3c
     :goto_20
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v32
 
-    if-eqz v32, :cond_38
+    if-eqz v32, :cond_39
 
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -9048,7 +9049,7 @@
 
     move/from16 v1, v33
 
-    if-ne v0, v1, :cond_3b
+    if-ne v0, v1, :cond_3c
 
     .line 1158
     new-instance v32, Ljava/lang/StringBuilder;
@@ -9108,7 +9109,7 @@
     .line 1171
     .end local v18           #logtemp:Ljava/lang/String;
     .end local v27           #temp:Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment$ErrorMsg;
-    :cond_3c
+    :cond_3d
     const-string/jumbo v31, "\nThe diag software information:\n"
 
     move-object/from16 v0, v16
@@ -9122,7 +9123,7 @@
     goto/16 :goto_1a
 
     .line 1175
-    :cond_3d
+    :cond_3e
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v4
@@ -9199,7 +9200,7 @@
 
     .line 1183
     .end local v4           #bean:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
-    :cond_3e
+    :cond_3f
     const-string/jumbo v31, "CN"
 
     move-object/from16 v0, p0
@@ -9212,7 +9213,7 @@
 
     move-result v31
 
-    if-nez v31, :cond_3f
+    if-nez v31, :cond_40
 
     const-string/jumbo v31, "TW"
 
@@ -9226,10 +9227,10 @@
 
     move-result v31
 
-    if-eqz v31, :cond_43
+    if-eqz v31, :cond_44
 
     .line 1184
-    :cond_3f
+    :cond_40
     const-string/jumbo v18, "\u83b7\u53d6\u8bca\u65ad\u8f6f\u4ef6\u4fe1\u606f:\n"
 
     .line 1185
@@ -9244,16 +9245,16 @@
 
     move-result-object v31
 
-    :cond_40
+    :cond_41
     :goto_21
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v32
 
-    if-nez v32, :cond_42
+    if-nez v32, :cond_43
 
     .line 1203
-    :cond_41
+    :cond_42
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->logFilePath:Ljava/lang/String;
@@ -9269,7 +9270,7 @@
     goto/16 :goto_1c
 
     .line 1185
-    :cond_42
+    :cond_43
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v27
@@ -9288,7 +9289,7 @@
 
     move/from16 v1, v33
 
-    if-ne v0, v1, :cond_40
+    if-ne v0, v1, :cond_41
 
     .line 1187
     new-instance v32, Ljava/lang/StringBuilder;
@@ -9347,7 +9348,7 @@
     .line 1193
     .end local v18           #logtemp:Ljava/lang/String;
     .end local v27           #temp:Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment$ErrorMsg;
-    :cond_43
+    :cond_44
     const-string/jumbo v18, "The diag software information:\n"
 
     .line 1194
@@ -9362,13 +9363,13 @@
 
     move-result-object v31
 
-    :cond_44
+    :cond_45
     :goto_22
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v32
 
-    if-eqz v32, :cond_41
+    if-eqz v32, :cond_42
 
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -9388,7 +9389,7 @@
 
     move/from16 v1, v33
 
-    if-ne v0, v1, :cond_44
+    if-ne v0, v1, :cond_45
 
     .line 1196
     new-instance v32, Ljava/lang/StringBuilder;
@@ -9448,7 +9449,7 @@
     .line 1210
     .end local v18           #logtemp:Ljava/lang/String;
     .end local v27           #temp:Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment$ErrorMsg;
-    :cond_45
+    :cond_46
     const-string/jumbo v31, "\nThe diag firmware package and Demo package information:\n"
 
     move-object/from16 v0, v16
@@ -9462,7 +9463,7 @@
     goto/16 :goto_1d
 
     .line 1213
-    :cond_46
+    :cond_47
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v4
@@ -9521,7 +9522,7 @@
 
     .line 1219
     .end local v4           #bean:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
-    :cond_47
+    :cond_48
     const-string/jumbo v31, "CN"
 
     move-object/from16 v0, p0
@@ -9534,7 +9535,7 @@
 
     move-result v31
 
-    if-nez v31, :cond_48
+    if-nez v31, :cond_49
 
     const-string/jumbo v31, "TW"
 
@@ -9548,10 +9549,10 @@
 
     move-result v31
 
-    if-eqz v31, :cond_49
+    if-eqz v31, :cond_4a
 
     .line 1220
-    :cond_48
+    :cond_49
     const-string/jumbo v31, "\n\u83b7\u53d6\u8bca\u65ad\u56fa\u4ef6\u5305\u548cDemo\u8f6f\u4ef6\u5305\u4fe1\u606f:null\n\n\u68c0\u6d4b\u5b8c\u6bd5\u3002\n"
 
     move-object/from16 v0, v16
@@ -9646,7 +9647,7 @@
     goto/16 :goto_0
 
     .line 1222
-    :cond_49
+    :cond_4a
     const-string/jumbo v31, "\nThe diag firmware package and Demo package information:null\n\nServer test is done.\n"
 
     move-object/from16 v0, v16
@@ -9698,7 +9699,7 @@
 
     move-object/from16 v31, v0
 
-    if-eqz v31, :cond_4a
+    if-eqz v31, :cond_4b
 
     .line 1350
     const/16 v19, 0x0
@@ -9724,12 +9725,12 @@
 
     move-result v32
 
-    if-nez v32, :cond_4b
+    if-nez v32, :cond_4c
 
     .line 1382
     .end local v9           #download:Lcom/cnlaunch/framework/network/download/DownloadParam;
     .end local v19           #params:Lcom/cnlaunch/framework/network/http/RequestParams;
-    :cond_4a
+    :cond_4b
     new-instance v31, Ljava/lang/StringBuilder;
 
     move-object/from16 v0, p0
@@ -9769,7 +9770,7 @@
     .line 1352
     .restart local v9       #download:Lcom/cnlaunch/framework/network/download/DownloadParam;
     .restart local v19       #params:Lcom/cnlaunch/framework/network/http/RequestParams;
-    :cond_4b
+    :cond_4c
     invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v4
@@ -9945,13 +9946,13 @@
 
     move-result v32
 
-    if-eqz v32, :cond_4c
+    if-eqz v32, :cond_4d
 
     .line 1371
     invoke-virtual {v11}, Ljava/io/File;->delete()Z
 
     .line 1374
-    :cond_4c
+    :cond_4d
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->downloadMgr:Lcom/cnlaunch/framework/network/download/DownloadManager;
@@ -10030,7 +10031,7 @@
     invoke-static/range {v31 .. v31}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
     .line 1388
-    if-eqz p2, :cond_4e
+    if-eqz p2, :cond_4f
 
     move-object/from16 v24, p2
 
@@ -10064,7 +10065,7 @@
 
     move-result v31
 
-    if-nez v31, :cond_4d
+    if-nez v31, :cond_4e
 
     .line 1392
     move-object/from16 v0, p0
@@ -10074,7 +10075,7 @@
     move-object/from16 v31, v0
 
     .line 1393
-    const v32, 0x7f0705f1
+    const v32, 0x7f0705f3
 
     .line 1392
     invoke-static/range {v31 .. v32}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
@@ -10099,7 +10100,7 @@
     goto/16 :goto_0
 
     .line 1396
-    :cond_4d
+    :cond_4e
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->mContext:Landroid/content/Context;
@@ -10107,7 +10108,7 @@
     move-object/from16 v31, v0
 
     .line 1397
-    const v32, 0x7f0705f2
+    const v32, 0x7f0705f4
 
     .line 1396
     invoke-static/range {v31 .. v32}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
@@ -10133,14 +10134,14 @@
 
     .line 1401
     .end local v24           #response:Lcom/cnlaunch/x431pro/module/setting/model/UploadServerCheckLogResponse;
-    :cond_4e
+    :cond_4f
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/setting/CheckServerFragment;->mContext:Landroid/content/Context;
 
     move-object/from16 v31, v0
 
-    const v32, 0x7f0705f2
+    const v32, 0x7f0705f4
 
     invoke-static/range {v31 .. v32}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 

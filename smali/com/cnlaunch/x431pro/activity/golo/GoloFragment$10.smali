@@ -53,7 +53,7 @@
 
     iput-object p4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$10;->val$isRead:Ljava/lang/String;
 
-    .line 795
+    .line 794
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
@@ -81,7 +81,7 @@
     .parameter "arg0"
 
     .prologue
-    .line 800
+    .line 799
     :try_start_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$10;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -104,13 +104,13 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 804
+    .line 803
     :goto_0
     const/4 v0, 0x0
 
     return-object v0
 
-    .line 801
+    .line 800
     :catch_0
     move-exception v0
 

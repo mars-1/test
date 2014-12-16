@@ -130,7 +130,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070663
+    const v1, 0x7f070665
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -158,7 +158,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070667
+    const v1, 0x7f070669
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -184,7 +184,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070664
+    const v1, 0x7f070666
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -210,7 +210,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070668
+    const v1, 0x7f07066a
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -240,7 +240,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070653
+    const v1, 0x7f070655
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -266,7 +266,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070665
+    const v1, 0x7f070667
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -292,7 +292,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070669
+    const v1, 0x7f07066b
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 

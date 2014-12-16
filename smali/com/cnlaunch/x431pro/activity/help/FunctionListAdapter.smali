@@ -296,7 +296,7 @@
     if-lt v6, v0, :cond_1
 
     .line 142
-    const v18, 0x7f0d021a
+    const v18, 0x7f0c021d
 
     move-object/from16 v0, v16
 
@@ -327,7 +327,7 @@
     invoke-virtual {v8, v5}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 147
-    const v18, 0x7f0d021b
+    const v18, 0x7f0c021e
 
     move-object/from16 v0, v16
 
@@ -363,7 +363,7 @@
 
     const/16 v19, 0x0
 
-    const v20, 0x7f020480
+    const v20, 0x7f020484
 
     const/16 v21, 0x0
 
@@ -471,7 +471,7 @@
 
     .line 118
     .local v17, viewItem:Landroid/view/View;
-    const v18, 0x7f0d0216
+    const v18, 0x7f0c0219
 
     invoke-virtual/range {v17 .. v18}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -500,7 +500,7 @@
     invoke-virtual {v11, v0, v1, v2, v3}, Landroid/widget/LinearLayout;->setPadding(IIII)V
 
     .line 121
-    const v18, 0x7f0d0217
+    const v18, 0x7f0c021a
 
     invoke-virtual/range {v17 .. v18}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -529,7 +529,7 @@
     invoke-virtual {v9, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 123
-    const v18, 0x7f0d0218
+    const v18, 0x7f0c021b
 
     invoke-virtual/range {v17 .. v18}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -589,7 +589,7 @@
 
     const/16 v19, 0x0
 
-    const v20, 0x7f02012b
+    const v20, 0x7f02012c
 
     const/16 v21, 0x0
 

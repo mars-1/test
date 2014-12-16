@@ -67,8 +67,6 @@
 
 .field private final REQ_SERIALNUMBER_CODE_ERROR_SN_NO_EXIST:I
 
-.field private final SHOWGETSNTIPS:I
-
 .field USERNAMELIST:Ljava/lang/String;
 
 .field UsernameList:Ljava/util/ArrayList;
@@ -105,8 +103,6 @@
 
 .field private handler:Landroid/os/Handler;
 
-.field private handler2:Landroid/os/Handler;
-
 .field private isRegisterLogin:Z
 
 .field private loginInfo:Ljava/lang/String;
@@ -139,14 +135,14 @@
     .locals 1
 
     .prologue
-    .line 634
+    .line 628
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->afterLoginOperationCallback:Ljava/util/List;
 
-    .line 664
+    .line 655
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -161,7 +157,7 @@
     .parameter "context"
 
     .prologue
-    .line 118
+    .line 104
     invoke-direct {p0, p1}, Lcom/cnlaunch/x431pro/activity/login/NetworkBase;-><init>(Landroid/content/Context;)V
 
     .line 49
@@ -255,19 +251,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mLoginDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;
 
-    .line 103
-    const/4 v2, 0x2
-
-    iput v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->SHOWGETSNTIPS:I
-
-    .line 104
-    new-instance v2, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$1;
-
-    invoke-direct {v2, p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$1;-><init>(Lcom/cnlaunch/x431pro/activity/login/LoginFunction;)V
-
-    iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->handler2:Landroid/os/Handler;
-
-    .line 119
+    .line 105
     new-instance v2, Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
@@ -276,7 +260,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userAction:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
-    .line 120
+    .line 106
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -285,7 +269,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
-    .line 121
+    .line 107
     new-instance v2, Lcom/cnlaunch/x431pro/module/mine/action/ConnectorAction;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
@@ -294,7 +278,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->connectorAction:Lcom/cnlaunch/x431pro/module/mine/action/ConnectorAction;
 
-    .line 122
+    .line 108
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/cnlaunch/x431pro/utils/db/base/DBManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/x431pro/utils/db/base/DBManager;
@@ -311,7 +295,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->serialNumberDao:Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;
 
-    .line 123
+    .line 109
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v3, "serialNo_Prefix"
@@ -322,24 +306,24 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->serialNo_Prefix:Ljava/lang/String;
 
-    .line 124
+    .line 110
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->allProductDTOList:Ljava/util/List;
 
-    .line 126
+    .line 112
     const/4 v2, 0x0
 
     iput-boolean v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->isRegisterLogin:Z
 
-    .line 127
+    .line 113
     const-string/jumbo v2, ""
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userConnectorSerialNo:Ljava/lang/String;
 
-    .line 129
+    .line 115
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->USERNAMELIST:Ljava/lang/String;
@@ -348,7 +332,7 @@
 
     move-result-object v0
 
-    .line 130
+    .line 116
     .local v0, UsernameString:Ljava/lang/String;
     if-eqz v0, :cond_0
 
@@ -360,7 +344,7 @@
 
     if-nez v2, :cond_0
 
-    .line 132
+    .line 118
     :try_start_0
     invoke-static {v0}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->String2StringList(Ljava/lang/String;)Ljava/util/List;
 
@@ -374,38 +358,38 @@
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
 
-    .line 141
+    .line 127
     :cond_0
     :goto_0
     return-void
 
-    .line 133
+    .line 119
     :catch_0
     move-exception v1
 
-    .line 134
+    .line 120
     .local v1, e:Ljava/io/StreamCorruptedException;
     invoke-virtual {v1}, Ljava/io/StreamCorruptedException;->printStackTrace()V
 
     goto :goto_0
 
-    .line 135
+    .line 121
     .end local v1           #e:Ljava/io/StreamCorruptedException;
     :catch_1
     move-exception v1
 
-    .line 136
+    .line 122
     .local v1, e:Ljava/lang/ClassNotFoundException;
     invoke-virtual {v1}, Ljava/lang/ClassNotFoundException;->printStackTrace()V
 
     goto :goto_0
 
-    .line 137
+    .line 123
     .end local v1           #e:Ljava/lang/ClassNotFoundException;
     :catch_2
     move-exception v1
 
-    .line 138
+    .line 124
     .local v1, e:Ljava/io/IOException;
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
@@ -417,42 +401,22 @@
     .parameter "code"
 
     .prologue
-    .line 149
+    .line 135
     sparse-switch p1, :sswitch_data_0
 
-    .line 163
+    .line 149
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f07062e
+    const v1, 0x7f070630
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
-    .line 166
+    .line 152
     :goto_0
     return-void
 
-    .line 151
+    .line 137
     :sswitch_0
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
-
-    const v1, 0x7f070635
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
-
-    goto :goto_0
-
-    .line 154
-    :sswitch_1
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
-
-    const v1, 0x7f070636
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
-
-    goto :goto_0
-
-    .line 157
-    :sswitch_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     const v1, 0x7f070637
@@ -461,8 +425,8 @@
 
     goto :goto_0
 
-    .line 160
-    :sswitch_3
+    .line 140
+    :sswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     const v1, 0x7f070638
@@ -471,7 +435,27 @@
 
     goto :goto_0
 
-    .line 149
+    .line 143
+    :sswitch_2
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
+
+    const v1, 0x7f070639
+
+    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
+
+    goto :goto_0
+
+    .line 146
+    :sswitch_3
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
+
+    const v1, 0x7f07063a
+
+    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
+
+    goto :goto_0
+
+    .line 135
     :sswitch_data_0
     .sparse-switch
         0x9c40 -> :sswitch_2
@@ -497,7 +481,7 @@
     .parameter "listener"
 
     .prologue
-    .line 636
+    .line 630
     const-class v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
 
     monitor-enter v1
@@ -509,12 +493,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 637
+    .line 631
     monitor-exit v1
 
     return-void
 
-    .line 636
+    .line 630
     :catchall_0
     move-exception v0
 
@@ -528,7 +512,7 @@
     .parameter "listener"
 
     .prologue
-    .line 694
+    .line 685
     const-class v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
 
     monitor-enter v1
@@ -540,12 +524,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 695
+    .line 686
     monitor-exit v1
 
     return-void
 
-    .line 694
+    .line 685
     :catchall_0
     move-exception v0
 
@@ -558,520 +542,45 @@
     .locals 2
 
     .prologue
-    .line 838
+    .line 826
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->handler:Landroid/os/Handler;
 
     if-eqz v1, :cond_0
 
-    .line 839
+    .line 827
     new-instance v0, Landroid/os/Message;
 
     invoke-direct {v0}, Landroid/os/Message;-><init>()V
 
-    .line 840
+    .line 828
     .local v0, msg:Landroid/os/Message;
     const/16 v1, 0x7c
 
     iput v1, v0, Landroid/os/Message;->what:I
 
-    .line 841
+    .line 829
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->handler:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 845
+    .line 833
     .end local v0           #msg:Landroid/os/Message;
     :cond_0
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mLoginDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;
 
     if-eqz v1, :cond_1
 
-    .line 846
+    .line 834
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mLoginDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;
 
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;->dismiss()V
 
-    .line 848
+    .line 836
     :cond_1
     return-void
 .end method
 
 .method public static failed(Ljava/lang/Object;)V
-    .locals 3
-    .parameter "o"
-
-    .prologue
-    .line 679
-    sget-object v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->listeners:Ljava/util/List;
-
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    .line 682
-    return-void
-
-    .line 679
-    :cond_0
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;
-
-    .line 680
-    .local v0, tmp:Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;
-    invoke-interface {v0, p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;->failed(Ljava/lang/Object;)V
-
-    goto :goto_0
-.end method
-
-.method public static finishGettingSN(Ljava/lang/Object;)V
-    .locals 3
-    .parameter "o"
-
-    .prologue
-    .line 650
-    sget-object v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->afterLoginOperationCallback:Ljava/util/List;
-
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    .line 653
-    return-void
-
-    .line 650
-    :cond_0
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;
-
-    .line 651
-    .local v0, tmp:Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;
-    invoke-interface {v0, p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;->finishGettingSN(Ljava/lang/Object;)V
-
-    goto :goto_0
-.end method
-
-.method private getSNFailPrompt(I)V
-    .locals 2
-    .parameter "code"
-
-    .prologue
-    .line 174
-    sparse-switch p1, :sswitch_data_0
-
-    .line 188
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
-
-    const v1, 0x7f070753
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
-
-    .line 191
-    :goto_0
-    :sswitch_0
-    return-void
-
-    .line 176
-    :sswitch_1
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
-
-    const v1, 0x7f070635
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
-
-    goto :goto_0
-
-    .line 179
-    :sswitch_2
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
-
-    const v1, 0x7f070756
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
-
-    goto :goto_0
-
-    .line 185
-    :sswitch_3
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
-
-    const v1, 0x7f070754
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
-
-    goto :goto_0
-
-    .line 174
-    nop
-
-    :sswitch_data_0
-    .sparse-switch
-        0x191 -> :sswitch_1
-        0x1f4 -> :sswitch_3
-        0x295 -> :sswitch_2
-        0x296 -> :sswitch_0
-    .end sparse-switch
-.end method
-
-.method public static isLogin(Landroid/content/Context;)Z
-    .locals 3
-    .parameter "context"
-
-    .prologue
-    .line 782
-    invoke-static {p0}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
-
-    move-result-object v1
-
-    const-string/jumbo v2, "token"
-
-    invoke-virtual {v1, v2}, Lcom/cnlaunch/framework/common/PreferencesManager;->get(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 783
-    .local v0, token:Ljava/lang/String;
-    invoke-static {v0}, Lcom/cnlaunch/x431pro/utils/Tools;->isNotNull(Ljava/lang/String;)Z
-
-    move-result v1
-
-    return v1
-.end method
-
-.method public static declared-synchronized logout(Ljava/lang/Object;)V
-    .locals 4
-    .parameter "o"
-
-    .prologue
-    .line 688
-    const-class v2, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
-
-    monitor-enter v2
-
-    :try_start_0
-    sget-object v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->listeners:Ljava/util/List;
-
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    .line 691
-    monitor-exit v2
-
-    return-void
-
-    .line 688
-    :cond_0
-    :try_start_1
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;
-
-    .line 689
-    .local v0, tmp:Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;
-    invoke-interface {v0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;->logout()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    goto :goto_0
-
-    .line 688
-    .end local v0           #tmp:Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v2
-
-    throw v1
-.end method
-
-.method public static declared-synchronized removeGetSNInfoListenser(Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;)V
-    .locals 2
-    .parameter "listener"
-
-    .prologue
-    .line 640
-    const-class v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
-
-    monitor-enter v1
-
-    :try_start_0
-    sget-object v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->afterLoginOperationCallback:Ljava/util/List;
-
-    invoke-interface {v0, p0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 641
-    monitor-exit v1
-
-    return-void
-
-    .line 640
-    :catchall_0
-    move-exception v0
-
-    monitor-exit v1
-
-    throw v0
-.end method
-
-.method public static declared-synchronized removeListenser(Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;)V
-    .locals 2
-    .parameter "listener"
-
-    .prologue
-    .line 698
-    const-class v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
-
-    monitor-enter v1
-
-    :try_start_0
-    sget-object v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->listeners:Ljava/util/List;
-
-    invoke-interface {v0, p0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 699
-    monitor-exit v1
-
-    return-void
-
-    .line 698
-    :catchall_0
-    move-exception v0
-
-    monitor-exit v1
-
-    throw v0
-.end method
-
-.method private sendClientVersion(Ljava/lang/String;Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
-    .locals 10
-    .parameter "serialNo"
-    .parameter "versionType"
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/cnlaunch/framework/network/http/HttpException;
-        }
-    .end annotation
-
-    .prologue
-    .line 797
-    iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
-
-    const-string/jumbo v9, "seria_no_product_type"
-
-    invoke-static {v8, v9}, Lcom/cnlaunch/x431pro/utils/CommonUtils;->getProperty(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 800
-    .local v6, softName:Ljava/lang/String;
-    const-string/jumbo v7, ""
-
-    .line 801
-    .local v7, version:Ljava/lang/String;
-    const/4 v5, 0x0
-
-    .line 802
-    .local v5, sendClientVersionResponse:Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
-    const-string/jumbo v8, "1"
-
-    if-ne p2, v8, :cond_0
-
-    .line 804
-    :try_start_0
-    iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v8}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 805
-    .local v3, packageName:Ljava/lang/String;
-    iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v8}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v8
-
-    const/4 v9, 0x0
-
-    invoke-virtual {v8, v3, v9}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
-
-    move-result-object v2
-
-    .line 806
-    .local v2, info:Landroid/content/pm/PackageInfo;
-    iget-object v7, v2, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
-    :try_end_0
-    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 812
-    .end local v2           #info:Landroid/content/pm/PackageInfo;
-    .end local v3           #packageName:Ljava/lang/String;
-    :cond_0
-    :goto_0
-    const-string/jumbo v8, "2"
-
-    if-ne p2, v8, :cond_1
-
-    .line 813
-    invoke-static {}, Lcom/cnlaunch/x431pro/utils/PathUtils;->getPackagePath()Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 814
-    .local v4, path:Ljava/lang/String;
-    invoke-static {}, Lcom/cnlaunch/physics/utils/DeviceUtils;->getInstance()Lcom/cnlaunch/physics/utils/DeviceUtils;
-
-    move-result-object v8
-
-    invoke-virtual {v8, p1, v4}, Lcom/cnlaunch/physics/utils/DeviceUtils;->getDPUSoftInfo(Ljava/lang/String;Ljava/lang/String;)Lcom/cnlaunch/physics/entity/DPUSoftInfo;
-
-    move-result-object v0
-
-    .line 816
-    .local v0, dpuSoftInfo:Lcom/cnlaunch/physics/entity/DPUSoftInfo;
-    if-eqz v0, :cond_1
-
-    .line 817
-    invoke-virtual {v0}, Lcom/cnlaunch/physics/entity/DPUSoftInfo;->getDownloadSersion()Ljava/lang/String;
-
-    move-result-object v7
-
-    .line 821
-    .end local v0           #dpuSoftInfo:Lcom/cnlaunch/physics/entity/DPUSoftInfo;
-    .end local v4           #path:Ljava/lang/String;
-    :cond_1
-    const-string/jumbo v8, "4"
-
-    if-ne p2, v8, :cond_2
-
-    .line 822
-    invoke-static {}, Lcom/cnlaunch/x431pro/utils/PathUtils;->getPackagePath()Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 823
-    .restart local v4       #path:Ljava/lang/String;
-    invoke-static {}, Lcom/cnlaunch/physics/utils/DeviceUtils;->getInstance()Lcom/cnlaunch/physics/utils/DeviceUtils;
-
-    move-result-object v8
-
-    invoke-virtual {v8, p1, v4}, Lcom/cnlaunch/physics/utils/DeviceUtils;->getDPUSoftInfo(Ljava/lang/String;Ljava/lang/String;)Lcom/cnlaunch/physics/entity/DPUSoftInfo;
-
-    move-result-object v0
-
-    .line 825
-    .restart local v0       #dpuSoftInfo:Lcom/cnlaunch/physics/entity/DPUSoftInfo;
-    if-eqz v0, :cond_2
-
-    .line 826
-    invoke-virtual {v0}, Lcom/cnlaunch/physics/entity/DPUSoftInfo;->getBootVersion()Ljava/lang/String;
-
-    move-result-object v7
-
-    .line 830
-    .end local v0           #dpuSoftInfo:Lcom/cnlaunch/physics/entity/DPUSoftInfo;
-    .end local v4           #path:Ljava/lang/String;
-    :cond_2
-    const-string/jumbo v8, ""
-
-    if-eq v7, v8, :cond_3
-
-    .line 831
-    iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userAction:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
-
-    invoke-virtual {v8, p1, p2, v6, v7}, Lcom/cnlaunch/x431pro/module/user/action/UserAction;->sendClientVersion(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
-
-    move-result-object v5
-
-    .line 833
-    :cond_3
-    return-object v5
-
-    .line 807
-    :catch_0
-    move-exception v1
-
-    .line 808
-    .local v1, e:Landroid/content/pm/PackageManager$NameNotFoundException;
-    invoke-virtual {v1}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
-
-    goto :goto_0
-.end method
-
-.method public static startGettingSN(Ljava/lang/Object;)V
-    .locals 3
-    .parameter "o"
-
-    .prologue
-    .line 644
-    sget-object v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->afterLoginOperationCallback:Ljava/util/List;
-
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    .line 647
-    return-void
-
-    .line 644
-    :cond_0
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;
-
-    .line 645
-    .local v0, tmp:Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;
-    invoke-interface {v0, p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;->startGettingSN(Ljava/lang/Object;)V
-
-    goto :goto_0
-.end method
-
-.method public static success(Ljava/lang/Object;)V
     .locals 3
     .parameter "o"
 
@@ -1103,12 +612,540 @@
 
     .line 671
     .local v0, tmp:Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;
+    invoke-interface {v0, p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;->failed(Ljava/lang/Object;)V
+
+    goto :goto_0
+.end method
+
+.method public static finishGettingSN(Ljava/lang/Object;)V
+    .locals 3
+    .parameter "o"
+
+    .prologue
+    .line 644
+    sget-object v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->afterLoginOperationCallback:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 647
+    return-void
+
+    .line 644
+    :cond_0
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;
+
+    .line 645
+    .local v0, tmp:Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;
+    invoke-interface {v0, p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;->finishGettingSN(Ljava/lang/Object;)V
+
+    goto :goto_0
+.end method
+
+.method private getSNFailPrompt(I)V
+    .locals 2
+    .parameter "code"
+
+    .prologue
+    .line 160
+    sparse-switch p1, :sswitch_data_0
+
+    .line 174
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
+
+    const v1, 0x7f070755
+
+    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
+
+    .line 177
+    :goto_0
+    :sswitch_0
+    return-void
+
+    .line 162
+    :sswitch_1
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
+
+    const v1, 0x7f070637
+
+    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
+
+    goto :goto_0
+
+    .line 165
+    :sswitch_2
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
+
+    const v1, 0x7f070758
+
+    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
+
+    goto :goto_0
+
+    .line 171
+    :sswitch_3
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
+
+    const v1, 0x7f070756
+
+    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
+
+    goto :goto_0
+
+    .line 160
+    nop
+
+    :sswitch_data_0
+    .sparse-switch
+        0x191 -> :sswitch_1
+        0x1f4 -> :sswitch_3
+        0x295 -> :sswitch_2
+        0x296 -> :sswitch_0
+    .end sparse-switch
+.end method
+
+.method public static isLogin(Landroid/content/Context;)Z
+    .locals 3
+    .parameter "context"
+
+    .prologue
+    .line 770
+    invoke-static {p0}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "token"
+
+    invoke-virtual {v1, v2}, Lcom/cnlaunch/framework/common/PreferencesManager;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 771
+    .local v0, token:Ljava/lang/String;
+    invoke-static {v0}, Lcom/cnlaunch/x431pro/utils/Tools;->isNotNull(Ljava/lang/String;)Z
+
+    move-result v1
+
+    return v1
+.end method
+
+.method public static declared-synchronized logout(Ljava/lang/Object;)V
+    .locals 4
+    .parameter "o"
+
+    .prologue
+    .line 679
+    const-class v2, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
+
+    monitor-enter v2
+
+    :try_start_0
+    sget-object v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->listeners:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    .line 682
+    monitor-exit v2
+
+    return-void
+
+    .line 679
+    :cond_0
+    :try_start_1
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;
+
+    .line 680
+    .local v0, tmp:Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;
+    invoke-interface {v0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;->logout()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_0
+
+    .line 679
+    .end local v0           #tmp:Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v2
+
+    throw v1
+.end method
+
+.method public static declared-synchronized removeGetSNInfoListenser(Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;)V
+    .locals 2
+    .parameter "listener"
+
+    .prologue
+    .line 634
+    const-class v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
+
+    monitor-enter v1
+
+    :try_start_0
+    sget-object v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->afterLoginOperationCallback:Ljava/util/List;
+
+    invoke-interface {v0, p0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 635
+    monitor-exit v1
+
+    return-void
+
+    .line 634
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+
+    throw v0
+.end method
+
+.method public static declared-synchronized removeListenser(Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;)V
+    .locals 2
+    .parameter "listener"
+
+    .prologue
+    .line 689
+    const-class v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
+
+    monitor-enter v1
+
+    :try_start_0
+    sget-object v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->listeners:Ljava/util/List;
+
+    invoke-interface {v0, p0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 690
+    monitor-exit v1
+
+    return-void
+
+    .line 689
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+
+    throw v0
+.end method
+
+.method private sendClientVersion(Ljava/lang/String;Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
+    .locals 10
+    .parameter "serialNo"
+    .parameter "versionType"
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/cnlaunch/framework/network/http/HttpException;
+        }
+    .end annotation
+
+    .prologue
+    .line 785
+    iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
+
+    const-string/jumbo v9, "seria_no_product_type"
+
+    invoke-static {v8, v9}, Lcom/cnlaunch/x431pro/utils/CommonUtils;->getProperty(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 788
+    .local v6, softName:Ljava/lang/String;
+    const-string/jumbo v7, ""
+
+    .line 789
+    .local v7, version:Ljava/lang/String;
+    const/4 v5, 0x0
+
+    .line 790
+    .local v5, sendClientVersionResponse:Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
+    const-string/jumbo v8, "1"
+
+    if-ne p2, v8, :cond_0
+
+    .line 792
+    :try_start_0
+    iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v8}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 793
+    .local v3, packageName:Ljava/lang/String;
+    iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v8}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v8
+
+    const/4 v9, 0x0
+
+    invoke-virtual {v8, v3, v9}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+
+    move-result-object v2
+
+    .line 794
+    .local v2, info:Landroid/content/pm/PackageInfo;
+    iget-object v7, v2, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 800
+    .end local v2           #info:Landroid/content/pm/PackageInfo;
+    .end local v3           #packageName:Ljava/lang/String;
+    :cond_0
+    :goto_0
+    const-string/jumbo v8, "2"
+
+    if-ne p2, v8, :cond_1
+
+    .line 801
+    invoke-static {}, Lcom/cnlaunch/x431pro/utils/PathUtils;->getPackagePath()Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 802
+    .local v4, path:Ljava/lang/String;
+    invoke-static {}, Lcom/cnlaunch/physics/utils/DeviceUtils;->getInstance()Lcom/cnlaunch/physics/utils/DeviceUtils;
+
+    move-result-object v8
+
+    invoke-virtual {v8, p1, v4}, Lcom/cnlaunch/physics/utils/DeviceUtils;->getDPUSoftInfo(Ljava/lang/String;Ljava/lang/String;)Lcom/cnlaunch/physics/entity/DPUSoftInfo;
+
+    move-result-object v0
+
+    .line 804
+    .local v0, dpuSoftInfo:Lcom/cnlaunch/physics/entity/DPUSoftInfo;
+    if-eqz v0, :cond_1
+
+    .line 805
+    invoke-virtual {v0}, Lcom/cnlaunch/physics/entity/DPUSoftInfo;->getDownloadSersion()Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 809
+    .end local v0           #dpuSoftInfo:Lcom/cnlaunch/physics/entity/DPUSoftInfo;
+    .end local v4           #path:Ljava/lang/String;
+    :cond_1
+    const-string/jumbo v8, "4"
+
+    if-ne p2, v8, :cond_2
+
+    .line 810
+    invoke-static {}, Lcom/cnlaunch/x431pro/utils/PathUtils;->getPackagePath()Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 811
+    .restart local v4       #path:Ljava/lang/String;
+    invoke-static {}, Lcom/cnlaunch/physics/utils/DeviceUtils;->getInstance()Lcom/cnlaunch/physics/utils/DeviceUtils;
+
+    move-result-object v8
+
+    invoke-virtual {v8, p1, v4}, Lcom/cnlaunch/physics/utils/DeviceUtils;->getDPUSoftInfo(Ljava/lang/String;Ljava/lang/String;)Lcom/cnlaunch/physics/entity/DPUSoftInfo;
+
+    move-result-object v0
+
+    .line 813
+    .restart local v0       #dpuSoftInfo:Lcom/cnlaunch/physics/entity/DPUSoftInfo;
+    if-eqz v0, :cond_2
+
+    .line 814
+    invoke-virtual {v0}, Lcom/cnlaunch/physics/entity/DPUSoftInfo;->getBootVersion()Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 818
+    .end local v0           #dpuSoftInfo:Lcom/cnlaunch/physics/entity/DPUSoftInfo;
+    .end local v4           #path:Ljava/lang/String;
+    :cond_2
+    const-string/jumbo v8, ""
+
+    if-eq v7, v8, :cond_3
+
+    .line 819
+    iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userAction:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
+
+    invoke-virtual {v8, p1, p2, v6, v7}, Lcom/cnlaunch/x431pro/module/user/action/UserAction;->sendClientVersion(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
+
+    move-result-object v5
+
+    .line 821
+    :cond_3
+    return-object v5
+
+    .line 795
+    :catch_0
+    move-exception v1
+
+    .line 796
+    .local v1, e:Landroid/content/pm/PackageManager$NameNotFoundException;
+    invoke-virtual {v1}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
+
+    goto :goto_0
+.end method
+
+.method public static startGettingSN(Ljava/lang/Object;)V
+    .locals 3
+    .parameter "o"
+
+    .prologue
+    .line 638
+    sget-object v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->afterLoginOperationCallback:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 641
+    return-void
+
+    .line 638
+    :cond_0
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;
+
+    .line 639
+    .local v0, tmp:Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;
+    invoke-interface {v0, p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$AfterLoginOperationCallback;->startGettingSN(Ljava/lang/Object;)V
+
+    goto :goto_0
+.end method
+
+.method public static success(Ljava/lang/Object;)V
+    .locals 3
+    .parameter "o"
+
+    .prologue
+    .line 661
+    sget-object v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->listeners:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 664
+    return-void
+
+    .line 661
+    :cond_0
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;
+
+    .line 662
+    .local v0, tmp:Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;
     invoke-interface {v0, p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$LoginCallback;->success(Ljava/lang/Object;)V
 
     goto :goto_0
 .end method
 
 .method private updateSNDataLoginFailed()V
+    .locals 4
+
+    .prologue
+    .line 422
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->serialNumberDao:Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;
+
+    invoke-virtual {v2}, Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;->loadAll()Ljava/util/List;
+
+    move-result-object v0
+
+    .line 423
+    .local v0, allSerialNoListInTable:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/SerialNumber;>;"
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    .line 426
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->serialNumberDao:Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;
+
+    invoke-virtual {v2, v0}, Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;->updateInTx(Ljava/lang/Iterable;)V
+
+    .line 427
+    return-void
+
+    .line 423
+    :cond_0
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;
+
+    .line 424
+    .local v1, serialNumber:Lcom/cnlaunch/x431pro/utils/db/SerialNumber;
+    const/4 v3, 0x0
+
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;->setIsMine(Ljava/lang/Boolean;)V
+
+    goto :goto_0
+.end method
+
+.method private updateSNGetSerialNoFailed()V
     .locals 4
 
     .prologue
@@ -1156,59 +1193,6 @@
 
     move-result-object v3
 
-    invoke-virtual {v1, v3}, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;->setIsMine(Ljava/lang/Boolean;)V
-
-    goto :goto_0
-.end method
-
-.method private updateSNGetSerialNoFailed()V
-    .locals 4
-
-    .prologue
-    .line 437
-    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->serialNumberDao:Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;
-
-    invoke-virtual {v2}, Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;->loadAll()Ljava/util/List;
-
-    move-result-object v0
-
-    .line 438
-    .local v0, allSerialNoListInTable:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/SerialNumber;>;"
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    :goto_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    .line 441
-    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->serialNumberDao:Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;
-
-    invoke-virtual {v2, v0}, Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;->updateInTx(Ljava/lang/Iterable;)V
-
-    .line 442
-    return-void
-
-    .line 438
-    :cond_0
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;
-
-    .line 439
-    .local v1, serialNumber:Lcom/cnlaunch/x431pro/utils/db/SerialNumber;
-    const/4 v3, 0x0
-
-    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v3
-
     invoke-virtual {v1, v3}, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;->setIsDefault(Ljava/lang/Boolean;)V
 
     goto :goto_0
@@ -1218,21 +1202,21 @@
     .locals 18
 
     .prologue
-    .line 444
+    .line 438
     const-string/jumbo v15, ""
 
     move-object/from16 v0, p0
 
     iput-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userConnectorSerialNo:Ljava/lang/String;
 
-    .line 445
+    .line 439
     const/4 v7, 0x0
 
-    .line 446
+    .line 440
     .local v7, isMineConnector:Z
     const/4 v4, 0x0
 
-    .line 449
+    .line 443
     .local v4, entity:Lcom/cnlaunch/x431pro/utils/db/SerialNumber;
     move-object/from16 v0, p0
 
@@ -1246,7 +1230,7 @@
 
     move-result-object v8
 
-    .line 451
+    .line 445
     .local v8, preSerialNO:Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -1256,7 +1240,7 @@
 
     move-result-object v1
 
-    .line 452
+    .line 446
     .local v1, allSerialNoListInTable:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/SerialNumber;>;"
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1269,14 +1253,14 @@
 
     if-nez v16, :cond_4
 
-    .line 456
+    .line 450
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->serialNumberDao:Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;
 
     invoke-virtual {v15, v1}, Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;->updateInTx(Ljava/lang/Iterable;)V
 
-    .line 458
+    .line 452
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->allProductDTOList:Ljava/util/List;
@@ -1293,7 +1277,7 @@
 
     if-eqz v15, :cond_5
 
-    .line 459
+    .line 453
     :cond_0
     invoke-static {v8}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1301,7 +1285,7 @@
 
     if-nez v15, :cond_1
 
-    .line 460
+    .line 454
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -1312,7 +1296,7 @@
 
     invoke-virtual {v15, v0, v8}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 463
+    .line 457
     :cond_1
     move-object/from16 v0, p0
 
@@ -1324,7 +1308,7 @@
 
     invoke-virtual/range {v15 .. v17}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Z)V
 
-    .line 464
+    .line 458
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -1335,7 +1319,7 @@
 
     invoke-virtual/range {v15 .. v17}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 466
+    .line 460
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -1346,23 +1330,23 @@
 
     invoke-virtual/range {v15 .. v17}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 467
+    .line 461
     move-object/from16 v0, p0
 
     iget-boolean v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->isRegisterLogin:Z
 
     if-nez v15, :cond_2
 
-    .line 468
+    .line 462
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
-    const v16, 0x7f0706d6
+    const v16, 0x7f0706d8
 
     invoke-static/range {v15 .. v16}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
-    .line 526
+    .line 520
     :cond_2
     move-object/from16 v0, p0
 
@@ -1378,14 +1362,14 @@
 
     if-eqz v15, :cond_3
 
-    .line 527
+    .line 521
     new-instance v6, Landroid/content/Intent;
 
     const-string/jumbo v15, "softs_updated"
 
     invoke-direct {v6, v15}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 528
+    .line 522
     .local v6, intent:Landroid/content/Intent;
     move-object/from16 v0, p0
 
@@ -1393,12 +1377,12 @@
 
     invoke-virtual {v15, v6}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 530
+    .line 524
     .end local v6           #intent:Landroid/content/Intent;
     :cond_3
     return-void
 
-    .line 452
+    .line 446
     :cond_4
     invoke-interface {v15}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -1406,7 +1390,7 @@
 
     check-cast v14, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;
 
-    .line 453
+    .line 447
     .local v14, serialNumber:Lcom/cnlaunch/x431pro/utils/db/SerialNumber;
     const/16 v16, 0x0
 
@@ -1418,7 +1402,7 @@
 
     invoke-virtual {v14, v0}, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;->setIsMine(Ljava/lang/Boolean;)V
 
-    .line 454
+    .line 448
     const/16 v16, 0x0
 
     invoke-static/range {v16 .. v16}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1431,7 +1415,7 @@
 
     goto/16 :goto_0
 
-    .line 471
+    .line 465
     .end local v14           #serialNumber:Lcom/cnlaunch/x431pro/utils/db/SerialNumber;
     :cond_5
     move-object/from16 v0, p0
@@ -1444,7 +1428,7 @@
 
     move-result-object v3
 
-    .line 472
+    .line 466
     .local v3, currentSerialNo:Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -1461,7 +1445,7 @@
 
     if-nez v16, :cond_9
 
-    .line 481
+    .line 475
     :goto_1
     const/4 v5, 0x0
 
@@ -1477,7 +1461,7 @@
 
     if-ge v5, v15, :cond_2
 
-    .line 482
+    .line 476
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->allProductDTOList:Ljava/util/List;
@@ -1488,20 +1472,20 @@
 
     check-cast v2, Lcom/cnlaunch/x431pro/module/mine/model/ProductDTO;
 
-    .line 483
+    .line 477
     .local v2, bean:Lcom/cnlaunch/x431pro/module/mine/model/ProductDTO;
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/module/mine/model/ProductDTO;->getSerialNo()Ljava/lang/String;
 
     move-result-object v13
 
-    .line 484
+    .line 478
     .local v13, serialNo:Ljava/lang/String;
     new-instance v4, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;
 
     .end local v4           #entity:Lcom/cnlaunch/x431pro/utils/db/SerialNumber;
     invoke-direct {v4}, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;-><init>()V
 
-    .line 485
+    .line 479
     .restart local v4       #entity:Lcom/cnlaunch/x431pro/utils/db/SerialNumber;
     move-object/from16 v0, p0
 
@@ -1515,13 +1499,13 @@
 
     invoke-virtual {v4, v15}, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;->setCc(Ljava/lang/String;)V
 
-    .line 486
+    .line 480
     if-nez v7, :cond_b
 
-    .line 487
+    .line 481
     if-nez v5, :cond_a
 
-    .line 488
+    .line 482
     const/4 v15, 0x1
 
     invoke-static {v15}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1530,7 +1514,7 @@
 
     invoke-virtual {v4, v15}, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;->setIsDefault(Ljava/lang/Boolean;)V
 
-    .line 489
+    .line 483
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -1547,12 +1531,12 @@
 
     if-nez v15, :cond_7
 
-    .line 490
+    .line 484
     move-object/from16 v0, p0
 
     iput-object v13, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userConnectorSerialNo:Ljava/lang/String;
 
-    .line 491
+    .line 485
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -1563,7 +1547,7 @@
 
     invoke-virtual/range {v15 .. v17}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Z)V
 
-    .line 492
+    .line 486
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -1574,7 +1558,7 @@
 
     invoke-virtual {v15, v0, v13}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 505
+    .line 499
     :cond_7
     :goto_3
     const/4 v15, 0x1
@@ -1585,10 +1569,10 @@
 
     invoke-virtual {v4, v15}, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;->setIsMine(Ljava/lang/Boolean;)V
 
-    .line 506
+    .line 500
     invoke-virtual {v4, v13}, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;->setSerialNo(Ljava/lang/String;)V
 
-    .line 507
+    .line 501
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->serialNumberDao:Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;
@@ -1597,7 +1581,7 @@
 
     move-result-object v10
 
-    .line 508
+    .line 502
     .local v10, qb:Lde/greenrobot/dao/query/QueryBuilder;,"Lde/greenrobot/dao/query/QueryBuilder<Lcom/cnlaunch/x431pro/utils/db/SerialNumber;>;"
     sget-object v15, Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao$Properties;->SerialNo:Lde/greenrobot/dao/Property;
 
@@ -1617,12 +1601,12 @@
 
     invoke-virtual {v10, v15, v0}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
 
-    .line 509
+    .line 503
     invoke-virtual {v10}, Lde/greenrobot/dao/query/QueryBuilder;->list()Ljava/util/List;
 
     move-result-object v11
 
-    .line 510
+    .line 504
     .local v11, queryResult:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/SerialNumber;>;"
     if-eqz v11, :cond_8
 
@@ -1632,7 +1616,7 @@
 
     if-eqz v15, :cond_d
 
-    .line 511
+    .line 505
     :cond_8
     move-object/from16 v0, p0
 
@@ -1640,7 +1624,7 @@
 
     invoke-virtual {v15, v4}, Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;->insert(Ljava/lang/Object;)J
 
-    .line 518
+    .line 512
     :goto_4
     new-instance v12, Lcom/cnlaunch/x431pro/module/rtu/RegisterAndLoadInfomation;
 
@@ -1656,7 +1640,7 @@
 
     invoke-direct {v12, v15, v0}, Lcom/cnlaunch/x431pro/module/rtu/RegisterAndLoadInfomation;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 519
+    .line 513
     .local v12, registAndLoadInfo:Lcom/cnlaunch/x431pro/module/rtu/RegisterAndLoadInfomation;
     move-object/from16 v0, p0
 
@@ -1664,27 +1648,27 @@
 
     invoke-virtual {v12, v15}, Lcom/cnlaunch/x431pro/module/rtu/RegisterAndLoadInfomation;->setUserName(Ljava/lang/String;)V
 
-    .line 520
+    .line 514
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mPassword:Ljava/lang/String;
 
     invoke-virtual {v12, v15}, Lcom/cnlaunch/x431pro/module/rtu/RegisterAndLoadInfomation;->setPassWord(Ljava/lang/String;)V
 
-    .line 521
+    .line 515
     const/4 v15, 0x1
 
     invoke-virtual {v12, v15}, Lcom/cnlaunch/x431pro/module/rtu/RegisterAndLoadInfomation;->setRegisted(Z)V
 
-    .line 522
+    .line 516
     invoke-virtual {v12}, Lcom/cnlaunch/x431pro/module/rtu/RegisterAndLoadInfomation;->sava()V
 
-    .line 481
+    .line 475
     add-int/lit8 v5, v5, 0x1
 
     goto/16 :goto_2
 
-    .line 472
+    .line 466
     .end local v2           #bean:Lcom/cnlaunch/x431pro/module/mine/model/ProductDTO;
     .end local v5           #i:I
     .end local v10           #qb:Lde/greenrobot/dao/query/QueryBuilder;,"Lde/greenrobot/dao/query/QueryBuilder<Lcom/cnlaunch/x431pro/utils/db/SerialNumber;>;"
@@ -1698,13 +1682,13 @@
 
     check-cast v9, Lcom/cnlaunch/x431pro/module/mine/model/ProductDTO;
 
-    .line 473
+    .line 467
     .local v9, productDTO:Lcom/cnlaunch/x431pro/module/mine/model/ProductDTO;
     invoke-virtual {v9}, Lcom/cnlaunch/x431pro/module/mine/model/ProductDTO;->getSerialNo()Ljava/lang/String;
 
     move-result-object v13
 
-    .line 474
+    .line 468
     .restart local v13       #serialNo:Ljava/lang/String;
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1718,17 +1702,17 @@
 
     if-eqz v16, :cond_6
 
-    .line 475
+    .line 469
     const/4 v7, 0x1
 
-    .line 476
+    .line 470
     move-object/from16 v0, p0
 
     iput-object v13, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userConnectorSerialNo:Ljava/lang/String;
 
     goto/16 :goto_1
 
-    .line 495
+    .line 489
     .end local v9           #productDTO:Lcom/cnlaunch/x431pro/module/mine/model/ProductDTO;
     .restart local v2       #bean:Lcom/cnlaunch/x431pro/module/mine/model/ProductDTO;
     .restart local v5       #i:I
@@ -1743,7 +1727,7 @@
 
     goto/16 :goto_3
 
-    .line 498
+    .line 492
     :cond_b
     invoke-virtual {v3, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1751,7 +1735,7 @@
 
     if-eqz v15, :cond_c
 
-    .line 499
+    .line 493
     const/4 v15, 0x1
 
     invoke-static {v15}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1762,7 +1746,7 @@
 
     goto/16 :goto_3
 
-    .line 501
+    .line 495
     :cond_c
     const/4 v15, 0x0
 
@@ -1774,7 +1758,7 @@
 
     goto/16 :goto_3
 
-    .line 513
+    .line 507
     .restart local v10       #qb:Lde/greenrobot/dao/query/QueryBuilder;,"Lde/greenrobot/dao/query/QueryBuilder<Lcom/cnlaunch/x431pro/utils/db/SerialNumber;>;"
     .restart local v11       #queryResult:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/SerialNumber;>;"
     :cond_d
@@ -1792,7 +1776,7 @@
 
     invoke-virtual {v4, v15}, Lcom/cnlaunch/x431pro/utils/db/SerialNumber;->setId(Ljava/lang/Long;)V
 
-    .line 514
+    .line 508
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->serialNumberDao:Lcom/cnlaunch/x431pro/utils/db/SerialNumberDao;
@@ -1810,13 +1794,13 @@
     .parameter "password"
 
     .prologue
-    .line 593
+    .line 587
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mUsername:Ljava/lang/String;
 
-    .line 594
+    .line 588
     iput-object p2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mPassword:Ljava/lang/String;
 
-    .line 596
+    .line 590
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mUsername:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
@@ -1825,18 +1809,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 597
+    .line 591
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f07062f
+    const v1, 0x7f070631
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
-    .line 607
+    .line 601
     :goto_0
     return-void
 
-    .line 600
+    .line 594
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mPassword:Ljava/lang/String;
 
@@ -1846,22 +1830,22 @@
 
     if-eqz v0, :cond_1
 
-    .line 601
+    .line 595
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f070630
+    const v1, 0x7f070632
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 605
+    .line 599
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;)V
 
-    .line 606
+    .line 600
     const/16 v0, 0x1f4
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->request(I)V
@@ -1873,12 +1857,12 @@
     .locals 4
 
     .prologue
-    .line 702
+    .line 693
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;)V
 
-    .line 704
+    .line 695
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v2, "login_state"
@@ -1887,7 +1871,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 705
+    .line 696
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v2, "if_auto_login"
@@ -1896,7 +1880,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 706
+    .line 697
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v2, "token"
@@ -1905,7 +1889,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 707
+    .line 698
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v2, "login_password"
@@ -1914,7 +1898,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 708
+    .line 699
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v2, "USER_PUBLIC_ID"
@@ -1923,7 +1907,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 709
+    .line 700
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v2, "USER_PUBLIC_NAME"
@@ -1932,37 +1916,37 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 714
+    .line 705
     new-instance v0, Landroid/content/Intent;
 
     const-string/jumbo v1, "logout"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 715
+    .line 706
     .local v0, intent:Landroid/content/Intent;
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 716
+    .line 707
     const/4 v1, 0x0
 
     invoke-static {v1}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->logout(Ljava/lang/Object;)V
 
-    .line 717
+    .line 708
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f07068b
+    const v2, 0x7f07068d
 
     invoke-static {v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
-    .line 718
+    .line 709
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
-    .line 719
+    .line 710
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/cnlaunch/newgolo/manager/LaunchIMManager;->getIntance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/manager/LaunchIMManager;
@@ -1971,10 +1955,10 @@
 
     invoke-virtual {v1}, Lcom/cnlaunch/newgolo/manager/LaunchIMManager;->logoutIM()V
 
-    .line 720
+    .line 711
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->updateSNDataLoginFailed()V
 
-    .line 721
+    .line 712
     return-void
 .end method
 
@@ -1992,10 +1976,10 @@
 
     const/4 v4, 0x0
 
-    .line 195
+    .line 181
     packed-switch p1, :pswitch_data_0
 
-    .line 254
+    .line 240
     :pswitch_0
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/login/NetworkBase;->doInBackground(I)Ljava/lang/Object;
 
@@ -2004,7 +1988,7 @@
     :goto_0
     return-object v9
 
-    .line 197
+    .line 183
     :pswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
@@ -2014,7 +1998,7 @@
 
     iput-boolean v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->showToast:Z
 
-    .line 198
+    .line 184
     new-instance v0, Ljava/lang/StringBuilder;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->tag:Ljava/lang/String;
@@ -2049,7 +2033,7 @@
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NLog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 199
+    .line 185
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userAction:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mUsername:Ljava/lang/String;
@@ -2072,11 +2056,11 @@
 
     move-result-object v9
 
-    .line 200
+    .line 186
     .local v9, result:Lcom/cnlaunch/x431pro/module/user/model/LoginResponse;
     goto :goto_0
 
-    .line 204
+    .line 190
     .end local v9           #result:Lcom/cnlaunch/x431pro/module/user/model/LoginResponse;
     :pswitch_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -2085,7 +2069,7 @@
 
     invoke-virtual {v0, v1, v4}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Z)V
 
-    .line 205
+    .line 191
     new-instance v0, Ljava/lang/StringBuilder;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->tag:Ljava/lang/String;
@@ -2120,12 +2104,12 @@
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NLog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 207
+    .line 193
     const/4 v0, 0x0
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->startGettingSN(Ljava/lang/Object;)V
 
-    .line 208
+    .line 194
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -2144,7 +2128,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->productType:Ljava/lang/String;
 
-    .line 209
+    .line 195
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->connectorAction:Lcom/cnlaunch/x431pro/module/mine/action/ConnectorAction;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->productType:Ljava/lang/String;
@@ -2156,10 +2140,10 @@
     .local v8, res:Lcom/cnlaunch/x431pro/module/mine/model/RegisteredProductsResponse;
     move-object v9, v8
 
-    .line 210
+    .line 196
     goto/16 :goto_0
 
-    .line 213
+    .line 199
     .end local v8           #res:Lcom/cnlaunch/x431pro/module/mine/model/RegisteredProductsResponse;
     :pswitch_3
     new-instance v0, Ljava/lang/StringBuilder;
@@ -2196,7 +2180,7 @@
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NLog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 214
+    .line 200
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -2209,11 +2193,11 @@
 
     move-result-object v13
 
-    .line 215
+    .line 201
     .local v13, user_id:Ljava/lang/String;
     const/4 v7, 0x0
 
-    .line 217
+    .line 203
     .local v7, pidBytResponse:Lcom/cnlaunch/x431pro/module/golo/model/PidBytResponse;
     :try_start_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->connectorAction:Lcom/cnlaunch/x431pro/module/mine/action/ConnectorAction;
@@ -2227,27 +2211,27 @@
     :goto_1
     move-object v9, v7
 
-    .line 221
+    .line 207
     goto/16 :goto_0
 
-    .line 218
+    .line 204
     :catch_0
     move-exception v6
 
-    .line 219
+    .line 205
     .local v6, e:Lcom/cnlaunch/framework/network/http/HttpException;
     invoke-virtual {v6}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 224
+    .line 210
     .end local v6           #e:Lcom/cnlaunch/framework/network/http/HttpException;
     .end local v7           #pidBytResponse:Lcom/cnlaunch/x431pro/module/golo/model/PidBytResponse;
     .end local v13           #user_id:Ljava/lang/String;
     :pswitch_4
     const/4 v12, 0x0
 
-    .line 226
+    .line 212
     .local v12, sendClientVersionResult:Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
     :try_start_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userConnectorSerialNo:Ljava/lang/String;
@@ -2263,26 +2247,26 @@
     :goto_2
     move-object v9, v12
 
-    .line 230
+    .line 216
     goto/16 :goto_0
 
-    .line 227
+    .line 213
     :catch_1
     move-exception v6
 
-    .line 228
+    .line 214
     .restart local v6       #e:Lcom/cnlaunch/framework/network/http/HttpException;
     invoke-virtual {v6}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
     goto :goto_2
 
-    .line 233
+    .line 219
     .end local v6           #e:Lcom/cnlaunch/framework/network/http/HttpException;
     .end local v12           #sendClientVersionResult:Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
     :pswitch_5
     const/4 v11, 0x0
 
-    .line 235
+    .line 221
     .local v11, sendClientVersionDownloadBinResult:Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
     :try_start_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userConnectorSerialNo:Ljava/lang/String;
@@ -2298,26 +2282,26 @@
     :goto_3
     move-object v9, v11
 
-    .line 239
+    .line 225
     goto/16 :goto_0
 
-    .line 236
+    .line 222
     :catch_2
     move-exception v6
 
-    .line 237
+    .line 223
     .restart local v6       #e:Lcom/cnlaunch/framework/network/http/HttpException;
     invoke-virtual {v6}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
     goto :goto_3
 
-    .line 241
+    .line 227
     .end local v6           #e:Lcom/cnlaunch/framework/network/http/HttpException;
     .end local v11           #sendClientVersionDownloadBinResult:Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
     :pswitch_6
     const/4 v10, 0x0
 
-    .line 243
+    .line 229
     .local v10, sendClientVersionBootResult:Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
     :try_start_3
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userConnectorSerialNo:Ljava/lang/String;
@@ -2333,20 +2317,20 @@
     :goto_4
     move-object v9, v10
 
-    .line 247
+    .line 233
     goto/16 :goto_0
 
-    .line 244
+    .line 230
     :catch_3
     move-exception v6
 
-    .line 245
+    .line 231
     .restart local v6       #e:Lcom/cnlaunch/framework/network/http/HttpException;
     invoke-virtual {v6}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
     goto :goto_4
 
-    .line 195
+    .line 181
     :pswitch_data_0
     .packed-switch 0x1f4
         :pswitch_1
@@ -2363,17 +2347,17 @@
     .locals 1
 
     .prologue
-    .line 610
+    .line 604
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;)V
 
-    .line 611
+    .line 605
     const/16 v0, 0x1f6
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->request(I)V
 
-    .line 612
+    .line 606
     return-void
 .end method
 
@@ -2386,51 +2370,51 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 533
+    .line 527
     invoke-super {p0, p1, p2, p3}, Lcom/cnlaunch/x431pro/activity/login/NetworkBase;->onFailure(IILjava/lang/Object;)V
 
-    .line 534
+    .line 528
     packed-switch p1, :pswitch_data_0
 
-    .line 590
+    .line 584
     :cond_0
     :goto_0
     return-void
 
-    .line 536
+    .line 530
     :pswitch_0
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
-    .line 537
+    .line 531
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->updateSNDataLoginFailed()V
 
-    .line 538
+    .line 532
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->handler:Landroid/os/Handler;
 
     if-eqz v3, :cond_1
 
-    .line 539
+    .line 533
     new-instance v1, Landroid/os/Message;
 
     invoke-direct {v1}, Landroid/os/Message;-><init>()V
 
-    .line 540
+    .line 534
     .local v1, msg:Landroid/os/Message;
     const/16 v3, 0x7b
 
     iput v3, v1, Landroid/os/Message;->what:I
 
-    .line 541
+    .line 535
     iput p2, v1, Landroid/os/Message;->arg1:I
 
-    .line 542
+    .line 536
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->handler:Landroid/os/Handler;
 
     invoke-virtual {v3, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 545
+    .line 539
     .end local v1           #msg:Landroid/os/Message;
     :cond_1
     new-instance v0, Landroid/content/Intent;
@@ -2439,13 +2423,13 @@
 
     invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 546
+    .line 540
     .local v0, intent:Landroid/content/Intent;
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 547
+    .line 541
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v4, "login_state"
@@ -2454,7 +2438,7 @@
 
     invoke-virtual {v3, v4, v5}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 548
+    .line 542
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v4, "token"
@@ -2465,7 +2449,7 @@
 
     goto :goto_0
 
-    .line 551
+    .line 545
     .end local v0           #intent:Landroid/content/Intent;
     :pswitch_1
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->loginInfo:Ljava/lang/String;
@@ -2492,7 +2476,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 552
+    .line 546
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/cnlaunch/newgolo/manager/LaunchIMManager;->getIntance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/manager/LaunchIMManager;
@@ -2503,12 +2487,12 @@
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/newgolo/manager/LaunchIMManager;->loginIM(Ljava/lang/String;)V
 
-    .line 553
+    .line 547
     const/16 v3, 0x1fa
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->request(I)V
 
-    .line 555
+    .line 549
     :cond_2
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
@@ -2520,7 +2504,7 @@
 
     move-result-object v2
 
-    .line 556
+    .line 550
     .local v2, preSerialNO:Ljava/lang/String;
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2528,14 +2512,14 @@
 
     if-nez v3, :cond_3
 
-    .line 557
+    .line 551
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v4, "preSerialNo"
 
     invoke-virtual {v3, v4, v2}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 558
+    .line 552
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v4, "need_refresh"
@@ -2544,7 +2528,7 @@
 
     invoke-virtual {v3, v4, v5}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Z)V
 
-    .line 559
+    .line 553
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v4, "serialNo"
@@ -2553,7 +2537,7 @@
 
     invoke-virtual {v3, v4, v5}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 562
+    .line 556
     :cond_3
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
@@ -2563,28 +2547,50 @@
 
     invoke-virtual {v3, v4, v5}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 563
+    .line 557
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->updateSNGetSerialNoFailed()V
 
-    .line 565
+    .line 559
     invoke-static {v6}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->finishGettingSN(Ljava/lang/Object;)V
 
     goto/16 :goto_0
 
-    .line 568
+    .line 562
     .end local v2           #preSerialNO:Ljava/lang/String;
     :pswitch_2
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
-    .line 569
+    .line 563
     invoke-static {v6}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->failed(Ljava/lang/Object;)V
 
     goto/16 :goto_0
 
-    .line 572
+    .line 566
     :pswitch_3
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
+
+    invoke-static {v3}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
+
+    .line 567
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userConnectorSerialNo:Ljava/lang/String;
+
+    invoke-virtual {v3}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    .line 568
+    const/16 v3, 0x1f9
+
+    invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->request(I)V
+
+    goto/16 :goto_0
+
+    .line 572
+    :pswitch_4
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
@@ -2599,35 +2605,13 @@
     if-nez v3, :cond_0
 
     .line 574
-    const/16 v3, 0x1f9
-
-    invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->request(I)V
-
-    goto/16 :goto_0
-
-    .line 578
-    :pswitch_4
-    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
-
-    invoke-static {v3}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
-
-    .line 579
-    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userConnectorSerialNo:Ljava/lang/String;
-
-    invoke-virtual {v3}, Ljava/lang/String;->isEmpty()Z
-
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    .line 580
     const/16 v3, 0x1f8
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->request(I)V
 
     goto/16 :goto_0
 
-    .line 584
+    .line 578
     :pswitch_5
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
@@ -2635,7 +2619,7 @@
 
     goto/16 :goto_0
 
-    .line 587
+    .line 581
     :pswitch_6
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
@@ -2643,7 +2627,7 @@
 
     goto/16 :goto_0
 
-    .line 534
+    .line 528
     nop
 
     :pswitch_data_0
@@ -2664,24 +2648,24 @@
     .parameter "result"
 
     .prologue
-    .line 259
+    .line 245
     packed-switch p1, :pswitch_data_0
 
-    .line 427
+    .line 419
     :cond_0
     :goto_0
     return-void
 
-    .line 261
+    .line 247
     :pswitch_0
     if-eqz p2, :cond_4
 
     move-object/from16 v11, p2
 
-    .line 262
+    .line 248
     check-cast v11, Lcom/cnlaunch/x431pro/module/user/model/LoginResponse;
 
-    .line 263
+    .line 249
     .local v11, res:Lcom/cnlaunch/x431pro/module/user/model/LoginResponse;
     move-object/from16 v0, p0
 
@@ -2689,32 +2673,32 @@
 
     if-eqz v14, :cond_1
 
-    .line 264
+    .line 250
     new-instance v5, Landroid/os/Message;
 
     invoke-direct {v5}, Landroid/os/Message;-><init>()V
 
-    .line 265
+    .line 251
     .local v5, msg:Landroid/os/Message;
     const/16 v14, 0x7b
 
     iput v14, v5, Landroid/os/Message;->what:I
 
-    .line 266
+    .line 252
     invoke-virtual {v11}, Lcom/cnlaunch/x431pro/module/user/model/LoginResponse;->getCode()I
 
     move-result v14
 
     iput v14, v5, Landroid/os/Message;->arg1:I
 
-    .line 267
+    .line 253
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->handler:Landroid/os/Handler;
 
     invoke-virtual {v14, v5}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 270
+    .line 256
     .end local v5           #msg:Landroid/os/Message;
     :cond_1
     invoke-virtual {v11}, Lcom/cnlaunch/x431pro/module/user/model/LoginResponse;->getCode()I
@@ -2729,7 +2713,7 @@
 
     if-eqz v14, :cond_5
 
-    .line 273
+    .line 259
     invoke-virtual {v11}, Lcom/cnlaunch/x431pro/module/user/model/LoginResponse;->getData()Lcom/cnlaunch/x431pro/module/user/model/LoginData;
 
     move-result-object v14
@@ -2738,7 +2722,7 @@
 
     move-result-object v13
 
-    .line 274
+    .line 260
     .local v13, user:Lcom/cnlaunch/x431pro/module/user/model/User;
     invoke-virtual {v11}, Lcom/cnlaunch/x431pro/module/user/model/LoginResponse;->getData()Lcom/cnlaunch/x431pro/module/user/model/LoginData;
 
@@ -2750,14 +2734,14 @@
 
     invoke-virtual {v13, v14}, Lcom/cnlaunch/x431pro/module/user/model/User;->setToken(Ljava/lang/String;)V
 
-    .line 275
+    .line 261
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     invoke-virtual {v14, v13}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/Object;)V
 
-    .line 277
+    .line 263
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -2772,7 +2756,7 @@
 
     invoke-virtual/range {v14 .. v16}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 278
+    .line 264
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -2787,7 +2771,7 @@
 
     invoke-virtual/range {v14 .. v16}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 279
+    .line 265
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -2798,7 +2782,7 @@
 
     invoke-virtual/range {v14 .. v16}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 280
+    .line 266
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -2809,33 +2793,7 @@
 
     invoke-virtual/range {v14 .. v16}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 281
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->UsernameList:Ljava/util/ArrayList;
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mUsername:Ljava/lang/String;
-
-    invoke-virtual {v14, v15}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
-
-    move-result v14
-
-    if-nez v14, :cond_2
-
-    .line 282
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->UsernameList:Ljava/util/ArrayList;
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mUsername:Ljava/lang/String;
-
-    invoke-virtual {v14, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 283
+    .line 267
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -2852,7 +2810,33 @@
 
     invoke-virtual/range {v14 .. v16}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 285
+    .line 269
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->UsernameList:Ljava/util/ArrayList;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mUsername:Ljava/lang/String;
+
+    invoke-virtual {v14, v15}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-nez v14, :cond_2
+
+    .line 270
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->UsernameList:Ljava/util/ArrayList;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mUsername:Ljava/lang/String;
+
+    invoke-virtual {v14, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 272
     :try_start_0
     move-object/from16 v0, p0
 
@@ -2876,7 +2860,7 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 291
+    .line 279
     :cond_2
     :goto_1
     move-object/from16 v0, p0
@@ -2885,16 +2869,16 @@
 
     if-nez v14, :cond_3
 
-    .line 292
+    .line 280
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
-    const v15, 0x7f07062d
+    const v15, 0x7f07062f
 
     invoke-static {v14, v15}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
-    .line 294
+    .line 282
     :cond_3
     new-instance v3, Landroid/content/Intent;
 
@@ -2902,7 +2886,7 @@
 
     invoke-direct {v3, v14}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 295
+    .line 283
     .local v3, intent:Landroid/content/Intent;
     move-object/from16 v0, p0
 
@@ -2910,7 +2894,7 @@
 
     invoke-virtual {v14, v3}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 296
+    .line 284
     new-instance v14, Ljava/lang/StringBuilder;
 
     move-object/from16 v0, p0
@@ -2955,7 +2939,7 @@
 
     invoke-static {v14, v15}, Lcom/cnlaunch/framework/utils/NLog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 299
+    .line 287
     :try_start_1
     move-object/from16 v0, p0
 
@@ -2971,18 +2955,18 @@
     :try_end_1
     .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 305
+    .line 293
     :goto_2
     invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->closeLoginActivity()V
 
-    .line 308
+    .line 296
     const/16 v14, 0x1f6
 
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v14}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->request(I)V
 
-    .line 314
+    .line 302
     .end local v3           #intent:Landroid/content/Intent;
     .end local v11           #res:Lcom/cnlaunch/x431pro/module/user/model/LoginResponse;
     .end local v13           #user:Lcom/cnlaunch/x431pro/module/user/model/User;
@@ -2996,31 +2980,31 @@
 
     goto/16 :goto_0
 
-    .line 286
+    .line 273
     .restart local v11       #res:Lcom/cnlaunch/x431pro/module/user/model/LoginResponse;
     .restart local v13       #user:Lcom/cnlaunch/x431pro/module/user/model/User;
     :catch_0
     move-exception v2
 
-    .line 287
+    .line 274
     .local v2, e:Ljava/io/IOException;
     invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 300
+    .line 288
     .end local v2           #e:Ljava/io/IOException;
     .restart local v3       #intent:Landroid/content/Intent;
     :catch_1
     move-exception v2
 
-    .line 301
+    .line 289
     .local v2, e:Lcom/cnlaunch/framework/network/http/HttpException;
     invoke-virtual {v2}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
     goto :goto_2
 
-    .line 310
+    .line 298
     .end local v2           #e:Lcom/cnlaunch/framework/network/http/HttpException;
     .end local v3           #intent:Landroid/content/Intent;
     .end local v13           #user:Lcom/cnlaunch/x431pro/module/user/model/User;
@@ -3033,26 +3017,26 @@
 
     invoke-direct {v0, v14}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->LoginFailPrompt(I)V
 
-    .line 311
+    .line 299
     invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->updateSNDataLoginFailed()V
 
     goto :goto_3
 
-    .line 317
+    .line 306
     .end local v11           #res:Lcom/cnlaunch/x431pro/module/user/model/LoginResponse;
     :pswitch_1
     if-eqz p2, :cond_6
 
     move-object/from16 v10, p2
 
-    .line 318
+    .line 307
     check-cast v10, Lcom/cnlaunch/x431pro/module/mine/model/RegisteredProductsResponse;
 
-    .line 319
+    .line 308
     .local v10, registeredProductsResponse:Lcom/cnlaunch/x431pro/module/mine/model/RegisteredProductsResponse;
     if-eqz v10, :cond_6
 
-    .line 320
+    .line 309
     invoke-virtual {v10}, Lcom/cnlaunch/x431pro/module/mine/model/RegisteredProductsResponse;->getCode()I
 
     move-result v14
@@ -3065,7 +3049,7 @@
 
     if-eqz v14, :cond_7
 
-    .line 322
+    .line 311
     new-instance v14, Ljava/lang/StringBuilder;
 
     move-object/from16 v0, p0
@@ -3106,12 +3090,12 @@
 
     invoke-static {v14, v15}, Lcom/cnlaunch/framework/utils/NLog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 324
+    .line 313
     invoke-virtual {v10}, Lcom/cnlaunch/x431pro/module/mine/model/RegisteredProductsResponse;->getProductDTOs()Ljava/util/List;
 
     move-result-object v7
 
-    .line 325
+    .line 314
     .local v7, productDTOList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/mine/model/ProductDTO;>;"
     if-eqz v7, :cond_6
 
@@ -3121,21 +3105,21 @@
 
     if-nez v14, :cond_6
 
-    .line 326
+    .line 315
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->allProductDTOList:Ljava/util/List;
 
     invoke-interface {v14, v7}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 335
+    .line 324
     .end local v7           #productDTOList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/mine/model/ProductDTO;>;"
     .end local v10           #registeredProductsResponse:Lcom/cnlaunch/x431pro/module/mine/model/RegisteredProductsResponse;
     :cond_6
     :goto_4
     invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->updateSerialNumber()V
 
-    .line 336
+    .line 325
     new-instance v14, Ljava/lang/StringBuilder;
 
     move-object/from16 v0, p0
@@ -3176,14 +3160,14 @@
 
     invoke-static {v14, v15}, Lcom/cnlaunch/framework/utils/NLog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 339
+    .line 328
     new-instance v4, Landroid/content/Intent;
 
     const-string/jumbo v14, "login_change_serialno"
 
     invoke-direct {v4, v14}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 340
+    .line 329
     .local v4, intent2:Landroid/content/Intent;
     move-object/from16 v0, p0
 
@@ -3191,12 +3175,12 @@
 
     invoke-virtual {v14, v4}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 342
+    .line 331
     const/4 v14, 0x0
 
     invoke-static {v14}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->finishGettingSN(Ljava/lang/Object;)V
 
-    .line 344
+    .line 333
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->loginInfo:Ljava/lang/String;
@@ -3225,7 +3209,7 @@
 
     if-eqz v14, :cond_8
 
-    .line 345
+    .line 334
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
@@ -3240,7 +3224,7 @@
 
     invoke-virtual {v14, v15}, Lcom/cnlaunch/newgolo/manager/LaunchIMManager;->loginIM(Ljava/lang/String;)V
 
-    .line 346
+    .line 335
     const/16 v14, 0x1fa
 
     move-object/from16 v0, p0
@@ -3249,7 +3233,7 @@
 
     goto/16 :goto_0
 
-    .line 329
+    .line 318
     .end local v4           #intent2:Landroid/content/Intent;
     .restart local v10       #registeredProductsResponse:Lcom/cnlaunch/x431pro/module/mine/model/RegisteredProductsResponse;
     :cond_7
@@ -3261,7 +3245,7 @@
 
     invoke-direct {v0, v14}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->getSNFailPrompt(I)V
 
-    .line 330
+    .line 319
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->tag:Ljava/lang/String;
@@ -3294,7 +3278,7 @@
 
     invoke-static {v14, v15}, Lcom/cnlaunch/framework/utils/NLog;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 331
+    .line 320
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -3307,7 +3291,7 @@
 
     goto/16 :goto_4
 
-    .line 347
+    .line 336
     .end local v10           #registeredProductsResponse:Lcom/cnlaunch/x431pro/module/mine/model/RegisteredProductsResponse;
     .restart local v4       #intent2:Landroid/content/Intent;
     :cond_8
@@ -3321,7 +3305,7 @@
 
     if-nez v14, :cond_0
 
-    .line 348
+    .line 337
     const/16 v14, 0x1f7
 
     move-object/from16 v0, p0
@@ -3330,7 +3314,7 @@
 
     goto/16 :goto_0
 
-    .line 354
+    .line 342
     .end local v4           #intent2:Landroid/content/Intent;
     :pswitch_2
     new-instance v14, Ljava/lang/StringBuilder;
@@ -3373,36 +3357,36 @@
 
     invoke-static {v14, v15}, Lcom/cnlaunch/framework/utils/NLog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 355
+    .line 343
     if-eqz p2, :cond_d
 
     move-object/from16 v6, p2
 
-    .line 356
+    .line 344
     check-cast v6, Lcom/cnlaunch/x431pro/module/golo/model/PidBytResponse;
 
-    .line 357
+    .line 345
     .local v6, pidBytResponse:Lcom/cnlaunch/x431pro/module/golo/model/PidBytResponse;
     invoke-virtual {v6}, Lcom/cnlaunch/x431pro/module/golo/model/PidBytResponse;->getData()Lcom/cnlaunch/x431pro/module/golo/model/PidBytData;
 
     move-result-object v1
 
-    .line 358
+    .line 346
     .local v1, data:Lcom/cnlaunch/x431pro/module/golo/model/PidBytData;
     if-eqz v1, :cond_b
 
-    .line 359
+    .line 347
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/PidBytData;->getPub_id()Ljava/lang/String;
 
     move-result-object v8
 
-    .line 360
+    .line 348
     .local v8, pub_id:Ljava/lang/String;
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/PidBytData;->getPub_name()Ljava/lang/String;
 
     move-result-object v9
 
-    .line 361
+    .line 349
     .local v9, pub_name:Ljava/lang/String;
     invoke-static {v9}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -3418,11 +3402,11 @@
 
     if-eqz v14, :cond_a
 
-    .line 362
+    .line 350
     :cond_9
     move-object v9, v8
 
-    .line 364
+    .line 352
     :cond_a
     move-object/from16 v0, p0
 
@@ -3466,7 +3450,7 @@
 
     invoke-static {v14, v15}, Lcom/cnlaunch/framework/utils/NLog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 365
+    .line 353
     invoke-static {v8}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v14
@@ -3481,7 +3465,7 @@
 
     if-nez v14, :cond_c
 
-    .line 366
+    .line 354
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
@@ -3494,7 +3478,7 @@
 
     invoke-virtual {v14, v15, v8}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 367
+    .line 355
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
@@ -3507,7 +3491,7 @@
 
     invoke-virtual {v14, v15, v9}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 373
+    .line 361
     .end local v8           #pub_id:Ljava/lang/String;
     .end local v9           #pub_name:Ljava/lang/String;
     :cond_b
@@ -3516,7 +3500,7 @@
 
     invoke-static {v14}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->success(Ljava/lang/Object;)V
 
-    .line 377
+    .line 365
     .end local v1           #data:Lcom/cnlaunch/x431pro/module/golo/model/PidBytData;
     .end local v6           #pidBytResponse:Lcom/cnlaunch/x431pro/module/golo/model/PidBytResponse;
     :goto_6
@@ -3560,7 +3544,7 @@
 
     invoke-static {v14, v15}, Lcom/cnlaunch/framework/utils/NLog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 379
+    .line 367
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->userConnectorSerialNo:Ljava/lang/String;
@@ -3571,7 +3555,7 @@
 
     if-nez v14, :cond_0
 
-    .line 380
+    .line 368
     const/16 v14, 0x1f7
 
     move-object/from16 v0, p0
@@ -3580,7 +3564,7 @@
 
     goto/16 :goto_0
 
-    .line 369
+    .line 357
     .restart local v1       #data:Lcom/cnlaunch/x431pro/module/golo/model/PidBytData;
     .restart local v6       #pidBytResponse:Lcom/cnlaunch/x431pro/module/golo/model/PidBytResponse;
     .restart local v8       #pub_id:Ljava/lang/String;
@@ -3600,7 +3584,7 @@
 
     invoke-virtual/range {v14 .. v16}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 370
+    .line 358
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
@@ -3617,7 +3601,7 @@
 
     goto :goto_5
 
-    .line 375
+    .line 363
     .end local v1           #data:Lcom/cnlaunch/x431pro/module/golo/model/PidBytData;
     .end local v6           #pidBytResponse:Lcom/cnlaunch/x431pro/module/golo/model/PidBytResponse;
     .end local v8           #pub_id:Ljava/lang/String;
@@ -3629,16 +3613,16 @@
 
     goto :goto_6
 
-    .line 384
+    .line 373
     :pswitch_3
     if-eqz p2, :cond_e
 
     move-object/from16 v12, p2
 
-    .line 385
+    .line 374
     check-cast v12, Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
 
-    .line 386
+    .line 375
     .local v12, sendResult:Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
     invoke-virtual {v12}, Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;->getCode()I
 
@@ -3652,7 +3636,7 @@
 
     if-eqz v14, :cond_e
 
-    .line 388
+    .line 377
     new-instance v14, Ljava/lang/StringBuilder;
 
     move-object/from16 v0, p0
@@ -3693,7 +3677,7 @@
 
     invoke-static {v14, v15}, Lcom/cnlaunch/framework/utils/NLog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 391
+    .line 380
     .end local v12           #sendResult:Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
     :cond_e
     move-object/from16 v0, p0
@@ -3706,7 +3690,7 @@
 
     if-nez v14, :cond_0
 
-    .line 392
+    .line 381
     const/16 v14, 0x1f9
 
     move-object/from16 v0, p0
@@ -3715,16 +3699,16 @@
 
     goto/16 :goto_0
 
-    .line 396
+    .line 386
     :pswitch_4
     if-eqz p2, :cond_f
 
     move-object/from16 v12, p2
 
-    .line 397
+    .line 387
     check-cast v12, Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
 
-    .line 398
+    .line 388
     .restart local v12       #sendResult:Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
     invoke-virtual {v12}, Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;->getCode()I
 
@@ -3738,7 +3722,7 @@
 
     if-eqz v14, :cond_f
 
-    .line 400
+    .line 390
     new-instance v14, Ljava/lang/StringBuilder;
 
     move-object/from16 v0, p0
@@ -3779,7 +3763,7 @@
 
     invoke-static {v14, v15}, Lcom/cnlaunch/framework/utils/NLog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 403
+    .line 393
     .end local v12           #sendResult:Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
     :cond_f
     move-object/from16 v0, p0
@@ -3792,7 +3776,7 @@
 
     if-nez v14, :cond_0
 
-    .line 404
+    .line 394
     const/16 v14, 0x1f8
 
     move-object/from16 v0, p0
@@ -3801,16 +3785,16 @@
 
     goto/16 :goto_0
 
-    .line 408
+    .line 399
     :pswitch_5
     if-eqz p2, :cond_0
 
     move-object/from16 v12, p2
 
-    .line 409
+    .line 400
     check-cast v12, Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
 
-    .line 410
+    .line 401
     .restart local v12       #sendResult:Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
     invoke-virtual {v12}, Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;->getCode()I
 
@@ -3824,7 +3808,7 @@
 
     if-eqz v14, :cond_0
 
-    .line 412
+    .line 403
     new-instance v14, Ljava/lang/StringBuilder;
 
     move-object/from16 v0, p0
@@ -3867,7 +3851,7 @@
 
     goto/16 :goto_0
 
-    .line 417
+    .line 409
     .end local v12           #sendResult:Lcom/cnlaunch/x431pro/module/user/model/SendClientVersionResponse;
     :pswitch_6
     move-object/from16 v0, p0
@@ -3880,12 +3864,12 @@
 
     invoke-virtual/range {v14 .. v16}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 418
+    .line 410
     new-instance v13, Lcom/cnlaunch/x431pro/module/user/model/User;
 
     invoke-direct {v13}, Lcom/cnlaunch/x431pro/module/user/model/User;-><init>()V
 
-    .line 419
+    .line 411
     .restart local v13       #user:Lcom/cnlaunch/x431pro/module/user/model/User;
     move-object/from16 v0, p0
 
@@ -3893,7 +3877,7 @@
 
     invoke-virtual {v14, v13}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/Object;)V
 
-    .line 420
+    .line 412
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -3904,14 +3888,14 @@
 
     invoke-virtual/range {v14 .. v16}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 421
+    .line 413
     new-instance v3, Landroid/content/Intent;
 
     const-string/jumbo v14, "logout"
 
     invoke-direct {v3, v14}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 422
+    .line 414
     .restart local v3       #intent:Landroid/content/Intent;
     move-object/from16 v0, p0
 
@@ -3919,16 +3903,16 @@
 
     invoke-virtual {v14, v3}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 423
+    .line 415
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
-    const v15, 0x7f07068b
+    const v15, 0x7f07068d
 
     invoke-static {v14, v15}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
-    .line 424
+    .line 416
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
@@ -3937,7 +3921,7 @@
 
     goto/16 :goto_0
 
-    .line 259
+    .line 245
     nop
 
     :pswitch_data_0
@@ -3956,7 +3940,7 @@
     .locals 3
 
     .prologue
-    .line 616
+    .line 610
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v1, "login_username"
@@ -3969,7 +3953,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mUsername:Ljava/lang/String;
 
-    .line 617
+    .line 611
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v1, "login_password"
@@ -3982,17 +3966,17 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mPassword:Ljava/lang/String;
 
-    .line 618
+    .line 612
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;)V
 
-    .line 619
+    .line 613
     const/16 v0, 0x1f4
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->request(I)V
 
-    .line 620
+    .line 614
     return-void
 .end method
 
@@ -4001,10 +3985,10 @@
     .parameter "handler"
 
     .prologue
-    .line 786
+    .line 774
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->handler:Landroid/os/Handler;
 
-    .line 787
+    .line 775
     return-void
 .end method
 
@@ -4013,10 +3997,10 @@
     .parameter "isRegisterLogin"
 
     .prologue
-    .line 852
+    .line 840
     iput-boolean p1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->isRegisterLogin:Z
 
-    .line 853
+    .line 841
     return-void
 .end method
 
@@ -4026,43 +4010,43 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 725
+    .line 716
     new-instance v0, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
-    .line 726
-    const v2, 0x7f070692
+    .line 717
+    const v2, 0x7f070694
 
-    .line 727
-    const v3, 0x7f070693
+    .line 718
+    const v3, 0x7f070695
 
-    .line 725
+    .line 716
     invoke-direct {v0, v1, v2, v3}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;-><init>(Landroid/content/Context;II)V
 
-    .line 728
+    .line 719
     .local v0, loginConflictDialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
-    const v1, 0x7f070044
+    const v1, 0x7f07002b
 
-    .line 729
-    new-instance v2, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$2;
+    .line 720
+    new-instance v2, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$1;
 
-    invoke-direct {v2, p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$2;-><init>(Lcom/cnlaunch/x431pro/activity/login/LoginFunction;)V
+    invoke-direct {v2, p0}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$1;-><init>(Lcom/cnlaunch/x431pro/activity/login/LoginFunction;)V
 
-    .line 728
+    .line 719
     invoke-virtual {v0, v1, v4, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
-    .line 737
-    const v1, 0x7f070042
+    .line 728
+    const v1, 0x7f070029
 
     const/4 v2, 0x0
 
     invoke-virtual {v0, v1, v4, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setBetaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
-    .line 738
+    .line 729
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->show()V
 
-    .line 739
+    .line 730
     return-void
 .end method
 
@@ -4070,7 +4054,7 @@
     .locals 4
 
     .prologue
-    .line 744
+    .line 735
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     const-string/jumbo v2, "login_state"
@@ -4079,41 +4063,41 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 749
+    .line 737
     new-instance v0, Landroid/content/Intent;
 
     const-string/jumbo v1, "logout"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 750
+    .line 738
     .local v0, intent:Landroid/content/Intent;
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 752
-    new-instance v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$3;
+    .line 740
+    new-instance v1, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$2;
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mContext:Landroid/content/Context;
 
-    invoke-direct {v1, p0, v2}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$3;-><init>(Lcom/cnlaunch/x431pro/activity/login/LoginFunction;Landroid/content/Context;)V
+    invoke-direct {v1, p0, v2}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction$2;-><init>(Lcom/cnlaunch/x431pro/activity/login/LoginFunction;Landroid/content/Context;)V
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mLoginDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;
 
-    .line 776
+    .line 764
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mLoginDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;
 
     const/4 v2, 0x2
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;->setButtonBackground(I)V
 
-    .line 777
+    .line 765
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mLoginDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;
 
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;->show()V
 
-    .line 778
+    .line 766
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->mLoginDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;
 
     return-object v1

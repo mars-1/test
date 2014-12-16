@@ -43,7 +43,7 @@
 
     iput-object p2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$9;->val$uInfo:Lcom/cnlaunch/newgolo/bean/UserInfo;
 
-    .line 783
+    .line 782
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
@@ -71,7 +71,7 @@
     .parameter "arg0"
 
     .prologue
-    .line 787
+    .line 786
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$9;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -83,7 +83,7 @@
 
     invoke-static {v0, v1}, Lcom/cnlaunch/newgolo/bean/UserInfo;->update(Landroid/content/Context;Lcom/cnlaunch/newgolo/bean/UserInfo;)V
 
-    .line 788
+    .line 787
     const/4 v0, 0x0
 
     return-object v0

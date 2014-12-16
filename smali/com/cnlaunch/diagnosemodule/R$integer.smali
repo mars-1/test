@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final bluetoothlist_height_size:I = 0x7f090001
+.field public static final bluetoothlist_height_size:I = 0x7f0d0001
 
-.field public static final bluetoothlist_width_size:I = 0x7f090000
+.field public static final bluetoothlist_width_size:I = 0x7f0d0000
 
-.field public static final datastream_page_num:I = 0x7f090002
+.field public static final datastream_page_num:I = 0x7f0d0002
 
-.field public static final dialog_message_maxline:I = 0x7f090003
+.field public static final dialog_message_maxline:I = 0x7f0d0003
 
 
 # direct methods

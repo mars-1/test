@@ -103,7 +103,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0706bf
+    const v1, 0x7f0706c1
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -165,7 +165,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0706c0
+    const v1, 0x7f0706c2
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 

@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final DiagnoseMessageDialogTheme:I = 0x7f0a0000
+.field public static final DiagnoseMessageDialogTheme:I = 0x7f080034
 
-.field public static final DialogStyleMessageText:I = 0x7f0a0002
+.field public static final DialogStyleMessageText:I = 0x7f080036
 
-.field public static final DialogStyleTitleText:I = 0x7f0a0001
+.field public static final DialogStyleTitleText:I = 0x7f080035
 
-.field public static final DialogStyle_Button_grey:I = 0x7f0a0003
+.field public static final DialogStyle_Button_grey:I = 0x7f080037
 
 
 # direct methods

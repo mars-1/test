@@ -277,7 +277,7 @@
     .local p0, this:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshAdapterViewBase;,"Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshAdapterViewBase<TT;>;"
     const/4 v8, 0x0
 
-    const v7, 0x7f0c00df
+    const v7, 0x7f0b00df
 
     const/4 v6, -0x2
 

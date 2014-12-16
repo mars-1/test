@@ -28,7 +28,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$7;->this$1:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;
 
-    .line 386
+    .line 379
     invoke-direct {p0, p2}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -44,22 +44,22 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 389
+    .line 382
     invoke-super {p0, p1, p2}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->onSuccess(ILjava/lang/Object;)V
 
-    .line 390
+    .line 383
     packed-switch p1, :pswitch_data_0
 
-    .line 400
+    .line 393
     :cond_0
     :goto_0
     return-void
 
-    .line 392
+    .line 385
     :pswitch_0
     if-eqz p2, :cond_0
 
-    .line 393
+    .line 386
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$7;->this$1:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -78,7 +78,7 @@
 
     move-result-object v0
 
-    .line 394
+    .line 387
     .local v0, msg:Landroid/os/Message;
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$7;->this$1:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;
 
@@ -96,7 +96,7 @@
 
     goto :goto_0
 
-    .line 390
+    .line 383
     nop
 
     :pswitch_data_0

@@ -159,7 +159,7 @@
     .line 58
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/adapter/RemoteReportAdapter;->holder:Lcom/cnlaunch/x431pro/activity/mine/adapter/RemoteReportAdapter$ViewHolder;
 
-    const v0, 0x7f0d025e
+    const v0, 0x7f0c0261
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -172,7 +172,7 @@
     .line 59
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/adapter/RemoteReportAdapter;->holder:Lcom/cnlaunch/x431pro/activity/mine/adapter/RemoteReportAdapter$ViewHolder;
 
-    const v0, 0x7f0d01b8
+    const v0, 0x7f0c01b8
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

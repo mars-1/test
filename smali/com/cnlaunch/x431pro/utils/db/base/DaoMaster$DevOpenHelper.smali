@@ -108,7 +108,7 @@
 
     const/4 v2, 0x0
 
-    const-string/jumbo v3, "new Creating tables for schema version 2"
+    const-string/jumbo v3, "new Creating tables for schema version 3"
 
     aput-object v3, v1, v2
 

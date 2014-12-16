@@ -84,7 +84,7 @@
     iput-object p1, p0, Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;->mContext:Landroid/content/Context;
 
     .line 79
-    const v3, 0x7f0704f2
+    const v3, 0x7f0704f4
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;->setTitle(I)V
 
@@ -104,7 +104,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f03011b
+    const v4, 0x7f03011d
 
     invoke-virtual {v3, v4, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -118,7 +118,7 @@
     .line 84
     iget-object v3, p0, Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;->mContentView:Landroid/view/View;
 
-    const v4, 0x7f0d02a6
+    const v4, 0x7f0c02aa
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -157,7 +157,7 @@
     .line 90
     iget-object v3, p0, Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;->mContentView:Landroid/view/View;
 
-    const v4, 0x7f0d02af
+    const v4, 0x7f0c02b3
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -247,7 +247,7 @@
     .line 118
     iget-object v3, p0, Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;->mContentView:Landroid/view/View;
 
-    const v4, 0x7f0d02b0
+    const v4, 0x7f0c02b4
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -265,7 +265,7 @@
     .line 121
     iget-object v3, p0, Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;->mContentView:Landroid/view/View;
 
-    const v4, 0x7f0d02b4
+    const v4, 0x7f0c02b8
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -292,7 +292,7 @@
     .line 125
     iget-object v3, p0, Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;->mContentView:Landroid/view/View;
 
-    const v4, 0x7f0d02b2
+    const v4, 0x7f0c02b6
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -650,7 +650,7 @@
 
     .line 145
     :pswitch_data_0
-    .packed-switch 0x7f0d02b0
+    .packed-switch 0x7f0c02b4
         :pswitch_1
         :pswitch_0
         :pswitch_3

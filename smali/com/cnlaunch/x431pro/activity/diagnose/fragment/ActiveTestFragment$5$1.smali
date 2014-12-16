@@ -47,7 +47,7 @@
 
     iput-object p3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$5$1;->val$activeTestButton:Ljava/util/ArrayList;
 
-    .line 283
+    .line 284
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -72,7 +72,7 @@
     .end annotation
 
     .prologue
-    .line 286
+    .line 287
     .local p1, arg0:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$5$1;->val$btnChoose:Landroid/widget/TextView;
 
@@ -90,6 +90,6 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 287
+    .line 288
     return-void
 .end method

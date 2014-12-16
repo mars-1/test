@@ -30,15 +30,15 @@
     .parameter "showAllSelection"
 
     .prologue
-    .line 569
+    .line 570
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$TabChangedPostAction;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 570
+    .line 571
     iput-boolean p2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$TabChangedPostAction;->mShowAllSelection:Z
 
-    .line 571
+    .line 572
     return-void
 .end method
 
@@ -48,7 +48,7 @@
     .locals 3
 
     .prologue
-    .line 575
+    .line 576
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$TabChangedPostAction;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mBundle:Landroid/os/Bundle;
@@ -67,7 +67,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 576
+    .line 577
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$TabChangedPostAction;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mBundle:Landroid/os/Bundle;
@@ -86,7 +86,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 577
+    .line 578
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$TabChangedPostAction;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mBundle:Landroid/os/Bundle;
@@ -105,7 +105,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 578
+    .line 579
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$TabChangedPostAction;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mBundle:Landroid/os/Bundle;
@@ -128,7 +128,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 579
+    .line 580
     const-string/jumbo v0, "DataStreamShowFragment"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -149,6 +149,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 580
+    .line 581
     return-void
 .end method

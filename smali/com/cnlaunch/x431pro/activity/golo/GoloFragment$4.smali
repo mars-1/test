@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
-    .line 260
+    .line 259
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +43,7 @@
     .parameter "s"
 
     .prologue
-    .line 263
+    .line 262
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
@@ -53,7 +53,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 264
+    .line 263
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
@@ -71,13 +71,13 @@
 
     move-result v0
 
-    .line 265
+    .line 264
     .local v0, position:I
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 266
+    .line 265
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
@@ -87,7 +87,7 @@
 
     invoke-virtual {v1, v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setSelection(I)V
 
-    .line 269
+    .line 268
     .end local v0           #position:I
     :cond_0
     return-void

@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick$2;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick;
 
-    .line 748
+    .line 747
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,13 +44,13 @@
     .parameter "which"
 
     .prologue
-    .line 752
+    .line 751
     if-eqz p1, :cond_0
 
-    .line 753
+    .line 752
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 755
+    .line 754
     :cond_0
     return-void
 .end method

@@ -15,17 +15,17 @@
 
 
 # static fields
-.field public static final content:I = 0x7f0d006f
+.field public static final content:I = 0x7f0c006f
 
-.field public static final fl_content:I = 0x7f0d0070
+.field public static final fl_content:I = 0x7f0c0070
 
-.field public static final message:I = 0x7f0d006d
+.field public static final message:I = 0x7f0c006d
 
-.field public static final negativeButton:I = 0x7f0d0072
+.field public static final negativeButton:I = 0x7f0c0072
 
-.field public static final positiveButton:I = 0x7f0d0071
+.field public static final positiveButton:I = 0x7f0c0071
 
-.field public static final title:I = 0x7f0d006e
+.field public static final title:I = 0x7f0c006e
 
 
 # direct methods

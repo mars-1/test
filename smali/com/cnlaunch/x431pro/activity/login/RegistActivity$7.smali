@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
-    .line 542
+    .line 521
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,7 +47,7 @@
 
     const/4 v2, 0x0
 
-    .line 559
+    .line 538
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
@@ -68,7 +68,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->validcode:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->access$34(Lcom/cnlaunch/x431pro/activity/login/RegistActivity;Ljava/lang/String;)V
 
-    .line 560
+    .line 539
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->validcode:Ljava/lang/String;
@@ -95,7 +95,7 @@
 
     if-nez v0, :cond_0
 
-    .line 561
+    .line 540
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
@@ -108,7 +108,7 @@
     #calls: Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->showCheckBox(Landroid/widget/CheckBox;IZ)V
     invoke-static {v0, v1, v3, v2}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->access$15(Lcom/cnlaunch/x431pro/activity/login/RegistActivity;Landroid/widget/CheckBox;IZ)V
 
-    .line 570
+    .line 549
     :goto_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
@@ -125,10 +125,10 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 571
+    .line 550
     return-void
 
-    .line 562
+    .line 541
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
@@ -143,7 +143,7 @@
 
     if-ne v0, v3, :cond_1
 
-    .line 563
+    .line 542
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->mContext:Landroid/content/Context;
@@ -151,11 +151,11 @@
 
     move-result-object v0
 
-    const v1, 0x7f07063d
+    const v1, 0x7f07063f
 
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;I)V
 
-    .line 564
+    .line 543
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
@@ -176,7 +176,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->username:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->access$37(Lcom/cnlaunch/x431pro/activity/login/RegistActivity;Ljava/lang/String;)V
 
-    .line 565
+    .line 544
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     const/16 v1, 0xcb
@@ -185,7 +185,7 @@
 
     goto :goto_0
 
-    .line 567
+    .line 546
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
@@ -210,7 +210,7 @@
     .parameter "after"
 
     .prologue
-    .line 555
+    .line 534
     return-void
 .end method
 
@@ -222,6 +222,6 @@
     .parameter "count"
 
     .prologue
-    .line 548
+    .line 527
     return-void
 .end method

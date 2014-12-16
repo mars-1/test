@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$8;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
-    .line 1045
+    .line 1051
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,7 +44,7 @@
     .parameter "obj2"
 
     .prologue
-    .line 1047
+    .line 1053
     move-object v0, p1
 
     check-cast v0, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
@@ -52,10 +52,10 @@
     .local v0, soft1:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
     move-object v1, p2
 
-    .line 1048
+    .line 1054
     check-cast v1, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
 
-    .line 1050
+    .line 1056
     .local v1, soft2:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->isChecked()Z
 
@@ -69,14 +69,14 @@
 
     if-nez v2, :cond_0
 
-    .line 1051
+    .line 1057
     const/4 v2, -0x1
 
-    .line 1057
+    .line 1063
     :goto_0
     return v2
 
-    .line 1053
+    .line 1059
     :cond_0
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->isChecked()Z
 
@@ -90,12 +90,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 1054
+    .line 1060
     const/4 v2, 0x1
 
     goto :goto_0
 
-    .line 1057
+    .line 1063
     :cond_1
     const/4 v2, 0x0
 

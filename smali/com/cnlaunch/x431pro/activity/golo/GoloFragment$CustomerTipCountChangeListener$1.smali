@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 
-    .line 1413
+    .line 1412
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,7 +42,7 @@
     .locals 4
 
     .prologue
-    .line 1416
+    .line 1415
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -55,15 +55,15 @@
 
     move-result-object v0
 
-    .line 1417
+    .line 1416
     .local v0, tipList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/Count;>;"
     if-nez v0, :cond_0
 
-    .line 1427
+    .line 1426
     :goto_0
     return-void
 
-    .line 1420
+    .line 1419
     :cond_0
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 
@@ -79,7 +79,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 1421
+    .line 1420
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -101,7 +101,7 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updataListTipCountForSerial(Ljava/util/List;Ljava/util/List;)V
 
-    .line 1422
+    .line 1421
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -135,7 +135,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allTipCount:I
     invoke-static {v1, v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$36(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;I)V
 
-    .line 1423
+    .line 1422
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -154,7 +154,7 @@
 
     invoke-static {v1, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 1426
+    .line 1425
     :cond_1
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 

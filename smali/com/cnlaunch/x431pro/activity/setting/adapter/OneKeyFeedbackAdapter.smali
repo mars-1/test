@@ -36,6 +36,8 @@
 
 .field private mContext:Landroid/content/Context;
 
+.field private mFragment:Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;
+
 .field private mInflater:Landroid/view/LayoutInflater;
 
 .field private mList:Ljava/util/Vector;
@@ -51,10 +53,11 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ljava/util/Vector;)V
+.method public constructor <init>(Landroid/content/Context;Ljava/util/Vector;Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;)V
     .locals 4
     .parameter "context"
     .parameter
+    .parameter "fragment"
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "UseSparseArrays"
@@ -68,19 +71,24 @@
             "Ljava/util/Vector",
             "<",
             "Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;",
-            ">;)V"
+            ">;",
+            "Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;",
+            ")V"
         }
     .end annotation
 
     .prologue
-    .line 40
+    .line 45
     .local p2, vList:Ljava/util/Vector;,"Ljava/util/Vector<Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;>;"
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
-    .line 41
+    .line 46
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mContext:Landroid/content/Context;
 
-    .line 42
+    .line 47
+    iput-object p3, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mFragment:Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;
+
+    .line 49
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -89,24 +97,24 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    .line 43
+    .line 50
     iput-object p2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
 
-    .line 44
+    .line 51
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
     sput-object v1, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->isSelected:Ljava/util/HashMap;
 
-    .line 45
+    .line 52
     invoke-virtual {p2}, Ljava/util/Vector;->size()I
 
     move-result v1
 
     if-lez v1, :cond_0
 
-    .line 46
+    .line 53
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -117,12 +125,12 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 50
+    .line 57
     .end local v0           #i:I
     :cond_0
     return-void
 
-    .line 47
+    .line 54
     .restart local v0       #i:I
     :cond_1
     sget-object v1, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->isSelected:Ljava/util/HashMap;
@@ -139,10 +147,42 @@
 
     invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 46
+    .line 53
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
+.end method
+
+.method static synthetic access$0(Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;)Ljava/util/Vector;
+    .locals 1
+    .parameter
+
+    .prologue
+    .line 38
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1()Ljava/util/HashMap;
+    .locals 1
+
+    .prologue
+    .line 40
+    sget-object v0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->isSelected:Ljava/util/HashMap;
+
+    return-object v0
+.end method
+
+.method static synthetic access$2(Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;)Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;
+    .locals 1
+    .parameter
+
+    .prologue
+    .line 42
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mFragment:Lcom/cnlaunch/x431pro/activity/setting/OneKeyFeedbackFragment;
+
+    return-object v0
 .end method
 
 .method public static setIsSelected(Ljava/util/HashMap;)V
@@ -160,11 +200,11 @@
     .end annotation
 
     .prologue
-    .line 65
+    .line 72
     .local p0, isSelected:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/Integer;Ljava/lang/Boolean;>;"
     sput-object p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->isSelected:Ljava/util/HashMap;
 
-    .line 66
+    .line 73
     return-void
 .end method
 
@@ -174,19 +214,19 @@
     .locals 1
 
     .prologue
-    .line 70
+    .line 77
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
 
     if-eqz v0, :cond_0
 
-    .line 71
+    .line 78
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
     move-result v0
 
-    .line 73
+    .line 80
     :goto_0
     return v0
 
@@ -210,7 +250,7 @@
     .end annotation
 
     .prologue
-    .line 61
+    .line 68
     sget-object v0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->isSelected:Ljava/util/HashMap;
 
     return-object v0
@@ -221,7 +261,7 @@
     .parameter "position"
 
     .prologue
-    .line 78
+    .line 85
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
 
     invoke-virtual {v0, p1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
@@ -236,288 +276,304 @@
     .parameter "position"
 
     .prologue
-    .line 83
+    .line 90
     int-to-long v0, p1
 
     return-wide v0
 .end method
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 6
+    .locals 7
     .parameter "position"
     .parameter "convertView"
     .parameter "parent"
 
     .prologue
-    .line 88
+    .line 95
     if-nez p2, :cond_1
 
-    .line 89
-    new-instance v1, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+    .line 96
+    new-instance v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
 
-    invoke-direct {v1, p0}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;-><init>(Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;)V
+    invoke-direct {v2, p0}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;-><init>(Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;)V
 
-    iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+    iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
 
-    .line 90
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mInflater:Landroid/view/LayoutInflater;
+    .line 97
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v2, 0x7f030156
+    const v3, 0x7f030158
 
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
-    invoke-virtual {v1, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+    invoke-virtual {v2, v3, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
 
-    .line 91
-    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
-
-    const v1, 0x7f0d03c0
-
-    invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/CheckBox;
-
-    iput-object v1, v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->cb_feedback_log_choice:Landroid/widget/CheckBox;
-
-    .line 92
-    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
-
-    const v1, 0x7f0d03c1
-
-    invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/TextView;
-
-    iput-object v1, v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_name:Landroid/widget/TextView;
-
-    .line 93
-    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
-
-    const v1, 0x7f0d03c2
-
-    invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/TextView;
-
-    iput-object v1, v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_filename:Landroid/widget/TextView;
-
-    .line 94
-    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
-
-    const v1, 0x7f0d03c3
-
-    invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/TextView;
-
-    iput-object v1, v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_time:Landroid/widget/TextView;
-
-    .line 95
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
-
-    if-eqz v1, :cond_0
-
-    .line 96
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
-
-    iget-object v2, v1, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_name:Landroid/widget/TextView;
-
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
-
-    invoke-virtual {v1, p1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
-
-    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getVehicleSoftname()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 97
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
-
-    iget-object v2, v1, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_filename:Landroid/widget/TextView;
-
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
-
-    invoke-virtual {v1, p1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
-
-    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getFilename()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
     .line 98
-    new-instance v2, Ljava/text/SimpleDateFormat;
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
 
-    const-string/jumbo v1, "yyyy-MM-dd HH:mm:ss"
+    const v2, 0x7f0c03d6
 
-    invoke-direct {v2, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
+    invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    new-instance v3, Ljava/util/Date;
+    move-result-object v2
 
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
+    check-cast v2, Landroid/widget/CheckBox;
 
-    invoke-virtual {v1, p1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
-
-    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getCreateDate()J
-
-    move-result-wide v4
-
-    invoke-direct {v3, v4, v5}, Ljava/util/Date;-><init>(J)V
-
-    invoke-virtual {v2, v3}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
-
-    move-result-object v0
+    iput-object v2, v3, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->cb_feedback_log_choice:Landroid/widget/CheckBox;
 
     .line 99
-    .local v0, ctime:Ljava/lang/String;
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
 
-    iget-object v1, v1, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_time:Landroid/widget/TextView;
+    const v2, 0x7f0c03d7
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/TextView;
+
+    iput-object v2, v3, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_name:Landroid/widget/TextView;
+
+    .line 100
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+
+    const v2, 0x7f0c03d8
+
+    invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/TextView;
+
+    iput-object v2, v3, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_filename:Landroid/widget/TextView;
 
     .line 101
-    .end local v0           #ctime:Ljava/lang/String;
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+
+    const v2, 0x7f0c03d9
+
+    invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/TextView;
+
+    iput-object v2, v3, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_time:Landroid/widget/TextView;
+
+    .line 102
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
+
+    if-eqz v2, :cond_0
+
+    .line 103
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+
+    iget-object v3, v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_name:Landroid/widget/TextView;
+
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
+
+    invoke-virtual {v2, p1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
+
+    invoke-virtual {v2}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getVehicleSoftname()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 104
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+
+    iget-object v3, v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_filename:Landroid/widget/TextView;
+
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
+
+    invoke-virtual {v2, p1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
+
+    invoke-virtual {v2}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getFilename()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 105
+    new-instance v3, Ljava/text/SimpleDateFormat;
+
+    const-string/jumbo v2, "yyyy-MM-dd HH:mm:ss"
+
+    invoke-direct {v3, v2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
+
+    new-instance v4, Ljava/util/Date;
+
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
+
+    invoke-virtual {v2, p1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
+
+    invoke-virtual {v2}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getCreateDate()J
+
+    move-result-wide v5
+
+    invoke-direct {v4, v5, v6}, Ljava/util/Date;-><init>(J)V
+
+    invoke-virtual {v3, v4}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 106
+    .local v1, ctime:Ljava/lang/String;
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+
+    iget-object v2, v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_time:Landroid/widget/TextView;
+
+    invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 108
+    .end local v1           #ctime:Ljava/lang/String;
     :cond_0
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
 
-    invoke-virtual {p2, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+    invoke-virtual {p2, v2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 110
+    .line 117
     :goto_0
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
 
-    iget-object v2, v1, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->cb_feedback_log_choice:Landroid/widget/CheckBox;
+    iget-object v3, v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->cb_feedback_log_choice:Landroid/widget/CheckBox;
 
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->getIsSelected()Ljava/util/HashMap;
 
-    move-result-object v1
+    move-result-object v2
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v1, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v2
 
-    check-cast v1, Ljava/lang/Boolean;
+    check-cast v2, Ljava/lang/Boolean;
 
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result v1
+    move-result v2
 
-    invoke-virtual {v2, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
+    invoke-virtual {v3, v2}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 111
+    .line 118
+    move v0, p1
+
+    .line 119
+    .local v0, checkpPosition:I
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+
+    iget-object v2, v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->cb_feedback_log_choice:Landroid/widget/CheckBox;
+
+    new-instance v3, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$1;
+
+    invoke-direct {v3, p0, v0}, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$1;-><init>(Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;I)V
+
+    invoke-virtual {v2, v3}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+
+    .line 128
     return-object p2
 
-    .line 103
+    .line 110
+    .end local v0           #checkpPosition:I
     :cond_1
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
+    move-result-object v2
+
+    check-cast v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+
+    iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+
+    .line 111
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+
+    iget-object v3, v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_name:Landroid/widget/TextView;
+
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
+
+    invoke-virtual {v2, p1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
+
+    invoke-virtual {v2}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getVehicleSoftname()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 112
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+
+    iget-object v3, v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_filename:Landroid/widget/TextView;
+
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
+
+    invoke-virtual {v2, p1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
+
+    invoke-virtual {v2}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getFilename()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 113
+    new-instance v3, Ljava/text/SimpleDateFormat;
+
+    const-string/jumbo v2, "yyyy-MM-dd HH:mm:ss"
+
+    invoke-direct {v3, v2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
+
+    new-instance v4, Ljava/util/Date;
+
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
+
+    invoke-virtual {v2, p1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
+
+    invoke-virtual {v2}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getCreateDate()J
+
+    move-result-wide v5
+
+    invoke-direct {v4, v5, v6}, Ljava/util/Date;-><init>(J)V
+
+    invoke-virtual {v3, v4}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+
     move-result-object v1
 
-    check-cast v1, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
+    .line 114
+    .restart local v1       #ctime:Ljava/lang/String;
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
 
-    iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
-
-    .line 104
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
-
-    iget-object v2, v1, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_name:Landroid/widget/TextView;
-
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
-
-    invoke-virtual {v1, p1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
-
-    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getVehicleSoftname()Ljava/lang/String;
-
-    move-result-object v1
+    iget-object v2, v2, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_time:Landroid/widget/TextView;
 
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 105
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
-
-    iget-object v2, v1, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_filename:Landroid/widget/TextView;
-
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
-
-    invoke-virtual {v1, p1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
-
-    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getFilename()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 106
-    new-instance v2, Ljava/text/SimpleDateFormat;
-
-    const-string/jumbo v1, "yyyy-MM-dd HH:mm:ss"
-
-    invoke-direct {v2, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
-
-    new-instance v3, Ljava/util/Date;
-
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
-
-    invoke-virtual {v1, p1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;
-
-    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;->getCreateDate()J
-
-    move-result-wide v4
-
-    invoke-direct {v3, v4, v5}, Ljava/util/Date;-><init>(J)V
-
-    invoke-virtual {v2, v3}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 107
-    .restart local v0       #ctime:Ljava/lang/String;
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->holder:Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;
-
-    iget-object v1, v1, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter$ViewHolder;->tv_feedback_log_time:Landroid/widget/TextView;
-
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 .end method
@@ -535,7 +591,7 @@
     .end annotation
 
     .prologue
-    .line 53
+    .line 60
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
 
     return-object v0
@@ -555,10 +611,10 @@
     .end annotation
 
     .prologue
-    .line 57
+    .line 64
     .local p1, mList:Ljava/util/Vector;,"Ljava/util/Vector<Lcom/cnlaunch/x431pro/utils/diagnose/DiagnoseLogInfoSearchUtil$DiagnoseLogFileInfo;>;"
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/setting/adapter/OneKeyFeedbackAdapter;->mList:Ljava/util/Vector;
 
-    .line 58
+    .line 65
     return-void
 .end method

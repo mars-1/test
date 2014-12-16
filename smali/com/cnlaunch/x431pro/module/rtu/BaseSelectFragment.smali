@@ -141,7 +141,7 @@
 
     .prologue
     .line 112
-    const v0, 0x7f0d004d
+    const v0, 0x7f0c004d
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -152,7 +152,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/module/rtu/BaseSelectFragment;->tvTitle:Landroid/widget/TextView;
 
     .line 114
-    const v0, 0x7f0d0296
+    const v0, 0x7f0c029a
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -180,7 +180,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 142
-    const v0, 0x7f0d0070
+    const v0, 0x7f0c0070
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -191,7 +191,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/module/rtu/BaseSelectFragment;->mContentCustom:Landroid/widget/FrameLayout;
 
     .line 144
-    const v0, 0x7f0d0297
+    const v0, 0x7f0c029b
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -202,7 +202,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/module/rtu/BaseSelectFragment;->mContentMessage:Landroid/widget/TextView;
 
     .line 146
-    const v0, 0x7f0d0295
+    const v0, 0x7f0c0299
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -211,7 +211,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/module/rtu/BaseSelectFragment;->mMessagePanle:Landroid/view/View;
 
     .line 148
-    const v0, 0x7f0d007e
+    const v0, 0x7f0c007e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -222,7 +222,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/module/rtu/BaseSelectFragment;->btnAlpha:Landroid/widget/Button;
 
     .line 149
-    const v0, 0x7f0d0298
+    const v0, 0x7f0c029c
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -233,7 +233,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/module/rtu/BaseSelectFragment;->btnBeta:Landroid/widget/Button;
 
     .line 150
-    const v0, 0x7f0d0299
+    const v0, 0x7f0c029d
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -259,7 +259,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 155
-    const v0, 0x7f0d004e
+    const v0, 0x7f0c004e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -268,7 +268,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/module/rtu/BaseSelectFragment;->mBottomButtonLayout:Landroid/view/View;
 
     .line 156
-    const v0, 0x7f070701
+    const v0, 0x7f070703
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/module/rtu/BaseSelectFragment;->setTitle(I)V
 
@@ -471,9 +471,9 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f0d007e -> :sswitch_0
-        0x7f0d0298 -> :sswitch_1
-        0x7f0d0299 -> :sswitch_2
+        0x7f0c007e -> :sswitch_0
+        0x7f0c029c -> :sswitch_1
+        0x7f0c029d -> :sswitch_2
     .end sparse-switch
 .end method
 
@@ -509,7 +509,7 @@
     const/16 v4, 0x8
 
     .line 88
-    const v2, 0x7f0300f4
+    const v2, 0x7f0300f6
 
     .line 89
     const/4 v3, 0x0
@@ -639,7 +639,7 @@
     .parameter "button"
 
     .prologue
-    const v1, 0x7f020519
+    const v1, 0x7f02051d
 
     .line 330
     const/4 v0, 0x1

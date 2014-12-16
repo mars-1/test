@@ -3,14 +3,14 @@
 .source "PdfWriter.java"
 
 # interfaces
-.implements Lcom/itextpdf/text/pdf/interfaces/PdfViewerPreferences;
-.implements Lcom/itextpdf/text/pdf/interfaces/PdfEncryptionSettings;
-.implements Lcom/itextpdf/text/pdf/interfaces/PdfVersion;
-.implements Lcom/itextpdf/text/pdf/interfaces/PdfDocumentActions;
-.implements Lcom/itextpdf/text/pdf/interfaces/PdfPageActions;
-.implements Lcom/itextpdf/text/pdf/interfaces/PdfXConformance;
-.implements Lcom/itextpdf/text/pdf/interfaces/PdfRunDirection;
 .implements Lcom/itextpdf/text/pdf/interfaces/PdfAnnotations;
+.implements Lcom/itextpdf/text/pdf/interfaces/PdfDocumentActions;
+.implements Lcom/itextpdf/text/pdf/interfaces/PdfEncryptionSettings;
+.implements Lcom/itextpdf/text/pdf/interfaces/PdfPageActions;
+.implements Lcom/itextpdf/text/pdf/interfaces/PdfRunDirection;
+.implements Lcom/itextpdf/text/pdf/interfaces/PdfVersion;
+.implements Lcom/itextpdf/text/pdf/interfaces/PdfViewerPreferences;
+.implements Lcom/itextpdf/text/pdf/interfaces/PdfXConformance;
 
 
 # annotations

@@ -40,7 +40,7 @@
 
     iput-object p3, p0, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness$2;->val$tempType:Ljava/lang/String;
 
-    .line 616
+    .line 672
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -54,7 +54,7 @@
     .parameter "which"
 
     .prologue
-    .line 618
+    .line 674
     iget-object v3, p0, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness$2;->val$inputServer:Landroid/widget/EditText;
 
     invoke-virtual {v3}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -65,7 +65,7 @@
 
     move-result-object v2
 
-    .line 620
+    .line 676
     .local v2, inputValue:Ljava/lang/String;
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -82,13 +82,13 @@
 
     move-result-object v1
 
-    .line 621
+    .line 677
     .local v1, field:Ljava/lang/reflect/Field;
     const/4 v3, 0x1
 
     invoke-virtual {v1, v3}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 622
+    .line 678
     const-string/jumbo v3, ""
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -97,7 +97,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 623
+    .line 679
     iget-object v3, p0, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness$2;->this$0:Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;
 
     #getter for: Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;->mContext:Landroid/content/Context;
@@ -115,10 +115,10 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    .line 624
+    .line 680
     const-string/jumbo v2, "0"
 
-    .line 625
+    .line 681
     const/4 v3, 0x0
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -127,12 +127,12 @@
 
     invoke-virtual {v1, p1, v3}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 635
+    .line 691
     .end local v1           #field:Ljava/lang/reflect/Field;
     :goto_0
     return-void
 
-    .line 627
+    .line 683
     .restart local v1       #field:Ljava/lang/reflect/Field;
     :cond_0
     iget-object v3, p0, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness$2;->this$0:Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;
@@ -144,7 +144,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 628
+    .line 684
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string/jumbo v4, "1"
@@ -159,7 +159,7 @@
 
     move-result-object v2
 
-    .line 629
+    .line 685
     :cond_1
     iget-object v3, p0, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness$2;->this$0:Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;
 
@@ -168,7 +168,7 @@
     #calls: Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;->SendFeedbackMessage(Ljava/lang/String;Ljava/lang/String;)V
     invoke-static {v3, v4, v2}, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;->access$1(Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 630
+    .line 686
     const/4 v3, 0x1
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -181,12 +181,12 @@
 
     goto :goto_0
 
-    .line 632
+    .line 688
     .end local v1           #field:Ljava/lang/reflect/Field;
     :catch_0
     move-exception v0
 
-    .line 633
+    .line 689
     .local v0, e:Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 

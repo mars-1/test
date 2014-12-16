@@ -110,13 +110,19 @@
 .end method
 
 .method private checkSexRadio(Ljava/lang/String;)V
-    .locals 2
+    .locals 5
     .parameter "newSex"
 
     .prologue
+    const v4, 0x7f0705b1
+
+    const v3, 0x7f0705b0
+
     const/4 v1, 0x1
 
-    .line 312
+    const/4 v2, 0x0
+
+    .line 313
     const-string/jumbo v0, "1"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -125,34 +131,64 @@
 
     if-eqz v0, :cond_0
 
-    .line 313
+    .line 314
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->radio_male:Landroid/widget/RadioButton;
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
 
-    .line 314
+    .line 315
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->radio_male:Landroid/widget/RadioButton;
+
+    invoke-virtual {v0, v3}, Landroid/widget/RadioButton;->setText(I)V
+
+    .line 316
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->radio_female:Landroid/widget/RadioButton;
+
+    invoke-virtual {v0, v4}, Landroid/widget/RadioButton;->setText(I)V
+
+    .line 317
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->radioGroup_sex:Landroid/widget/RadioGroup;
 
     const v1, 0x7f020029
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioGroup;->setBackgroundResource(I)V
 
-    .line 319
+    .line 318
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->radioGroup_sex:Landroid/widget/RadioGroup;
+
+    invoke-virtual {v0, v2}, Landroid/widget/RadioGroup;->setVisibility(I)V
+
+    .line 326
     :goto_0
     return-void
 
-    .line 316
+    .line 320
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->radio_female:Landroid/widget/RadioButton;
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
 
-    .line 317
+    .line 321
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->radio_male:Landroid/widget/RadioButton;
+
+    invoke-virtual {v0, v3}, Landroid/widget/RadioButton;->setText(I)V
+
+    .line 322
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->radio_female:Landroid/widget/RadioButton;
+
+    invoke-virtual {v0, v4}, Landroid/widget/RadioButton;->setText(I)V
+
+    .line 323
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->radioGroup_sex:Landroid/widget/RadioGroup;
 
     const v1, 0x7f02002a
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioGroup;->setBackgroundResource(I)V
+
+    .line 324
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->radioGroup_sex:Landroid/widget/RadioGroup;
+
+    invoke-virtual {v0, v2}, Landroid/widget/RadioGroup;->setVisibility(I)V
 
     goto :goto_0
 .end method
@@ -161,7 +197,7 @@
     .locals 2
 
     .prologue
-    .line 323
+    .line 330
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->login_state:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -176,11 +212,11 @@
 
     if-nez v0, :cond_1
 
-    .line 324
+    .line 331
     :cond_0
     const/4 v0, 0x0
 
-    .line 326
+    .line 333
     :goto_0
     return v0
 
@@ -195,7 +231,7 @@
 
     .prologue
     .line 127
-    const v0, 0x7f0705a8
+    const v0, 0x7f0705aa
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->setTitle(I)V
 
@@ -206,7 +242,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -219,7 +255,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d03df
+    const v1, 0x7f0c03f5
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -234,7 +270,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d03e4
+    const v1, 0x7f0c03fa
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -249,7 +285,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d03e7
+    const v1, 0x7f0c03fd
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -264,7 +300,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d03ea
+    const v1, 0x7f0c0400
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -279,7 +315,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d03e0
+    const v1, 0x7f0c03f6
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -299,7 +335,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d03e2
+    const v1, 0x7f0c03f8
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -319,7 +355,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d03e5
+    const v1, 0x7f0c03fb
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -339,7 +375,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d03e8
+    const v1, 0x7f0c03fe
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -359,7 +395,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0196
+    const v1, 0x7f0c0196
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -379,7 +415,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0195
+    const v1, 0x7f0c0195
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -399,7 +435,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0194
+    const v1, 0x7f0c0194
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -410,6 +446,13 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->radioGroup_sex:Landroid/widget/RadioGroup;
 
     .line 156
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->radioGroup_sex:Landroid/widget/RadioGroup;
+
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Landroid/widget/RadioGroup;->setVisibility(I)V
+
+    .line 157
     return-void
 .end method
 
@@ -425,10 +468,10 @@
     .end annotation
 
     .prologue
-    .line 160
+    .line 161
     sparse-switch p1, :sswitch_data_0
 
-    .line 184
+    .line 185
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->doInBackground(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -436,7 +479,7 @@
     :goto_0
     return-object v0
 
-    .line 173
+    .line 174
     :sswitch_0
     new-instance v0, Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
@@ -446,7 +489,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->userAction:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
-    .line 180
+    .line 181
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->userAction:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
     invoke-static {}, Lcom/cnlaunch/framework/utils/lang/LangManager;->getLanguage()Ljava/lang/String;
@@ -461,7 +504,7 @@
 
     goto :goto_0
 
-    .line 182
+    .line 183
     :sswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->action:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
@@ -473,7 +516,7 @@
 
     goto :goto_0
 
-    .line 160
+    .line 161
     :sswitch_data_0
     .sparse-switch
         0x838 -> :sswitch_0
@@ -549,22 +592,22 @@
     .parameter "v"
 
     .prologue
-    const v4, 0x7f0704dd
+    const v4, 0x7f0704df
 
-    const v3, 0x7f0706d8
+    const v3, 0x7f0706da
 
-    .line 250
+    .line 251
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v2
 
     sparse-switch v2, :sswitch_data_0
 
-    .line 308
+    .line 309
     :goto_0
     return-void
 
-    .line 252
+    .line 253
     :sswitch_0
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->hasLogin()Z
 
@@ -572,14 +615,14 @@
 
     if-nez v2, :cond_0
 
-    .line 253
+    .line 254
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v2, v3}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 256
+    .line 257
     :cond_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
@@ -589,20 +632,20 @@
 
     if-nez v2, :cond_1
 
-    .line 257
+    .line 258
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v2, v4}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 260
+    .line 261
     :cond_1
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 261
+    .line 262
     .local v0, bundleEmail:Landroid/os/Bundle;
     const-string/jumbo v2, "email"
 
@@ -618,14 +661,14 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 262
+    .line 263
     const-string/jumbo v2, "is_bind_email"
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->is_bind_email:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 263
+    .line 264
     const-class v2, Lcom/cnlaunch/x431pro/activity/mine/ChangeEmailFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -636,7 +679,7 @@
 
     goto :goto_0
 
-    .line 267
+    .line 268
     .end local v0           #bundleEmail:Landroid/os/Bundle;
     :sswitch_1
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->hasLogin()Z
@@ -645,14 +688,14 @@
 
     if-nez v2, :cond_2
 
-    .line 268
+    .line 269
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v2, v3}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 271
+    .line 272
     :cond_2
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
@@ -662,20 +705,20 @@
 
     if-nez v2, :cond_3
 
-    .line 272
+    .line 273
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v2, v4}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 275
+    .line 276
     :cond_3
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 276
+    .line 277
     .local v1, bundlePhone:Landroid/os/Bundle;
     const-string/jumbo v2, "phone_number"
 
@@ -691,14 +734,14 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 277
+    .line 278
     const-string/jumbo v2, "is_bind_mobile"
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->is_bind_mobile:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 278
+    .line 279
     const-class v2, Lcom/cnlaunch/x431pro/activity/mine/ChangePhoneFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -709,7 +752,7 @@
 
     goto/16 :goto_0
 
-    .line 282
+    .line 283
     .end local v1           #bundlePhone:Landroid/os/Bundle;
     :sswitch_2
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->hasLogin()Z
@@ -718,14 +761,14 @@
 
     if-nez v2, :cond_4
 
-    .line 283
+    .line 284
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v2, v3}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto/16 :goto_0
 
-    .line 286
+    .line 287
     :cond_4
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
@@ -735,14 +778,14 @@
 
     if-nez v2, :cond_5
 
-    .line 287
+    .line 288
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v2, v4}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto/16 :goto_0
 
-    .line 290
+    .line 291
     :cond_5
     const-class v2, Lcom/cnlaunch/x431pro/activity/mine/CountryFragment;
 
@@ -754,7 +797,7 @@
 
     goto/16 :goto_0
 
-    .line 296
+    .line 297
     :sswitch_3
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->hasLogin()Z
 
@@ -762,19 +805,19 @@
 
     if-nez v2, :cond_6
 
-    .line 297
+    .line 298
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->sex:Ljava/lang/String;
 
     invoke-direct {p0, v2}, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->checkSexRadio(Ljava/lang/String;)V
 
-    .line 298
+    .line 299
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v2, v3}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto/16 :goto_0
 
-    .line 301
+    .line 302
     :cond_6
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->sex:Ljava/lang/String;
 
@@ -791,40 +834,40 @@
     :goto_1
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->sex:Ljava/lang/String;
 
-    .line 302
+    .line 303
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->sex:Ljava/lang/String;
 
     invoke-direct {p0, v2}, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->checkSexRadio(Ljava/lang/String;)V
 
-    .line 303
+    .line 304
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;)V
 
-    .line 304
+    .line 305
     const/16 v2, 0x7532
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->request(I)V
 
     goto/16 :goto_0
 
-    .line 301
+    .line 302
     :cond_7
     const-string/jumbo v2, "1"
 
     goto :goto_1
 
-    .line 250
+    .line 251
     nop
 
     :sswitch_data_0
     .sparse-switch
-        0x7f0d0195 -> :sswitch_3
-        0x7f0d0196 -> :sswitch_3
-        0x7f0d03e0 -> :sswitch_3
-        0x7f0d03e2 -> :sswitch_0
-        0x7f0d03e5 -> :sswitch_1
-        0x7f0d03e8 -> :sswitch_2
+        0x7f0c0195 -> :sswitch_3
+        0x7f0c0196 -> :sswitch_3
+        0x7f0c03f6 -> :sswitch_3
+        0x7f0c03f8 -> :sswitch_0
+        0x7f0c03fb -> :sswitch_1
+        0x7f0c03fe -> :sswitch_2
     .end sparse-switch
 .end method
 
@@ -836,7 +879,7 @@
 
     .prologue
     .line 103
-    const v0, 0x7f03015f
+    const v0, 0x7f030161
 
     const/4 v1, 0x0
 
@@ -872,29 +915,29 @@
     .parameter "result"
 
     .prologue
-    .line 225
+    .line 226
     invoke-super {p0, p1, p2, p3}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onFailure(IILjava/lang/Object;)V
 
-    .line 226
+    .line 227
     sparse-switch p1, :sswitch_data_0
 
-    .line 246
+    .line 247
     :cond_0
     :goto_0
     return-void
 
-    .line 228
+    .line 229
     :sswitch_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
-    .line 230
+    .line 231
     const/16 v0, -0x12c
 
     if-ne v0, p2, :cond_0
 
-    .line 231
+    .line 232
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mLoginDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;
 
     if-eqz v0, :cond_1
@@ -907,7 +950,7 @@
 
     if-nez v0, :cond_0
 
-    .line 232
+    .line 233
     :cond_1
     new-instance v0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment$2;
 
@@ -915,17 +958,17 @@
 
     invoke-direct {v0, p0, v1}, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment$2;-><init>(Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;Landroid/content/Context;)V
 
-    .line 238
+    .line 239
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment$2;->showLoginDialog()Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;
 
     move-result-object v0
 
-    .line 232
+    .line 233
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mLoginDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;
 
     goto :goto_0
 
-    .line 243
+    .line 244
     :sswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
@@ -933,7 +976,7 @@
 
     goto :goto_0
 
-    .line 226
+    .line 227
     :sswitch_data_0
     .sparse-switch
         0x838 -> :sswitch_0
@@ -961,7 +1004,7 @@
     .line 112
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0706d8
+    const v1, 0x7f0706da
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -994,26 +1037,26 @@
     .parameter "result"
 
     .prologue
-    .line 189
+    .line 190
     invoke-super {p0, p1, p2}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onSuccess(ILjava/lang/Object;)V
 
-    .line 190
+    .line 191
     sparse-switch p1, :sswitch_data_0
 
-    .line 221
+    .line 222
     :goto_0
     return-void
 
-    .line 192
+    .line 193
     :sswitch_0
     if-eqz p2, :cond_0
 
     move-object v0, p2
 
-    .line 193
+    .line 194
     check-cast v0, Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfoResponse;
 
-    .line 194
+    .line 195
     .local v0, res:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfoResponse;
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfoResponse;->getCode()I
 
@@ -1025,14 +1068,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 195
+    .line 196
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfoResponse;->getData()Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfo;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->userInfo:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfo;
 
-    .line 196
+    .line 197
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->tv_mine_name:Landroid/widget/TextView;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->userInfo:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfo;
@@ -1043,7 +1086,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 197
+    .line 198
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->tv_mine_email:Landroid/widget/TextView;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->userInfo:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfo;
@@ -1054,7 +1097,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 198
+    .line 199
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->tv_mine_phone:Landroid/widget/TextView;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->userInfo:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfo;
@@ -1065,7 +1108,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 199
+    .line 200
     new-instance v2, Ljava/lang/StringBuilder;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->userInfo:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfo;
@@ -1086,7 +1129,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->is_bind_mobile:Ljava/lang/String;
 
-    .line 200
+    .line 201
     new-instance v2, Ljava/lang/StringBuilder;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->userInfo:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfo;
@@ -1107,12 +1150,12 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->is_bind_email:Ljava/lang/String;
 
-    .line 201
+    .line 202
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 202
+    .line 203
     .local v1, sb:Ljava/lang/StringBuilder;
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->userInfo:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfo;
 
@@ -1122,7 +1165,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 203
+    .line 204
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->userInfo:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfo;
 
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfo;->getProvince()Ljava/lang/String;
@@ -1140,7 +1183,7 @@
     :goto_1
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 204
+    .line 205
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->userInfo:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfo;
 
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfo;->getCity()Ljava/lang/String;
@@ -1158,7 +1201,7 @@
     :goto_2
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 205
+    .line 206
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->tv_mine_areas:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -1167,7 +1210,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 207
+    .line 208
     new-instance v2, Ljava/lang/StringBuilder;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->userInfo:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfo;
@@ -1188,12 +1231,12 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->sex:Ljava/lang/String;
 
-    .line 208
+    .line 209
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->sex:Ljava/lang/String;
 
     invoke-direct {p0, v2}, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->checkSexRadio(Ljava/lang/String;)V
 
-    .line 211
+    .line 212
     .end local v0           #res:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfoResponse;
     .end local v1           #sb:Ljava/lang/StringBuilder;
     :cond_0
@@ -1203,7 +1246,7 @@
 
     goto/16 :goto_0
 
-    .line 203
+    .line 204
     .restart local v0       #res:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfoResponse;
     .restart local v1       #sb:Ljava/lang/StringBuilder;
     :cond_1
@@ -1229,7 +1272,7 @@
 
     goto :goto_1
 
-    .line 204
+    .line 205
     :cond_2
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1253,7 +1296,7 @@
 
     goto :goto_2
 
-    .line 215
+    .line 216
     .end local v0           #res:Lcom/cnlaunch/x431pro/module/user/model/UserBaseInfoResponse;
     .end local v1           #sb:Ljava/lang/StringBuilder;
     :sswitch_1
@@ -1263,7 +1306,7 @@
 
     goto/16 :goto_0
 
-    .line 190
+    .line 191
     :sswitch_data_0
     .sparse-switch
         0x838 -> :sswitch_0

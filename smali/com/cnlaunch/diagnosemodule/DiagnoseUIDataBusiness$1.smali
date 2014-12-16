@@ -35,7 +35,7 @@
 
     iput-object p2, p0, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness$1;->val$ui_type:Ljava/lang/String;
 
-    .line 214
+    .line 254
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,7 +49,7 @@
     .parameter "which"
 
     .prologue
-    .line 217
+    .line 257
     iget-object v0, p0, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness$1;->this$0:Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;
 
     iget-object v1, p0, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness$1;->val$ui_type:Ljava/lang/String;
@@ -59,6 +59,6 @@
     #calls: Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;->SendFeedbackMessage(Ljava/lang/String;Ljava/lang/String;)V
     invoke-static {v0, v1, v2}, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;->access$1(Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 218
+    .line 258
     return-void
 .end method

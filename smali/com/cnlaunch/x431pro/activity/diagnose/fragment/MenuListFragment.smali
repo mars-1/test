@@ -72,7 +72,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d018d
+    const v1, 0x7f0c018d
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -156,7 +156,7 @@
 
     .prologue
     .line 102
-    const v0, 0x7f070502
+    const v0, 0x7f070504
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/MenuListFragment;->getString(I)Ljava/lang/String;
 

@@ -15,29 +15,29 @@
 
 
 # static fields
-.field public static final bluetooth_close_connected:I = 0x7f070000
+.field public static final bluetooth_close_connected:I = 0x7f07009e
 
-.field public static final bluetooth_connect_fail:I = 0x7f070005
+.field public static final bluetooth_connect_fail:I = 0x7f0700a3
 
-.field public static final bluetooth_connect_lost:I = 0x7f070006
+.field public static final bluetooth_connect_lost:I = 0x7f0700a4
 
-.field public static final bluetooth_connect_success:I = 0x7f070007
+.field public static final bluetooth_connect_success:I = 0x7f0700a5
 
-.field public static final bluetooth_connected:I = 0x7f070003
+.field public static final bluetooth_connected:I = 0x7f0700a1
 
-.field public static final bluetooth_connecting:I = 0x7f070001
+.field public static final bluetooth_connecting:I = 0x7f07009f
 
-.field public static final bluetooth_no_connected:I = 0x7f070004
+.field public static final bluetooth_no_connected:I = 0x7f0700a2
 
-.field public static final bluetooth_no_search_device:I = 0x7f070002
+.field public static final bluetooth_no_search_device:I = 0x7f0700a0
 
-.field public static final bluetooth_reconnect:I = 0x7f070008
+.field public static final bluetooth_reconnect:I = 0x7f0700a6
 
-.field public static final bluetooth_scan_end:I = 0x7f07000b
+.field public static final bluetooth_scan_end:I = 0x7f0700a9
 
-.field public static final bluetooth_scan_start:I = 0x7f070009
+.field public static final bluetooth_scan_start:I = 0x7f0700a7
 
-.field public static final bluetooth_scaning:I = 0x7f07000a
+.field public static final bluetooth_scaning:I = 0x7f0700a8
 
 
 # direct methods

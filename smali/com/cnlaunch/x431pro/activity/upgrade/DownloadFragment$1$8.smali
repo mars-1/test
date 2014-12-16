@@ -28,7 +28,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$8;->this$1:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;
 
-    .line 429
+    .line 422
     invoke-direct {p0, p2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -40,10 +40,10 @@
     .locals 2
 
     .prologue
-    .line 432
+    .line 425
     invoke-super {p0}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->dismiss()V
 
-    .line 433
+    .line 426
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$8;->this$1:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -56,6 +56,6 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mIsWaiting:Z
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->access$9(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;Z)V
 
-    .line 434
+    .line 427
     return-void
 .end method

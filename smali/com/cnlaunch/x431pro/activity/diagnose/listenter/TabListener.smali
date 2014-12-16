@@ -190,7 +190,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/TabListener;->mFragment:Landroid/app/Fragment;
 
     .line 43
-    const v0, 0x7f0d014e
+    const v0, 0x7f0c014e
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/TabListener;->mFragment:Landroid/app/Fragment;
 

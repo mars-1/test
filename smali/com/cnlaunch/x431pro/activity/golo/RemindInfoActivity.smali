@@ -458,7 +458,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0706c4
+    const v2, 0x7f0706c6
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -664,7 +664,7 @@
     .locals 8
 
     .prologue
-    const v7, 0x7f0d0041
+    const v7, 0x7f0c0041
 
     .line 150
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->btn_left:Landroid/widget/ImageButton;
@@ -687,7 +687,7 @@
     .line 152
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->btn_left:Landroid/widget/ImageButton;
 
-    const v6, 0x7f0204d4
+    const v6, 0x7f0204d8
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageButton;->setImageResource(I)V
 
@@ -697,7 +697,7 @@
     invoke-virtual {v5, p0}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 154
-    const v5, 0x7f0d01f2
+    const v5, 0x7f0c01f5
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->findViewById(I)Landroid/view/View;
 
@@ -733,7 +733,7 @@
     invoke-virtual {v5, v6}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 200
-    const v5, 0x7f0d039b
+    const v5, 0x7f0c03b1
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->findViewById(I)Landroid/view/View;
 
@@ -751,7 +751,7 @@
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 202
-    const v5, 0x7f0d039d
+    const v5, 0x7f0c03b3
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->findViewById(I)Landroid/view/View;
 
@@ -778,7 +778,7 @@
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
     .line 205
-    const v5, 0x7f0d039e
+    const v5, 0x7f0c03b4
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->findViewById(I)Landroid/view/View;
 
@@ -794,7 +794,7 @@
     invoke-virtual {v5, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 207
-    const v5, 0x7f0d0419
+    const v5, 0x7f0c0437
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->findViewById(I)Landroid/view/View;
 
@@ -813,7 +813,7 @@
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->showHalfScreen()V
 
     .line 210
-    const v5, 0x7f0d039c
+    const v5, 0x7f0c03b2
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->findViewById(I)Landroid/view/View;
 
@@ -1015,7 +1015,7 @@
     .line 523
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->full:Landroid/widget/ImageView;
 
-    const v3, 0x7f020450
+    const v3, 0x7f020454
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -1079,7 +1079,7 @@
     .line 536
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->full:Landroid/widget/ImageView;
 
-    const v4, 0x7f02044f
+    const v4, 0x7f020453
 
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -1116,7 +1116,7 @@
     .line 509
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->zoom:Landroid/widget/ImageView;
 
-    const v1, 0x7f020452
+    const v1, 0x7f020456
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -1162,7 +1162,7 @@
     :goto_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->zoom:Landroid/widget/ImageView;
 
-    const v1, 0x7f020451
+    const v1, 0x7f020455
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -1408,7 +1408,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f070024
+    const v2, 0x7f07000b
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1462,7 +1462,7 @@
 
     .line 475
     .local v0, id:I
-    const v1, 0x7f0d039d
+    const v1, 0x7f0c03b3
 
     if-ne v0, v1, :cond_2
 
@@ -1491,7 +1491,7 @@
 
     .line 481
     :cond_2
-    const v1, 0x7f0d039e
+    const v1, 0x7f0c03b4
 
     if-ne v0, v1, :cond_4
 
@@ -1517,7 +1517,7 @@
 
     .line 487
     :cond_4
-    const v1, 0x7f0d0289
+    const v1, 0x7f0c028d
 
     if-ne v0, v1, :cond_0
 
@@ -1579,7 +1579,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 122
-    const v1, 0x7f030170
+    const v1, 0x7f030173
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->setContentView(I)V
 
@@ -1941,7 +1941,7 @@
     :goto_2
     new-instance v3, Ljava/lang/StringBuilder;
 
-    const v5, 0x7f0706c7
+    const v5, 0x7f0706c9
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->getString(I)Ljava/lang/String;
 

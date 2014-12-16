@@ -229,7 +229,7 @@
     .line 77
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SelectCarVerAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SelectCarVerAdapter$ViewHolder;
 
-    const v0, 0x7f0d01cd
+    const v0, 0x7f0c01cd
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -242,7 +242,7 @@
     .line 78
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SelectCarVerAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SelectCarVerAdapter$ViewHolder;
 
-    const v0, 0x7f0d01ce
+    const v0, 0x7f0c01ce
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -255,7 +255,7 @@
     .line 79
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SelectCarVerAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SelectCarVerAdapter$ViewHolder;
 
-    const v0, 0x7f0d01c3
+    const v0, 0x7f0c01c3
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -520,7 +520,7 @@
     .line 167
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/SerialNumberFragment;->tv_local_serial_number:Landroid/widget/TextView;
 
-    const v2, 0x7f0706d6
+    const v2, 0x7f0706d8
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -556,7 +556,7 @@
     .line 173
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/SerialNumberFragment;->tv_local_serial_number:Landroid/widget/TextView;
 
-    const v2, 0x7f0705bd
+    const v2, 0x7f0705bf
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -681,7 +681,7 @@
     .line 176
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/SerialNumberFragment;->tv_user_serial_number:Landroid/widget/TextView;
 
-    const v2, 0x7f0705be
+    const v2, 0x7f0705c0
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -693,7 +693,7 @@
     .line 179
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/SerialNumberFragment;->tv_local_serial_number:Landroid/widget/TextView;
 
-    const v2, 0x7f0705bf
+    const v2, 0x7f0705c1
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -705,7 +705,7 @@
 
     .prologue
     .line 118
-    const v0, 0x7f0705ba
+    const v0, 0x7f0705bc
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/mine/SerialNumberFragment;->setTitle(I)V
 
@@ -716,7 +716,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -732,7 +732,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d037c
+    const v1, 0x7f0c0393
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -752,7 +752,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d037f
+    const v1, 0x7f0c0396
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -772,7 +772,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d037a
+    const v1, 0x7f0c0391
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -787,7 +787,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d037d
+    const v1, 0x7f0c0394
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1263,7 +1263,7 @@
 
     .prologue
     .line 111
-    const v0, 0x7f03013d
+    const v0, 0x7f03013f
 
     const/4 v1, 0x0
 
@@ -1374,7 +1374,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f07068c
+    const v3, 0x7f07068e
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1384,7 +1384,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0706e1
+    const v4, 0x7f0706e3
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1409,7 +1409,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0d037c
+    .packed-switch 0x7f0c0393
         :pswitch_1
         :pswitch_0
         :pswitch_0

@@ -130,7 +130,7 @@
     sput-object v0, Lcom/cnlaunch/newgolo/GoloConfig;->MINIDIAG_APP_ID:Ljava/lang/String;
 
     .line 68
-    const-string/jumbo v0, "3.00.005"
+    const-string/jumbo v0, "3.00.009"
 
     sput-object v0, Lcom/cnlaunch/newgolo/GoloConfig;->APP_VERSION:Ljava/lang/String;
 

@@ -518,6 +518,8 @@
 
 .field public static report_del_medical_report:Ljava/lang/String;
 
+.field public static report_pro_query_list_report:Ljava/lang/String;
+
 .field public static report_query:Ljava/lang/String;
 
 .field public static report_query_diagnostic:Ljava/lang/String;
@@ -2242,6 +2244,11 @@
     const-string/jumbo v0, "public_diag.processing"
 
     sput-object v0, Lcom/cnlaunch/framework/common/KeyConstant;->MY_REMOTE_USERS_PROCESSING:Ljava/lang/String;
+
+    .line 360
+    const-string/jumbo v0, "report.pro_query_list_report"
+
+    sput-object v0, Lcom/cnlaunch/framework/common/KeyConstant;->report_pro_query_list_report:Ljava/lang/String;
 
     return-void
 .end method

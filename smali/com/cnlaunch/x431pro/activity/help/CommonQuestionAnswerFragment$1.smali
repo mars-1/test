@@ -58,7 +58,7 @@
     .parameter "v"
 
     .prologue
-    const v4, 0x7f02012b
+    const v4, 0x7f02012c
 
     const/16 v3, 0x8
 
@@ -143,7 +143,7 @@
     .line 135
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/help/CommonQuestionAnswerFragment$1;->val$title:Landroid/widget/TextView;
 
-    const v1, 0x7f020480
+    const v1, 0x7f020484
 
     invoke-virtual {v0, v2, v2, v1, v2}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 

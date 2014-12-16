@@ -34,7 +34,7 @@
     .parameter
 
     .prologue
-    .line 713
+    .line 712
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +48,7 @@
     .parameter
 
     .prologue
-    .line 713
+    .line 712
     invoke-direct {p0, p1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick;-><init>(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;)V
 
     return-void
@@ -59,7 +59,7 @@
     .parameter
 
     .prologue
-    .line 713
+    .line 712
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     return-object v0
@@ -84,7 +84,7 @@
     .end annotation
 
     .prologue
-    .line 717
+    .line 716
     .local p1, arg0:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
     const-string/jumbo v3, "GoloFragment"
 
@@ -104,17 +104,17 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 718
+    .line 717
     if-lez p3, :cond_0
 
-    .line 719
+    .line 718
     add-int/lit8 p3, p3, -0x1
 
-    .line 721
+    .line 720
     :cond_0
     const/4 v2, 0x0
 
-    .line 722
+    .line 721
     .local v2, object:Ljava/lang/Object;
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -127,13 +127,13 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 723
+    .line 722
     new-instance v2, Ljava/lang/Object;
 
     .end local v2           #object:Ljava/lang/Object;
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
-    .line 724
+    .line 723
     .restart local v2       #object:Ljava/lang/Object;
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -148,7 +148,7 @@
 
     if-lez v3, :cond_2
 
-    .line 725
+    .line 724
     const-string/jumbo v3, "GoloFragment"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -178,7 +178,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 726
+    .line 725
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateRemoteList:Ljava/util/List;
@@ -190,7 +190,7 @@
 
     move-result-object v2
 
-    .line 730
+    .line 729
     :goto_0
     instance-of v3, v2, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
 
@@ -198,10 +198,10 @@
 
     move-object v1, v2
 
-    .line 731
+    .line 730
     check-cast v1, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
 
-    .line 732
+    .line 731
     .local v1, goloRemoteOrderInfo:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -214,19 +214,19 @@
 
     invoke-direct {v0, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 733
+    .line 732
     .local v0, builder:Landroid/app/AlertDialog$Builder;
-    const v3, 0x7f070748
+    const v3, 0x7f07074a
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 734
-    const v3, 0x7f070749
+    .line 733
+    const v3, 0x7f07074b
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    .line 735
-    const v3, 0x7f07074a
+    .line 734
+    const v3, 0x7f07074c
 
     new-instance v4, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick$1;
 
@@ -234,8 +234,8 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 748
-    const v3, 0x7f07074b
+    .line 747
+    const v3, 0x7f07074d
 
     new-instance v4, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick$2;
 
@@ -243,14 +243,14 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 758
+    .line 757
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v3
 
     invoke-virtual {v3}, Landroid/app/AlertDialog;->show()V
 
-    .line 761
+    .line 760
     .end local v0           #builder:Landroid/app/AlertDialog$Builder;
     .end local v1           #goloRemoteOrderInfo:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
     .end local v2           #object:Ljava/lang/Object;
@@ -259,7 +259,7 @@
 
     return v3
 
-    .line 728
+    .line 727
     .restart local v2       #object:Ljava/lang/Object;
     :cond_2
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;

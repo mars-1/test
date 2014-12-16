@@ -86,7 +86,7 @@
     const/4 v3, 0x1
 
     .line 57
-    const v0, 0x7f0705ab
+    const v0, 0x7f0705ad
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/mine/ChangeEmailFragment;->setTitle(I)V
 
@@ -97,7 +97,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -110,7 +110,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0087
+    const v1, 0x7f0c0087
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -125,7 +125,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0088
+    const v1, 0x7f0c0088
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -176,7 +176,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0706e6
+    const v2, 0x7f0706e8
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -434,7 +434,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0705da
+    const v2, 0x7f0705dc
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -457,7 +457,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0705e1
+    const v2, 0x7f0705e3
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -537,7 +537,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0705da
+    const v4, 0x7f0705dc
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -631,7 +631,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0705e2
+    const v4, 0x7f0705e4
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -649,7 +649,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0705e1
+    const v4, 0x7f0705e3
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

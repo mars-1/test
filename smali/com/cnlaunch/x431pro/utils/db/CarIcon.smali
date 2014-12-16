@@ -38,10 +38,10 @@
     .locals 0
 
     .prologue
-    .line 31
+    .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 32
+    .line 36
     return-void
 .end method
 
@@ -50,13 +50,13 @@
     .parameter "id"
 
     .prologue
-    .line 34
+    .line 38
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 35
+    .line 39
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->id:Ljava/lang/Long;
 
-    .line 36
+    .line 40
     return-void
 .end method
 
@@ -78,52 +78,52 @@
     .parameter "serialNo"
 
     .prologue
-    .line 38
+    .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 41
+    .line 45
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->id:Ljava/lang/Long;
 
-    .line 42
+    .line 46
     iput-object p2, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->softPackageId:Ljava/lang/String;
 
-    .line 43
+    .line 47
     iput-object p3, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->name:Ljava/lang/String;
 
-    .line 44
+    .line 48
     iput-object p4, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->name_zh:Ljava/lang/String;
 
-    .line 45
+    .line 49
     iput-object p5, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->icon:Ljava/lang/String;
 
-    .line 46
+    .line 50
     iput-object p6, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->areaId:Ljava/lang/String;
 
-    .line 47
+    .line 51
     iput-object p7, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->sname:Ljava/lang/String;
 
-    .line 48
+    .line 52
     iput-object p8, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->sname_zh:Ljava/lang/String;
 
-    .line 49
+    .line 53
     iput-object p9, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->maxversion:Ljava/lang/String;
 
-    .line 50
+    .line 54
     iput-object p10, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->versionlist:Ljava/lang/String;
 
-    .line 51
+    .line 55
     iput-object p11, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->isDownload:Ljava/lang/Boolean;
 
-    .line 52
+    .line 56
     iput-object p12, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->languageList:Ljava/lang/String;
 
-    .line 53
+    .line 57
     iput-object p13, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->vehiclePath:Ljava/lang/String;
 
-    .line 54
+    .line 58
     iput-object p14, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->serialNo:Ljava/lang/String;
 
-    .line 55
+    .line 59
     return-void
 .end method
 
@@ -133,7 +133,7 @@
     .locals 1
 
     .prologue
-    .line 119
+    .line 123
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->areaId:Ljava/lang/String;
 
     return-object v0
@@ -143,7 +143,7 @@
     .locals 1
 
     .prologue
-    .line 106
+    .line 110
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->icon:Ljava/lang/String;
 
     return-object v0
@@ -153,7 +153,7 @@
     .locals 1
 
     .prologue
-    .line 58
+    .line 62
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->id:Ljava/lang/Long;
 
     return-object v0
@@ -163,7 +163,7 @@
     .locals 1
 
     .prologue
-    .line 173
+    .line 177
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->isDownload:Ljava/lang/Boolean;
 
     return-object v0
@@ -173,7 +173,7 @@
     .locals 1
 
     .prologue
-    .line 181
+    .line 185
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->languageList:Ljava/lang/String;
 
     return-object v0
@@ -183,7 +183,7 @@
     .locals 1
 
     .prologue
-    .line 157
+    .line 161
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->maxversion:Ljava/lang/String;
 
     return-object v0
@@ -193,7 +193,7 @@
     .locals 1
 
     .prologue
-    .line 80
+    .line 84
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->name:Ljava/lang/String;
 
     return-object v0
@@ -203,7 +203,7 @@
     .locals 1
 
     .prologue
-    .line 93
+    .line 97
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->name_zh:Ljava/lang/String;
 
     return-object v0
@@ -213,7 +213,7 @@
     .locals 1
 
     .prologue
-    .line 197
+    .line 201
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->serialNo:Ljava/lang/String;
 
     return-object v0
@@ -223,7 +223,7 @@
     .locals 1
 
     .prologue
-    .line 132
+    .line 136
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->sname:Ljava/lang/String;
 
     return-object v0
@@ -233,7 +233,7 @@
     .locals 1
 
     .prologue
-    .line 145
+    .line 149
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->sname_zh:Ljava/lang/String;
 
     return-object v0
@@ -243,7 +243,7 @@
     .locals 1
 
     .prologue
-    .line 67
+    .line 71
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->softPackageId:Ljava/lang/String;
 
     return-object v0
@@ -253,7 +253,7 @@
     .locals 1
 
     .prologue
-    .line 189
+    .line 193
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->vehiclePath:Ljava/lang/String;
 
     return-object v0
@@ -263,10 +263,58 @@
     .locals 1
 
     .prologue
-    .line 165
+    .line 169
     iget-object v0, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->versionlist:Ljava/lang/String;
 
     return-object v0
+.end method
+
+.method public getZhShowName(Landroid/content/Context;)Ljava/lang/String;
+    .locals 4
+    .parameter "context"
+
+    .prologue
+    .line 209
+    const-string/jumbo v2, ""
+
+    .line 211
+    .local v2, zhShowName:Ljava/lang/String;
+    :try_start_0
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->name_zh:Ljava/lang/String;
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    .line 212
+    .local v1, zhNameRsId:I
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v2
+
+    .line 217
+    .end local v1           #zhNameRsId:I
+    :goto_0
+    return-object v2
+
+    .line 213
+    :catch_0
+    move-exception v0
+
+    .line 214
+    .local v0, e:Ljava/lang/NumberFormatException;
+    invoke-static {v0}, Lcom/cnlaunch/framework/utils/NLog;->e(Ljava/lang/Throwable;)V
+
+    .line 215
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->name_zh:Ljava/lang/String;
+
+    goto :goto_0
 .end method
 
 .method public setAreaId(Ljava/lang/String;)V
@@ -274,10 +322,10 @@
     .parameter "areaId"
 
     .prologue
-    .line 127
+    .line 131
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->areaId:Ljava/lang/String;
 
-    .line 128
+    .line 132
     return-void
 .end method
 
@@ -286,10 +334,10 @@
     .parameter "icon"
 
     .prologue
-    .line 114
+    .line 118
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->icon:Ljava/lang/String;
 
-    .line 115
+    .line 119
     return-void
 .end method
 
@@ -298,10 +346,10 @@
     .parameter "id"
 
     .prologue
-    .line 62
+    .line 66
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->id:Ljava/lang/Long;
 
-    .line 63
+    .line 67
     return-void
 .end method
 
@@ -310,10 +358,10 @@
     .parameter "isDownload"
 
     .prologue
-    .line 177
+    .line 181
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->isDownload:Ljava/lang/Boolean;
 
-    .line 178
+    .line 182
     return-void
 .end method
 
@@ -322,10 +370,10 @@
     .parameter "languageList"
 
     .prologue
-    .line 185
+    .line 189
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->languageList:Ljava/lang/String;
 
-    .line 186
+    .line 190
     return-void
 .end method
 
@@ -334,10 +382,10 @@
     .parameter "maxversion"
 
     .prologue
-    .line 161
+    .line 165
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->maxversion:Ljava/lang/String;
 
-    .line 162
+    .line 166
     return-void
 .end method
 
@@ -346,10 +394,10 @@
     .parameter "name"
 
     .prologue
-    .line 88
+    .line 92
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->name:Ljava/lang/String;
 
-    .line 89
+    .line 93
     return-void
 .end method
 
@@ -358,10 +406,10 @@
     .parameter "name_zh"
 
     .prologue
-    .line 101
+    .line 105
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->name_zh:Ljava/lang/String;
 
-    .line 102
+    .line 106
     return-void
 .end method
 
@@ -370,10 +418,10 @@
     .parameter "serialNo"
 
     .prologue
-    .line 201
+    .line 205
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->serialNo:Ljava/lang/String;
 
-    .line 202
+    .line 206
     return-void
 .end method
 
@@ -382,10 +430,10 @@
     .parameter "sname"
 
     .prologue
-    .line 140
+    .line 144
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->sname:Ljava/lang/String;
 
-    .line 141
+    .line 145
     return-void
 .end method
 
@@ -394,10 +442,10 @@
     .parameter "sname_zh"
 
     .prologue
-    .line 153
+    .line 157
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->sname_zh:Ljava/lang/String;
 
-    .line 154
+    .line 158
     return-void
 .end method
 
@@ -406,10 +454,10 @@
     .parameter "softPackageId"
 
     .prologue
-    .line 75
+    .line 79
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->softPackageId:Ljava/lang/String;
 
-    .line 76
+    .line 80
     return-void
 .end method
 
@@ -418,10 +466,10 @@
     .parameter "vehiclePath"
 
     .prologue
-    .line 193
+    .line 197
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->vehiclePath:Ljava/lang/String;
 
-    .line 194
+    .line 198
     return-void
 .end method
 
@@ -430,10 +478,10 @@
     .parameter "versionlist"
 
     .prologue
-    .line 169
+    .line 173
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->versionlist:Ljava/lang/String;
 
-    .line 170
+    .line 174
     return-void
 .end method
 
@@ -441,7 +489,7 @@
     .locals 2
 
     .prologue
-    .line 206
+    .line 221
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "CarIcon [id="
@@ -466,7 +514,7 @@
 
     move-result-object v0
 
-    .line 207
+    .line 222
     const-string/jumbo v1, ", name="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -503,7 +551,7 @@
 
     move-result-object v0
 
-    .line 208
+    .line 223
     const-string/jumbo v1, ", areaId="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -534,7 +582,7 @@
 
     move-result-object v0
 
-    .line 209
+    .line 224
     iget-object v1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->sname_zh:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -559,7 +607,7 @@
 
     move-result-object v0
 
-    .line 210
+    .line 225
     iget-object v1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->versionlist:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -578,7 +626,7 @@
 
     move-result-object v0
 
-    .line 211
+    .line 226
     const-string/jumbo v1, ", languageList="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -597,7 +645,7 @@
 
     move-result-object v0
 
-    .line 212
+    .line 227
     iget-object v1, p0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->vehiclePath:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -622,7 +670,7 @@
 
     move-result-object v0
 
-    .line 206
+    .line 221
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0

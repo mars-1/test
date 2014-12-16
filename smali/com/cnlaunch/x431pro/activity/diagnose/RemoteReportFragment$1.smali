@@ -40,7 +40,7 @@
     .parameter "msg"
 
     .prologue
-    const v9, 0x7f0706f8
+    const v9, 0x7f0706fa
 
     const/16 v8, 0x11
 
@@ -123,7 +123,7 @@
 
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/diagnose/RemoteReportFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/RemoteReportFragment;
 
-    const v9, 0x7f070706
+    const v9, 0x7f070708
 
     invoke-virtual {v8, v9}, Lcom/cnlaunch/x431pro/activity/diagnose/RemoteReportFragment;->getString(I)Ljava/lang/String;
 
@@ -161,7 +161,7 @@
 
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/diagnose/RemoteReportFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/RemoteReportFragment;
 
-    const v9, 0x7f070707
+    const v9, 0x7f070709
 
     invoke-virtual {v8, v9}, Lcom/cnlaunch/x431pro/activity/diagnose/RemoteReportFragment;->getString(I)Ljava/lang/String;
 
@@ -199,7 +199,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f07070a
+    const v7, 0x7f07070c
 
     invoke-static {v6, v7, v8}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
@@ -214,7 +214,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f07070b
+    const v7, 0x7f07070d
 
     invoke-static {v6, v7, v8}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
@@ -229,7 +229,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f07070c
+    const v7, 0x7f07070e
 
     invoke-static {v6, v7, v8}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
@@ -331,7 +331,7 @@
 
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/diagnose/RemoteReportFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/RemoteReportFragment;
 
-    const v8, 0x7f0706f8
+    const v8, 0x7f0706fa
 
     invoke-virtual {v7, v8}, Lcom/cnlaunch/x431pro/activity/diagnose/RemoteReportFragment;->getString(I)Ljava/lang/String;
 

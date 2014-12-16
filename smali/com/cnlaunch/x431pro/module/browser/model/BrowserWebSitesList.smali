@@ -25,7 +25,7 @@
     .locals 3
 
     .prologue
-    const v2, 0x7f02061a
+    const v2, 0x7f02061e
 
     .line 16
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/module/base/BaseModel;-><init>()V

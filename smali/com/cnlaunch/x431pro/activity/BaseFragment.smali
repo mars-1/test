@@ -145,7 +145,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d028a
+    const v1, 0x7f0c028e
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -160,7 +160,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0289
+    const v1, 0x7f0c028d
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -175,7 +175,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d028b
+    const v1, 0x7f0c028f
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -190,7 +190,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d004d
+    const v1, 0x7f0c004d
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -290,7 +290,7 @@
     .parameter "result"
 
     .prologue
-    const v1, 0x7f0704de
+    const v1, 0x7f0704e0
 
     .line 125
     sparse-switch p2, :sswitch_data_0
@@ -309,7 +309,7 @@
     .line 129
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/BaseFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0704dd
+    const v1, 0x7f0704df
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -472,7 +472,7 @@
 
     .line 257
     .local v1, ft:Landroid/app/FragmentTransaction;
-    const v2, 0x7f0d0052
+    const v2, 0x7f0c0052
 
     invoke-virtual {v1, v2, v0, p1}, Landroid/app/FragmentTransaction;->replace(ILandroid/app/Fragment;Ljava/lang/String;)Landroid/app/FragmentTransaction;
 
@@ -566,7 +566,7 @@
     .line 316
     :cond_1
     :goto_0
-    const v2, 0x7f0d0052
+    const v2, 0x7f0c0052
 
     invoke-virtual {v1, v2, v0, p1}, Landroid/app/FragmentTransaction;->replace(ILandroid/app/Fragment;Ljava/lang/String;)Landroid/app/FragmentTransaction;
 

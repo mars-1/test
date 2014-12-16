@@ -201,7 +201,7 @@
 
     .prologue
     .line 100
-    const v0, 0x7f0d03cf
+    const v0, 0x7f0c03e5
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/pay/BuyMethodActivity;->findViewById(I)Landroid/view/View;
 
@@ -217,7 +217,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 102
-    const v0, 0x7f0d03d0
+    const v0, 0x7f0c03e6
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/pay/BuyMethodActivity;->findViewById(I)Landroid/view/View;
 
@@ -233,7 +233,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 104
-    const v0, 0x7f0d03d1
+    const v0, 0x7f0c03e7
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/pay/BuyMethodActivity;->findViewById(I)Landroid/view/View;
 
@@ -249,7 +249,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 106
-    const v0, 0x7f0d03d2
+    const v0, 0x7f0c03e8
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/pay/BuyMethodActivity;->findViewById(I)Landroid/view/View;
 
@@ -454,7 +454,7 @@
     :pswitch_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/pay/BuyMethodActivity;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0704d9
+    const v1, 0x7f0704db
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -578,7 +578,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0d03cf
+    .packed-switch 0x7f0c03e5
         :pswitch_0
         :pswitch_1
         :pswitch_2
@@ -594,7 +594,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 74
-    const v2, 0x7f03015a
+    const v2, 0x7f03015c
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/pay/BuyMethodActivity;->setContentView(I)V
 

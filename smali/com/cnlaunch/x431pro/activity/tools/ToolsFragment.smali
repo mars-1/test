@@ -150,7 +150,7 @@
 
     .line 93
     .local v0, inflater:Landroid/view/LayoutInflater;
-    const v1, 0x7f0300f9
+    const v1, 0x7f0300fb
 
     .line 94
     const/4 v2, 0x0
@@ -214,7 +214,7 @@
     move-result-object v1
 
     .line 108
-    const v2, 0x7f0d04c1
+    const v2, 0x7f0c04da
 
     .line 107
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
@@ -271,7 +271,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 58
-    const v1, 0x7f0704ec
+    const v1, 0x7f0704ee
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/tools/ToolsFragment;->setTitle(I)V
 
@@ -365,7 +365,7 @@
 
     .prologue
     .line 88
-    const v0, 0x7f0301a9
+    const v0, 0x7f0301ac
 
     const/4 v1, 0x0
 

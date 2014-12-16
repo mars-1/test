@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">Diagnosebericht des Fahrzeugs</string>
+    <string name="print_success">Drucken war erfolgreich!</string>
+    <string name="print_jam">Papierstau</string>
+    <string name="print_will_nopaper">Der Drucker wird bald kein Papier haben</string>
+    <string name="print_no_paper">Der Drucker hat kein Papier</string>
+    <string name="print_actuator_fault">Drucker defekt!</string>
+    <string name="print_head_overheating">Der Drucker ist überhitzt</string>
+    <string name="print_connect_printer">Bitte schließen Sie zuerst Ihren Wi-Fi Drucker an</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">Bestätigen</string>
     <string name="bluetooth_close_connected">Trennung:</string>
     <string name="bluetooth_connecting">Verbindung</string>
     <string name="bluetooth_no_search_device">Der Bluetooth-Anschluss wurde nicht erkannt, bitte prüfen Sie, ob der Anschluss eingeschaltet wird und aktualisieren Sie Ihre Suche</string>
@@ -15,18 +27,6 @@
     <string name="no">Nein</string>
     <string name="tv_unconnect">Nicht verbunden</string>
     <string name="tv_unpair">Nicht gekoppelt</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">Diagnosebericht des Fahrzeugs</string>
-    <string name="print_success">Drucken war erfolgreich!</string>
-    <string name="print_jam">Papierstau</string>
-    <string name="print_will_nopaper">Der Drucker wird bald kein Papier haben</string>
-    <string name="print_no_paper">Der Drucker hat kein Papier</string>
-    <string name="print_actuator_fault">Drucker defekt!</string>
-    <string name="print_head_overheating">Der Drucker ist überhitzt</string>
-    <string name="print_connect_printer">Bitte schließen Sie zuerst Ihren Wi-Fi Drucker an</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">Bestätigen</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

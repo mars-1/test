@@ -35,7 +35,7 @@
 
     iput-object p2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->val$data:Ljava/lang/Object;
 
-    .line 399
+    .line 398
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,12 +47,12 @@
     .locals 5
 
     .prologue
-    .line 403
+    .line 402
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->val$data:Ljava/lang/Object;
 
     check-cast v1, Lorg/json/JSONObject;
 
-    .line 405
+    .line 404
     .local v1, msg:Lorg/json/JSONObject;
     :try_start_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
@@ -71,7 +71,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_id:Ljava/lang/String;
     invoke-static {v2, v3}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$27(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Ljava/lang/String;)V
 
-    .line 406
+    .line 405
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -90,7 +90,7 @@
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 410
+    .line 409
     :goto_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
@@ -130,7 +130,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 411
+    .line 410
     :cond_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
@@ -154,7 +154,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_name:Ljava/lang/String;
     invoke-static {v2, v3}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$28(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Ljava/lang/String;)V
 
-    .line 413
+    .line 412
     :cond_1
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
@@ -194,7 +194,7 @@
 
     if-nez v2, :cond_3
 
-    .line 414
+    .line 413
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -227,7 +227,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 415
+    .line 414
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -260,7 +260,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 420
+    .line 419
     :goto_1
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
@@ -300,7 +300,7 @@
 
     if-nez v2, :cond_4
 
-    .line 421
+    .line 420
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -315,7 +315,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 422
+    .line 421
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -326,7 +326,7 @@
     #calls: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showProgressDialog()V
     invoke-static {v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$30(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;)V
 
-    .line 423
+    .line 422
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -338,7 +338,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V
 
-    .line 424
+    .line 423
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -350,7 +350,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V
 
-    .line 425
+    .line 424
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -362,7 +362,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V
 
-    .line 430
+    .line 429
     :cond_2
     :goto_2
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
@@ -375,20 +375,20 @@
     #calls: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showSelectView()V
     invoke-static {v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$24(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;)V
 
-    .line 431
+    .line 430
     return-void
 
-    .line 407
+    .line 406
     :catch_0
     move-exception v0
 
-    .line 408
+    .line 407
     .local v0, e:Lorg/json/JSONException;
     invoke-virtual {v0}, Lorg/json/JSONException;->printStackTrace()V
 
     goto/16 :goto_0
 
-    .line 417
+    .line 416
     .end local v0           #e:Lorg/json/JSONException;
     :cond_3
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
@@ -413,7 +413,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 418
+    .line 417
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -438,7 +438,7 @@
 
     goto/16 :goto_1
 
-    .line 428
+    .line 427
     :cond_4
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 

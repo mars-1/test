@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;
 
-    .line 188
+    .line 225
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +43,7 @@
     .parameter "v"
 
     .prologue
-    .line 192
+    .line 229
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
@@ -54,7 +54,7 @@
 
     invoke-interface {v0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->showRemoteDialog(I)V
 
-    .line 193
+    .line 230
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
@@ -89,6 +89,21 @@
 
     invoke-interface {v0, v1, v2, v3}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->SendFeedbackMessage(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 194
+    .line 231
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;
+
+    invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->setSpeciaFunction(Z)V
+
+    .line 232
     return-void
 .end method

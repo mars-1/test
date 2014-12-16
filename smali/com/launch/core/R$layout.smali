@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final layout_toast:I = 0x7f0300f8
+.field public static final layout_toast:I = 0x7f0300fa
 
-.field public static final remote_service_binding:I = 0x7f030175
+.field public static final remote_service_binding:I = 0x7f030178
 
 
 # direct methods

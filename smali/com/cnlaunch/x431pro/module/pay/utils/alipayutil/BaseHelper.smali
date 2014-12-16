@@ -225,7 +225,7 @@
     invoke-virtual {v0, p2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 63
-    const v1, 0x7f0704d4
+    const v1, 0x7f0704d6
 
     const/4 v2, 0x0
 

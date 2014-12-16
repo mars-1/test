@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final ic_launcher:I = 0x7f02023a
+.field public static final ic_launcher:I = 0x7f02023b
 
-.field public static final info:I = 0x7f020394
+.field public static final info:I = 0x7f020398
 
-.field public static final infoicon:I = 0x7f020395
+.field public static final infoicon:I = 0x7f020399
 
 
 # direct methods

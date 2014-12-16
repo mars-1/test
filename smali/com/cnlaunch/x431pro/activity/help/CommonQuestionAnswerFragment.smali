@@ -141,7 +141,7 @@
 
     .prologue
     .line 57
-    const v0, 0x7f0704ef
+    const v0, 0x7f0704f1
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/help/CommonQuestionAnswerFragment;->setTitle(I)V
 
@@ -150,7 +150,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d00ba
+    const v1, 0x7f0c00ba
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -165,7 +165,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d00b7
+    const v1, 0x7f0c00b7
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -180,7 +180,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d00b8
+    const v1, 0x7f0c00b8
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -280,7 +280,7 @@
 
     .line 72
     :pswitch_data_0
-    .packed-switch 0x7f0d00b7
+    .packed-switch 0x7f0c00b7
         :pswitch_0
     .end packed-switch
 .end method
@@ -410,7 +410,7 @@
 
     .line 107
     .local v9, viewItem:Landroid/view/View;
-    const v10, 0x7f0d021d
+    const v10, 0x7f0c0220
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -420,7 +420,7 @@
 
     .line 108
     .local v4, ll2:Landroid/widget/LinearLayout;
-    const v10, 0x7f0d021e
+    const v10, 0x7f0c0221
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -449,7 +449,7 @@
     invoke-virtual {v3, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 111
-    const v10, 0x7f0d021f
+    const v10, 0x7f0c0222
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -496,7 +496,7 @@
 
     const/4 v11, 0x0
 
-    const v12, 0x7f020480
+    const v12, 0x7f020484
 
     const/4 v13, 0x0
 
@@ -537,7 +537,7 @@
 
     const/4 v11, 0x0
 
-    const v12, 0x7f02012b
+    const v12, 0x7f02012c
 
     const/4 v13, 0x0
 

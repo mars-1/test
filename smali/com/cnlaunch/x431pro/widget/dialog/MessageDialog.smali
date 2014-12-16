@@ -312,7 +312,7 @@
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setCancelable(Z)V
 
     .line 150
-    const v0, 0x7f070044
+    const v0, 0x7f07002b
 
     const/4 v1, 0x0
 
@@ -372,7 +372,7 @@
     invoke-virtual {p0, p3}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setCancelable(Z)V
 
     .line 196
-    const v0, 0x7f070044
+    const v0, 0x7f07002b
 
     const/4 v1, 0x1
 
@@ -405,7 +405,7 @@
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setCancelable(Z)V
 
     .line 166
-    const v0, 0x7f070044
+    const v0, 0x7f07002b
 
     const/4 v1, 0x0
 
@@ -435,7 +435,7 @@
     invoke-virtual {p0, p3}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setCancelable(Z)V
 
     .line 181
-    const v0, 0x7f070044
+    const v0, 0x7f07002b
 
     const/4 v1, 0x1
 

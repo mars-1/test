@@ -209,7 +209,7 @@
     .parameter "context"
 
     .prologue
-    const v10, 0x7f0c00cc
+    const v10, 0x7f0b00cc
 
     .line 55
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -234,7 +234,7 @@
 
     .line 60
     .local v1, containerHeight:I
-    const v8, 0x7f0c00a4
+    const v8, 0x7f0b00a4
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -242,7 +242,7 @@
 
     .line 61
     .local v6, itemWidth:I
-    const v8, 0x7f0c00a5
+    const v8, 0x7f0b00a5
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -328,26 +328,26 @@
     .line 91
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/GridGraphPage;->mGridView:Landroid/widget/GridView;
 
-    const v9, 0x7f090017
+    const v9, 0x7f0d0017
 
     invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getInteger(I)I
 
     move-result v9
 
-    const v10, 0x7f090018
+    const v10, 0x7f0d0018
 
     invoke-virtual {v7, v10}, Landroid/content/res/Resources;->getInteger(I)I
 
     move-result v10
 
-    const v11, 0x7f090019
+    const v11, 0x7f0d0019
 
     invoke-virtual {v7, v11}, Landroid/content/res/Resources;->getInteger(I)I
 
     move-result v11
 
     .line 92
-    const v12, 0x7f09001a
+    const v12, 0x7f0d001a
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -359,7 +359,7 @@
     .line 93
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/GridGraphPage;->mGridView:Landroid/widget/GridView;
 
-    const v9, 0x7f090015
+    const v9, 0x7f0d0015
 
     invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -370,7 +370,7 @@
     .line 94
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/GridGraphPage;->mGridView:Landroid/widget/GridView;
 
-    const v9, 0x7f090016
+    const v9, 0x7f0d0016
 
     invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getInteger(I)I
 

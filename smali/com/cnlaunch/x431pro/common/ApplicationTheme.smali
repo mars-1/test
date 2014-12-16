@@ -31,13 +31,13 @@
     .parameter "type"
 
     .prologue
-    const v0, 0x7f0a00c4
+    const v0, 0x7f0800c4
 
     .line 70
     packed-switch p0, :pswitch_data_0
 
     .line 78
-    const v0, 0x7f0a00c3
+    const v0, 0x7f0800c3
 
     :goto_0
     :pswitch_0
@@ -45,7 +45,7 @@
 
     .line 76
     :pswitch_1
-    const v0, 0x7f0a00c5
+    const v0, 0x7f0800c5
 
     goto :goto_0
 
@@ -63,13 +63,13 @@
     .parameter "type"
 
     .prologue
-    const v0, 0x7f0a00c0
+    const v0, 0x7f0800c0
 
     .line 53
     packed-switch p0, :pswitch_data_0
 
     .line 61
-    const v0, 0x7f0a00bd
+    const v0, 0x7f0800bd
 
     :goto_0
     :pswitch_0
@@ -77,7 +77,7 @@
 
     .line 59
     :pswitch_1
-    const v0, 0x7f0a00c2
+    const v0, 0x7f0800c2
 
     goto :goto_0
 
@@ -95,7 +95,7 @@
     .parameter "mContext"
 
     .prologue
-    const v1, 0x7f0300f5
+    const v1, 0x7f0300f7
 
     .line 91
     invoke-static {p0}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -115,7 +115,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 98
-    const v1, 0x7f0300f6
+    const v1, 0x7f0300f8
 
     :pswitch_0
     return v1
@@ -137,26 +137,26 @@
     packed-switch p0, :pswitch_data_0
 
     .line 48
-    const v0, 0x7f0a00bc
+    const v0, 0x7f0800bc
 
     :goto_0
     return v0
 
     .line 42
     :pswitch_0
-    const v0, 0x7f0a00be
+    const v0, 0x7f0800be
 
     goto :goto_0
 
     .line 44
     :pswitch_1
-    const v0, 0x7f0a00bf
+    const v0, 0x7f0800bf
 
     goto :goto_0
 
     .line 46
     :pswitch_2
-    const v0, 0x7f0a00c1
+    const v0, 0x7f0800c1
 
     goto :goto_0
 

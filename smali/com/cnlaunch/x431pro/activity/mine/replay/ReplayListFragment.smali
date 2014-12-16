@@ -3,9 +3,9 @@
 .source "ReplayListFragment.java"
 
 # interfaces
+.implements Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 .implements Landroid/widget/AdapterView$OnItemClickListener;
 .implements Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelector;
-.implements Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
 
 # annotations
@@ -346,7 +346,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09000c
+    const v3, 0x7f0d000c
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -399,7 +399,7 @@
 
     move-result-object v2
 
-    const v5, 0x7f0d00ef
+    const v5, 0x7f0c00ef
 
     invoke-virtual {v2, v5}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -459,7 +459,7 @@
 
     move-result-object v2
 
-    const v4, 0x7f0d01d6
+    const v4, 0x7f0c01d9
 
     invoke-virtual {v2, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -474,7 +474,7 @@
 
     move-result-object v2
 
-    const v4, 0x7f0d00eb
+    const v4, 0x7f0c00eb
 
     invoke-virtual {v2, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -509,7 +509,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0151
+    const v3, 0x7f0c0151
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -896,7 +896,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01d6
+    const v1, 0x7f0c01d9
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 2461
+    .line 2463
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
     .parameter
 
     .prologue
-    .line 2461
+    .line 2463
     invoke-direct {p0, p1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;-><init>(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;)V
 
     return-void
@@ -50,7 +50,7 @@
     .locals 2
 
     .prologue
-    .line 2463
+    .line 2465
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
@@ -62,7 +62,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 2464
+    .line 2466
     return-void
 .end method
 
@@ -70,7 +70,7 @@
     .locals 2
 
     .prologue
-    .line 2467
+    .line 2469
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
@@ -82,6 +82,6 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 2468
+    .line 2470
     return-void
 .end method

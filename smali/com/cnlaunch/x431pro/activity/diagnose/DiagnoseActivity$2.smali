@@ -18,12 +18,23 @@
 
 
 # instance fields
+.field mTitleList:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList",
+            "<",
+            "Lcom/cnlaunch/diagnosemodule/bean/BasicSpeciaFunctionBean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field final synthetic this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
 
 # direct methods
 .method constructor <init>(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
-    .locals 0
+    .locals 1
     .parameter
 
     .prologue
@@ -32,6 +43,13 @@
 
     .line 268
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 354
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->mTitleList:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -210,7 +228,7 @@
     .parameter "data"
 
     .prologue
-    .line 396
+    .line 399
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mUpdateCallback:Lcom/cnlaunch/x431pro/activity/diagnose/listenter/OnDiagnoseDataUpdateListenter;
@@ -220,22 +238,22 @@
 
     if-nez v2, :cond_0
 
-    .line 397
+    .line 400
     new-instance v0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/AgingWindowFragment;
 
     invoke-direct {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/AgingWindowFragment;-><init>()V
 
-    .line 398
+    .line 401
     .local v0, argingWindowFragment:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/AgingWindowFragment;
     invoke-static {p2}, Lcom/cnlaunch/x431pro/utils/diagnose/FragmentBundleUtils;->getArgingWindowBundle(Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object v1
 
-    .line 399
+    .line 402
     .local v1, bundle:Landroid/os/Bundle;
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/AgingWindowFragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 400
+    .line 403
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     const/4 v3, 0x0
@@ -244,13 +262,13 @@
 
     invoke-virtual {v2, v0, v3, v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->addFragmentStack(Landroid/app/Fragment;Ljava/lang/String;Z)V
 
-    .line 404
+    .line 407
     .end local v0           #argingWindowFragment:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/AgingWindowFragment;
     .end local v1           #bundle:Landroid/os/Bundle;
     :goto_0
     return-void
 
-    .line 402
+    .line 405
     :cond_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -284,7 +302,7 @@
     .end annotation
 
     .prologue
-    .line 387
+    .line 390
     .local p4, combineMenuList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicCombineMenuBean;>;"
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -294,22 +312,22 @@
 
     invoke-virtual {v2, p2}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->setSubTitle(Ljava/lang/String;)V
 
-    .line 388
+    .line 391
     new-instance v1, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/CombineMenuFragment;
 
     invoke-direct {v1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/CombineMenuFragment;-><init>()V
 
-    .line 389
+    .line 392
     .local v1, combineMenuFragment:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/CombineMenuFragment;
     invoke-static {p2, p3, p4}, Lcom/cnlaunch/x431pro/utils/diagnose/FragmentBundleUtils;->getCombineMenuBundle(Ljava/lang/String;ILjava/util/ArrayList;)Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 390
+    .line 393
     .local v0, bundle:Landroid/os/Bundle;
     invoke-virtual {v1, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/CombineMenuFragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 391
+    .line 394
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     const/4 v3, 0x0
@@ -318,7 +336,7 @@
 
     invoke-virtual {v2, v1, v3, v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->addFragmentStack(Landroid/app/Fragment;Ljava/lang/String;Z)V
 
-    .line 392
+    .line 395
     return-void
 .end method
 
@@ -786,12 +804,12 @@
     .parameter "ratio"
 
     .prologue
-    .line 373
+    .line 376
     invoke-static {p1, p2, p3, p4}, Lcom/cnlaunch/x431pro/utils/diagnose/FragmentBundleUtils;->getMessageBoxBundle(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 374
+    .line 377
     .local v0, bundle:Landroid/os/Bundle;
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -802,7 +820,7 @@
 
     if-nez v1, :cond_0
 
-    .line 375
+    .line 378
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     new-instance v2, Lcom/cnlaunch/x431pro/activity/diagnose/view/MessageBoxDialog;
@@ -812,7 +830,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->messageBoxDialog:Lcom/cnlaunch/x431pro/activity/diagnose/view/MessageBoxDialog;
     invoke-static {v1, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$5(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;Lcom/cnlaunch/x431pro/activity/diagnose/view/MessageBoxDialog;)V
 
-    .line 377
+    .line 380
     :cond_0
     const-string/jumbo v1, "170"
 
@@ -822,7 +840,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 378
+    .line 381
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->messageBoxDialog:Lcom/cnlaunch/x431pro/activity/diagnose/view/MessageBoxDialog;
@@ -841,11 +859,11 @@
 
     invoke-virtual {v1, v2, v0, v3}, Lcom/cnlaunch/x431pro/activity/diagnose/view/MessageBoxDialog;->showProgressDialog(Landroid/content/Context;Landroid/os/Bundle;Landroid/os/Messenger;)V
 
-    .line 383
+    .line 386
     :goto_0
     return-void
 
-    .line 380
+    .line 383
     :cond_1
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -886,8 +904,10 @@
             ">;",
             "Ljava/util/ArrayList",
             "<",
+            "Ljava/util/ArrayList",
+            "<",
             "Lcom/cnlaunch/diagnosemodule/bean/BasicSpeciaFunctionBean;",
-            ">;",
+            ">;>;",
             "Ljava/util/ArrayList",
             "<",
             "Lcom/cnlaunch/diagnosemodule/bean/BasicButtonBean;",
@@ -899,11 +919,11 @@
 
     .prologue
     .local p2, titleList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicSpeciaFunctionBean;>;"
-    .local p3, valueList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicSpeciaFunctionBean;>;"
+    .local p3, valueList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicSpeciaFunctionBean;>;>;"
     .local p4, buttonList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicButtonBean;>;"
     const/4 v4, 0x0
 
-    .line 357
+    .line 359
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mUpdateCallback:Lcom/cnlaunch/x431pro/activity/diagnose/listenter/OnDiagnoseDataUpdateListenter;
@@ -923,10 +943,25 @@
 
     move-result v2
 
-    if-nez v2, :cond_1
+    if-eqz v2, :cond_0
 
-    .line 358
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->mTitleList:Ljava/util/ArrayList;
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+
+    move-result v2
+
+    invoke-virtual {p2}, Ljava/util/ArrayList;->size()I
+
+    move-result v3
+
+    if-eq v2, v3, :cond_1
+
+    .line 360
     :cond_0
+    iput-object p2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->mTitleList:Ljava/util/ArrayList;
+
+    .line 361
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
@@ -935,7 +970,7 @@
 
     invoke-virtual {v2, v4}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->setDataStream(Z)V
 
-    .line 359
+    .line 362
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
@@ -944,7 +979,7 @@
 
     invoke-virtual {v2, v4}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->setActiveTest(Z)V
 
-    .line 360
+    .line 363
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
@@ -953,7 +988,7 @@
 
     invoke-virtual {v2, v4}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->setFaultCode(Z)V
 
-    .line 361
+    .line 364
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
@@ -964,35 +999,35 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->setSpeciaFunction(Z)V
 
-    .line 362
+    .line 365
     new-instance v1, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;
 
     invoke-direct {v1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;-><init>()V
 
-    .line 363
+    .line 366
     .local v1, speciaFunctionFragment:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;
     invoke-static/range {p1 .. p6}, Lcom/cnlaunch/x431pro/utils/diagnose/FragmentBundleUtils;->getSpeciaFuntionBundle(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;I)Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 364
+    .line 367
     .local v0, bundle:Landroid/os/Bundle;
     invoke-virtual {v1, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 365
+    .line 368
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v1, v3, v4}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->addFragmentStack(Landroid/app/Fragment;Ljava/lang/String;Z)V
 
-    .line 369
+    .line 372
     .end local v0           #bundle:Landroid/os/Bundle;
     .end local v1           #speciaFunctionFragment:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/SpeciaFunctionFragment;
     :goto_0
     return-void
 
-    .line 367
+    .line 370
     :cond_1
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 

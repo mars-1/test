@@ -155,7 +155,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0706c4
+    const v1, 0x7f0706c6
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -269,7 +269,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 61
-    const v3, 0x7f0300d1
+    const v3, 0x7f0300d2
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/golo/GoloActivity;->setContentView(I)V
 

@@ -52,10 +52,10 @@
     .locals 1
 
     .prologue
-    .line 50
+    .line 51
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/LoginBaseActivity;-><init>()V
 
-    .line 52
+    .line 53
     const-class v0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -64,26 +64,26 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->TAG:Ljava/lang/String;
 
-    .line 68
+    .line 69
     const-string/jumbo v0, "username_list"
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->USERNAMELIST:Ljava/lang/String;
 
-    .line 69
+    .line 70
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->UsernameList:Ljava/util/ArrayList;
 
-    .line 70
+    .line 71
     new-instance v0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity$1;
 
     invoke-direct {v0, p0}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity$1;-><init>(Lcom/cnlaunch/x431pro/activity/login/LoginActivity;)V
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->handler:Landroid/os/Handler;
 
-    .line 50
+    .line 51
     return-void
 .end method
 
@@ -111,7 +111,7 @@
     .end annotation
 
     .prologue
-    .line 96
+    .line 97
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
     move-result-object v4
@@ -122,19 +122,19 @@
 
     move-result-object v2
 
-    .line 97
+    .line 98
     .local v2, mobileBytes:[B
     new-instance v1, Ljava/io/ByteArrayInputStream;
 
     invoke-direct {v1, v2}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
-    .line 98
+    .line 99
     .local v1, byteArrayInputStream:Ljava/io/ByteArrayInputStream;
     new-instance v3, Ljava/io/ObjectInputStream;
 
     invoke-direct {v3, v1}, Ljava/io/ObjectInputStream;-><init>(Ljava/io/InputStream;)V
 
-    .line 99
+    .line 100
     .local v3, objectInputStream:Ljava/io/ObjectInputStream;
     invoke-virtual {v3}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
@@ -142,11 +142,11 @@
 
     check-cast v0, Ljava/util/List;
 
-    .line 100
+    .line 101
     .local v0, StringList:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
     invoke-virtual {v3}, Ljava/io/ObjectInputStream;->close()V
 
-    .line 101
+    .line 102
     return-object v0
 .end method
 
@@ -171,23 +171,23 @@
     .end annotation
 
     .prologue
-    .line 86
+    .line 87
     .local p0, StringList:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v1}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 87
+    .line 88
     .local v1, byteArrayOutputStream:Ljava/io/ByteArrayOutputStream;
     new-instance v2, Ljava/io/ObjectOutputStream;
 
     invoke-direct {v2, v1}, Ljava/io/ObjectOutputStream;-><init>(Ljava/io/OutputStream;)V
 
-    .line 88
+    .line 89
     .local v2, objectOutputStream:Ljava/io/ObjectOutputStream;
     invoke-virtual {v2, p0}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
-    .line 89
+    .line 90
     new-instance v0, Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
@@ -202,11 +202,11 @@
 
     invoke-direct {v0, v3}, Ljava/lang/String;-><init>([B)V
 
-    .line 90
+    .line 91
     .local v0, StringListString:Ljava/lang/String;
     invoke-virtual {v2}, Ljava/io/ObjectOutputStream;->close()V
 
-    .line 91
+    .line 92
     return-object v0
 .end method
 
@@ -216,7 +216,7 @@
     .parameter
 
     .prologue
-    .line 223
+    .line 230
     invoke-direct {p0, p1}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->returnLoginResultToRTU(I)V
 
     return-void
@@ -227,7 +227,7 @@
     .parameter
 
     .prologue
-    .line 61
+    .line 62
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->btn_login:Landroid/widget/Button;
 
     return-object v0
@@ -241,13 +241,13 @@
 
     const/4 v9, 0x1
 
-    const v8, 0x7f0d02b4
+    const v8, 0x7f0c02b8
 
     const/16 v7, 0x8
 
     const/4 v6, 0x0
 
-    .line 125
+    .line 126
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -256,8 +256,8 @@
 
     iput-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
-    .line 127
-    const v3, 0x7f0d02a6
+    .line 128
+    const v3, 0x7f0c02aa
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->findViewById(I)Landroid/view/View;
 
@@ -267,7 +267,7 @@
 
     iput-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_username:Lcom/cnlaunch/x431pro/widget/DropdownEditText;
 
-    .line 128
+    .line 129
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_username:Lcom/cnlaunch/x431pro/widget/DropdownEditText;
 
     new-array v4, v9, [Landroid/text/InputFilter;
@@ -280,8 +280,8 @@
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/widget/DropdownEditText;->setFilters([Landroid/text/InputFilter;)V
 
-    .line 130
-    const v3, 0x7f0d02af
+    .line 131
+    const v3, 0x7f0c02b3
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->findViewById(I)Landroid/view/View;
 
@@ -291,7 +291,7 @@
 
     iput-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_password:Landroid/widget/EditText;
 
-    .line 131
+    .line 132
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_password:Landroid/widget/EditText;
 
     new-array v4, v9, [Landroid/text/InputFilter;
@@ -304,8 +304,8 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
-    .line 132
-    const v3, 0x7f0d02b0
+    .line 133
+    const v3, 0x7f0c02b4
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->findViewById(I)Landroid/view/View;
 
@@ -315,12 +315,12 @@
 
     iput-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->btn_login:Landroid/widget/Button;
 
-    .line 133
+    .line 134
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->btn_login:Landroid/widget/Button;
 
     invoke-virtual {v3, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 134
+    .line 135
     invoke-virtual {p0, v8}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
@@ -329,13 +329,13 @@
 
     iput-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->tv_regist:Landroid/widget/TextView;
 
-    .line 135
+    .line 136
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->tv_regist:Landroid/widget/TextView;
 
     invoke-virtual {v3, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 136
-    const v3, 0x7f0d02b2
+    .line 137
+    const v3, 0x7f0c02b6
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->findViewById(I)Landroid/view/View;
 
@@ -345,12 +345,12 @@
 
     iput-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->tv_forget:Landroid/widget/TextView;
 
-    .line 137
+    .line 138
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->tv_forget:Landroid/widget/TextView;
 
     invoke-virtual {v3, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 139
+    .line 140
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->tv_forget:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
@@ -359,7 +359,7 @@
 
     invoke-virtual {v3, v7}, Landroid/text/TextPaint;->setFlags(I)V
 
-    .line 140
+    .line 141
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->tv_regist:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
@@ -368,7 +368,7 @@
 
     invoke-virtual {v3, v7}, Landroid/text/TextPaint;->setFlags(I)V
 
-    .line 142
+    .line 143
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_username:Lcom/cnlaunch/x431pro/widget/DropdownEditText;
 
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -381,7 +381,7 @@
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/widget/DropdownEditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 143
+    .line 144
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_password:Landroid/widget/EditText;
 
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -394,7 +394,7 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 144
+    .line 145
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_username:Lcom/cnlaunch/x431pro/widget/DropdownEditText;
 
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_username:Lcom/cnlaunch/x431pro/widget/DropdownEditText;
@@ -413,7 +413,7 @@
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/widget/DropdownEditText;->setSelection(I)V
 
-    .line 145
+    .line 146
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_password:Landroid/widget/EditText;
 
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_password:Landroid/widget/EditText;
@@ -432,7 +432,7 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/EditText;->setSelection(I)V
 
-    .line 148
+    .line 149
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v3
@@ -443,7 +443,7 @@
 
     move-result-object v2
 
-    .line 149
+    .line 150
     .local v2, rtuRequest:Ljava/lang/String;
     if-eqz v2, :cond_1
 
@@ -455,15 +455,15 @@
 
     if-eqz v3, :cond_1
 
-    .line 150
+    .line 151
     invoke-virtual {p0, v8}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
     invoke-virtual {v3, v7}, Landroid/view/View;->setVisibility(I)V
 
-    .line 151
-    const v3, 0x7f0d02b3
+    .line 152
+    const v3, 0x7f0c02b7
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->findViewById(I)Landroid/view/View;
 
@@ -471,7 +471,7 @@
 
     invoke-virtual {v3, v7}, Landroid/view/View;->setVisibility(I)V
 
-    .line 157
+    .line 158
     :goto_0
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
@@ -481,7 +481,7 @@
 
     move-result-object v0
 
-    .line 158
+    .line 159
     .local v0, UsernameString:Ljava/lang/String;
     if-eqz v0, :cond_0
 
@@ -493,7 +493,7 @@
 
     if-nez v3, :cond_0
 
-    .line 160
+    .line 161
     :try_start_0
     invoke-static {v0}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->String2StringList(Ljava/lang/String;)Ljava/util/List;
 
@@ -507,7 +507,7 @@
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
 
-    .line 169
+    .line 170
     :cond_0
     :goto_1
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_username:Lcom/cnlaunch/x431pro/widget/DropdownEditText;
@@ -516,14 +516,14 @@
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/widget/DropdownEditText;->setList(Ljava/util/ArrayList;)V
 
-    .line 170
+    .line 171
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_username:Lcom/cnlaunch/x431pro/widget/DropdownEditText;
 
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_password:Landroid/widget/EditText;
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/widget/DropdownEditText;->setPasswordText(Landroid/widget/EditText;)V
 
-    .line 171
+    .line 172
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_password:Landroid/widget/EditText;
 
     new-instance v4, Lcom/cnlaunch/x431pro/activity/login/LoginActivity$2;
@@ -532,10 +532,10 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/EditText;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
-    .line 181
+    .line 182
     return-void
 
-    .line 153
+    .line 154
     .end local v0           #UsernameString:Ljava/lang/String;
     :cond_1
     invoke-virtual {p0, v8}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->findViewById(I)Landroid/view/View;
@@ -544,8 +544,8 @@
 
     invoke-virtual {v3, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 154
-    const v3, 0x7f0d02b3
+    .line 155
+    const v3, 0x7f0c02b7
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->findViewById(I)Landroid/view/View;
 
@@ -555,34 +555,34 @@
 
     goto :goto_0
 
-    .line 161
+    .line 162
     .restart local v0       #UsernameString:Ljava/lang/String;
     :catch_0
     move-exception v1
 
-    .line 162
+    .line 163
     .local v1, e:Ljava/io/StreamCorruptedException;
     invoke-virtual {v1}, Ljava/io/StreamCorruptedException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 163
+    .line 164
     .end local v1           #e:Ljava/io/StreamCorruptedException;
     :catch_1
     move-exception v1
 
-    .line 164
+    .line 165
     .local v1, e:Ljava/lang/ClassNotFoundException;
     invoke-virtual {v1}, Ljava/lang/ClassNotFoundException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 165
+    .line 166
     .end local v1           #e:Ljava/lang/ClassNotFoundException;
     :catch_2
     move-exception v1
 
-    .line 166
+    .line 167
     .local v1, e:Ljava/io/IOException;
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
@@ -594,19 +594,19 @@
     .parameter "loginResult"
 
     .prologue
-    .line 224
+    .line 231
     if-nez p1, :cond_0
 
-    .line 225
+    .line 232
     const/4 v0, -0x1
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->setResult(I)V
 
-    .line 229
+    .line 236
     :goto_0
     return-void
 
-    .line 227
+    .line 234
     :cond_0
     const/4 v0, 0x0
 
@@ -622,19 +622,19 @@
     .parameter "v"
 
     .prologue
-    .line 185
+    .line 186
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v3
 
     packed-switch v3, :pswitch_data_0
 
-    .line 221
+    .line 228
     :goto_0
     :pswitch_0
     return-void
 
-    .line 188
+    .line 189
     :pswitch_1
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_username:Lcom/cnlaunch/x431pro/widget/DropdownEditText;
 
@@ -648,7 +648,7 @@
 
     iput-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->username:Ljava/lang/String;
 
-    .line 189
+    .line 190
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_password:Landroid/widget/EditText;
 
     invoke-virtual {v3}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -661,7 +661,7 @@
 
     iput-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->password:Ljava/lang/String;
 
-    .line 191
+    .line 192
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->username:Ljava/lang/String;
 
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -670,16 +670,16 @@
 
     if-eqz v3, :cond_0
 
-    .line 192
+    .line 193
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f07062f
+    const v4, 0x7f070631
 
     invoke-static {v3, v4}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 195
+    .line 196
     :cond_0
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->password:Ljava/lang/String;
 
@@ -689,16 +689,16 @@
 
     if-eqz v3, :cond_1
 
-    .line 196
+    .line 197
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f070630
+    const v4, 0x7f070632
 
     invoke-static {v3, v4}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 200
+    .line 201
     :cond_1
     new-instance v2, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
 
@@ -706,13 +706,13 @@
 
     invoke-direct {v2, v3}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;-><init>(Landroid/content/Context;)V
 
-    .line 201
+    .line 202
     .local v2, lf:Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->handler:Landroid/os/Handler;
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->setHandler(Landroid/os/Handler;)V
 
-    .line 202
+    .line 203
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->username:Ljava/lang/String;
 
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->password:Ljava/lang/String;
@@ -721,27 +721,64 @@
 
     goto :goto_0
 
-    .line 207
+    .line 209
     .end local v2           #lf:Lcom/cnlaunch/x431pro/activity/login/LoginFunction;
     :pswitch_2
+    const/4 v0, 0x0
+
+    .line 210
+    .local v0, intent:Landroid/content/Intent;
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string/jumbo v4, "ja"
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    .line 211
     new-instance v0, Landroid/content/Intent;
 
+    .end local v0           #intent:Landroid/content/Intent;
+    iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->mContext:Landroid/content/Context;
+
+    const-class v4, Lcom/cnlaunch/x431pro/activity/login/RegisterInstructionActivity;
+
+    invoke-direct {v0, v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 215
+    .restart local v0       #intent:Landroid/content/Intent;
+    :goto_1
+    invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->startActivity(Landroid/content/Intent;)V
+
+    .line 216
+    invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->finish()V
+
+    goto :goto_0
+
+    .line 213
+    :cond_2
+    new-instance v0, Landroid/content/Intent;
+
+    .end local v0           #intent:Landroid/content/Intent;
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->mContext:Landroid/content/Context;
 
     const-class v4, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     invoke-direct {v0, v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 208
-    .local v0, intent:Landroid/content/Intent;
-    invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->startActivity(Landroid/content/Intent;)V
+    .restart local v0       #intent:Landroid/content/Intent;
+    goto :goto_1
 
-    .line 209
-    invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->finish()V
-
-    goto :goto_0
-
-    .line 214
+    .line 221
     .end local v0           #intent:Landroid/content/Intent;
     :pswitch_3
     new-instance v1, Landroid/content/Intent;
@@ -752,7 +789,7 @@
 
     invoke-direct {v1, v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 215
+    .line 222
     .local v1, intent_find_password:Landroid/content/Intent;
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->edit_username:Lcom/cnlaunch/x431pro/widget/DropdownEditText;
 
@@ -766,28 +803,28 @@
 
     iput-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->username:Ljava/lang/String;
 
-    .line 216
+    .line 223
     const-string/jumbo v3, "username"
 
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->username:Ljava/lang/String;
 
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 217
+    .line 224
     const/high16 v3, 0x400
 
     invoke-virtual {v1, v3}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 218
+    .line 225
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
-    .line 185
+    .line 186
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0d02b0
+    .packed-switch 0x7f0c02b4
         :pswitch_1
         :pswitch_0
         :pswitch_3
@@ -807,15 +844,15 @@
 
     const/4 v2, 0x0
 
-    .line 106
+    .line 107
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/LoginBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 107
-    const v0, 0x7f0300ea
+    .line 108
+    const v0, 0x7f0300eb
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->setContentView(I)V
 
-    .line 108
+    .line 109
     invoke-static {p0}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
 
     move-result-object v0
@@ -828,7 +865,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 110
+    .line 111
     invoke-static {p0}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
 
     move-result-object v0
@@ -841,18 +878,18 @@
 
     if-nez v0, :cond_1
 
-    .line 111
+    .line 112
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->setRequestedOrientation(I)V
 
-    .line 116
+    .line 117
     :cond_0
     :goto_0
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->initViews()V
 
-    .line 117
+    .line 118
     return-void
 
-    .line 112
+    .line 113
     :cond_1
     invoke-static {p0}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
 
@@ -866,7 +903,7 @@
 
     if-ne v0, v3, :cond_0
 
-    .line 113
+    .line 114
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->setRequestedOrientation(I)V
 
     goto :goto_0
@@ -876,10 +913,10 @@
     .locals 0
 
     .prologue
-    .line 237
+    .line 244
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/LoginBaseActivity;->onDestroy()V
 
-    .line 238
+    .line 245
     return-void
 .end method
 
@@ -887,9 +924,9 @@
     .locals 0
 
     .prologue
-    .line 233
+    .line 240
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/LoginBaseActivity;->onStop()V
 
-    .line 234
+    .line 241
     return-void
 .end method

@@ -59,12 +59,12 @@
 
     .line 32
     .local v1, view:Landroid/view/View;
-    const v2, 0x7f070725
+    const v2, 0x7f070727
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/module/rtu/CustomerSelectFragment;->setMessage(I)V
 
     .line 33
-    const v2, 0x7f070726
+    const v2, 0x7f070728
 
     .line 34
     new-instance v3, Lcom/cnlaunch/x431pro/module/rtu/CustomerSelectFragment$1;
@@ -75,7 +75,7 @@
     invoke-virtual {p0, v2, v3}, Lcom/cnlaunch/x431pro/module/rtu/CustomerSelectFragment;->setAlphaOnClickListener(ILandroid/view/View$OnClickListener;)V
 
     .line 40
-    const v2, 0x7f070727
+    const v2, 0x7f070729
 
     .line 41
     new-instance v3, Lcom/cnlaunch/x431pro/module/rtu/CustomerSelectFragment$2;
@@ -117,7 +117,7 @@
     if-nez v2, :cond_0
 
     .line 49
-    const v2, 0x7f07072b
+    const v2, 0x7f07072d
 
     .line 50
     new-instance v3, Lcom/cnlaunch/x431pro/module/rtu/CustomerSelectFragment$3;

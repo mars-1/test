@@ -77,7 +77,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d00f1
+    const v1, 0x7f0c00f1
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -105,7 +105,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0157
+    const v1, 0x7f0c0157
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -120,7 +120,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d004f
+    const v1, 0x7f0c004f
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -164,7 +164,7 @@
 
     .prologue
     .line 105
-    const v0, 0x7f0704fe
+    const v0, 0x7f070500
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamCustomSelectFragment;->getString(I)Ljava/lang/String;
 
@@ -280,7 +280,7 @@
 
     .line 66
     .local v0, id:I
-    const v3, 0x7f0d004f
+    const v3, 0x7f0c004f
 
     if-ne v0, v3, :cond_2
 
@@ -313,7 +313,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f07053e
+    const v4, 0x7f070540
 
     invoke-static {v3, v4}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -350,7 +350,7 @@
     .end local v1           #maskList:Ljava/lang/String;
     .end local v2           #maskSelectCount:I
     :cond_2
-    const v3, 0x7f0d0157
+    const v3, 0x7f0c0157
 
     if-ne v0, v3, :cond_0
 

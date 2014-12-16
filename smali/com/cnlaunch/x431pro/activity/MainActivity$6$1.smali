@@ -47,7 +47,7 @@
     .locals 12
 
     .prologue
-    const v9, 0x7f02051a
+    const v9, 0x7f02051e
 
     const/4 v11, 0x0
 
@@ -215,7 +215,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f020454
+    const v9, 0x7f020458
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -239,7 +239,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0c0070
+    const v9, 0x7f0b0070
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -265,7 +265,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0c006f
+    const v9, 0x7f0b006f
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimension(I)F
 

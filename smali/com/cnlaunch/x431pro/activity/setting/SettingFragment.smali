@@ -104,7 +104,7 @@
     const/16 v7, 0x8
 
     .line 90
-    const v2, 0x7f0704ee
+    const v2, 0x7f0704f0
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/setting/SettingFragment;->setTitle(I)V
 
@@ -113,7 +113,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d016e
+    const v3, 0x7f0c016e
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -131,7 +131,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0454
+    const v3, 0x7f0c0472
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -162,7 +162,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0455
+    const v3, 0x7f0c0473
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -177,7 +177,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0456
+    const v3, 0x7f0c0474
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -204,7 +204,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0458
+    const v3, 0x7f0c0476
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -239,7 +239,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0457
+    const v3, 0x7f0c0475
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -254,7 +254,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d045c
+    const v3, 0x7f0c047a
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -290,7 +290,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d045e
+    const v3, 0x7f0c047c
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -311,7 +311,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d045d
+    const v3, 0x7f0c047b
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -352,7 +352,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d045f
+    const v3, 0x7f0c047d
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -370,7 +370,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0460
+    const v3, 0x7f0c047e
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -452,7 +452,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0461
+    const v3, 0x7f0c047f
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -493,7 +493,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0464
+    const v3, 0x7f0c0482
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -531,7 +531,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0467
+    const v3, 0x7f0c0485
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -552,7 +552,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0468
+    const v3, 0x7f0c0486
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -572,7 +572,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0469
+    const v3, 0x7f0c0487
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -592,7 +592,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d046b
+    const v3, 0x7f0c0489
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -612,7 +612,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d046a
+    const v3, 0x7f0c0488
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -654,7 +654,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0459
+    const v3, 0x7f0c0477
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -669,7 +669,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d045a
+    const v3, 0x7f0c0478
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -684,7 +684,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d045b
+    const v3, 0x7f0c0479
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -759,7 +759,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0462
+    const v3, 0x7f0c0480
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -771,7 +771,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0463
+    const v3, 0x7f0c0481
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -794,7 +794,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0465
+    const v3, 0x7f0c0483
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -806,7 +806,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0466
+    const v3, 0x7f0c0484
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -946,7 +946,7 @@
 
     .line 357
     :pswitch_data_0
-    .packed-switch 0x7f0d0455
+    .packed-switch 0x7f0c0473
         :pswitch_0
         :pswitch_1
     .end packed-switch
@@ -1030,15 +1030,15 @@
 
     move-result-object v2
 
-    const v3, 0x7f0705f8
+    const v3, 0x7f0705fa
 
-    const v4, 0x7f0705f9
+    const v4, 0x7f0705fb
 
     invoke-direct {v1, p0, v2, v3, v4}, Lcom/cnlaunch/x431pro/activity/setting/SettingFragment$4;-><init>(Lcom/cnlaunch/x431pro/activity/setting/SettingFragment;Landroid/content/Context;II)V
 
     .line 266
     .local v1, tipDialog:Lcom/cnlaunch/x431pro/widget/dialog/TipDialog;
-    const v2, 0x7f070044
+    const v2, 0x7f07002b
 
     new-instance v3, Lcom/cnlaunch/x431pro/activity/setting/SettingFragment$5;
 
@@ -1047,7 +1047,7 @@
     invoke-virtual {v1, v2, v5, v3}, Lcom/cnlaunch/x431pro/widget/dialog/TipDialog;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 272
-    const v2, 0x7f070042
+    const v2, 0x7f070029
 
     const/4 v3, 0x0
 
@@ -1171,17 +1171,17 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f0d016e -> :sswitch_5
-        0x7f0d0458 -> :sswitch_a
-        0x7f0d045c -> :sswitch_0
-        0x7f0d045f -> :sswitch_4
-        0x7f0d0461 -> :sswitch_1
-        0x7f0d0464 -> :sswitch_2
-        0x7f0d0467 -> :sswitch_9
-        0x7f0d0468 -> :sswitch_3
-        0x7f0d0469 -> :sswitch_6
-        0x7f0d046a -> :sswitch_7
-        0x7f0d046b -> :sswitch_8
+        0x7f0c016e -> :sswitch_5
+        0x7f0c0476 -> :sswitch_a
+        0x7f0c047a -> :sswitch_0
+        0x7f0c047d -> :sswitch_4
+        0x7f0c047f -> :sswitch_1
+        0x7f0c0482 -> :sswitch_2
+        0x7f0c0485 -> :sswitch_9
+        0x7f0c0486 -> :sswitch_3
+        0x7f0c0487 -> :sswitch_6
+        0x7f0c0488 -> :sswitch_7
+        0x7f0c0489 -> :sswitch_8
     .end sparse-switch
 .end method
 
@@ -1193,7 +1193,7 @@
 
     .prologue
     .line 86
-    const v0, 0x7f030184
+    const v0, 0x7f030187
 
     const/4 v1, 0x0
 
@@ -1252,7 +1252,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020520
+    const v1, 0x7f020524
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

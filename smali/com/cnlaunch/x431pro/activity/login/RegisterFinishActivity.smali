@@ -25,7 +25,7 @@
 
     .prologue
     .line 28
-    const v0, 0x7f0d02d0
+    const v0, 0x7f0c02e7
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterFinishActivity;->findViewById(I)Landroid/view/View;
 
@@ -36,7 +36,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegisterFinishActivity;->bt_toUpdate:Landroid/widget/Button;
 
     .line 29
-    const v0, 0x7f0d02d1
+    const v0, 0x7f0c02e8
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterFinishActivity;->findViewById(I)Landroid/view/View;
 
@@ -97,7 +97,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 22
-    const v0, 0x7f0300f2
+    const v0, 0x7f0300f4
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterFinishActivity;->setContentView(I)V
 

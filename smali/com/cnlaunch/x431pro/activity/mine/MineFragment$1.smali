@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/mine/MineFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/MineFragment;
 
-    .line 99
+    .line 100
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -41,12 +41,12 @@
     .parameter "arg1"
 
     .prologue
-    .line 102
+    .line 103
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 103
+    .line 104
     .local v0, action:Ljava/lang/String;
     const-string/jumbo v1, "login"
 
@@ -56,7 +56,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 104
+    .line 105
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/MineFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/MineFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/mine/MineFragment;->btn_logout:Landroid/widget/Button;
@@ -64,16 +64,16 @@
 
     move-result-object v1
 
-    const v2, 0x7f070629
+    const v2, 0x7f07062b
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setText(I)V
 
-    .line 108
+    .line 109
     :cond_0
     :goto_0
     return-void
 
-    .line 105
+    .line 106
     :cond_1
     const-string/jumbo v1, "logout"
 
@@ -83,7 +83,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 106
+    .line 107
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/MineFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/MineFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/mine/MineFragment;->btn_logout:Landroid/widget/Button;
@@ -91,7 +91,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f070627
+    const v2, 0x7f070629
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setText(I)V
 

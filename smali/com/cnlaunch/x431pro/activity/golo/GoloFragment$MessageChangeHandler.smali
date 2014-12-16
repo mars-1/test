@@ -25,12 +25,12 @@
     .parameter "name"
 
     .prologue
-    .line 463
+    .line 462
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageChangeHandler;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
-    .line 464
+    .line 463
     invoke-direct {p0, p2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    .line 465
+    .line 464
     return-void
 .end method

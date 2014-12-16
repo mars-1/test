@@ -49,7 +49,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 20
-    const v2, 0x7f0300d1
+    const v2, 0x7f0300d2
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/help/HelpActivity;->setContentView(I)V
 

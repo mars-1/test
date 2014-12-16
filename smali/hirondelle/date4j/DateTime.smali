@@ -2,8 +2,8 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ljava/lang/Comparable;
 .implements Ljava/io/Serializable;
+.implements Ljava/lang/Comparable;
 
 
 # annotations

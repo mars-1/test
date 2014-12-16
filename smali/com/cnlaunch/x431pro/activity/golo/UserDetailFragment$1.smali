@@ -42,7 +42,7 @@
     .prologue
     const/4 v2, 0x0
 
-    const v11, 0x7f020236
+    const v11, 0x7f020237
 
     const/4 v8, 0x1
 
@@ -99,12 +99,12 @@
     if-eqz v7, :cond_0
 
     .line 100
-    const-string/jumbo v6, "drawable://2130838055"
+    const-string/jumbo v6, "drawable://2130838056"
 
     .line 101
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/golo/UserDetailFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/UserDetailFragment;
 
-    const v9, 0x7f0700ab
+    const v9, 0x7f070092
 
     invoke-virtual {v7, v9}, Lcom/cnlaunch/x431pro/activity/golo/UserDetailFragment;->getString(I)Ljava/lang/String;
 
@@ -704,7 +704,7 @@
 
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/golo/UserDetailFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/UserDetailFragment;
 
-    const v11, 0x7f0705ae
+    const v11, 0x7f0705b0
 
     invoke-virtual {v7, v11}, Lcom/cnlaunch/x431pro/activity/golo/UserDetailFragment;->getString(I)Ljava/lang/String;
 
@@ -742,7 +742,7 @@
     :cond_9
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/golo/UserDetailFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/golo/UserDetailFragment;
 
-    const v11, 0x7f0705af
+    const v11, 0x7f0705b1
 
     invoke-virtual {v7, v11}, Lcom/cnlaunch/x431pro/activity/golo/UserDetailFragment;->getString(I)Ljava/lang/String;
 

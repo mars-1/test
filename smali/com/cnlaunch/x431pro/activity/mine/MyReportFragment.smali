@@ -3,9 +3,9 @@
 .source "MyReportFragment.java"
 
 # interfaces
+.implements Landroid/view/View$OnFocusChangeListener;
 .implements Landroid/widget/RadioGroup$OnCheckedChangeListener;
 .implements Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshBase$OnRefreshListener;
-.implements Landroid/view/View$OnFocusChangeListener;
 
 
 # annotations
@@ -577,14 +577,14 @@
     .locals 6
 
     .prologue
-    const v5, 0x7f0705a4
+    const v5, 0x7f0705a6
 
     const/16 v3, 0x8
 
     const/4 v4, 0x0
 
     .line 109
-    const v0, 0x7f07059c
+    const v0, 0x7f07059e
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/mine/MyReportFragment;->setTitle(I)V
 
@@ -595,7 +595,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -608,7 +608,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0375
+    const v1, 0x7f0c038c
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -645,7 +645,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0374
+    const v1, 0x7f0c038b
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -705,7 +705,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0371
+    const v1, 0x7f0c0388
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -724,7 +724,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0705a3
+    const v3, 0x7f0705a5
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -769,7 +769,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0372
+    const v1, 0x7f0c0389
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -831,7 +831,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0373
+    const v1, 0x7f0c038a
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -850,7 +850,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0705a5
+    const v3, 0x7f0705a7
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -904,7 +904,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01e4
+    const v1, 0x7f0c01e7
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1256,7 +1256,7 @@
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/MyReportFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0706d8
+    const v1, 0x7f0706da
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -1319,7 +1319,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0d0371
+    .packed-switch 0x7f0c0388
         :pswitch_0
         :pswitch_1
         :pswitch_2
@@ -1334,7 +1334,7 @@
 
     .prologue
     .line 92
-    const v0, 0x7f03013b
+    const v0, 0x7f03013d
 
     const/4 v1, 0x0
 

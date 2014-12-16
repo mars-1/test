@@ -3,8 +3,8 @@
 .source "HTMLWorker.java"
 
 # interfaces
-.implements Lcom/itextpdf/text/xml/simpleparser/SimpleXMLDocHandler;
 .implements Lcom/itextpdf/text/DocListener;
+.implements Lcom/itextpdf/text/xml/simpleparser/SimpleXMLDocHandler;
 
 
 # static fields

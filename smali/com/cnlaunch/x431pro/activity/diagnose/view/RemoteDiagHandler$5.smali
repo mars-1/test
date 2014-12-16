@@ -56,7 +56,7 @@
     .line 183
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler$5;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;
 
-    const v1, 0x7f0706f7
+    const v1, 0x7f0706f9
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->waitProgressDialog(I)V
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->access$0(Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;I)V

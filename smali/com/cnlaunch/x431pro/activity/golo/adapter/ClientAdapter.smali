@@ -158,7 +158,7 @@
     .locals 3
 
     .prologue
-    const v2, 0x7f020236
+    const v2, 0x7f020237
 
     const/4 v1, 0x1
 
@@ -399,7 +399,7 @@
 
     .line 92
     .local v8, viewHold:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter$ViewHold;
-    const v9, 0x7f0d00b0
+    const v9, 0x7f0c00b0
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -410,7 +410,7 @@
     iput-object v9, v8, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter$ViewHold;->userName:Landroid/widget/TextView;
 
     .line 93
-    const v9, 0x7f0d00b1
+    const v9, 0x7f0c00b1
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -421,7 +421,7 @@
     iput-object v9, v8, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter$ViewHold;->userCar:Landroid/widget/TextView;
 
     .line 94
-    const v9, 0x7f0d00ae
+    const v9, 0x7f0c00ae
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -432,7 +432,7 @@
     iput-object v9, v8, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter$ViewHold;->userImage:Landroid/widget/ImageView;
 
     .line 95
-    const v9, 0x7f0d00b4
+    const v9, 0x7f0c00b4
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -443,7 +443,7 @@
     iput-object v9, v8, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter$ViewHold;->msgTime:Landroid/widget/TextView;
 
     .line 96
-    const v9, 0x7f0d00b2
+    const v9, 0x7f0c00b2
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -454,7 +454,7 @@
     iput-object v9, v8, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter$ViewHold;->tipNew:Landroid/widget/TextView;
 
     .line 97
-    const v9, 0x7f0d00b3
+    const v9, 0x7f0c00b3
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -662,7 +662,7 @@
     .line 126
     iget-object v9, v8, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter$ViewHold;->status:Landroid/widget/ImageView;
 
-    const v10, 0x7f0205da
+    const v10, 0x7f0205de
 
     invoke-virtual {v9, v10}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -765,7 +765,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f0c0088
+    const v11, 0x7f0b0088
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -784,7 +784,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f0c0088
+    const v11, 0x7f0b0088
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -889,7 +889,7 @@
     .line 128
     iget-object v9, v8, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter$ViewHold;->status:Landroid/widget/ImageView;
 
-    const v10, 0x7f0205d8
+    const v10, 0x7f0205dc
 
     invoke-virtual {v9, v10}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -908,7 +908,7 @@
     .line 130
     iget-object v9, v8, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter$ViewHold;->status:Landroid/widget/ImageView;
 
-    const v10, 0x7f0205d9
+    const v10, 0x7f0205dd
 
     invoke-virtual {v9, v10}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -918,7 +918,7 @@
     :cond_7
     iget-object v9, v8, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter$ViewHold;->status:Landroid/widget/ImageView;
 
-    const v10, 0x7f0205d9
+    const v10, 0x7f0205dd
 
     invoke-virtual {v9, v10}, Landroid/widget/ImageView;->setImageResource(I)V
 

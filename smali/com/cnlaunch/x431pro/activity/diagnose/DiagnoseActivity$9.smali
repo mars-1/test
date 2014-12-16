@@ -28,7 +28,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
-    .line 895
+    .line 898
     invoke-direct {p0, p2}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -43,16 +43,16 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 898
+    .line 901
     packed-switch p1, :pswitch_data_0
 
-    .line 929
+    .line 932
     :cond_0
     :goto_0
     :pswitch_0
     return-void
 
-    .line 902
+    .line 905
     :pswitch_1
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -66,7 +66,7 @@
 
     if-ne v1, v3, :cond_0
 
-    .line 903
+    .line 906
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mContext:Landroid/content/Context;
@@ -115,11 +115,11 @@
 
     goto :goto_0
 
-    .line 908
+    .line 911
     :pswitch_2
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->dimissAllDialog()V
 
-    .line 909
+    .line 912
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mDiagnoseUIDataBusiness:Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;
@@ -129,7 +129,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 910
+    .line 913
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mDiagnoseUIDataBusiness:Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;
@@ -141,7 +141,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;->closeAlertDialog(Ljava/lang/String;Z)V
 
-    .line 912
+    .line 915
     :cond_1
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -155,13 +155,13 @@
 
     if-ne v1, v3, :cond_2
 
-    .line 913
+    .line 916
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->regainMainView()V
     invoke-static {v1}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$10(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 914
+    .line 917
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     new-instance v2, Lcom/cnlaunch/x431pro/activity/diagnose/RemoteReportFragment;
@@ -180,7 +180,7 @@
 
     goto :goto_0
 
-    .line 916
+    .line 919
     :cond_2
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -188,17 +188,17 @@
 
     goto :goto_0
 
-    .line 920
+    .line 923
     :pswitch_3
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->dimissAllDialog()V
 
-    .line 921
+    .line 924
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->regainMainView()V
     invoke-static {v1}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$10(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 922
+    .line 925
     const/4 v1, 0x0
 
     const/16 v2, 0xa
@@ -207,14 +207,14 @@
 
     move-result-object v0
 
-    .line 923
+    .line 926
     .local v0, msg:Landroid/os/Message;
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->sendServerMessage(Landroid/os/Message;)V
     invoke-static {v1, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$8(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;Landroid/os/Message;)V
 
-    .line 924
+    .line 927
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mDiagnoseUIDataBusiness:Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;
@@ -224,7 +224,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 925
+    .line 928
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mDiagnoseUIDataBusiness:Lcom/cnlaunch/diagnosemodule/DiagnoseUIDataBusiness;
@@ -238,7 +238,7 @@
 
     goto/16 :goto_0
 
-    .line 898
+    .line 901
     nop
 
     :pswitch_data_0

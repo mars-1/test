@@ -92,7 +92,7 @@
     const/16 v2, 0x8
 
     .line 68
-    const v0, 0x7f0705a6
+    const v0, 0x7f0705a8
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/mine/ReadReportFragment;->setTitle(I)V
 
@@ -103,7 +103,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -116,7 +116,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d04b9
+    const v1, 0x7f0c04d2
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -131,7 +131,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d04ba
+    const v1, 0x7f0c04d3
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -179,7 +179,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d04b5
+    const v1, 0x7f0c04ce
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -199,7 +199,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d04b7
+    const v1, 0x7f0c04d0
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -219,7 +219,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d04b6
+    const v1, 0x7f0c04cf
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -385,7 +385,7 @@
     :pswitch_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/ReadReportFragment;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0706b7
+    const v3, 0x7f0706b9
 
     invoke-static {v2, v3}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;I)V
 
@@ -450,9 +450,9 @@
 
     move-result-object v3
 
-    const v4, 0x7f0704fa
+    const v4, 0x7f0704fc
 
-    const v5, 0x7f0705e9
+    const v5, 0x7f0705eb
 
     const/4 v6, 0x1
 
@@ -462,7 +462,7 @@
 
     .line 95
     :pswitch_data_0
-    .packed-switch 0x7f0d04b5
+    .packed-switch 0x7f0c04ce
         :pswitch_0
         :pswitch_1
         :pswitch_2
@@ -477,7 +477,7 @@
 
     .prologue
     .line 64
-    const v0, 0x7f0301a0
+    const v0, 0x7f0301a3
 
     const/4 v1, 0x0
 
@@ -527,7 +527,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0706a6
+    const v1, 0x7f0706a8
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -635,7 +635,7 @@
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/ReadReportFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f070022
+    const v1, 0x7f070009
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 

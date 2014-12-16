@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$1;->this$1:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;
 
-    .line 232
+    .line 225
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
     return-void
@@ -39,7 +39,7 @@
     .locals 2
 
     .prologue
-    .line 235
+    .line 228
     new-instance v0, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$1;->this$1:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;
@@ -70,7 +70,7 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->update(Ljava/lang/String;)V
 
-    .line 236
+    .line 229
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$1;->this$1:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -85,6 +85,6 @@
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
-    .line 237
+    .line 230
     return-void
 .end method

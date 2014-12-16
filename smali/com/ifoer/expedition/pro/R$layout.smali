@@ -415,491 +415,497 @@
 
 .field public static final item_list_speciafunction:I = 0x7f0300c7
 
-.field public static final item_remind:I = 0x7f0300c8
+.field public static final item_listview_speciafunction:I = 0x7f0300c8
 
-.field public static final item_remind_remote:I = 0x7f0300c9
+.field public static final item_remind:I = 0x7f0300c9
 
-.field public static final item_remind_repair:I = 0x7f0300ca
+.field public static final item_remind_remote:I = 0x7f0300ca
 
-.field public static final item_share:I = 0x7f0300cb
+.field public static final item_remind_repair:I = 0x7f0300cb
 
-.field public static final item_text:I = 0x7f0300cc
+.field public static final item_share:I = 0x7f0300cc
 
-.field public static final layer_reference_line:I = 0x7f0300cd
+.field public static final item_text:I = 0x7f0300cd
 
-.field public static final layout_activate_joint:I = 0x7f0300ce
+.field public static final layer_reference_line:I = 0x7f0300ce
 
-.field public static final layout_base:I = 0x7f0300cf
+.field public static final layout_activate_joint:I = 0x7f0300cf
 
-.field public static final layout_base_usa:I = 0x7f0300d0
+.field public static final layout_base:I = 0x7f0300d0
 
-.field public static final layout_common_fragment:I = 0x7f0300d1
+.field public static final layout_base_usa:I = 0x7f0300d1
 
-.field public static final layout_diagnose_subtitle:I = 0x7f0300d2
+.field public static final layout_common_fragment:I = 0x7f0300d2
 
-.field public static final layout_dialog:I = 0x7f0300d3
+.field public static final layout_diagnose_subtitle:I = 0x7f0300d3
 
-.field public static final layout_dialog_base:I = 0x7f0300d4
+.field public static final layout_dialog:I = 0x7f0300d4
 
-.field public static final layout_dialog_bottom:I = 0x7f0300d5
+.field public static final layout_dialog_base:I = 0x7f0300d5
 
-.field public static final layout_dialog_loading:I = 0x7f0300d6
+.field public static final layout_dialog_bottom:I = 0x7f0300d6
 
-.field public static final layout_dialog_menu:I = 0x7f0300d7
+.field public static final layout_dialog_loading:I = 0x7f0300d7
 
-.field public static final layout_dialog_menu_item:I = 0x7f0300d8
+.field public static final layout_dialog_menu:I = 0x7f0300d8
 
-.field public static final layout_dialog_message:I = 0x7f0300d9
+.field public static final layout_dialog_menu_item:I = 0x7f0300d9
 
-.field public static final layout_dialog_show_again:I = 0x7f0300da
+.field public static final layout_dialog_message:I = 0x7f0300da
 
-.field public static final layout_dialog_spinner:I = 0x7f0300db
+.field public static final layout_dialog_show_again:I = 0x7f0300db
 
-.field public static final layout_dialog_tip:I = 0x7f0300dc
+.field public static final layout_dialog_spinner:I = 0x7f0300dc
 
-.field public static final layout_dialog_title_pop:I = 0x7f0300dd
+.field public static final layout_dialog_tip:I = 0x7f0300dd
 
-.field public static final layout_dialog_waiting:I = 0x7f0300de
+.field public static final layout_dialog_title_pop:I = 0x7f0300de
 
-.field public static final layout_findpass:I = 0x7f0300df
+.field public static final layout_dialog_waiting:I = 0x7f0300df
 
-.field public static final layout_findpassword:I = 0x7f0300e0
+.field public static final layout_findpass:I = 0x7f0300e0
 
-.field public static final layout_guide:I = 0x7f0300e1
+.field public static final layout_findpassword:I = 0x7f0300e1
 
-.field public static final layout_guide_item1:I = 0x7f0300e2
+.field public static final layout_guide:I = 0x7f0300e2
 
-.field public static final layout_guide_item2:I = 0x7f0300e3
+.field public static final layout_guide_item1:I = 0x7f0300e3
 
-.field public static final layout_guide_item3:I = 0x7f0300e4
+.field public static final layout_guide_item2:I = 0x7f0300e4
 
-.field public static final layout_guide_item4:I = 0x7f0300e5
+.field public static final layout_guide_item3:I = 0x7f0300e5
 
-.field public static final layout_guide_item5:I = 0x7f0300e6
+.field public static final layout_guide_item4:I = 0x7f0300e6
 
-.field public static final layout_how_to_get_joint_verify_code:I = 0x7f0300e7
+.field public static final layout_guide_item5:I = 0x7f0300e7
 
-.field public static final layout_identifix_dialog_tips:I = 0x7f0300e8
+.field public static final layout_how_to_get_joint_verify_code:I = 0x7f0300e8
 
-.field public static final layout_loading_dialog:I = 0x7f0300e9
+.field public static final layout_identifix_dialog_tips:I = 0x7f0300e9
 
-.field public static final layout_login:I = 0x7f0300ea
+.field public static final layout_loading_dialog:I = 0x7f0300ea
 
-.field public static final layout_lonin_dropdown_view:I = 0x7f0300eb
+.field public static final layout_login:I = 0x7f0300eb
 
-.field public static final layout_main:I = 0x7f0300ec
+.field public static final layout_lonin_dropdown_view:I = 0x7f0300ec
 
-.field public static final layout_mian_item:I = 0x7f0300ed
+.field public static final layout_main:I = 0x7f0300ed
 
-.field public static final layout_progressdialog:I = 0x7f0300ee
+.field public static final layout_mian_item:I = 0x7f0300ee
 
-.field public static final layout_regist:I = 0x7f0300ef
+.field public static final layout_progressdialog:I = 0x7f0300ef
 
-.field public static final layout_register_spinner_checked_view:I = 0x7f0300f0
+.field public static final layout_regist:I = 0x7f0300f0
 
-.field public static final layout_register_toast:I = 0x7f0300f1
+.field public static final layout_regist_ja:I = 0x7f0300f1
 
-.field public static final layout_regit_finish:I = 0x7f0300f2
+.field public static final layout_register_spinner_checked_view:I = 0x7f0300f2
 
-.field public static final layout_reset_password:I = 0x7f0300f3
+.field public static final layout_register_toast:I = 0x7f0300f3
 
-.field public static final layout_rtu_base_select_fragment:I = 0x7f0300f4
+.field public static final layout_regit_finish:I = 0x7f0300f4
 
-.field public static final layout_slidingmenu_blue:I = 0x7f0300f5
+.field public static final layout_reset_password:I = 0x7f0300f5
 
-.field public static final layout_slidingmenu_default:I = 0x7f0300f6
+.field public static final layout_rtu_base_select_fragment:I = 0x7f0300f6
 
-.field public static final layout_splash:I = 0x7f0300f7
+.field public static final layout_slidingmenu_blue:I = 0x7f0300f7
 
-.field public static final layout_toast:I = 0x7f0300f8
+.field public static final layout_slidingmenu_default:I = 0x7f0300f8
 
-.field public static final layout_tool_gridview:I = 0x7f0300f9
+.field public static final layout_splash:I = 0x7f0300f9
 
-.field public static final left:I = 0x7f0300fa
+.field public static final layout_toast:I = 0x7f0300fa
 
-.field public static final license_plate_number:I = 0x7f0300fb
+.field public static final layout_tool_gridview:I = 0x7f0300fb
 
-.field public static final linearlayout_item:I = 0x7f0300fc
+.field public static final left:I = 0x7f0300fc
 
-.field public static final list_group_item:I = 0x7f0300fd
+.field public static final license_plate_number:I = 0x7f0300fd
 
-.field public static final list_item_contact:I = 0x7f0300fe
+.field public static final linearlayout_item:I = 0x7f0300fe
 
-.field public static final list_item_contact_select:I = 0x7f0300ff
+.field public static final list_group_item:I = 0x7f0300ff
 
-.field public static final list_item_news_content:I = 0x7f030100
+.field public static final list_item_contact:I = 0x7f030100
 
-.field public static final list_item_public_multi_news:I = 0x7f030101
+.field public static final list_item_contact_select:I = 0x7f030101
 
-.field public static final list_item_public_single_news:I = 0x7f030102
+.field public static final list_item_news_content:I = 0x7f030102
 
-.field public static final list_item_technician:I = 0x7f030103
+.field public static final list_item_public_multi_news:I = 0x7f030103
 
-.field public static final list_item_technician_new:I = 0x7f030104
+.field public static final list_item_public_single_news:I = 0x7f030104
 
-.field public static final list_my_group_head:I = 0x7f030105
+.field public static final list_item_technician:I = 0x7f030105
 
-.field public static final list_view_foot_chat:I = 0x7f030106
+.field public static final list_item_technician_new:I = 0x7f030106
 
-.field public static final list_view_header_chat:I = 0x7f030107
+.field public static final list_my_group_head:I = 0x7f030107
 
-.field public static final list_view_item_card_in:I = 0x7f030108
+.field public static final list_view_foot_chat:I = 0x7f030108
 
-.field public static final list_view_item_card_out:I = 0x7f030109
+.field public static final list_view_header_chat:I = 0x7f030109
 
-.field public static final list_view_item_chat_place_in:I = 0x7f03010a
+.field public static final list_view_item_card_in:I = 0x7f03010a
 
-.field public static final list_view_item_chat_place_out:I = 0x7f03010b
+.field public static final list_view_item_card_out:I = 0x7f03010b
 
-.field public static final list_view_item_face_in:I = 0x7f03010c
+.field public static final list_view_item_chat_place_in:I = 0x7f03010c
 
-.field public static final list_view_item_face_out:I = 0x7f03010d
+.field public static final list_view_item_chat_place_out:I = 0x7f03010d
 
-.field public static final list_view_item_in:I = 0x7f03010e
+.field public static final list_view_item_face_in:I = 0x7f03010e
 
-.field public static final list_view_item_media_in:I = 0x7f03010f
+.field public static final list_view_item_face_out:I = 0x7f03010f
 
-.field public static final list_view_item_media_out:I = 0x7f030110
+.field public static final list_view_item_in:I = 0x7f030110
 
-.field public static final list_view_item_menu_bar:I = 0x7f030111
+.field public static final list_view_item_media_in:I = 0x7f030111
 
-.field public static final list_view_item_notify:I = 0x7f030112
+.field public static final list_view_item_media_out:I = 0x7f030112
 
-.field public static final list_view_item_out:I = 0x7f030113
+.field public static final list_view_item_menu_bar:I = 0x7f030113
 
-.field public static final list_view_item_text_in:I = 0x7f030114
+.field public static final list_view_item_notify:I = 0x7f030114
 
-.field public static final list_view_item_text_out:I = 0x7f030115
+.field public static final list_view_item_out:I = 0x7f030115
 
-.field public static final list_view_item_voice_in:I = 0x7f030116
+.field public static final list_view_item_text_in:I = 0x7f030116
 
-.field public static final list_view_item_voice_out:I = 0x7f030117
+.field public static final list_view_item_text_out:I = 0x7f030117
 
-.field public static final listview_leftmenu:I = 0x7f030118
+.field public static final list_view_item_voice_in:I = 0x7f030118
 
-.field public static final little_helper_viewpager:I = 0x7f030119
+.field public static final list_view_item_voice_out:I = 0x7f030119
 
-.field public static final loading_layout:I = 0x7f03011a
+.field public static final listview_leftmenu:I = 0x7f03011a
 
-.field public static final login_relogin:I = 0x7f03011b
+.field public static final little_helper_viewpager:I = 0x7f03011b
 
-.field public static final map_car_archives:I = 0x7f03011c
+.field public static final loading_layout:I = 0x7f03011c
 
-.field public static final map_car_postion:I = 0x7f03011d
+.field public static final login_relogin:I = 0x7f03011d
 
-.field public static final map_efence_list_item:I = 0x7f03011e
+.field public static final map_car_archives:I = 0x7f03011e
 
-.field public static final map_hot_city_list:I = 0x7f03011f
+.field public static final map_car_postion:I = 0x7f03011f
 
-.field public static final map_mission_list_item:I = 0x7f030120
+.field public static final map_efence_list_item:I = 0x7f030120
 
-.field public static final map_mission_list_layout:I = 0x7f030121
+.field public static final map_hot_city_list:I = 0x7f030121
 
-.field public static final map_monitor_item:I = 0x7f030122
+.field public static final map_mission_list_item:I = 0x7f030122
 
-.field public static final map_monitor_status_top_item:I = 0x7f030123
+.field public static final map_mission_list_layout:I = 0x7f030123
 
-.field public static final map_pop_last_location:I = 0x7f030124
+.field public static final map_monitor_item:I = 0x7f030124
 
-.field public static final map_pop_search_other:I = 0x7f030125
+.field public static final map_monitor_status_top_item:I = 0x7f030125
 
-.field public static final map_route:I = 0x7f030126
+.field public static final map_pop_last_location:I = 0x7f030126
 
-.field public static final map_saveefence_layout:I = 0x7f030127
+.field public static final map_pop_search_other:I = 0x7f030127
 
-.field public static final map_search_efence_footer:I = 0x7f030128
+.field public static final map_route:I = 0x7f030128
 
-.field public static final map_search_efence_item:I = 0x7f030129
+.field public static final map_saveefence_layout:I = 0x7f030129
 
-.field public static final map_search_match_pop:I = 0x7f03012a
+.field public static final map_search_efence_footer:I = 0x7f03012a
 
-.field public static final map_select_city:I = 0x7f03012b
+.field public static final map_search_efence_item:I = 0x7f03012b
 
-.field public static final map_select_city_new_item:I = 0x7f03012c
+.field public static final map_search_match_pop:I = 0x7f03012c
 
-.field public static final map_share_item:I = 0x7f03012d
+.field public static final map_select_city:I = 0x7f03012d
 
-.field public static final map_title_car:I = 0x7f03012e
+.field public static final map_select_city_new_item:I = 0x7f03012e
 
-.field public static final map_track_share_item:I = 0x7f03012f
+.field public static final map_share_item:I = 0x7f03012f
 
-.field public static final map_whereitis_layout:I = 0x7f030130
+.field public static final map_title_car:I = 0x7f030130
 
-.field public static final mapoffline_download_fra:I = 0x7f030131
+.field public static final map_track_share_item:I = 0x7f030131
 
-.field public static final maps_view:I = 0x7f030132
+.field public static final map_whereitis_layout:I = 0x7f030132
 
-.field public static final message_diag:I = 0x7f030133
+.field public static final mapoffline_download_fra:I = 0x7f030133
 
-.field public static final message_fragement:I = 0x7f030134
+.field public static final maps_view:I = 0x7f030134
 
-.field public static final mine_arealist:I = 0x7f030135
+.field public static final message_diag:I = 0x7f030135
 
-.field public static final mine_arealist_item:I = 0x7f030136
+.field public static final message_fragement:I = 0x7f030136
 
-.field public static final mine_change_sex:I = 0x7f030137
+.field public static final mine_arealist:I = 0x7f030137
 
-.field public static final mine_connector_activate:I = 0x7f030138
+.field public static final mine_arealist_item:I = 0x7f030138
 
-.field public static final mine_firmware_fix:I = 0x7f030139
+.field public static final mine_change_sex:I = 0x7f030139
 
-.field public static final mine_fragment:I = 0x7f03013a
+.field public static final mine_connector_activate:I = 0x7f03013a
 
-.field public static final mine_myreport:I = 0x7f03013b
+.field public static final mine_firmware_fix:I = 0x7f03013b
 
-.field public static final mine_myreport_list_item:I = 0x7f03013c
+.field public static final mine_fragment:I = 0x7f03013c
 
-.field public static final mine_myserialno:I = 0x7f03013d
+.field public static final mine_myreport:I = 0x7f03013d
 
-.field public static final mine_printeditinfo:I = 0x7f03013e
+.field public static final mine_myreport_list_item:I = 0x7f03013e
 
-.field public static final mine_serial_info_pop:I = 0x7f03013f
+.field public static final mine_myserialno:I = 0x7f03013f
 
-.field public static final mine_serialno_item:I = 0x7f030140
+.field public static final mine_printeditinfo:I = 0x7f030140
 
-.field public static final mine_verification_code:I = 0x7f030141
+.field public static final mine_serial_info_pop:I = 0x7f030141
 
-.field public static final modify_discharge:I = 0x7f030142
+.field public static final mine_serialno_item:I = 0x7f030142
 
-.field public static final modify_password_fragment:I = 0x7f030143
+.field public static final mine_verification_code:I = 0x7f030143
 
-.field public static final msg_floatingtitle:I = 0x7f030144
+.field public static final modify_discharge:I = 0x7f030144
 
-.field public static final msg_list_item_file_view:I = 0x7f030145
+.field public static final modify_password_fragment:I = 0x7f030145
 
-.field public static final msg_list_item_file_view_out:I = 0x7f030146
+.field public static final msg_floatingtitle:I = 0x7f030146
 
-.field public static final msg_list_item_picture_view:I = 0x7f030147
+.field public static final msg_list_item_file_view:I = 0x7f030147
 
-.field public static final msg_list_item_picture_view_out:I = 0x7f030148
+.field public static final msg_list_item_file_view_out:I = 0x7f030148
 
-.field public static final msg_list_item_voice_view:I = 0x7f030149
+.field public static final msg_list_item_picture_view:I = 0x7f030149
 
-.field public static final msg_list_item_voice_view_out:I = 0x7f03014a
+.field public static final msg_list_item_picture_view_out:I = 0x7f03014a
 
-.field public static final msg_sendbar:I = 0x7f03014b
+.field public static final msg_list_item_voice_view:I = 0x7f03014b
 
-.field public static final msg_sub_global_item:I = 0x7f03014c
+.field public static final msg_list_item_voice_view_out:I = 0x7f03014c
 
-.field public static final msg_subview:I = 0x7f03014d
+.field public static final msg_sendbar:I = 0x7f03014d
 
-.field public static final my_car:I = 0x7f03014e
+.field public static final msg_sub_global_item:I = 0x7f03014e
 
-.field public static final my_dialog:I = 0x7f03014f
+.field public static final msg_subview:I = 0x7f03014f
 
-.field public static final my_vmt:I = 0x7f030150
+.field public static final my_car:I = 0x7f030150
 
-.field public static final mycar_list_footer:I = 0x7f030151
+.field public static final my_dialog:I = 0x7f030151
 
-.field public static final mycar_setdialog:I = 0x7f030152
+.field public static final my_vmt:I = 0x7f030152
 
-.field public static final new_dialog_record:I = 0x7f030153
+.field public static final mycar_list_footer:I = 0x7f030153
 
-.field public static final obd_menu_item:I = 0x7f030154
+.field public static final mycar_setdialog:I = 0x7f030154
 
-.field public static final oneclear_fragment:I = 0x7f030155
+.field public static final new_dialog_record:I = 0x7f030155
 
-.field public static final onekey_feedback_log_list_item:I = 0x7f030156
+.field public static final obd_menu_item:I = 0x7f030156
 
-.field public static final online_forum_layout:I = 0x7f030157
+.field public static final oneclear_fragment:I = 0x7f030157
 
-.field public static final pay_package:I = 0x7f030158
+.field public static final onekey_feedback_log_list_item:I = 0x7f030158
 
-.field public static final pay_package_item:I = 0x7f030159
+.field public static final online_forum_layout:I = 0x7f030159
 
-.field public static final pay_test:I = 0x7f03015a
+.field public static final pay_package:I = 0x7f03015a
 
-.field public static final pdf_webview:I = 0x7f03015b
+.field public static final pay_package_item:I = 0x7f03015b
 
-.field public static final peccancy_gridview_item:I = 0x7f03015c
+.field public static final pay_test:I = 0x7f03015c
 
-.field public static final peccancy_vehicle_select:I = 0x7f03015d
+.field public static final pdf_webview:I = 0x7f03015d
 
-.field public static final peccancy_vehicle_select_item:I = 0x7f03015e
+.field public static final peccancy_gridview_item:I = 0x7f03015e
 
-.field public static final person_information_fragment:I = 0x7f03015f
+.field public static final peccancy_vehicle_select:I = 0x7f03015f
 
-.field public static final phone_contacts:I = 0x7f030160
+.field public static final peccancy_vehicle_select_item:I = 0x7f030160
 
-.field public static final phone_head_contact:I = 0x7f030161
+.field public static final person_information_fragment:I = 0x7f030161
 
-.field public static final phone_list_contact:I = 0x7f030162
+.field public static final phone_contacts:I = 0x7f030162
 
-.field public static final preference:I = 0x7f030163
+.field public static final phone_head_contact:I = 0x7f030163
 
-.field public static final preference_widget_checkbox:I = 0x7f030164
+.field public static final phone_list_contact:I = 0x7f030164
 
-.field public static final print_failure_dialog:I = 0x7f030165
+.field public static final preference:I = 0x7f030165
 
-.field public static final progress_dialog_title:I = 0x7f030166
+.field public static final preference_widget_checkbox:I = 0x7f030166
 
-.field public static final public_account:I = 0x7f030167
+.field public static final print_failure_dialog:I = 0x7f030167
 
-.field public static final public_account_item:I = 0x7f030168
+.field public static final progress_dialog_title:I = 0x7f030168
 
-.field public static final public_repair:I = 0x7f030169
+.field public static final public_account:I = 0x7f030169
 
-.field public static final pulltorefresh_header:I = 0x7f03016a
+.field public static final public_account_item:I = 0x7f03016a
 
-.field public static final recently_chat_list_item:I = 0x7f03016b
+.field public static final public_repair:I = 0x7f03016b
 
-.field public static final refresh_footer:I = 0x7f03016c
+.field public static final pulltorefresh_header:I = 0x7f03016c
 
-.field public static final refresh_header:I = 0x7f03016d
+.field public static final recently_chat_list_item:I = 0x7f03016d
 
-.field public static final register_countrylist:I = 0x7f03016e
+.field public static final refresh_footer:I = 0x7f03016e
 
-.field public static final register_profile:I = 0x7f03016f
+.field public static final refresh_header:I = 0x7f03016f
 
-.field public static final remind_info:I = 0x7f030170
+.field public static final register_countrylist:I = 0x7f030170
 
-.field public static final reminder_info:I = 0x7f030171
+.field public static final register_instruction:I = 0x7f030171
 
-.field public static final reminder_info_item:I = 0x7f030172
+.field public static final register_profile:I = 0x7f030172
 
-.field public static final reminder_info_item_second:I = 0x7f030173
+.field public static final remind_info:I = 0x7f030173
 
-.field public static final reminder_info_third:I = 0x7f030174
+.field public static final reminder_info:I = 0x7f030174
 
-.field public static final remote_service_binding:I = 0x7f030175
+.field public static final reminder_info_item:I = 0x7f030175
 
-.field public static final report_info:I = 0x7f030176
+.field public static final reminder_info_item_second:I = 0x7f030176
 
-.field public static final ride_station_applied:I = 0x7f030177
+.field public static final reminder_info_third:I = 0x7f030177
 
-.field public static final right:I = 0x7f030178
+.field public static final remote_service_binding:I = 0x7f030178
 
-.field public static final scanqr_layout:I = 0x7f030179
+.field public static final report_info:I = 0x7f030179
 
-.field public static final scheduled_title:I = 0x7f03017a
+.field public static final ride_station_applied:I = 0x7f03017a
 
-.field public static final search_contact_list_item:I = 0x7f03017b
+.field public static final right:I = 0x7f03017b
 
-.field public static final select_activity_technician:I = 0x7f03017c
+.field public static final scanqr_layout:I = 0x7f03017c
 
-.field public static final select_list_item_technician:I = 0x7f03017d
+.field public static final scheduled_title:I = 0x7f03017d
 
-.field public static final selfinfo_black_list:I = 0x7f03017e
+.field public static final search_contact_list_item:I = 0x7f03017e
 
-.field public static final send_diagnostic_log_feedback:I = 0x7f03017f
+.field public static final select_activity_technician:I = 0x7f03017f
 
-.field public static final setting_about_info:I = 0x7f030180
+.field public static final select_list_item_technician:I = 0x7f030180
 
-.field public static final setting_apply_set:I = 0x7f030181
+.field public static final selfinfo_black_list:I = 0x7f030181
 
-.field public static final setting_check_server:I = 0x7f030182
+.field public static final send_diagnostic_log_feedback:I = 0x7f030182
 
-.field public static final setting_diagnose_log_fragment:I = 0x7f030183
+.field public static final setting_about_info:I = 0x7f030183
 
-.field public static final setting_fragment:I = 0x7f030184
+.field public static final setting_apply_set:I = 0x7f030184
 
-.field public static final setting_identifix_fragment:I = 0x7f030185
+.field public static final setting_check_server:I = 0x7f030185
 
-.field public static final setting_max_min_value:I = 0x7f030186
+.field public static final setting_diagnose_log_fragment:I = 0x7f030186
 
-.field public static final setting_onekey_feedback:I = 0x7f030187
+.field public static final setting_fragment:I = 0x7f030187
 
-.field public static final setting_orientation_set:I = 0x7f030188
+.field public static final setting_identifix_fragment:I = 0x7f030188
 
-.field public static final setting_statement_pop:I = 0x7f030189
+.field public static final setting_max_min_value:I = 0x7f030189
 
-.field public static final setting_themes:I = 0x7f03018a
+.field public static final setting_onekey_feedback:I = 0x7f03018a
 
-.field public static final setting_timeout_remind_fragment:I = 0x7f03018b
+.field public static final setting_orientation_set:I = 0x7f03018b
 
-.field public static final setting_version_info_pop:I = 0x7f03018c
+.field public static final setting_statement_pop:I = 0x7f03018c
 
-.field public static final share_back_dialog:I = 0x7f03018d
+.field public static final setting_themes:I = 0x7f03018d
 
-.field public static final share_city_item:I = 0x7f03018e
+.field public static final setting_timeout_remind_fragment:I = 0x7f03018e
 
-.field public static final share_city_list:I = 0x7f03018f
+.field public static final setting_version_info_pop:I = 0x7f03018f
 
-.field public static final share_city_pop:I = 0x7f030190
+.field public static final share_back_dialog:I = 0x7f030190
 
-.field public static final share_citylist_item:I = 0x7f030191
+.field public static final share_city_item:I = 0x7f030191
 
-.field public static final share_comment_show:I = 0x7f030192
+.field public static final share_city_list:I = 0x7f030192
 
-.field public static final share_dialog_record:I = 0x7f030193
+.field public static final share_city_pop:I = 0x7f030193
 
-.field public static final share_file_select:I = 0x7f030194
+.field public static final share_citylist_item:I = 0x7f030194
 
-.field public static final share_filpper_item_show:I = 0x7f030195
+.field public static final share_comment_show:I = 0x7f030195
 
-.field public static final share_grid_image_view:I = 0x7f030196
+.field public static final share_dialog_record:I = 0x7f030196
 
-.field public static final share_grid_view_item_face:I = 0x7f030197
+.field public static final share_file_select:I = 0x7f030197
 
-.field public static final share_message:I = 0x7f030198
+.field public static final share_filpper_item_show:I = 0x7f030198
 
-.field public static final share_op_dialog:I = 0x7f030199
+.field public static final share_grid_image_view:I = 0x7f030199
 
-.field public static final share_origin_pic_show:I = 0x7f03019a
+.field public static final share_grid_view_item_face:I = 0x7f03019a
 
-.field public static final share_person_grid_view:I = 0x7f03019b
+.field public static final share_message:I = 0x7f03019b
 
-.field public static final share_prolist_item:I = 0x7f03019c
+.field public static final share_op_dialog:I = 0x7f03019c
 
-.field public static final share_public_head:I = 0x7f03019d
+.field public static final share_origin_pic_show:I = 0x7f03019d
 
-.field public static final share_show:I = 0x7f03019e
+.field public static final share_person_grid_view:I = 0x7f03019e
 
-.field public static final share_show_head:I = 0x7f03019f
+.field public static final share_prolist_item:I = 0x7f03019f
 
-.field public static final show_files_fragment:I = 0x7f0301a0
+.field public static final share_public_head:I = 0x7f0301a0
 
-.field public static final show_help_html_file_view:I = 0x7f0301a1
+.field public static final share_show:I = 0x7f0301a1
 
-.field public static final show_image_detail:I = 0x7f0301a2
+.field public static final share_show_head:I = 0x7f0301a2
 
-.field public static final single_image_item:I = 0x7f0301a3
+.field public static final show_files_fragment:I = 0x7f0301a3
 
-.field public static final slidingmenu_frame:I = 0x7f0301a4
+.field public static final show_help_html_file_view:I = 0x7f0301a4
 
-.field public static final slidingmenu_main:I = 0x7f0301a5
+.field public static final show_image_detail:I = 0x7f0301a5
 
-.field public static final spinner_dropdown_item:I = 0x7f0301a6
+.field public static final single_image_item:I = 0x7f0301a6
 
-.field public static final spinner_item:I = 0x7f0301a7
+.field public static final slidingmenu_frame:I = 0x7f0301a7
 
-.field public static final test_layout:I = 0x7f0301a8
+.field public static final slidingmenu_main:I = 0x7f0301a8
 
-.field public static final tools_fragment:I = 0x7f0301a9
+.field public static final spinner_dropdown_item:I = 0x7f0301a9
 
-.field public static final tools_gridview_item:I = 0x7f0301aa
+.field public static final spinner_item:I = 0x7f0301aa
 
-.field public static final upgrade_download_fragment:I = 0x7f0301ab
+.field public static final test_layout:I = 0x7f0301ab
 
-.field public static final upgrade_download_item:I = 0x7f0301ac
+.field public static final tools_fragment:I = 0x7f0301ac
 
-.field public static final upgrade_fragment:I = 0x7f0301ad
+.field public static final tools_gridview_item:I = 0x7f0301ad
 
-.field public static final upgrade_list_item:I = 0x7f0301ae
+.field public static final upgrade_download_fragment:I = 0x7f0301ae
 
-.field public static final user_guide_viewpager:I = 0x7f0301af
+.field public static final upgrade_download_item:I = 0x7f0301af
 
-.field public static final vehicle_brand_item:I = 0x7f0301b0
+.field public static final upgrade_fragment:I = 0x7f0301b0
 
-.field public static final vehicle_model_year:I = 0x7f0301b1
+.field public static final upgrade_list_item:I = 0x7f0301b1
 
-.field public static final vehicle_modify_model:I = 0x7f0301b2
+.field public static final user_guide_viewpager:I = 0x7f0301b2
 
-.field public static final vehicle_safety_item:I = 0x7f0301b3
+.field public static final vehicle_brand_item:I = 0x7f0301b3
 
-.field public static final vehicle_select_brand:I = 0x7f0301b4
+.field public static final vehicle_model_year:I = 0x7f0301b4
 
-.field public static final vehicle_select_brand_item:I = 0x7f0301b5
+.field public static final vehicle_modify_model:I = 0x7f0301b5
 
-.field public static final vehicle_select_brand_new_item:I = 0x7f0301b6
+.field public static final vehicle_safety_item:I = 0x7f0301b6
 
-.field public static final vehicle_select_model_item:I = 0x7f0301b7
+.field public static final vehicle_select_brand:I = 0x7f0301b7
 
-.field public static final verification_code_fragment:I = 0x7f0301b8
+.field public static final vehicle_select_brand_item:I = 0x7f0301b8
 
-.field public static final waiting:I = 0x7f0301b9
+.field public static final vehicle_select_brand_new_item:I = 0x7f0301b9
 
-.field public static final wifi_print_setting:I = 0x7f0301ba
+.field public static final vehicle_select_model_item:I = 0x7f0301ba
+
+.field public static final verification_code_fragment:I = 0x7f0301bb
+
+.field public static final waiting:I = 0x7f0301bc
+
+.field public static final wifi_print_setting:I = 0x7f0301bd
 
 
 # direct methods
@@ -907,7 +913,7 @@
     .locals 0
 
     .prologue
-    .line 5090
+    .line 5119
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

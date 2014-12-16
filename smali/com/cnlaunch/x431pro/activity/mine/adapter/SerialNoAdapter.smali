@@ -176,7 +176,7 @@
     .local v0, item:Lcom/cnlaunch/x431pro/activity/mine/adapter/SerialNoAdapter$Item;
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/adapter/SerialNoAdapter;->inflater:Landroid/view/LayoutInflater;
 
-    const v2, 0x7f030140
+    const v2, 0x7f030142
 
     const/4 v3, 0x0
 
@@ -185,7 +185,7 @@
     move-result-object p2
 
     .line 56
-    const v1, 0x7f0d0390
+    const v1, 0x7f0c03a6
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -196,7 +196,7 @@
     iput-object v1, v0, Lcom/cnlaunch/x431pro/activity/mine/adapter/SerialNoAdapter$Item;->tv_serial_number:Landroid/widget/TextView;
 
     .line 57
-    const v1, 0x7f0d038f
+    const v1, 0x7f0c03a5
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -207,7 +207,7 @@
     iput-object v1, v0, Lcom/cnlaunch/x431pro/activity/mine/adapter/SerialNoAdapter$Item;->iv_checkbox:Landroid/widget/ImageView;
 
     .line 58
-    const v1, 0x7f0d0391
+    const v1, 0x7f0c03a7
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -218,7 +218,7 @@
     iput-object v1, v0, Lcom/cnlaunch/x431pro/activity/mine/adapter/SerialNoAdapter$Item;->btn_spinner_down:Landroid/widget/ImageButton;
 
     .line 59
-    const v1, 0x7f0d038e
+    const v1, 0x7f0c03a4
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -362,7 +362,7 @@
     :cond_2
     iget-object v1, v0, Lcom/cnlaunch/x431pro/activity/mine/adapter/SerialNoAdapter$Item;->iv_checkbox:Landroid/widget/ImageView;
 
-    const v2, 0x7f020123
+    const v2, 0x7f020124
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 

@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">Køretøj diagnostisk rapport</string>
+    <string name="print_success">Udskrivning var vellykket!</string>
+    <string name="print_jam">Papirstop</string>
+    <string name="print_will_nopaper">Printeren vil være ude af papir snart</string>
+    <string name="print_no_paper">Printeren har ikke papir</string>
+    <string name="print_actuator_fault">Printer har fejl!</string>
+    <string name="print_head_overheating">Printeren er overophedet</string>
+    <string name="print_connect_printer">Tilslut din Wi-Fi printer først</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">Konfirmer</string>
     <string name="bluetooth_close_connected">Afbrydelse:</string>
     <string name="bluetooth_connecting">Forbinder nu</string>
     <string name="bluetooth_no_search_device">Bluetooth-adapteren kunne ikke fundes, du må kontrollere, at adapteren er tændt op og genopfrisker din søgning</string>
@@ -15,18 +27,6 @@
     <string name="no">Nej</string>
     <string name="tv_unconnect">Ikke tilsluttet</string>
     <string name="tv_unpair">Ikke parret</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">Køretøj diagnostisk rapport</string>
-    <string name="print_success">Udskrivning var vellykket!</string>
-    <string name="print_jam">Papirstop</string>
-    <string name="print_will_nopaper">Printeren vil være ude af papir snart</string>
-    <string name="print_no_paper">Printeren har ikke papir</string>
-    <string name="print_actuator_fault">Printer har fejl!</string>
-    <string name="print_head_overheating">Printeren er overophedet</string>
-    <string name="print_connect_printer">Tilslut din Wi-Fi printer først</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">Konfirmer</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

@@ -51,7 +51,7 @@
     .parameter "msg"
 
     .prologue
-    const v6, 0x7f07003d
+    const v6, 0x7f070024
 
     const/16 v5, 0x11
 
@@ -80,7 +80,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070567
+    const v1, 0x7f070569
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -168,7 +168,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070569
+    const v1, 0x7f07056b
 
     invoke-static {v0, v1, v5}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
@@ -293,7 +293,7 @@
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/DownloadBinActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/bluetooth/DownloadBinActivity;
 
-    const v3, 0x7f07056b
+    const v3, 0x7f07056d
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/activity/bluetooth/DownloadBinActivity;->getString(I)Ljava/lang/String;
 
@@ -347,7 +347,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070569
+    const v1, 0x7f07056b
 
     invoke-static {v0, v1, v5}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 

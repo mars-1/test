@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest android:versionCode="64" android:versionName="3.00.005" android:installLocation="internalOnly" package="com.ifoer.expedition.pro"
+<manifest android:versionCode="67" android:versionName="3.00.009" android:installLocation="internalOnly" package="com.ifoer.expedition.pro"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -48,6 +48,8 @@
         <activity android:name="com.cnlaunch.x431pro.activity.MainActivity" android:launchMode="singleTask" android:configChanges="locale|keyboardHidden|orientation|screenSize" />
         <activity android:theme="@style/LaunchTheme.Dialog" android:name="com.cnlaunch.x431pro.activity.login.LoginActivity" android:configChanges="orientation" android:windowSoftInputMode="stateHidden" />
         <activity android:name="com.cnlaunch.x431pro.activity.login.RegistActivity" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.login.RegistActivity_ja" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.login.RegisterInstructionActivity" android:configChanges="locale|keyboardHidden|orientation" />
         <activity android:name="com.cnlaunch.x431pro.activity.login.ActivateJointActivity" android:configChanges="locale|keyboardHidden|orientation" />
         <activity android:name="com.cnlaunch.x431pro.activity.login.RegisterFinishActivity" android:configChanges="orientation" />
         <activity android:name="com.cnlaunch.x431pro.activity.login.FindPasswordActivity" android:configChanges="orientation" />
@@ -81,7 +83,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-        <activity android:name="com.cnlaunch.x431pro.activity.setting.SettingActivity" android:launchMode="singleTask" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.cnlaunch.x431pro.activity.setting.SettingActivity" android:launchMode="singleTask" android:configChanges="locale|keyboardHidden|orientation|screenSize" />
         <activity android:theme="@style/LaunchTheme.Dialog" android:name="com.cnlaunch.x431pro.activity.setting.SendDiagnosticLogActivity" android:configChanges="locale|keyboardHidden|orientation" />
         <uses-library android:name="android.test.runner" />
         <service android:name="com.cnlaunch.diagnosemodule.service.DiagnoseService" android:persistent="true" android:process="com.cnlaunch.diagnoseservice" android:priority="1000" />

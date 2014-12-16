@@ -3,9 +3,9 @@
 .source "TextListFragment.java"
 
 # interfaces
+.implements Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 .implements Landroid/widget/AdapterView$OnItemClickListener;
 .implements Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelector;
-.implements Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
 
 # annotations
@@ -272,13 +272,13 @@
     if-nez v4, :cond_0
 
     .line 156
-    const v4, 0x7f070694
+    const v4, 0x7f070696
 
     invoke-virtual {p0, v4}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    const v5, 0x7f070695
+    const v5, 0x7f070697
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getString(I)Ljava/lang/String;
 
@@ -377,14 +377,14 @@
     .locals 4
 
     .prologue
-    .line 346
+    .line 349
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mImageGrid:Lcom/cnlaunch/x431pro/widget/NoScrollGridView;
 
     iget v3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mPageCount:I
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/NoScrollGridView;->setNumColumns(I)V
 
-    .line 347
+    .line 350
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -393,13 +393,13 @@
 
     move-result-object v2
 
-    const v3, 0x7f09000c
+    const v3, 0x7f0d000c
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
     move-result v1
 
-    .line 348
+    .line 351
     .local v1, singleWith:I
     new-instance v0, Landroid/widget/LinearLayout$LayoutParams;
 
@@ -411,25 +411,25 @@
 
     invoke-direct {v0, v2, v3}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 349
+    .line 352
     .local v0, params:Landroid/widget/LinearLayout$LayoutParams;
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mImageGrid:Lcom/cnlaunch/x431pro/widget/NoScrollGridView;
 
     invoke-virtual {v2, v0}, Lcom/cnlaunch/x431pro/widget/NoScrollGridView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 350
+    .line 353
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mImageGrid:Lcom/cnlaunch/x431pro/widget/NoScrollGridView;
 
     invoke-virtual {v2, v1}, Lcom/cnlaunch/x431pro/widget/NoScrollGridView;->setColumnWidth(I)V
 
-    .line 351
+    .line 354
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mImageGrid:Lcom/cnlaunch/x431pro/widget/NoScrollGridView;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/NoScrollGridView;->setStretchMode(I)V
 
-    .line 352
+    .line 355
     return-void
 .end method
 
@@ -446,7 +446,7 @@
 
     move-result-object v2
 
-    const v5, 0x7f0d00ef
+    const v5, 0x7f0c00ef
 
     invoke-virtual {v2, v5}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -498,7 +498,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f07056d
+    const v6, 0x7f07056f
 
     invoke-virtual {v5, v6}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -540,7 +540,7 @@
 
     move-result-object v2
 
-    const v5, 0x7f0d01d6
+    const v5, 0x7f0c01d9
 
     invoke-virtual {v2, v5}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -555,7 +555,7 @@
 
     move-result-object v2
 
-    const v5, 0x7f0d00eb
+    const v5, 0x7f0c00eb
 
     invoke-virtual {v2, v5}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -585,7 +585,7 @@
 
     move-result-object v2
 
-    const v5, 0x7f0d0151
+    const v5, 0x7f0c0151
 
     invoke-virtual {v2, v5}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1230,15 +1230,15 @@
     .parameter "newConfig"
 
     .prologue
-    .line 356
+    .line 359
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/BaseDataStreamShowingFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 357
+    .line 360
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const v2, 0x7f0d01d6
+    const v2, 0x7f0c01d9
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1246,29 +1246,29 @@
 
     if-nez v1, :cond_1
 
-    .line 368
+    .line 371
     :cond_0
     :goto_0
     return-void
 
-    .line 360
+    .line 363
     :cond_1
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mViewPager:Landroid/support/v4/view/ViewPager;
 
     if-eqz v1, :cond_0
 
-    .line 361
+    .line 364
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mViewPager:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v1}, Landroid/support/v4/view/ViewPager;->getCurrentItem()I
 
     move-result v0
 
-    .line 362
+    .line 365
     .local v0, position:I
     if-nez v0, :cond_2
 
-    .line 363
+    .line 366
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -1285,7 +1285,7 @@
 
     goto :goto_0
 
-    .line 365
+    .line 368
     :cond_2
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getActivity()Landroid/app/Activity;
 
@@ -1507,212 +1507,234 @@
 .end method
 
 .method public onPageSelected(I)V
-    .locals 5
+    .locals 6
     .parameter "position"
 
     .prologue
-    const v4, 0x7f070695
+    const v5, 0x7f070697
 
-    const v3, 0x7f070694
+    const v4, 0x7f070696
 
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
     .line 311
     iput p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentPage:I
 
     .line 312
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mImageAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ImagePageAdapter;
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mImageAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ImagePageAdapter;
 
-    invoke-virtual {v0, p1}, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ImagePageAdapter;->setItemIsActive(I)V
+    invoke-virtual {v1, p1}, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ImagePageAdapter;->setItemIsActive(I)V
 
     .line 313
-    const/4 v0, -0x1
+    const/4 v1, -0x1
 
-    iput v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->helpIndex:I
+    iput v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->helpIndex:I
 
     .line 314
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mAdapterArrayList:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mAdapterArrayList:Ljava/util/ArrayList;
 
-    iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentPage:I
+    iget v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentPage:I
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DataStreamShowListAdapter;
+    check-cast v1, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DataStreamShowListAdapter;
 
-    iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->helpIndex:I
+    iget v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->helpIndex:I
 
-    invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DataStreamShowListAdapter;->setItemSelect(I)V
+    invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DataStreamShowListAdapter;->setItemSelect(I)V
 
     .line 315
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mRecorder:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelectionRecorder;
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mRecorder:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelectionRecorder;
 
-    iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->helpIndex:I
+    iget v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->helpIndex:I
 
-    invoke-interface {v0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelectionRecorder;->onSelectionItem(I)V
+    invoke-interface {v1, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelectionRecorder;->onSelectionItem(I)V
 
     .line 316
-    if-nez p1, :cond_2
+    if-nez p1, :cond_3
 
     .line 317
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getActivity()Landroid/app/Activity;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, Lcom/cnlaunch/x431pro/activity/BaseActivity;
+    check-cast v1, Lcom/cnlaunch/x431pro/activity/BaseActivity;
 
-    invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->getSlidingMenu()Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;
+    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->getSlidingMenu()Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;->setTouchModeAbove(I)V
+    invoke-virtual {v1, v3}, Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;->setTouchModeAbove(I)V
 
     .line 322
     :goto_0
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentDatastreamType:Ljava/lang/String;
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentDatastreamType:Ljava/lang/String;
 
-    const-string/jumbo v1, "900"
+    const-string/jumbo v2, "900"
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_2
 
     .line 323
-    iget v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentBigPageCount:I
+    iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentBigPageCount:I
+
+    iget v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mBigPage:I
+
+    div-int v2, p1, v2
+
+    if-ge v1, v2, :cond_4
+
+    .line 324
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCallback:Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
+
+    invoke-interface {v1}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->isDatastreamRecord()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 325
+    invoke-virtual {p0, v4}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v1, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->sendDialog(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 326
+    iput-boolean v3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->isPaging:Z
+
+    .line 335
+    :cond_0
+    :goto_1
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCallback:Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
+
+    if-eqz v1, :cond_2
 
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mBigPage:I
 
     div-int v1, p1, v1
 
-    if-ge v0, v1, :cond_3
+    iget v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentBigPageCount:I
 
-    .line 324
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCallback:Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
-
-    invoke-interface {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->isDatastreamRecord()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 325
-    invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v4}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {p0, v0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->sendDialog(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 326
-    iput-boolean v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->isPaging:Z
-
-    .line 334
-    :cond_0
-    :goto_1
-    iget v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mBigPage:I
-
-    div-int v0, p1, v0
-
-    iput v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentBigPageCount:I
+    if-eq v1, v2, :cond_2
 
     .line 336
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCallback:Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
-
-    if-eqz v0, :cond_1
+    const-string/jumbo v0, "9"
 
     .line 337
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCallback:Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
+    .local v0, pageControl:Ljava/lang/String;
+    iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentBigPageCount:I
 
-    const-string/jumbo v1, "34"
+    iget v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mBigPage:I
 
-    const-string/jumbo v2, "9"
+    div-int v2, p1, v2
+
+    if-ge v1, v2, :cond_1
+
+    .line 338
+    const-string/jumbo v0, "8"
+
+    .line 339
+    :cond_1
+    iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mBigPage:I
+
+    div-int v1, p1, v1
+
+    iput v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentBigPageCount:I
+
+    .line 340
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCallback:Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
+
+    const-string/jumbo v2, "34"
 
     iget v3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentBigPageCount:I
 
-    .line 338
     const/4 v4, 0x4
 
-    .line 337
-    invoke-interface {v0, v1, v2, v3, v4}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->SendFeedbackPageStreamMessage(Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-interface {v1, v2, v0, v3, v4}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->SendFeedbackPageStreamMessage(Ljava/lang/String;Ljava/lang/String;II)V
 
-    .line 340
-    :cond_1
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mLatestData:Ljava/util/List;
+    .line 343
+    .end local v0           #pageControl:Ljava/lang/String;
+    :cond_2
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mLatestData:Ljava/util/List;
 
-    invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->updateDataList(Ljava/util/List;)V
+    invoke-direct {p0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->updateDataList(Ljava/util/List;)V
 
-    .line 341
-    iget v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentBigPageCount:I
+    .line 344
+    iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentBigPageCount:I
 
-    invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->updateDataStreamPage(I)V
+    invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->updateDataStreamPage(I)V
 
-    .line 342
+    .line 345
     return-void
 
     .line 319
-    :cond_2
+    :cond_3
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getActivity()Landroid/app/Activity;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, Lcom/cnlaunch/x431pro/activity/BaseActivity;
+    check-cast v1, Lcom/cnlaunch/x431pro/activity/BaseActivity;
 
-    invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->getSlidingMenu()Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;
+    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->getSlidingMenu()Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;
 
-    move-result-object v0
+    move-result-object v1
 
-    const/4 v1, 0x2
+    const/4 v2, 0x2
 
-    invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;->setTouchModeAbove(I)V
+    invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;->setTouchModeAbove(I)V
 
     goto :goto_0
 
     .line 328
-    :cond_3
-    iget v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentBigPageCount:I
+    :cond_4
+    iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCurrentBigPageCount:I
 
-    iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mBigPage:I
+    iget v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mBigPage:I
 
-    div-int v1, p1, v1
+    div-int v2, p1, v2
 
-    if-le v0, v1, :cond_0
+    if-le v1, v2, :cond_0
 
     .line 329
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCallback:Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->mCallback:Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
-    invoke-interface {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
+    invoke-interface {v1}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->isDatastreamRecord()Z
+    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->isDatastreamRecord()Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_0
+    if-nez v1, :cond_0
 
     .line 330
-    invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
     invoke-virtual {p0, v4}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->sendDialog(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v1, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->sendDialog(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 331
-    iput-boolean v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->isPaging:Z
+    iput-boolean v3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->isPaging:Z
 
     goto :goto_1
 .end method
@@ -1939,13 +1961,13 @@
     if-eqz v1, :cond_3
 
     .line 266
-    const v1, 0x7f070694
+    const v1, 0x7f070696
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v2, 0x7f070695
+    const v2, 0x7f070697
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/TextListFragment;->getString(I)Ljava/lang/String;
 

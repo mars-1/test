@@ -60,7 +60,7 @@
     const/4 v2, 0x0
 
     .line 45
-    const v0, 0x7f070712
+    const v0, 0x7f070714
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/setting/ThemeSettingFragment;->setTitle(I)V
 
@@ -69,7 +69,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0483
+    const v1, 0x7f0c049c
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -89,7 +89,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0484
+    const v1, 0x7f0c049d
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -109,7 +109,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0485
+    const v1, 0x7f0c049e
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -129,7 +129,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d047c
+    const v1, 0x7f0c049a
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -273,14 +273,15 @@
 
     move-result v0
 
-    sparse-switch v0, :sswitch_data_0
+    packed-switch v0, :pswitch_data_0
 
     .line 113
     :goto_0
+    :pswitch_0
     return-void
 
     .line 76
-    :sswitch_0
+    :pswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/ThemeSettingFragment;->themes_RedRose:Landroid/widget/RadioButton;
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
@@ -301,7 +302,7 @@
     goto :goto_0
 
     .line 84
-    :sswitch_1
+    :pswitch_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/ThemeSettingFragment;->themes_RedRose:Landroid/widget/RadioButton;
 
     invoke-virtual {v0, v4}, Landroid/widget/RadioButton;->setChecked(Z)V
@@ -324,7 +325,7 @@
     goto :goto_0
 
     .line 90
-    :sswitch_2
+    :pswitch_3
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/ThemeSettingFragment;->themes_RedRose:Landroid/widget/RadioButton;
 
     invoke-virtual {v0, v4}, Landroid/widget/RadioButton;->setChecked(Z)V
@@ -347,7 +348,7 @@
     goto :goto_0
 
     .line 99
-    :sswitch_3
+    :pswitch_4
     new-instance v0, Lcom/cnlaunch/x431pro/activity/setting/ThemeSettingFragment$1;
 
     invoke-direct {v0, p0}, Lcom/cnlaunch/x431pro/activity/setting/ThemeSettingFragment$1;-><init>(Lcom/cnlaunch/x431pro/activity/setting/ThemeSettingFragment;)V
@@ -357,9 +358,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f0704fa
+    const v2, 0x7f0704fc
 
-    const v3, 0x7f070716
+    const v3, 0x7f070718
 
     invoke-virtual {v0, v1, v2, v3, v4}, Lcom/cnlaunch/x431pro/activity/setting/ThemeSettingFragment$1;->showDialog(Landroid/content/Context;IIZ)V
 
@@ -368,13 +369,14 @@
     .line 73
     nop
 
-    :sswitch_data_0
-    .sparse-switch
-        0x7f0d047c -> :sswitch_3
-        0x7f0d0483 -> :sswitch_0
-        0x7f0d0484 -> :sswitch_1
-        0x7f0d0485 -> :sswitch_2
-    .end sparse-switch
+    :pswitch_data_0
+    .packed-switch 0x7f0c049a
+        :pswitch_4
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+    .end packed-switch
 .end method
 
 .method public onCreateFragmentView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
@@ -385,7 +387,7 @@
 
     .prologue
     .line 41
-    const v0, 0x7f03018a
+    const v0, 0x7f03018d
 
     const/4 v1, 0x0
 

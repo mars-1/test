@@ -105,12 +105,12 @@
 
     .line 40
     .restart local v0       #infoTemp:Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;
-    const v1, 0x7f0203ae
+    const v1, 0x7f0203b2
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setImageResid(I)V
 
     .line 41
-    const v1, 0x7f070698
+    const v1, 0x7f07069a
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setTitleResid(I)V
 
@@ -147,12 +147,12 @@
 
     .line 49
     .restart local v0       #infoTemp:Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;
-    const v1, 0x7f0203b0
+    const v1, 0x7f0203b4
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setImageResid(I)V
 
     .line 50
-    const v1, 0x7f070699
+    const v1, 0x7f07069b
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setTitleResid(I)V
 
@@ -189,12 +189,12 @@
 
     .line 58
     .restart local v0       #infoTemp:Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;
-    const v1, 0x7f0203ad
+    const v1, 0x7f0203b1
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setImageResid(I)V
 
     .line 59
-    const v1, 0x7f07069a
+    const v1, 0x7f07069c
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setTitleResid(I)V
 
@@ -231,12 +231,12 @@
 
     .line 67
     .restart local v0       #infoTemp:Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;
-    const v1, 0x7f0203a9
+    const v1, 0x7f0203ad
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setImageResid(I)V
 
     .line 68
-    const v1, 0x7f07069b
+    const v1, 0x7f07069d
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setTitleResid(I)V
 
@@ -273,12 +273,12 @@
 
     .line 76
     .restart local v0       #infoTemp:Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;
-    const v1, 0x7f0203aa
+    const v1, 0x7f0203ae
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setImageResid(I)V
 
     .line 77
-    const v1, 0x7f07069c
+    const v1, 0x7f07069e
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setTitleResid(I)V
 
@@ -315,12 +315,12 @@
 
     .line 85
     .restart local v0       #infoTemp:Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;
-    const v1, 0x7f0203af
+    const v1, 0x7f0203b3
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setImageResid(I)V
 
     .line 86
-    const v1, 0x7f07069d
+    const v1, 0x7f07069f
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setTitleResid(I)V
 
@@ -348,12 +348,12 @@
 
     .line 93
     .restart local v0       #infoTemp:Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;
-    const v1, 0x7f0203b1
+    const v1, 0x7f0203b5
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setImageResid(I)V
 
     .line 94
-    const v1, 0x7f07069e
+    const v1, 0x7f0706a0
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setTitleResid(I)V
 
@@ -389,12 +389,12 @@
 
     .line 101
     .restart local v0       #infoTemp:Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;
-    const v1, 0x7f0203ab
+    const v1, 0x7f0203af
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setImageResid(I)V
 
     .line 102
-    const v1, 0x7f07069f
+    const v1, 0x7f0706a1
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/tool/model/ToolBaseDataInfo;->setTitleResid(I)V
 

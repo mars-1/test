@@ -25,13 +25,13 @@
     .parameter "handler"
 
     .prologue
-    .line 476
+    .line 475
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
-    .line 477
+    .line 476
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 478
+    .line 477
     return-void
 .end method
 
@@ -42,7 +42,7 @@
     .parameter "selfChange"
 
     .prologue
-    .line 482
+    .line 481
     const-string/jumbo v1, "GoloFragment"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -61,7 +61,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 484
+    .line 483
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
@@ -71,7 +71,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 485
+    .line 484
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -84,7 +84,7 @@
     #calls: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListUnreadCount(Ljava/util/List;)V
     invoke-static {v1, v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$31(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Ljava/util/List;)V
 
-    .line 486
+    .line 485
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -97,7 +97,7 @@
     #calls: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListLastTime(Ljava/util/List;)V
     invoke-static {v1, v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$32(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Ljava/util/List;)V
 
-    .line 487
+    .line 486
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -116,7 +116,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allBundingNewMsg:I
     invoke-static {v1, v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$33(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;I)V
 
-    .line 488
+    .line 487
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
@@ -130,7 +130,7 @@
 
     invoke-static {v1, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 490
+    .line 489
     const-string/jumbo v1, "GoloFragment"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -156,11 +156,11 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 492
+    .line 491
     :cond_0
     const/4 v0, 0x0
 
-    .line 493
+    .line 492
     .local v0, guanzhuCount:I
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -171,7 +171,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 494
+    .line 493
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -184,7 +184,7 @@
     #calls: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListUnreadCount(Ljava/util/List;)V
     invoke-static {v1, v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$31(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Ljava/util/List;)V
 
-    .line 495
+    .line 494
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -197,7 +197,7 @@
     #calls: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListLastTime(Ljava/util/List;)V
     invoke-static {v1, v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$32(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Ljava/util/List;)V
 
-    .line 496
+    .line 495
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -211,7 +211,7 @@
 
     move-result v0
 
-    .line 497
+    .line 496
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
@@ -225,7 +225,7 @@
 
     invoke-static {v1, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 498
+    .line 497
     const-string/jumbo v1, "GoloFragment"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -244,7 +244,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 500
+    .line 499
     :cond_1
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -277,6 +277,6 @@
 
     invoke-virtual {v1}, Landroid/os/Message;->sendToTarget()V
 
-    .line 504
+    .line 503
     return-void
 .end method

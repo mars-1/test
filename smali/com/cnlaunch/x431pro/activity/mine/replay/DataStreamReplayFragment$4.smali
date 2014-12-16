@@ -28,7 +28,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;
 
-    .line 167
+    .line 179
     invoke-direct {p0, p2}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;-><init>(Landroid/view/View;)V
 
     return-void
@@ -40,15 +40,15 @@
     .locals 2
 
     .prologue
-    .line 170
+    .line 182
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;
 
     const/4 v1, 0x0
 
     #setter for: Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->mJumpType:I
-    invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->access$11(Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;I)V
+    invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->access$18(Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;I)V
 
-    .line 171
+    .line 183
     const/4 v0, 0x1
 
     return v0

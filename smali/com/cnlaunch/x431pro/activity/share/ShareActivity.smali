@@ -94,7 +94,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f090009
+    const v7, 0x7f0d0009
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -106,7 +106,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f09000a
+    const v7, 0x7f0d000a
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -485,7 +485,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0705a3
+    const v16, 0x7f0705a5
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -674,7 +674,7 @@
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/share/ShareActivity;->initShareInfo()V
 
     .line 59
-    const v1, 0x7f0d005e
+    const v1, 0x7f0c005e
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/share/ShareActivity;->findViewById(I)Landroid/view/View;
 

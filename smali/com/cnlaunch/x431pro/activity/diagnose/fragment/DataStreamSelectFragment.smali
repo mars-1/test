@@ -93,7 +93,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d00f1
+    const v2, 0x7f0c00f1
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -170,7 +170,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0160
+    const v2, 0x7f0c0160
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -185,7 +185,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0157
+    const v2, 0x7f0c0157
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -200,7 +200,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0162
+    const v2, 0x7f0c0162
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -215,7 +215,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0161
+    const v2, 0x7f0c0161
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -230,7 +230,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d00ef
+    const v2, 0x7f0c00ef
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -313,7 +313,7 @@
 
     .prologue
     .line 159
-    const v0, 0x7f0704fe
+    const v0, 0x7f070500
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamSelectFragment;->getString(I)Ljava/lang/String;
 
@@ -452,7 +452,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0704fe
+    const v2, 0x7f070500
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamSelectFragment;->getString(I)Ljava/lang/String;
 
@@ -469,7 +469,7 @@
     .parameter "v"
 
     .prologue
-    const v10, 0x7f07053e
+    const v10, 0x7f070540
 
     const/16 v9, 0xf
 
@@ -489,7 +489,7 @@
 
     .line 73
     .local v0, id:I
-    const v4, 0x7f0d0162
+    const v4, 0x7f0c0162
 
     if-ne v0, v4, :cond_2
 
@@ -606,7 +606,7 @@
     .end local v2           #maskSelectCount:I
     .end local v3           #maskStr:Ljava/lang/String;
     :cond_2
-    const v4, 0x7f0d0161
+    const v4, 0x7f0c0161
 
     if-ne v0, v4, :cond_4
 
@@ -701,7 +701,7 @@
     .end local v2           #maskSelectCount:I
     .end local v3           #maskStr:Ljava/lang/String;
     :cond_4
-    const v4, 0x7f0d00ef
+    const v4, 0x7f0c00ef
 
     if-ne v0, v4, :cond_6
 
@@ -733,7 +733,7 @@
 
     .line 111
     :cond_6
-    const v4, 0x7f0d0157
+    const v4, 0x7f0c0157
 
     if-ne v0, v4, :cond_7
 
@@ -758,7 +758,7 @@
 
     .line 113
     :cond_7
-    const v4, 0x7f0d0160
+    const v4, 0x7f0c0160
 
     if-ne v0, v4, :cond_0
 

@@ -88,6 +88,8 @@
 
 .field public static final FEEDBACK_DEFAULT_REFRESH:Ljava/lang/String; = "0"
 
+.field public static final FEEDBACK_DIAG_RECORD:Ljava/lang/String; = "63"
+
 .field public static final FEEDBACK_DISPLAY_VERSION:Ljava/lang/String; = "54"
 
 .field public static final FEEDBACK_FAULTCODES:Ljava/lang/String; = "27"
@@ -99,6 +101,8 @@
 .field public static FEEDBACK_FAULTCODE_REFRESH:Ljava/lang/String; = null
 
 .field public static final FEEDBACK_FREEZEFRAME:Ljava/lang/String; = "14"
+
+.field public static final FEEDBACK_GET_VIN:Ljava/lang/String; = "48"
 
 .field public static final FEEDBACK_INPUTBOX_TEXT:Ljava/lang/String; = "7"
 
@@ -118,9 +122,19 @@
 
 .field public static final FEEDBACK_NORMAL_MENU:Ljava/lang/String; = "1"
 
+.field public static final FEEDBACK_PARALLEL_DATASTREAM:Ljava/lang/String; = "61"
+
+.field public static final FEEDBACK_PARALLEL_MENU:Ljava/lang/String; = "59"
+
+.field public static final FEEDBACK_PARALLEL_SUB_MENU:Ljava/lang/String; = "64"
+
+.field public static final FEEDBACK_PARALLEL_TROUBLE_CODE:Ljava/lang/String; = "60"
+
 .field public static FEEDBACK_PUBLIC_BACK:Ljava/lang/String; = null
 
 .field public static FEEDBACK_PUBLIC_TYPE:Ljava/lang/String; = null
+
+.field public static final FEEDBACK_SET_VIN:Ljava/lang/String; = "47"
 
 .field public static final FEEDBACK_SPECIA_FUNCTION:Ljava/lang/String; = "36"
 
@@ -194,6 +208,8 @@
 
 .field public static final UI_TYPE_GET_DEVICE_DISTRICT:Ljava/lang/String; = "1500"
 
+.field public static final UI_TYPE_GET_DIAGNOSE_RECORD:Ljava/lang/String; = "1600"
+
 .field public static final UI_TYPE_GGP_NAME:Ljava/lang/String; = "180"
 
 .field public static final UI_TYPE_HELP_MENU:Ljava/lang/String; = "320"
@@ -208,6 +224,10 @@
 
 .field public static final UI_TYPE_PAGE_DATASTREAM:Ljava/lang/String; = "900"
 
+.field public static final UI_TYPE_PARALLEL_MENU:Ljava/lang/String; = "1700"
+
+.field public static final UI_TYPE_PARALLEL_SUB_MENU:Ljava/lang/String; = "1710"
+
 .field public static final UI_TYPE_PROGRESSBAR:Ljava/lang/String; = "170"
 
 .field public static final UI_TYPE_SHOW_DIAG_PICTURE:Ljava/lang/String; = "1410"
@@ -217,6 +237,10 @@
 .field public static final UI_TYPE_SHOW_PICTURE:Ljava/lang/String; = "1420"
 
 .field public static final UI_TYPE_SPECIAL_FUNCTION:Ljava/lang/String; = "1100"
+
+.field public static final UI_TYPE_SUB_FAULTCODE:Ljava/lang/String; = "1720"
+
+.field public static final UI_TYPE_SUB_PAGE_DATASTREAM:Ljava/lang/String; = "1730"
 
 .field public static final UI_TYPE_UI_DIALOG:Ljava/lang/String; = "90"
 
@@ -291,51 +315,51 @@
     .line 104
     sput-boolean v1, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->FAULTCODE_REFRESH:Z
 
-    .line 181
+    .line 192
     const-string/jumbo v0, "0"
 
     sput-object v0, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->FEEDBACK_DATASTREAM_REFRESH:Ljava/lang/String;
 
-    .line 182
+    .line 193
     const-string/jumbo v0, "FF"
 
     sput-object v0, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->FEEDBACK_SPECIA_FUNCTION_REFRESH:Ljava/lang/String;
 
-    .line 183
+    .line 194
     const-string/jumbo v0, "0"
 
     sput-object v0, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->FEEDBACK_FAULTCODE_REFRESH:Ljava/lang/String;
 
-    .line 184
+    .line 195
     const-string/jumbo v0, "0"
 
     sput-object v0, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->FEEDBACK_DATASTREAM_PAGE_REFRESH:Ljava/lang/String;
 
-    .line 185
+    .line 196
     const-string/jumbo v0, "-1"
 
     sput-object v0, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->FEEDBACK_ACTIVE_TEST_NORMAL:Ljava/lang/String;
 
-    .line 208
+    .line 219
     sput-object v3, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->FEEDBACK_PUBLIC_BACK:Ljava/lang/String;
 
-    .line 209
+    .line 220
     sput-object v3, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->FEEDBACK_PUBLIC_TYPE:Ljava/lang/String;
 
-    .line 212
+    .line 223
     sput-boolean v1, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->OLD_DIAG_WAIT:Z
 
-    .line 218
+    .line 229
     const-string/jumbo v0, ""
 
     sput-object v0, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->DATASTREAM_MASK:Ljava/lang/String;
 
-    .line 221
+    .line 232
     const-string/jumbo v0, ""
 
     sput-object v0, Lcom/cnlaunch/diagnosemodule/utils/DiagnoseConstants;->DATASTREAM_TEMP_MASK:Ljava/lang/String;
 
-    .line 223
+    .line 234
     return-void
 .end method
 

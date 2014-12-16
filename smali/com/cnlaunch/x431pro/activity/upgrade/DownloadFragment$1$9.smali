@@ -28,7 +28,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$9;->this$1:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;
 
-    .line 447
+    .line 440
     invoke-direct {p0, p2}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -40,7 +40,7 @@
     .locals 1
 
     .prologue
-    .line 472
+    .line 465
     const/4 v0, 0x0
 
     return-object v0
@@ -52,7 +52,7 @@
     .parameter "num"
 
     .prologue
-    .line 450
+    .line 443
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$9;->this$1:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -67,7 +67,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 451
+    .line 444
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$9;->this$1:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -80,11 +80,11 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d02de
+    const v4, 0x7f0c02f5
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/activity/MainActivity;->showActivity(I)V
 
-    .line 453
+    .line 446
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$9;->this$1:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -101,7 +101,7 @@
 
     move-result-object v3
 
-    .line 454
+    .line 447
     const-class v4, Lcom/cnlaunch/x431pro/activity/setting/SettingActivity;
 
     invoke-virtual {v4}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -112,23 +112,23 @@
 
     move-result-object v1
 
-    .line 453
+    .line 446
     check-cast v1, Lcom/cnlaunch/x431pro/activity/setting/SettingActivity;
 
-    .line 455
+    .line 448
     .local v1, settingActivity:Lcom/cnlaunch/x431pro/activity/setting/SettingActivity;
     if-eqz v1, :cond_0
 
-    .line 456
+    .line 449
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/activity/setting/SettingActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
-    .line 457
+    .line 450
     .local v0, fragmentManager:Landroid/app/FragmentManager;
     if-eqz v0, :cond_0
 
-    .line 459
+    .line 452
     const-class v3, Lcom/cnlaunch/x431pro/activity/setting/SettingFragment;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -139,31 +139,31 @@
 
     move-result-object v2
 
-    .line 458
+    .line 451
     check-cast v2, Lcom/cnlaunch/x431pro/activity/setting/SettingFragment;
 
-    .line 460
+    .line 453
     .local v2, settingFragment:Lcom/cnlaunch/x431pro/activity/setting/SettingFragment;
     if-eqz v2, :cond_0
 
-    .line 461
+    .line 454
     const-class v3, Lcom/cnlaunch/x431pro/activity/setting/OneKeyClearFragment;
 
-    .line 462
+    .line 455
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 461
+    .line 454
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/activity/setting/SettingFragment;->replaceFragment(Ljava/lang/String;)V
 
-    .line 467
+    .line 460
     .end local v0           #fragmentManager:Landroid/app/FragmentManager;
     .end local v1           #settingActivity:Lcom/cnlaunch/x431pro/activity/setting/SettingActivity;
     .end local v2           #settingFragment:Lcom/cnlaunch/x431pro/activity/setting/SettingFragment;
     :cond_0
     invoke-super {p0, p1, p2}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->doningBetaClick(Landroid/view/View;I)V
 
-    .line 468
+    .line 461
     return-void
 .end method

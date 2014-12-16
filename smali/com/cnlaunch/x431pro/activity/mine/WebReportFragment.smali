@@ -105,7 +105,7 @@
     const/4 v2, 0x1
 
     .line 58
-    const v0, 0x7f070703
+    const v0, 0x7f070705
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/mine/WebReportFragment;->setTitle(I)V
 
@@ -116,7 +116,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -136,7 +136,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0025
+    const v1, 0x7f0c0025
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -151,7 +151,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01dc
+    const v1, 0x7f0c01df
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

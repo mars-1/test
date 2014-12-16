@@ -30,7 +30,7 @@
     .parameter
 
     .prologue
-    .line 53
+    .line 54
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

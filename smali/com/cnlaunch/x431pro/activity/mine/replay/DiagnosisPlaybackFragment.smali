@@ -97,32 +97,32 @@
     .locals 1
 
     .prologue
-    .line 58
+    .line 60
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/BaseFragment;-><init>()V
 
-    .line 37
+    .line 39
     const-string/jumbo v0, ""
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mReportPath:Ljava/lang/String;
 
-    .line 53
+    .line 55
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mCheckCount:I
 
-    .line 54
+    .line 56
     const/16 v0, 0x270f
 
     iput v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mCheckLimit:I
 
-    .line 174
+    .line 177
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->streamAllList:Ljava/util/ArrayList;
 
-    .line 60
+    .line 62
     return-void
 .end method
 
@@ -131,7 +131,7 @@
     .parameter
 
     .prologue
-    .line 33
+    .line 35
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->btn_selectall:Landroid/widget/CheckBox;
 
     return-object v0
@@ -143,7 +143,7 @@
     .parameter
 
     .prologue
-    .line 53
+    .line 55
     iput p1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mCheckCount:I
 
     return-void
@@ -154,7 +154,7 @@
     .parameter
 
     .prologue
-    .line 50
+    .line 52
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;
 
     return-object v0
@@ -165,7 +165,7 @@
     .parameter
 
     .prologue
-    .line 48
+    .line 50
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->selectMenuBeanList:Ljava/util/ArrayList;
 
     return-object v0
@@ -176,7 +176,7 @@
     .parameter
 
     .prologue
-    .line 54
+    .line 56
     iget v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mCheckLimit:I
 
     return v0
@@ -187,7 +187,7 @@
     .parameter
 
     .prologue
-    .line 30
+    .line 32
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -198,7 +198,7 @@
     .parameter
 
     .prologue
-    .line 37
+    .line 39
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mReportPath:Ljava/lang/String;
 
     return-object v0
@@ -209,7 +209,7 @@
     .parameter
 
     .prologue
-    .line 30
+    .line 32
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->fragmentManager:Landroid/app/FragmentManager;
 
     return-object v0
@@ -231,44 +231,44 @@
     .end annotation
 
     .prologue
-    .line 177
+    .line 180
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
-    .line 178
+    .line 181
     .local v6, selectMenuBeanListTemp:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicSelectMenuBean;>;"
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 179
+    .line 182
     .local v1, dataStreamBeanListTemp:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;>;"
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 180
+    .line 183
     .local v2, file:Ljava/io/File;
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->streamAllList:Ljava/util/ArrayList;
 
     invoke-virtual {v7}, Ljava/util/ArrayList;->clear()V
 
-    .line 181
+    .line 184
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v7
 
     if-eqz v7, :cond_b
 
-    .line 182
+    .line 185
     new-instance v7, Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     invoke-direct {v7}, Lcom/cnlaunch/mycar/jni/JniX431FileTest;-><init>()V
 
     iput-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->jnitest:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
-    .line 183
+    .line 186
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->jnitest:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     invoke-virtual {v7}, Lcom/cnlaunch/mycar/jni/JniX431FileTest;->init()I
@@ -277,7 +277,7 @@
 
     iput v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->hlsx:I
 
-    .line 184
+    .line 187
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->jnitest:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mReportPath:Ljava/lang/String;
@@ -290,44 +290,44 @@
 
     iput v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->fileId:I
 
-    .line 186
+    .line 189
     iget v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->fileId:I
 
     if-nez v7, :cond_1
 
-    .line 187
+    .line 190
     new-instance v7, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment$3;
 
     invoke-direct {v7, p0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment$3;-><init>(Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;)V
 
-    .line 198
+    .line 201
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v8
 
-    const v9, 0x7f0704fa
+    const v9, 0x7f0704fc
 
-    const v10, 0x7f0706e2
+    const v10, 0x7f0706e4
 
     const/4 v11, 0x1
 
     invoke-virtual {v7, v8, v9, v10, v11}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment$3;->showDialog(Landroid/content/Context;IIZ)V
 
-    .line 210
+    .line 213
     :goto_0
     const/4 v0, 0x0
 
-    .line 211
+    .line 214
     .local v0, dataStreamBean:Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;
     const/4 v5, 0x0
 
-    .line 212
+    .line 215
     .local v5, selectMenuBean:Lcom/cnlaunch/diagnosemodule/bean/BasicSelectMenuBean;
     iget v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->item:I
 
     if-lez v7, :cond_0
 
-    .line 214
+    .line 217
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->jnitest:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     iget v8, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->grp:I
@@ -342,7 +342,7 @@
 
     iput-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->textStrs:[Ljava/lang/String;
 
-    .line 215
+    .line 218
     const/4 v3, 0x0
 
     .local v3, i:I
@@ -353,12 +353,12 @@
 
     if-lt v3, v7, :cond_2
 
-    .line 229
+    .line 232
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->streamAllList:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 231
+    .line 234
     const/4 v4, 0x0
 
     .local v4, j:I
@@ -367,7 +367,7 @@
 
     if-lt v4, v7, :cond_6
 
-    .line 249
+    .line 251
     .end local v3           #i:I
     .end local v4           #j:I
     :cond_0
@@ -379,13 +379,13 @@
 
     invoke-virtual {v7, v8, v9}, Lcom/cnlaunch/mycar/jni/JniX431FileTest;->readEndCloseFile(II)V
 
-    .line 253
+    .line 255
     .end local v0           #dataStreamBean:Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;
     .end local v5           #selectMenuBean:Lcom/cnlaunch/diagnosemodule/bean/BasicSelectMenuBean;
     :goto_3
     return-object v6
 
-    .line 200
+    .line 203
     :cond_1
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->jnitest:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
@@ -397,7 +397,7 @@
 
     iput v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->grp:I
 
-    .line 201
+    .line 204
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->jnitest:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     iget v8, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->grp:I
@@ -408,7 +408,7 @@
 
     iput v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->itemcount:I
 
-    .line 202
+    .line 205
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->jnitest:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     iget v8, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->grp:I
@@ -419,7 +419,7 @@
 
     iput v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->cols:I
 
-    .line 203
+    .line 206
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->jnitest:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     iget v8, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->grp:I
@@ -432,7 +432,7 @@
 
     iput-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->namestrs:[Ljava/lang/String;
 
-    .line 204
+    .line 207
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->jnitest:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     iget v8, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->grp:I
@@ -445,7 +445,7 @@
 
     iput-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->unitstrs:[Ljava/lang/String;
 
-    .line 207
+    .line 210
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->jnitest:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     iget v8, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->grp:I
@@ -458,7 +458,7 @@
 
     goto :goto_0
 
-    .line 216
+    .line 219
     .restart local v0       #dataStreamBean:Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;
     .restart local v3       #i:I
     .restart local v5       #selectMenuBean:Lcom/cnlaunch/diagnosemodule/bean/BasicSelectMenuBean;
@@ -468,7 +468,7 @@
     .end local v0           #dataStreamBean:Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;
     invoke-direct {v0}, Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;-><init>()V
 
-    .line 217
+    .line 220
     .restart local v0       #dataStreamBean:Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->namestrs:[Ljava/lang/String;
 
@@ -481,7 +481,7 @@
     :goto_4
     invoke-virtual {v0, v7}, Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;->setTitle(Ljava/lang/String;)V
 
-    .line 218
+    .line 221
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->unitstrs:[Ljava/lang/String;
 
     aget-object v7, v7, v3
@@ -493,7 +493,7 @@
     :goto_5
     invoke-virtual {v0, v7}, Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;->setUnit(Ljava/lang/String;)V
 
-    .line 219
+    .line 222
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->textStrs:[Ljava/lang/String;
 
     aget-object v7, v7, v3
@@ -505,43 +505,43 @@
     :goto_6
     invoke-virtual {v0, v7}, Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;->setValue(Ljava/lang/String;)V
 
-    .line 220
+    .line 223
     invoke-virtual {v0}, Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;->doConversion()V
 
-    .line 221
+    .line 224
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 223
+    .line 226
     new-instance v5, Lcom/cnlaunch/diagnosemodule/bean/BasicSelectMenuBean;
 
     .end local v5           #selectMenuBean:Lcom/cnlaunch/diagnosemodule/bean/BasicSelectMenuBean;
     invoke-direct {v5}, Lcom/cnlaunch/diagnosemodule/bean/BasicSelectMenuBean;-><init>()V
 
-    .line 224
+    .line 227
     .restart local v5       #selectMenuBean:Lcom/cnlaunch/diagnosemodule/bean/BasicSelectMenuBean;
     const/4 v7, 0x0
 
     invoke-virtual {v5, v7}, Lcom/cnlaunch/diagnosemodule/bean/BasicSelectMenuBean;->setCheck(Z)V
 
-    .line 225
+    .line 228
     invoke-virtual {v5, v3}, Lcom/cnlaunch/diagnosemodule/bean/BasicSelectMenuBean;->setNum(I)V
 
-    .line 226
+    .line 229
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->namestrs:[Ljava/lang/String;
 
     aget-object v7, v7, v3
 
     invoke-virtual {v5, v7}, Lcom/cnlaunch/diagnosemodule/bean/BasicSelectMenuBean;->setTitle(Ljava/lang/String;)V
 
-    .line 227
+    .line 230
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 215
+    .line 218
     add-int/lit8 v3, v3, 0x1
 
     goto/16 :goto_1
 
-    .line 217
+    .line 220
     :cond_3
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->namestrs:[Ljava/lang/String;
 
@@ -549,7 +549,7 @@
 
     goto :goto_4
 
-    .line 218
+    .line 221
     :cond_4
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->unitstrs:[Ljava/lang/String;
 
@@ -557,7 +557,7 @@
 
     goto :goto_5
 
-    .line 219
+    .line 222
     :cond_5
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->textStrs:[Ljava/lang/String;
 
@@ -565,7 +565,7 @@
 
     goto :goto_6
 
-    .line 232
+    .line 235
     .restart local v4       #j:I
     :cond_6
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->jnitest:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
@@ -582,13 +582,13 @@
 
     iput-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->textStrs:[Ljava/lang/String;
 
-    .line 233
+    .line 236
     new-instance v1, Ljava/util/ArrayList;
 
     .end local v1           #dataStreamBeanListTemp:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;>;"
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 234
+    .line 237
     .restart local v1       #dataStreamBeanListTemp:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;>;"
     const/4 v3, 0x0
 
@@ -599,24 +599,24 @@
 
     if-lt v3, v7, :cond_7
 
-    .line 242
+    .line 245
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->streamAllList:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 231
+    .line 234
     add-int/lit8 v4, v4, 0x1
 
     goto/16 :goto_2
 
-    .line 235
+    .line 238
     :cond_7
     new-instance v0, Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;
 
     .end local v0           #dataStreamBean:Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;
     invoke-direct {v0}, Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;-><init>()V
 
-    .line 236
+    .line 239
     .restart local v0       #dataStreamBean:Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->namestrs:[Ljava/lang/String;
 
@@ -629,7 +629,7 @@
     :goto_8
     invoke-virtual {v0, v7}, Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;->setTitle(Ljava/lang/String;)V
 
-    .line 237
+    .line 240
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->unitstrs:[Ljava/lang/String;
 
     aget-object v7, v7, v3
@@ -641,7 +641,7 @@
     :goto_9
     invoke-virtual {v0, v7}, Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;->setUnit(Ljava/lang/String;)V
 
-    .line 238
+    .line 241
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->textStrs:[Ljava/lang/String;
 
     aget-object v7, v7, v3
@@ -653,18 +653,18 @@
     :goto_a
     invoke-virtual {v0, v7}, Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;->setValue(Ljava/lang/String;)V
 
-    .line 239
+    .line 242
     invoke-virtual {v0}, Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;->doConversion()V
 
-    .line 240
+    .line 243
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 234
+    .line 237
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_7
 
-    .line 236
+    .line 239
     :cond_8
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->namestrs:[Ljava/lang/String;
 
@@ -672,7 +672,7 @@
 
     goto :goto_8
 
-    .line 237
+    .line 240
     :cond_9
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->unitstrs:[Ljava/lang/String;
 
@@ -680,7 +680,7 @@
 
     goto :goto_9
 
-    .line 238
+    .line 241
     :cond_a
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->textStrs:[Ljava/lang/String;
 
@@ -688,7 +688,7 @@
 
     goto :goto_a
 
-    .line 251
+    .line 253
     .end local v0           #dataStreamBean:Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;
     .end local v3           #i:I
     .end local v4           #j:I
@@ -696,7 +696,7 @@
     :cond_b
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0705ea
+    const v8, 0x7f0705ec
 
     invoke-static {v7, v8}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -725,17 +725,17 @@
     .end annotation
 
     .prologue
-    .line 264
+    .line 266
     .local p1, streamAllList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;>;>;"
     new-instance v7, Ljava/util/ArrayList;
 
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
-    .line 265
+    .line 267
     .local v7, streamSelectedList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;>;>;"
     const/4 v1, 0x0
 
-    .line 266
+    .line 268
     .local v1, dataStreamBeanSelectedList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;>;"
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;
 
@@ -743,24 +743,24 @@
 
     move-result v4
 
-    .line 267
+    .line 269
     .local v4, maskSelectCount:I
     if-nez v4, :cond_1
 
-    .line 268
+    .line 270
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v8
 
-    const v9, 0x7f07053e
+    const v9, 0x7f070540
 
     invoke-static {v8, v9}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
-    .line 289
+    .line 291
     :cond_0
     return-object v7
 
-    .line 270
+    .line 272
     :cond_1
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;
 
@@ -768,7 +768,7 @@
 
     move-result-object v5
 
-    .line 271
+    .line 273
     .local v5, maskStr:Ljava/lang/String;
     const/4 v2, 0x0
 
@@ -780,13 +780,13 @@
 
     if-ge v2, v8, :cond_0
 
-    .line 272
+    .line 274
     new-instance v1, Ljava/util/ArrayList;
 
     .end local v1           #dataStreamBeanSelectedList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;>;"
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 273
+    .line 275
     .restart local v1       #dataStreamBeanSelectedList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;>;"
     const/4 v3, 0x0
 
@@ -804,23 +804,23 @@
 
     if-lt v3, v8, :cond_3
 
-    .line 284
+    .line 286
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v8
 
     if-lez v8, :cond_2
 
-    .line 285
+    .line 287
     invoke-virtual {v7, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 271
+    .line 273
     :cond_2
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 274
+    .line 276
     :cond_3
     invoke-virtual {p1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -840,7 +840,7 @@
 
     if-lez v8, :cond_4
 
-    .line 275
+    .line 277
     invoke-virtual {v5, v3}, Ljava/lang/String;->charAt(I)C
 
     move-result v8
@@ -849,13 +849,13 @@
 
     move-result-object v0
 
-    .line 276
+    .line 278
     .local v0, ch:Ljava/lang/Character;
     invoke-virtual {v0}, Ljava/lang/Character;->toString()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 277
+    .line 279
     .local v6, str:Ljava/lang/String;
     const-string/jumbo v8, "1"
 
@@ -865,7 +865,7 @@
 
     if-eqz v8, :cond_4
 
-    .line 278
+    .line 280
     invoke-virtual {p1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v8
@@ -878,7 +878,7 @@
 
     if-eqz v8, :cond_4
 
-    .line 279
+    .line 281
     invoke-virtual {p1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v8
@@ -893,7 +893,7 @@
 
     invoke-virtual {v1, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 273
+    .line 275
     .end local v0           #ch:Ljava/lang/Character;
     .end local v6           #str:Ljava/lang/String;
     :cond_4
@@ -908,17 +908,17 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 78
-    const v0, 0x7f0705a7
+    .line 80
+    const v0, 0x7f0705a9
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->setTitle(I)V
 
-    .line 79
+    .line 81
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d00ef
+    const v1, 0x7f0c00ef
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -928,24 +928,24 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->btn_selectall:Landroid/widget/CheckBox;
 
-    .line 80
+    .line 82
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->btn_selectall:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, p0}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 81
+    .line 83
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->btn_selectall:Landroid/widget/CheckBox;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 83
+    .line 85
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d004f
+    const v1, 0x7f0c004f
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -955,17 +955,17 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->btn_confirm:Landroid/widget/Button;
 
-    .line 84
+    .line 86
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->btn_confirm:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 86
+    .line 88
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d00f0
+    const v1, 0x7f0c00f0
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -975,17 +975,17 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->btn_delete:Landroid/widget/Button;
 
-    .line 87
+    .line 89
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->btn_delete:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 89
+    .line 91
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d00f1
+    const v1, 0x7f0c00f1
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -995,12 +995,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mGv:Landroid/widget/GridView;
 
-    .line 90
+    .line 92
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mGv:Landroid/widget/GridView;
 
     invoke-virtual {v0, p0}, Landroid/widget/GridView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 92
+    .line 94
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mReportPath:Ljava/lang/String;
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->getReportDiagnoseItemList(Ljava/lang/String;)Ljava/util/ArrayList;
@@ -1009,12 +1009,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->selectMenuBeanList:Ljava/util/ArrayList;
 
-    .line 93
+    .line 95
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->selectMenuBeanList:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_0
 
-    .line 94
+    .line 96
     new-instance v0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->selectMenuBeanList:Ljava/util/ArrayList;
@@ -1031,24 +1031,24 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;
 
-    .line 95
+    .line 97
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;
 
     invoke-virtual {v0, v4}, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;->setReplaydatastreamFlag(Z)V
 
-    .line 96
+    .line 98
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;
 
     invoke-virtual {v0, v4}, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;->setOnClickable(Z)V
 
-    .line 97
+    .line 99
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mGv:Landroid/widget/GridView;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/GridView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 100
+    .line 102
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->btn_selectall:Landroid/widget/CheckBox;
 
@@ -1058,7 +1058,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 119
+    .line 121
     return-void
 .end method
 
@@ -1069,19 +1069,19 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 64
+    .line 66
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
-    .line 65
+    .line 67
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->getBundle()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 66
+    .line 68
     .local v0, bundle:Landroid/os/Bundle;
     if-eqz v0, :cond_0
 
-    .line 67
+    .line 69
     const-string/jumbo v1, "report_name"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -1090,11 +1090,11 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mReportPath:Ljava/lang/String;
 
-    .line 69
+    .line 71
     :cond_0
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->initViews()V
 
-    .line 70
+    .line 72
     return-void
 .end method
 
@@ -1105,19 +1105,19 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 123
+    .line 125
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v1
 
     sparse-switch v1, :sswitch_data_0
 
-    .line 151
+    .line 154
     :cond_0
     :goto_0
     return-void
 
-    .line 125
+    .line 127
     :sswitch_0
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->streamAllList:Ljava/util/ArrayList;
 
@@ -1127,7 +1127,7 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->selectedStreamItemdList:Ljava/util/ArrayList;
 
-    .line 126
+    .line 128
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->selectedStreamItemdList:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
@@ -1136,17 +1136,17 @@
 
     if-eqz v1, :cond_0
 
-    .line 128
+    .line 130
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->btn_selectall:Landroid/widget/CheckBox;
 
     invoke-virtual {v1, v3}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 129
+    .line 131
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 130
+    .line 132
     .local v0, bundle:Landroid/os/Bundle;
     const-string/jumbo v1, "DataStreamAll"
 
@@ -1154,7 +1154,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 
-    .line 131
+    .line 133
     const-string/jumbo v2, "DataStreamCount"
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->selectedStreamItemdList:Ljava/util/ArrayList;
@@ -1171,14 +1171,21 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 132
+    .line 134
     const-string/jumbo v1, "DataStreamShow_Type"
 
     const-string/jumbo v2, ""
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 133
+    .line 135
+    const-string/jumbo v1, "ReportPath"
+
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mReportPath:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 136
     const-class v1, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -1189,21 +1196,21 @@
 
     goto :goto_0
 
-    .line 137
+    .line 140
     .end local v0           #bundle:Landroid/os/Bundle;
     :sswitch_1
     new-instance v1, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment$2;
 
     invoke-direct {v1, p0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment$2;-><init>(Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;)V
 
-    .line 148
+    .line 151
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    const v3, 0x7f0704fa
+    const v3, 0x7f0704fc
 
-    const v4, 0x7f0705e9
+    const v4, 0x7f0705eb
 
     const/4 v5, 0x1
 
@@ -1211,11 +1218,11 @@
 
     goto :goto_0
 
-    .line 123
+    .line 125
     :sswitch_data_0
     .sparse-switch
-        0x7f0d004f -> :sswitch_0
-        0x7f0d00f0 -> :sswitch_1
+        0x7f0c004f -> :sswitch_0
+        0x7f0c00f0 -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -1226,7 +1233,7 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 74
+    .line 76
     const v0, 0x7f030045
 
     const/4 v1, 0x0
@@ -1260,19 +1267,19 @@
 
     const/4 v5, 0x0
 
-    .line 155
+    .line 158
     invoke-virtual {p1}, Landroid/widget/AdapterView;->getId()I
 
     move-result v1
 
     packed-switch v1, :pswitch_data_0
 
-    .line 166
+    .line 169
     :cond_0
     :goto_0
     return-void
 
-    .line 157
+    .line 160
     :pswitch_0
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;
 
@@ -1280,7 +1287,7 @@
 
     move-result v0
 
-    .line 158
+    .line 161
     .local v0, flag:Z
     iget v3, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mCheckCount:I
 
@@ -1293,17 +1300,17 @@
 
     iput v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mCheckCount:I
 
-    .line 159
+    .line 162
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mCheckCount:I
 
     iget v3, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mCheckLimit:I
 
     if-le v1, v3, :cond_0
 
-    .line 160
+    .line 163
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f07053a
+    const v3, 0x7f07053c
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->getString(I)Ljava/lang/String;
 
@@ -1325,12 +1332,12 @@
 
     invoke-static {v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 161
+    .line 164
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;
 
     invoke-virtual {v1, p3, v5}, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DatastreamSelectListAdapter;->setItemCheck(IZ)V
 
-    .line 162
+    .line 165
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DiagnosisPlaybackFragment;->mCheckCount:I
 
     add-int/lit8 v1, v1, -0x1
@@ -1339,15 +1346,15 @@
 
     goto :goto_0
 
-    .line 158
+    .line 161
     :cond_1
     const/4 v1, -0x1
 
     goto :goto_1
 
-    .line 155
+    .line 158
     :pswitch_data_0
-    .packed-switch 0x7f0d00f1
+    .packed-switch 0x7f0c00f1
         :pswitch_0
     .end packed-switch
 .end method

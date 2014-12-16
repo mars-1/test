@@ -37,7 +37,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$8;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
-    .line 661
+    .line 660
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +62,7 @@
     .end annotation
 
     .prologue
-    .line 665
+    .line 664
     .local p1, arg0:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$8;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -77,7 +77,7 @@
 
     if-nez v6, :cond_1
 
-    .line 666
+    .line 665
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$8;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -85,29 +85,29 @@
 
     move-result-object v6
 
-    const v7, 0x7f0706d8
+    const v7, 0x7f0706da
 
     const/4 v8, 0x1
 
     invoke-static {v6, v7, v8}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
-    .line 708
+    .line 707
     :cond_0
     :goto_0
     return-void
 
-    .line 669
+    .line 668
     :cond_1
     if-lez p3, :cond_2
 
-    .line 670
+    .line 669
     add-int/lit8 p3, p3, -0x1
 
-    .line 672
+    .line 671
     :cond_2
     const/4 v4, 0x0
 
-    .line 673
+    .line 672
     .local v4, user:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$8;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -122,7 +122,7 @@
 
     if-lez v6, :cond_3
 
-    .line 674
+    .line 673
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$8;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateBindList:Ljava/util/List;
@@ -137,7 +137,7 @@
     .end local v4           #user:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
     check-cast v4, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
 
-    .line 678
+    .line 677
     .restart local v4       #user:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
     :goto_1
     const-string/jumbo v6, "0"
@@ -152,7 +152,7 @@
 
     if-eqz v6, :cond_4
 
-    .line 679
+    .line 678
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$8;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -166,7 +166,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0706c5
+    const v8, 0x7f0706c7
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -176,7 +176,7 @@
 
     goto :goto_0
 
-    .line 676
+    .line 675
     :cond_3
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$8;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -195,7 +195,7 @@
     .restart local v4       #user:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
     goto :goto_1
 
-    .line 684
+    .line 683
     :cond_4
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getNick_name()Ljava/lang/String;
 
@@ -207,25 +207,25 @@
 
     if-eqz v6, :cond_5
 
-    .line 685
+    .line 684
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getNick_name()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 689
+    .line 688
     .local v2, name:Ljava/lang/String;
     :goto_2
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getUser_id()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 690
+    .line 689
     .local v5, userId:Ljava/lang/String;
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getSerial_no()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 692
+    .line 691
     .local v3, seriNo:Ljava/lang/String;
     new-instance v0, Lcom/cnlaunch/newgolo/model/ChatRoom;
 
@@ -233,7 +233,7 @@
 
     invoke-direct {v0, v5, v2, v6}, Lcom/cnlaunch/newgolo/model/ChatRoom;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/cnlaunch/newgolo/model/ChatType;)V
 
-    .line 693
+    .line 692
     .local v0, chatRoom:Lcom/cnlaunch/newgolo/model/ChatRoom;
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$8;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -268,7 +268,7 @@
 
     iput-wide v6, v0, Lcom/cnlaunch/newgolo/model/ChatRoom;->publicGroupId:J
 
-    .line 695
+    .line 694
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$8;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_name:Ljava/lang/String;
@@ -278,7 +278,7 @@
 
     iput-object v6, v0, Lcom/cnlaunch/newgolo/model/ChatRoom;->publicGroupName:Ljava/lang/String;
 
-    .line 696
+    .line 695
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$8;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mType:I
@@ -295,7 +295,7 @@
     :goto_4
     iput-object v6, v0, Lcom/cnlaunch/newgolo/model/ChatRoom;->customer_type:Ljava/lang/String;
 
-    .line 697
+    .line 696
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$8;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -305,7 +305,7 @@
 
     invoke-static {v6, v0, v3}, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->startBundingActivity(Landroid/content/Context;Lcom/cnlaunch/newgolo/model/ChatRoom;Ljava/lang/String;)V
 
-    .line 699
+    .line 698
     const-string/jumbo v6, "GoloFragment"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -344,12 +344,12 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 700
+    .line 699
     new-instance v1, Lcom/cnlaunch/newgolo/bean/UserInfo;
 
     invoke-direct {v1}, Lcom/cnlaunch/newgolo/bean/UserInfo;-><init>()V
 
-    .line 701
+    .line 700
     .local v1, info:Lcom/cnlaunch/newgolo/bean/UserInfo;
     invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -365,7 +365,7 @@
 
     if-nez v6, :cond_0
 
-    .line 702
+    .line 701
     invoke-static {v5}, Ljava/lang/Long;->valueOf(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v6
@@ -376,31 +376,31 @@
 
     iput-wide v6, v1, Lcom/cnlaunch/newgolo/bean/UserInfo;->user_id:J
 
-    .line 703
+    .line 702
     iput-object v2, v1, Lcom/cnlaunch/newgolo/bean/UserInfo;->name:Ljava/lang/String;
 
-    .line 704
+    .line 703
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getAuto_logos()Ljava/lang/String;
 
     move-result-object v6
 
     iput-object v6, v1, Lcom/cnlaunch/newgolo/bean/UserInfo;->head_uri:Ljava/lang/String;
 
-    .line 705
+    .line 704
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v6
 
     iput-wide v6, v1, Lcom/cnlaunch/newgolo/bean/UserInfo;->time:J
 
-    .line 706
+    .line 705
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$8;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     invoke-virtual {v6, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->saveUserInfo(Lcom/cnlaunch/newgolo/bean/UserInfo;)V
 
     goto/16 :goto_0
 
-    .line 687
+    .line 686
     .end local v0           #chatRoom:Lcom/cnlaunch/newgolo/model/ChatRoom;
     .end local v1           #info:Lcom/cnlaunch/newgolo/bean/UserInfo;
     .end local v2           #name:Ljava/lang/String;
@@ -414,7 +414,7 @@
     .restart local v2       #name:Ljava/lang/String;
     goto/16 :goto_2
 
-    .line 693
+    .line 692
     .restart local v0       #chatRoom:Lcom/cnlaunch/newgolo/model/ChatRoom;
     .restart local v3       #seriNo:Ljava/lang/String;
     .restart local v5       #userId:Ljava/lang/String;
@@ -423,7 +423,7 @@
 
     goto/16 :goto_3
 
-    .line 696
+    .line 695
     :cond_7
     const-string/jumbo v6, ""
 

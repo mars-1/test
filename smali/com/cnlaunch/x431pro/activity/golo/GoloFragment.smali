@@ -257,7 +257,7 @@
     .locals 1
 
     .prologue
-    .line 2458
+    .line 2460
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -318,38 +318,38 @@
     .line 164
     iput-boolean v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->isRemindOk:Z
 
-    .line 997
+    .line 996
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;
 
     invoke-direct {v0, p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$1;-><init>(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;)V
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
-    .line 1401
+    .line 1400
     invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mExecutorService:Ljava/util/concurrent/ExecutorService;
 
-    .line 1433
+    .line 1432
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$2;
 
     invoke-direct {v0, p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$2;-><init>(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;)V
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteDiagnoseHandleListener:Lcom/cnlaunch/newgolo/manager/LaunchIMManager$RemoteDiagnoseHandleListener;
 
-    .line 2459
+    .line 2461
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;
 
     invoke-direct {v0, p0, v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;-><init>(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;)V
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mConflictStatus:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;
 
-    .line 2627
+    .line 2629
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->datalistenter:Lcom/cnlaunch/x431pro/activity/golo/listenter/onGoloDataListenter;
 
-    .line 2675
+    .line 2677
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$3;
 
     invoke-direct {v0, p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$3;-><init>(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;)V
@@ -398,7 +398,7 @@
     .parameter
 
     .prologue
-    .line 997
+    .line 996
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
     return-object v0
@@ -476,7 +476,7 @@
     .parameter
 
     .prologue
-    .line 1401
+    .line 1400
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mExecutorService:Ljava/util/concurrent/ExecutorService;
 
     return-object v0
@@ -489,7 +489,7 @@
     .parameter
 
     .prologue
-    .line 1543
+    .line 1542
     invoke-direct {p0, p1, p2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sendCancelCmd(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -513,7 +513,7 @@
     .parameter
 
     .prologue
-    .line 1518
+    .line 1517
     invoke-direct {p0, p1, p2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sendFinishCmd(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -526,7 +526,7 @@
     .parameter
 
     .prologue
-    .line 1494
+    .line 1493
     invoke-direct {p0, p1, p2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sendProcessingCmd(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -539,7 +539,7 @@
     .parameter
 
     .prologue
-    .line 1470
+    .line 1469
     invoke-direct {p0, p1, p2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sendResetCmd(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -550,7 +550,7 @@
     .parameter
 
     .prologue
-    .line 2627
+    .line 2629
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->datalistenter:Lcom/cnlaunch/x431pro/activity/golo/listenter/onGoloDataListenter;
 
     return-object v0
@@ -561,7 +561,7 @@
     .parameter
 
     .prologue
-    .line 2629
+    .line 2631
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showSelectView()V
 
     return-void
@@ -620,7 +620,7 @@
     .parameter
 
     .prologue
-    .line 1356
+    .line 1355
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->checkNetWork()Z
 
     move-result v0
@@ -644,7 +644,7 @@
     .parameter
 
     .prologue
-    .line 948
+    .line 947
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showProgressDialog()V
 
     return-void
@@ -656,7 +656,7 @@
     .parameter
 
     .prologue
-    .line 1084
+    .line 1083
     invoke-direct {p0, p1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListUnreadCount(Ljava/util/List;)V
 
     return-void
@@ -668,7 +668,7 @@
     .parameter
 
     .prologue
-    .line 1117
+    .line 1116
     invoke-direct {p0, p1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListLastTime(Ljava/util/List;)V
 
     return-void
@@ -702,7 +702,7 @@
     .parameter
 
     .prologue
-    .line 1656
+    .line 1655
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUnreadTipCountForSerial()Ljava/util/List;
 
     move-result-object v0
@@ -750,7 +750,7 @@
     .parameter
 
     .prologue
-    .line 1241
+    .line 1240
     invoke-direct {p0, p1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterData(Ljava/lang/String;)V
 
     return-void
@@ -775,7 +775,7 @@
     .parameter
 
     .prologue
-    .line 794
+    .line 793
     invoke-direct {p0, p1, p2, p3}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updateRemoteInfo(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -907,7 +907,7 @@
     .locals 3
 
     .prologue
-    .line 1357
+    .line 1356
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/utils/CommonUtils;->isNetworkConnected(Landroid/content/Context;)Z
@@ -916,14 +916,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 1358
+    .line 1357
     const/4 v0, 0x1
 
-    .line 1362
+    .line 1361
     :goto_0
     return v0
 
-    .line 1360
+    .line 1359
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
@@ -931,7 +931,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0706c4
+    const v2, 0x7f0706c6
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -939,7 +939,7 @@
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 1362
+    .line 1361
     const/4 v0, 0x0
 
     goto :goto_0
@@ -949,16 +949,16 @@
     .locals 7
 
     .prologue
-    .line 1371
+    .line 1370
     new-instance v3, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;
 
     invoke-direct {v3}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;-><init>()V
 
-    .line 1372
+    .line 1371
     .local v3, vipUser:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0700aa
+    const v5, 0x7f070091
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -966,17 +966,17 @@
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setUser_name(Ljava/lang/String;)V
 
-    .line 1373
-    const-string/jumbo v4, "drawable://2130838054"
+    .line 1372
+    const-string/jumbo v4, "drawable://2130838055"
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setFace_thumb(Ljava/lang/String;)V
 
-    .line 1374
+    .line 1373
     const-string/jumbo v4, "666888"
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setUser_id(Ljava/lang/String;)V
 
-    .line 1375
+    .line 1374
     invoke-static {}, Lcom/cnlaunch/newgolo/model/ChatManager;->getInstance()Lcom/cnlaunch/newgolo/model/ChatManager;
 
     move-result-object v4
@@ -987,7 +987,7 @@
 
     move-result v0
 
-    .line 1376
+    .line 1375
     .local v0, count:I
     invoke-static {}, Lcom/cnlaunch/newgolo/model/ChatManager;->getInstance()Lcom/cnlaunch/newgolo/model/ChatManager;
 
@@ -999,7 +999,7 @@
 
     move-result-wide v1
 
-    .line 1377
+    .line 1376
     .local v1, time:J
     const-string/jumbo v4, "GoloFragment"
 
@@ -1019,17 +1019,17 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1378
+    .line 1377
     invoke-virtual {v3, v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setNewMsgCount(I)V
 
-    .line 1379
+    .line 1378
     invoke-static {v1, v2}, Lcom/cnlaunch/x431pro/utils/Tools;->getTime(J)Ljava/lang/String;
 
     move-result-object v4
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setLastTime(Ljava/lang/String;)V
 
-    .line 1380
+    .line 1379
     return-object v3
 .end method
 
@@ -1037,16 +1037,16 @@
     .locals 7
 
     .prologue
-    .line 1389
+    .line 1388
     new-instance v3, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;
 
     invoke-direct {v3}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;-><init>()V
 
-    .line 1390
+    .line 1389
     .local v3, vipUser:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0700ab
+    const v5, 0x7f070092
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1054,17 +1054,17 @@
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setUser_name(Ljava/lang/String;)V
 
-    .line 1391
-    const-string/jumbo v4, "drawable://2130838055"
+    .line 1390
+    const-string/jumbo v4, "drawable://2130838056"
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setFace_thumb(Ljava/lang/String;)V
 
-    .line 1392
+    .line 1391
     const-string/jumbo v4, "666666"
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setUser_id(Ljava/lang/String;)V
 
-    .line 1393
+    .line 1392
     invoke-static {}, Lcom/cnlaunch/newgolo/model/ChatManager;->getInstance()Lcom/cnlaunch/newgolo/model/ChatManager;
 
     move-result-object v4
@@ -1075,7 +1075,7 @@
 
     move-result v0
 
-    .line 1394
+    .line 1393
     .local v0, count:I
     invoke-static {}, Lcom/cnlaunch/newgolo/model/ChatManager;->getInstance()Lcom/cnlaunch/newgolo/model/ChatManager;
 
@@ -1087,7 +1087,7 @@
 
     move-result-wide v1
 
-    .line 1395
+    .line 1394
     .local v1, time:J
     const-string/jumbo v4, "GoloFragment"
 
@@ -1107,17 +1107,17 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1396
+    .line 1395
     invoke-virtual {v3, v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setNewMsgCount(I)V
 
-    .line 1397
+    .line 1396
     invoke-static {v1, v2}, Lcom/cnlaunch/x431pro/utils/Tools;->getTime(J)Ljava/lang/String;
 
     move-result-object v4
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setLastTime(Ljava/lang/String;)V
 
-    .line 1398
+    .line 1397
     return-object v3
 .end method
 
@@ -1125,7 +1125,7 @@
     .locals 1
 
     .prologue
-    .line 2086
+    .line 2088
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -1134,7 +1134,7 @@
 
     invoke-virtual {v0}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->deleteAllFollowed()V
 
-    .line 2087
+    .line 2089
     return-void
 .end method
 
@@ -1142,7 +1142,7 @@
     .locals 1
 
     .prologue
-    .line 2140
+    .line 2142
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -1151,7 +1151,7 @@
 
     invoke-virtual {v0}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->deleteAllRegister()V
 
-    .line 2141
+    .line 2143
     return-void
 .end method
 
@@ -1169,7 +1169,7 @@
     .end annotation
 
     .prologue
-    .line 2243
+    .line 2245
     .local p1, list:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;>;"
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1183,10 +1183,10 @@
 
     if-nez v2, :cond_1
 
-    .line 2248
+    .line 2250
     return-void
 
-    .line 2243
+    .line 2245
     :cond_1
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -1194,7 +1194,7 @@
 
     check-cast v0, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
 
-    .line 2244
+    .line 2246
     .local v0, tmp:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getSerial_no()Ljava/lang/String;
 
@@ -1202,7 +1202,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 2245
+    .line 2247
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -1223,7 +1223,7 @@
     .parameter "request_id"
 
     .prologue
-    .line 1994
+    .line 1996
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -1232,7 +1232,7 @@
 
     invoke-virtual {v0, p1}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->deleteRemoteCustomer(Ljava/lang/String;)V
 
-    .line 1995
+    .line 1997
     return-void
 .end method
 
@@ -1240,7 +1240,7 @@
     .locals 1
 
     .prologue
-    .line 1885
+    .line 1887
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -1249,7 +1249,7 @@
 
     invoke-virtual {v0}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->deleteAllRemote()V
 
-    .line 1886
+    .line 1888
     return-void
 .end method
 
@@ -1257,7 +1257,7 @@
     .locals 1
 
     .prologue
-    .line 2003
+    .line 2005
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -1266,7 +1266,7 @@
 
     invoke-virtual {v0}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->deleteAllRepair()V
 
-    .line 2004
+    .line 2006
     return-void
 .end method
 
@@ -1274,14 +1274,14 @@
     .locals 1
 
     .prologue
-    .line 945
+    .line 944
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
-    .line 946
+    .line 945
     return-void
 .end method
 
@@ -1290,12 +1290,12 @@
     .parameter "filterStr"
 
     .prologue
-    .line 1242
+    .line 1241
     if-nez p1, :cond_1
 
     const/4 p1, 0x0
 
-    .line 1243
+    .line 1242
     :goto_0
     iget v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mType:I
 
@@ -1303,15 +1303,15 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 1244
+    .line 1243
     invoke-direct {p0, p1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->searchRemoteUser(Ljava/lang/String;)V
 
-    .line 1250
+    .line 1249
     :cond_0
     :goto_1
     return-void
 
-    .line 1242
+    .line 1241
     :cond_1
     invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -1319,18 +1319,18 @@
 
     goto :goto_0
 
-    .line 1245
+    .line 1244
     :cond_2
     iget v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mType:I
 
     if-nez v0, :cond_3
 
-    .line 1246
+    .line 1245
     invoke-direct {p0, p1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->searchBundingUser(Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 1247
+    .line 1246
     :cond_3
     iget v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mType:I
 
@@ -1338,7 +1338,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 1248
+    .line 1247
     invoke-direct {p0, p1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->searchAttUser(Ljava/lang/String;)V
 
     goto :goto_1
@@ -1360,73 +1360,73 @@
     .end annotation
 
     .prologue
-    .line 2606
+    .line 2608
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->cheyunTeam()Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->cheyunTeam:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;
 
-    .line 2607
+    .line 2609
     const/4 v1, 0x0
 
-    .line 2608
+    .line 2610
     .local v1, users:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;>;"
     if-eqz p1, :cond_0
 
-    .line 2609
+    .line 2611
     invoke-virtual {p1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;->getData()Ljava/util/List;
 
     move-result-object v1
 
-    .line 2611
+    .line 2613
     :cond_0
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2612
+    .line 2614
     .local v0, sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;>;"
     invoke-static {v1, v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->filledData(Ljava/util/List;Ljava/util/List;)V
 
-    .line 2613
+    .line 2615
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
-    .line 2615
+    .line 2617
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->cheyunTeam:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;
 
     invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 2616
+    .line 2618
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 2619
+    .line 2621
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
     invoke-direct {p0, v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListUnreadCount(Ljava/util/List;)V
 
-    .line 2620
+    .line 2622
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
     invoke-direct {p0, v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListLastTime(Ljava/util/List;)V
 
-    .line 2621
+    .line 2623
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->deleteFollowedList()V
 
-    .line 2622
+    .line 2624
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
     invoke-direct {p0, v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->saveFollowedList(Ljava/util/List;)V
 
-    .line 2623
+    .line 2625
     return-object v1
 .end method
 
@@ -1446,57 +1446,57 @@
     .end annotation
 
     .prologue
-    .line 2544
+    .line 2546
     if-nez p1, :cond_0
 
-    .line 2545
+    .line 2547
     const/4 v1, 0x0
 
-    .line 2562
+    .line 2564
     :goto_0
     return-object v1
 
-    .line 2547
+    .line 2549
     :cond_0
     invoke-virtual {p1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;->getData()Ljava/util/List;
 
     move-result-object v1
 
-    .line 2550
+    .line 2552
     .local v1, userList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;>;"
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUnreadTipCountForSerial()Ljava/util/List;
 
     move-result-object v0
 
-    .line 2551
+    .line 2553
     .local v0, tipList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/Count;>;"
     invoke-virtual {p0, v1, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updataListTipCountForSerial(Ljava/util/List;Ljava/util/List;)V
 
-    .line 2552
+    .line 2554
     if-eqz v1, :cond_1
 
-    .line 2553
+    .line 2555
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->totalUnreadTipCount(Ljava/util/List;)I
 
     move-result v2
 
     iput v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allTipCount:I
 
-    .line 2555
+    .line 2557
     :cond_1
     if-eqz v1, :cond_2
 
-    .line 2556
+    .line 2558
     invoke-direct {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListUnreadCount(Ljava/util/List;)V
 
-    .line 2557
+    .line 2559
     invoke-direct {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListLastTime(Ljava/util/List;)V
 
-    .line 2560
+    .line 2562
     :cond_2
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->deleteRegisterList()V
 
-    .line 2561
+    .line 2563
     invoke-direct {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->saveRegisterList(Ljava/util/List;)V
 
     goto :goto_0
@@ -1506,10 +1506,10 @@
     .locals 10
 
     .prologue
-    .line 2710
+    .line 2712
     const/4 v2, 0x0
 
-    .line 2711
+    .line 2713
     .local v2, pId:Ljava/lang/String;
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
@@ -1523,11 +1523,11 @@
 
     move-result-object v6
 
-    .line 2712
+    .line 2714
     .local v6, user_id:Ljava/lang/String;
     const/4 v5, 0x0
 
-    .line 2714
+    .line 2716
     .local v5, result:Lcom/cnlaunch/x431pro/module/golo/model/PidBytResponse;
     :try_start_0
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mGoloAction:Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;
@@ -1538,20 +1538,20 @@
 
     move-result-object v5
 
-    .line 2718
+    .line 2720
     :goto_0
     if-eqz v5, :cond_2
 
-    .line 2719
+    .line 2721
     invoke-virtual {v5}, Lcom/cnlaunch/x431pro/module/golo/model/PidBytResponse;->getData()Lcom/cnlaunch/x431pro/module/golo/model/PidBytData;
 
     move-result-object v0
 
-    .line 2720
+    .line 2722
     .local v0, data:Lcom/cnlaunch/x431pro/module/golo/model/PidBytData;
     if-eqz v0, :cond_2
 
-    .line 2721
+    .line 2723
     invoke-virtual {v5}, Lcom/cnlaunch/x431pro/module/golo/model/PidBytResponse;->getData()Lcom/cnlaunch/x431pro/module/golo/model/PidBytData;
 
     move-result-object v7
@@ -1560,7 +1560,7 @@
 
     move-result-object v3
 
-    .line 2722
+    .line 2724
     .local v3, pub_id:Ljava/lang/String;
     invoke-virtual {v5}, Lcom/cnlaunch/x431pro/module/golo/model/PidBytResponse;->getData()Lcom/cnlaunch/x431pro/module/golo/model/PidBytData;
 
@@ -1570,7 +1570,7 @@
 
     move-result-object v4
 
-    .line 2723
+    .line 2725
     .local v4, pub_name:Ljava/lang/String;
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1586,11 +1586,11 @@
 
     if-eqz v7, :cond_1
 
-    .line 2724
+    .line 2726
     :cond_0
     move-object v4, v3
 
-    .line 2726
+    .line 2728
     :cond_1
     const-string/jumbo v7, "GoloFragment"
 
@@ -1620,7 +1620,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2727
+    .line 2729
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v7
@@ -1635,10 +1635,10 @@
 
     if-nez v7, :cond_2
 
-    .line 2728
+    .line 2730
     move-object v2, v3
 
-    .line 2729
+    .line 2731
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v7}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -1649,7 +1649,7 @@
 
     invoke-virtual {v7, v8, v3}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2730
+    .line 2732
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v7}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -1660,18 +1660,18 @@
 
     invoke-virtual {v7, v8, v4}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2734
+    .line 2736
     .end local v0           #data:Lcom/cnlaunch/x431pro/module/golo/model/PidBytData;
     .end local v3           #pub_id:Ljava/lang/String;
     .end local v4           #pub_name:Ljava/lang/String;
     :cond_2
     return-object v2
 
-    .line 2715
+    .line 2717
     :catch_0
     move-exception v1
 
-    .line 2716
+    .line 2718
     .local v1, e:Lcom/cnlaunch/framework/network/http/HttpException;
     invoke-virtual {v1}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
@@ -1682,7 +1682,7 @@
     .locals 1
 
     .prologue
-    .line 2700
+    .line 2702
     monitor-enter p0
 
     :try_start_0
@@ -1694,7 +1694,7 @@
 
     if-nez v0, :cond_0
 
-    .line 2701
+    .line 2703
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getPublicId()Ljava/lang/String;
 
     move-result-object v0
@@ -1703,13 +1703,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2703
+    .line 2705
     :cond_0
     monitor-exit p0
 
     return-void
 
-    .line 2700
+    .line 2702
     :catchall_0
     move-exception v0
 
@@ -1734,57 +1734,57 @@
     .end annotation
 
     .prologue
-    .line 2566
+    .line 2568
     if-nez p1, :cond_0
 
-    .line 2567
+    .line 2569
     const/4 v2, 0x0
 
-    .line 2582
+    .line 2584
     :goto_0
     return-object v2
 
-    .line 2569
+    .line 2571
     :cond_0
     invoke-virtual {p1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;->getData()Ljava/util/List;
 
     move-result-object v1
 
-    .line 2571
+    .line 2573
     .local v1, userList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;>;"
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUnreadTipCountForSerial()Ljava/util/List;
 
     move-result-object v0
 
-    .line 2572
+    .line 2574
     .local v0, tipList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/Count;>;"
     invoke-virtual {p0, v1, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updataListTipCountForSerial(Ljava/util/List;Ljava/util/List;)V
 
-    .line 2573
+    .line 2575
     if-eqz v1, :cond_1
 
-    .line 2574
+    .line 2576
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->totalUnreadTipCount(Ljava/util/List;)I
 
     move-result v2
 
     iput v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allTipCount:I
 
-    .line 2576
+    .line 2578
     :cond_1
     if-eqz v1, :cond_2
 
-    .line 2577
+    .line 2579
     invoke-direct {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListUnreadCount(Ljava/util/List;)V
 
-    .line 2578
+    .line 2580
     invoke-direct {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListLastTime(Ljava/util/List;)V
 
-    .line 2581
+    .line 2583
     :cond_2
     invoke-direct {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updateRegisterList(Ljava/util/List;)V
 
-    .line 2582
+    .line 2584
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->loadRegisterList()Ljava/util/List;
 
     move-result-object v2
@@ -1808,57 +1808,57 @@
     .end annotation
 
     .prologue
-    .line 2586
+    .line 2588
     if-nez p1, :cond_0
 
-    .line 2587
+    .line 2589
     const/4 v2, 0x0
 
-    .line 2602
+    .line 2604
     :goto_0
     return-object v2
 
-    .line 2589
+    .line 2591
     :cond_0
     invoke-virtual {p1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;->getData()Ljava/util/List;
 
     move-result-object v1
 
-    .line 2591
+    .line 2593
     .local v1, userList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;>;"
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUnreadTipCountForSerial()Ljava/util/List;
 
     move-result-object v0
 
-    .line 2592
+    .line 2594
     .local v0, tipList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/Count;>;"
     invoke-virtual {p0, v1, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updataListTipCountForSerial(Ljava/util/List;Ljava/util/List;)V
 
-    .line 2593
+    .line 2595
     if-eqz v1, :cond_1
 
-    .line 2594
+    .line 2596
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->totalUnreadTipCount(Ljava/util/List;)I
 
     move-result v2
 
     iput v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allTipCount:I
 
-    .line 2596
+    .line 2598
     :cond_1
     if-eqz v1, :cond_2
 
-    .line 2597
+    .line 2599
     invoke-direct {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListUnreadCount(Ljava/util/List;)V
 
-    .line 2598
+    .line 2600
     invoke-direct {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getUserListLastTime(Ljava/util/List;)V
 
-    .line 2601
+    .line 2603
     :cond_2
     invoke-direct {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->deleteRegisterList(Ljava/util/List;)V
 
-    .line 2602
+    .line 2604
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->loadRegisterList()Ljava/util/List;
 
     move-result-object v2
@@ -1879,16 +1879,16 @@
     .end annotation
 
     .prologue
-    .line 1657
+    .line 1656
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1658
+    .line 1657
     .local v1, countList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/Count;>;"
     const/4 v2, 0x0
 
-    .line 1659
+    .line 1658
     .local v2, detail:Lcom/cnlaunch/x431pro/module/golo/model/GetCountResponse;
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
@@ -1902,7 +1902,7 @@
 
     move-result-object v0
 
-    .line 1661
+    .line 1660
     .local v0, cc:Ljava/lang/String;
     :try_start_0
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mGoloAction:Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;
@@ -1913,7 +1913,7 @@
 
     move-result-object v2
 
-    .line 1665
+    .line 1664
     :goto_0
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/module/golo/model/GetCountResponse;->getData()Lcom/cnlaunch/x431pro/module/golo/model/CountData;
 
@@ -1925,14 +1925,14 @@
 
     invoke-interface {v1, v4}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 1666
+    .line 1665
     return-object v1
 
-    .line 1662
+    .line 1661
     :catch_0
     move-exception v3
 
-    .line 1663
+    .line 1662
     .local v3, e:Lcom/cnlaunch/framework/network/http/HttpException;
     invoke-virtual {v3}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
@@ -1952,24 +1952,24 @@
     .end annotation
 
     .prologue
-    .line 1617
+    .line 1616
     const/4 v4, 0x1
 
-    .line 1618
+    .line 1617
     .local v4, pageNum:I
     const/16 v5, 0x64
 
-    .line 1619
+    .line 1618
     .local v5, pageSize:I
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1620
+    .line 1619
     .local v3, historyList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/History;>;"
     const/4 v1, 0x0
 
-    .line 1624
+    .line 1623
     .local v1, detail:Lcom/cnlaunch/x431pro/module/golo/model/GetHistoryResponse;
     :goto_0
     :try_start_0
@@ -1985,7 +1985,7 @@
 
     move-result-object v0
 
-    .line 1625
+    .line 1624
     .local v0, cc:Ljava/lang/String;
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mGoloAction:Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;
 
@@ -2021,7 +2021,7 @@
 
     move-result-object v1
 
-    .line 1629
+    .line 1628
     .end local v0           #cc:Ljava/lang/String;
     :goto_1
     if-eqz v1, :cond_0
@@ -2056,7 +2056,7 @@
 
     if-nez v8, :cond_1
 
-    .line 1648
+    .line 1647
     :cond_0
     const-string/jumbo v8, "GoloFragment"
 
@@ -2080,20 +2080,20 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1649
+    .line 1648
     return-object v3
 
-    .line 1626
+    .line 1625
     :catch_0
     move-exception v2
 
-    .line 1627
+    .line 1626
     .local v2, e:Lcom/cnlaunch/framework/network/http/HttpException;
     invoke-virtual {v2}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 1633
+    .line 1632
     .end local v2           #e:Lcom/cnlaunch/framework/network/http/HttpException;
     :cond_1
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GetHistoryResponse;->getData()Lcom/cnlaunch/x431pro/module/golo/model/HistoryData;
@@ -2106,7 +2106,7 @@
 
     invoke-interface {v3, v8}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 1634
+    .line 1633
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GetHistoryResponse;->getData()Lcom/cnlaunch/x431pro/module/golo/model/HistoryData;
 
     move-result-object v8
@@ -2115,7 +2115,7 @@
 
     move-result-object v7
 
-    .line 1635
+    .line 1634
     .local v7, sizeS:Ljava/lang/String;
     const-string/jumbo v8, "GoloFragment"
 
@@ -2167,14 +2167,14 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1636
+    .line 1635
     const-wide/16 v8, 0x0
 
     invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v6
 
-    .line 1637
+    .line 1636
     .local v6, size:Ljava/lang/Long;
     invoke-static {v7}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2190,7 +2190,7 @@
 
     if-nez v8, :cond_2
 
-    .line 1638
+    .line 1637
     invoke-static {v7}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
     move-result-wide v8
@@ -2199,7 +2199,7 @@
 
     move-result-object v6
 
-    .line 1640
+    .line 1639
     :cond_2
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GetHistoryResponse;->getData()Lcom/cnlaunch/x431pro/module/golo/model/HistoryData;
 
@@ -2215,7 +2215,7 @@
 
     if-lt v8, v5, :cond_0
 
-    .line 1643
+    .line 1642
     invoke-virtual {v6}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v8
@@ -2228,10 +2228,10 @@
 
     if-lez v8, :cond_0
 
-    .line 1646
+    .line 1645
     add-int/lit8 v4, v4, 0x1
 
-    .line 1621
+    .line 1620
     goto/16 :goto_0
 .end method
 
@@ -2249,7 +2249,7 @@
     .end annotation
 
     .prologue
-    .line 1118
+    .line 1117
     .local p1, list:Ljava/util/List;,"Ljava/util/List<+Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;>;"
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -2257,7 +2257,7 @@
 
     new-array v1, v8, [Ljava/lang/String;
 
-    .line 1119
+    .line 1118
     .local v1, datas:[Ljava/lang/String;
     const/4 v2, 0x0
 
@@ -2267,12 +2267,12 @@
 
     if-lt v2, v8, :cond_0
 
-    .line 1125
+    .line 1124
     new-instance v7, Ljava/util/HashMap;
 
     invoke-direct {v7}, Ljava/util/HashMap;-><init>()V
 
-    .line 1127
+    .line 1126
     .local v7, usersMap:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Long;>;"
     invoke-static {}, Lcom/cnlaunch/newgolo/model/ChatManager;->getInstance()Lcom/cnlaunch/newgolo/model/ChatManager;
 
@@ -2282,11 +2282,11 @@
 
     move-result-object v0
 
-    .line 1128
+    .line 1127
     .local v0, c:Landroid/database/Cursor;
     if-eqz v0, :cond_3
 
-    .line 1129
+    .line 1128
     const-string/jumbo v8, "GoloFragment"
 
     new-instance v9, Ljava/lang/StringBuilder;
@@ -2309,7 +2309,7 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1130
+    .line 1129
     :goto_1
     invoke-interface {v0}, Landroid/database/Cursor;->moveToNext()Z
 
@@ -2317,17 +2317,17 @@
 
     if-nez v8, :cond_2
 
-    .line 1136
+    .line 1135
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    .line 1141
+    .line 1140
     :goto_2
     invoke-direct {p0, p1, v7}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->setTimeListData(Ljava/util/List;Ljava/util/HashMap;)V
 
-    .line 1142
+    .line 1141
     return-void
 
-    .line 1120
+    .line 1119
     .end local v0           #c:Landroid/database/Cursor;
     .end local v7           #usersMap:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Long;>;"
     :cond_0
@@ -2341,7 +2341,7 @@
 
     move-result-object v3
 
-    .line 1121
+    .line 1120
     .local v3, id:Ljava/lang/String;
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2349,16 +2349,16 @@
 
     if-nez v8, :cond_1
 
-    .line 1122
+    .line 1121
     aput-object v3, v1, v2
 
-    .line 1119
+    .line 1118
     :cond_1
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 1131
+    .line 1130
     .end local v3           #id:Ljava/lang/String;
     .restart local v0       #c:Landroid/database/Cursor;
     .restart local v7       #usersMap:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Long;>;"
@@ -2377,7 +2377,7 @@
 
     move-result-object v4
 
-    .line 1132
+    .line 1131
     .local v4, roomId:Ljava/lang/String;
     sget-object v8, Lcom/cnlaunch/newgolo/model/ChatTable;->time:Lcom/cnlaunch/newgolo/model/ChatTable;
 
@@ -2393,7 +2393,7 @@
 
     move-result-wide v5
 
-    .line 1133
+    .line 1132
     .local v5, time:J
     invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -2401,7 +2401,7 @@
 
     invoke-virtual {v7, v4, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1134
+    .line 1133
     const-string/jumbo v8, "GoloFragment"
 
     new-instance v9, Ljava/lang/StringBuilder;
@@ -2432,7 +2432,7 @@
 
     goto :goto_1
 
-    .line 1138
+    .line 1137
     .end local v4           #roomId:Ljava/lang/String;
     .end local v5           #time:J
     :cond_3
@@ -2459,7 +2459,7 @@
     .end annotation
 
     .prologue
-    .line 1085
+    .line 1084
     .local p1, list:Ljava/util/List;,"Ljava/util/List<+Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;>;"
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -2467,7 +2467,7 @@
 
     new-array v2, v7, [Ljava/lang/String;
 
-    .line 1086
+    .line 1085
     .local v2, datas:[Ljava/lang/String;
     const/4 v3, 0x0
 
@@ -2477,12 +2477,12 @@
 
     if-lt v3, v7, :cond_0
 
-    .line 1092
+    .line 1091
     new-instance v6, Ljava/util/HashMap;
 
     invoke-direct {v6}, Ljava/util/HashMap;-><init>()V
 
-    .line 1094
+    .line 1093
     .local v6, usersMap:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Integer;>;"
     invoke-static {}, Lcom/cnlaunch/newgolo/model/ChatManager;->getInstance()Lcom/cnlaunch/newgolo/model/ChatManager;
 
@@ -2492,11 +2492,11 @@
 
     move-result-object v0
 
-    .line 1095
+    .line 1094
     .local v0, c:Landroid/database/Cursor;
     if-eqz v0, :cond_3
 
-    .line 1096
+    .line 1095
     const-string/jumbo v7, "GoloFragment"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -2519,7 +2519,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1097
+    .line 1096
     :goto_1
     invoke-interface {v0}, Landroid/database/Cursor;->moveToNext()Z
 
@@ -2527,17 +2527,17 @@
 
     if-nez v7, :cond_2
 
-    .line 1103
+    .line 1102
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    .line 1107
+    .line 1106
     :goto_2
     invoke-direct {p0, p1, v6}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->setUnreadListData(Ljava/util/List;Ljava/util/HashMap;)V
 
-    .line 1108
+    .line 1107
     return-void
 
-    .line 1087
+    .line 1086
     .end local v0           #c:Landroid/database/Cursor;
     .end local v6           #usersMap:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Integer;>;"
     :cond_0
@@ -2551,7 +2551,7 @@
 
     move-result-object v4
 
-    .line 1088
+    .line 1087
     .local v4, id:Ljava/lang/String;
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2559,16 +2559,16 @@
 
     if-nez v7, :cond_1
 
-    .line 1089
+    .line 1088
     aput-object v4, v2, v3
 
-    .line 1086
+    .line 1085
     :cond_1
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 1098
+    .line 1097
     .end local v4           #id:Ljava/lang/String;
     .restart local v0       #c:Landroid/database/Cursor;
     .restart local v6       #usersMap:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Integer;>;"
@@ -2587,7 +2587,7 @@
 
     move-result-object v5
 
-    .line 1099
+    .line 1098
     .local v5, roomId:Ljava/lang/String;
     const-string/jumbo v7, "count"
 
@@ -2599,7 +2599,7 @@
 
     move-result v1
 
-    .line 1100
+    .line 1099
     .local v1, count:I
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2607,7 +2607,7 @@
 
     invoke-virtual {v6, v5, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1101
+    .line 1100
     const-string/jumbo v7, "GoloFragment"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -2638,7 +2638,7 @@
 
     goto :goto_1
 
-    .line 1105
+    .line 1104
     .end local v1           #count:I
     .end local v5           #roomId:Ljava/lang/String;
     :cond_3
@@ -2655,7 +2655,7 @@
     .locals 3
 
     .prologue
-    .line 2488
+    .line 2490
     sget-object v1, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->conflictList:Ljava/util/List;
 
     if-eqz v1, :cond_0
@@ -2668,7 +2668,7 @@
 
     if-lez v1, :cond_0
 
-    .line 2489
+    .line 2491
     sget-object v1, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->conflictList:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -2683,11 +2683,11 @@
 
     if-nez v2, :cond_1
 
-    .line 2493
+    .line 2495
     :cond_0
     return-void
 
-    .line 2489
+    .line 2491
     :cond_1
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -2696,7 +2696,7 @@
     .end local v0           #tmp:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;
     check-cast v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;
 
-    .line 2490
+    .line 2492
     .restart local v0       #tmp:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;->hiden()V
 
@@ -2714,8 +2714,8 @@
 
     const/4 v2, 0x0
 
-    .line 232
-    const v1, 0x7f0d01ea
+    .line 231
+    const v1, 0x7f0c01ed
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2725,13 +2725,13 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->bundingTitle:Landroid/widget/RadioButton;
 
-    .line 233
+    .line 232
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->bundingTitle:Landroid/widget/RadioButton;
 
     invoke-virtual {v1, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 234
-    const v1, 0x7f0d01ed
+    .line 233
+    const v1, 0x7f0c01f0
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2741,13 +2741,13 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->attTitle:Landroid/widget/RadioButton;
 
-    .line 235
+    .line 234
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->attTitle:Landroid/widget/RadioButton;
 
     invoke-virtual {v1, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 236
-    const v1, 0x7f0d01e7
+    .line 235
+    const v1, 0x7f0c01ea
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2757,13 +2757,13 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteOrderTitle:Landroid/widget/RadioButton;
 
-    .line 237
+    .line 236
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteOrderTitle:Landroid/widget/RadioButton;
 
     invoke-virtual {v1, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 239
-    const v1, 0x7f0d01e3
+    .line 238
+    const v1, 0x7f0c01e6
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2773,13 +2773,13 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mEdit:Lcom/cnlaunch/x431pro/widget/ClearEditText;
 
-    .line 240
+    .line 239
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mEdit:Lcom/cnlaunch/x431pro/widget/ClearEditText;
 
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/widget/ClearEditText;->clearFocus()V
 
-    .line 241
-    const v1, 0x7f0d01f2
+    .line 240
+    const v1, 0x7f0c01f5
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2789,13 +2789,13 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
-    .line 242
+    .line 241
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v1, v4}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setDividerDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 246
-    const v1, 0x7f0d01ef
+    .line 245
+    const v1, 0x7f0c01f2
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2805,22 +2805,22 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
-    .line 247
+    .line 246
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v1, v4}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setDividerDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 249
+    .line 248
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v1, v3}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 250
+    .line 249
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 252
+    .line 251
     new-instance v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -2831,7 +2831,7 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
-    .line 253
+    .line 252
     new-instance v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -2842,22 +2842,22 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
-    .line 254
+    .line 253
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
     invoke-virtual {v1, v4}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 255
+    .line 254
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
     invoke-virtual {v1, v4}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 256
-    const v1, 0x7f0d01f1
+    .line 255
+    const v1, 0x7f0c01f4
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2867,8 +2867,8 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_remind:Landroid/widget/RelativeLayout;
 
-    .line 257
-    const v1, 0x7f0d01ee
+    .line 256
+    const v1, 0x7f0c01f1
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2878,8 +2878,8 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_client:Landroid/widget/RelativeLayout;
 
-    .line 259
-    const v1, 0x7f0d01f0
+    .line 258
+    const v1, 0x7f0c01f3
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2889,7 +2889,7 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->assortView_client:Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;
 
-    .line 260
+    .line 259
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->assortView_client:Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;
 
     new-instance v4, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$4;
@@ -2898,8 +2898,8 @@
 
     invoke-virtual {v1, v4}, Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;->setOnTouchingLetterChangedListener(Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar$OnTouchingLetterChangedListener;)V
 
-    .line 272
-    const v1, 0x7f0d01f3
+    .line 271
+    const v1, 0x7f0c01f6
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2909,7 +2909,7 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->assortView_remind:Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;
 
-    .line 273
+    .line 272
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->assortView_remind:Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;
 
     new-instance v4, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$5;
@@ -2918,8 +2918,8 @@
 
     invoke-virtual {v1, v4}, Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;->setOnTouchingLetterChangedListener(Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar$OnTouchingLetterChangedListener;)V
 
-    .line 285
-    const v1, 0x7f0d01ec
+    .line 284
+    const v1, 0x7f0c01ef
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2929,8 +2929,8 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_a:Landroid/widget/TextView;
 
-    .line 286
-    const v1, 0x7f0d01e9
+    .line 285
+    const v1, 0x7f0c01ec
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2940,8 +2940,8 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_b:Landroid/widget/TextView;
 
-    .line 287
-    const v1, 0x7f0d01e6
+    .line 286
+    const v1, 0x7f0c01e9
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2951,8 +2951,8 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allScheduledNewCount:Landroid/widget/TextView;
 
-    .line 288
-    const v1, 0x7f0d01e5
+    .line 287
+    const v1, 0x7f0c01e8
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2960,8 +2960,8 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remote_order_l:Landroid/view/View;
 
-    .line 289
-    const v1, 0x7f0d01e8
+    .line 288
+    const v1, 0x7f0c01eb
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2969,8 +2969,8 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->bunding_l:Landroid/view/View;
 
-    .line 291
-    const v1, 0x7f0d01eb
+    .line 290
+    const v1, 0x7f0c01ee
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2978,8 +2978,8 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhu_l:Landroid/view/View;
 
-    .line 292
-    const v1, 0x7f0d01e2
+    .line 291
+    const v1, 0x7f0c01e5
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2989,7 +2989,7 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->conflict_hit:Landroid/widget/TextView;
 
-    .line 293
+    .line 292
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
@@ -3002,7 +3002,7 @@
 
     move-result v0
 
-    .line 294
+    .line 293
     .local v0, conflict:Z
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->conflict_hit:Landroid/widget/TextView;
 
@@ -3013,28 +3013,28 @@
     :goto_0
     invoke-virtual {v4, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 295
+    .line 294
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->setItemClickListener()V
 
-    .line 296
+    .line 295
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->setOnRefreshListener()V
 
-    .line 297
+    .line 296
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->setEditListener()V
 
-    .line 298
+    .line 297
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->setRemoteDiagnoseListener()V
 
-    .line 300
+    .line 299
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showBundingBG()V
 
-    .line 301
+    .line 300
     return-void
 
     :cond_0
     move v1, v3
 
-    .line 294
+    .line 293
     goto :goto_0
 .end method
 
@@ -3051,12 +3051,12 @@
     .end annotation
 
     .prologue
-    .line 2117
+    .line 2119
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2118
+    .line 2120
     .local v1, followedTempList:Ljava/util/List;,"Ljava/util/List<Ljava/lang/Object;>;"
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
@@ -3068,7 +3068,7 @@
 
     move-result-object v0
 
-    .line 2119
+    .line 2121
     .local v0, followedCustomerList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/newgolo/db/FollowedCustomer;>;"
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3081,10 +3081,10 @@
 
     if-nez v5, :cond_0
 
-    .line 2131
+    .line 2133
     return-object v1
 
-    .line 2119
+    .line 2121
     :cond_0
     invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -3092,13 +3092,13 @@
 
     check-cast v3, Lcom/cnlaunch/newgolo/db/FollowedCustomer;
 
-    .line 2120
+    .line 2122
     .local v3, tmp:Lcom/cnlaunch/newgolo/db/FollowedCustomer;
     new-instance v2, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;
 
     invoke-direct {v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;-><init>()V
 
-    .line 2121
+    .line 2123
     .local v2, goloAttentionInfo:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->getFace_thumb()Ljava/lang/String;
 
@@ -3106,21 +3106,21 @@
 
     invoke-virtual {v2, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setFace_thumb(Ljava/lang/String;)V
 
-    .line 2122
+    .line 2124
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->getFace_url()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v2, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setFace_url(Ljava/lang/String;)V
 
-    .line 2123
+    .line 2125
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->getLastTime()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v2, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setLastTime(Ljava/lang/String;)V
 
-    .line 2124
+    .line 2126
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->getNewMsgCount()Ljava/lang/Integer;
 
     move-result-object v5
@@ -3131,35 +3131,35 @@
 
     invoke-virtual {v2, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setNewMsgCount(I)V
 
-    .line 2125
+    .line 2127
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->getNick_name()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v2, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setNick_name(Ljava/lang/String;)V
 
-    .line 2126
+    .line 2128
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->getSortKey()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v2, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setSortKey(Ljava/lang/String;)V
 
-    .line 2127
+    .line 2129
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->getUser_id()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v2, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setUser_id(Ljava/lang/String;)V
 
-    .line 2128
+    .line 2130
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->getUser_name()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v2, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->setUser_name(Ljava/lang/String;)V
 
-    .line 2129
+    .line 2131
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -3178,12 +3178,12 @@
     .end annotation
 
     .prologue
-    .line 2179
+    .line 2181
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2180
+    .line 2182
     .local v0, bindTempList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;>;"
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
@@ -3195,7 +3195,7 @@
 
     move-result-object v2
 
-    .line 2181
+    .line 2183
     .local v2, registeredCustomerList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/newgolo/db/RegisteredCustomer;>;"
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3208,10 +3208,10 @@
 
     if-nez v5, :cond_0
 
-    .line 2202
+    .line 2204
     return-object v0
 
-    .line 2181
+    .line 2183
     :cond_0
     invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -3219,13 +3219,13 @@
 
     check-cast v3, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;
 
-    .line 2182
+    .line 2184
     .local v3, tmp:Lcom/cnlaunch/newgolo/db/RegisteredCustomer;
     new-instance v1, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
 
     invoke-direct {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;-><init>()V
 
-    .line 2183
+    .line 2185
     .local v1, goloBindInfo:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getAuto_code()Ljava/lang/String;
 
@@ -3233,42 +3233,42 @@
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setAuto_code(Ljava/lang/String;)V
 
-    .line 2184
+    .line 2186
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getAuto_logos()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setAuto_logos(Ljava/lang/String;)V
 
-    .line 2185
+    .line 2187
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getBunding_id()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setId(Ljava/lang/String;)V
 
-    .line 2186
+    .line 2188
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getIf_pass()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setIf_pass(Ljava/lang/String;)V
 
-    .line 2187
+    .line 2189
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getLastTime()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setLastTime(Ljava/lang/String;)V
 
-    .line 2188
+    .line 2190
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getMine_car_plate_num()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setMine_car_plate_num(Ljava/lang/String;)V
 
-    .line 2189
+    .line 2191
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getNewMsgCount()Ljava/lang/Integer;
 
     move-result-object v5
@@ -3279,28 +3279,28 @@
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setNewMsgCount(I)V
 
-    .line 2190
+    .line 2192
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getNick_name()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setNick_name(Ljava/lang/String;)V
 
-    .line 2191
+    .line 2193
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getSerial_no()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setSerial_no(Ljava/lang/String;)V
 
-    .line 2192
+    .line 2194
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getSortKey()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setSortKey(Ljava/lang/String;)V
 
-    .line 2193
+    .line 2195
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getUnReadTipCount()Ljava/lang/String;
 
     move-result-object v5
@@ -3311,49 +3311,49 @@
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setUnReadTipCount(I)V
 
-    .line 2194
+    .line 2196
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getUser_id()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setUser_id(Ljava/lang/String;)V
 
-    .line 2195
+    .line 2197
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getUser_name()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setUser_name(Ljava/lang/String;)V
 
-    .line 2196
+    .line 2198
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getFace()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setFace(Ljava/lang/String;)V
 
-    .line 2197
+    .line 2199
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getSignature()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setSignature(Ljava/lang/String;)V
 
-    .line 2198
+    .line 2200
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getOnline_status()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setStatus(Ljava/lang/String;)V
 
-    .line 2199
+    .line 2201
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->getIsRead()Ljava/lang/Boolean;
 
     move-result-object v5
 
     invoke-virtual {v1, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setIsRead(Ljava/lang/Boolean;)V
 
-    .line 2200
+    .line 2202
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
@@ -3372,12 +3372,12 @@
     .end annotation
 
     .prologue
-    .line 1927
+    .line 1929
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1928
+    .line 1930
     .local v2, remoteTempList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
@@ -3389,7 +3389,7 @@
 
     move-result-object v1
 
-    .line 1929
+    .line 1931
     .local v1, remoteCustomerList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/newgolo/db/RemoteCustomer;>;"
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3402,10 +3402,10 @@
 
     if-nez v5, :cond_0
 
-    .line 1952
+    .line 1954
     return-object v2
 
-    .line 1929
+    .line 1931
     :cond_0
     invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -3413,13 +3413,13 @@
 
     check-cast v3, Lcom/cnlaunch/newgolo/db/RemoteCustomer;
 
-    .line 1930
+    .line 1932
     .local v3, tmp:Lcom/cnlaunch/newgolo/db/RemoteCustomer;
     new-instance v0, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
 
     invoke-direct {v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;-><init>()V
 
-    .line 1931
+    .line 1933
     .local v0, goloRemoteOrderInfo:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getAuto_code()Ljava/lang/String;
 
@@ -3427,70 +3427,70 @@
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setAuto_code(Ljava/lang/String;)V
 
-    .line 1932
+    .line 1934
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getAuto_logos()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setAuto_logos(Ljava/lang/String;)V
 
-    .line 1933
+    .line 1935
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getCar_id()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setCar_id(Ljava/lang/String;)V
 
-    .line 1934
+    .line 1936
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getCreated()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setCreated(Ljava/lang/String;)V
 
-    .line 1935
+    .line 1937
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getDescription()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setDescription(Ljava/lang/String;)V
 
-    .line 1936
+    .line 1938
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getFace_thumb()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setFace_thumb(Ljava/lang/String;)V
 
-    .line 1937
+    .line 1939
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getFace_url()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setFace_url(Ljava/lang/String;)V
 
-    .line 1938
+    .line 1940
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getRequest_id()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setId(Ljava/lang/String;)V
 
-    .line 1939
+    .line 1941
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getLastTime()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setLastTime(Ljava/lang/String;)V
 
-    .line 1940
+    .line 1942
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getMine_car_plate_num()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setMine_car_plate_num(Ljava/lang/String;)V
 
-    .line 1941
+    .line 1943
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getNewMsgCount()Ljava/lang/Integer;
 
     move-result-object v5
@@ -3501,63 +3501,63 @@
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setNewMsgCount(I)V
 
-    .line 1942
+    .line 1944
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getNick_name()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setNick_name(Ljava/lang/String;)V
 
-    .line 1943
+    .line 1945
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getSortKey()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setSortKey(Ljava/lang/String;)V
 
-    .line 1944
+    .line 1946
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getStatus()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setStatus(Ljava/lang/String;)V
 
-    .line 1945
+    .line 1947
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getUser_id()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setUser_id(Ljava/lang/String;)V
 
-    .line 1946
+    .line 1948
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getUser_name()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setUser_name(Ljava/lang/String;)V
 
-    .line 1947
+    .line 1949
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getSignature()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setSignature(Ljava/lang/String;)V
 
-    .line 1948
+    .line 1950
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getOnline_status()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setOnline_status(Ljava/lang/String;)V
 
-    .line 1949
+    .line 1951
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->getIsRead()Ljava/lang/Boolean;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setIsRead(Ljava/lang/Boolean;)V
 
-    .line 1950
+    .line 1952
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
@@ -3576,12 +3576,12 @@
     .end annotation
 
     .prologue
-    .line 2048
+    .line 2050
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2049
+    .line 2051
     .local v2, repairTempList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
@@ -3593,7 +3593,7 @@
 
     move-result-object v1
 
-    .line 2050
+    .line 2052
     .local v1, repairCustomerList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/newgolo/db/RepairCustomer;>;"
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3606,10 +3606,10 @@
 
     if-nez v5, :cond_0
 
-    .line 2077
+    .line 2079
     return-object v2
 
-    .line 2050
+    .line 2052
     :cond_0
     invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -3617,13 +3617,13 @@
 
     check-cast v3, Lcom/cnlaunch/newgolo/db/RepairCustomer;
 
-    .line 2051
+    .line 2053
     .local v3, tmp:Lcom/cnlaunch/newgolo/db/RepairCustomer;
     new-instance v0, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;
 
     invoke-direct {v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;-><init>()V
 
-    .line 2052
+    .line 2054
     .local v0, goloRepairInfo:Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getCarinfo_id()Ljava/lang/String;
 
@@ -3631,56 +3631,56 @@
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setCarinfo_id(Ljava/lang/String;)V
 
-    .line 2053
+    .line 2055
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getContact_name()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setContact_name(Ljava/lang/String;)V
 
-    .line 2054
+    .line 2056
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getContact_phone()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setContact_phone(Ljava/lang/String;)V
 
-    .line 2055
+    .line 2057
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getCreated()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setCreated(Ljava/lang/String;)V
 
-    .line 2056
+    .line 2058
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getFace()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setFace(Ljava/lang/String;)V
 
-    .line 2057
+    .line 2059
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getFace_hd()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setFace_hd(Ljava/lang/String;)V
 
-    .line 2058
+    .line 2060
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getIs_accept()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setIs_accept(Ljava/lang/String;)V
 
-    .line 2059
+    .line 2061
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getLastTime()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setLastTime(Ljava/lang/String;)V
 
-    .line 2060
+    .line 2062
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getNewMsgCount()Ljava/lang/Integer;
 
     move-result-object v5
@@ -3691,105 +3691,105 @@
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setNewMsgCount(I)V
 
-    .line 2061
+    .line 2063
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getNick_name()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setNick_name(Ljava/lang/String;)V
 
-    .line 2062
+    .line 2064
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getPub_id()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setPub_id(Ljava/lang/String;)V
 
-    .line 2063
+    .line 2065
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getRemark()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setRemark(Ljava/lang/String;)V
 
-    .line 2064
+    .line 2066
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getReserve_id()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setReserve_id(Ljava/lang/String;)V
 
-    .line 2065
+    .line 2067
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getReserve_time()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setReserve_time(Ljava/lang/String;)V
 
-    .line 2066
+    .line 2068
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getResponse()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setResponse(Ljava/lang/String;)V
 
-    .line 2067
+    .line 2069
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getSend_id()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setSend_id(Ljava/lang/String;)V
 
-    .line 2068
+    .line 2070
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getShedule_time()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setShedule_time(Ljava/lang/String;)V
 
-    .line 2069
+    .line 2071
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getSortKey()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setSortKey(Ljava/lang/String;)V
 
-    .line 2070
+    .line 2072
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getUser_id()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setUser_id(Ljava/lang/String;)V
 
-    .line 2071
+    .line 2073
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getUser_name()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setUser_name(Ljava/lang/String;)V
 
-    .line 2072
+    .line 2074
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getSignature()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setSignature(Ljava/lang/String;)V
 
-    .line 2073
+    .line 2075
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getOnline_status()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setStatus(Ljava/lang/String;)V
 
-    .line 2074
+    .line 2076
     invoke-virtual {v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->getIsRead()Ljava/lang/Boolean;
 
     move-result-object v5
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->setIsRead(Ljava/lang/Boolean;)V
 
-    .line 2075
+    .line 2077
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
@@ -3799,7 +3799,7 @@
     .locals 2
 
     .prologue
-    .line 2509
+    .line 2511
     const/4 v0, 0x2
 
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mType:I
@@ -3812,39 +3812,39 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 2510
+    .line 2512
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     if-eqz v0, :cond_1
 
-    .line 2511
+    .line 2513
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->requestFocus()Z
 
-    .line 2512
+    .line 2514
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->requestFocusFromTouch()Z
 
-    .line 2520
+    .line 2522
     :cond_1
     :goto_0
     return-void
 
-    .line 2515
+    .line 2517
     :cond_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     if-eqz v0, :cond_1
 
-    .line 2516
+    .line 2518
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->requestFocus()Z
 
-    .line 2517
+    .line 2519
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->requestFocusFromTouch()Z
@@ -3866,7 +3866,7 @@
     .end annotation
 
     .prologue
-    .line 2096
+    .line 2098
     .local p1, list:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;>;"
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3879,10 +3879,10 @@
 
     if-nez v3, :cond_0
 
-    .line 2108
+    .line 2110
     return-void
 
-    .line 2096
+    .line 2098
     :cond_0
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -3890,13 +3890,13 @@
 
     check-cast v1, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;
 
-    .line 2097
+    .line 2099
     .local v1, tmp:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;
     new-instance v0, Lcom/cnlaunch/newgolo/db/FollowedCustomer;
 
     invoke-direct {v0}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;-><init>()V
 
-    .line 2098
+    .line 2100
     .local v0, followedCustomer:Lcom/cnlaunch/newgolo/db/FollowedCustomer;
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->getFace_thumb()Ljava/lang/String;
 
@@ -3904,21 +3904,21 @@
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->setFace_thumb(Ljava/lang/String;)V
 
-    .line 2099
+    .line 2101
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->getFace_url()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->setFace_url(Ljava/lang/String;)V
 
-    .line 2100
+    .line 2102
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->getLastTime()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->setLastTime(Ljava/lang/String;)V
 
-    .line 2101
+    .line 2103
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->getNewMsgCount()I
 
     move-result v3
@@ -3929,35 +3929,35 @@
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->setNewMsgCount(Ljava/lang/Integer;)V
 
-    .line 2102
+    .line 2104
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->getNick_name()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->setNick_name(Ljava/lang/String;)V
 
-    .line 2103
+    .line 2105
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->getSortKey()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->setSortKey(Ljava/lang/String;)V
 
-    .line 2104
+    .line 2106
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->getUser_id()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->setUser_id(Ljava/lang/String;)V
 
-    .line 2105
+    .line 2107
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->getUser_name()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/FollowedCustomer;->setUser_name(Ljava/lang/String;)V
 
-    .line 2106
+    .line 2108
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -3983,7 +3983,7 @@
     .end annotation
 
     .prologue
-    .line 2149
+    .line 2151
     .local p1, list:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;>;"
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3996,10 +3996,10 @@
 
     if-nez v3, :cond_0
 
-    .line 2170
+    .line 2172
     return-void
 
-    .line 2149
+    .line 2151
     :cond_0
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -4007,13 +4007,13 @@
 
     check-cast v1, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
 
-    .line 2150
+    .line 2152
     .local v1, tmp:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
     new-instance v0, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;
 
     invoke-direct {v0}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;-><init>()V
 
-    .line 2151
+    .line 2153
     .local v0, registeredCustomer:Lcom/cnlaunch/newgolo/db/RegisteredCustomer;
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getAuto_code()Ljava/lang/String;
 
@@ -4021,42 +4021,42 @@
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setAuto_code(Ljava/lang/String;)V
 
-    .line 2152
+    .line 2154
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getAuto_logos()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setAuto_logos(Ljava/lang/String;)V
 
-    .line 2153
+    .line 2155
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getId()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setBunding_id(Ljava/lang/String;)V
 
-    .line 2154
+    .line 2156
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getIf_pass()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setIf_pass(Ljava/lang/String;)V
 
-    .line 2155
+    .line 2157
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getLastTime()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setLastTime(Ljava/lang/String;)V
 
-    .line 2156
+    .line 2158
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getMine_car_plate_num()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setMine_car_plate_num(Ljava/lang/String;)V
 
-    .line 2157
+    .line 2159
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getNewMsgCount()I
 
     move-result v3
@@ -4067,28 +4067,28 @@
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setNewMsgCount(Ljava/lang/Integer;)V
 
-    .line 2158
+    .line 2160
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getNick_name()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setNick_name(Ljava/lang/String;)V
 
-    .line 2159
+    .line 2161
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getSerial_no()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setSerial_no(Ljava/lang/String;)V
 
-    .line 2160
+    .line 2162
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getSortKey()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setSortKey(Ljava/lang/String;)V
 
-    .line 2161
+    .line 2163
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getUnReadTipCount()I
 
     move-result v3
@@ -4099,49 +4099,49 @@
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setUnReadTipCount(Ljava/lang/String;)V
 
-    .line 2162
+    .line 2164
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getUser_id()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setUser_id(Ljava/lang/String;)V
 
-    .line 2163
+    .line 2165
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getUser_name()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setUser_name(Ljava/lang/String;)V
 
-    .line 2164
+    .line 2166
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getFace()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setFace(Ljava/lang/String;)V
 
-    .line 2165
+    .line 2167
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getSignature()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setSignature(Ljava/lang/String;)V
 
-    .line 2166
+    .line 2168
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getStatus()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setOnline_status(Ljava/lang/String;)V
 
-    .line 2167
+    .line 2169
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getIsRead()Ljava/lang/Boolean;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setIsRead(Ljava/lang/Boolean;)V
 
-    .line 2168
+    .line 2170
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -4167,7 +4167,7 @@
     .end annotation
 
     .prologue
-    .line 1895
+    .line 1897
     .local p1, sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -4180,10 +4180,10 @@
 
     if-nez v3, :cond_0
 
-    .line 1918
+    .line 1920
     return-void
 
-    .line 1895
+    .line 1897
     :cond_0
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -4191,13 +4191,13 @@
 
     check-cast v1, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
 
-    .line 1896
+    .line 1898
     .local v1, tmp:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
     new-instance v0, Lcom/cnlaunch/newgolo/db/RemoteCustomer;
 
     invoke-direct {v0}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;-><init>()V
 
-    .line 1897
+    .line 1899
     .local v0, customer:Lcom/cnlaunch/newgolo/db/RemoteCustomer;
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getAuto_code()Ljava/lang/String;
 
@@ -4205,70 +4205,70 @@
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setAuto_code(Ljava/lang/String;)V
 
-    .line 1898
+    .line 1900
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getAuto_logos()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setAuto_logos(Ljava/lang/String;)V
 
-    .line 1899
+    .line 1901
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getCar_id()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setCar_id(Ljava/lang/String;)V
 
-    .line 1900
+    .line 1902
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getCreated()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setCreated(Ljava/lang/String;)V
 
-    .line 1901
+    .line 1903
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getDescription()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setDescription(Ljava/lang/String;)V
 
-    .line 1902
+    .line 1904
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getFace_thumb()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setFace_thumb(Ljava/lang/String;)V
 
-    .line 1903
+    .line 1905
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getFace_url()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setFace_url(Ljava/lang/String;)V
 
-    .line 1904
+    .line 1906
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getId()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setRequest_id(Ljava/lang/String;)V
 
-    .line 1905
+    .line 1907
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getLastTime()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setLastTime(Ljava/lang/String;)V
 
-    .line 1906
+    .line 1908
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getMine_car_plate_num()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setMine_car_plate_num(Ljava/lang/String;)V
 
-    .line 1907
+    .line 1909
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getNewMsgCount()I
 
     move-result v3
@@ -4279,63 +4279,63 @@
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setNewMsgCount(Ljava/lang/Integer;)V
 
-    .line 1908
+    .line 1910
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getNick_name()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setNick_name(Ljava/lang/String;)V
 
-    .line 1909
+    .line 1911
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getSortKey()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setSortKey(Ljava/lang/String;)V
 
-    .line 1910
+    .line 1912
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getStatus()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setStatus(Ljava/lang/String;)V
 
-    .line 1911
+    .line 1913
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getUser_id()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setUser_id(Ljava/lang/String;)V
 
-    .line 1912
+    .line 1914
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getUser_name()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setUser_name(Ljava/lang/String;)V
 
-    .line 1913
+    .line 1915
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getSignature()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setSignature(Ljava/lang/String;)V
 
-    .line 1914
+    .line 1916
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getOnline_status()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setOnline_status(Ljava/lang/String;)V
 
-    .line 1915
+    .line 1917
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getIsRead()Ljava/lang/Boolean;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setIsRead(Ljava/lang/Boolean;)V
 
-    .line 1916
+    .line 1918
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -4361,7 +4361,7 @@
     .end annotation
 
     .prologue
-    .line 2012
+    .line 2014
     .local p1, list:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -4374,10 +4374,10 @@
 
     if-nez v3, :cond_0
 
-    .line 2039
+    .line 2041
     return-void
 
-    .line 2012
+    .line 2014
     :cond_0
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -4385,13 +4385,13 @@
 
     check-cast v1, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;
 
-    .line 2013
+    .line 2015
     .local v1, tmp:Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;
     new-instance v0, Lcom/cnlaunch/newgolo/db/RepairCustomer;
 
     invoke-direct {v0}, Lcom/cnlaunch/newgolo/db/RepairCustomer;-><init>()V
 
-    .line 2014
+    .line 2016
     .local v0, repairCustomer:Lcom/cnlaunch/newgolo/db/RepairCustomer;
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getCarinfo_id()Ljava/lang/String;
 
@@ -4399,56 +4399,56 @@
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setCarinfo_id(Ljava/lang/String;)V
 
-    .line 2015
+    .line 2017
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getContact_name()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setContact_name(Ljava/lang/String;)V
 
-    .line 2016
+    .line 2018
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getContact_phone()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setContact_phone(Ljava/lang/String;)V
 
-    .line 2017
+    .line 2019
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getCreated()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setCreated(Ljava/lang/String;)V
 
-    .line 2018
+    .line 2020
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getFace()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setFace(Ljava/lang/String;)V
 
-    .line 2019
+    .line 2021
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getFace_hd()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setFace_hd(Ljava/lang/String;)V
 
-    .line 2020
+    .line 2022
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getIs_accept()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setIs_accept(Ljava/lang/String;)V
 
-    .line 2021
+    .line 2023
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getLastTime()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setLastTime(Ljava/lang/String;)V
 
-    .line 2022
+    .line 2024
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getNewMsgCount()I
 
     move-result v3
@@ -4459,105 +4459,105 @@
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setNewMsgCount(Ljava/lang/Integer;)V
 
-    .line 2023
+    .line 2025
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getNick_name()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setNick_name(Ljava/lang/String;)V
 
-    .line 2024
+    .line 2026
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getPub_id()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setPub_id(Ljava/lang/String;)V
 
-    .line 2025
+    .line 2027
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getRemark()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setRemark(Ljava/lang/String;)V
 
-    .line 2026
+    .line 2028
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getReserve_id()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setReserve_id(Ljava/lang/String;)V
 
-    .line 2027
+    .line 2029
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getReserve_time()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setReserve_time(Ljava/lang/String;)V
 
-    .line 2028
+    .line 2030
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getResponse()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setResponse(Ljava/lang/String;)V
 
-    .line 2029
+    .line 2031
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getSend_id()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setSend_id(Ljava/lang/String;)V
 
-    .line 2030
+    .line 2032
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getShedule_time()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setShedule_time(Ljava/lang/String;)V
 
-    .line 2031
+    .line 2033
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getSortKey()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setSortKey(Ljava/lang/String;)V
 
-    .line 2032
+    .line 2034
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getUser_id()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setUser_id(Ljava/lang/String;)V
 
-    .line 2033
+    .line 2035
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getUser_name()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setUser_name(Ljava/lang/String;)V
 
-    .line 2034
+    .line 2036
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getSignature()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setSignature(Ljava/lang/String;)V
 
-    .line 2035
+    .line 2037
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getStatus()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setOnline_status(Ljava/lang/String;)V
 
-    .line 2036
+    .line 2038
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getIsRead()Ljava/lang/Boolean;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RepairCustomer;->setIsRead(Ljava/lang/Boolean;)V
 
-    .line 2037
+    .line 2039
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -4574,42 +4574,42 @@
     .parameter "filterStr"
 
     .prologue
-    .line 1337
+    .line 1336
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 1338
+    .line 1337
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateAttList:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->clear()V
 
-    .line 1339
+    .line 1338
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;->refresh(Ljava/util/List;)V
 
-    .line 1354
+    .line 1353
     :cond_0
     :goto_0
     return-void
 
-    .line 1341
+    .line 1340
     :cond_1
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
     if-eqz v2, :cond_0
 
-    .line 1344
+    .line 1343
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateAttList:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->clear()V
 
-    .line 1345
+    .line 1344
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -4624,7 +4624,7 @@
 
     if-nez v3, :cond_3
 
-    .line 1352
+    .line 1351
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateAttList:Ljava/util/List;
@@ -4633,7 +4633,7 @@
 
     goto :goto_0
 
-    .line 1345
+    .line 1344
     :cond_3
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -4641,7 +4641,7 @@
 
     check-cast v1, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;
 
-    .line 1346
+    .line 1345
     .local v1, sortModel:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->getNick_name()Ljava/lang/String;
 
@@ -4657,14 +4657,14 @@
 
     move-result-object v0
 
-    .line 1347
+    .line 1346
     .local v0, name:Ljava/lang/String;
     :goto_2
     if-nez v0, :cond_5
 
     const/4 v0, 0x0
 
-    .line 1348
+    .line 1347
     :goto_3
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -4678,14 +4678,14 @@
 
     if-eqz v3, :cond_2
 
-    .line 1349
+    .line 1348
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateAttList:Ljava/util/List;
 
     invoke-interface {v3, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 1346
+    .line 1345
     .end local v0           #name:Ljava/lang/String;
     :cond_4
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;->getUser_name()Ljava/lang/String;
@@ -4694,7 +4694,7 @@
 
     goto :goto_2
 
-    .line 1347
+    .line 1346
     .restart local v0       #name:Ljava/lang/String;
     :cond_5
     invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
@@ -4711,42 +4711,42 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 1305
+    .line 1304
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
 
     if-eqz v5, :cond_1
 
-    .line 1306
+    .line 1305
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateBindList:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->clear()V
 
-    .line 1307
+    .line 1306
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     invoke-virtual {v4, v5}, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;->refresh(Ljava/util/List;)V
 
-    .line 1331
+    .line 1330
     :cond_0
     :goto_0
     return-void
 
-    .line 1310
+    .line 1309
     :cond_1
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     if-eqz v5, :cond_0
 
-    .line 1314
+    .line 1313
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateBindList:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
-    .line 1315
+    .line 1314
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -4761,7 +4761,7 @@
 
     if-nez v6, :cond_3
 
-    .line 1329
+    .line 1328
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateBindList:Ljava/util/List;
@@ -4770,7 +4770,7 @@
 
     goto :goto_0
 
-    .line 1315
+    .line 1314
     :cond_3
     invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -4778,7 +4778,7 @@
 
     check-cast v3, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
 
-    .line 1316
+    .line 1315
     .local v3, sortModel:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
     invoke-virtual {v3}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getNick_name()Ljava/lang/String;
 
@@ -4794,38 +4794,38 @@
 
     move-result-object v1
 
-    .line 1317
+    .line 1316
     .local v1, name:Ljava/lang/String;
     :goto_2
     invoke-virtual {v3}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getSerial_no()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1318
+    .line 1317
     .local v2, serNo:Ljava/lang/String;
     invoke-virtual {v3}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getAuto_code()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1319
+    .line 1318
     .local v0, carType:Ljava/lang/String;
     if-nez v1, :cond_7
 
     move-object v1, v4
 
-    .line 1320
+    .line 1319
     :goto_3
     if-nez v2, :cond_8
 
     move-object v2, v4
 
-    .line 1321
+    .line 1320
     :goto_4
     if-nez v0, :cond_9
 
     move-object v0, v4
 
-    .line 1322
+    .line 1321
     :goto_5
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -4858,7 +4858,7 @@
 
     if-eqz v6, :cond_a
 
-    .line 1323
+    .line 1322
     :cond_5
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateBindList:Ljava/util/List;
 
@@ -4866,7 +4866,7 @@
 
     goto :goto_1
 
-    .line 1316
+    .line 1315
     .end local v0           #carType:Ljava/lang/String;
     .end local v1           #name:Ljava/lang/String;
     .end local v2           #serNo:Ljava/lang/String;
@@ -4877,7 +4877,7 @@
 
     goto :goto_2
 
-    .line 1319
+    .line 1318
     .restart local v0       #carType:Ljava/lang/String;
     .restart local v1       #name:Ljava/lang/String;
     .restart local v2       #serNo:Ljava/lang/String;
@@ -4888,7 +4888,7 @@
 
     goto :goto_3
 
-    .line 1320
+    .line 1319
     :cond_8
     invoke-virtual {v2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -4896,7 +4896,7 @@
 
     goto :goto_4
 
-    .line 1321
+    .line 1320
     :cond_9
     invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -4904,7 +4904,7 @@
 
     goto :goto_5
 
-    .line 1324
+    .line 1323
     :cond_a
     invoke-virtual {v1, p1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -4924,7 +4924,7 @@
 
     if-eqz v6, :cond_2
 
-    .line 1325
+    .line 1324
     :cond_b
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateBindList:Ljava/util/List;
 
@@ -4940,42 +4940,42 @@
     .prologue
     const/4 v7, 0x0
 
-    .line 1258
+    .line 1257
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v8
 
     if-eqz v8, :cond_1
 
-    .line 1259
+    .line 1258
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateRemoteList:Ljava/util/List;
 
     invoke-interface {v7}, Ljava/util/List;->clear()V
 
-    .line 1260
+    .line 1259
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     invoke-virtual {v7, v8}, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;->refresh(Ljava/util/List;)V
 
-    .line 1297
+    .line 1296
     :cond_0
     :goto_0
     return-void
 
-    .line 1263
+    .line 1262
     :cond_1
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     if-eqz v8, :cond_0
 
-    .line 1267
+    .line 1266
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateRemoteList:Ljava/util/List;
 
     invoke-interface {v8}, Ljava/util/List;->clear()V
 
-    .line 1268
+    .line 1267
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     invoke-interface {v8}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -4990,7 +4990,7 @@
 
     if-nez v9, :cond_3
 
-    .line 1295
+    .line 1294
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
     iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateRemoteList:Ljava/util/List;
@@ -4999,29 +4999,29 @@
 
     goto :goto_0
 
-    .line 1268
+    .line 1267
     :cond_3
     invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 1269
+    .line 1268
     .local v5, sortModel:Ljava/lang/Object;
     const/4 v4, 0x0
 
-    .line 1270
+    .line 1269
     .local v4, nick_name:Ljava/lang/String;
     const/4 v6, 0x0
 
-    .line 1271
+    .line 1270
     .local v6, user_name:Ljava/lang/String;
     const/4 v3, 0x0
 
-    .line 1272
+    .line 1271
     .local v3, name:Ljava/lang/String;
     const/4 v0, 0x0
 
-    .line 1273
+    .line 1272
     .local v0, carType:Ljava/lang/String;
     instance-of v9, v5, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
 
@@ -5029,26 +5029,26 @@
 
     move-object v1, v5
 
-    .line 1274
+    .line 1273
     check-cast v1, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
 
-    .line 1275
+    .line 1274
     .local v1, goloRemoteOrderInfo:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getNick_name()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 1276
+    .line 1275
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getUser_name()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 1277
+    .line 1276
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getAuto_code()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1285
+    .line 1284
     .end local v1           #goloRemoteOrderInfo:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
     :goto_2
     invoke-static {v4}, Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;->isNotNull(Ljava/lang/String;)Z
@@ -5059,19 +5059,19 @@
 
     move-object v3, v4
 
-    .line 1286
+    .line 1285
     :goto_3
     if-nez v3, :cond_6
 
     move-object v3, v7
 
-    .line 1287
+    .line 1286
     :goto_4
     if-nez v0, :cond_7
 
     move-object v0, v7
 
-    .line 1288
+    .line 1287
     :goto_5
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -5091,14 +5091,14 @@
 
     if-eqz v9, :cond_8
 
-    .line 1289
+    .line 1288
     iget-object v9, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateRemoteList:Ljava/util/List;
 
     invoke-interface {v9, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 1278
+    .line 1277
     :cond_4
     instance-of v9, v5, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;
 
@@ -5106,16 +5106,16 @@
 
     move-object v2, v5
 
-    .line 1279
+    .line 1278
     check-cast v2, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;
 
-    .line 1280
+    .line 1279
     .local v2, goloRepairInfo:Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getNick_name()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 1281
+    .line 1280
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->getUser_name()Ljava/lang/String;
 
     move-result-object v6
@@ -5126,10 +5126,10 @@
     :cond_5
     move-object v3, v6
 
-    .line 1285
+    .line 1284
     goto :goto_3
 
-    .line 1286
+    .line 1285
     :cond_6
     invoke-virtual {v3}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -5137,7 +5137,7 @@
 
     goto :goto_4
 
-    .line 1287
+    .line 1286
     :cond_7
     invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -5145,7 +5145,7 @@
 
     goto :goto_5
 
-    .line 1290
+    .line 1289
     :cond_8
     invoke-virtual {v3, p1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -5165,7 +5165,7 @@
 
     if-eqz v9, :cond_2
 
-    .line 1291
+    .line 1290
     :cond_9
     iget-object v9, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterDateRemoteList:Ljava/util/List;
 
@@ -5180,10 +5180,10 @@
     .parameter "request_id"
 
     .prologue
-    .line 1545
+    .line 1544
     const/4 v1, 0x0
 
-    .line 1547
+    .line 1546
     .local v1, result:Lcom/cnlaunch/x431pro/module/golo/model/RemoteSendResponse;
     :try_start_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mGoloAction:Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;
@@ -5194,32 +5194,32 @@
 
     move-result-object v1
 
-    .line 1551
+    .line 1550
     :goto_0
     if-nez v1, :cond_0
 
-    .line 1552
+    .line 1551
     const-string/jumbo v2, "GoloFragment"
 
     const-string/jumbo v3, "sendCancelCmd r is null"
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1561
+    .line 1560
     :goto_1
     return-void
 
-    .line 1548
+    .line 1547
     :catch_0
     move-exception v0
 
-    .line 1549
+    .line 1548
     .local v0, e:Lcom/cnlaunch/framework/network/http/HttpException;
     invoke-virtual {v0}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
     goto :goto_0
 
-    .line 1554
+    .line 1553
     .end local v0           #e:Lcom/cnlaunch/framework/network/http/HttpException;
     :cond_0
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/RemoteSendResponse;->getCode()I
@@ -5228,10 +5228,10 @@
 
     if-nez v2, :cond_1
 
-    .line 1555
+    .line 1554
     invoke-direct {p0, p2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->deleteRemoteCustomer(Ljava/lang/String;)V
 
-    .line 1556
+    .line 1555
     invoke-static {}, Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;->getInstance()Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;
 
     move-result-object v2
@@ -5242,7 +5242,7 @@
 
     goto :goto_1
 
-    .line 1558
+    .line 1557
     :cond_1
     const-string/jumbo v2, "GoloFragment"
 
@@ -5289,10 +5289,10 @@
     .parameter "request_id"
 
     .prologue
-    .line 1519
+    .line 1518
     const/4 v1, 0x0
 
-    .line 1521
+    .line 1520
     .local v1, result:Lcom/cnlaunch/x431pro/module/golo/model/RemoteSendResponse;
     :try_start_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mGoloAction:Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;
@@ -5303,32 +5303,32 @@
 
     move-result-object v1
 
-    .line 1525
+    .line 1524
     :goto_0
     if-nez v1, :cond_0
 
-    .line 1526
+    .line 1525
     const-string/jumbo v2, "GoloFragment"
 
     const-string/jumbo v3, "r is null"
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1534
+    .line 1533
     :goto_1
     return-void
 
-    .line 1522
+    .line 1521
     :catch_0
     move-exception v0
 
-    .line 1523
+    .line 1522
     .local v0, e:Lcom/cnlaunch/framework/network/http/HttpException;
     invoke-virtual {v0}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
     goto :goto_0
 
-    .line 1528
+    .line 1527
     .end local v0           #e:Lcom/cnlaunch/framework/network/http/HttpException;
     :cond_0
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/RemoteSendResponse;->getCode()I
@@ -5337,10 +5337,10 @@
 
     if-nez v2, :cond_1
 
-    .line 1529
+    .line 1528
     invoke-direct {p0, p2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->deleteRemoteCustomer(Ljava/lang/String;)V
 
-    .line 1530
+    .line 1529
     invoke-static {}, Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;->getInstance()Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;
 
     move-result-object v2
@@ -5351,7 +5351,7 @@
 
     goto :goto_1
 
-    .line 1532
+    .line 1531
     :cond_1
     const-string/jumbo v2, "GoloFragment"
 
@@ -5398,10 +5398,10 @@
     .parameter "request_id"
 
     .prologue
-    .line 1495
+    .line 1494
     const/4 v1, 0x0
 
-    .line 1497
+    .line 1496
     .local v1, result:Lcom/cnlaunch/x431pro/module/golo/model/RemoteSendResponse;
     :try_start_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mGoloAction:Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;
@@ -5412,32 +5412,32 @@
 
     move-result-object v1
 
-    .line 1501
+    .line 1500
     :goto_0
     if-nez v1, :cond_0
 
-    .line 1502
+    .line 1501
     const-string/jumbo v2, "GoloFragment"
 
     const-string/jumbo v3, "r is null"
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1509
+    .line 1508
     :goto_1
     return-void
 
-    .line 1498
+    .line 1497
     :catch_0
     move-exception v0
 
-    .line 1499
+    .line 1498
     .local v0, e:Lcom/cnlaunch/framework/network/http/HttpException;
     invoke-virtual {v0}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
     goto :goto_0
 
-    .line 1504
+    .line 1503
     .end local v0           #e:Lcom/cnlaunch/framework/network/http/HttpException;
     :cond_0
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/RemoteSendResponse;->getCode()I
@@ -5446,7 +5446,7 @@
 
     if-nez v2, :cond_1
 
-    .line 1505
+    .line 1504
     invoke-static {}, Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;->getInstance()Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;
 
     move-result-object v2
@@ -5457,7 +5457,7 @@
 
     goto :goto_1
 
-    .line 1507
+    .line 1506
     :cond_1
     const-string/jumbo v2, "GoloFragment"
 
@@ -5504,10 +5504,10 @@
     .parameter "request_id"
 
     .prologue
-    .line 1471
+    .line 1470
     const/4 v1, 0x0
 
-    .line 1473
+    .line 1472
     .local v1, result:Lcom/cnlaunch/x431pro/module/golo/model/RemoteSendResponse;
     :try_start_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mGoloAction:Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;
@@ -5518,32 +5518,32 @@
 
     move-result-object v1
 
-    .line 1477
+    .line 1476
     :goto_0
     if-nez v1, :cond_0
 
-    .line 1478
+    .line 1477
     const-string/jumbo v2, "GoloFragment"
 
     const-string/jumbo v3, "r is null"
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1485
+    .line 1484
     :goto_1
     return-void
 
-    .line 1474
+    .line 1473
     :catch_0
     move-exception v0
 
-    .line 1475
+    .line 1474
     .local v0, e:Lcom/cnlaunch/framework/network/http/HttpException;
     invoke-virtual {v0}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
     goto :goto_0
 
-    .line 1480
+    .line 1479
     .end local v0           #e:Lcom/cnlaunch/framework/network/http/HttpException;
     :cond_0
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/RemoteSendResponse;->getCode()I
@@ -5552,7 +5552,7 @@
 
     if-nez v2, :cond_1
 
-    .line 1481
+    .line 1480
     invoke-static {}, Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;->getInstance()Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;
 
     move-result-object v2
@@ -5563,7 +5563,7 @@
 
     goto :goto_1
 
-    .line 1483
+    .line 1482
     :cond_1
     const-string/jumbo v2, "GoloFragment"
 
@@ -5608,7 +5608,7 @@
     .locals 2
 
     .prologue
-    .line 538
+    .line 537
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mEdit:Lcom/cnlaunch/x431pro/widget/ClearEditText;
 
     new-instance v1, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$6;
@@ -5617,7 +5617,7 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/widget/ClearEditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 555
+    .line 554
     return-void
 .end method
 
@@ -5625,7 +5625,7 @@
     .locals 3
 
     .prologue
-    .line 558
+    .line 557
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->getRefreshableView()Landroid/view/View;
@@ -5634,11 +5634,11 @@
 
     check-cast v0, Landroid/widget/ListView;
 
-    .line 559
+    .line 558
     .local v0, lv:Landroid/widget/ListView;
     if-eqz v0, :cond_0
 
-    .line 560
+    .line 559
     new-instance v1, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick;
 
     const/4 v2, 0x0
@@ -5647,7 +5647,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
 
-    .line 563
+    .line 562
     :cond_0
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
@@ -5657,7 +5657,7 @@
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 661
+    .line 660
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     new-instance v2, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$8;
@@ -5666,7 +5666,7 @@
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 711
+    .line 710
     return-void
 .end method
 
@@ -5674,7 +5674,7 @@
     .locals 2
 
     .prologue
-    .line 817
+    .line 816
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     new-instance v1, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;
@@ -5683,7 +5683,7 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setOnRefreshListener(Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshBase$OnRefreshListener;)V
 
-    .line 864
+    .line 863
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     new-instance v1, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$12;
@@ -5692,7 +5692,7 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setOnRefreshListener(Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshBase$OnRefreshListener;)V
 
-    .line 875
+    .line 874
     return-void
 .end method
 
@@ -5700,7 +5700,7 @@
     .locals 3
 
     .prologue
-    .line 532
+    .line 531
     const-string/jumbo v1, "GoloFragment"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -5726,7 +5726,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 533
+    .line 532
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/cnlaunch/newgolo/manager/LaunchIMManager;->getIntance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/manager/LaunchIMManager;
@@ -5737,10 +5737,10 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/newgolo/manager/LaunchIMManager;->setRemoteDiagnoseHandleListener(Lcom/cnlaunch/newgolo/manager/LaunchIMManager$RemoteDiagnoseHandleListener;)V
 
-    .line 534
+    .line 533
     return-void
 
-    .line 532
+    .line 531
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteDiagnoseHandleListener:Lcom/cnlaunch/newgolo/manager/LaunchIMManager$RemoteDiagnoseHandleListener;
 
@@ -5761,15 +5761,15 @@
     .end annotation
 
     .prologue
-    .line 1869
+    .line 1871
     .local p1, sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
     if-nez p1, :cond_1
 
-    .line 1877
+    .line 1879
     :cond_0
     return-void
 
-    .line 1872
+    .line 1874
     :cond_1
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -5788,7 +5788,7 @@
 
     check-cast v1, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
 
-    .line 1873
+    .line 1875
     .local v1, tmp:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
@@ -5808,7 +5808,7 @@
 
     move-result v0
 
-    .line 1874
+    .line 1876
     .local v0, isRead:Z
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5816,7 +5816,7 @@
 
     invoke-virtual {v1, v3}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->setIsRead(Ljava/lang/Boolean;)V
 
-    .line 1875
+    .line 1877
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
@@ -5858,7 +5858,7 @@
     .local p2, usersMap:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Long;>;"
     const-wide/16 v4, 0x0
 
-    .line 1145
+    .line 1144
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v6
@@ -5871,10 +5871,10 @@
 
     if-nez v3, :cond_1
 
-    .line 1151
+    .line 1150
     return-void
 
-    .line 1145
+    .line 1144
     :cond_1
     invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -5882,7 +5882,7 @@
 
     check-cast v2, Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;
 
-    .line 1146
+    .line 1145
     .local v2, tmp:Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;->getUser_id()Ljava/lang/String;
 
@@ -5896,14 +5896,14 @@
 
     move-wide v0, v4
 
-    .line 1147
+    .line 1146
     .local v0, lastTime:J
     :goto_1
     cmp-long v3, v0, v4
 
     if-lez v3, :cond_0
 
-    .line 1148
+    .line 1147
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/utils/Tools;->getTime(J)Ljava/lang/String;
 
     move-result-object v3
@@ -5912,7 +5912,7 @@
 
     goto :goto_0
 
-    .line 1146
+    .line 1145
     .end local v0           #lastTime:J
     :cond_2
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;->getUser_id()Ljava/lang/String;
@@ -5952,7 +5952,7 @@
     .end annotation
 
     .prologue
-    .line 1111
+    .line 1110
     .local p1, list:Ljava/util/List;,"Ljava/util/List<+Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;>;"
     .local p2, usersMap:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Integer;>;"
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -5966,10 +5966,10 @@
 
     if-nez v2, :cond_0
 
-    .line 1115
+    .line 1114
     return-void
 
-    .line 1111
+    .line 1110
     :cond_0
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -5977,7 +5977,7 @@
 
     check-cast v1, Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;
 
-    .line 1112
+    .line 1111
     .local v1, tmp:Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;->getUser_id()Ljava/lang/String;
 
@@ -5991,14 +5991,14 @@
 
     const/4 v0, 0x0
 
-    .line 1113
+    .line 1112
     .local v0, count:I
     :goto_1
     invoke-virtual {v1, v0}, Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;->setNewMsgCount(I)V
 
     goto :goto_0
 
-    .line 1112
+    .line 1111
     .end local v0           #count:I
     :cond_1
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;->getUser_id()Ljava/lang/String;
@@ -6022,11 +6022,11 @@
     .locals 4
 
     .prologue
-    const v3, 0x7f080012
+    const v3, 0x7f0a007a
 
-    const v2, 0x7f080006
+    const/high16 v2, 0x7f0a
 
-    .line 902
+    .line 901
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteOrderTitle:Landroid/widget/RadioButton;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -6035,26 +6035,26 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
+    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setTextColor(I)V
 
-    .line 903
+    .line 902
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remote_order_l:Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 905
+    .line 904
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->bundingTitle:Landroid/widget/RadioButton;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -6063,26 +6063,26 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
+    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setTextColor(I)V
 
-    .line 906
+    .line 905
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->bunding_l:Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 908
+    .line 907
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->attTitle:Landroid/widget/RadioButton;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -6091,7 +6091,7 @@
 
     move-result-object v1
 
-    const/high16 v2, 0x7f08
+    const v2, 0x7f0a0014
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -6099,14 +6099,14 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setTextColor(I)V
 
-    .line 909
+    .line 908
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhu_l:Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f080085
+    const v2, 0x7f0a0085
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -6114,7 +6114,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 911
+    .line 910
     return-void
 .end method
 
@@ -6122,11 +6122,11 @@
     .locals 5
 
     .prologue
-    const v4, 0x7f080012
+    const v4, 0x7f0a007a
 
-    const v3, 0x7f080006
+    const/high16 v3, 0x7f0a
 
-    .line 934
+    .line 933
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteOrderTitle:Landroid/widget/RadioButton;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -6135,26 +6135,26 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
+    invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setTextColor(I)V
 
-    .line 935
+    .line 934
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remote_order_l:Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getColor(I)I
+    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 937
+    .line 936
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->bundingTitle:Landroid/widget/RadioButton;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -6163,7 +6163,7 @@
 
     move-result-object v1
 
-    const/high16 v2, 0x7f08
+    const v2, 0x7f0a0014
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -6171,14 +6171,14 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setTextColor(I)V
 
-    .line 938
+    .line 937
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->bunding_l:Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f080085
+    const v2, 0x7f0a0085
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -6186,7 +6186,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 940
+    .line 939
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->attTitle:Landroid/widget/RadioButton;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -6195,26 +6195,26 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
+    invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setTextColor(I)V
 
-    .line 941
+    .line 940
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhu_l:Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getColor(I)I
+    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 942
+    .line 941
     return-void
 .end method
 
@@ -6228,18 +6228,18 @@
 
     const/4 v2, 0x0
 
-    .line 914
+    .line 913
     iput v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mType:I
 
-    .line 915
+    .line 914
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showBundingBG()V
 
-    .line 916
+    .line 915
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     if-eqz v0, :cond_1
 
-    .line 917
+    .line 916
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -6248,39 +6248,39 @@
 
     if-nez v0, :cond_0
 
-    .line 918
+    .line 917
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V
 
-    .line 926
+    .line 925
     :goto_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_remind:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 927
+    .line 926
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_remind:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 928
+    .line 927
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 929
+    .line 928
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_client:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 930
+    .line 929
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 931
+    .line 930
     return-void
 
-    .line 920
+    .line 919
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
@@ -6290,7 +6290,7 @@
 
     goto :goto_0
 
-    .line 923
+    .line 922
     :cond_1
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V
 
@@ -6301,7 +6301,7 @@
     .locals 3
 
     .prologue
-    .line 2475
+    .line 2477
     sget-object v1, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->conflictList:Ljava/util/List;
 
     if-eqz v1, :cond_0
@@ -6314,7 +6314,7 @@
 
     if-lez v1, :cond_0
 
-    .line 2476
+    .line 2478
     sget-object v1, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->conflictList:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -6329,11 +6329,11 @@
 
     if-nez v2, :cond_1
 
-    .line 2480
+    .line 2482
     :cond_0
     return-void
 
-    .line 2476
+    .line 2478
     :cond_1
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -6342,7 +6342,7 @@
     .end local v0           #tmp:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;
     check-cast v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;
 
-    .line 2477
+    .line 2479
     .restart local v0       #tmp:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;->show()V
 
@@ -6357,43 +6357,43 @@
 
     const/4 v4, 0x0
 
-    .line 878
+    .line 877
     const/4 v0, 0x2
 
     iput v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mType:I
 
-    .line 879
+    .line 878
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showAttBG()V
 
-    .line 880
+    .line 879
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_remind:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 881
+    .line 880
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0, v4}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 882
+    .line 881
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->assortView_remind:Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;
 
     invoke-virtual {v0, v4}, Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;->setVisibility(I)V
 
-    .line 883
+    .line 882
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_client:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v5}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 884
+    .line 883
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 885
+    .line 884
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showProgressDialog()V
 
-    .line 886
+    .line 885
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
     if-eqz v0, :cond_0
@@ -6406,19 +6406,19 @@
 
     if-nez v0, :cond_2
 
-    .line 887
+    .line 886
     :cond_0
     const/4 v0, 0x3
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V
 
-    .line 891
+    .line 890
     :goto_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
     if-nez v0, :cond_1
 
-    .line 892
+    .line 891
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -6431,7 +6431,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
-    .line 895
+    .line 894
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
@@ -6439,27 +6439,27 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 896
+    .line 895
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;->refresh(Ljava/util/List;)V
 
-    .line 897
+    .line 896
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0, v4}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 898
+    .line 897
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 899
+    .line 898
     return-void
 
-    .line 889
+    .line 888
     :cond_2
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->dismissProgressDialog()V
 
@@ -6470,14 +6470,14 @@
     .locals 1
 
     .prologue
-    .line 949
+    .line 948
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;)V
 
-    .line 950
+    .line 949
     return-void
 .end method
 
@@ -6485,11 +6485,11 @@
     .locals 5
 
     .prologue
-    const v4, 0x7f080012
+    const v4, 0x7f0a007a
 
-    const v3, 0x7f080006
+    const/high16 v3, 0x7f0a
 
-    .line 977
+    .line 976
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteOrderTitle:Landroid/widget/RadioButton;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -6498,7 +6498,7 @@
 
     move-result-object v1
 
-    const/high16 v2, 0x7f08
+    const v2, 0x7f0a0014
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -6506,14 +6506,14 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setTextColor(I)V
 
-    .line 978
+    .line 977
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remote_order_l:Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f080085
+    const v2, 0x7f0a0085
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -6521,7 +6521,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 980
+    .line 979
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->bundingTitle:Landroid/widget/RadioButton;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -6530,26 +6530,26 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
+    invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setTextColor(I)V
 
-    .line 981
+    .line 980
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->bunding_l:Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getColor(I)I
+    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 983
+    .line 982
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->attTitle:Landroid/widget/RadioButton;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -6558,26 +6558,26 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
+    invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setTextColor(I)V
 
-    .line 984
+    .line 983
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhu_l:Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getColor(I)I
+    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 985
+    .line 984
     return-void
 .end method
 
@@ -6589,23 +6589,23 @@
 
     const/16 v4, 0x8
 
-    .line 956
+    .line 955
     const/4 v0, 0x1
 
     iput v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mType:I
 
-    .line 957
+    .line 956
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showRemoteBG()V
 
-    .line 958
+    .line 957
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showProgressDialog()V
 
-    .line 959
+    .line 958
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
     if-nez v0, :cond_0
 
-    .line 960
+    .line 959
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -6618,7 +6618,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
-    .line 962
+    .line 961
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
@@ -6626,17 +6626,17 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 963
+    .line 962
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     if-nez v0, :cond_1
 
-    .line 964
+    .line 963
     const/4 v0, 0x2
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V
 
-    .line 968
+    .line 967
     :goto_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
@@ -6644,35 +6644,35 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;->refresh(Ljava/util/List;)V
 
-    .line 969
+    .line 968
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_remind:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v5}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 970
+    .line 969
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 971
+    .line 970
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->assortView_remind:Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;
 
     invoke-virtual {v0, v4}, Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;->setVisibility(I)V
 
-    .line 972
+    .line 971
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_client:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 973
+    .line 972
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0, v4}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 974
+    .line 973
     return-void
 
-    .line 966
+    .line 965
     :cond_1
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->dismissProgressDialog()V
 
@@ -6687,7 +6687,7 @@
 
     const/4 v3, 0x1
 
-    .line 2632
+    .line 2634
     :try_start_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->datalistenter:Lcom/cnlaunch/x431pro/activity/golo/listenter/onGoloDataListenter;
 
@@ -6695,78 +6695,78 @@
 
     move-result v1
 
-    .line 2633
+    .line 2635
     .local v1, type:I
     if-nez v1, :cond_1
 
-    .line 2634
+    .line 2636
     const/4 v2, 0x0
 
     iput v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mType:I
 
-    .line 2635
+    .line 2637
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showBundingBG()V
 
-    .line 2636
-    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_remind:Landroid/widget/RelativeLayout;
-
-    const/16 v3, 0x8
-
-    invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
-
-    .line 2637
-    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_remind:Landroid/widget/RelativeLayout;
-
-    const/16 v3, 0x8
-
-    invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
-
     .line 2638
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_remind:Landroid/widget/RelativeLayout;
+
+    const/16 v3, 0x8
+
+    invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
+
+    .line 2639
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_remind:Landroid/widget/RelativeLayout;
+
+    const/16 v3, 0x8
+
+    invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
+
+    .line 2640
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     const/16 v3, 0x8
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 2639
+    .line 2641
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_client:Landroid/widget/RelativeLayout;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 2640
+    .line 2642
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 2673
+    .line 2675
     .end local v1           #type:I
     :cond_0
     :goto_0
     return-void
 
-    .line 2641
+    .line 2643
     .restart local v1       #type:I
     :cond_1
     if-ne v1, v3, :cond_3
 
-    .line 2642
+    .line 2644
     const/4 v2, 0x1
 
     iput v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mType:I
 
-    .line 2643
+    .line 2645
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showRemoteBG()V
 
-    .line 2644
+    .line 2646
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
     if-nez v2, :cond_2
 
-    .line 2645
+    .line 2647
     new-instance v2, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -6779,7 +6779,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
-    .line 2647
+    .line 2649
     :cond_2
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
@@ -6787,35 +6787,35 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 2648
+    .line 2650
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_remind:Landroid/widget/RelativeLayout;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 2649
+    .line 2651
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 2650
+    .line 2652
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->assortView_remind:Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;
 
     const/16 v3, 0x8
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;->setVisibility(I)V
 
-    .line 2651
+    .line 2653
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_client:Landroid/widget/RelativeLayout;
 
     const/16 v3, 0x8
 
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 2652
+    .line 2654
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     const/16 v3, 0x8
@@ -6824,35 +6824,35 @@
 
     goto :goto_0
 
-    .line 2670
+    .line 2672
     .end local v1           #type:I
     :catch_0
     move-exception v0
 
-    .line 2671
+    .line 2673
     .local v0, e:Ljava/lang/Exception;
     goto :goto_0
 
-    .line 2653
+    .line 2655
     .end local v0           #e:Ljava/lang/Exception;
     .restart local v1       #type:I
     :cond_3
     if-ne v1, v4, :cond_0
 
-    .line 2654
+    .line 2656
     const/4 v2, 0x2
 
     iput v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mType:I
 
-    .line 2655
+    .line 2657
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showAttBG()V
 
-    .line 2657
+    .line 2659
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
     if-nez v2, :cond_4
 
-    .line 2658
+    .line 2660
     new-instance v2, Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -6865,7 +6865,7 @@
 
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
-    .line 2660
+    .line 2662
     :cond_4
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
@@ -6873,49 +6873,49 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 2662
+    .line 2664
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_remind:Landroid/widget/RelativeLayout;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 2663
+    .line 2665
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 2664
+    .line 2666
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->assortView_remind:Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;->setVisibility(I)V
 
-    .line 2665
+    .line 2667
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_client:Landroid/widget/RelativeLayout;
 
     const/16 v3, 0x8
 
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 2666
+    .line 2668
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     const/16 v3, 0x8
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 2667
+    .line 2669
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 2668
+    .line 2670
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     const/16 v3, 0x8
@@ -6941,7 +6941,7 @@
     .end annotation
 
     .prologue
-    .line 2211
+    .line 2213
     .local p1, list:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;>;"
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -6955,10 +6955,10 @@
 
     if-nez v3, :cond_1
 
-    .line 2235
+    .line 2237
     return-void
 
-    .line 2211
+    .line 2213
     :cond_1
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -6966,13 +6966,13 @@
 
     check-cast v1, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
 
-    .line 2212
+    .line 2214
     .local v1, tmp:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
     new-instance v0, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;
 
     invoke-direct {v0}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;-><init>()V
 
-    .line 2213
+    .line 2215
     .local v0, registeredCustomer:Lcom/cnlaunch/newgolo/db/RegisteredCustomer;
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getSerial_no()Ljava/lang/String;
 
@@ -6980,49 +6980,49 @@
 
     if-eqz v3, :cond_0
 
-    .line 2214
+    .line 2216
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getAuto_code()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setAuto_code(Ljava/lang/String;)V
 
-    .line 2215
+    .line 2217
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getAuto_logos()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setAuto_logos(Ljava/lang/String;)V
 
-    .line 2216
+    .line 2218
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getId()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setBunding_id(Ljava/lang/String;)V
 
-    .line 2217
+    .line 2219
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getIf_pass()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setIf_pass(Ljava/lang/String;)V
 
-    .line 2218
+    .line 2220
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getLastTime()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setLastTime(Ljava/lang/String;)V
 
-    .line 2219
+    .line 2221
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getMine_car_plate_num()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setMine_car_plate_num(Ljava/lang/String;)V
 
-    .line 2220
+    .line 2222
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getNewMsgCount()I
 
     move-result v3
@@ -7033,28 +7033,28 @@
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setNewMsgCount(Ljava/lang/Integer;)V
 
-    .line 2221
+    .line 2223
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getNick_name()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setNick_name(Ljava/lang/String;)V
 
-    .line 2222
+    .line 2224
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getSerial_no()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setSerial_no(Ljava/lang/String;)V
 
-    .line 2223
+    .line 2225
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getSortKey()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setSortKey(Ljava/lang/String;)V
 
-    .line 2224
+    .line 2226
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getUnReadTipCount()I
 
     move-result v3
@@ -7065,49 +7065,49 @@
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setUnReadTipCount(Ljava/lang/String;)V
 
-    .line 2225
+    .line 2227
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getUser_id()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setUser_id(Ljava/lang/String;)V
 
-    .line 2226
+    .line 2228
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getUser_name()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setUser_name(Ljava/lang/String;)V
 
-    .line 2227
+    .line 2229
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getFace()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setFace(Ljava/lang/String;)V
 
-    .line 2228
+    .line 2230
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getSignature()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setSignature(Ljava/lang/String;)V
 
-    .line 2229
+    .line 2231
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getStatus()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setOnline_status(Ljava/lang/String;)V
 
-    .line 2230
+    .line 2232
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getIsRead()Ljava/lang/Boolean;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RegisteredCustomer;->setIsRead(Ljava/lang/Boolean;)V
 
-    .line 2231
+    .line 2233
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -7120,7 +7120,7 @@
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->deleteRegisteredCustomer(Ljava/lang/String;)V
 
-    .line 2232
+    .line 2234
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -7139,7 +7139,7 @@
     .parameter "isRead"
 
     .prologue
-    .line 795
+    .line 794
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$10;
 
     invoke-direct {v0, p0, p1, p2, p3}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$10;-><init>(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
@@ -7148,10 +7148,10 @@
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    .line 807
+    .line 806
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$10;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 809
+    .line 808
     return-void
 .end method
 
@@ -7169,7 +7169,7 @@
     .end annotation
 
     .prologue
-    .line 1962
+    .line 1964
     .local p1, sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -7182,10 +7182,10 @@
 
     if-nez v3, :cond_0
 
-    .line 1986
+    .line 1988
     return-void
 
-    .line 1962
+    .line 1964
     :cond_0
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -7193,13 +7193,13 @@
 
     check-cast v1, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
 
-    .line 1963
+    .line 1965
     .local v1, tmp:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
     new-instance v0, Lcom/cnlaunch/newgolo/db/RemoteCustomer;
 
     invoke-direct {v0}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;-><init>()V
 
-    .line 1964
+    .line 1966
     .local v0, customer:Lcom/cnlaunch/newgolo/db/RemoteCustomer;
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getAuto_code()Ljava/lang/String;
 
@@ -7207,70 +7207,70 @@
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setAuto_code(Ljava/lang/String;)V
 
-    .line 1965
+    .line 1967
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getAuto_logos()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setAuto_logos(Ljava/lang/String;)V
 
-    .line 1966
+    .line 1968
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getCar_id()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setCar_id(Ljava/lang/String;)V
 
-    .line 1967
+    .line 1969
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getCreated()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setCreated(Ljava/lang/String;)V
 
-    .line 1968
+    .line 1970
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getDescription()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setDescription(Ljava/lang/String;)V
 
-    .line 1969
+    .line 1971
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getFace_thumb()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setFace_thumb(Ljava/lang/String;)V
 
-    .line 1970
+    .line 1972
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getFace_url()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setFace_url(Ljava/lang/String;)V
 
-    .line 1971
+    .line 1973
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getId()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setRequest_id(Ljava/lang/String;)V
 
-    .line 1972
+    .line 1974
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getLastTime()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setLastTime(Ljava/lang/String;)V
 
-    .line 1973
+    .line 1975
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getMine_car_plate_num()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setMine_car_plate_num(Ljava/lang/String;)V
 
-    .line 1974
+    .line 1976
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getNewMsgCount()I
 
     move-result v3
@@ -7281,63 +7281,63 @@
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setNewMsgCount(Ljava/lang/Integer;)V
 
-    .line 1975
+    .line 1977
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getNick_name()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setNick_name(Ljava/lang/String;)V
 
-    .line 1976
+    .line 1978
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getSortKey()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setSortKey(Ljava/lang/String;)V
 
-    .line 1977
+    .line 1979
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getStatus()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setStatus(Ljava/lang/String;)V
 
-    .line 1978
+    .line 1980
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getUser_id()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setUser_id(Ljava/lang/String;)V
 
-    .line 1979
+    .line 1981
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getUser_name()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setUser_name(Ljava/lang/String;)V
 
-    .line 1980
+    .line 1982
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getSignature()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setSignature(Ljava/lang/String;)V
 
-    .line 1981
+    .line 1983
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getOnline_status()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setOnline_status(Ljava/lang/String;)V
 
-    .line 1982
+    .line 1984
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getIsRead()Ljava/lang/Boolean;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/cnlaunch/newgolo/db/RemoteCustomer;->setIsRead(Ljava/lang/Boolean;)V
 
-    .line 1983
+    .line 1985
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -7354,7 +7354,7 @@
 
     invoke-virtual {v3, v4, v5}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->deleteRemoteCustomer(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1984
+    .line 1986
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/cnlaunch/newgolo/db/CustemInfoDB;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/newgolo/db/CustemInfoDB;
@@ -7369,7 +7369,7 @@
 
 # virtual methods
 .method public doInBackground(I)Ljava/lang/Object;
-    .locals 30
+    .locals 31
     .parameter "requestCode"
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -7378,27 +7378,27 @@
     .end annotation
 
     .prologue
-    .line 1697
+    .line 1696
     sparse-switch p1, :sswitch_data_0
 
-    .line 1865
+    .line 1867
     invoke-super/range {p0 .. p1}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->doInBackground(I)Ljava/lang/Object;
 
-    move-result-object v24
+    move-result-object v25
 
     :cond_0
     :goto_0
-    return-object v24
+    return-object v25
 
-    .line 1700
+    .line 1699
     :sswitch_0
     const/4 v9, 0x0
 
-    .line 1701
+    .line 1700
     .local v9, bundingRes:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
     invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getPublicIdIfNeeded()V
 
-    .line 1703
+    .line 1702
     :try_start_0
     move-object/from16 v0, p0
 
@@ -7416,20 +7416,20 @@
 
     move-result-object v9
 
-    .line 1707
+    .line 1706
     move-object/from16 v0, p0
 
     invoke-direct {v0, v9}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getBindList(Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;)Ljava/util/List;
 
-    move-result-object v24
+    move-result-object v25
 
     goto :goto_0
 
-    .line 1704
+    .line 1703
     :catch_0
     move-exception v10
 
-    .line 1705
+    .line 1704
     .local v10, e:Lcom/cnlaunch/framework/network/http/HttpException;
     new-instance v2, Lcom/cnlaunch/framework/network/http/HttpException;
 
@@ -7437,31 +7437,31 @@
 
     throw v2
 
-    .line 1709
+    .line 1708
     .end local v9           #bundingRes:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
     .end local v10           #e:Lcom/cnlaunch/framework/network/http/HttpException;
     :sswitch_1
-    const/4 v14, 0x0
+    const/4 v15, 0x0
+
+    .line 1709
+    .local v15, remoteRes:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;
+    const/16 v17, 0x0
 
     .line 1710
-    .local v14, remoteRes:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;
-    const/16 v16, 0x0
+    .local v17, remoteResult:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
+    new-instance v25, Ljava/util/ArrayList;
+
+    invoke-direct/range {v25 .. v25}, Ljava/util/ArrayList;-><init>()V
 
     .line 1711
-    .local v16, remoteResult:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
-    new-instance v24, Ljava/util/ArrayList;
+    .local v25, result:Ljava/util/List;
+    new-instance v19, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
 
-    invoke-direct/range {v24 .. v24}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct/range {v19 .. v19}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;-><init>()V
 
     .line 1712
-    .local v24, result:Ljava/util/List;
-    new-instance v18, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
-
-    invoke-direct/range {v18 .. v18}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;-><init>()V
-
-    .line 1713
-    .local v18, remoteTitle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
-    const v2, 0x7f070734
+    .local v19, remoteTitle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
+    const v2, 0x7f070736
 
     move-object/from16 v0, p0
 
@@ -7469,28 +7469,28 @@
 
     move-result-object v2
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v19
 
     invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;->setContent(Ljava/lang/String;)V
 
-    .line 1714
+    .line 1713
     const/4 v2, 0x1
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v19
 
     invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;->setType(I)V
 
-    .line 1715
-    move-object/from16 v0, v24
+    .line 1714
+    move-object/from16 v0, v25
 
-    move-object/from16 v1, v18
+    move-object/from16 v1, v19
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1717
+    .line 1716
     invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getPublicIdIfNeeded()V
 
-    .line 1720
+    .line 1719
     :try_start_1
     move-object/from16 v0, p0
 
@@ -7502,75 +7502,75 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getRemoteOrderList(Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;
 
-    move-result-object v14
+    move-result-object v15
 
-    .line 1721
-    invoke-virtual {v14}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;->getData()Ljava/util/List;
+    .line 1720
+    invoke-virtual {v15}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;->getData()Ljava/util/List;
     :try_end_1
     .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_1 .. :try_end_1} :catch_2
 
-    move-result-object v16
+    move-result-object v17
 
-    .line 1732
+    .line 1731
     :goto_1
-    if-eqz v16, :cond_1
+    if-eqz v17, :cond_1
+
+    .line 1733
+    new-instance v29, Ljava/util/ArrayList;
+
+    invoke-direct/range {v29 .. v29}, Ljava/util/ArrayList;-><init>()V
 
     .line 1734
-    new-instance v28, Ljava/util/ArrayList;
+    .local v29, sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
+    move-object/from16 v0, v17
 
-    invoke-direct/range {v28 .. v28}, Ljava/util/ArrayList;-><init>()V
-
-    .line 1735
-    .local v28, sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v28
+    move-object/from16 v1, v29
 
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->filledData(Ljava/util/List;Ljava/util/List;)V
 
-    .line 1736
+    .line 1735
     new-instance v2, Lcom/cnlaunch/x431pro/module/golo/model/TimeComparator;
 
     invoke-direct {v2}, Lcom/cnlaunch/x431pro/module/golo/model/TimeComparator;-><init>()V
 
-    move-object/from16 v0, v28
+    move-object/from16 v0, v29
 
     invoke-static {v0, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 1737
+    .line 1736
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v28
+    move-object/from16 v1, v29
 
     invoke-direct {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->setRemoteIsRead(Ljava/util/List;)V
 
-    .line 1738
+    .line 1737
     invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->deleteRemoteList()V
 
-    .line 1739
+    .line 1738
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v28
+    move-object/from16 v1, v29
 
     invoke-direct {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->saveRemoteList(Ljava/util/List;)V
 
-    .line 1740
-    move-object/from16 v0, v24
+    .line 1739
+    move-object/from16 v0, v25
 
-    move-object/from16 v1, v28
+    move-object/from16 v1, v29
 
     invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 1743
-    .end local v28           #sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
+    .line 1742
+    .end local v29           #sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
     :cond_1
-    new-instance v21, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
+    new-instance v22, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
 
-    invoke-direct/range {v21 .. v21}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;-><init>()V
+    invoke-direct/range {v22 .. v22}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;-><init>()V
 
-    .line 1744
-    .local v21, repairTitle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
-    const v2, 0x7f070735
+    .line 1743
+    .local v22, repairTitle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
+    const v2, 0x7f070737
 
     move-object/from16 v0, p0
 
@@ -7578,33 +7578,33 @@
 
     move-result-object v2
 
-    move-object/from16 v0, v21
+    move-object/from16 v0, v22
 
     invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;->setContent(Ljava/lang/String;)V
 
-    .line 1745
+    .line 1744
     const/4 v2, 0x2
 
-    move-object/from16 v0, v21
+    move-object/from16 v0, v22
 
     invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;->setType(I)V
 
-    .line 1746
-    move-object/from16 v0, v24
+    .line 1745
+    move-object/from16 v0, v25
 
-    move-object/from16 v1, v21
+    move-object/from16 v1, v22
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
+    .line 1747
+    const/16 v24, 0x0
+
     .line 1748
-    const/16 v23, 0x0
+    .local v24, reqairRes:Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairscheduledResponse;
+    const/16 v21, 0x0
 
-    .line 1749
-    .local v23, reqairRes:Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairscheduledResponse;
-    const/16 v20, 0x0
-
-    .line 1751
-    .local v20, repairResult:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
+    .line 1750
+    .local v21, repairResult:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
     :try_start_2
     move-object/from16 v0, p0
 
@@ -7624,56 +7624,56 @@
 
     invoke-virtual/range {v2 .. v7}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getRepairList(Ljava/lang/String;IIII)Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairscheduledResponse;
 
-    move-result-object v23
+    move-result-object v24
 
-    .line 1752
-    invoke-virtual/range {v23 .. v23}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairscheduledResponse;->getData()Lcom/cnlaunch/x431pro/module/golo/model/GoloReqairsData;
+    .line 1751
+    invoke-virtual/range {v24 .. v24}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairscheduledResponse;->getData()Lcom/cnlaunch/x431pro/module/golo/model/GoloReqairsData;
 
     move-result-object v2
 
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloReqairsData;->getData()Ljava/util/List;
 
-    move-result-object v20
+    move-result-object v21
 
-    .line 1753
-    if-eqz v20, :cond_0
+    .line 1752
+    if-eqz v21, :cond_0
+
+    .line 1754
+    new-instance v30, Ljava/util/ArrayList;
+
+    invoke-direct/range {v30 .. v30}, Ljava/util/ArrayList;-><init>()V
 
     .line 1755
-    new-instance v29, Ljava/util/ArrayList;
+    .local v30, sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
+    move-object/from16 v0, v21
 
-    invoke-direct/range {v29 .. v29}, Ljava/util/ArrayList;-><init>()V
-
-    .line 1756
-    .local v29, sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v29
+    move-object/from16 v1, v30
 
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->filledData(Ljava/util/List;Ljava/util/List;)V
 
-    .line 1757
+    .line 1756
     new-instance v2, Lcom/cnlaunch/x431pro/module/golo/model/TimeComparator;
 
     invoke-direct {v2}, Lcom/cnlaunch/x431pro/module/golo/model/TimeComparator;-><init>()V
 
-    move-object/from16 v0, v29
+    move-object/from16 v0, v30
 
     invoke-static {v0, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 1758
+    .line 1757
     invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->deleteRepairList()V
 
-    .line 1759
+    .line 1758
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v29
+    move-object/from16 v1, v30
 
     invoke-direct {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->saveRepairList(Ljava/util/List;)V
 
-    .line 1760
-    move-object/from16 v0, v24
+    .line 1759
+    move-object/from16 v0, v25
 
-    move-object/from16 v1, v29
+    move-object/from16 v1, v30
 
     invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
     :try_end_2
@@ -7681,28 +7681,26 @@
 
     goto/16 :goto_0
 
-    .line 1762
-    .end local v29           #sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
+    .line 1761
+    .end local v30           #sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
     :catch_1
     move-exception v10
 
-    .line 1763
+    .line 1762
     .restart local v10       #e:Lcom/cnlaunch/framework/network/http/HttpException;
-    new-instance v2, Lcom/cnlaunch/framework/network/http/HttpException;
+    invoke-virtual {v10}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
-    invoke-direct {v2, v10}, Lcom/cnlaunch/framework/network/http/HttpException;-><init>(Ljava/lang/Throwable;)V
+    goto/16 :goto_0
 
-    throw v2
-
-    .line 1722
+    .line 1721
     .end local v10           #e:Lcom/cnlaunch/framework/network/http/HttpException;
-    .end local v20           #repairResult:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
-    .end local v21           #repairTitle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
-    .end local v23           #reqairRes:Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairscheduledResponse;
+    .end local v21           #repairResult:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
+    .end local v22           #repairTitle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
+    .end local v24           #reqairRes:Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairscheduledResponse;
     :catch_2
     move-exception v10
 
-    .line 1725
+    .line 1724
     .restart local v10       #e:Lcom/cnlaunch/framework/network/http/HttpException;
     :try_start_3
     const-string/jumbo v2, "GoloFragment"
@@ -7711,7 +7709,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1726
+    .line 1725
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mGoloAction:Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;
@@ -7722,44 +7720,46 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getRemoteOrderList(Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;
 
-    move-result-object v14
+    move-result-object v15
 
-    .line 1727
-    invoke-virtual {v14}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;->getData()Ljava/util/List;
+    .line 1726
+    invoke-virtual {v15}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;->getData()Ljava/util/List;
     :try_end_3
     .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_3 .. :try_end_3} :catch_3
 
-    move-result-object v16
+    move-result-object v17
 
     goto/16 :goto_1
 
-    .line 1728
+    .line 1727
     :catch_3
     move-exception v11
 
-    .line 1729
+    .line 1728
     .local v11, e1:Lcom/cnlaunch/framework/network/http/HttpException;
-    new-instance v2, Lcom/cnlaunch/framework/network/http/HttpException;
+    invoke-virtual {v10}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
-    invoke-direct {v2, v10}, Lcom/cnlaunch/framework/network/http/HttpException;-><init>(Ljava/lang/Throwable;)V
+    goto/16 :goto_1
 
-    throw v2
-
-    .line 1767
+    .line 1766
     .end local v10           #e:Lcom/cnlaunch/framework/network/http/HttpException;
     .end local v11           #e1:Lcom/cnlaunch/framework/network/http/HttpException;
-    .end local v14           #remoteRes:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;
-    .end local v16           #remoteResult:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
-    .end local v18           #remoteTitle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
-    .end local v24           #result:Ljava/util/List;
+    .end local v15           #remoteRes:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;
+    .end local v17           #remoteResult:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
+    .end local v19           #remoteTitle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
+    .end local v25           #result:Ljava/util/List;
     :sswitch_2
     const/4 v8, 0x0
 
-    .line 1769
+    .line 1768
     .local v8, attRes:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;
     invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getPublicIdIfNeeded()V
 
+    .line 1770
+    const/4 v12, 0x0
+
     .line 1772
+    .local v12, list:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;>;"
     :try_start_4
     move-object/from16 v0, p0
 
@@ -7773,6 +7773,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getAttentionedUserInfo(Ljava/lang/String;Z)Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;
     :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
     .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_4 .. :try_end_4} :catch_4
 
     move-result-object v8
@@ -7782,8 +7783,12 @@
 
     invoke-direct {v0, v8}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getAttentionList(Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;)Ljava/util/List;
 
-    move-result-object v24
+    move-result-object v12
 
+    :goto_2
+    move-object/from16 v25, v12
+
+    .line 1778
     goto/16 :goto_0
 
     .line 1773
@@ -7792,72 +7797,46 @@
 
     .line 1774
     .restart local v10       #e:Lcom/cnlaunch/framework/network/http/HttpException;
-    new-instance v2, Lcom/cnlaunch/framework/network/http/HttpException;
-
-    invoke-direct {v2, v10}, Lcom/cnlaunch/framework/network/http/HttpException;-><init>(Ljava/lang/Throwable;)V
-
-    throw v2
-
-    .line 1778
-    .end local v8           #attRes:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;
-    .end local v10           #e:Lcom/cnlaunch/framework/network/http/HttpException;
-    :sswitch_3
-    const/4 v12, 0x0
-
-    .line 1780
-    .local v12, reloadAttention:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;
-    invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getPublicIdIfNeeded()V
-
-    .line 1783
     :try_start_5
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mGoloAction:Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_id:Ljava/lang/String;
-
-    const/4 v4, 0x1
-
-    invoke-virtual {v2, v3, v4}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getAttentionedUserInfo(Ljava/lang/String;Z)Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;
+    invoke-virtual {v10}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
     :try_end_5
-    .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_5 .. :try_end_5} :catch_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+
+    .line 1776
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v8}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getAttentionList(Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;)Ljava/util/List;
 
     move-result-object v12
 
-    .line 1787
+    goto :goto_2
+
+    .line 1775
+    .end local v10           #e:Lcom/cnlaunch/framework/network/http/HttpException;
+    :catchall_0
+    move-exception v2
+
+    .line 1776
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v12}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getAttentionList(Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;)Ljava/util/List;
+    invoke-direct {v0, v8}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getAttentionList(Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;)Ljava/util/List;
 
-    move-result-object v24
+    move-result-object v12
 
-    goto/16 :goto_0
-
-    .line 1784
-    :catch_5
-    move-exception v10
-
-    .line 1785
-    .restart local v10       #e:Lcom/cnlaunch/framework/network/http/HttpException;
-    new-instance v2, Lcom/cnlaunch/framework/network/http/HttpException;
-
-    invoke-direct {v2, v10}, Lcom/cnlaunch/framework/network/http/HttpException;-><init>(Ljava/lang/Throwable;)V
-
+    .line 1777
     throw v2
 
-    .line 1790
-    .end local v10           #e:Lcom/cnlaunch/framework/network/http/HttpException;
-    .end local v12           #reloadAttention:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;
-    :sswitch_4
+    .line 1780
+    .end local v8           #attRes:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;
+    .end local v12           #list:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionInfo;>;"
+    :sswitch_3
     const/4 v13, 0x0
 
-    .line 1792
-    .local v13, reloadBind:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
+    .line 1782
+    .local v13, reloadAttention:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;
     invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getPublicIdIfNeeded()V
 
-    .line 1795
+    .line 1785
     :try_start_6
     move-object/from16 v0, p0
 
@@ -7869,26 +7848,26 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v2, v3, v4}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getGoloBindInfo(Ljava/lang/String;Z)Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
+    invoke-virtual {v2, v3, v4}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getAttentionedUserInfo(Ljava/lang/String;Z)Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;
     :try_end_6
-    .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_6 .. :try_end_6} :catch_6
+    .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_6 .. :try_end_6} :catch_5
 
     move-result-object v13
 
-    .line 1800
+    .line 1789
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v13}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getBindList(Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;)Ljava/util/List;
+    invoke-direct {v0, v13}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getAttentionList(Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;)Ljava/util/List;
 
-    move-result-object v24
+    move-result-object v25
 
     goto/16 :goto_0
 
-    .line 1796
-    :catch_6
+    .line 1786
+    :catch_5
     move-exception v10
 
-    .line 1797
+    .line 1787
     .restart local v10       #e:Lcom/cnlaunch/framework/network/http/HttpException;
     new-instance v2, Lcom/cnlaunch/framework/network/http/HttpException;
 
@@ -7896,14 +7875,17 @@
 
     throw v2
 
-    .line 1802
+    .line 1792
     .end local v10           #e:Lcom/cnlaunch/framework/network/http/HttpException;
-    .end local v13           #reloadBind:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
-    :sswitch_5
-    const/16 v27, 0x0
+    .end local v13           #reloadAttention:Lcom/cnlaunch/x431pro/module/golo/model/GoloAttentionResponse;
+    :sswitch_4
+    const/4 v14, 0x0
 
-    .line 1804
-    .local v27, singleUnBind:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
+    .line 1794
+    .local v14, reloadBind:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
+    invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getPublicIdIfNeeded()V
+
+    .line 1797
     :try_start_7
     move-object/from16 v0, p0
 
@@ -7911,30 +7893,30 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->diag_uid:Ljava/lang/String;
+    iget-object v3, v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_id:Ljava/lang/String;
 
-    invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getSingleGoloBindInfo(Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
+    const/4 v4, 0x1
+
+    invoke-virtual {v2, v3, v4}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getGoloBindInfo(Ljava/lang/String;Z)Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
     :try_end_7
-    .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_7 .. :try_end_7} :catch_7
+    .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_7 .. :try_end_7} :catch_6
 
-    move-result-object v27
+    move-result-object v14
 
-    .line 1808
+    .line 1802
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v27
+    invoke-direct {v0, v14}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getBindList(Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;)Ljava/util/List;
 
-    invoke-direct {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getSingleUnBindList(Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;)Ljava/util/List;
-
-    move-result-object v24
+    move-result-object v25
 
     goto/16 :goto_0
 
-    .line 1805
-    :catch_7
+    .line 1798
+    :catch_6
     move-exception v10
 
-    .line 1806
+    .line 1799
     .restart local v10       #e:Lcom/cnlaunch/framework/network/http/HttpException;
     new-instance v2, Lcom/cnlaunch/framework/network/http/HttpException;
 
@@ -7942,14 +7924,14 @@
 
     throw v2
 
-    .line 1810
+    .line 1804
     .end local v10           #e:Lcom/cnlaunch/framework/network/http/HttpException;
-    .end local v27           #singleUnBind:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
-    :sswitch_6
-    const/16 v26, 0x0
+    .end local v14           #reloadBind:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
+    :sswitch_5
+    const/16 v28, 0x0
 
-    .line 1812
-    .local v26, singleBind:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
+    .line 1806
+    .local v28, singleUnBind:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
     :try_start_8
     move-object/from16 v0, p0
 
@@ -7961,26 +7943,26 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getSingleGoloBindInfo(Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
     :try_end_8
-    .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_8 .. :try_end_8} :catch_8
+    .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_8 .. :try_end_8} :catch_7
 
-    move-result-object v26
+    move-result-object v28
 
-    .line 1816
+    .line 1810
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v26
+    move-object/from16 v1, v28
 
-    invoke-direct {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getSingleBindList(Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;)Ljava/util/List;
+    invoke-direct {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getSingleUnBindList(Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;)Ljava/util/List;
 
-    move-result-object v24
+    move-result-object v25
 
     goto/16 :goto_0
 
-    .line 1813
-    :catch_8
+    .line 1807
+    :catch_7
     move-exception v10
 
-    .line 1814
+    .line 1808
     .restart local v10       #e:Lcom/cnlaunch/framework/network/http/HttpException;
     new-instance v2, Lcom/cnlaunch/framework/network/http/HttpException;
 
@@ -7988,57 +7970,14 @@
 
     throw v2
 
-    .line 1818
+    .line 1812
     .end local v10           #e:Lcom/cnlaunch/framework/network/http/HttpException;
-    .end local v26           #singleBind:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
-    :sswitch_7
-    const/4 v15, 0x0
+    .end local v28           #singleUnBind:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
+    :sswitch_6
+    const/16 v27, 0x0
 
-    .line 1819
-    .local v15, remoteResSingle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;
-    const/16 v17, 0x0
-
-    .line 1820
-    .local v17, remoteResultSingle:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
-    new-instance v25, Ljava/util/ArrayList;
-
-    invoke-direct/range {v25 .. v25}, Ljava/util/ArrayList;-><init>()V
-
-    .line 1821
-    .local v25, resultSingle:Ljava/util/List;,"Ljava/util/List<Ljava/lang/Object;>;"
-    new-instance v19, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
-
-    invoke-direct/range {v19 .. v19}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;-><init>()V
-
-    .line 1822
-    .local v19, remoteTitleSingle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
-    const v2, 0x7f070734
-
-    move-object/from16 v0, p0
-
-    invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;->setContent(Ljava/lang/String;)V
-
-    .line 1823
-    const/4 v2, 0x1
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;->setType(I)V
-
-    .line 1824
-    move-object/from16 v0, v25
-
-    move-object/from16 v1, v19
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1827
+    .line 1814
+    .local v27, singleBind:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
     :try_start_9
     move-object/from16 v0, p0
 
@@ -8048,80 +7987,60 @@
 
     iget-object v3, v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->diag_uid:Ljava/lang/String;
 
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->diag_id:Ljava/lang/String;
-
-    invoke-virtual {v2, v3, v4}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getRemoteOrderSingleList(Ljava/lang/String;Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;
-
-    move-result-object v15
-
-    .line 1828
-    invoke-virtual {v15}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;->getData()Ljava/util/List;
+    invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getSingleGoloBindInfo(Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
     :try_end_9
-    .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_9 .. :try_end_9} :catch_9
+    .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_9 .. :try_end_9} :catch_8
 
-    move-result-object v17
+    move-result-object v27
 
-    .line 1839
-    :goto_2
-    if-eqz v17, :cond_2
-
-    .line 1840
+    .line 1818
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v17
+    move-object/from16 v1, v27
 
-    invoke-direct {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updateRemoteList(Ljava/util/List;)V
+    invoke-direct {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getSingleBindList(Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;)Ljava/util/List;
 
-    .line 1842
-    new-instance v28, Ljava/util/ArrayList;
+    move-result-object v25
 
-    invoke-direct/range {v28 .. v28}, Ljava/util/ArrayList;-><init>()V
+    goto/16 :goto_0
 
-    .line 1843
-    .restart local v28       #sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
-    invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->loadRemoteList()Ljava/util/List;
+    .line 1815
+    :catch_8
+    move-exception v10
 
-    move-result-object v2
+    .line 1816
+    .restart local v10       #e:Lcom/cnlaunch/framework/network/http/HttpException;
+    new-instance v2, Lcom/cnlaunch/framework/network/http/HttpException;
 
-    move-object/from16 v0, v28
+    invoke-direct {v2, v10}, Lcom/cnlaunch/framework/network/http/HttpException;-><init>(Ljava/lang/Throwable;)V
 
-    invoke-static {v2, v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->filledData(Ljava/util/List;Ljava/util/List;)V
+    throw v2
 
-    .line 1844
-    new-instance v2, Lcom/cnlaunch/x431pro/module/golo/model/TimeComparator;
+    .line 1820
+    .end local v10           #e:Lcom/cnlaunch/framework/network/http/HttpException;
+    .end local v27           #singleBind:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfoResponse;
+    :sswitch_7
+    const/16 v16, 0x0
 
-    invoke-direct {v2}, Lcom/cnlaunch/x431pro/module/golo/model/TimeComparator;-><init>()V
+    .line 1821
+    .local v16, remoteResSingle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;
+    const/16 v18, 0x0
 
-    move-object/from16 v0, v28
+    .line 1822
+    .local v18, remoteResultSingle:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
+    new-instance v26, Ljava/util/ArrayList;
 
-    invoke-static {v0, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
+    invoke-direct/range {v26 .. v26}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1845
-    move-object/from16 v0, p0
+    .line 1823
+    .local v26, resultSingle:Ljava/util/List;,"Ljava/util/List<Ljava/lang/Object;>;"
+    new-instance v20, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
 
-    move-object/from16 v1, v28
+    invoke-direct/range {v20 .. v20}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;-><init>()V
 
-    invoke-direct {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->setRemoteIsRead(Ljava/util/List;)V
-
-    .line 1846
-    move-object/from16 v0, v25
-
-    move-object/from16 v1, v28
-
-    invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
-
-    .line 1849
-    .end local v28           #sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
-    :cond_2
-    new-instance v22, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
-
-    invoke-direct/range {v22 .. v22}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;-><init>()V
-
-    .line 1850
-    .local v22, repairTitleSingle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
-    const v2, 0x7f070735
+    .line 1824
+    .local v20, remoteTitleSingle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
+    const v2, 0x7f070736
 
     move-object/from16 v0, p0
 
@@ -8129,86 +8048,26 @@
 
     move-result-object v2
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v20
 
     invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;->setContent(Ljava/lang/String;)V
 
-    .line 1851
-    const/4 v2, 0x2
+    .line 1825
+    const/4 v2, 0x1
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v20
 
     invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;->setType(I)V
 
-    .line 1852
-    move-object/from16 v0, v25
+    .line 1826
+    move-object/from16 v0, v26
 
-    move-object/from16 v1, v22
+    move-object/from16 v1, v20
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1855
-    new-instance v29, Ljava/util/ArrayList;
-
-    invoke-direct/range {v29 .. v29}, Ljava/util/ArrayList;-><init>()V
-
-    .line 1856
-    .restart local v29       #sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
-    invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->loadRepairList()Ljava/util/List;
-
-    move-result-object v2
-
-    move-object/from16 v0, v29
-
-    invoke-static {v2, v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->filledData(Ljava/util/List;Ljava/util/List;)V
-
-    .line 1857
-    new-instance v2, Lcom/cnlaunch/x431pro/module/golo/model/TimeComparator;
-
-    invoke-direct {v2}, Lcom/cnlaunch/x431pro/module/golo/model/TimeComparator;-><init>()V
-
-    move-object/from16 v0, v29
-
-    invoke-static {v0, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
-
-    .line 1858
-    invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->deleteRepairList()V
-
-    .line 1859
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v29
-
-    invoke-direct {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->saveRepairList(Ljava/util/List;)V
-
-    .line 1860
-    move-object/from16 v0, v25
-
-    move-object/from16 v1, v29
-
-    invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
-
-    move-object/from16 v24, v25
-
-    .line 1861
-    goto/16 :goto_0
-
     .line 1829
-    .end local v22           #repairTitleSingle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
-    .end local v29           #sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
-    :catch_9
-    move-exception v10
-
-    .line 1832
-    .restart local v10       #e:Lcom/cnlaunch/framework/network/http/HttpException;
     :try_start_a
-    const-string/jumbo v2, "GoloFragment"
-
-    const-string/jumbo v3, "getRemoteOrderList again."
-
-    invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1833
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mGoloAction:Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;
@@ -8223,30 +8082,199 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getRemoteOrderSingleList(Ljava/lang/String;Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;
 
-    move-result-object v15
+    move-result-object v16
+
+    .line 1830
+    invoke-virtual/range {v16 .. v16}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;->getData()Ljava/util/List;
+    :try_end_a
+    .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_a .. :try_end_a} :catch_9
+
+    move-result-object v18
+
+    .line 1841
+    :goto_3
+    if-eqz v18, :cond_2
+
+    .line 1842
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v18
+
+    invoke-direct {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updateRemoteList(Ljava/util/List;)V
+
+    .line 1844
+    new-instance v29, Ljava/util/ArrayList;
+
+    invoke-direct/range {v29 .. v29}, Ljava/util/ArrayList;-><init>()V
+
+    .line 1845
+    .restart local v29       #sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
+    invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->loadRemoteList()Ljava/util/List;
+
+    move-result-object v2
+
+    move-object/from16 v0, v29
+
+    invoke-static {v2, v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->filledData(Ljava/util/List;Ljava/util/List;)V
+
+    .line 1846
+    new-instance v2, Lcom/cnlaunch/x431pro/module/golo/model/TimeComparator;
+
+    invoke-direct {v2}, Lcom/cnlaunch/x431pro/module/golo/model/TimeComparator;-><init>()V
+
+    move-object/from16 v0, v29
+
+    invoke-static {v0, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
+
+    .line 1847
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v29
+
+    invoke-direct {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->setRemoteIsRead(Ljava/util/List;)V
+
+    .line 1848
+    move-object/from16 v0, v26
+
+    move-object/from16 v1, v29
+
+    invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 1851
+    .end local v29           #sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;>;"
+    :cond_2
+    new-instance v23, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
+
+    invoke-direct/range {v23 .. v23}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;-><init>()V
+
+    .line 1852
+    .local v23, repairTitleSingle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
+    const v2, 0x7f070737
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    move-object/from16 v0, v23
+
+    invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;->setContent(Ljava/lang/String;)V
+
+    .line 1853
+    const/4 v2, 0x2
+
+    move-object/from16 v0, v23
+
+    invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;->setType(I)V
+
+    .line 1854
+    move-object/from16 v0, v26
+
+    move-object/from16 v1, v23
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 1857
+    new-instance v30, Ljava/util/ArrayList;
+
+    invoke-direct/range {v30 .. v30}, Ljava/util/ArrayList;-><init>()V
+
+    .line 1858
+    .restart local v30       #sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
+    invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->loadRepairList()Ljava/util/List;
+
+    move-result-object v2
+
+    move-object/from16 v0, v30
+
+    invoke-static {v2, v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;->filledData(Ljava/util/List;Ljava/util/List;)V
+
+    .line 1859
+    new-instance v2, Lcom/cnlaunch/x431pro/module/golo/model/TimeComparator;
+
+    invoke-direct {v2}, Lcom/cnlaunch/x431pro/module/golo/model/TimeComparator;-><init>()V
+
+    move-object/from16 v0, v30
+
+    invoke-static {v0, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
+
+    .line 1860
+    invoke-direct/range {p0 .. p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->deleteRepairList()V
+
+    .line 1861
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v30
+
+    invoke-direct {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->saveRepairList(Ljava/util/List;)V
+
+    .line 1862
+    move-object/from16 v0, v26
+
+    move-object/from16 v1, v30
+
+    invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    move-object/from16 v25, v26
+
+    .line 1863
+    goto/16 :goto_0
+
+    .line 1831
+    .end local v23           #repairTitleSingle:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteRepairTitle;
+    .end local v30           #sortList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;>;"
+    :catch_9
+    move-exception v10
 
     .line 1834
-    invoke-virtual {v15}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;->getData()Ljava/util/List;
-    :try_end_a
-    .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_a .. :try_end_a} :catch_a
+    .restart local v10       #e:Lcom/cnlaunch/framework/network/http/HttpException;
+    :try_start_b
+    const-string/jumbo v2, "GoloFragment"
 
-    move-result-object v17
+    const-string/jumbo v3, "getRemoteOrderList again."
 
-    goto/16 :goto_2
+    invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 1835
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mGoloAction:Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->diag_uid:Ljava/lang/String;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->diag_id:Ljava/lang/String;
+
+    invoke-virtual {v2, v3, v4}, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;->getRemoteOrderSingleList(Ljava/lang/String;Ljava/lang/String;)Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;
+
+    move-result-object v16
+
+    .line 1836
+    invoke-virtual/range {v16 .. v16}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderResponse;->getData()Ljava/util/List;
+    :try_end_b
+    .catch Lcom/cnlaunch/framework/network/http/HttpException; {:try_start_b .. :try_end_b} :catch_a
+
+    move-result-object v18
+
+    goto/16 :goto_3
+
+    .line 1837
     :catch_a
     move-exception v11
 
-    .line 1836
+    .line 1838
     .restart local v11       #e1:Lcom/cnlaunch/framework/network/http/HttpException;
-    new-instance v2, Lcom/cnlaunch/framework/network/http/HttpException;
+    invoke-virtual {v10}, Lcom/cnlaunch/framework/network/http/HttpException;->printStackTrace()V
 
-    invoke-direct {v2, v10}, Lcom/cnlaunch/framework/network/http/HttpException;-><init>(Ljava/lang/Throwable;)V
+    goto/16 :goto_3
 
-    throw v2
+    .line 1696
+    nop
 
-    .line 1697
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_0
@@ -8274,29 +8302,29 @@
     .end annotation
 
     .prologue
-    .line 509
+    .line 508
     .local p1, dataList:Ljava/util/List;,"Ljava/util/List<+Lcom/cnlaunch/x431pro/module/golo/model/CustomerInfo;>;"
     new-instance v1, Ljava/util/HashSet;
 
     invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
 
-    .line 510
+    .line 509
     .local v1, idSet:Ljava/util/HashSet;,"Ljava/util/HashSet<Ljava/lang/String;>;"
     const/4 v2, 0x0
 
-    .line 511
+    .line 510
     .local v2, result:I
     if-nez p1, :cond_0
 
     move v3, v2
 
-    .line 523
+    .line 522
     .end local v2           #result:I
     .local v3, result:I
     :goto_0
     return v3
 
-    .line 514
+    .line 513
     .end local v3           #result:I
     .restart local v2       #result:I
     :cond_0
@@ -8310,20 +8338,20 @@
 
     if-lt v0, v5, :cond_1
 
-    .line 521
+    .line 520
     invoke-virtual {v1}, Ljava/util/HashSet;->clear()V
 
-    .line 522
+    .line 521
     const/4 v1, 0x0
 
     move v3, v2
 
-    .line 523
+    .line 522
     .end local v2           #result:I
     .restart local v3       #result:I
     goto :goto_0
 
-    .line 515
+    .line 514
     .end local v3           #result:I
     .restart local v2       #result:I
     :cond_1
@@ -8337,7 +8365,7 @@
 
     move-result-object v4
 
-    .line 516
+    .line 515
     .local v4, userId:Ljava/lang/String;
     invoke-virtual {v1, v4}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -8345,10 +8373,10 @@
 
     if-nez v5, :cond_2
 
-    .line 517
+    .line 516
     invoke-virtual {v1, v4}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 518
+    .line 517
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
@@ -8361,7 +8389,7 @@
 
     add-int/2addr v2, v5
 
-    .line 514
+    .line 513
     :cond_2
     add-int/lit8 v0, v0, 0x1
 
@@ -8372,16 +8400,16 @@
     .locals 5
 
     .prologue
-    .line 1154
+    .line 1153
     const/4 v1, 0x0
 
-    .line 1155
+    .line 1154
     .local v1, result:I
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     if-eqz v3, :cond_1
 
-    .line 1156
+    .line 1155
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -8396,17 +8424,17 @@
 
     if-nez v4, :cond_2
 
-    .line 1165
+    .line 1164
     :cond_1
     return v1
 
-    .line 1156
+    .line 1155
     :cond_2
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 1157
+    .line 1156
     .local v2, tmp:Ljava/lang/Object;
     instance-of v4, v2, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
 
@@ -8414,10 +8442,10 @@
 
     move-object v0, v2
 
-    .line 1158
+    .line 1157
     check-cast v0, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
 
-    .line 1159
+    .line 1158
     .local v0, rInfo:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;->getIsRead()Ljava/lang/Boolean;
 
@@ -8429,7 +8457,7 @@
 
     if-nez v4, :cond_0
 
-    .line 1160
+    .line 1159
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
@@ -8441,12 +8469,12 @@
     .parameter "status"
 
     .prologue
-    .line 767
+    .line 766
     const/4 v1, 0x1
 
     if-ne p1, v1, :cond_3
 
-    .line 768
+    .line 767
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -8461,23 +8489,23 @@
 
     if-nez v2, :cond_2
 
-    .line 780
+    .line 779
     :cond_1
     return-void
 
-    .line 768
+    .line 767
     :cond_2
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 769
+    .line 768
     .local v0, tmp:Ljava/lang/Object;
     instance-of v2, v0, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
 
     if-eqz v2, :cond_0
 
-    .line 770
+    .line 769
     check-cast v0, Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
 
     .end local v0           #tmp:Ljava/lang/Object;
@@ -8485,13 +8513,13 @@
 
     goto :goto_0
 
-    .line 773
+    .line 772
     :cond_3
     const/4 v1, 0x2
 
     if-ne p1, v1, :cond_1
 
-    .line 774
+    .line 773
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -8510,13 +8538,13 @@
 
     move-result-object v0
 
-    .line 775
+    .line 774
     .restart local v0       #tmp:Ljava/lang/Object;
     instance-of v2, v0, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;
 
     if-eqz v2, :cond_4
 
-    .line 776
+    .line 775
     check-cast v0, Lcom/cnlaunch/x431pro/module/golo/model/GoloRepairInfo;
 
     .end local v0           #tmp:Ljava/lang/Object;
@@ -8531,7 +8559,7 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 304
+    .line 303
     new-instance v1, Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -8540,23 +8568,23 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mGoloAction:Lcom/cnlaunch/x431pro/module/golo/action/GoloAction;
 
-    .line 305
+    .line 304
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageChangeHandler;
 
     const-string/jumbo v1, "CustomerActivityMessageChange"
 
     invoke-direct {v0, p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageChangeHandler;-><init>(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Ljava/lang/String;)V
 
-    .line 306
+    .line 305
     .local v0, mMessageChangeHandler:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageChangeHandler;
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageChangeHandler;->start()V
 
-    .line 307
+    .line 306
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mMessageContentObserver:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;
 
     if-eqz v1, :cond_0
 
-    .line 308
+    .line 307
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -8567,7 +8595,7 @@
 
     invoke-virtual {v1, v2}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
-    .line 310
+    .line 309
     :cond_0
     new-instance v1, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;
 
@@ -8583,7 +8611,7 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mMessageContentObserver:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;
 
-    .line 311
+    .line 310
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -8598,17 +8626,17 @@
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 312
+    .line 311
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->tipChangeListener:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 
     if-eqz v1, :cond_1
 
-    .line 313
+    .line 312
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->tipChangeListener:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 
     invoke-static {v1}, Lcom/cnlaunch/x431pro/activity/golo/listenter/OnTipEvent;->removeListener(Lcom/cnlaunch/x431pro/activity/golo/listenter/OnTipEvent$TipCountChangeListener;)V
 
-    .line 315
+    .line 314
     :cond_1
     new-instance v1, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 
@@ -8616,17 +8644,17 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->tipChangeListener:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 
-    .line 316
+    .line 315
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->tipChangeListener:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 
     invoke-static {v1}, Lcom/cnlaunch/x431pro/activity/golo/listenter/OnTipEvent;->addListener(Lcom/cnlaunch/x431pro/activity/golo/listenter/OnTipEvent$TipCountChangeListener;)V
 
-    .line 317
+    .line 316
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->orderObserver:Ljava/util/Observer;
 
     if-eqz v1, :cond_2
 
-    .line 318
+    .line 317
     invoke-static {}, Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;->getInstance()Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;
 
     move-result-object v1
@@ -8635,7 +8663,7 @@
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;->deleteObserver(Ljava/util/Observer;)V
 
-    .line 320
+    .line 319
     :cond_2
     new-instance v1, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$RemoteOrderObserver;
 
@@ -8643,7 +8671,7 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->orderObserver:Ljava/util/Observer;
 
-    .line 321
+    .line 320
     invoke-static {}, Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;->getInstance()Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;
 
     move-result-object v1
@@ -8652,21 +8680,21 @@
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;->addObserver(Ljava/util/Observer;)V
 
-    .line 322
+    .line 321
     sget-object v1, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->conflictList:Ljava/util/List;
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mConflictStatus:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$ConflictStatus;
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 324
+    .line 323
     new-instance v1, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;
 
     invoke-direct {v1, p0, v5}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;-><init>(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$BindDeviceObserver;)V
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->deviceObserver:Ljava/util/Observer;
 
-    .line 325
+    .line 324
     invoke-static {}, Lcom/cnlaunch/newgolo/Listeners/BindDeviceObservable;->getInstance()Lcom/cnlaunch/newgolo/Listeners/BindDeviceObservable;
 
     move-result-object v1
@@ -8675,7 +8703,7 @@
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/newgolo/Listeners/BindDeviceObservable;->addObserver(Ljava/util/Observer;)V
 
-    .line 326
+    .line 325
     invoke-static {}, Lcom/cnlaunch/x431pro/activity/golo/listenter/IntentChangeSubject;->getInstance()Lcom/cnlaunch/x431pro/activity/golo/listenter/IntentChangeSubject;
 
     move-result-object v1
@@ -8684,7 +8712,7 @@
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/activity/golo/listenter/IntentChangeSubject;->addObserver(Ljava/util/Observer;)V
 
-    .line 327
+    .line 326
     return-void
 .end method
 
@@ -8693,7 +8721,7 @@
     .parameter "savedInstanceState"
 
     .prologue
-    const v1, 0x7f0704eb
+    const v1, 0x7f0704ed
 
     const/4 v4, 0x1
 
@@ -8743,7 +8771,7 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_name:Ljava/lang/String;
 
-    .line 189
+    .line 190
     const-string/jumbo v1, "GoloFragment"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -8776,7 +8804,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 190
+    .line 192
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_name:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -8795,13 +8823,13 @@
 
     if-eqz v1, :cond_1
 
-    .line 191
+    .line 193
     :cond_0
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_id:Ljava/lang/String;
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_name:Ljava/lang/String;
 
-    .line 194
+    .line 196
     :cond_1
     const-string/jumbo v1, "GoloFragment"
 
@@ -8835,30 +8863,30 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 196
+    .line 198
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->checkNetWork()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 197
+    .line 199
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showProgressDialog()V
 
-    .line 198
+    .line 200
     invoke-virtual {p0, v4}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V
 
-    .line 199
+    .line 201
     const/4 v1, 0x2
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V
 
-    .line 200
+    .line 202
     const/4 v1, 0x3
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V
 
-    .line 205
+    .line 204
     :cond_2
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getActivity()Landroid/app/Activity;
 
@@ -8868,19 +8896,19 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->datalistenter:Lcom/cnlaunch/x431pro/activity/golo/listenter/onGoloDataListenter;
 
-    .line 206
+    .line 205
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showSelectView()V
 
-    .line 207
+    .line 206
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 208
+    .line 207
     .local v0, bundle:Landroid/os/Bundle;
     if-eqz v0, :cond_3
 
-    .line 209
+    .line 208
     const-string/jumbo v1, "Customer_type"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -8889,7 +8917,7 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->customer_type:Ljava/lang/String;
 
-    .line 210
+    .line 209
     const-string/jumbo v1, "bunding_new"
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->customer_type:Ljava/lang/String;
@@ -8900,22 +8928,22 @@
 
     if-eqz v1, :cond_4
 
-    .line 211
+    .line 210
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->datalistenter:Lcom/cnlaunch/x431pro/activity/golo/listenter/onGoloDataListenter;
 
     const/4 v2, 0x0
 
     invoke-interface {v1, v2}, Lcom/cnlaunch/x431pro/activity/golo/listenter/onGoloDataListenter;->setListType(I)V
 
-    .line 212
+    .line 211
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showSelectView()V
 
-    .line 218
+    .line 217
     :cond_3
     :goto_0
     return-void
 
-    .line 213
+    .line 212
     :cond_4
     const-string/jumbo v1, "remote_req"
 
@@ -8927,12 +8955,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 214
+    .line 213
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->datalistenter:Lcom/cnlaunch/x431pro/activity/golo/listenter/onGoloDataListenter;
 
     invoke-interface {v1, v4}, Lcom/cnlaunch/x431pro/activity/golo/listenter/onGoloDataListenter;->setListType(I)V
 
-    .line 215
+    .line 214
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showSelectView()V
 
     goto :goto_0
@@ -8943,18 +8971,18 @@
     .parameter "arg0"
 
     .prologue
-    .line 1677
+    .line 1676
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->checkNetWork()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 1693
+    .line 1692
     :goto_0
     return-void
 
-    .line 1680
+    .line 1679
     :cond_0
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mEdit:Lcom/cnlaunch/x431pro/widget/ClearEditText;
 
@@ -8962,43 +8990,43 @@
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/widget/ClearEditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1681
+    .line 1680
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
-    .line 1682
+    .line 1681
     .local v0, id:I
     sparse-switch v0, :sswitch_data_0
 
     goto :goto_0
 
-    .line 1684
+    .line 1683
     :sswitch_0
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showRemoteOrdered()V
 
     goto :goto_0
 
-    .line 1687
+    .line 1686
     :sswitch_1
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showBundingUser()V
 
     goto :goto_0
 
-    .line 1690
+    .line 1689
     :sswitch_2
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->showFocusUser()V
 
     goto :goto_0
 
-    .line 1682
+    .line 1681
     nop
 
     :sswitch_data_0
     .sparse-switch
-        0x7f0d01e7 -> :sswitch_0
-        0x7f0d01ea -> :sswitch_1
-        0x7f0d01ed -> :sswitch_2
+        0x7f0c01ea -> :sswitch_0
+        0x7f0c01ed -> :sswitch_1
+        0x7f0c01f0 -> :sswitch_2
     .end sparse-switch
 .end method
 
@@ -9009,7 +9037,7 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 222
+    .line 221
     const v1, 0x7f030084
 
     const/4 v2, 0x0
@@ -9018,7 +9046,7 @@
 
     move-result-object v0
 
-    .line 223
+    .line 222
     .local v0, view:Landroid/view/View;
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getActivity()Landroid/app/Activity;
 
@@ -9026,10 +9054,10 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
-    .line 224
+    .line 223
     invoke-direct {p0, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->initViews(Landroid/view/View;)V
 
-    .line 225
+    .line 224
     return-object v0
 .end method
 
@@ -9037,13 +9065,13 @@
     .locals 0
 
     .prologue
-    .line 1671
+    .line 1670
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->removeListeners()V
 
-    .line 1672
+    .line 1671
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onDestroy()V
 
-    .line 1673
+    .line 1672
     return-void
 .end method
 
@@ -9051,29 +9079,29 @@
     .locals 2
 
     .prologue
-    .line 2536
+    .line 2538
     const-string/jumbo v0, "GoloFragment"
 
     const-string/jumbo v1, "onDestroyView"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2537
+    .line 2539
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onDestroyView()V
 
-    .line 2538
+    .line 2540
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->datalistenter:Lcom/cnlaunch/x431pro/activity/golo/listenter/onGoloDataListenter;
 
     if-eqz v0, :cond_0
 
-    .line 2539
+    .line 2541
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->datalistenter:Lcom/cnlaunch/x431pro/activity/golo/listenter/onGoloDataListenter;
 
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mType:I
 
     invoke-interface {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/listenter/onGoloDataListenter;->setListType(I)V
 
-    .line 2541
+    .line 2543
     :cond_0
     return-void
 .end method
@@ -9087,14 +9115,14 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 2428
+    .line 2430
     sparse-switch p1, :sswitch_data_0
 
-    .line 2449
+    .line 2451
     :goto_0
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->dismissProgressDialog()V
 
-    .line 2450
+    .line 2452
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_id:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -9123,7 +9151,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 2451
+    .line 2453
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
@@ -9131,11 +9159,11 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 2456
+    .line 2458
     :goto_1
     return-void
 
-    .line 2430
+    .line 2432
     :sswitch_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
@@ -9143,7 +9171,7 @@
 
     goto :goto_0
 
-    .line 2433
+    .line 2435
     :sswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
@@ -9151,7 +9179,7 @@
 
     goto :goto_0
 
-    .line 2436
+    .line 2438
     :sswitch_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
@@ -9159,7 +9187,7 @@
 
     goto :goto_0
 
-    .line 2439
+    .line 2441
     :sswitch_3
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
@@ -9167,7 +9195,7 @@
 
     goto :goto_0
 
-    .line 2442
+    .line 2444
     :sswitch_4
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
@@ -9175,18 +9203,18 @@
 
     goto :goto_0
 
-    .line 2445
+    .line 2447
     :sswitch_5
     iput-boolean v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->isClientOk:Z
 
-    .line 2446
+    .line 2448
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->onRefreshComplete()V
 
     goto :goto_0
 
-    .line 2454
+    .line 2456
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
@@ -9194,7 +9222,7 @@
 
     goto :goto_1
 
-    .line 2428
+    .line 2430
     :sswitch_data_0
     .sparse-switch
         0x2 -> :sswitch_0
@@ -9210,17 +9238,17 @@
     .locals 2
 
     .prologue
-    .line 2524
+    .line 2526
     const-string/jumbo v0, "GoloFragment"
 
     const-string/jumbo v1, "onPause"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2525
+    .line 2527
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onPause()V
 
-    .line 2526
+    .line 2528
     return-void
 .end method
 
@@ -9228,20 +9256,20 @@
     .locals 2
 
     .prologue
-    .line 2503
+    .line 2505
     const-string/jumbo v0, "GoloFragment"
 
     const-string/jumbo v1, "onResume"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2504
+    .line 2506
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->requestFocus()V
 
-    .line 2505
+    .line 2507
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onResume()V
 
-    .line 2506
+    .line 2508
     return-void
 .end method
 
@@ -9249,17 +9277,17 @@
     .locals 2
 
     .prologue
-    .line 2497
+    .line 2499
     const-string/jumbo v0, "GoloFragment"
 
     const-string/jumbo v1, "onStart"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2498
+    .line 2500
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onStart()V
 
-    .line 2499
+    .line 2501
     return-void
 .end method
 
@@ -9267,17 +9295,17 @@
     .locals 2
 
     .prologue
-    .line 2530
+    .line 2532
     const-string/jumbo v0, "GoloFragment"
 
     const-string/jumbo v1, "onStop"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2531
+    .line 2533
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onStop()V
 
-    .line 2532
+    .line 2534
     return-void
 .end method
 
@@ -9293,41 +9321,41 @@
 
     const/4 v2, 0x1
 
-    .line 2252
+    .line 2254
     sparse-switch p1, :sswitch_data_0
 
-    .line 2424
+    .line 2426
     .end local p2
     :cond_0
     :goto_0
     return-void
 
-    .line 2255
+    .line 2257
     .restart local p2
     :sswitch_0
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->dismissProgressDialog()V
 
-    .line 2256
+    .line 2258
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->onRefreshComplete()V
 
-    .line 2257
+    .line 2259
     iput-boolean v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->isClientOk:Z
 
-    .line 2258
+    .line 2260
     const-string/jumbo v0, "GoloFragment"
 
     const-string/jumbo v1, "isClientOk"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2259
+    .line 2261
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v4}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 2260
+    .line 2262
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_id:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -9356,13 +9384,13 @@
 
     if-eqz v0, :cond_2
 
-    .line 2261
+    .line 2263
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 2262
+    .line 2264
     const-string/jumbo v0, "GoloFragment"
 
     const-string/jumbo v1, "TextUtils.isEmpty(pub_id) || null.equalsIgnoreCase(pub_id)"
@@ -9371,7 +9399,7 @@
 
     goto :goto_0
 
-    .line 2266
+    .line 2268
     :cond_2
     new-instance v0, Ljava/util/ArrayList;
 
@@ -9379,7 +9407,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
-    .line 2267
+    .line 2269
     check-cast p2, Ljava/util/List;
 
     .end local p2
@@ -9387,7 +9415,7 @@
 
     invoke-static {p2, v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->filledData(Ljava/util/List;Ljava/util/List;)V
 
-    .line 2268
+    .line 2270
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getAllUnreadCount(Ljava/util/List;)I
@@ -9396,7 +9424,7 @@
 
     iput v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allBundingNewMsg:I
 
-    .line 2269
+    .line 2271
     iget v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allBundingNewMsg:I
 
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allTipCount:I
@@ -9405,7 +9433,7 @@
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updateBDTitle(I)V
 
-    .line 2271
+    .line 2273
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     new-instance v1, Lcom/cnlaunch/x431pro/module/golo/model/BundingNewMessageComparator;
@@ -9414,17 +9442,17 @@
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 2273
+    .line 2275
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 2274
+    .line 2276
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
     if-nez v0, :cond_3
 
-    .line 2275
+    .line 2277
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -9437,7 +9465,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
-    .line 2276
+    .line 2278
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
@@ -9446,7 +9474,7 @@
 
     goto/16 :goto_0
 
-    .line 2278
+    .line 2280
     :cond_3
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
@@ -9456,17 +9484,17 @@
 
     goto/16 :goto_0
 
-    .line 2283
+    .line 2285
     .restart local p2
     :sswitch_1
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->dismissProgressDialog()V
 
-    .line 2284
+    .line 2286
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->onRefreshComplete()V
 
-    .line 2285
+    .line 2287
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_id:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -9495,7 +9523,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 2286
+    .line 2288
     :cond_4
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
@@ -9503,18 +9531,18 @@
 
     goto/16 :goto_0
 
-    .line 2289
+    .line 2291
     :cond_5
     if-nez p2, :cond_6
 
-    .line 2290
+    .line 2292
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     goto/16 :goto_0
 
-    .line 2294
+    .line 2296
     :cond_6
     new-instance v0, Ljava/util/ArrayList;
 
@@ -9522,7 +9550,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
-    .line 2295
+    .line 2297
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     check-cast p2, Ljava/util/List;
@@ -9530,7 +9558,7 @@
     .end local p2
     invoke-interface {v0, p2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 2296
+    .line 2298
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -9541,17 +9569,17 @@
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updateRemoteTitle(I)V
 
-    .line 2298
+    .line 2300
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 2299
+    .line 2301
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
     if-nez v0, :cond_7
 
-    .line 2300
+    .line 2302
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -9564,7 +9592,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
-    .line 2301
+    .line 2303
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
@@ -9573,7 +9601,7 @@
 
     goto/16 :goto_0
 
-    .line 2303
+    .line 2305
     :cond_7
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
@@ -9583,17 +9611,17 @@
 
     goto/16 :goto_0
 
-    .line 2309
+    .line 2311
     .restart local p2
     :sswitch_2
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->dismissProgressDialog()V
 
-    .line 2310
+    .line 2312
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->onRefreshComplete()V
 
-    .line 2311
+    .line 2313
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_id:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -9622,18 +9650,18 @@
 
     if-eqz v0, :cond_9
 
-    .line 2312
+    .line 2314
     :cond_8
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 2313
+    .line 2315
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
     if-eqz v0, :cond_0
 
-    .line 2314
+    .line 2316
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
@@ -9642,13 +9670,13 @@
 
     goto/16 :goto_0
 
-    .line 2319
+    .line 2321
     :cond_9
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 2320
+    .line 2322
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getAllUnreadCount(Ljava/util/List;)I
@@ -9657,7 +9685,7 @@
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updateGZTilte(I)V
 
-    .line 2321
+    .line 2323
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->guanzhuDateList:Ljava/util/List;
 
     new-instance v1, Lcom/cnlaunch/x431pro/module/golo/model/GuanzhuComparator;
@@ -9666,12 +9694,12 @@
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 2322
+    .line 2324
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
     if-nez v0, :cond_a
 
-    .line 2323
+    .line 2325
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -9684,7 +9712,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
-    .line 2324
+    .line 2326
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
@@ -9693,7 +9721,7 @@
 
     goto/16 :goto_0
 
-    .line 2326
+    .line 2328
     :cond_a
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
 
@@ -9703,16 +9731,16 @@
 
     goto/16 :goto_0
 
-    .line 2331
+    .line 2333
     :sswitch_3
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->dismissProgressDialog()V
 
-    .line 2332
+    .line 2334
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->onRefreshComplete()V
 
-    .line 2333
+    .line 2335
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_id:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -9741,7 +9769,7 @@
 
     if-eqz v0, :cond_c
 
-    .line 2334
+    .line 2336
     :cond_b
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
@@ -9749,18 +9777,18 @@
 
     goto/16 :goto_0
 
-    .line 2337
+    .line 2339
     :cond_c
     if-nez p2, :cond_d
 
-    .line 2338
+    .line 2340
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     goto/16 :goto_0
 
-    .line 2342
+    .line 2344
     :cond_d
     new-instance v0, Ljava/util/ArrayList;
 
@@ -9768,7 +9796,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
-    .line 2343
+    .line 2345
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     check-cast p2, Ljava/util/List;
@@ -9776,7 +9804,7 @@
     .end local p2
     invoke-interface {v0, p2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 2344
+    .line 2346
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -9787,17 +9815,17 @@
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updateRemoteTitle(I)V
 
-    .line 2346
+    .line 2348
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteUsersDateList:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 2347
+    .line 2349
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
     if-nez v0, :cond_e
 
-    .line 2348
+    .line 2350
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -9810,7 +9838,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
-    .line 2349
+    .line 2351
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
@@ -9819,7 +9847,7 @@
 
     goto/16 :goto_0
 
-    .line 2351
+    .line 2353
     :cond_e
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
 
@@ -9829,32 +9857,32 @@
 
     goto/16 :goto_0
 
-    .line 2356
+    .line 2358
     .restart local p2
     :sswitch_4
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->dismissProgressDialog()V
 
-    .line 2357
+    .line 2359
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->onRefreshComplete()V
 
-    .line 2358
+    .line 2360
     iput-boolean v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->isClientOk:Z
 
-    .line 2359
+    .line 2361
     const-string/jumbo v0, "GoloFragment"
 
     const-string/jumbo v1, "isClientOk"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2360
+    .line 2362
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v4}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 2361
+    .line 2363
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_id:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -9883,13 +9911,13 @@
 
     if-eqz v0, :cond_10
 
-    .line 2362
+    .line 2364
     :cond_f
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 2363
+    .line 2365
     const-string/jumbo v0, "GoloFragment"
 
     const-string/jumbo v1, "TextUtils.isEmpty(pub_id) || null.equalsIgnoreCase(pub_id)"
@@ -9898,25 +9926,25 @@
 
     goto/16 :goto_0
 
-    .line 2366
+    .line 2368
     :cond_10
     if-nez p2, :cond_11
 
-    .line 2367
+    .line 2369
     const-string/jumbo v0, "GoloFragment"
 
     const-string/jumbo v1, "result == null"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2368
+    .line 2370
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     goto/16 :goto_0
 
-    .line 2372
+    .line 2374
     :cond_11
     new-instance v0, Ljava/util/ArrayList;
 
@@ -9924,7 +9952,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
-    .line 2373
+    .line 2375
     check-cast p2, Ljava/util/List;
 
     .end local p2
@@ -9932,7 +9960,7 @@
 
     invoke-static {p2, v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->filledData(Ljava/util/List;Ljava/util/List;)V
 
-    .line 2374
+    .line 2376
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getAllUnreadCount(Ljava/util/List;)I
@@ -9941,7 +9969,7 @@
 
     iput v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allBundingNewMsg:I
 
-    .line 2375
+    .line 2377
     iget v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allBundingNewMsg:I
 
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allTipCount:I
@@ -9950,7 +9978,7 @@
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updateBDTitle(I)V
 
-    .line 2377
+    .line 2379
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     new-instance v1, Lcom/cnlaunch/x431pro/module/golo/model/BundingNewMessageComparator;
@@ -9959,17 +9987,17 @@
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 2379
+    .line 2381
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 2380
+    .line 2382
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
     if-nez v0, :cond_12
 
-    .line 2381
+    .line 2383
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -9982,7 +10010,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
-    .line 2382
+    .line 2384
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
@@ -9991,7 +10019,7 @@
 
     goto/16 :goto_0
 
-    .line 2384
+    .line 2386
     :cond_12
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
@@ -10001,32 +10029,32 @@
 
     goto/16 :goto_0
 
-    .line 2389
+    .line 2391
     .restart local p2
     :sswitch_5
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->dismissProgressDialog()V
 
-    .line 2390
+    .line 2392
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->onRefreshComplete()V
 
-    .line 2391
+    .line 2393
     iput-boolean v2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->isClientOk:Z
 
-    .line 2392
+    .line 2394
     const-string/jumbo v0, "GoloFragment"
 
     const-string/jumbo v1, "isClientOk"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2393
+    .line 2395
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v4}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 2394
+    .line 2396
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->pub_id:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -10055,13 +10083,13 @@
 
     if-eqz v0, :cond_14
 
-    .line 2395
+    .line 2397
     :cond_13
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 2396
+    .line 2398
     const-string/jumbo v0, "GoloFragment"
 
     const-string/jumbo v1, "TextUtils.isEmpty(pub_id) || null.equalsIgnoreCase(pub_id)"
@@ -10070,25 +10098,25 @@
 
     goto/16 :goto_0
 
-    .line 2399
+    .line 2401
     :cond_14
     if-nez p2, :cond_15
 
-    .line 2400
+    .line 2402
     const-string/jumbo v0, "GoloFragment"
 
     const-string/jumbo v1, "result == null"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2401
+    .line 2403
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     goto/16 :goto_0
 
-    .line 2405
+    .line 2407
     :cond_15
     new-instance v0, Ljava/util/ArrayList;
 
@@ -10096,7 +10124,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
-    .line 2406
+    .line 2408
     check-cast p2, Ljava/util/List;
 
     .end local p2
@@ -10104,7 +10132,7 @@
 
     invoke-static {p2, v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->filledData(Ljava/util/List;Ljava/util/List;)V
 
-    .line 2407
+    .line 2409
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getAllUnreadCount(Ljava/util/List;)I
@@ -10113,7 +10141,7 @@
 
     iput v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allBundingNewMsg:I
 
-    .line 2408
+    .line 2410
     iget v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allBundingNewMsg:I
 
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allTipCount:I
@@ -10122,7 +10150,7 @@
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->updateBDTitle(I)V
 
-    .line 2410
+    .line 2412
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     new-instance v1, Lcom/cnlaunch/x431pro/module/golo/model/BundingNewMessageComparator;
@@ -10131,17 +10159,17 @@
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 2412
+    .line 2414
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 2413
+    .line 2415
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
     if-nez v0, :cond_16
 
-    .line 2414
+    .line 2416
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
@@ -10154,7 +10182,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
-    .line 2415
+    .line 2417
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
@@ -10163,7 +10191,7 @@
 
     goto/16 :goto_0
 
-    .line 2417
+    .line 2419
     :cond_16
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->clientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/ClientAdapter;
 
@@ -10173,7 +10201,7 @@
 
     goto/16 :goto_0
 
-    .line 2252
+    .line 2254
     nop
 
     :sswitch_data_0
@@ -10193,12 +10221,12 @@
     .locals 2
 
     .prologue
-    .line 442
+    .line 441
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->orderObserver:Ljava/util/Observer;
 
     if-eqz v0, :cond_0
 
-    .line 443
+    .line 442
     invoke-static {}, Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;->getInstance()Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;
 
     move-result-object v0
@@ -10207,24 +10235,24 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/newgolo/Listeners/RemoteOrderObservable;->deleteObserver(Ljava/util/Observer;)V
 
-    .line 445
+    .line 444
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->tipChangeListener:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 
     if-eqz v0, :cond_1
 
-    .line 446
+    .line 445
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->tipChangeListener:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$CustomerTipCountChangeListener;
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/activity/golo/listenter/OnTipEvent;->removeListener(Lcom/cnlaunch/x431pro/activity/golo/listenter/OnTipEvent$TipCountChangeListener;)V
 
-    .line 448
+    .line 447
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mMessageContentObserver:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$MessageContentObserver;
 
     if-eqz v0, :cond_2
 
-    .line 449
+    .line 448
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -10235,7 +10263,7 @@
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
-    .line 451
+    .line 450
     :cond_2
     sget-object v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->conflictList:Ljava/util/List;
 
@@ -10243,7 +10271,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 452
+    .line 451
     invoke-static {}, Lcom/cnlaunch/x431pro/activity/golo/listenter/IntentChangeSubject;->getInstance()Lcom/cnlaunch/x431pro/activity/golo/listenter/IntentChangeSubject;
 
     move-result-object v0
@@ -10252,12 +10280,12 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/listenter/IntentChangeSubject;->deleteObserver(Ljava/util/Observer;)V
 
-    .line 454
+    .line 453
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->deviceObserver:Ljava/util/Observer;
 
     if-eqz v0, :cond_3
 
-    .line 455
+    .line 454
     invoke-static {}, Lcom/cnlaunch/newgolo/Listeners/BindDeviceObservable;->getInstance()Lcom/cnlaunch/newgolo/Listeners/BindDeviceObservable;
 
     move-result-object v0
@@ -10266,7 +10294,7 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/newgolo/Listeners/BindDeviceObservable;->deleteObserver(Ljava/util/Observer;)V
 
-    .line 457
+    .line 456
     :cond_3
     return-void
 .end method
@@ -10276,7 +10304,7 @@
     .parameter "uInfo"
 
     .prologue
-    .line 783
+    .line 782
     new-instance v0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$9;
 
     invoke-direct {v0, p0, p1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$9;-><init>(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Lcom/cnlaunch/newgolo/bean/UserInfo;)V
@@ -10285,10 +10313,10 @@
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    .line 791
+    .line 790
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$9;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 792
+    .line 791
     return-void
 .end method
 
@@ -10298,12 +10326,12 @@
     .parameter "count"
 
     .prologue
-    .line 1570
+    .line 1569
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     if-eqz v1, :cond_1
 
-    .line 1571
+    .line 1570
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->sourceDateList:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -10318,11 +10346,11 @@
 
     if-nez v2, :cond_2
 
-    .line 1577
+    .line 1576
     :cond_1
     return-void
 
-    .line 1571
+    .line 1570
     :cond_2
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -10330,7 +10358,7 @@
 
     check-cast v0, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
 
-    .line 1572
+    .line 1571
     .local v0, tmp:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getUser_id()Ljava/lang/String;
 
@@ -10342,7 +10370,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1573
+    .line 1572
     invoke-virtual {v0, p2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setUnReadTipCount(I)V
 
     goto :goto_0
@@ -10362,11 +10390,11 @@
     .end annotation
 
     .prologue
-    .line 1585
+    .line 1584
     .local p1, list:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;>;"
     const/4 v0, 0x0
 
-    .line 1586
+    .line 1585
     .local v0, result:I
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -10379,10 +10407,10 @@
 
     if-nez v3, :cond_0
 
-    .line 1589
+    .line 1588
     return v0
 
-    .line 1586
+    .line 1585
     :cond_0
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -10390,7 +10418,7 @@
 
     check-cast v1, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
 
-    .line 1587
+    .line 1586
     .local v1, tmp:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getUnReadTipCount()I
 
@@ -10420,12 +10448,12 @@
     .end annotation
 
     .prologue
-    .line 1598
+    .line 1597
     .local p1, userList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;>;"
     .local p2, datas:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/golo/model/Count;>;"
     if-eqz p1, :cond_1
 
-    .line 1599
+    .line 1598
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
@@ -10437,11 +10465,11 @@
 
     if-nez v5, :cond_2
 
-    .line 1610
+    .line 1609
     :cond_1
     return-void
 
-    .line 1599
+    .line 1598
     :cond_2
     invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -10449,20 +10477,20 @@
 
     check-cast v2, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
 
-    .line 1600
+    .line 1599
     .local v2, tmp:Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;
     const/4 v3, 0x0
 
-    .line 1601
+    .line 1600
     .local v3, uCount:I
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->setUnReadTipCount(I)V
 
-    .line 1602
+    .line 1601
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/module/golo/model/GoloBindInfo;->getSerial_no()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1603
+    .line 1602
     .local v1, serNo:Ljava/lang/String;
     invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -10482,7 +10510,7 @@
 
     check-cast v0, Lcom/cnlaunch/x431pro/module/golo/model/Count;
 
-    .line 1604
+    .line 1603
     .local v0, bean:Lcom/cnlaunch/x431pro/module/golo/model/Count;
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -10508,7 +10536,7 @@
 
     if-eqz v6, :cond_3
 
-    .line 1605
+    .line 1604
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/golo/model/Count;->getUnread_size()Ljava/lang/String;
 
     move-result-object v6
@@ -10527,17 +10555,17 @@
     .parameter "bCount"
 
     .prologue
-    .line 1197
+    .line 1196
     if-nez p1, :cond_1
 
-    .line 1198
+    .line 1197
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_b:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1210
+    .line 1209
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->bundingTitle:Landroid/widget/RadioButton;
@@ -10550,7 +10578,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0706c2
+    const v3, 0x7f0706c4
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -10606,17 +10634,17 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1211
+    .line 1210
     const-string/jumbo v0, "update_new_tip_count"
 
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allTipCount:I
 
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/listenter/OnTipEvent;->onChange(Ljava/lang/String;I)V
 
-    .line 1212
+    .line 1211
     return-void
 
-    .line 1200
+    .line 1199
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_b:Landroid/widget/TextView;
 
@@ -10624,7 +10652,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1201
+    .line 1200
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_b:Landroid/widget/TextView;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -10641,45 +10669,45 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1202
+    .line 1201
     const/16 v0, 0x64
 
     if-ge p1, v0, :cond_2
 
-    .line 1203
+    .line 1202
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_b:Landroid/widget/TextView;
 
-    const v1, 0x7f020148
+    const v1, 0x7f020149
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     goto :goto_0
 
-    .line 1204
+    .line 1203
     :cond_2
     const/16 v0, 0x3e8
 
     if-ge p1, v0, :cond_3
 
-    .line 1205
+    .line 1204
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_b:Landroid/widget/TextView;
 
-    const v1, 0x7f02014a
+    const v1, 0x7f02014b
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     goto/16 :goto_0
 
-    .line 1206
+    .line 1205
     :cond_3
     const/16 v0, 0x2710
 
     if-ge p1, v0, :cond_0
 
-    .line 1207
+    .line 1206
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_b:Landroid/widget/TextView;
 
-    const v1, 0x7f020149
+    const v1, 0x7f02014a
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
@@ -10691,17 +10719,17 @@
     .parameter "gCount"
 
     .prologue
-    .line 1220
+    .line 1219
     if-nez p1, :cond_1
 
-    .line 1221
+    .line 1220
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_a:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1233
+    .line 1232
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->attTitle:Landroid/widget/RadioButton;
@@ -10714,7 +10742,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0706c1
+    const v3, 0x7f0706c3
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -10770,10 +10798,10 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1234
+    .line 1233
     return-void
 
-    .line 1223
+    .line 1222
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_a:Landroid/widget/TextView;
 
@@ -10781,7 +10809,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1224
+    .line 1223
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_a:Landroid/widget/TextView;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -10798,45 +10826,45 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1225
+    .line 1224
     const/16 v0, 0x64
 
     if-ge p1, v0, :cond_2
 
-    .line 1226
+    .line 1225
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_a:Landroid/widget/TextView;
 
-    const v1, 0x7f020148
+    const v1, 0x7f020149
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     goto :goto_0
 
-    .line 1227
+    .line 1226
     :cond_2
     const/16 v0, 0x3e8
 
     if-ge p1, v0, :cond_3
 
-    .line 1228
+    .line 1227
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_a:Landroid/widget/TextView;
 
-    const v1, 0x7f02014a
+    const v1, 0x7f02014b
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     goto :goto_0
 
-    .line 1229
+    .line 1228
     :cond_3
     const/16 v0, 0x2710
 
     if-ge p1, v0, :cond_0
 
-    .line 1230
+    .line 1229
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allNewCount_a:Landroid/widget/TextView;
 
-    const v1, 0x7f020149
+    const v1, 0x7f02014a
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
@@ -10848,23 +10876,23 @@
     .parameter "size"
 
     .prologue
-    .line 1173
+    .line 1172
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->getRemoteUnreadCount()I
 
     move-result v0
 
-    .line 1174
+    .line 1173
     .local v0, newCount:I
     if-nez v0, :cond_1
 
-    .line 1175
+    .line 1174
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allScheduledNewCount:Landroid/widget/TextView;
 
     const/16 v2, 0x8
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1187
+    .line 1186
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->remoteOrderTitle:Landroid/widget/RadioButton;
@@ -10877,7 +10905,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0706c3
+    const v4, 0x7f0706c5
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -10895,7 +10923,7 @@
 
     move-result-object v2
 
-    .line 1188
+    .line 1187
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v2
@@ -10920,13 +10948,13 @@
 
     move-result-object v2
 
-    .line 1187
+    .line 1186
     invoke-virtual {v1, v2}, Landroid/widget/RadioButton;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1189
+    .line 1188
     return-void
 
-    .line 1177
+    .line 1176
     :cond_1
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allScheduledNewCount:Landroid/widget/TextView;
 
@@ -10934,7 +10962,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1178
+    .line 1177
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allScheduledNewCount:Landroid/widget/TextView;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -10951,45 +10979,45 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1179
+    .line 1178
     const/16 v1, 0x64
 
     if-ge v0, v1, :cond_2
 
-    .line 1180
+    .line 1179
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allScheduledNewCount:Landroid/widget/TextView;
 
-    const v2, 0x7f020148
+    const v2, 0x7f020149
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     goto :goto_0
 
-    .line 1181
+    .line 1180
     :cond_2
     const/16 v1, 0x3e8
 
     if-ge v0, v1, :cond_3
 
-    .line 1182
+    .line 1181
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allScheduledNewCount:Landroid/widget/TextView;
 
-    const v2, 0x7f02014a
+    const v2, 0x7f02014b
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     goto :goto_0
 
-    .line 1183
+    .line 1182
     :cond_3
     const/16 v1, 0x2710
 
     if-ge v0, v1, :cond_0
 
-    .line 1184
+    .line 1183
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->allScheduledNewCount:Landroid/widget/TextView;
 
-    const v2, 0x7f020149
+    const v2, 0x7f02014a
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setBackgroundResource(I)V
 

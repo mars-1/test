@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">گزارش تشخیص خودرو</string>
+    <string name="print_success">با موفقیت چاپ کنید.</string>
+    <string name="print_jam">پارازیت کاغذ</string>
+    <string name="print_will_nopaper">چاپگر کم از کاغذ است.</string>
+    <string name="print_no_paper">چاپگر کم از کاغذ است.</string>
+    <string name="print_actuator_fault">اشتباه چاپگر</string>
+    <string name="print_head_overheating">چاپگر گرم است.</string>
+    <string name="print_connect_printer">اول چاپگر وصل کنید.</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">تشخیص</string>
     <string name="bluetooth_close_connected">وصل نمی کند:</string>
     <string name="bluetooth_connecting">درحال وصل:</string>
     <string name="bluetooth_no_search_device">رابط نیشآبی نمایان نمی شود،لطفا رابط را بررسی کنید.</string>
@@ -15,18 +27,6 @@
     <string name="no">نه</string>
     <string name="tv_unconnect">وصل نمی کند</string>
     <string name="tv_unpair">جفت نمی شود</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">گزارش تشخیص خودرو</string>
-    <string name="print_success">با موفقیت چاپ کنید.</string>
-    <string name="print_jam">پارازیت کاغذ</string>
-    <string name="print_will_nopaper">چاپگر کم از کاغذ است.</string>
-    <string name="print_no_paper">چاپگر کم از کاغذ است.</string>
-    <string name="print_actuator_fault">اشتباه چاپگر</string>
-    <string name="print_head_overheating">چاپگر گرم است.</string>
-    <string name="print_connect_printer">اول چاپگر وصل کنید.</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">تشخیص</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

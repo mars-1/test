@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;
 
-    .line 298
+    .line 356
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
@@ -40,16 +40,16 @@
     .parameter "msg"
 
     .prologue
-    .line 301
+    .line 359
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 311
+    .line 369
     :goto_0
     return-void
 
-    .line 303
+    .line 361
     :pswitch_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;
 
@@ -62,7 +62,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 304
+    .line 362
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->btnPlay:Landroid/widget/Button;
@@ -76,7 +76,7 @@
 
     goto :goto_0
 
-    .line 307
+    .line 365
     :pswitch_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;
 
@@ -107,12 +107,8 @@
 
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;
 
-    #getter for: Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->dataStreamAllList:Ljava/util/ArrayList;
-    invoke-static {v2}, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->access$3(Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;)Ljava/util/ArrayList;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+    #getter for: Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->itemcount:I
+    invoke-static {v2}, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->access$3(Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;)I
 
     move-result v2
 
@@ -128,7 +124,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 308
+    .line 366
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->pd_indeter:Landroid/widget/ProgressBar;
@@ -147,7 +143,7 @@
 
     goto :goto_0
 
-    .line 301
+    .line 359
     nop
 
     :pswitch_data_0

@@ -3,8 +3,8 @@
 .source "DataPacketProvider.java"
 
 # interfaces
-.implements Lorg/jivesoftware/smack/provider/PacketExtensionProvider;
 .implements Lorg/jivesoftware/smack/provider/IQProvider;
+.implements Lorg/jivesoftware/smack/provider/PacketExtensionProvider;
 
 
 # direct methods

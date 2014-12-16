@@ -113,7 +113,7 @@
     .line 61
     .local v0, scrollView:Landroid/widget/HorizontalScrollView;
     :goto_0
-    const v1, 0x7f0d0026
+    const v1, 0x7f0c0026
 
     invoke-virtual {v0, v1}, Landroid/widget/HorizontalScrollView;->setId(I)V
 

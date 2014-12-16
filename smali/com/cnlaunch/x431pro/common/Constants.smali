@@ -170,6 +170,8 @@
 
 .field public static final PACKAGE_ID_MAIN_PRO3_HD:Ljava/lang/String; = "X431 PRO3 HD"
 
+.field public static final PACKAGE_ID_MAIN_PRO3_JINBEIHD:Ljava/lang/String; = "X-431 PRO3_JINBEIHD_APP"
+
 .field public static final PACKAGE_ID_MAIN_SCANPAD071:Ljava/lang/String; = "ScanPad071"
 
 .field public static final PACKAGE_ID_MAIN_SCANPAD101:Ljava/lang/String; = "ScanPad101"
@@ -315,22 +317,22 @@
     .line 150
     sput-boolean v2, Lcom/cnlaunch/x431pro/common/Constants;->StartDiagFlag:Z
 
-    .line 222
+    .line 223
     const/4 v0, 0x1
 
     sput-boolean v0, Lcom/cnlaunch/x431pro/common/Constants;->STAT_SETTING_FLAG:Z
 
-    .line 253
+    .line 254
     const-string/jumbo v0, "printer_ip"
 
     sput-object v0, Lcom/cnlaunch/x431pro/common/Constants;->printerIp:Ljava/lang/String;
 
-    .line 256
+    .line 257
     const-string/jumbo v0, "is_Show_Printer_set"
 
     sput-object v0, Lcom/cnlaunch/x431pro/common/Constants;->IS_SHOW_PRINTER_SET:Ljava/lang/String;
 
-    .line 259
+    .line 260
     const-string/jumbo v0, "lastest_Version_Number"
 
     sput-object v0, Lcom/cnlaunch/x431pro/common/Constants;->LASTEST_VERSION_NUMBER:Ljava/lang/String;

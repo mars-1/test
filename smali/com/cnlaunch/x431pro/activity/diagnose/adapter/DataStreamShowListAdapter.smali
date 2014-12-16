@@ -431,7 +431,7 @@
     move-result-object p2
 
     .line 73
-    const v1, 0x7f0d006e
+    const v1, 0x7f0c006e
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -442,7 +442,7 @@
     iput-object v1, v0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DataStreamShowListAdapter$ViewHolder;->title:Landroid/widget/TextView;
 
     .line 74
-    const v1, 0x7f0d013f
+    const v1, 0x7f0c013f
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -453,7 +453,7 @@
     iput-object v1, v0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DataStreamShowListAdapter$ViewHolder;->value:Landroid/widget/TextView;
 
     .line 75
-    const v1, 0x7f0d0257
+    const v1, 0x7f0c025a
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -464,7 +464,7 @@
     iput-object v1, v0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/DataStreamShowListAdapter$ViewHolder;->unit:Landroid/widget/TextView;
 
     .line 76
-    const v1, 0x7f0d0255
+    const v1, 0x7f0c0258
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

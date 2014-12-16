@@ -189,7 +189,7 @@
     .line 169
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/SingleLargeGraph;->mContainer:Landroid/widget/RelativeLayout;
 
-    const v5, 0x7f0d017e
+    const v5, 0x7f0c017e
 
     invoke-virtual {v4, v5}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -208,7 +208,7 @@
     .line 170
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/SingleLargeGraph;->mContainer:Landroid/widget/RelativeLayout;
 
-    const v5, 0x7f0d017f
+    const v5, 0x7f0c017f
 
     invoke-virtual {v4, v5}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -221,7 +221,7 @@
     .line 171
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/SingleLargeGraph;->mContainer:Landroid/widget/RelativeLayout;
 
-    const v5, 0x7f0d0180
+    const v5, 0x7f0c0180
 
     invoke-virtual {v4, v5}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -234,7 +234,7 @@
     .line 174
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/SingleLargeGraph;->mContainer:Landroid/widget/RelativeLayout;
 
-    const v5, 0x7f0d0181
+    const v5, 0x7f0c0181
 
     invoke-virtual {v4, v5}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -301,7 +301,7 @@
 
     .line 186
     .local v2, params:Landroid/widget/RelativeLayout$LayoutParams;
-    const v4, 0x7f0d017e
+    const v4, 0x7f0c017e
 
     invoke-virtual {v2, v10, v4}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
@@ -319,7 +319,7 @@
 
     .line 190
     .local v1, inflater:Landroid/view/LayoutInflater;
-    const v4, 0x7f0300cd
+    const v4, 0x7f0300ce
 
     const/4 v5, 0x0
 
@@ -377,7 +377,7 @@
     .line 198
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/SingleLargeGraph;->mcontext:Landroid/content/Context;
 
-    const v5, 0x7f060004
+    const v5, 0x7f060005
 
     invoke-static {v4, v5}, Landroid/media/MediaPlayer;->create(Landroid/content/Context;I)Landroid/media/MediaPlayer;
 
@@ -773,7 +773,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0706ee
+    const v3, 0x7f0706f0
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -818,7 +818,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0706ef
+    const v3, 0x7f0706f1
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

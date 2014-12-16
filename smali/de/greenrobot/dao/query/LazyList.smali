@@ -3,8 +3,8 @@
 .source "LazyList.java"
 
 # interfaces
-.implements Ljava/util/List;
 .implements Ljava/io/Closeable;
+.implements Ljava/util/List;
 
 
 # annotations

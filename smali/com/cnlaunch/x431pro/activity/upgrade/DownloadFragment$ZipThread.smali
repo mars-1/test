@@ -36,21 +36,21 @@
     .parameter "softPackageID"
 
     .prologue
-    .line 803
+    .line 796
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 804
+    .line 797
     iput-object p2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->fileName:Ljava/lang/String;
 
-    .line 805
+    .line 798
     iput-object p3, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->filePath:Ljava/lang/String;
 
-    .line 806
+    .line 799
     iput-object p4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->softPackageID:Ljava/lang/String;
 
-    .line 807
+    .line 800
     return-void
 .end method
 
@@ -60,7 +60,7 @@
     .locals 15
 
     .prologue
-    .line 811
+    .line 804
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->downloadList:Ljava/util/List;
@@ -79,11 +79,11 @@
 
     if-nez v11, :cond_1
 
-    .line 916
+    .line 909
     :goto_0
     return-void
 
-    .line 811
+    .line 804
     :cond_1
     invoke-interface {v10}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -91,7 +91,7 @@
 
     check-cast v0, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
 
-    .line 812
+    .line 805
     .local v0, bean:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
     iget-object v11, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->fileName:Ljava/lang/String;
 
@@ -113,7 +113,7 @@
 
     if-eqz v11, :cond_0
 
-    .line 814
+    .line 807
     const/4 v10, 0x1
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->getType()I
@@ -122,7 +122,7 @@
 
     if-ne v10, v11, :cond_3
 
-    .line 815
+    .line 808
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-virtual {v10}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getActivity()Landroid/app/Activity;
@@ -131,7 +131,7 @@
 
     if-eqz v10, :cond_9
 
-    .line 816
+    .line 809
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mIsRoot:Z
@@ -141,12 +141,12 @@
 
     if-eqz v10, :cond_8
 
-    .line 817
+    .line 810
     const/4 v10, 0x6
 
     invoke-virtual {v0, v10}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setState(I)V
 
-    .line 818
+    .line 811
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mUIHandler:Landroid/os/Handler;
@@ -164,7 +164,7 @@
 
     move-result-object v4
 
-    .line 819
+    .line 812
     .local v4, msg:Landroid/os/Message;
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -175,7 +175,7 @@
 
     invoke-virtual {v10, v4}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 820
+    .line 813
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mContext:Landroid/content/Context;
@@ -189,13 +189,13 @@
 
     move-result v6
 
-    .line 821
+    .line 814
     .local v6, result:I
     const/4 v10, -0x2
 
     if-ne v10, v6, :cond_2
 
-    .line 822
+    .line 815
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     iget-object v11, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->softPackageID:Ljava/lang/String;
@@ -205,19 +205,19 @@
 
     move-result-object v5
 
-    .line 823
+    .line 816
     .local v5, packageName:Ljava/lang/String;
     if-eqz v5, :cond_2
 
-    .line 824
+    .line 817
     invoke-static {v5}, Lcom/cnlaunch/x431pro/utils/CommonUtils;->uninstallAPKSilently(Ljava/lang/String;)I
 
     move-result v6
 
-    .line 825
+    .line 818
     if-nez v6, :cond_2
 
-    .line 826
+    .line 819
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mContext:Landroid/content/Context;
@@ -231,23 +231,23 @@
 
     move-result v6
 
-    .line 830
+    .line 823
     .end local v5           #packageName:Ljava/lang/String;
     :cond_2
     if-nez v6, :cond_6
 
-    .line 831
+    .line 824
     const/4 v10, 0x4
 
     invoke-virtual {v0, v10}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setState(I)V
 
-    .line 832
+    .line 825
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #calls: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->addDownloadOK()V
     invoke-static {v10}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->access$7(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;)V
 
-    .line 865
+    .line 858
     .end local v4           #msg:Landroid/os/Message;
     .end local v6           #result:I
     :cond_3
@@ -260,7 +260,7 @@
 
     if-ne v10, v11, :cond_4
 
-    .line 866
+    .line 859
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->serialNo:Ljava/lang/String;
@@ -272,7 +272,7 @@
 
     move-result-object v9
 
-    .line 867
+    .line 860
     .local v9, zipPath:Ljava/lang/String;
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->filePath:Ljava/lang/String;
 
@@ -288,7 +288,7 @@
 
     move-result-object v3
 
-    .line 868
+    .line 861
     .local v3, message:Ljava/lang/String;
     const-string/jumbo v10, "success"
 
@@ -298,23 +298,23 @@
 
     if-eqz v10, :cond_a
 
-    .line 869
+    .line 862
     const/4 v10, 0x4
 
     invoke-virtual {v0, v10}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setState(I)V
 
-    .line 870
+    .line 863
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->filePath:Ljava/lang/String;
 
     invoke-static {v10}, Lcom/cnlaunch/x431pro/utils/file/FileUtils;->deleteFile(Ljava/lang/String;)Z
 
-    .line 871
+    .line 864
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #calls: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->addDownloadOK()V
     invoke-static {v10}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->access$7(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;)V
 
-    .line 879
+    .line 872
     .end local v3           #message:Ljava/lang/String;
     .end local v9           #zipPath:Ljava/lang/String;
     :cond_4
@@ -327,7 +327,7 @@
 
     if-ne v10, v11, :cond_5
 
-    .line 880
+    .line 873
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->serialNo:Ljava/lang/String;
@@ -339,7 +339,7 @@
 
     move-result-object v9
 
-    .line 881
+    .line 874
     .restart local v9       #zipPath:Ljava/lang/String;
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->filePath:Ljava/lang/String;
 
@@ -355,7 +355,7 @@
 
     move-result-object v3
 
-    .line 883
+    .line 876
     .restart local v3       #message:Ljava/lang/String;
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -388,7 +388,7 @@
 
     invoke-static {v10, v11}, Lcom/cnlaunch/framework/utils/NLog;->e(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 885
+    .line 878
     const-string/jumbo v10, "success"
 
     invoke-virtual {v10, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -397,7 +397,7 @@
 
     if-eqz v10, :cond_c
 
-    .line 886
+    .line 879
     new-instance v10, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;
 
     iget-object v11, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -418,12 +418,12 @@
 
     invoke-virtual {v10, v11}, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->update(Ljava/lang/String;)V
 
-    .line 888
+    .line 881
     new-instance v2, Lcom/ifoer/expedition/ndk/MakeLicense;
 
     invoke-direct {v2}, Lcom/ifoer/expedition/ndk/MakeLicense;-><init>()V
 
-    .line 889
+    .line 882
     .local v2, makeLicense:Lcom/ifoer/expedition/ndk/MakeLicense;
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -449,7 +449,7 @@
 
     move-result-object v8
 
-    .line 890
+    .line 883
     .local v8, versionsPaths:Ljava/lang/String;
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->filePath:Ljava/lang/String;
 
@@ -457,7 +457,7 @@
 
     move-result v7
 
-    .line 891
+    .line 884
     .local v7, succeedMakeLicense:Z
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -490,7 +490,7 @@
 
     invoke-static {v10, v11}, Lcom/cnlaunch/framework/utils/NLog;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 892
+    .line 885
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->tag:Ljava/lang/String;
@@ -534,20 +534,20 @@
 
     invoke-static {v10, v11}, Lcom/cnlaunch/framework/utils/NLog;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 893
+    .line 886
     if-eqz v7, :cond_b
 
-    .line 894
+    .line 887
     const/4 v10, 0x4
 
     invoke-virtual {v0, v10}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setState(I)V
 
-    .line 895
+    .line 888
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->filePath:Ljava/lang/String;
 
     invoke-static {v10}, Lcom/cnlaunch/x431pro/utils/file/FileUtils;->deleteFile(Ljava/lang/String;)Z
 
-    .line 897
+    .line 890
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->context:Landroid/content/Context;
@@ -565,13 +565,13 @@
 
     invoke-virtual {v10, v11, v12}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Z)V
 
-    .line 898
+    .line 891
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #calls: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->addDownloadOK()V
     invoke-static {v10}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->access$7(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;)V
 
-    .line 909
+    .line 902
     .end local v2           #makeLicense:Lcom/ifoer/expedition/ndk/MakeLicense;
     .end local v3           #message:Ljava/lang/String;
     .end local v7           #succeedMakeLicense:Z
@@ -583,7 +583,7 @@
 
     invoke-virtual {v0, v10}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setProgress(I)V
 
-    .line 910
+    .line 903
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mUIHandler:Landroid/os/Handler;
@@ -601,7 +601,7 @@
 
     move-result-object v4
 
-    .line 911
+    .line 904
     .restart local v4       #msg:Landroid/os/Message;
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -614,25 +614,25 @@
 
     goto/16 :goto_0
 
-    .line 834
+    .line 827
     .restart local v6       #result:I
     :cond_6
     const/4 v10, -0x2
 
     if-ne v10, v6, :cond_7
 
-    .line 835
+    .line 828
     const/4 v10, 0x5
 
     invoke-virtual {v0, v10}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setState(I)V
 
-    .line 836
+    .line 829
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #calls: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->addDownloadFailed()V
     invoke-static {v10}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->access$8(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;)V
 
-    .line 837
+    .line 830
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mUIHandler:Landroid/os/Handler;
@@ -650,7 +650,7 @@
 
     move-result-object v4
 
-    .line 838
+    .line 831
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mUIHandler:Landroid/os/Handler;
@@ -660,7 +660,7 @@
 
     invoke-virtual {v10, v4}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 839
+    .line 832
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mUIHandler:Landroid/os/Handler;
@@ -678,7 +678,7 @@
 
     move-result-object v4
 
-    .line 840
+    .line 833
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mUIHandler:Landroid/os/Handler;
@@ -688,7 +688,7 @@
 
     invoke-virtual {v10, v4}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 841
+    .line 834
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     const/4 v11, 0x1
@@ -696,7 +696,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mIsWaiting:Z
     invoke-static {v10, v11}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->access$9(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;Z)V
 
-    .line 842
+    .line 835
     :goto_4
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -707,7 +707,7 @@
 
     if-eqz v10, :cond_3
 
-    .line 844
+    .line 837
     const-wide/16 v10, 0x3e8
 
     :try_start_0
@@ -717,24 +717,24 @@
 
     goto :goto_4
 
-    .line 845
+    .line 838
     :catch_0
     move-exception v1
 
-    .line 846
+    .line 839
     .local v1, e:Ljava/lang/InterruptedException;
     invoke-virtual {v1}, Ljava/lang/InterruptedException;->printStackTrace()V
 
     goto :goto_4
 
-    .line 851
+    .line 844
     .end local v1           #e:Ljava/lang/InterruptedException;
     :cond_7
     const/4 v10, 0x5
 
     invoke-virtual {v0, v10}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setState(I)V
 
-    .line 852
+    .line 845
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #calls: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->addDownloadFailed()V
@@ -742,7 +742,7 @@
 
     goto/16 :goto_1
 
-    .line 856
+    .line 849
     .end local v4           #msg:Landroid/os/Message;
     .end local v6           #result:I
     :cond_8
@@ -753,7 +753,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mIsHasInstallManually:Z
     invoke-static {v10, v11}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->access$11(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;Z)V
 
-    .line 857
+    .line 850
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #calls: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->addDownloadOK()V
@@ -761,7 +761,7 @@
 
     goto/16 :goto_1
 
-    .line 861
+    .line 854
     :cond_9
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -770,7 +770,7 @@
 
     goto/16 :goto_1
 
-    .line 874
+    .line 867
     .restart local v3       #message:Ljava/lang/String;
     .restart local v9       #zipPath:Ljava/lang/String;
     :cond_a
@@ -781,7 +781,7 @@
 
     goto/16 :goto_2
 
-    .line 900
+    .line 893
     .restart local v2       #makeLicense:Lcom/ifoer/expedition/ndk/MakeLicense;
     .restart local v7       #succeedMakeLicense:Z
     .restart local v8       #versionsPaths:Ljava/lang/String;
@@ -790,7 +790,7 @@
 
     invoke-virtual {v0, v10}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setState(I)V
 
-    .line 901
+    .line 894
     iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$ZipThread;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #calls: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->addDownloadFailed()V
@@ -798,7 +798,7 @@
 
     goto/16 :goto_3
 
-    .line 906
+    .line 899
     .end local v2           #makeLicense:Lcom/ifoer/expedition/ndk/MakeLicense;
     .end local v7           #succeedMakeLicense:Z
     .end local v8           #versionsPaths:Ljava/lang/String;

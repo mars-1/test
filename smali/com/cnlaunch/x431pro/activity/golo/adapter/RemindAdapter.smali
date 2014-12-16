@@ -142,14 +142,14 @@
 
     move-result-object v4
 
-    const v5, 0x7f0300c8
+    const v5, 0x7f0300c9
 
     invoke-virtual {v4, v5, v9}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
 
     .line 185
-    const v4, 0x7f0d0265
+    const v4, 0x7f0c0269
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -158,7 +158,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->detailView:Landroid/view/View;
 
     .line 186
-    const v4, 0x7f0d025f
+    const v4, 0x7f0c0263
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -169,7 +169,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->tvName:Landroid/widget/TextView;
 
     .line 187
-    const v4, 0x7f0d0262
+    const v4, 0x7f0c0266
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -180,7 +180,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->tvTime:Landroid/widget/TextView;
 
     .line 188
-    const v4, 0x7f0d0264
+    const v4, 0x7f0c0268
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -191,7 +191,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->tvDetail:Landroid/widget/TextView;
 
     .line 189
-    const v4, 0x7f0d0260
+    const v4, 0x7f0c0264
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -202,7 +202,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->tvContent:Landroid/widget/TextView;
 
     .line 190
-    const v4, 0x7f0d0261
+    const v4, 0x7f0c0265
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -213,7 +213,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->tvSee:Landroid/widget/TextView;
 
     .line 191
-    const v4, 0x7f0d0263
+    const v4, 0x7f0c0267
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -224,7 +224,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->expend:Landroid/widget/ImageView;
 
     .line 192
-    const v4, 0x7f0d0136
+    const v4, 0x7f0c0136
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -235,7 +235,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->customer_car_num_textview_text:Landroid/widget/TextView;
 
     .line 193
-    const v4, 0x7f0d0135
+    const v4, 0x7f0c0135
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -246,7 +246,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->customer_car_type_textview_text:Landroid/widget/TextView;
 
     .line 194
-    const v4, 0x7f0d0137
+    const v4, 0x7f0c0137
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -257,7 +257,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->customer_car_brand_textview_text:Landroid/widget/TextView;
 
     .line 195
-    const v4, 0x7f0d0138
+    const v4, 0x7f0c0138
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -268,7 +268,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->customer_car_model_textview_text:Landroid/widget/TextView;
 
     .line 196
-    const v4, 0x7f0d0139
+    const v4, 0x7f0c0139
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -279,7 +279,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->customer_car_vin_textview_text:Landroid/widget/TextView;
 
     .line 197
-    const v4, 0x7f0d013b
+    const v4, 0x7f0c013b
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -290,7 +290,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->customer_car_year_textview_text:Landroid/widget/TextView;
 
     .line 198
-    const v4, 0x7f0d013d
+    const v4, 0x7f0c013d
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -301,7 +301,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->customer_car_discharge_textview_text:Landroid/widget/TextView;
 
     .line 199
-    const v4, 0x7f0d013c
+    const v4, 0x7f0c013c
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -312,7 +312,7 @@
     iput-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->customer_car_gearbox_textview_text:Landroid/widget/TextView;
 
     .line 200
-    const v4, 0x7f0d013a
+    const v4, 0x7f0c013a
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -431,7 +431,7 @@
     :cond_0
     iget-object v4, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->expend:Landroid/widget/ImageView;
 
-    const v5, 0x7f020170
+    const v5, 0x7f020171
 
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -627,7 +627,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0300c8
+    const v4, 0x7f0300c9
 
     invoke-virtual {v3, v4, v8}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -640,7 +640,7 @@
 
     .line 262
     .local v2, viewHold:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;
-    const v3, 0x7f0d0265
+    const v3, 0x7f0c0269
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -649,7 +649,7 @@
     iput-object v3, v2, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->detailView:Landroid/view/View;
 
     .line 263
-    const v3, 0x7f0d025f
+    const v3, 0x7f0c0263
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -660,7 +660,7 @@
     iput-object v3, v2, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->tvName:Landroid/widget/TextView;
 
     .line 264
-    const v3, 0x7f0d0262
+    const v3, 0x7f0c0266
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -671,7 +671,7 @@
     iput-object v3, v2, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->tvTime:Landroid/widget/TextView;
 
     .line 265
-    const v3, 0x7f0d0264
+    const v3, 0x7f0c0268
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -682,7 +682,7 @@
     iput-object v3, v2, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->tvDetail:Landroid/widget/TextView;
 
     .line 266
-    const v3, 0x7f0d0261
+    const v3, 0x7f0c0265
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -693,7 +693,7 @@
     iput-object v3, v2, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->tvSee:Landroid/widget/TextView;
 
     .line 267
-    const v3, 0x7f0d0260
+    const v3, 0x7f0c0264
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -704,7 +704,7 @@
     iput-object v3, v2, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->tvContent:Landroid/widget/TextView;
 
     .line 268
-    const v3, 0x7f0d0263
+    const v3, 0x7f0c0267
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -848,7 +848,7 @@
     :cond_0
     iget-object v3, v2, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$DetailViewHold;->expend:Landroid/widget/ImageView;
 
-    const v4, 0x7f0204d7
+    const v4, 0x7f0204db
 
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -935,14 +935,14 @@
 
     move-result-object v3
 
-    const v4, 0x7f0300c9
+    const v4, 0x7f0300ca
 
     invoke-virtual {v3, v4, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
 
     .line 156
-    const v3, 0x7f0d0266
+    const v3, 0x7f0c026a
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -953,7 +953,7 @@
     iput-object v3, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RemoteViewHold;->id:Landroid/widget/TextView;
 
     .line 157
-    const v3, 0x7f0d026a
+    const v3, 0x7f0c026e
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -964,7 +964,7 @@
     iput-object v3, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RemoteViewHold;->carNum:Landroid/widget/TextView;
 
     .line 158
-    const v3, 0x7f0d0269
+    const v3, 0x7f0c026d
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -975,7 +975,7 @@
     iput-object v3, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RemoteViewHold;->carType:Landroid/widget/TextView;
 
     .line 159
-    const v3, 0x7f0d026b
+    const v3, 0x7f0c026f
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -986,7 +986,7 @@
     iput-object v3, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RemoteViewHold;->create:Landroid/widget/TextView;
 
     .line 160
-    const v3, 0x7f0d026c
+    const v3, 0x7f0c0270
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -997,7 +997,7 @@
     iput-object v3, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RemoteViewHold;->des:Landroid/widget/TextView;
 
     .line 161
-    const v3, 0x7f0d0267
+    const v3, 0x7f0c026b
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1008,7 +1008,7 @@
     iput-object v3, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RemoteViewHold;->name:Landroid/widget/TextView;
 
     .line 162
-    const v3, 0x7f0d0268
+    const v3, 0x7f0c026c
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1157,14 +1157,14 @@
 
     move-result-object v5
 
-    const v6, 0x7f0300ca
+    const v6, 0x7f0300cb
 
     invoke-virtual {v5, v6, v7}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
 
     .line 120
-    const v5, 0x7f0d026d
+    const v5, 0x7f0c0271
 
     invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1175,7 +1175,7 @@
     iput-object v5, v3, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RepairViewHold;->id:Landroid/widget/TextView;
 
     .line 121
-    const v5, 0x7f0d0271
+    const v5, 0x7f0c0275
 
     invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1186,7 +1186,7 @@
     iput-object v5, v3, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RepairViewHold;->carinfo_id:Landroid/widget/TextView;
 
     .line 122
-    const v5, 0x7f0d026f
+    const v5, 0x7f0c0273
 
     invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1197,7 +1197,7 @@
     iput-object v5, v3, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RepairViewHold;->contact_name:Landroid/widget/TextView;
 
     .line 123
-    const v5, 0x7f0d0270
+    const v5, 0x7f0c0274
 
     invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1208,7 +1208,7 @@
     iput-object v5, v3, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RepairViewHold;->contact_phone:Landroid/widget/TextView;
 
     .line 124
-    const v5, 0x7f0d0274
+    const v5, 0x7f0c0278
 
     invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1219,7 +1219,7 @@
     iput-object v5, v3, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RepairViewHold;->created:Landroid/widget/TextView;
 
     .line 125
-    const v5, 0x7f0d0276
+    const v5, 0x7f0c027a
 
     invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1230,7 +1230,7 @@
     iput-object v5, v3, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RepairViewHold;->remark:Landroid/widget/TextView;
 
     .line 126
-    const v5, 0x7f0d0272
+    const v5, 0x7f0c0276
 
     invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1241,7 +1241,7 @@
     iput-object v5, v3, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RepairViewHold;->reserve_time:Landroid/widget/TextView;
 
     .line 127
-    const v5, 0x7f0d0275
+    const v5, 0x7f0c0279
 
     invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1252,7 +1252,7 @@
     iput-object v5, v3, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RepairViewHold;->response:Landroid/widget/TextView;
 
     .line 128
-    const v5, 0x7f0d0273
+    const v5, 0x7f0c0277
 
     invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1263,7 +1263,7 @@
     iput-object v5, v3, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemindAdapter$RepairViewHold;->shedule_time:Landroid/widget/TextView;
 
     .line 129
-    const v5, 0x7f0d026e
+    const v5, 0x7f0c0272
 
     invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

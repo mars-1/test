@@ -236,7 +236,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0706c4
+    const v2, 0x7f0706c6
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -254,7 +254,7 @@
     .locals 3
 
     .prologue
-    const v2, 0x7f02022a
+    const v2, 0x7f02022b
 
     .line 289
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/help/HelpFragment;->mbtn_func_display:Landroid/widget/Button;
@@ -271,7 +271,7 @@
     .line 291
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/help/HelpFragment;->mbtn_com_question_answ:Landroid/widget/Button;
 
-    const v1, 0x7f020229
+    const v1, 0x7f02022a
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
@@ -300,12 +300,12 @@
     .locals 3
 
     .prologue
-    const v2, 0x7f02022a
+    const v2, 0x7f02022b
 
     .line 298
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/help/HelpFragment;->mbtn_func_display:Landroid/widget/Button;
 
-    const v1, 0x7f020229
+    const v1, 0x7f02022a
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
@@ -346,7 +346,7 @@
     .locals 3
 
     .prologue
-    const v2, 0x7f02022a
+    const v2, 0x7f02022b
 
     .line 307
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/help/HelpFragment;->mbtn_func_display:Landroid/widget/Button;
@@ -361,7 +361,7 @@
     .line 309
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/help/HelpFragment;->mbtn_quick_smart:Landroid/widget/Button;
 
-    const v1, 0x7f020229
+    const v1, 0x7f02022a
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
@@ -378,7 +378,7 @@
     .locals 2
 
     .prologue
-    const v1, 0x7f02022a
+    const v1, 0x7f02022b
 
     .line 313
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/help/HelpFragment;->mbtn_func_display:Landroid/widget/Button;
@@ -398,7 +398,7 @@
     .line 316
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/help/HelpFragment;->mbtn_user_manual:Landroid/widget/Button;
 
-    const v1, 0x7f020229
+    const v1, 0x7f02022a
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
@@ -893,7 +893,7 @@
 
     .prologue
     .line 169
-    const v0, 0x7f0704ef
+    const v0, 0x7f0704f1
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/help/HelpFragment;->setTitle(I)V
 
@@ -904,7 +904,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -917,7 +917,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d00b7
+    const v1, 0x7f0c00b7
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -937,7 +937,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d00b8
+    const v1, 0x7f0c00b8
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -957,7 +957,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0212
+    const v1, 0x7f0c0215
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -977,7 +977,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0213
+    const v1, 0x7f0c0216
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -997,7 +997,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0214
+    const v1, 0x7f0c0217
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1017,7 +1017,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0215
+    const v1, 0x7f0c0218
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1052,7 +1052,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0211
+    const v2, 0x7f0c0214
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1340,7 +1340,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0704d7
+    const v7, 0x7f0704d9
 
     invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1357,7 +1357,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f070580
+    const v8, 0x7f070582
 
     invoke-virtual {v7, v8}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1767,11 +1767,11 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f0d00b7 -> :sswitch_1
-        0x7f0d00b8 -> :sswitch_0
-        0x7f0d0212 -> :sswitch_2
-        0x7f0d0213 -> :sswitch_3
-        0x7f0d0214 -> :sswitch_4
+        0x7f0c00b7 -> :sswitch_1
+        0x7f0c00b8 -> :sswitch_0
+        0x7f0c0215 -> :sswitch_2
+        0x7f0c0216 -> :sswitch_3
+        0x7f0c0217 -> :sswitch_4
     .end sparse-switch
 .end method
 

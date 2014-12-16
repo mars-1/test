@@ -253,7 +253,7 @@
 
     .prologue
     .line 126
-    const v0, 0x7f0705b9
+    const v0, 0x7f0705bb
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/mine/ModifyPasswordFragment;->setTitle(I)V
 
@@ -264,7 +264,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -277,7 +277,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0393
+    const v1, 0x7f0c03a9
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -292,7 +292,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0395
+    const v1, 0x7f0c03ab
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -307,7 +307,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0397
+    const v1, 0x7f0c03ad
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -322,7 +322,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0399
+    const v1, 0x7f0c03af
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -337,7 +337,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0394
+    const v1, 0x7f0c03aa
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -352,7 +352,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0396
+    const v1, 0x7f0c03ac
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -367,7 +367,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0398
+    const v1, 0x7f0c03ae
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -570,9 +570,9 @@
     .locals 4
 
     .prologue
-    const v3, 0x7f070681
+    const v3, 0x7f070683
 
-    const v2, 0x7f070632
+    const v2, 0x7f070634
 
     const/4 v1, 0x6
 
@@ -764,7 +764,7 @@
     .line 329
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/ModifyPasswordFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0705c3
+    const v1, 0x7f0705c5
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -896,7 +896,7 @@
 
     .prologue
     .line 106
-    const v0, 0x7f030143
+    const v0, 0x7f030145
 
     const/4 v1, 0x0
 
@@ -982,7 +982,7 @@
     .line 86
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/ModifyPasswordFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0706d8
+    const v1, 0x7f0706da
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -1044,7 +1044,7 @@
     .line 355
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/ModifyPasswordFragment;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0705b6
+    const v2, 0x7f0705b8
 
     invoke-static {v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -1083,7 +1083,7 @@
     :sswitch_0
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/ModifyPasswordFragment;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f070632
+    const v2, 0x7f070634
 
     invoke-static {v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -1093,7 +1093,7 @@
     :sswitch_1
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/ModifyPasswordFragment;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0706da
+    const v2, 0x7f0706dc
 
     invoke-static {v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -1103,7 +1103,7 @@
     :sswitch_2
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/ModifyPasswordFragment;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0705b7
+    const v2, 0x7f0705b9
 
     invoke-static {v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 

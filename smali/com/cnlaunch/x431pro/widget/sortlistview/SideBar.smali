@@ -333,7 +333,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 105
-    const v5, 0x7f020599
+    const v5, 0x7f02059d
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;->setBackgroundResource(I)V
 

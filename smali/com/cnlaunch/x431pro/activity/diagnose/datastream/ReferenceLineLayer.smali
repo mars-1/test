@@ -135,7 +135,7 @@
     .line 167
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ReferenceLineLayer;->mRefLineLayout:Lcom/cnlaunch/android/widget/SlideGaugeLayout;
 
-    const v4, 0x7f0d0279
+    const v4, 0x7f0c027d
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/android/widget/SlideGaugeLayout;->findViewById(I)Landroid/view/View;
 
@@ -170,7 +170,7 @@
     .line 173
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ReferenceLineLayer;->mRefLineLayout:Lcom/cnlaunch/android/widget/SlideGaugeLayout;
 
-    const v4, 0x7f0d027b
+    const v4, 0x7f0c027f
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/android/widget/SlideGaugeLayout;->findViewById(I)Landroid/view/View;
 
@@ -236,7 +236,7 @@
     if-ne p2, v0, :cond_2
 
     .line 96
-    const v1, 0x7f0d0279
+    const v1, 0x7f0c027d
 
     .line 101
     :cond_0
@@ -292,7 +292,7 @@
     if-ne p2, v4, :cond_0
 
     .line 99
-    const v1, 0x7f0d027b
+    const v1, 0x7f0c027f
 
     goto :goto_0
 
@@ -425,7 +425,7 @@
 
     .line 63
     .local v2, measureValue:D
-    const v0, 0x7f0d027a
+    const v0, 0x7f0c027e
 
     invoke-virtual {p3, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -452,7 +452,7 @@
 
     move-result v0
 
-    const v1, 0x7f0d0279
+    const v1, 0x7f0c027d
 
     if-ne v0, v1, :cond_3
 
@@ -497,7 +497,7 @@
 
     move-result v0
 
-    const v1, 0x7f0d027b
+    const v1, 0x7f0c027f
 
     if-ne v0, v1, :cond_2
 
@@ -532,7 +532,7 @@
     .parameter "visible"
 
     .prologue
-    const v2, 0x7f0d027a
+    const v2, 0x7f0c027e
 
     .line 149
     if-eqz p1, :cond_0
@@ -547,7 +547,7 @@
     .line 151
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ReferenceLineLayer;->mRefLineLayout:Lcom/cnlaunch/android/widget/SlideGaugeLayout;
 
-    const v1, 0x7f0d0279
+    const v1, 0x7f0c027d
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/android/widget/SlideGaugeLayout;->findViewById(I)Landroid/view/View;
 
@@ -571,7 +571,7 @@
     .line 154
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ReferenceLineLayer;->mRefLineLayout:Lcom/cnlaunch/android/widget/SlideGaugeLayout;
 
-    const v1, 0x7f0d027b
+    const v1, 0x7f0c027f
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/android/widget/SlideGaugeLayout;->findViewById(I)Landroid/view/View;
 
@@ -650,7 +650,7 @@
     if-ne p4, v7, :cond_3
 
     .line 123
-    const v3, 0x7f0d0279
+    const v3, 0x7f0c027d
 
     .line 131
     :goto_0
@@ -683,7 +683,7 @@
     invoke-virtual {v7, v4, v8, v2}, Lcom/cnlaunch/android/widget/SlideGaugeLayout;->forceUpdateChildPosition(Landroid/view/View;II)V
 
     .line 136
-    const v7, 0x7f0d027a
+    const v7, 0x7f0c027e
 
     invoke-virtual {v4, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -734,7 +734,7 @@
     if-ne p4, v7, :cond_2
 
     .line 127
-    const v3, 0x7f0d027b
+    const v3, 0x7f0c027f
 
     .line 128
     goto :goto_0

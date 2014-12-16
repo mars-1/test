@@ -37,7 +37,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300dc
+    const v1, 0x7f0300dd
 
     invoke-virtual {v0, v1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -57,7 +57,7 @@
     .line 33
     iget-object v0, p0, Lcom/cnlaunch/x431pro/widget/dialog/TipDialog;->mContentView:Landroid/view/View;
 
-    const v1, 0x7f0d02a0
+    const v1, 0x7f0c02a4
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -70,7 +70,7 @@
     .line 34
     iget-object v0, p0, Lcom/cnlaunch/x431pro/widget/dialog/TipDialog;->mContentView:Landroid/view/View;
 
-    const v1, 0x7f0d02a4
+    const v1, 0x7f0c02a8
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -88,7 +88,7 @@
     .line 36
     iget-object v0, p0, Lcom/cnlaunch/x431pro/widget/dialog/TipDialog;->mContentView:Landroid/view/View;
 
-    const v1, 0x7f0d02a3
+    const v1, 0x7f0c02a7
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -527,7 +527,7 @@
 
     move-result v0
 
-    const v1, 0x7f0d02a4
+    const v1, 0x7f0c02a8
 
     if-ne v0, v1, :cond_0
 

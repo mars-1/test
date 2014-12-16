@@ -7,44 +7,42 @@
 .field private static loadDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;
 
 
-# instance fields
-.field private canNotCancel:Z
-
-.field private tipMsg:Ljava/lang/String;
-
-
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ZLjava/lang/String;)V
-    .locals 4
+    .locals 5
     .parameter "ctx"
     .parameter "canNotCancel"
     .parameter "tipMsg"
 
     .prologue
-    .line 47
+    const/4 v3, 0x0
+
+    .line 36
     invoke-direct {p0, p1}, Landroid/app/Dialog;-><init>(Landroid/content/Context;)V
 
-    .line 49
-    iput-boolean p2, p0, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->canNotCancel:Z
-
-    .line 50
-    iput-object p3, p0, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->tipMsg:Ljava/lang/String;
-
-    .line 54
+    .line 40
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    const v3, 0x1030131
+    const v4, 0x1030131
 
-    invoke-virtual {v2, v3}, Landroid/content/Context;->setTheme(I)V
+    invoke-virtual {v2, v4}, Landroid/content/Context;->setTheme(I)V
 
-    .line 56
-    const v2, 0x7f0300d6
+    .line 42
+    const v2, 0x7f0300d7
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->setContentView(I)V
 
-    .line 61
+    .line 44
+    if-eqz p2, :cond_1
+
+    move v2, v3
+
+    :goto_0
+    invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->setCancelable(Z)V
+
+    .line 47
     const v2, 0x102000b
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->findViewById(I)Landroid/view/View;
@@ -53,7 +51,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 63
+    .line 49
     .local v0, tv:Landroid/widget/TextView;
     invoke-static {p3}, Lcom/cnlaunch/x431pro/utils/StringUtils;->isEmpty(Ljava/lang/String;)Z
 
@@ -61,16 +59,16 @@
 
     if-nez v2, :cond_0
 
-    .line 64
+    .line 50
     invoke-virtual {v0, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 67
+    .line 53
     :cond_0
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
-    .line 68
+    .line 54
     .local v1, window:Landroid/view/Window;
     invoke-virtual {v1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
 
@@ -80,12 +78,18 @@
 
     move-result-object v2
 
-    const/4 v3, 0x0
-
     invoke-virtual {v2, v3}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
-    .line 69
+    .line 55
     return-void
+
+    .line 44
+    .end local v0           #tv:Landroid/widget/TextView;
+    .end local v1           #window:Landroid/view/Window;
+    :cond_1
+    const/4 v2, 0x1
+
+    goto :goto_0
 .end method
 
 .method public static dismiss(Landroid/content/Context;)V
@@ -95,23 +99,23 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 148
+    .line 128
     if-nez p0, :cond_1
 
-    .line 149
+    .line 129
     const/4 v2, 0x0
 
     :try_start_0
     sput-object v2, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->loadDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;
 
-    .line 175
+    .line 155
     .end local p0
     .local v0, e:Ljava/lang/Exception;
     :cond_0
     :goto_0
     return-void
 
-    .line 153
+    .line 133
     .end local v0           #e:Ljava/lang/Exception;
     .restart local p0
     :cond_1
@@ -119,7 +123,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 154
+    .line 134
     check-cast p0, Landroid/app/Activity;
 
     .end local p0
@@ -129,7 +133,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 155
+    .line 135
     const/4 v2, 0x0
 
     sput-object v2, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->loadDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;
@@ -138,20 +142,20 @@
 
     goto :goto_0
 
-    .line 171
+    .line 151
     :catch_0
     move-exception v0
 
-    .line 172
+    .line 152
     .restart local v0       #e:Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 173
+    .line 153
     sput-object v3, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->loadDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;
 
     goto :goto_0
 
-    .line 160
+    .line 140
     .end local v0           #e:Ljava/lang/Exception;
     :cond_2
     :try_start_1
@@ -167,14 +171,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 161
+    .line 141
     sget-object v2, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->loadDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;
 
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    .line 162
+    .line 142
     .local v1, loadContext:Landroid/content/Context;
     if-eqz v1, :cond_3
 
@@ -182,7 +186,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 163
+    .line 143
     check-cast v1, Landroid/app/Activity;
 
     .end local v1           #loadContext:Landroid/content/Context;
@@ -192,20 +196,20 @@
 
     if-eqz v2, :cond_3
 
-    .line 164
+    .line 144
     const/4 v2, 0x0
 
     sput-object v2, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->loadDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;
 
     goto :goto_0
 
-    .line 168
+    .line 148
     :cond_3
     sget-object v2, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->loadDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;
 
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss()V
 
-    .line 169
+    .line 149
     const/4 v2, 0x0
 
     sput-object v2, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->loadDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;
@@ -220,14 +224,14 @@
     .parameter "context"
 
     .prologue
-    .line 88
+    .line 68
     const/4 v0, 0x0
 
     const/4 v1, 0x0
 
     invoke-static {p0, v0, v1}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;Ljava/lang/String;Z)V
 
-    .line 89
+    .line 69
     return-void
 .end method
 
@@ -237,7 +241,7 @@
     .parameter "resourceId"
 
     .prologue
-    .line 112
+    .line 92
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -250,7 +254,7 @@
 
     invoke-static {p0, v0, v1}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;Ljava/lang/String;Z)V
 
-    .line 113
+    .line 93
     return-void
 .end method
 
@@ -260,31 +264,31 @@
     .parameter "message"
 
     .prologue
-    .line 100
+    .line 80
     const/4 v0, 0x0
 
     invoke-static {p0, p1, v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;Ljava/lang/String;Z)V
 
-    .line 101
+    .line 81
     return-void
 .end method
 
-.method private static show(Landroid/content/Context;Ljava/lang/String;Z)V
+.method public static show(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 1
     .parameter "context"
     .parameter "message"
     .parameter "isCancel"
 
     .prologue
-    .line 126
+    .line 106
     if-nez p0, :cond_1
 
-    .line 141
+    .line 121
     :cond_0
     :goto_0
     return-void
 
-    .line 130
+    .line 110
     :cond_1
     instance-of v0, p0, Landroid/app/Activity;
 
@@ -292,7 +296,7 @@
 
     move-object v0, p0
 
-    .line 131
+    .line 111
     check-cast v0, Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
@@ -301,14 +305,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 132
+    .line 112
     const/4 v0, 0x0
 
     sput-object v0, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->loadDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;
 
     goto :goto_0
 
-    .line 136
+    .line 116
     :cond_2
     sget-object v0, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->loadDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;
 
@@ -322,7 +326,7 @@
 
     if-nez v0, :cond_0
 
-    .line 139
+    .line 119
     :cond_3
     new-instance v0, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;
 
@@ -330,7 +334,7 @@
 
     sput-object v0, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->loadDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;
 
-    .line 140
+    .line 120
     sget-object v0, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->loadDialog:Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show()V
@@ -340,42 +344,16 @@
 
 
 # virtual methods
-.method public onKeyDown(ILandroid/view/KeyEvent;)Z
-    .locals 2
-    .parameter "keyCode"
-    .parameter "event"
+.method protected onCreate(Landroid/os/Bundle;)V
+    .locals 1
+    .parameter "savedInstanceState"
 
     .prologue
-    .line 73
-    const/4 v0, 0x4
+    .line 59
+    const/4 v0, 0x0
 
-    if-ne p1, v0, :cond_0
+    invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->setCanceledOnTouchOutside(Z)V
 
-    .line 74
-    iget-boolean v0, p0, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->canNotCancel:Z
-
-    if-eqz v0, :cond_0
-
-    .line 75
-    invoke-virtual {p0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->tipMsg:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;Ljava/lang/String;)V
-
-    .line 76
-    const/4 v0, 0x1
-
-    .line 79
-    :goto_0
-    return v0
-
-    :cond_0
-    invoke-super {p0, p1, p2}, Landroid/app/Dialog;->onKeyDown(ILandroid/view/KeyEvent;)Z
-
-    move-result v0
-
-    goto :goto_0
+    .line 60
+    return-void
 .end method

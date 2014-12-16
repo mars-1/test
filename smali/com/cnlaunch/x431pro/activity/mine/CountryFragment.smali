@@ -3,8 +3,8 @@
 .source "CountryFragment.java"
 
 # interfaces
-.implements Landroid/widget/AdapterView$OnItemClickListener;
 .implements Landroid/view/View$OnClickListener;
+.implements Landroid/widget/AdapterView$OnItemClickListener;
 
 
 # annotations
@@ -509,7 +509,7 @@
 
     .prologue
     .line 88
-    const v0, 0x7f0705b0
+    const v0, 0x7f0705b2
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/mine/CountryFragment;->setTitle(I)V
 
@@ -520,7 +520,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -547,7 +547,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d035b
+    const v1, 0x7f0c0372
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -567,7 +567,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d035a
+    const v1, 0x7f0c0371
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -589,7 +589,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d035c
+    const v1, 0x7f0c0373
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -611,7 +611,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0050
+    const v1, 0x7f0c0050
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -827,7 +827,7 @@
 
     .line 303
     :pswitch_data_0
-    .packed-switch 0x7f0d0050
+    .packed-switch 0x7f0c0050
         :pswitch_0
     .end packed-switch
 .end method
@@ -840,7 +840,7 @@
 
     .prologue
     .line 84
-    const v0, 0x7f030135
+    const v0, 0x7f030137
 
     const/4 v1, 0x0
 
@@ -913,7 +913,7 @@
     .prologue
     .line 236
     .local p1, arg0:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
-    const v1, 0x7f0d035e
+    const v1, 0x7f0c0375
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

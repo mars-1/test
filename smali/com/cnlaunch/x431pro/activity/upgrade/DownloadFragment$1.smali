@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
-    .line 224
+    .line 217
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
@@ -38,7 +38,7 @@
     .parameter
 
     .prologue
-    .line 224
+    .line 217
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     return-object v0
@@ -51,7 +51,7 @@
     .parameter "msg"
 
     .prologue
-    const v8, 0x7f0704ea
+    const v8, 0x7f0704ec
 
     const/16 v10, 0x32
 
@@ -61,17 +61,17 @@
 
     const/4 v9, 0x0
 
-    .line 226
+    .line 219
     iget v6, p1, Landroid/os/Message;->what:I
 
     packed-switch v6, :pswitch_data_0
 
-    .line 516
+    .line 509
     :cond_0
     :goto_0
     return-void
 
-    .line 228
+    .line 221
     :pswitch_0
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -86,7 +86,7 @@
 
     if-lez v4, :cond_2
 
-    .line 229
+    .line 222
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getActivity()Landroid/app/Activity;
@@ -95,7 +95,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 230
+    .line 223
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mContext:Landroid/content/Context;
@@ -110,7 +110,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f07058d
+    const v7, 0x7f07058f
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -118,16 +118,16 @@
 
     invoke-static {v4, v6}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 232
+    .line 225
     :cond_1
     new-instance v4, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$1;
 
     invoke-direct {v4, p0}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$1;-><init>(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;)V
 
-    .line 238
+    .line 231
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$1;->start()V
 
-    .line 240
+    .line 233
     :cond_2
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -136,11 +136,11 @@
 
     move-result-object v4
 
-    const v6, 0x7f07057e
+    const v6, 0x7f070580
 
     invoke-virtual {v4, v6}, Landroid/widget/Button;->setText(I)V
 
-    .line 241
+    .line 234
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getActivity()Landroid/app/Activity;
@@ -149,24 +149,24 @@
 
     if-eqz v4, :cond_0
 
-    .line 242
+    .line 235
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
-    const v6, 0x7f020528
+    const v6, 0x7f02052c
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    .line 243
+    .line 236
     .local v1, drawable:Landroid/graphics/drawable/Drawable;
     invoke-virtual {v1, v5, v5, v10, v10}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 244
+    .line 237
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -176,7 +176,7 @@
 
     invoke-virtual {v4, v9, v1, v9, v9}, Landroid/widget/Button;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 245
+    .line 238
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mDownloadOK:Ljava/lang/Integer;
@@ -201,7 +201,7 @@
 
     if-lt v4, v6, :cond_0
 
-    .line 246
+    .line 239
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -213,7 +213,7 @@
 
     goto :goto_0
 
-    .line 252
+    .line 245
     .end local v1           #drawable:Landroid/graphics/drawable/Drawable;
     :pswitch_1
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -236,7 +236,7 @@
 
     move-result-object v6
 
-    .line 253
+    .line 246
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->downloadList:Ljava/util/List;
@@ -252,7 +252,7 @@
 
     move-result-object v7
 
-    .line 252
+    .line 245
     invoke-virtual {v5, v6, v7}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getUpgradeNum(Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;
 
     move-result-object v5
@@ -261,7 +261,7 @@
 
     goto/16 :goto_0
 
-    .line 257
+    .line 250
     :pswitch_2
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -272,7 +272,7 @@
 
     if-eqz v5, :cond_3
 
-    .line 258
+    .line 251
     new-instance v4, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$2;
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -284,14 +284,14 @@
 
     invoke-direct {v4, p0, v5}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$2;-><init>(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;Landroid/content/Context;)V
 
-    .line 264
-    const v5, 0x7f07058c
+    .line 257
+    const v5, 0x7f07058e
 
     invoke-virtual {v4, v8, v5}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$2;->show(II)V
 
     goto/16 :goto_0
 
-    .line 266
+    .line 259
     :cond_3
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -330,7 +330,7 @@
 
     if-ge v5, v6, :cond_4
 
-    .line 267
+    .line 260
     new-instance v4, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$3;
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -342,15 +342,15 @@
 
     invoke-direct {v4, p0, v5}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$3;-><init>(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;Landroid/content/Context;)V
 
-    .line 274
-    const v5, 0x7f07058a
+    .line 267
+    const v5, 0x7f07058c
 
-    .line 273
+    .line 266
     invoke-virtual {v4, v8, v5}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$3;->show(II)V
 
     goto/16 :goto_0
 
-    .line 276
+    .line 269
     :cond_4
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -365,7 +365,7 @@
 
     if-lez v5, :cond_5
 
-    .line 277
+    .line 270
     new-instance v4, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$4;
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -377,15 +377,15 @@
 
     invoke-direct {v4, p0, v5}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$4;-><init>(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;Landroid/content/Context;)V
 
-    .line 284
-    const v5, 0x7f070589
+    .line 277
+    const v5, 0x7f07058b
 
-    .line 283
+    .line 276
     invoke-virtual {v4, v8, v5}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$4;->show(II)V
 
     goto/16 :goto_0
 
-    .line 286
+    .line 279
     :cond_5
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -411,7 +411,7 @@
 
     if-lt v5, v6, :cond_0
 
-    .line 287
+    .line 280
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-virtual {v5}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getActivity()Landroid/app/Activity;
@@ -426,7 +426,7 @@
 
     invoke-virtual {v5, v6, v4}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Z)V
 
-    .line 288
+    .line 281
     new-instance v4, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$5;
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -438,12 +438,12 @@
 
     invoke-direct {v4, p0, v5}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$5;-><init>(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;Landroid/content/Context;)V
 
-    .line 350
+    .line 343
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$5;->showSuccessDialog()V
 
     goto/16 :goto_0
 
-    .line 355
+    .line 348
     :pswitch_3
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -454,7 +454,7 @@
 
     if-eqz v6, :cond_6
 
-    .line 356
+    .line 349
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mContext:Landroid/content/Context;
@@ -470,7 +470,7 @@
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 357
+    .line 350
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mContext:Landroid/content/Context;
@@ -488,7 +488,7 @@
 
     invoke-virtual {v6, v7, v8}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 358
+    .line 351
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mContext:Landroid/content/Context;
@@ -504,7 +504,7 @@
 
     invoke-virtual {v6, v7, v4}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Z)V
 
-    .line 359
+    .line 352
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mContext:Landroid/content/Context;
@@ -522,7 +522,7 @@
 
     invoke-virtual {v6, v7, v8}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 360
+    .line 353
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mContext:Landroid/content/Context;
@@ -540,7 +540,7 @@
 
     invoke-virtual {v6, v7, v8}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 361
+    .line 354
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mContext:Landroid/content/Context;
@@ -558,7 +558,7 @@
 
     invoke-virtual {v6, v7, v8}, Lcom/cnlaunch/framework/common/PreferencesManager;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 363
+    .line 356
     :cond_6
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -567,11 +567,11 @@
 
     move-result-object v6
 
-    const v7, 0x7f07057e
+    const v7, 0x7f070580
 
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setText(I)V
 
-    .line 364
+    .line 357
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-virtual {v6}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getActivity()Landroid/app/Activity;
@@ -580,24 +580,24 @@
 
     if-eqz v6, :cond_7
 
-    .line 365
+    .line 358
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-virtual {v6}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
-    const v7, 0x7f020528
+    const v7, 0x7f02052c
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    .line 366
+    .line 359
     .restart local v1       #drawable:Landroid/graphics/drawable/Drawable;
     invoke-virtual {v1, v5, v5, v10, v10}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 367
+    .line 360
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -607,7 +607,7 @@
 
     invoke-virtual {v5, v9, v1, v9, v9}, Landroid/widget/Button;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 368
+    .line 361
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -617,7 +617,7 @@
 
     invoke-virtual {v5, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 370
+    .line 363
     .end local v1           #drawable:Landroid/graphics/drawable/Drawable;
     :cond_7
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
@@ -629,38 +629,38 @@
 
     move-result-object v5
 
-    .line 371
-    const v6, 0x7f070692
+    .line 364
+    const v6, 0x7f070694
 
-    .line 372
-    const v7, 0x7f070693
+    .line 365
+    const v7, 0x7f070695
 
-    .line 370
+    .line 363
     invoke-direct {v2, v5, v6, v7}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;-><init>(Landroid/content/Context;II)V
 
-    .line 373
+    .line 366
     .local v2, loginConflictDialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
-    const v5, 0x7f070044
+    const v5, 0x7f07002b
 
-    .line 374
+    .line 367
     new-instance v6, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$6;
 
     invoke-direct {v6, p0}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$6;-><init>(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;)V
 
-    .line 373
+    .line 366
     invoke-virtual {v2, v5, v4, v6}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
-    .line 381
-    const v5, 0x7f070042
+    .line 374
+    const v5, 0x7f070029
 
     invoke-virtual {v2, v5, v4, v9}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setBetaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
-    .line 382
+    .line 375
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->show()V
 
     goto/16 :goto_0
 
-    .line 386
+    .line 379
     .end local v2           #loginConflictDialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
     :pswitch_4
     new-instance v4, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$7;
@@ -674,19 +674,19 @@
 
     invoke-direct {v4, p0, v5}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$7;-><init>(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;Landroid/content/Context;)V
 
-    .line 401
+    .line 394
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$7;->showLoginDialog()Lcom/cnlaunch/x431pro/widget/dialog/LoginDialog;
 
     goto/16 :goto_0
 
-    .line 406
+    .line 399
     :pswitch_5
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #calls: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->initManager()V
     invoke-static {v4}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->access$23(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;)V
 
-    .line 407
+    .line 400
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -696,7 +696,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->mDownloadFailed:Ljava/lang/Integer;
     invoke-static {v4, v6}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->access$24(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;Ljava/lang/Integer;)V
 
-    .line 408
+    .line 401
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -704,28 +704,28 @@
 
     move-result-object v4
 
-    const v6, 0x7f07057c
+    const v6, 0x7f07057e
 
     invoke-virtual {v4, v6}, Landroid/widget/Button;->setText(I)V
 
-    .line 409
+    .line 402
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
-    const v6, 0x7f020529
+    const v6, 0x7f02052d
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    .line 410
+    .line 403
     .restart local v1       #drawable:Landroid/graphics/drawable/Drawable;
     invoke-virtual {v1, v5, v5, v10, v10}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 411
+    .line 404
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -735,7 +735,7 @@
 
     invoke-virtual {v4, v9, v1, v9, v9}, Landroid/widget/Button;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 412
+    .line 405
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #calls: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->initData()V
@@ -743,7 +743,7 @@
 
     goto/16 :goto_0
 
-    .line 418
+    .line 411
     .end local v1           #drawable:Landroid/graphics/drawable/Drawable;
     :pswitch_6
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -755,7 +755,7 @@
 
     invoke-virtual {v4, v9}, Lcom/cnlaunch/framework/network/download/DownloadManager;->setDownLoadCallback(Lcom/cnlaunch/framework/network/download/DownLoadCallback;)V
 
-    .line 419
+    .line 412
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->downloadMgr:Lcom/cnlaunch/framework/network/download/DownloadManager;
@@ -765,7 +765,7 @@
 
     invoke-virtual {v4}, Lcom/cnlaunch/framework/network/download/DownloadManager;->close()V
 
-    .line 420
+    .line 413
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->threadPool:Ljava/util/concurrent/ThreadPoolExecutor;
@@ -775,7 +775,7 @@
 
     invoke-virtual {v4}, Ljava/util/concurrent/ThreadPoolExecutor;->shutdownNow()Ljava/util/List;
 
-    .line 421
+    .line 414
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -783,28 +783,28 @@
 
     move-result-object v4
 
-    const v6, 0x7f07057d
+    const v6, 0x7f07057f
 
     invoke-virtual {v4, v6}, Landroid/widget/Button;->setText(I)V
 
-    .line 422
+    .line 415
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-virtual {v4}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
-    const v6, 0x7f020527
+    const v6, 0x7f02052b
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    .line 423
+    .line 416
     .restart local v1       #drawable:Landroid/graphics/drawable/Drawable;
     invoke-virtual {v1, v5, v5, v10, v10}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 424
+    .line 417
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -816,7 +816,7 @@
 
     goto/16 :goto_0
 
-    .line 429
+    .line 422
     .end local v1           #drawable:Landroid/graphics/drawable/Drawable;
     :pswitch_7
     new-instance v4, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$8;
@@ -830,14 +830,14 @@
 
     invoke-direct {v4, p0, v5}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$8;-><init>(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;Landroid/content/Context;)V
 
-    .line 435
-    const v5, 0x7f07058b
+    .line 428
+    const v5, 0x7f07058d
 
     invoke-virtual {v4, v8, v5}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$8;->show(II)V
 
     goto/16 :goto_0
 
-    .line 439
+    .line 432
     :pswitch_8
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -850,7 +850,7 @@
 
     goto/16 :goto_0
 
-    .line 443
+    .line 436
     :pswitch_9
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
@@ -873,7 +873,7 @@
 
     goto :goto_1
 
-    .line 447
+    .line 440
     :pswitch_a
     new-instance v3, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$9;
 
@@ -886,37 +886,37 @@
 
     invoke-direct {v3, p0, v6}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1$9;-><init>(Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;Landroid/content/Context;)V
 
-    .line 475
+    .line 468
     .local v3, msgBox:Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;
     invoke-virtual {v3, v8}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->setTitle(I)V
 
-    .line 476
-    const v6, 0x7f070598
+    .line 469
+    const v6, 0x7f07059a
 
     invoke-virtual {v3, v6}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->setMessage(I)V
 
-    .line 477
+    .line 470
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->setCancelable(Z)V
 
-    .line 478
-    const v6, 0x7f0704e1
+    .line 471
+    const v6, 0x7f0704e3
 
     invoke-virtual {v3, v6, v4, v9}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
-    .line 479
-    const v6, 0x7f070751
+    .line 472
+    const v6, 0x7f070753
 
     invoke-virtual {v3, v6, v4, v9}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->setBetaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
-    .line 480
+    .line 473
     const/4 v6, 0x2
 
     invoke-virtual {v3, v6}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->setButtonBackground(I)V
 
-    .line 481
+    .line 474
     invoke-virtual {v3}, Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;->show()V
 
-    .line 483
+    .line 476
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -924,11 +924,11 @@
 
     move-result-object v6
 
-    const v7, 0x7f07057e
+    const v7, 0x7f070580
 
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setText(I)V
 
-    .line 484
+    .line 477
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-virtual {v6}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getActivity()Landroid/app/Activity;
@@ -937,24 +937,24 @@
 
     if-eqz v6, :cond_0
 
-    .line 485
+    .line 478
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-virtual {v6}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
-    const v7, 0x7f020528
+    const v7, 0x7f02052c
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    .line 486
+    .line 479
     .restart local v1       #drawable:Landroid/graphics/drawable/Drawable;
     invoke-virtual {v1, v5, v5, v10, v10}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 487
+    .line 480
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -964,7 +964,7 @@
 
     invoke-virtual {v5, v9, v1, v9, v9}, Landroid/widget/Button;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 488
+    .line 481
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -976,7 +976,7 @@
 
     goto/16 :goto_0
 
-    .line 493
+    .line 486
     .end local v1           #drawable:Landroid/graphics/drawable/Drawable;
     .end local v3           #msgBox:Lcom/cnlaunch/x431pro/widget/dialog/BaseDialog;
     :pswitch_b
@@ -989,7 +989,7 @@
 
     invoke-virtual {v6, v9}, Lcom/cnlaunch/framework/network/download/DownloadManager;->setDownLoadCallback(Lcom/cnlaunch/framework/network/download/DownLoadCallback;)V
 
-    .line 494
+    .line 487
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->downloadMgr:Lcom/cnlaunch/framework/network/download/DownloadManager;
@@ -999,7 +999,7 @@
 
     invoke-virtual {v6}, Lcom/cnlaunch/framework/network/download/DownloadManager;->close()V
 
-    .line 495
+    .line 488
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->threadPool:Ljava/util/concurrent/ThreadPoolExecutor;
@@ -1009,7 +1009,7 @@
 
     invoke-virtual {v6}, Ljava/util/concurrent/ThreadPoolExecutor;->shutdownNow()Ljava/util/List;
 
-    .line 496
+    .line 489
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->downloadList:Ljava/util/List;
@@ -1029,7 +1029,7 @@
 
     if-nez v7, :cond_a
 
-    .line 503
+    .line 496
     new-instance v6, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
 
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
@@ -1041,11 +1041,11 @@
 
     invoke-direct {v6, v7}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;-><init>(Landroid/content/Context;)V
 
-    const v7, 0x7f0704de
+    const v7, 0x7f0704e0
 
     invoke-virtual {v6, v8, v7}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->show(II)V
 
-    .line 504
+    .line 497
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -1053,11 +1053,11 @@
 
     move-result-object v6
 
-    const v7, 0x7f07057e
+    const v7, 0x7f070580
 
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setText(I)V
 
-    .line 505
+    .line 498
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-virtual {v6}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getActivity()Landroid/app/Activity;
@@ -1066,24 +1066,24 @@
 
     if-eqz v6, :cond_0
 
-    .line 506
+    .line 499
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     invoke-virtual {v6}, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
-    const v7, 0x7f020528
+    const v7, 0x7f02052c
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    .line 507
+    .line 500
     .restart local v1       #drawable:Landroid/graphics/drawable/Drawable;
     invoke-virtual {v1, v5, v5, v10, v10}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 508
+    .line 501
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -1093,7 +1093,7 @@
 
     invoke-virtual {v5, v9, v1, v9, v9}, Landroid/widget/Button;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 509
+    .line 502
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->radio_download:Landroid/widget/Button;
@@ -1105,7 +1105,7 @@
 
     goto/16 :goto_0
 
-    .line 496
+    .line 489
     .end local v1           #drawable:Landroid/graphics/drawable/Drawable;
     :cond_a
     invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -1114,7 +1114,7 @@
 
     check-cast v0, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
 
-    .line 497
+    .line 490
     .local v0, bean:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->getState()I
 
@@ -1122,17 +1122,17 @@
 
     if-ne v4, v7, :cond_9
 
-    .line 498
+    .line 491
     const/16 v7, 0x64
 
     invoke-virtual {v0, v7}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setProgress(I)V
 
-    .line 499
+    .line 492
     const/4 v7, 0x3
 
     invoke-virtual {v0, v7}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setState(I)V
 
-    .line 500
+    .line 493
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/DownloadFragment;->adapter:Lcom/cnlaunch/x431pro/activity/upgrade/adapter/DownloadAdapter;
@@ -1144,7 +1144,7 @@
 
     goto :goto_2
 
-    .line 226
+    .line 219
     nop
 
     :pswitch_data_0

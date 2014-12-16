@@ -25,7 +25,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 16
-    const v0, 0x7f0300e7
+    const v0, 0x7f0300e8
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/HowToGetJointVerifyCodeActivity;->setContentView(I)V
 

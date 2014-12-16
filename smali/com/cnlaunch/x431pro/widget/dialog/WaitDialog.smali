@@ -25,7 +25,7 @@
     invoke-virtual {v2, v3}, Landroid/content/Context;->setTheme(I)V
 
     .line 46
-    const v2, 0x7f0300d6
+    const v2, 0x7f0300d7
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/widget/dialog/WaitDialog;->setContentView(I)V
 
@@ -86,7 +86,7 @@
     invoke-virtual {v2, v3}, Landroid/content/Context;->setTheme(I)V
 
     .line 33
-    const v2, 0x7f0300d6
+    const v2, 0x7f0300d7
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/widget/dialog/WaitDialog;->setContentView(I)V
 

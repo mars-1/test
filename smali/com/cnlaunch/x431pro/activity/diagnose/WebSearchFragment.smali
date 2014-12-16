@@ -148,7 +148,7 @@
     const/4 v5, 0x1
 
     .line 81
-    const v2, 0x7f070558
+    const v2, 0x7f07055a
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/WebSearchFragment;->setTitle(I)V
 
@@ -164,7 +164,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0025
+    const v3, 0x7f0c0025
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -179,7 +179,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d01dc
+    const v3, 0x7f0c01df
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

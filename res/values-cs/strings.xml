@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">Diagnostická zpráva vozidel</string>
+    <string name="print_success">Tisk byl úspěšný!</string>
+    <string name="print_jam">Zaseknutí papíru</string>
+    <string name="print_will_nopaper">Tiskárna bude nedostatek papíru</string>
+    <string name="print_no_paper">Tiskárna je nedostatek papíru</string>
+    <string name="print_actuator_fault">Porucha tiskárny!</string>
+    <string name="print_head_overheating">Tiskárna se přehřívá</string>
+    <string name="print_connect_printer">Nejprve prosím připojte Wi-fi tiskárnu</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">Potvrdit</string>
     <string name="bluetooth_close_connected">Odpojení:</string>
     <string name="bluetooth_connecting">Připojení</string>
     <string name="bluetooth_no_search_device">Bluetooth nebyl zjištěn, ověřte konektor je napájen a osvěžit vyhledávání</string>
@@ -15,18 +27,6 @@
     <string name="no">Ne</string>
     <string name="tv_unconnect">Není připojen</string>
     <string name="tv_unpair">Není spárování</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">Diagnostická zpráva vozidel</string>
-    <string name="print_success">Tisk byl úspěšný!</string>
-    <string name="print_jam">Zaseknutí papíru</string>
-    <string name="print_will_nopaper">Tiskárna bude nedostatek papíru</string>
-    <string name="print_no_paper">Tiskárna je nedostatek papíru</string>
-    <string name="print_actuator_fault">Porucha tiskárny!</string>
-    <string name="print_head_overheating">Tiskárna se přehřívá</string>
-    <string name="print_connect_printer">Nejprve prosím připojte Wi-fi tiskárnu</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">Potvrdit</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

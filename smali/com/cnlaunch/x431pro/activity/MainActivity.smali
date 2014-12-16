@@ -404,7 +404,7 @@
     const/4 v2, 0x0
 
     .line 871
-    const v0, 0x7f0d02d7
+    const v0, 0x7f0c02ee
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/MainActivity;->findViewById(I)Landroid/view/View;
 
@@ -420,7 +420,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/RadioGroup;->setOnCheckedChangeListener(Landroid/widget/RadioGroup$OnCheckedChangeListener;)V
 
     .line 874
-    const v0, 0x7f0d02d9
+    const v0, 0x7f0c02f0
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/MainActivity;->findViewById(I)Landroid/view/View;
 
@@ -431,7 +431,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->radiobutton_info:Landroid/widget/RadioButton;
 
     .line 875
-    const v0, 0x7f0d02db
+    const v0, 0x7f0c02f2
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/MainActivity;->findViewById(I)Landroid/view/View;
 
@@ -451,13 +451,13 @@
     .line 877
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->radiobutton_info:Landroid/widget/RadioButton;
 
-    const v1, 0x7f0704e9
+    const v1, 0x7f0704eb
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setText(I)V
 
     .line 879
     :cond_0
-    const v0, 0x7f0d02de
+    const v0, 0x7f0c02f5
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/MainActivity;->findViewById(I)Landroid/view/View;
 
@@ -490,14 +490,14 @@
     .line 883
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->radioGolo:Landroid/widget/RadioButton;
 
-    const v1, 0x7f0704eb
+    const v1, 0x7f0704ed
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setText(I)V
 
     .line 884
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->radioGolo:Landroid/widget/RadioButton;
 
-    const v1, 0x7f02051a
+    const v1, 0x7f02051e
 
     invoke-virtual {v0, v1, v2, v2, v2}, Landroid/widget/RadioButton;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
@@ -514,14 +514,14 @@
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->radioGolo:Landroid/widget/RadioButton;
 
-    const v1, 0x7f07069e
+    const v1, 0x7f0706a0
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setText(I)V
 
     .line 888
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->radioGolo:Landroid/widget/RadioButton;
 
-    const v1, 0x7f020501
+    const v1, 0x7f020505
 
     invoke-virtual {v0, v1, v2, v2, v2}, Landroid/widget/RadioButton;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
@@ -626,7 +626,7 @@
     .parameter "activityClass"
 
     .prologue
-    const v5, 0x7f0d02db
+    const v5, 0x7f0c02f2
 
     const/4 v4, 0x1
 
@@ -934,7 +934,7 @@
 
     .line 259
     .local v2, current:Landroid/app/Activity;
-    const v3, 0x7f0d028b
+    const v3, 0x7f0c028f
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -953,7 +953,7 @@
 
     .line 263
     :cond_2
-    const v3, 0x7f0d0290
+    const v3, 0x7f0c0294
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1164,7 +1164,7 @@
     :cond_5
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0706d8
+    const v2, 0x7f0706da
 
     invoke-static {v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -1254,7 +1254,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0d02d8
+    .packed-switch 0x7f0c02ef
         :pswitch_0
         :pswitch_1
         :pswitch_3
@@ -1285,7 +1285,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090005
+    const v4, 0x7f0d0005
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1346,11 +1346,11 @@
     .parameter "savedInstanceState"
 
     .prologue
-    const v12, 0x7f0d02d8
+    const v12, 0x7f0c02ef
 
     const/4 v8, 0x2
 
-    const v11, 0x7f0d02db
+    const v11, 0x7f0c02f2
 
     const/4 v9, 0x1
 
@@ -1457,14 +1457,14 @@
     .line 160
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->slidingMenu:Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;
 
-    const v7, 0x7f0c00e9
+    const v7, 0x7f0b00e9
 
     invoke-virtual {v6, v7}, Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;->setShadowWidthRes(I)V
 
     .line 161
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->slidingMenu:Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;
 
-    const v7, 0x7f02059f
+    const v7, 0x7f0205a3
 
     invoke-virtual {v6, v7}, Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;->setShadowDrawable(I)V
 
@@ -1475,7 +1475,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f090005
+    const v7, 0x7f0d0005
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1505,7 +1505,7 @@
     invoke-virtual {v6, v9}, Lcom/cnlaunch/x431pro/widget/slidingmenu/SlidingMenu;->setTouchModeAbove(I)V
 
     .line 170
-    const v6, 0x7f0d02d7
+    const v6, 0x7f0c02ee
 
     invoke-virtual {p0, v6}, Lcom/cnlaunch/x431pro/activity/MainActivity;->findViewById(I)Landroid/view/View;
 
@@ -1521,7 +1521,7 @@
     invoke-virtual {v6, p0}, Landroid/widget/RadioGroup;->setOnCheckedChangeListener(Landroid/widget/RadioGroup$OnCheckedChangeListener;)V
 
     .line 173
-    const v6, 0x7f0d02d9
+    const v6, 0x7f0c02f0
 
     invoke-virtual {p0, v6}, Lcom/cnlaunch/x431pro/activity/MainActivity;->findViewById(I)Landroid/view/View;
 
@@ -1550,7 +1550,7 @@
     .line 176
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->radiobutton_info:Landroid/widget/RadioButton;
 
-    const v7, 0x7f0704e9
+    const v7, 0x7f0704eb
 
     invoke-virtual {v6, v7}, Landroid/widget/RadioButton;->setText(I)V
 
@@ -1559,7 +1559,7 @@
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/MainActivity;->registerBroadcastReceiver()V
 
     .line 183
-    const v6, 0x7f0d02de
+    const v6, 0x7f0c02f5
 
     invoke-virtual {p0, v6}, Lcom/cnlaunch/x431pro/activity/MainActivity;->findViewById(I)Landroid/view/View;
 
@@ -1618,7 +1618,7 @@
     iput v6, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->lastCheckID:I
 
     .line 190
-    const v6, 0x7f0d02de
+    const v6, 0x7f0c02f5
 
     iput v6, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->currentCheckID:I
 
@@ -1642,14 +1642,14 @@
     .line 211
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->radioGolo:Landroid/widget/RadioButton;
 
-    const v7, 0x7f0704eb
+    const v7, 0x7f0704ed
 
     invoke-virtual {v6, v7}, Landroid/widget/RadioButton;->setText(I)V
 
     .line 212
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->radioGolo:Landroid/widget/RadioButton;
 
-    const v7, 0x7f02051a
+    const v7, 0x7f02051e
 
     invoke-virtual {v6, v7, v10, v10, v10}, Landroid/widget/RadioButton;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
@@ -1855,14 +1855,14 @@
     :cond_8
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->radioGolo:Landroid/widget/RadioButton;
 
-    const v7, 0x7f07069e
+    const v7, 0x7f0706a0
 
     invoke-virtual {v6, v7}, Landroid/widget/RadioButton;->setText(I)V
 
     .line 222
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/MainActivity;->radioGolo:Landroid/widget/RadioButton;
 
-    const v7, 0x7f020501
+    const v7, 0x7f020505
 
     invoke-virtual {v6, v7, v10, v10, v10}, Landroid/widget/RadioButton;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
@@ -1987,9 +1987,9 @@
     .parameter "intent"
 
     .prologue
-    const v3, 0x7f0d02db
+    const v3, 0x7f0c02f2
 
-    const v2, 0x7f0d02d8
+    const v2, 0x7f0c02ef
 
     .line 279
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/widget/slidingmenu/app/SlidingFragmentActivity;->onNewIntent(Landroid/content/Intent;)V

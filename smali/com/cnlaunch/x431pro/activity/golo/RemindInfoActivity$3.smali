@@ -250,7 +250,7 @@
 
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity$3;->this$0:Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;
 
-    const v7, 0x7f0706c7
+    const v7, 0x7f0706c9
 
     invoke-virtual {v6, v7}, Lcom/cnlaunch/x431pro/activity/golo/RemindInfoActivity;->getString(I)Ljava/lang/String;
 

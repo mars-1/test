@@ -50,17 +50,181 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 25
+    .line 28
     invoke-direct {p0}, Landroid/app/ListActivity;-><init>()V
 
-    .line 27
+    .line 30
     iput-object v0, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->items:Ljava/util/List;
 
-    .line 28
+    .line 31
     iput-object v0, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->paths:Ljava/util/List;
 
-    .line 25
+    .line 28
     return-void
+.end method
+
+.method public static getDefaultExternalStoragePath(Landroid/content/Context;)Ljava/lang/String;
+    .locals 11
+    .parameter "context"
+
+    .prologue
+    const/4 v10, 0x1
+
+    .line 193
+    const/4 v0, 0x0
+
+    .line 194
+    .local v0, bcanBeRemoved:Z
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 195
+    .local v2, externPath:Ljava/lang/String;
+    move-object v6, v2
+
+    .line 196
+    .local v6, phonePath:Ljava/lang/String;
+    invoke-static {}, Landroid/os/Environment;->isExternalStorageRemovable()Z
+
+    move-result v0
+
+    .line 198
+    if-nez v0, :cond_0
+
+    .line 225
+    .end local v2           #externPath:Ljava/lang/String;
+    :goto_0
+    return-object v2
+
+    .line 201
+    .restart local v2       #externPath:Ljava/lang/String;
+    :cond_0
+    if-eqz p0, :cond_2
+
+    .line 205
+    const-string/jumbo v7, "storage"
+
+    invoke-virtual {p0, v7}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    .line 204
+    check-cast v4, Landroid/os/storage/StorageManager;
+
+    .line 207
+    .local v4, mStorageManager:Landroid/os/storage/StorageManager;
+    :try_start_0
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v7
+
+    .line 208
+    const-string/jumbo v8, "getVolumePaths"
+
+    const/4 v9, 0x0
+
+    new-array v9, v9, [Ljava/lang/Class;
+
+    .line 207
+    invoke-virtual {v7, v8, v9}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v3
+
+    .line 209
+    .local v3, mMethodGetPaths:Ljava/lang/reflect/Method;
+    const/4 v5, 0x0
+
+    .line 210
+    .local v5, paths:[Ljava/lang/String;
+    const/4 v7, 0x0
+
+    new-array v7, v7, [Ljava/lang/Object;
+
+    invoke-virtual {v3, v4, v7}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    .end local v5           #paths:[Ljava/lang/String;
+    check-cast v5, [Ljava/lang/String;
+
+    .line 211
+    .restart local v5       #paths:[Ljava/lang/String;
+    array-length v7, v5
+
+    if-le v7, v10, :cond_1
+
+    .line 212
+    const/4 v7, 0x1
+
+    aget-object v6, v5, v7
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_3
+
+    :cond_1
+    move-object v2, v6
+
+    .line 213
+    goto :goto_0
+
+    .line 214
+    .end local v3           #mMethodGetPaths:Ljava/lang/reflect/Method;
+    .end local v5           #paths:[Ljava/lang/String;
+    :catch_0
+    move-exception v1
+
+    .line 215
+    .local v1, e:Ljava/lang/IllegalArgumentException;
+    invoke-virtual {v1}, Ljava/lang/IllegalArgumentException;->printStackTrace()V
+
+    .line 225
+    .end local v1           #e:Ljava/lang/IllegalArgumentException;
+    .end local v4           #mStorageManager:Landroid/os/storage/StorageManager;
+    :cond_2
+    :goto_1
+    const/4 v2, 0x0
+
+    goto :goto_0
+
+    .line 216
+    .restart local v4       #mStorageManager:Landroid/os/storage/StorageManager;
+    :catch_1
+    move-exception v1
+
+    .line 217
+    .local v1, e:Ljava/lang/IllegalAccessException;
+    invoke-virtual {v1}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+
+    goto :goto_1
+
+    .line 218
+    .end local v1           #e:Ljava/lang/IllegalAccessException;
+    :catch_2
+    move-exception v1
+
+    .line 219
+    .local v1, e:Ljava/lang/reflect/InvocationTargetException;
+    invoke-virtual {v1}, Ljava/lang/reflect/InvocationTargetException;->printStackTrace()V
+
+    goto :goto_1
+
+    .line 220
+    .end local v1           #e:Ljava/lang/reflect/InvocationTargetException;
+    :catch_3
+    move-exception v1
+
+    .line 221
+    .local v1, e:Ljava/lang/NoSuchMethodException;
+    invoke-virtual {v1}, Ljava/lang/NoSuchMethodException;->printStackTrace()V
+
+    goto :goto_1
 .end method
 
 .method private getFileDir(Ljava/lang/String;)V
@@ -68,31 +232,31 @@
     .parameter "filePath"
 
     .prologue
-    .line 57
+    .line 60
     iget-object v5, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->mPath:Landroid/widget/TextView;
 
     invoke-virtual {v5, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 58
+    .line 61
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v5, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->items:Ljava/util/List;
 
-    .line 59
+    .line 62
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v5, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->paths:Ljava/util/List;
 
-    .line 60
+    .line 63
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 62
+    .line 65
     .local v0, f:Ljava/io/File;
     if-eqz v0, :cond_4
 
@@ -106,12 +270,12 @@
 
     if-eqz v5, :cond_4
 
-    .line 63
+    .line 66
     invoke-virtual {v0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v2
 
-    .line 64
+    .line 67
     .local v2, files:[Ljava/io/File;
     iget-object v5, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->rootPath:Ljava/lang/String;
 
@@ -121,28 +285,28 @@
 
     if-nez v5, :cond_0
 
-    .line 65
+    .line 68
     iget-object v5, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->items:Ljava/util/List;
 
     const-string/jumbo v6, "b1"
 
     invoke-interface {v5, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 66
+    .line 69
     iget-object v5, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->paths:Ljava/util/List;
 
     iget-object v6, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->rootPath:Ljava/lang/String;
 
     invoke-interface {v5, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 67
+    .line 70
     iget-object v5, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->items:Ljava/util/List;
 
     const-string/jumbo v6, "b2"
 
     invoke-interface {v5, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 68
+    .line 71
     iget-object v5, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->paths:Ljava/util/List;
 
     invoke-virtual {v0}, Ljava/io/File;->getParent()Ljava/lang/String;
@@ -151,7 +315,7 @@
 
     invoke-interface {v5, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 71
+    .line 74
     :cond_0
     const/4 v3, 0x0
 
@@ -161,7 +325,7 @@
 
     if-lt v3, v5, :cond_1
 
-    .line 80
+    .line 83
     new-instance v5, Lcom/cnlaunch/golo3/ui/folder/FolderAdapter;
 
     iget-object v6, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->items:Ljava/util/List;
@@ -172,25 +336,25 @@
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 86
+    .line 89
     .end local v2           #files:[Ljava/io/File;
     .end local v3           #i:I
     :goto_1
     return-void
 
-    .line 72
+    .line 75
     .restart local v2       #files:[Ljava/io/File;
     .restart local v3       #i:I
     :cond_1
     aget-object v1, v2, v3
 
-    .line 73
+    .line 76
     .local v1, file:Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 74
+    .line 77
     invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v6
@@ -209,12 +373,12 @@
 
     move-result v7
 
-    .line 73
+    .line 76
     invoke-virtual {v5, v6, v7}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 75
+    .line 78
     .local v4, reporeType:Ljava/lang/String;
     const-string/jumbo v5, "txt"
 
@@ -232,7 +396,7 @@
 
     if-eqz v5, :cond_3
 
-    .line 76
+    .line 79
     :cond_2
     iget-object v5, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->items:Ljava/util/List;
 
@@ -242,7 +406,7 @@
 
     invoke-interface {v5, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 77
+    .line 80
     iget-object v5, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->paths:Ljava/util/List;
 
     invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
@@ -251,13 +415,13 @@
 
     invoke-interface {v5, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 71
+    .line 74
     :cond_3
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 83
+    .line 86
     .end local v1           #file:Ljava/io/File;
     .end local v2           #files:[Ljava/io/File;
     .end local v3           #i:I
@@ -273,7 +437,7 @@
 
     invoke-virtual {v5}, Landroid/widget/Toast;->show()V
 
-    .line 84
+    .line 87
     invoke-virtual {p0}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->finish()V
 
     goto :goto_1
@@ -285,12 +449,12 @@
     .locals 2
 
     .prologue
-    .line 164
+    .line 167
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 165
+    .line 168
     .local v0, sdStutusString:Ljava/lang/String;
     const-string/jumbo v1, "mounted"
 
@@ -300,10 +464,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 166
+    .line 169
     const/4 v1, 0x1
 
-    .line 168
+    .line 171
     :goto_0
     return v1
 
@@ -320,12 +484,12 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 105
+    .line 108
     invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 107
+    .line 110
     .local v1, fileNameString:Ljava/lang/String;
     const-string/jumbo v3, "."
 
@@ -339,17 +503,17 @@
 
     move-result v4
 
-    .line 106
+    .line 109
     invoke-virtual {v1, v3, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 108
+    .line 111
     invoke-virtual {v3}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 110
+    .line 113
     .local v0, endNameString:Ljava/lang/String;
     const-string/jumbo v3, "."
 
@@ -361,12 +525,12 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 117
+    .line 120
     :cond_0
     :goto_0
     return v2
 
-    .line 114
+    .line 117
     :cond_1
     const-string/jumbo v3, "txt"
 
@@ -376,7 +540,7 @@
 
     if-nez v3, :cond_0
 
-    .line 117
+    .line 120
     const/4 v2, 0x0
 
     goto :goto_0
@@ -386,14 +550,14 @@
     .locals 6
 
     .prologue
-    .line 122
+    .line 125
     invoke-virtual {p0}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->checkSDcard()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 123
+    .line 126
     sget v3, Lcom/cnlaunch/golo3/message/R$string;->notSdCard:I
 
     const/4 v4, 0x0
@@ -404,28 +568,28 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    .line 124
+    .line 127
     const-string/jumbo v0, ""
 
-    .line 159
+    .line 162
     :goto_0
     return-object v0
 
-    .line 126
+    .line 129
     :cond_0
     const-string/jumbo v0, ""
 
-    .line 127
+    .line 130
     .local v0, SD_DIR:Ljava/lang/String;
     invoke-virtual {p0}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 129
+    .line 132
     .local v2, packageName:Ljava/lang/String;
     if-eqz v2, :cond_8
 
-    .line 130
+    .line 133
     :try_start_0
     const-string/jumbo v3, "com.cnlaunch.padII"
 
@@ -435,7 +599,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 131
+    .line 134
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -448,19 +612,19 @@
 
     move-result-object v3
 
-    .line 132
+    .line 135
     const-string/jumbo v4, "/cnlaunch/X-431 PAD II/images"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 131
+    .line 134
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 155
+    .line 158
     :cond_1
     :goto_1
     const-string/jumbo v3, "MyReport2Activity"
@@ -485,20 +649,20 @@
 
     goto :goto_0
 
-    .line 157
+    .line 160
     :catch_0
     move-exception v1
 
-    .line 158
+    .line 161
     .local v1, e:Ljava/lang/Exception;
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 159
+    .line 162
     const-string/jumbo v0, ""
 
     goto :goto_0
 
-    .line 133
+    .line 136
     .end local v1           #e:Ljava/lang/Exception;
     :cond_2
     :try_start_1
@@ -509,43 +673,6 @@
     move-result v3
 
     if-eqz v3, :cond_3
-
-    .line 134
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    .line 135
-    const-string/jumbo v4, "/cnlaunch/images"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    .line 134
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 136
-    goto :goto_1
-
-    :cond_3
-    const-string/jumbo v3, "com.cnlaunch.maximus"
-
-    invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_4
 
     .line 137
     new-instance v3, Ljava/lang/StringBuilder;
@@ -561,7 +688,7 @@
     move-result-object v3
 
     .line 138
-    const-string/jumbo v4, "/cnlaunch/Maximus2.0/images"
+    const-string/jumbo v4, "/cnlaunch/images"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -575,14 +702,14 @@
     .line 139
     goto :goto_1
 
-    :cond_4
-    const-string/jumbo v3, "com.cnlaunch.ScanPad071"
+    :cond_3
+    const-string/jumbo v3, "com.cnlaunch.maximus"
 
     invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_5
+    if-eqz v3, :cond_4
 
     .line 140
     new-instance v3, Ljava/lang/StringBuilder;
@@ -598,7 +725,7 @@
     move-result-object v3
 
     .line 141
-    const-string/jumbo v4, "/cnlaunch/ScanPad071/images"
+    const-string/jumbo v4, "/cnlaunch/Maximus2.0/images"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -610,16 +737,16 @@
     move-result-object v0
 
     .line 142
-    goto/16 :goto_1
+    goto :goto_1
 
-    :cond_5
-    const-string/jumbo v3, "com.cnlaunch.ScanPad101"
+    :cond_4
+    const-string/jumbo v3, "com.cnlaunch.ScanPad071"
 
     invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_6
+    if-eqz v3, :cond_5
 
     .line 143
     new-instance v3, Ljava/lang/StringBuilder;
@@ -635,7 +762,7 @@
     move-result-object v3
 
     .line 144
-    const-string/jumbo v4, "/cnlaunch/ScanPad101/images"
+    const-string/jumbo v4, "/cnlaunch/ScanPad071/images"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -649,14 +776,14 @@
     .line 145
     goto/16 :goto_1
 
-    :cond_6
-    const-string/jumbo v3, "com.cnlaunch.MaxGo"
+    :cond_5
+    const-string/jumbo v3, "com.cnlaunch.ScanPad101"
 
     invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_7
+    if-eqz v3, :cond_6
 
     .line 146
     new-instance v3, Ljava/lang/StringBuilder;
@@ -672,7 +799,7 @@
     move-result-object v3
 
     .line 147
-    const-string/jumbo v4, "/cnlaunch/MaxGo/images"
+    const-string/jumbo v4, "/cnlaunch/ScanPad101/images"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -686,14 +813,14 @@
     .line 148
     goto/16 :goto_1
 
-    :cond_7
-    const-string/jumbo v3, "com.ifoer.expedition.pro"
+    :cond_6
+    const-string/jumbo v3, "com.cnlaunch.MaxGo"
 
     invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_1
+    if-eqz v3, :cond_7
 
     .line 149
     new-instance v3, Ljava/lang/StringBuilder;
@@ -709,7 +836,7 @@
     move-result-object v3
 
     .line 150
-    const-string/jumbo v4, "/cnlaunch/images"
+    const-string/jumbo v4, "/cnlaunch/MaxGo/images"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -720,10 +847,47 @@
 
     move-result-object v0
 
-    .line 152
+    .line 151
     goto/16 :goto_1
 
+    :cond_7
+    const-string/jumbo v3, "com.ifoer.expedition.pro"
+
+    invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    .line 152
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-static {p0}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->getDefaultExternalStoragePath(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 153
+    const-string/jumbo v4, "/cnlaunch/images"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    .line 152
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 155
+    goto/16 :goto_1
+
+    .line 156
     :cond_8
     sget v3, Lcom/cnlaunch/golo3/message/R$string;->no_car_report:I
 
@@ -745,29 +909,29 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 37
+    .line 40
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 38
+    .line 41
     invoke-static {}, Lcom/cnlaunch/newgolo/utils/ScreenManager;->getInstance()Lcom/cnlaunch/newgolo/utils/ScreenManager;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Lcom/cnlaunch/newgolo/utils/ScreenManager;->push(Landroid/app/Activity;)V
 
-    .line 39
+    .line 42
     sget v0, Lcom/cnlaunch/golo3/message/R$layout;->im_myreport:I
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->setContentView(I)V
 
-    .line 40
+    .line 43
     invoke-virtual {p0}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->getSDDir()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->rootPath:Ljava/lang/String;
 
-    .line 41
+    .line 44
     sget v0, Lcom/cnlaunch/golo3/message/R$id;->mPath:I
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->findViewById(I)Landroid/view/View;
@@ -778,7 +942,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->mPath:Landroid/widget/TextView;
 
-    .line 42
+    .line 45
     sget v0, Lcom/cnlaunch/golo3/message/R$id;->backBtn:I
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->findViewById(I)Landroid/view/View;
@@ -789,7 +953,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->mBack:Landroid/widget/ImageButton;
 
-    .line 43
+    .line 46
     sget v0, Lcom/cnlaunch/golo3/message/R$id;->topBarTitle:I
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->findViewById(I)Landroid/view/View;
@@ -800,7 +964,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->mtopBarTitle:Landroid/widget/TextView;
 
-    .line 44
+    .line 47
     iget-object v0, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->mtopBarTitle:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->getResources()Landroid/content/res/Resources;
@@ -815,19 +979,19 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 45
+    .line 48
     iget-object v0, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->rootPath:Ljava/lang/String;
 
     invoke-direct {p0, v0}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->getFileDir(Ljava/lang/String;)V
 
-    .line 46
+    .line 49
     new-instance v0, Landroid/app/ProgressDialog;
 
     invoke-direct {v0, p0}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->progressDialog:Landroid/app/ProgressDialog;
 
-    .line 47
+    .line 50
     iget-object v0, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->mBack:Landroid/widget/ImageButton;
 
     new-instance v1, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity$1;
@@ -836,7 +1000,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 54
+    .line 57
     return-void
 .end method
 
@@ -844,17 +1008,17 @@
     .locals 1
 
     .prologue
-    .line 181
+    .line 184
     invoke-static {}, Lcom/cnlaunch/newgolo/utils/ScreenManager;->getInstance()Lcom/cnlaunch/newgolo/utils/ScreenManager;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Lcom/cnlaunch/newgolo/utils/ScreenManager;->pop(Landroid/app/Activity;)V
 
-    .line 182
+    .line 185
     invoke-super {p0}, Landroid/app/ListActivity;->onDestroy()V
 
-    .line 183
+    .line 186
     return-void
 .end method
 
@@ -866,7 +1030,7 @@
     .parameter "id"
 
     .prologue
-    .line 91
+    .line 94
     new-instance v2, Ljava/io/File;
 
     iget-object v3, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->paths:Ljava/util/List;
@@ -879,7 +1043,7 @@
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 92
+    .line 95
     .local v2, file:Ljava/io/File;
     invoke-virtual {v2}, Ljava/io/File;->isDirectory()Z
 
@@ -887,7 +1051,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 93
+    .line 96
     iget-object v3, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->paths:Ljava/util/List;
 
     invoke-interface {v3, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -898,11 +1062,11 @@
 
     invoke-direct {p0, v3}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->getFileDir(Ljava/lang/String;)V
 
-    .line 102
+    .line 105
     :goto_0
     return-void
 
-    .line 95
+    .line 98
     :cond_0
     new-instance v1, Landroid/content/Intent;
 
@@ -910,13 +1074,13 @@
 
     invoke-direct {v1, p0, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 96
+    .line 99
     .local v1, data:Landroid/content/Intent;
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 97
+    .line 100
     .local v0, bundle:Landroid/os/Bundle;
     const-string/jumbo v3, "file"
 
@@ -926,15 +1090,15 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 98
+    .line 101
     invoke-virtual {v1, v0}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
-    .line 99
+    .line 102
     const/4 v3, -0x1
 
     invoke-virtual {p0, v3, v1}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->setResult(ILandroid/content/Intent;)V
 
-    .line 100
+    .line 103
     invoke-virtual {p0}, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->finish()V
 
     goto :goto_0
@@ -944,18 +1108,18 @@
     .locals 2
 
     .prologue
-    .line 174
+    .line 177
     iget-object v0, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->progressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->show()V
 
-    .line 175
+    .line 178
     iget-object v0, p0, Lcom/cnlaunch/golo3/ui/business/MyReport2Activity;->progressDialog:Landroid/app/ProgressDialog;
 
     sget v1, Lcom/cnlaunch/golo3/message/R$layout;->loading_layout:I
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setContentView(I)V
 
-    .line 177
+    .line 180
     return-void
 .end method

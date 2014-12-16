@@ -263,277 +263,277 @@
 
 .field public static final im_title:I = 0x7f0300b6
 
-.field public static final item_text:I = 0x7f0300cc
+.field public static final item_text:I = 0x7f0300cd
 
-.field public static final layout_loading_dialog:I = 0x7f0300e9
+.field public static final layout_loading_dialog:I = 0x7f0300ea
 
-.field public static final left:I = 0x7f0300fa
+.field public static final left:I = 0x7f0300fc
 
-.field public static final license_plate_number:I = 0x7f0300fb
+.field public static final license_plate_number:I = 0x7f0300fd
 
-.field public static final linearlayout_item:I = 0x7f0300fc
+.field public static final linearlayout_item:I = 0x7f0300fe
 
-.field public static final list_group_item:I = 0x7f0300fd
+.field public static final list_group_item:I = 0x7f0300ff
 
-.field public static final list_item_contact:I = 0x7f0300fe
+.field public static final list_item_contact:I = 0x7f030100
 
-.field public static final list_item_contact_select:I = 0x7f0300ff
+.field public static final list_item_contact_select:I = 0x7f030101
 
-.field public static final list_item_news_content:I = 0x7f030100
+.field public static final list_item_news_content:I = 0x7f030102
 
-.field public static final list_item_public_multi_news:I = 0x7f030101
+.field public static final list_item_public_multi_news:I = 0x7f030103
 
-.field public static final list_item_public_single_news:I = 0x7f030102
+.field public static final list_item_public_single_news:I = 0x7f030104
 
-.field public static final list_item_technician:I = 0x7f030103
+.field public static final list_item_technician:I = 0x7f030105
 
-.field public static final list_item_technician_new:I = 0x7f030104
+.field public static final list_item_technician_new:I = 0x7f030106
 
-.field public static final list_my_group_head:I = 0x7f030105
+.field public static final list_my_group_head:I = 0x7f030107
 
-.field public static final list_view_foot_chat:I = 0x7f030106
+.field public static final list_view_foot_chat:I = 0x7f030108
 
-.field public static final list_view_header_chat:I = 0x7f030107
+.field public static final list_view_header_chat:I = 0x7f030109
 
-.field public static final list_view_item_card_in:I = 0x7f030108
+.field public static final list_view_item_card_in:I = 0x7f03010a
 
-.field public static final list_view_item_card_out:I = 0x7f030109
+.field public static final list_view_item_card_out:I = 0x7f03010b
 
-.field public static final list_view_item_chat_place_in:I = 0x7f03010a
+.field public static final list_view_item_chat_place_in:I = 0x7f03010c
 
-.field public static final list_view_item_chat_place_out:I = 0x7f03010b
+.field public static final list_view_item_chat_place_out:I = 0x7f03010d
 
-.field public static final list_view_item_face_in:I = 0x7f03010c
+.field public static final list_view_item_face_in:I = 0x7f03010e
 
-.field public static final list_view_item_face_out:I = 0x7f03010d
+.field public static final list_view_item_face_out:I = 0x7f03010f
 
-.field public static final list_view_item_in:I = 0x7f03010e
+.field public static final list_view_item_in:I = 0x7f030110
 
-.field public static final list_view_item_media_in:I = 0x7f03010f
+.field public static final list_view_item_media_in:I = 0x7f030111
 
-.field public static final list_view_item_media_out:I = 0x7f030110
+.field public static final list_view_item_media_out:I = 0x7f030112
 
-.field public static final list_view_item_menu_bar:I = 0x7f030111
+.field public static final list_view_item_menu_bar:I = 0x7f030113
 
-.field public static final list_view_item_notify:I = 0x7f030112
+.field public static final list_view_item_notify:I = 0x7f030114
 
-.field public static final list_view_item_out:I = 0x7f030113
+.field public static final list_view_item_out:I = 0x7f030115
 
-.field public static final list_view_item_text_in:I = 0x7f030114
+.field public static final list_view_item_text_in:I = 0x7f030116
 
-.field public static final list_view_item_text_out:I = 0x7f030115
+.field public static final list_view_item_text_out:I = 0x7f030117
 
-.field public static final list_view_item_voice_in:I = 0x7f030116
+.field public static final list_view_item_voice_in:I = 0x7f030118
 
-.field public static final list_view_item_voice_out:I = 0x7f030117
+.field public static final list_view_item_voice_out:I = 0x7f030119
 
-.field public static final little_helper_viewpager:I = 0x7f030119
+.field public static final little_helper_viewpager:I = 0x7f03011b
 
-.field public static final loading_layout:I = 0x7f03011a
+.field public static final loading_layout:I = 0x7f03011c
 
-.field public static final map_car_archives:I = 0x7f03011c
+.field public static final map_car_archives:I = 0x7f03011e
 
-.field public static final map_car_postion:I = 0x7f03011d
+.field public static final map_car_postion:I = 0x7f03011f
 
-.field public static final map_efence_list_item:I = 0x7f03011e
+.field public static final map_efence_list_item:I = 0x7f030120
 
-.field public static final map_hot_city_list:I = 0x7f03011f
+.field public static final map_hot_city_list:I = 0x7f030121
 
-.field public static final map_mission_list_item:I = 0x7f030120
+.field public static final map_mission_list_item:I = 0x7f030122
 
-.field public static final map_mission_list_layout:I = 0x7f030121
+.field public static final map_mission_list_layout:I = 0x7f030123
 
-.field public static final map_monitor_item:I = 0x7f030122
+.field public static final map_monitor_item:I = 0x7f030124
 
-.field public static final map_monitor_status_top_item:I = 0x7f030123
+.field public static final map_monitor_status_top_item:I = 0x7f030125
 
-.field public static final map_pop_last_location:I = 0x7f030124
+.field public static final map_pop_last_location:I = 0x7f030126
 
-.field public static final map_pop_search_other:I = 0x7f030125
+.field public static final map_pop_search_other:I = 0x7f030127
 
-.field public static final map_route:I = 0x7f030126
+.field public static final map_route:I = 0x7f030128
 
-.field public static final map_saveefence_layout:I = 0x7f030127
+.field public static final map_saveefence_layout:I = 0x7f030129
 
-.field public static final map_search_efence_footer:I = 0x7f030128
+.field public static final map_search_efence_footer:I = 0x7f03012a
 
-.field public static final map_search_efence_item:I = 0x7f030129
+.field public static final map_search_efence_item:I = 0x7f03012b
 
-.field public static final map_search_match_pop:I = 0x7f03012a
+.field public static final map_search_match_pop:I = 0x7f03012c
 
-.field public static final map_select_city:I = 0x7f03012b
+.field public static final map_select_city:I = 0x7f03012d
 
-.field public static final map_select_city_new_item:I = 0x7f03012c
+.field public static final map_select_city_new_item:I = 0x7f03012e
 
-.field public static final map_share_item:I = 0x7f03012d
+.field public static final map_share_item:I = 0x7f03012f
 
-.field public static final map_title_car:I = 0x7f03012e
+.field public static final map_title_car:I = 0x7f030130
 
-.field public static final map_track_share_item:I = 0x7f03012f
+.field public static final map_track_share_item:I = 0x7f030131
 
-.field public static final map_whereitis_layout:I = 0x7f030130
+.field public static final map_whereitis_layout:I = 0x7f030132
 
-.field public static final mapoffline_download_fra:I = 0x7f030131
+.field public static final mapoffline_download_fra:I = 0x7f030133
 
-.field public static final maps_view:I = 0x7f030132
+.field public static final maps_view:I = 0x7f030134
 
-.field public static final message_diag:I = 0x7f030133
+.field public static final message_diag:I = 0x7f030135
 
-.field public static final message_fragement:I = 0x7f030134
+.field public static final message_fragement:I = 0x7f030136
 
-.field public static final modify_discharge:I = 0x7f030142
+.field public static final modify_discharge:I = 0x7f030144
 
-.field public static final msg_floatingtitle:I = 0x7f030144
+.field public static final msg_floatingtitle:I = 0x7f030146
 
-.field public static final msg_list_item_file_view:I = 0x7f030145
+.field public static final msg_list_item_file_view:I = 0x7f030147
 
-.field public static final msg_list_item_file_view_out:I = 0x7f030146
+.field public static final msg_list_item_file_view_out:I = 0x7f030148
 
-.field public static final msg_list_item_picture_view:I = 0x7f030147
+.field public static final msg_list_item_picture_view:I = 0x7f030149
 
-.field public static final msg_list_item_picture_view_out:I = 0x7f030148
+.field public static final msg_list_item_picture_view_out:I = 0x7f03014a
 
-.field public static final msg_list_item_voice_view:I = 0x7f030149
+.field public static final msg_list_item_voice_view:I = 0x7f03014b
 
-.field public static final msg_list_item_voice_view_out:I = 0x7f03014a
+.field public static final msg_list_item_voice_view_out:I = 0x7f03014c
 
-.field public static final msg_sendbar:I = 0x7f03014b
+.field public static final msg_sendbar:I = 0x7f03014d
 
-.field public static final msg_sub_global_item:I = 0x7f03014c
+.field public static final msg_sub_global_item:I = 0x7f03014e
 
-.field public static final msg_subview:I = 0x7f03014d
+.field public static final msg_subview:I = 0x7f03014f
 
-.field public static final my_car:I = 0x7f03014e
+.field public static final my_car:I = 0x7f030150
 
-.field public static final my_dialog:I = 0x7f03014f
+.field public static final my_dialog:I = 0x7f030151
 
-.field public static final my_vmt:I = 0x7f030150
+.field public static final my_vmt:I = 0x7f030152
 
-.field public static final mycar_list_footer:I = 0x7f030151
+.field public static final mycar_list_footer:I = 0x7f030153
 
-.field public static final mycar_setdialog:I = 0x7f030152
+.field public static final mycar_setdialog:I = 0x7f030154
 
-.field public static final new_dialog_record:I = 0x7f030153
+.field public static final new_dialog_record:I = 0x7f030155
 
-.field public static final obd_menu_item:I = 0x7f030154
+.field public static final obd_menu_item:I = 0x7f030156
 
-.field public static final online_forum_layout:I = 0x7f030157
+.field public static final online_forum_layout:I = 0x7f030159
 
-.field public static final pay_package:I = 0x7f030158
+.field public static final pay_package:I = 0x7f03015a
 
-.field public static final pay_package_item:I = 0x7f030159
+.field public static final pay_package_item:I = 0x7f03015b
 
-.field public static final peccancy_gridview_item:I = 0x7f03015c
+.field public static final peccancy_gridview_item:I = 0x7f03015e
 
-.field public static final peccancy_vehicle_select:I = 0x7f03015d
+.field public static final peccancy_vehicle_select:I = 0x7f03015f
 
-.field public static final peccancy_vehicle_select_item:I = 0x7f03015e
+.field public static final peccancy_vehicle_select_item:I = 0x7f030160
 
-.field public static final phone_contacts:I = 0x7f030160
+.field public static final phone_contacts:I = 0x7f030162
 
-.field public static final phone_head_contact:I = 0x7f030161
+.field public static final phone_head_contact:I = 0x7f030163
 
-.field public static final phone_list_contact:I = 0x7f030162
+.field public static final phone_list_contact:I = 0x7f030164
 
-.field public static final public_account:I = 0x7f030167
+.field public static final public_account:I = 0x7f030169
 
-.field public static final public_account_item:I = 0x7f030168
+.field public static final public_account_item:I = 0x7f03016a
 
-.field public static final public_repair:I = 0x7f030169
+.field public static final public_repair:I = 0x7f03016b
 
-.field public static final recently_chat_list_item:I = 0x7f03016b
+.field public static final recently_chat_list_item:I = 0x7f03016d
 
-.field public static final refresh_footer:I = 0x7f03016c
+.field public static final refresh_footer:I = 0x7f03016e
 
-.field public static final refresh_header:I = 0x7f03016d
+.field public static final refresh_header:I = 0x7f03016f
 
-.field public static final reminder_info:I = 0x7f030171
+.field public static final reminder_info:I = 0x7f030174
 
-.field public static final reminder_info_item:I = 0x7f030172
+.field public static final reminder_info_item:I = 0x7f030175
 
-.field public static final reminder_info_item_second:I = 0x7f030173
+.field public static final reminder_info_item_second:I = 0x7f030176
 
-.field public static final reminder_info_third:I = 0x7f030174
+.field public static final reminder_info_third:I = 0x7f030177
 
-.field public static final report_info:I = 0x7f030176
+.field public static final report_info:I = 0x7f030179
 
-.field public static final ride_station_applied:I = 0x7f030177
+.field public static final ride_station_applied:I = 0x7f03017a
 
-.field public static final right:I = 0x7f030178
+.field public static final right:I = 0x7f03017b
 
-.field public static final scanqr_layout:I = 0x7f030179
+.field public static final scanqr_layout:I = 0x7f03017c
 
-.field public static final search_contact_list_item:I = 0x7f03017b
+.field public static final search_contact_list_item:I = 0x7f03017e
 
-.field public static final select_activity_technician:I = 0x7f03017c
+.field public static final select_activity_technician:I = 0x7f03017f
 
-.field public static final select_list_item_technician:I = 0x7f03017d
+.field public static final select_list_item_technician:I = 0x7f030180
 
-.field public static final selfinfo_black_list:I = 0x7f03017e
+.field public static final selfinfo_black_list:I = 0x7f030181
 
-.field public static final share_back_dialog:I = 0x7f03018d
+.field public static final share_back_dialog:I = 0x7f030190
 
-.field public static final share_city_item:I = 0x7f03018e
+.field public static final share_city_item:I = 0x7f030191
 
-.field public static final share_city_list:I = 0x7f03018f
+.field public static final share_city_list:I = 0x7f030192
 
-.field public static final share_city_pop:I = 0x7f030190
+.field public static final share_city_pop:I = 0x7f030193
 
-.field public static final share_citylist_item:I = 0x7f030191
+.field public static final share_citylist_item:I = 0x7f030194
 
-.field public static final share_comment_show:I = 0x7f030192
+.field public static final share_comment_show:I = 0x7f030195
 
-.field public static final share_dialog_record:I = 0x7f030193
+.field public static final share_dialog_record:I = 0x7f030196
 
-.field public static final share_file_select:I = 0x7f030194
+.field public static final share_file_select:I = 0x7f030197
 
-.field public static final share_filpper_item_show:I = 0x7f030195
+.field public static final share_filpper_item_show:I = 0x7f030198
 
-.field public static final share_grid_image_view:I = 0x7f030196
+.field public static final share_grid_image_view:I = 0x7f030199
 
-.field public static final share_grid_view_item_face:I = 0x7f030197
+.field public static final share_grid_view_item_face:I = 0x7f03019a
 
-.field public static final share_message:I = 0x7f030198
+.field public static final share_message:I = 0x7f03019b
 
-.field public static final share_op_dialog:I = 0x7f030199
+.field public static final share_op_dialog:I = 0x7f03019c
 
-.field public static final share_origin_pic_show:I = 0x7f03019a
+.field public static final share_origin_pic_show:I = 0x7f03019d
 
-.field public static final share_person_grid_view:I = 0x7f03019b
+.field public static final share_person_grid_view:I = 0x7f03019e
 
-.field public static final share_prolist_item:I = 0x7f03019c
+.field public static final share_prolist_item:I = 0x7f03019f
 
-.field public static final share_public_head:I = 0x7f03019d
+.field public static final share_public_head:I = 0x7f0301a0
 
-.field public static final share_show:I = 0x7f03019e
+.field public static final share_show:I = 0x7f0301a1
 
-.field public static final share_show_head:I = 0x7f03019f
+.field public static final share_show_head:I = 0x7f0301a2
 
-.field public static final show_image_detail:I = 0x7f0301a2
+.field public static final show_image_detail:I = 0x7f0301a5
 
-.field public static final single_image_item:I = 0x7f0301a3
+.field public static final single_image_item:I = 0x7f0301a6
 
-.field public static final test_layout:I = 0x7f0301a8
+.field public static final test_layout:I = 0x7f0301ab
 
-.field public static final user_guide_viewpager:I = 0x7f0301af
+.field public static final user_guide_viewpager:I = 0x7f0301b2
 
-.field public static final vehicle_brand_item:I = 0x7f0301b0
+.field public static final vehicle_brand_item:I = 0x7f0301b3
 
-.field public static final vehicle_model_year:I = 0x7f0301b1
+.field public static final vehicle_model_year:I = 0x7f0301b4
 
-.field public static final vehicle_modify_model:I = 0x7f0301b2
+.field public static final vehicle_modify_model:I = 0x7f0301b5
 
-.field public static final vehicle_safety_item:I = 0x7f0301b3
+.field public static final vehicle_safety_item:I = 0x7f0301b6
 
-.field public static final vehicle_select_brand:I = 0x7f0301b4
+.field public static final vehicle_select_brand:I = 0x7f0301b7
 
-.field public static final vehicle_select_brand_item:I = 0x7f0301b5
+.field public static final vehicle_select_brand_item:I = 0x7f0301b8
 
-.field public static final vehicle_select_brand_new_item:I = 0x7f0301b6
+.field public static final vehicle_select_brand_new_item:I = 0x7f0301b9
 
-.field public static final vehicle_select_model_item:I = 0x7f0301b7
+.field public static final vehicle_select_model_item:I = 0x7f0301ba
 
-.field public static final waiting:I = 0x7f0301b9
+.field public static final waiting:I = 0x7f0301bc
 
 
 # direct methods

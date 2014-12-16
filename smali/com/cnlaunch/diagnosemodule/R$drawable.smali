@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final dialog_edit_background:I = 0x7f020167
+.field public static final dialog_edit_background:I = 0x7f020168
 
-.field public static final ic_launcher:I = 0x7f02023a
+.field public static final ic_launcher:I = 0x7f02023b
 
-.field public static final shape_cir_bg:I = 0x7f02054e
+.field public static final shape_cir_bg:I = 0x7f020552
 
 
 # direct methods

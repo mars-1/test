@@ -18,7 +18,7 @@
     .locals 7
 
     .prologue
-    .line 317
+    .line 327
     invoke-static {}, Ljava/lang/Math;->random()D
 
     move-result-wide v3
@@ -29,29 +29,29 @@
 
     double-to-int v2, v3
 
-    .line 318
+    .line 328
     .local v2, random:I
     invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 319
+    .line 329
     .local v0, hexString:Ljava/lang/String;
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 320
+    .line 330
     .local v1, len:I
     :goto_0
     const/4 v3, 0x2
 
     if-lt v1, v3, :cond_0
 
-    .line 324
+    .line 334
     return-object v0
 
-    .line 321
+    .line 331
     :cond_0
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -67,7 +67,7 @@
 
     move-result-object v0
 
-    .line 322
+    .line 332
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -80,10 +80,10 @@
     .parameter "hex"
 
     .prologue
-    .line 277
+    .line 287
     const/4 v1, 0x0
 
-    .line 278
+    .line 288
     .local v1, bytes:B
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -91,7 +91,7 @@
 
     if-lez v3, :cond_0
 
-    .line 279
+    .line 289
     const/4 v2, 0x0
 
     .local v2, i:I
@@ -104,7 +104,7 @@
 
     if-lt v2, v3, :cond_1
 
-    .line 284
+    .line 294
     .end local v2           #i:I
     :cond_0
     const/4 v3, 0x1
@@ -115,7 +115,7 @@
 
     aput-byte v1, v0, v3
 
-    .line 285
+    .line 295
     .local v0, bbb:[B
     invoke-static {v0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->bytesToHexString([B)Ljava/lang/String;
 
@@ -123,7 +123,7 @@
 
     return-object v3
 
-    .line 281
+    .line 291
     .end local v0           #bbb:[B
     .restart local v2       #i:I
     :cond_1
@@ -137,7 +137,7 @@
 
     move-result-object v3
 
-    .line 280
+    .line 290
     invoke-static {v3}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->hexStringToByte(Ljava/lang/String;)B
 
     move-result v3
@@ -146,7 +146,7 @@
 
     int-to-byte v1, v3
 
-    .line 279
+    .line 289
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
@@ -160,7 +160,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 731
+    .line 741
     array-length v1, p0
 
     if-lez v1, :cond_0
@@ -169,7 +169,7 @@
 
     if-lez v1, :cond_0
 
-    .line 732
+    .line 742
     array-length v1, p0
 
     array-length v2, p1
@@ -178,23 +178,23 @@
 
     new-array v0, v1, [B
 
-    .line 733
+    .line 743
     .local v0, ret:[B
     array-length v1, p0
 
     invoke-static {p0, v3, v0, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 734
+    .line 744
     array-length v1, p0
 
     array-length v2, p1
 
     invoke-static {p1, v3, v0, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 735
+    .line 745
     return-object v0
 
-    .line 737
+    .line 747
     .end local v0           #ret:[B
     :cond_0
     new-instance v1, Ljava/lang/IllegalArgumentException;
@@ -211,14 +211,14 @@
     .parameter "bin"
 
     .prologue
-    .line 830
+    .line 840
     const-string/jumbo v5, "0123456789ABCDEF"
 
     invoke-virtual {v5}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v2
 
-    .line 831
+    .line 841
     .local v2, digital:[C
     new-instance v4, Ljava/lang/StringBuffer;
 
@@ -226,13 +226,13 @@
 
     invoke-direct {v4, v5}, Ljava/lang/StringBuffer;-><init>(Ljava/lang/String;)V
 
-    .line 832
+    .line 842
     .local v4, sb:Ljava/lang/StringBuffer;
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
     move-result-object v1
 
-    .line 834
+    .line 844
     .local v1, bs:[B
     const/4 v3, 0x0
 
@@ -242,14 +242,14 @@
 
     if-lt v3, v5, :cond_0
 
-    .line 840
+    .line 850
     invoke-virtual {v4}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object v5
 
     return-object v5
 
-    .line 835
+    .line 845
     :cond_0
     aget-byte v5, v1, v3
 
@@ -257,23 +257,23 @@
 
     shr-int/lit8 v0, v5, 0x4
 
-    .line 836
+    .line 846
     .local v0, bit:I
     aget-char v5, v2, v0
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    .line 837
+    .line 847
     aget-byte v5, v1, v3
 
     and-int/lit8 v0, v5, 0xf
 
-    .line 838
+    .line 848
     aget-char v5, v2, v0
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    .line 834
+    .line 844
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
@@ -284,7 +284,7 @@
     .parameter "hex"
 
     .prologue
-    .line 827
+    .line 837
     invoke-static {p0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->bin2hex(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -301,7 +301,7 @@
     .parameter "mask"
 
     .prologue
-    .line 919
+    .line 929
     invoke-static {p0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->planningMask(Ljava/lang/String;)[B
 
     move-result-object v0
@@ -314,7 +314,7 @@
     .parameter "bString"
 
     .prologue
-    .line 619
+    .line 629
     invoke-static {p0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->binaryString2hexString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -331,7 +331,7 @@
     .parameter "bString"
 
     .prologue
-    .line 629
+    .line 639
     if-eqz p0, :cond_0
 
     const-string/jumbo v5, ""
@@ -342,15 +342,15 @@
 
     if-eqz v5, :cond_1
 
-    .line 630
+    .line 640
     :cond_0
     const-string/jumbo v5, ""
 
-    .line 647
+    .line 657
     :goto_0
     return-object v5
 
-    .line 632
+    .line 642
     :cond_1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -360,7 +360,7 @@
 
     if-eqz v5, :cond_2
 
-    .line 633
+    .line 643
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v5
@@ -369,7 +369,7 @@
 
     rsub-int/lit8 v0, v5, 0x8
 
-    .line 634
+    .line 644
     .local v0, addLen:I
     const/4 v1, 0x0
 
@@ -377,7 +377,7 @@
     :goto_1
     if-lt v1, v0, :cond_3
 
-    .line 638
+    .line 648
     .end local v0           #addLen:I
     .end local v1           #i:I
     :cond_2
@@ -385,11 +385,11 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuffer;-><init>()V
 
-    .line 639
+    .line 649
     .local v4, tmp:Ljava/lang/StringBuffer;
     const/4 v2, 0x0
 
-    .line 640
+    .line 650
     .local v2, iTmp:I
     const/4 v1, 0x0
 
@@ -401,14 +401,14 @@
 
     if-lt v1, v5, :cond_4
 
-    .line 647
+    .line 657
     invoke-virtual {v4}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object v5
 
     goto :goto_0
 
-    .line 635
+    .line 645
     .end local v2           #iTmp:I
     .end local v4           #tmp:Ljava/lang/StringBuffer;
     .restart local v0       #addLen:I
@@ -431,19 +431,19 @@
 
     move-result-object p0
 
-    .line 634
+    .line 644
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 641
+    .line 651
     .end local v0           #addLen:I
     .restart local v2       #iTmp:I
     .restart local v4       #tmp:Ljava/lang/StringBuffer;
     :cond_4
     const/4 v2, 0x0
 
-    .line 642
+    .line 652
     const/4 v3, 0x0
 
     .local v3, j:I
@@ -452,19 +452,19 @@
 
     if-lt v3, v5, :cond_5
 
-    .line 645
+    .line 655
     invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 640
+    .line 650
     add-int/lit8 v1, v1, 0x4
 
     goto :goto_2
 
-    .line 643
+    .line 653
     :cond_5
     add-int v5, v1, v3
 
@@ -488,7 +488,7 @@
 
     add-int/2addr v2, v5
 
-    .line 642
+    .line 652
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_3
@@ -499,14 +499,14 @@
     .parameter "b"
 
     .prologue
-    .line 873
+    .line 883
     const-string/jumbo v0, ""
 
-    .line 874
+    .line 884
     .local v0, hs:Ljava/lang/String;
     const-string/jumbo v2, ""
 
-    .line 875
+    .line 885
     .local v2, tmp:Ljava/lang/String;
     const/4 v1, 0x0
 
@@ -516,17 +516,17 @@
 
     if-lt v1, v3, :cond_0
 
-    .line 885
+    .line 895
     const/4 v2, 0x0
 
-    .line 886
+    .line 896
     invoke-virtual {v0}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
     move-result-object v3
 
     return-object v3
 
-    .line 878
+    .line 888
     :cond_0
     aget-byte v3, p0, v1
 
@@ -536,7 +536,7 @@
 
     move-result-object v2
 
-    .line 879
+    .line 889
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -545,7 +545,7 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 880
+    .line 890
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -568,13 +568,13 @@
 
     move-result-object v0
 
-    .line 875
+    .line 885
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 882
+    .line 892
     :cond_1
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -603,7 +603,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 800
+    .line 810
     array-length v1, p0
 
     array-length v2, p1
@@ -612,20 +612,20 @@
 
     new-array v0, v1, [B
 
-    .line 801
+    .line 811
     .local v0, byte_3:[B
     array-length v1, p0
 
     invoke-static {p0, v3, v0, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 802
+    .line 812
     array-length v1, p0
 
     array-length v2, p1
 
     invoke-static {p1, v3, v0, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 803
+    .line 813
     return-object v0
 .end method
 
@@ -694,7 +694,7 @@
     .parameter "mask"
 
     .prologue
-    .line 923
+    .line 933
     invoke-static {p0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->bytesToHexString([B)Ljava/lang/String;
 
     move-result-object v0
@@ -711,14 +711,14 @@
     .parameter "data"
 
     .prologue
-    .line 444
+    .line 454
     const-string/jumbo v1, ""
 
-    .line 445
+    .line 455
     .local v1, word:Ljava/lang/String;
     if-eqz p0, :cond_0
 
-    .line 447
+    .line 457
     :try_start_0
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -734,7 +734,7 @@
 
     packed-switch v3, :pswitch_data_0
 
-    .line 591
+    .line 601
     new-instance v2, Ljava/lang/String;
 
     const-string/jumbo v3, "GB2312"
@@ -745,14 +745,14 @@
     .local v2, word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 599
+    .line 609
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     :cond_0
     :goto_0
     return-object v1
 
-    .line 451
+    .line 461
     :pswitch_0
     new-instance v2, Ljava/lang/String;
 
@@ -764,12 +764,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 452
+    .line 462
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto :goto_0
 
-    .line 456
+    .line 466
     :pswitch_1
     new-instance v2, Ljava/lang/String;
 
@@ -781,12 +781,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 457
+    .line 467
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto :goto_0
 
-    .line 462
+    .line 472
     :pswitch_2
     new-instance v2, Ljava/lang/String;
 
@@ -798,12 +798,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 463
+    .line 473
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto :goto_0
 
-    .line 468
+    .line 478
     :pswitch_3
     new-instance v2, Ljava/lang/String;
 
@@ -815,12 +815,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 469
+    .line 479
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto :goto_0
 
-    .line 474
+    .line 484
     :pswitch_4
     new-instance v2, Ljava/lang/String;
 
@@ -832,12 +832,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 475
+    .line 485
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto :goto_0
 
-    .line 480
+    .line 490
     :pswitch_5
     new-instance v2, Ljava/lang/String;
 
@@ -849,12 +849,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 481
+    .line 491
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto :goto_0
 
-    .line 486
+    .line 496
     :pswitch_6
     new-instance v2, Ljava/lang/String;
 
@@ -866,12 +866,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 487
+    .line 497
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto :goto_0
 
-    .line 492
+    .line 502
     :pswitch_7
     new-instance v2, Ljava/lang/String;
 
@@ -883,12 +883,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 493
+    .line 503
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto :goto_0
 
-    .line 498
+    .line 508
     :pswitch_8
     new-instance v2, Ljava/lang/String;
 
@@ -900,12 +900,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 499
+    .line 509
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto :goto_0
 
-    .line 504
+    .line 514
     :pswitch_9
     new-instance v2, Ljava/lang/String;
 
@@ -917,12 +917,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 505
+    .line 515
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto :goto_0
 
-    .line 510
+    .line 520
     :pswitch_a
     new-instance v2, Ljava/lang/String;
 
@@ -934,12 +934,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 511
+    .line 521
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto :goto_0
 
-    .line 516
+    .line 526
     :pswitch_b
     new-instance v2, Ljava/lang/String;
 
@@ -951,12 +951,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 517
+    .line 527
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto :goto_0
 
-    .line 522
+    .line 532
     :pswitch_c
     new-instance v2, Ljava/lang/String;
 
@@ -968,12 +968,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 523
+    .line 533
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 528
+    .line 538
     :pswitch_d
     new-instance v2, Ljava/lang/String;
 
@@ -985,12 +985,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 529
+    .line 539
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 534
+    .line 544
     :pswitch_e
     new-instance v2, Ljava/lang/String;
 
@@ -1002,12 +1002,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 535
+    .line 545
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 540
+    .line 550
     :pswitch_f
     new-instance v2, Ljava/lang/String;
 
@@ -1019,12 +1019,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 541
+    .line 551
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 546
+    .line 556
     :pswitch_10
     new-instance v2, Ljava/lang/String;
 
@@ -1036,12 +1036,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 547
+    .line 557
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 552
+    .line 562
     :pswitch_11
     new-instance v2, Ljava/lang/String;
 
@@ -1053,12 +1053,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 553
+    .line 563
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 558
+    .line 568
     :pswitch_12
     new-instance v2, Ljava/lang/String;
 
@@ -1070,12 +1070,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 559
+    .line 569
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 564
+    .line 574
     :pswitch_13
     new-instance v2, Ljava/lang/String;
 
@@ -1087,12 +1087,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 565
+    .line 575
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 570
+    .line 580
     :pswitch_14
     new-instance v2, Ljava/lang/String;
 
@@ -1104,12 +1104,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 571
+    .line 581
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 576
+    .line 586
     :pswitch_15
     new-instance v2, Ljava/lang/String;
 
@@ -1121,12 +1121,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 577
+    .line 587
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 581
+    .line 591
     :pswitch_16
     new-instance v2, Ljava/lang/String;
 
@@ -1138,12 +1138,12 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 582
+    .line 592
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 586
+    .line 596
     :pswitch_17
     new-instance v2, Ljava/lang/String;
 
@@ -1157,22 +1157,22 @@
     .restart local v2       #word:Ljava/lang/String;
     move-object v1, v2
 
-    .line 587
+    .line 597
     .end local v2           #word:Ljava/lang/String;
     .restart local v1       #word:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 594
+    .line 604
     :catch_0
     move-exception v0
 
-    .line 596
+    .line 606
     .local v0, e:Ljava/io/UnsupportedEncodingException;
     invoke-virtual {v0}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     goto/16 :goto_0
 
-    .line 447
+    .line 457
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -1296,30 +1296,30 @@
     .prologue
     const/4 v8, 0x0
 
-    .line 742
+    .line 752
     const-string/jumbo v7, "MD5"
 
     invoke-static {v7}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object v4
 
-    .line 743
+    .line 753
     .local v4, md5:Ljava/security/MessageDigest;
     new-instance v3, Ljava/io/FileInputStream;
 
     invoke-direct {v3, p0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
-    .line 744
+    .line 754
     .local v3, fis:Ljava/io/FileInputStream;
     const/4 v5, 0x0
 
-    .line 745
+    .line 755
     .local v5, readLen:I
     const/16 v7, 0x100
 
     new-array v1, v7, [B
 
-    .line 746
+    .line 756
     .local v1, buff:[B
     :goto_0
     invoke-virtual {v3, v1}, Ljava/io/FileInputStream;->read([B)I
@@ -1330,21 +1330,21 @@
 
     if-ne v5, v7, :cond_0
 
-    .line 749
+    .line 759
     invoke-virtual {v3}, Ljava/io/FileInputStream;->close()V
 
-    .line 750
+    .line 760
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 751
+    .line 761
     .local v6, sb:Ljava/lang/StringBuilder;
     invoke-virtual {v4}, Ljava/security/MessageDigest;->digest()[B
 
     move-result-object v2
 
-    .line 752
+    .line 762
     .local v2, data:[B
     array-length v9, v2
 
@@ -1353,14 +1353,14 @@
     :goto_1
     if-lt v7, v9, :cond_1
 
-    .line 755
+    .line 765
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v7
 
     return-object v7
 
-    .line 747
+    .line 757
     .end local v2           #data:[B
     .end local v6           #sb:Ljava/lang/StringBuilder;
     :cond_0
@@ -1368,13 +1368,13 @@
 
     goto :goto_0
 
-    .line 752
+    .line 762
     .restart local v2       #data:[B
     .restart local v6       #sb:Ljava/lang/StringBuilder;
     :cond_1
     aget-byte v0, v2, v7
 
-    .line 753
+    .line 763
     .local v0, b:B
     new-instance v10, Ljava/util/Formatter;
 
@@ -1398,7 +1398,7 @@
 
     invoke-virtual {v6, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 752
+    .line 762
     add-int/lit8 v7, v7, 0x1
 
     goto :goto_1
@@ -1409,7 +1409,7 @@
     .parameter "c"
 
     .prologue
-    .line 267
+    .line 277
     const-string/jumbo v0, "0123456789ABCDEF"
 
     invoke-virtual {v0, p0}, Ljava/lang/String;->indexOf(I)I
@@ -1426,28 +1426,28 @@
     .parameter "site"
 
     .prologue
-    .line 350
+    .line 360
     invoke-static {p0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 351
+    .line 361
     .local v0, hexLength:Ljava/lang/String;
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 352
+    .line 362
     .local v1, len:I
     :goto_0
     const/4 v2, 0x2
 
     if-lt v1, v2, :cond_0
 
-    .line 356
+    .line 366
     return-object v0
 
-    .line 353
+    .line 363
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1463,7 +1463,7 @@
 
     move-result-object v0
 
-    .line 354
+    .line 364
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -1477,12 +1477,12 @@
     .prologue
     const/4 v12, 0x2
 
-    .line 294
+    .line 304
     new-instance v7, Ljava/lang/StringBuffer;
 
     invoke-direct {v7}, Ljava/lang/StringBuffer;-><init>()V
 
-    .line 295
+    .line 305
     .local v7, stringBuffer:Ljava/lang/StringBuffer;
     new-instance v2, Ljava/text/DecimalFormat;
 
@@ -1490,13 +1490,13 @@
 
     invoke-direct {v2, v10}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
-    .line 296
+    .line 306
     .local v2, decimalFormat:Ljava/text/DecimalFormat;
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v0
 
-    .line 297
+    .line 307
     .local v0, calendar:Ljava/util/Calendar;
     const/4 v10, 0x1
 
@@ -1510,7 +1510,7 @@
 
     move-result-object v9
 
-    .line 298
+    .line 308
     .local v9, year:Ljava/lang/String;
     invoke-virtual {v0, v12}, Ljava/util/Calendar;->get(I)I
 
@@ -1524,7 +1524,7 @@
 
     move-result-object v5
 
-    .line 299
+    .line 309
     .local v5, month:Ljava/lang/String;
     const/4 v10, 0x5
 
@@ -1538,7 +1538,7 @@
 
     move-result-object v1
 
-    .line 300
+    .line 310
     .local v1, day:Ljava/lang/String;
     const/16 v10, 0xb
 
@@ -1552,7 +1552,7 @@
 
     move-result-object v3
 
-    .line 301
+    .line 311
     .local v3, hour:Ljava/lang/String;
     const/16 v10, 0xc
 
@@ -1566,7 +1566,7 @@
 
     move-result-object v4
 
-    .line 302
+    .line 312
     .local v4, minute:Ljava/lang/String;
     const/16 v10, 0xd
 
@@ -1580,7 +1580,7 @@
 
     move-result-object v6
 
-    .line 304
+    .line 314
     .local v6, second:Ljava/lang/String;
     const/4 v10, 0x7
 
@@ -1596,7 +1596,7 @@
 
     move-result-object v8
 
-    .line 305
+    .line 315
     .local v8, week:Ljava/lang/String;
     invoke-virtual {v9}, Ljava/lang/String;->length()I
 
@@ -1614,7 +1614,7 @@
 
     move-result-object v10
 
-    .line 306
+    .line 316
     invoke-virtual {v10, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     move-result-object v10
@@ -1631,10 +1631,10 @@
 
     move-result-object v10
 
-    .line 307
+    .line 317
     invoke-virtual {v10, v8}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 308
+    .line 318
     invoke-virtual {v7}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object v10
@@ -1647,10 +1647,10 @@
     .parameter "str"
 
     .prologue
-    .line 426
+    .line 436
     const-string/jumbo v0, ""
 
-    .line 427
+    .line 437
     .local v0, buffer:Ljava/lang/String;
     if-eqz p0, :cond_0
 
@@ -1660,7 +1660,7 @@
 
     if-lez v4, :cond_0
 
-    .line 428
+    .line 438
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -1683,19 +1683,19 @@
 
     move-result-object v3
 
-    .line 429
+    .line 439
     .local v3, src:[B
     invoke-static {v3}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->bytesToHexString([B)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 430
+    .line 440
     .local v1, result:Ljava/lang/String;
     invoke-static {v1}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->packLength(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 431
+    .line 441
     .local v2, resultLength:Ljava/lang/String;
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1713,7 +1713,7 @@
 
     move-result-object v0
 
-    .line 432
+    .line 442
     sget-object v4, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -1732,7 +1732,7 @@
 
     invoke-virtual {v4, v5}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 434
+    .line 444
     .end local v1           #result:Ljava/lang/String;
     .end local v2           #resultLength:Ljava/lang/String;
     .end local v3           #src:[B
@@ -1745,16 +1745,16 @@
     .parameter "hex"
 
     .prologue
-    .line 852
+    .line 862
     const-string/jumbo v1, "0123456789ABCDEF"
 
-    .line 853
+    .line 863
     .local v1, digital:Ljava/lang/String;
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v2
 
-    .line 854
+    .line 864
     .local v2, hex2char:[C
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -1764,7 +1764,7 @@
 
     new-array v0, v5, [B
 
-    .line 856
+    .line 866
     .local v0, bytes:[B
     const/4 v3, 0x0
 
@@ -1774,14 +1774,14 @@
 
     if-lt v3, v5, :cond_0
 
-    .line 861
+    .line 871
     new-instance v5, Ljava/lang/String;
 
     invoke-direct {v5, v0}, Ljava/lang/String;-><init>([B)V
 
     return-object v5
 
-    .line 857
+    .line 867
     :cond_0
     mul-int/lit8 v5, v3, 0x2
 
@@ -1793,7 +1793,7 @@
 
     mul-int/lit8 v4, v5, 0x10
 
-    .line 858
+    .line 868
     .local v4, temp:I
     mul-int/lit8 v5, v3, 0x2
 
@@ -1807,14 +1807,14 @@
 
     add-int/2addr v4, v5
 
-    .line 859
+    .line 869
     and-int/lit16 v5, v4, 0xff
 
     int-to-byte v5, v5
 
     aput-byte v5, v0, v3
 
-    .line 856
+    .line 866
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
@@ -1825,7 +1825,7 @@
     .parameter "hex"
 
     .prologue
-    .line 849
+    .line 859
     invoke-static {p0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->hex2bin(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1842,14 +1842,14 @@
     .parameter "b"
 
     .prologue
-    .line 896
+    .line 906
     array-length v3, p0
 
     rem-int/lit8 v3, v3, 0x2
 
     if-eqz v3, :cond_0
 
-    .line 897
+    .line 907
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
     const-string/jumbo v4, "\u957f\u5ea6\u4e0d\u662f\u5076\u6570"
@@ -1858,7 +1858,7 @@
 
     throw v3
 
-    .line 899
+    .line 909
     :cond_0
     array-length v3, p0
 
@@ -1866,7 +1866,7 @@
 
     new-array v0, v3, [B
 
-    .line 900
+    .line 910
     .local v0, b2:[B
     const/4 v2, 0x0
 
@@ -1876,13 +1876,13 @@
 
     if-lt v2, v3, :cond_1
 
-    .line 906
+    .line 916
     const/4 p0, 0x0
 
-    .line 907
+    .line 917
     return-object v0
 
-    .line 901
+    .line 911
     :cond_1
     new-instance v1, Ljava/lang/String;
 
@@ -1890,7 +1890,7 @@
 
     invoke-direct {v1, p0, v2, v3}, Ljava/lang/String;-><init>([BII)V
 
-    .line 904
+    .line 914
     .local v1, item:Ljava/lang/String;
     div-int/lit8 v3, v2, 0x2
 
@@ -1904,7 +1904,7 @@
 
     aput-byte v4, v0, v3
 
-    .line 900
+    .line 910
     add-int/lit8 v2, v2, 0x2
 
     goto :goto_0
@@ -1915,7 +1915,7 @@
     .parameter "hexString"
 
     .prologue
-    .line 657
+    .line 667
     if-eqz p0, :cond_0
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -1926,19 +1926,19 @@
 
     if-eqz v3, :cond_2
 
-    .line 658
+    .line 668
     :cond_0
     const/4 v0, 0x0
 
-    .line 664
+    .line 674
     :cond_1
     return-object v0
 
-    .line 659
+    .line 669
     :cond_2
     const-string/jumbo v0, ""
 
-    .line 660
+    .line 670
     .local v0, bString:Ljava/lang/String;
     const/4 v1, 0x0
 
@@ -1950,7 +1950,7 @@
 
     if-ge v1, v3, :cond_1
 
-    .line 661
+    .line 671
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string/jumbo v4, "0000"
@@ -1981,7 +1981,7 @@
 
     move-result-object v2
 
-    .line 662
+    .line 672
     .local v2, tmp:Ljava/lang/String;
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2009,7 +2009,7 @@
 
     move-result-object v0
 
-    .line 660
+    .line 670
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
@@ -2020,29 +2020,29 @@
     .parameter "hexString"
 
     .prologue
-    .line 248
+    .line 258
     invoke-virtual {p0}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
     move-result-object p0
 
-    .line 249
+    .line 259
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v5
 
     div-int/lit8 v3, v5, 0x2
 
-    .line 250
+    .line 260
     .local v3, length:I
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v1
 
-    .line 251
+    .line 261
     .local v1, hexChars:[C
     new-array v0, v3, [B
 
-    .line 252
+    .line 262
     .local v0, d:[B
     const/4 v2, 0x0
 
@@ -2050,18 +2050,18 @@
     :goto_0
     if-lt v2, v3, :cond_0
 
-    .line 256
+    .line 266
     const/4 v5, 0x0
 
     aget-byte v5, v0, v5
 
     return v5
 
-    .line 253
+    .line 263
     :cond_0
     mul-int/lit8 v4, v2, 0x2
 
-    .line 254
+    .line 264
     .local v4, pos:I
     aget-char v5, v1, v4
 
@@ -2085,7 +2085,7 @@
 
     aput-byte v5, v0, v2
 
-    .line 252
+    .line 262
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
@@ -2096,7 +2096,7 @@
     .parameter "hexString"
 
     .prologue
-    .line 225
+    .line 235
     if-eqz p0, :cond_0
 
     const-string/jumbo v6, ""
@@ -2107,7 +2107,7 @@
 
     if-eqz v6, :cond_2
 
-    .line 226
+    .line 236
     :cond_0
     const/4 v6, 0x0
 
@@ -2116,35 +2116,35 @@
     .local v0, bytes:[B
     move-object v1, v0
 
-    .line 237
+    .line 247
     .end local v0           #bytes:[B
     :cond_1
     return-object v1
 
-    .line 229
+    .line 239
     :cond_2
     invoke-virtual {p0}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
     move-result-object p0
 
-    .line 230
+    .line 240
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v6
 
     div-int/lit8 v4, v6, 0x2
 
-    .line 231
+    .line 241
     .local v4, length:I
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v2
 
-    .line 232
+    .line 242
     .local v2, hexChars:[C
     new-array v1, v4, [B
 
-    .line 233
+    .line 243
     .local v1, d:[B
     const/4 v3, 0x0
 
@@ -2152,10 +2152,10 @@
     :goto_0
     if-ge v3, v4, :cond_1
 
-    .line 234
+    .line 244
     mul-int/lit8 v5, v3, 0x2
 
-    .line 235
+    .line 245
     .local v5, pos:I
     aget-char v6, v2, v5
 
@@ -2179,7 +2179,7 @@
 
     aput-byte v6, v1, v3
 
-    .line 233
+    .line 243
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
@@ -2190,7 +2190,7 @@
     .parameter "hexString"
 
     .prologue
-    .line 609
+    .line 619
     invoke-static {p0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->hexStringToBytes(Ljava/lang/String;)[B
 
     move-result-object v0
@@ -2207,12 +2207,12 @@
     .parameter "hexString"
 
     .prologue
-    .line 914
+    .line 924
     invoke-static {p0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->hexString2binaryString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 915
+    .line 925
     .local v0, binary:Ljava/lang/String;
     invoke-static {v0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->binToMaskCheckCount(Ljava/lang/String;)[B
 
@@ -2226,7 +2226,7 @@
     .parameter "str"
 
     .prologue
-    .line 382
+    .line 392
     const/16 v1, 0x10
 
     invoke-static {p0, v1}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;I)Ljava/lang/Integer;
@@ -2237,7 +2237,7 @@
 
     move-result v0
 
-    .line 383
+    .line 393
     .local v0, intLength:I
     return v0
 .end method
@@ -2247,12 +2247,12 @@
     .parameter "str"
 
     .prologue
-    .line 395
+    .line 405
     invoke-static {p0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->bytesToHexString([B)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 396
+    .line 406
     .local v0, byteStr:Ljava/lang/String;
     const/16 v2, 0x10
 
@@ -2264,7 +2264,7 @@
 
     move-result v1
 
-    .line 397
+    .line 407
     .local v1, intLength:I
     return v1
 .end method
@@ -2274,7 +2274,7 @@
     .parameter "id"
 
     .prologue
-    .line 137
+    .line 147
     invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v0
@@ -2295,32 +2295,32 @@
     .parameter "id"
 
     .prologue
-    .line 140
+    .line 150
     invoke-static {p0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 141
+    .line 151
     .local v0, hexString:Ljava/lang/String;
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 142
+    .line 152
     .local v1, len:I
     :goto_0
     const/16 v2, 0x8
 
     if-lt v1, v2, :cond_0
 
-    .line 146
+    .line 156
     invoke-static {v0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->hexStringToBytes(Ljava/lang/String;)[B
 
     move-result-object v2
 
     return-object v2
 
-    .line 143
+    .line 153
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2336,7 +2336,7 @@
 
     move-result-object v0
 
-    .line 144
+    .line 154
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -2349,24 +2349,24 @@
     .parameter "id"
 
     .prologue
-    .line 177
+    .line 187
     invoke-static {p0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 178
+    .line 188
     .local v1, hexString:Ljava/lang/String;
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v4
 
-    .line 179
+    .line 189
     .local v4, len:I
     const/4 v7, 0x2
 
     if-ge v4, v7, :cond_0
 
-    .line 180
+    .line 190
     new-instance v7, Ljava/lang/StringBuilder;
 
     const-string/jumbo v8, "0"
@@ -2381,12 +2381,12 @@
 
     move-result-object v1
 
-    .line 181
+    .line 191
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v4
 
-    .line 183
+    .line 193
     :cond_0
     rem-int/lit8 v7, v4, 0x2
 
@@ -2394,7 +2394,7 @@
 
     if-ne v7, v8, :cond_1
 
-    .line 184
+    .line 194
     new-instance v7, Ljava/lang/StringBuilder;
 
     const-string/jumbo v8, "0"
@@ -2409,28 +2409,28 @@
 
     move-result-object v1
 
-    .line 185
+    .line 195
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v4
 
-    .line 187
+    .line 197
     :cond_1
     div-int/lit8 v6, v4, 0x2
 
-    .line 188
+    .line 198
     .local v6, validLen:I
     :goto_0
     const/16 v7, 0x8
 
     if-lt v4, v7, :cond_2
 
-    .line 192
+    .line 202
     invoke-static {v1}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->hexStringToBytes(Ljava/lang/String;)[B
 
     move-result-object v0
 
-    .line 193
+    .line 203
     .local v0, d:[B
     const/4 v3, 0x0
 
@@ -2441,10 +2441,10 @@
     :goto_1
     if-lt v3, v2, :cond_3
 
-    .line 198
+    .line 208
     return-object v0
 
-    .line 189
+    .line 199
     .end local v0           #d:[B
     .end local v2           #i:I
     .end local v3           #j:I
@@ -2467,30 +2467,30 @@
 
     move-result-object v1
 
-    .line 190
+    .line 200
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v4
 
     goto :goto_0
 
-    .line 194
+    .line 204
     .restart local v0       #d:[B
     .restart local v2       #i:I
     .restart local v3       #j:I
     :cond_3
     aget-byte v5, v0, v3
 
-    .line 195
+    .line 205
     .local v5, temp:B
     aget-byte v7, v0, v2
 
     aput-byte v7, v0, v3
 
-    .line 196
+    .line 206
     aput-byte v5, v0, v2
 
-    .line 193
+    .line 203
     add-int/lit8 v3, v3, 0x1
 
     add-int/lit8 v2, v2, -0x1
@@ -2503,24 +2503,24 @@
     .parameter "id"
 
     .prologue
-    .line 156
+    .line 166
     invoke-static {p0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 157
+    .line 167
     .local v0, hexString:Ljava/lang/String;
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 158
+    .line 168
     .local v1, len:I
     const/4 v2, 0x2
 
     if-ge v1, v2, :cond_0
 
-    .line 159
+    .line 169
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "0"
@@ -2535,26 +2535,26 @@
 
     move-result-object v0
 
-    .line 160
+    .line 170
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 162
+    .line 172
     :cond_0
     :goto_0
     const/16 v2, 0x8
 
     if-lt v1, v2, :cond_1
 
-    .line 166
+    .line 176
     invoke-static {v0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->hexStringToBytes(Ljava/lang/String;)[B
 
     move-result-object v2
 
     return-object v2
 
-    .line 163
+    .line 173
     :cond_1
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2574,7 +2574,7 @@
 
     move-result-object v0
 
-    .line 164
+    .line 174
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -2587,32 +2587,32 @@
     .parameter "id"
 
     .prologue
-    .line 208
+    .line 218
     invoke-static {p0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 209
+    .line 219
     .local v0, hexString:Ljava/lang/String;
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 210
+    .line 220
     .local v1, len:I
     :goto_0
     const/4 v2, 0x2
 
     if-lt v1, v2, :cond_0
 
-    .line 214
+    .line 224
     invoke-static {v0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->hexStringToByte(Ljava/lang/String;)B
 
     move-result v2
 
     return v2
 
-    .line 211
+    .line 221
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2628,7 +2628,7 @@
 
     move-result-object v0
 
-    .line 212
+    .line 222
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -2716,7 +2716,7 @@
     .parameter "id"
 
     .prologue
-    .line 121
+    .line 131
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-static {p0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -2733,27 +2733,27 @@
 
     move-result-object v0
 
-    .line 122
+    .line 132
     .local v0, hexString:Ljava/lang/String;
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 123
+    .line 133
     .local v1, len:I
     :goto_0
     const/4 v2, 0x6
 
     if-lt v1, v2, :cond_0
 
-    .line 127
+    .line 137
     invoke-static {v0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->hexStringToBytes(Ljava/lang/String;)[B
 
     move-result-object v2
 
     return-object v2
 
-    .line 124
+    .line 134
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2773,7 +2773,7 @@
 
     move-result-object v0
 
-    .line 125
+    .line 135
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -2856,33 +2856,33 @@
     goto :goto_0
 .end method
 
-.method public static packLength(I)Ljava/lang/String;
+.method public static intToTwoHexString(I)Ljava/lang/String;
     .locals 4
-    .parameter "dataLen"
+    .parameter "id"
 
     .prologue
-    .line 366
+    .line 115
     invoke-static {p0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 367
-    .local v0, hexLength:Ljava/lang/String;
+    .line 116
+    .local v0, hexString:Ljava/lang/String;
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 368
+    .line 117
     .local v1, len:I
     :goto_0
     const/4 v2, 0x4
 
     if-lt v1, v2, :cond_0
 
-    .line 372
+    .line 121
     return-object v0
 
-    .line 369
+    .line 118
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2898,7 +2898,57 @@
 
     move-result-object v0
 
-    .line 370
+    .line 119
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    goto :goto_0
+.end method
+
+.method public static packLength(I)Ljava/lang/String;
+    .locals 4
+    .parameter "dataLen"
+
+    .prologue
+    .line 376
+    invoke-static {p0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 377
+    .local v0, hexLength:Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    .line 378
+    .local v1, len:I
+    :goto_0
+    const/4 v2, 0x4
+
+    if-lt v1, v2, :cond_0
+
+    .line 382
+    return-object v0
+
+    .line 379
+    :cond_0
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string/jumbo v3, "0"
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 380
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -2911,7 +2961,7 @@
     .parameter "str"
 
     .prologue
-    .line 334
+    .line 344
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v2
@@ -2922,23 +2972,23 @@
 
     move-result-object v0
 
-    .line 335
+    .line 345
     .local v0, hexLength:Ljava/lang/String;
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 336
+    .line 346
     .local v1, len:I
     :goto_0
     const/4 v2, 0x4
 
     if-lt v1, v2, :cond_0
 
-    .line 340
+    .line 350
     return-object v0
 
-    .line 337
+    .line 347
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2954,7 +3004,7 @@
 
     move-result-object v0
 
-    .line 338
+    .line 348
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -2972,7 +3022,7 @@
     .parameter "dataArea"
 
     .prologue
-    .line 414
+    .line 424
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -2989,7 +3039,7 @@
 
     move-result-object v1
 
-    .line 415
+    .line 425
     invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -3002,7 +3052,7 @@
 
     move-result-object v1
 
-    .line 414
+    .line 424
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -3011,7 +3061,7 @@
 
     move-result-object v0
 
-    .line 416
+    .line 426
     .local v0, verify:Ljava/lang/String;
     return-object v0
 .end method
@@ -3021,18 +3071,18 @@
     .parameter "str"
 
     .prologue
-    .line 786
+    .line 796
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 787
+    .line 797
     .local v2, sb:Ljava/lang/StringBuilder;
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
     move-result-object v0
 
-    .line 788
+    .line 798
     .local v0, bs:[B
     const/4 v1, 0x0
 
@@ -3042,14 +3092,14 @@
 
     if-lt v1, v3, :cond_0
 
-    .line 790
+    .line 800
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
     return-object v3
 
-    .line 789
+    .line 799
     :cond_0
     aget-byte v3, v0, v1
 
@@ -3059,7 +3109,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 788
+    .line 798
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
@@ -3070,10 +3120,10 @@
     .parameter "mask"
 
     .prologue
-    .line 927
+    .line 937
     const/4 v0, 0x0
 
-    .line 928
+    .line 938
     .local v0, count:I
     const/4 v1, 0x0
 
@@ -3085,14 +3135,14 @@
 
     if-lt v1, v2, :cond_0
 
-    .line 933
+    .line 943
     invoke-static {v0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->intToTwoHexBytes(I)[B
 
     move-result-object v2
 
     return-object v2
 
-    .line 929
+    .line 939
     :cond_0
     add-int/lit8 v2, v1, 0x1
 
@@ -3108,10 +3158,10 @@
 
     if-eqz v2, :cond_1
 
-    .line 930
+    .line 940
     add-int/lit8 v0, v0, 0x1
 
-    .line 928
+    .line 938
     :cond_1
     add-int/lit8 v1, v1, 0x1
 
@@ -3123,27 +3173,27 @@
     .parameter "str"
 
     .prologue
-    .line 674
+    .line 684
     const-string/jumbo v0, ""
 
-    .line 675
+    .line 685
     .local v0, dest:Ljava/lang/String;
     if-eqz p0, :cond_0
 
-    .line 676
+    .line 686
     const-string/jumbo v3, "\t|\r|\n"
 
     invoke-static {v3}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v2
 
-    .line 677
+    .line 687
     .local v2, p:Ljava/util/regex/Pattern;
     invoke-virtual {v2, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object v1
 
-    .line 678
+    .line 688
     .local v1, m:Ljava/util/regex/Matcher;
     const-string/jumbo v3, ""
 
@@ -3151,7 +3201,7 @@
 
     move-result-object v0
 
-    .line 680
+    .line 690
     .end local v1           #m:Ljava/util/regex/Matcher;
     .end local v2           #p:Ljava/util/regex/Pattern;
     :cond_0
@@ -3173,27 +3223,27 @@
 
     const/4 v8, 0x6
 
-    .line 684
+    .line 694
     const-string/jumbo v0, ""
 
-    .line 685
+    .line 695
     .local v0, dest:Ljava/lang/String;
     if-eqz p0, :cond_0
 
-    .line 686
+    .line 696
     const-string/jumbo v7, "\t|\r|\n"
 
     invoke-static {v7}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v6
 
-    .line 687
+    .line 697
     .local v6, p:Ljava/util/regex/Pattern;
     invoke-virtual {v6, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object v5
 
-    .line 688
+    .line 698
     .local v5, m:Ljava/util/regex/Matcher;
     const-string/jumbo v7, ""
 
@@ -3201,7 +3251,7 @@
 
     move-result-object v0
 
-    .line 691
+    .line 701
     .end local v5           #m:Ljava/util/regex/Matcher;
     .end local v6           #p:Ljava/util/regex/Pattern;
     :cond_0
@@ -3211,26 +3261,26 @@
 
     if-le v7, v8, :cond_1
 
-    .line 693
+    .line 703
     const/4 v7, 0x0
 
     invoke-virtual {v0, v7, v9}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 694
+    .line 704
     .local v1, destfenge:Ljava/lang/String;
     invoke-virtual {v0, v9, v10}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 695
+    .line 705
     .local v2, destfenge1:Ljava/lang/String;
     invoke-virtual {v0, v10, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 696
+    .line 706
     .local v3, destfenge2:Ljava/lang/String;
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -3240,7 +3290,7 @@
 
     move-result-object v4
 
-    .line 697
+    .line 707
     .local v4, destfenge3:Ljava/lang/String;
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -3284,7 +3334,7 @@
 
     move-result-object v0
 
-    .line 699
+    .line 709
     .end local v1           #destfenge:Ljava/lang/String;
     .end local v2           #destfenge1:Ljava/lang/String;
     .end local v3           #destfenge2:Ljava/lang/String;
@@ -3302,10 +3352,10 @@
     .parameter "str"
 
     .prologue
-    .line 812
+    .line 822
     const-string/jumbo v0, ""
 
-    .line 814
+    .line 824
     .local v0, command:Ljava/lang/String;
     :try_start_0
     new-instance v1, Ljava/lang/String;
@@ -3324,17 +3374,17 @@
     .local v1, command:Ljava/lang/String;
     move-object v0, v1
 
-    .line 818
+    .line 828
     .end local v1           #command:Ljava/lang/String;
     .restart local v0       #command:Ljava/lang/String;
     :goto_0
     return-object v0
 
-    .line 815
+    .line 825
     :catch_0
     move-exception v2
 
-    .line 816
+    .line 826
     .local v2, e:Ljava/io/UnsupportedEncodingException;
     invoke-virtual {v2}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
@@ -3346,27 +3396,27 @@
     .parameter "n"
 
     .prologue
-    .line 774
+    .line 784
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 775
+    .line 785
     .local v1, sb:Ljava/lang/StringBuilder;
     div-int/lit8 v3, p0, 0x10
 
     if-nez v3, :cond_0
 
-    .line 776
+    .line 786
     invoke-static {p0}, Lcom/cnlaunch/diagnosemodule/utils/ByteHexHelper;->toHexUtil(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 782
+    .line 792
     :goto_0
     return-object v3
 
-    .line 778
+    .line 788
     :cond_0
     div-int/lit8 v3, p0, 0x10
 
@@ -3374,11 +3424,11 @@
 
     move-result-object v2
 
-    .line 779
+    .line 789
     .local v2, t:Ljava/lang/String;
     rem-int/lit8 v0, p0, 0x10
 
-    .line 780
+    .line 790
     .local v0, nn:I
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3390,7 +3440,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 782
+    .line 792
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
@@ -3403,14 +3453,14 @@
     .parameter "n"
 
     .prologue
-    .line 759
+    .line 769
     const-string/jumbo v0, ""
 
-    .line 760
+    .line 770
     .local v0, rt:Ljava/lang/String;
     packed-switch p0, :pswitch_data_0
 
-    .line 768
+    .line 778
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -3427,11 +3477,11 @@
 
     move-result-object v0
 
-    .line 770
+    .line 780
     :goto_0
     return-object v0
 
-    .line 761
+    .line 771
     :pswitch_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3453,7 +3503,7 @@
 
     goto :goto_0
 
-    .line 762
+    .line 772
     :pswitch_1
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3475,7 +3525,7 @@
 
     goto :goto_0
 
-    .line 763
+    .line 773
     :pswitch_2
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3497,7 +3547,7 @@
 
     goto :goto_0
 
-    .line 764
+    .line 774
     :pswitch_3
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3519,7 +3569,7 @@
 
     goto :goto_0
 
-    .line 765
+    .line 775
     :pswitch_4
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3541,7 +3591,7 @@
 
     goto :goto_0
 
-    .line 766
+    .line 776
     :pswitch_5
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3563,7 +3613,7 @@
 
     goto :goto_0
 
-    .line 760
+    .line 770
     :pswitch_data_0
     .packed-switch 0xa
         :pswitch_0
@@ -3589,42 +3639,42 @@
     .end annotation
 
     .prologue
-    .line 706
+    .line 716
     if-eqz p0, :cond_1
 
-    .line 707
+    .line 717
     array-length v3, p0
 
-    .line 708
+    .line 718
     .local v3, total_bytes:I
     const/4 v5, 0x3
 
     if-lt v3, v5, :cond_1
 
-    .line 709
+    .line 719
     const/4 v4, 0x0
 
-    .line 710
+    .line 720
     .local v4, walkthrough:I
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 711
+    .line 721
     .local v0, result_strings:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/String;>;"
     :goto_0
     add-int/lit8 v5, v3, -0x1
 
     if-lt v4, v5, :cond_0
 
-    .line 723
+    .line 733
     .end local v0           #result_strings:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/String;>;"
     .end local v3           #total_bytes:I
     .end local v4           #walkthrough:I
     :goto_1
     return-object v0
 
-    .line 712
+    .line 722
     .restart local v0       #result_strings:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/String;>;"
     .restart local v3       #total_bytes:I
     .restart local v4       #walkthrough:I
@@ -3633,47 +3683,47 @@
 
     shl-int/lit8 v5, v5, 0x8
 
-    .line 713
+    .line 723
     add-int/lit8 v6, v4, 0x1
 
     aget-byte v6, p0, v6
 
-    .line 712
+    .line 722
     or-int v2, v5, v6
 
-    .line 714
+    .line 724
     .local v2, temp_len:I
     add-int/lit8 v5, v2, -0x1
 
     new-array v1, v5, [B
 
-    .line 715
+    .line 725
     .local v1, str_bytes:[B
     add-int/lit8 v5, v4, 0x2
 
     const/4 v6, 0x0
 
-    .line 716
+    .line 726
     add-int/lit8 v7, v2, -0x1
 
-    .line 715
+    .line 725
     invoke-static {p0, v5, v1, v6, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 717
+    .line 727
     new-instance v5, Ljava/lang/String;
 
     invoke-direct {v5, v1}, Ljava/lang/String;-><init>([B)V
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 718
+    .line 728
     add-int/lit8 v5, v2, 0x2
 
     add-int/2addr v4, v5
 
     goto :goto_0
 
-    .line 723
+    .line 733
     .end local v0           #result_strings:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/String;>;"
     .end local v1           #str_bytes:[B
     .end local v2           #temp_len:I

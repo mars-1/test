@@ -693,7 +693,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/module/golo/model/GoloAllUnreadCount;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0704dd
+    const v1, 0x7f0704df
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 

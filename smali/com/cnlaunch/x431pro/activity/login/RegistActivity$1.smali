@@ -51,7 +51,7 @@
     .parameter "msg"
 
     .prologue
-    const v7, 0x7f0300f0
+    const v7, 0x7f0300f2
 
     .line 153
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
@@ -61,7 +61,7 @@
 
     packed-switch v3, :pswitch_data_0
 
-    .line 216
+    .line 219
     :cond_0
     :goto_0
     return-void
@@ -74,7 +74,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0041
+    const v4, 0x7f090041
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -297,7 +297,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f07065a
+    const v5, 0x7f07065c
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

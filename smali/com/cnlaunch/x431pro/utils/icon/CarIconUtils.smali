@@ -1503,49 +1503,49 @@
     invoke-static {v13, v14}, Lcom/cnlaunch/framework/utils/NLog;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 539
-    new-instance v12, Ljava/util/ArrayList;
+    new-instance v11, Ljava/util/ArrayList;
 
-    invoke-direct {v12}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
 
     .line 540
-    .local v12, result:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
-    const/4 v10, 0x0
+    .local v11, result:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
+    const/4 v9, 0x0
 
     .line 541
-    .local v10, queryList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
+    .local v9, queryList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->carIconDao:Lcom/cnlaunch/x431pro/utils/db/CarIconDao;
 
     invoke-virtual {v13}, Lcom/cnlaunch/x431pro/utils/db/CarIconDao;->queryBuilder()Lde/greenrobot/dao/query/QueryBuilder;
 
-    move-result-object v8
+    move-result-object v7
 
     .line 542
-    .local v8, qb:Lde/greenrobot/dao/query/QueryBuilder;,"Lde/greenrobot/dao/query/QueryBuilder<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
+    .local v7, qb:Lde/greenrobot/dao/query/QueryBuilder;,"Lde/greenrobot/dao/query/QueryBuilder<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
     invoke-static {}, Lcom/cnlaunch/framework/utils/lang/LangManager;->getCountry()Ljava/lang/String;
 
     move-result-object v13
 
     invoke-virtual {v13}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v3
 
     .line 543
-    .local v4, currentCountry:Ljava/lang/String;
-    invoke-static {v4}, Lcom/cnlaunch/diagnosemodule/utils/AndroidToLan;->toLan(Ljava/lang/String;)Ljava/lang/String;
+    .local v3, currentCountry:Ljava/lang/String;
+    invoke-static {v3}, Lcom/cnlaunch/diagnosemodule/utils/AndroidToLan;->toLan(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v6
 
     .line 544
-    .local v7, matchLanguage:Ljava/lang/String;
+    .local v6, matchLanguage:Ljava/lang/String;
     new-instance v13, Ljava/lang/StringBuilder;
 
     const-string/jumbo v14, "%"
 
     invoke-direct {v13, v14}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v13, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v13, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v13
 
@@ -1557,37 +1557,29 @@
 
     invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v2
 
     .line 546
-    .local v3, conditionLanguage:Ljava/lang/String;
-    const/4 v13, 0x3
+    .local v2, conditionLanguage:Ljava/lang/String;
+    move-object/from16 v0, p0
 
-    new-array v1, v13, [Ljava/lang/Object;
+    iget-object v13, v0, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->mContext:Landroid/content/Context;
 
-    const/4 v13, 0x0
+    invoke-static {v13}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
 
-    const-string/jumbo v14, "ASIA"
+    move-result-object v13
 
-    aput-object v14, v1, v13
+    const-string/jumbo v14, "serialNo"
 
-    const/4 v13, 0x1
+    invoke-virtual {v13, v14}, Lcom/cnlaunch/framework/common/PreferencesManager;->get(Ljava/lang/String;)Ljava/lang/String;
 
-    const-string/jumbo v14, "EUROPE"
-
-    aput-object v14, v1, v13
-
-    const/4 v13, 0x2
-
-    const-string/jumbo v14, "USA"
-
-    aput-object v14, v1, v13
+    move-result-object v12
 
     .line 547
-    .local v1, areaInValues:[Ljava/lang/Object;
+    .local v12, serialNo:Ljava/lang/String;
     const-string/jumbo v13, "CN"
 
-    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v13
 
@@ -1617,7 +1609,7 @@
 
     move-object/from16 v0, v16
 
-    invoke-virtual {v0, v3}, Lde/greenrobot/dao/Property;->like(Ljava/lang/String;)Lde/greenrobot/dao/query/WhereCondition;
+    invoke-virtual {v0, v2}, Lde/greenrobot/dao/Property;->like(Ljava/lang/String;)Lde/greenrobot/dao/query/WhereCondition;
 
     move-result-object v16
 
@@ -1625,20 +1617,21 @@
 
     const/4 v15, 0x1
 
-    sget-object v16, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->AreaId:Lde/greenrobot/dao/Property;
+    .line 550
+    sget-object v16, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->SerialNo:Lde/greenrobot/dao/Property;
 
     move-object/from16 v0, v16
 
-    invoke-virtual {v0, v1}, Lde/greenrobot/dao/Property;->in([Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
+    invoke-virtual {v0, v12}, Lde/greenrobot/dao/Property;->eq(Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
 
     move-result-object v16
 
     aput-object v16, v14, v15
 
     .line 548
-    invoke-virtual {v8, v13, v14}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
+    invoke-virtual {v7, v13, v14}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
 
-    .line 550
+    .line 551
     const/4 v13, 0x1
 
     new-array v13, v13, [Lde/greenrobot/dao/Property;
@@ -1649,30 +1642,30 @@
 
     aput-object v15, v13, v14
 
-    invoke-virtual {v8, v13}, Lde/greenrobot/dao/query/QueryBuilder;->orderAsc([Lde/greenrobot/dao/Property;)Lde/greenrobot/dao/query/QueryBuilder;
+    invoke-virtual {v7, v13}, Lde/greenrobot/dao/query/QueryBuilder;->orderAsc([Lde/greenrobot/dao/Property;)Lde/greenrobot/dao/query/QueryBuilder;
 
-    .line 551
-    invoke-virtual {v8}, Lde/greenrobot/dao/query/QueryBuilder;->list()Ljava/util/List;
+    .line 552
+    invoke-virtual {v7}, Lde/greenrobot/dao/query/QueryBuilder;->list()Ljava/util/List;
 
-    move-result-object v10
+    move-result-object v9
 
-    .line 587
+    .line 591
     :cond_0
     :goto_0
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
-    .line 588
-    .local v6, isAdded:Z
-    if-eqz v10, :cond_2
+    .line 592
+    .local v5, isAdded:Z
+    if-eqz v9, :cond_2
 
-    invoke-interface {v10}, Ljava/util/List;->isEmpty()Z
+    invoke-interface {v9}, Ljava/util/List;->isEmpty()Z
 
     move-result v13
 
     if-nez v13, :cond_2
 
-    .line 589
-    invoke-interface {v10}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    .line 593
+    invoke-interface {v9}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v13
 
@@ -1684,7 +1677,7 @@
 
     if-nez v14, :cond_9
 
-    .line 604
+    .line 608
     :cond_2
     sget-object v13, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->tag:Ljava/lang/String;
 
@@ -1700,7 +1693,7 @@
 
     invoke-direct/range {v16 .. v17}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-interface {v10}, Ljava/util/List;->size()I
+    invoke-interface {v9}, Ljava/util/List;->size()I
 
     move-result v17
 
@@ -1714,7 +1707,7 @@
 
     move-result-object v16
 
-    invoke-interface {v12}, Ljava/util/List;->size()I
+    invoke-interface {v11}, Ljava/util/List;->size()I
 
     move-result v17
 
@@ -1730,21 +1723,21 @@
 
     invoke-static {v13, v14}, Lcom/cnlaunch/framework/utils/NLog;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 605
-    return-object v12
+    .line 609
+    return-object v11
 
-    .line 552
-    .end local v6           #isAdded:Z
+    .line 553
+    .end local v5           #isAdded:Z
     :cond_3
     const-string/jumbo v13, "EN"
 
-    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v13
 
     if-eqz v13, :cond_4
 
-    .line 553
+    .line 554
     sget-object v13, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->IsDownload:Lde/greenrobot/dao/Property;
 
     const/4 v14, 0x1
@@ -1763,12 +1756,12 @@
 
     const/4 v15, 0x0
 
-    .line 554
+    .line 555
     sget-object v16, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->Languagelist:Lde/greenrobot/dao/Property;
 
     move-object/from16 v0, v16
 
-    invoke-virtual {v0, v3}, Lde/greenrobot/dao/Property;->like(Ljava/lang/String;)Lde/greenrobot/dao/query/WhereCondition;
+    invoke-virtual {v0, v2}, Lde/greenrobot/dao/Property;->like(Ljava/lang/String;)Lde/greenrobot/dao/query/WhereCondition;
 
     move-result-object v16
 
@@ -1776,20 +1769,21 @@
 
     const/4 v15, 0x1
 
-    sget-object v16, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->AreaId:Lde/greenrobot/dao/Property;
+    .line 556
+    sget-object v16, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->SerialNo:Lde/greenrobot/dao/Property;
 
     move-object/from16 v0, v16
 
-    invoke-virtual {v0, v1}, Lde/greenrobot/dao/Property;->in([Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
+    invoke-virtual {v0, v12}, Lde/greenrobot/dao/Property;->eq(Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
 
     move-result-object v16
 
     aput-object v16, v14, v15
 
-    .line 553
-    invoke-virtual {v8, v13, v14}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
+    .line 554
+    invoke-virtual {v7, v13, v14}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
 
-    .line 555
+    .line 557
     const/4 v13, 0x1
 
     new-array v13, v13, [Lde/greenrobot/dao/Property;
@@ -1800,17 +1794,17 @@
 
     aput-object v15, v13, v14
 
-    invoke-virtual {v8, v13}, Lde/greenrobot/dao/query/QueryBuilder;->orderAsc([Lde/greenrobot/dao/Property;)Lde/greenrobot/dao/query/QueryBuilder;
-
-    .line 556
-    invoke-virtual {v8}, Lde/greenrobot/dao/query/QueryBuilder;->list()Ljava/util/List;
-
-    move-result-object v10
-
-    .line 557
-    goto/16 :goto_0
+    invoke-virtual {v7, v13}, Lde/greenrobot/dao/query/QueryBuilder;->orderAsc([Lde/greenrobot/dao/Property;)Lde/greenrobot/dao/query/QueryBuilder;
 
     .line 558
+    invoke-virtual {v7}, Lde/greenrobot/dao/query/QueryBuilder;->list()Ljava/util/List;
+
+    move-result-object v9
+
+    .line 559
+    goto/16 :goto_0
+
+    .line 560
     :cond_4
     sget-object v13, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->IsDownload:Lde/greenrobot/dao/Property;
 
@@ -1830,12 +1824,12 @@
 
     const/4 v15, 0x0
 
-    .line 559
+    .line 561
     sget-object v16, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->Languagelist:Lde/greenrobot/dao/Property;
 
     move-object/from16 v0, v16
 
-    invoke-virtual {v0, v3}, Lde/greenrobot/dao/Property;->like(Ljava/lang/String;)Lde/greenrobot/dao/query/WhereCondition;
+    invoke-virtual {v0, v2}, Lde/greenrobot/dao/Property;->like(Ljava/lang/String;)Lde/greenrobot/dao/query/WhereCondition;
 
     move-result-object v16
 
@@ -1843,20 +1837,21 @@
 
     const/4 v15, 0x1
 
-    sget-object v16, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->AreaId:Lde/greenrobot/dao/Property;
+    .line 562
+    sget-object v16, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->SerialNo:Lde/greenrobot/dao/Property;
 
     move-object/from16 v0, v16
 
-    invoke-virtual {v0, v1}, Lde/greenrobot/dao/Property;->in([Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
+    invoke-virtual {v0, v12}, Lde/greenrobot/dao/Property;->eq(Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
 
     move-result-object v16
 
     aput-object v16, v14, v15
 
-    .line 558
-    invoke-virtual {v8, v13, v14}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
-
     .line 560
+    invoke-virtual {v7, v13, v14}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
+
+    .line 563
     const/4 v13, 0x1
 
     new-array v13, v13, [Lde/greenrobot/dao/Property;
@@ -1867,24 +1862,24 @@
 
     aput-object v15, v13, v14
 
-    invoke-virtual {v8, v13}, Lde/greenrobot/dao/query/QueryBuilder;->orderAsc([Lde/greenrobot/dao/Property;)Lde/greenrobot/dao/query/QueryBuilder;
+    invoke-virtual {v7, v13}, Lde/greenrobot/dao/query/QueryBuilder;->orderAsc([Lde/greenrobot/dao/Property;)Lde/greenrobot/dao/query/QueryBuilder;
 
-    .line 561
-    invoke-virtual {v8}, Lde/greenrobot/dao/query/QueryBuilder;->list()Ljava/util/List;
+    .line 564
+    invoke-virtual {v7}, Lde/greenrobot/dao/query/QueryBuilder;->list()Ljava/util/List;
 
-    move-result-object v10
+    move-result-object v9
 
-    .line 563
+    .line 566
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->carIconDao:Lcom/cnlaunch/x431pro/utils/db/CarIconDao;
 
     invoke-virtual {v13}, Lcom/cnlaunch/x431pro/utils/db/CarIconDao;->queryBuilder()Lde/greenrobot/dao/query/QueryBuilder;
 
-    move-result-object v9
+    move-result-object v8
 
-    .line 564
-    .local v9, qbEN:Lde/greenrobot/dao/query/QueryBuilder;,"Lde/greenrobot/dao/query/QueryBuilder<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
+    .line 567
+    .local v8, qbEN:Lde/greenrobot/dao/query/QueryBuilder;,"Lde/greenrobot/dao/query/QueryBuilder<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
     sget-object v13, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->IsDownload:Lde/greenrobot/dao/Property;
 
     const/4 v14, 0x1
@@ -1903,7 +1898,7 @@
 
     const/4 v15, 0x0
 
-    .line 565
+    .line 568
     sget-object v16, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->Languagelist:Lde/greenrobot/dao/Property;
 
     const-string/jumbo v17, "%EN%"
@@ -1916,20 +1911,21 @@
 
     const/4 v15, 0x1
 
-    sget-object v16, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->AreaId:Lde/greenrobot/dao/Property;
+    .line 569
+    sget-object v16, Lcom/cnlaunch/x431pro/utils/db/CarIconDao$Properties;->SerialNo:Lde/greenrobot/dao/Property;
 
     move-object/from16 v0, v16
 
-    invoke-virtual {v0, v1}, Lde/greenrobot/dao/Property;->in([Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
+    invoke-virtual {v0, v12}, Lde/greenrobot/dao/Property;->eq(Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
 
     move-result-object v16
 
     aput-object v16, v14, v15
 
-    .line 564
-    invoke-virtual {v9, v13, v14}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
+    .line 567
+    invoke-virtual {v8, v13, v14}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
 
-    .line 566
+    .line 570
     const/4 v13, 0x1
 
     new-array v13, v13, [Lde/greenrobot/dao/Property;
@@ -1940,42 +1936,42 @@
 
     aput-object v15, v13, v14
 
-    invoke-virtual {v9, v13}, Lde/greenrobot/dao/query/QueryBuilder;->orderAsc([Lde/greenrobot/dao/Property;)Lde/greenrobot/dao/query/QueryBuilder;
+    invoke-virtual {v8, v13}, Lde/greenrobot/dao/query/QueryBuilder;->orderAsc([Lde/greenrobot/dao/Property;)Lde/greenrobot/dao/query/QueryBuilder;
 
-    .line 567
-    invoke-virtual {v9}, Lde/greenrobot/dao/query/QueryBuilder;->list()Ljava/util/List;
+    .line 571
+    invoke-virtual {v8}, Lde/greenrobot/dao/query/QueryBuilder;->list()Ljava/util/List;
 
-    move-result-object v11
+    move-result-object v10
 
-    .line 569
-    .local v11, queryListEN:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
-    if-eqz v10, :cond_5
+    .line 573
+    .local v10, queryListEN:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
+    if-eqz v9, :cond_5
 
-    invoke-interface {v10}, Ljava/util/List;->isEmpty()Z
+    invoke-interface {v9}, Ljava/util/List;->isEmpty()Z
 
     move-result v13
 
     if-eqz v13, :cond_6
 
-    .line 570
+    .line 574
     :cond_5
-    move-object v10, v11
+    move-object v9, v10
 
-    .line 571
+    .line 575
     goto/16 :goto_0
 
-    .line 572
+    .line 576
     :cond_6
-    if-eqz v11, :cond_0
+    if-eqz v10, :cond_0
 
-    invoke-interface {v11}, Ljava/util/List;->isEmpty()Z
+    invoke-interface {v10}, Ljava/util/List;->isEmpty()Z
 
     move-result v13
 
     if-nez v13, :cond_0
 
-    .line 573
-    invoke-interface {v11}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    .line 577
+    invoke-interface {v10}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v13
 
@@ -1987,63 +1983,63 @@
 
     if-nez v14, :cond_8
 
-    .line 578
+    .line 582
     new-instance v13, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils$4;
 
     move-object/from16 v0, p0
 
     invoke-direct {v13, v0}, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils$4;-><init>(Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;)V
 
-    invoke-static {v10, v13}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
+    invoke-static {v9, v13}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     goto/16 :goto_0
 
-    .line 573
+    .line 577
     :cond_8
     invoke-interface {v13}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v1
 
-    check-cast v2, Lcom/cnlaunch/x431pro/utils/db/CarIcon;
+    check-cast v1, Lcom/cnlaunch/x431pro/utils/db/CarIcon;
 
-    .line 574
-    .local v2, carIcon:Lcom/cnlaunch/x431pro/utils/db/CarIcon;
-    invoke-interface {v10, v2}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    .line 578
+    .local v1, carIcon:Lcom/cnlaunch/x431pro/utils/db/CarIcon;
+    invoke-interface {v9, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
     move-result v14
 
     if-nez v14, :cond_7
 
-    .line 575
-    invoke-interface {v10, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    .line 579
+    invoke-interface {v9, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 589
-    .end local v2           #carIcon:Lcom/cnlaunch/x431pro/utils/db/CarIcon;
-    .end local v9           #qbEN:Lde/greenrobot/dao/query/QueryBuilder;,"Lde/greenrobot/dao/query/QueryBuilder<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
-    .end local v11           #queryListEN:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
-    .restart local v6       #isAdded:Z
+    .line 593
+    .end local v1           #carIcon:Lcom/cnlaunch/x431pro/utils/db/CarIcon;
+    .end local v8           #qbEN:Lde/greenrobot/dao/query/QueryBuilder;,"Lde/greenrobot/dao/query/QueryBuilder<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
+    .end local v10           #queryListEN:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
+    .restart local v5       #isAdded:Z
     :cond_9
     invoke-interface {v13}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v1
 
-    check-cast v2, Lcom/cnlaunch/x431pro/utils/db/CarIcon;
+    check-cast v1, Lcom/cnlaunch/x431pro/utils/db/CarIcon;
 
-    .line 590
-    .restart local v2       #carIcon:Lcom/cnlaunch/x431pro/utils/db/CarIcon;
-    const/4 v6, 0x0
+    .line 594
+    .restart local v1       #carIcon:Lcom/cnlaunch/x431pro/utils/db/CarIcon;
+    const/4 v5, 0x0
 
-    .line 591
-    invoke-interface {v12}, Ljava/util/List;->isEmpty()Z
+    .line 595
+    invoke-interface {v11}, Ljava/util/List;->isEmpty()Z
 
     move-result v14
 
     if-nez v14, :cond_b
 
-    .line 592
-    invoke-interface {v12}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    .line 596
+    invoke-interface {v11}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v14
 
@@ -2054,31 +2050,31 @@
 
     if-nez v15, :cond_c
 
-    .line 599
+    .line 603
     :cond_b
     :goto_3
-    if-nez v6, :cond_1
+    if-nez v5, :cond_1
 
-    .line 600
-    invoke-interface {v12, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    .line 604
+    invoke-interface {v11, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_1
 
-    .line 592
+    .line 596
     :cond_c
     invoke-interface {v14}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v4
 
-    check-cast v5, Lcom/cnlaunch/x431pro/utils/db/CarIcon;
+    check-cast v4, Lcom/cnlaunch/x431pro/utils/db/CarIcon;
 
-    .line 593
-    .local v5, entity:Lcom/cnlaunch/x431pro/utils/db/CarIcon;
-    invoke-virtual {v2}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getSoftPackageId()Ljava/lang/String;
+    .line 597
+    .local v4, entity:Lcom/cnlaunch/x431pro/utils/db/CarIcon;
+    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getSoftPackageId()Ljava/lang/String;
 
     move-result-object v15
 
-    invoke-virtual {v5}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getSoftPackageId()Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getSoftPackageId()Ljava/lang/String;
 
     move-result-object v16
 
@@ -2088,10 +2084,10 @@
 
     if-eqz v15, :cond_a
 
-    .line 594
-    const/4 v6, 0x1
+    .line 598
+    const/4 v5, 0x1
 
-    .line 595
+    .line 599
     goto :goto_3
 .end method
 
@@ -2646,7 +2642,7 @@
     .end annotation
 
     .prologue
-    .line 609
+    .line 613
     sget-object v8, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->tag:Ljava/lang/String;
 
     const/4 v9, 0x1
@@ -2683,16 +2679,16 @@
 
     invoke-static {v8, v9}, Lcom/cnlaunch/framework/utils/NLog;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 610
+    .line 614
     new-instance v4, Ljava/util/HashSet;
 
     invoke-direct {v4}, Ljava/util/HashSet;-><init>()V
 
-    .line 611
+    .line 615
     .local v4, matchedVersionList:Ljava/util/Set;,"Ljava/util/Set<Ljava/lang/String;>;"
     const/4 v7, 0x0
 
-    .line 612
+    .line 616
     .local v7, result:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/CarVersion;>;"
     iget-object v8, p0, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->carVersionDao:Lcom/cnlaunch/x431pro/utils/db/CarVersionDao;
 
@@ -2700,7 +2696,7 @@
 
     move-result-object v5
 
-    .line 613
+    .line 617
     .local v5, qb:Lde/greenrobot/dao/query/QueryBuilder;,"Lde/greenrobot/dao/query/QueryBuilder<Lcom/cnlaunch/x431pro/utils/db/CarVersion;>;"
     invoke-static {}, Lcom/cnlaunch/framework/utils/lang/LangManager;->getCountry()Ljava/lang/String;
 
@@ -2710,13 +2706,13 @@
 
     move-result-object v1
 
-    .line 614
+    .line 618
     .local v1, currentCountry:Ljava/lang/String;
     invoke-static {v1}, Lcom/cnlaunch/diagnosemodule/utils/AndroidToLan;->toLan(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 615
+    .line 619
     .local v3, matchLanguage:Ljava/lang/String;
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -2738,7 +2734,7 @@
 
     move-result-object v2
 
-    .line 616
+    .line 620
     .local v2, languageCondition:Ljava/lang/String;
     sget-object v8, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->tag:Ljava/lang/String;
 
@@ -2766,7 +2762,7 @@
 
     invoke-static {v8, v9}, Lcom/cnlaunch/framework/utils/NLog;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 617
+    .line 621
     const-string/jumbo v8, "CN"
 
     invoke-virtual {v3, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2775,7 +2771,7 @@
 
     if-eqz v8, :cond_2
 
-    .line 618
+    .line 622
     sget-object v8, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->SerialNo:Lde/greenrobot/dao/Property;
 
     invoke-virtual {v8, p1}, Lde/greenrobot/dao/Property;->eq(Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
@@ -2788,7 +2784,7 @@
 
     const/4 v10, 0x0
 
-    .line 619
+    .line 623
     sget-object v11, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->SoftPackageId:Lde/greenrobot/dao/Property;
 
     invoke-virtual {v11, p2}, Lde/greenrobot/dao/Property;->eq(Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
@@ -2799,7 +2795,7 @@
 
     const/4 v10, 0x1
 
-    .line 620
+    .line 624
     sget-object v11, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->Languagelist:Lde/greenrobot/dao/Property;
 
     invoke-virtual {v11, v2}, Lde/greenrobot/dao/Property;->like(Ljava/lang/String;)Lde/greenrobot/dao/query/WhereCondition;
@@ -2810,7 +2806,7 @@
 
     const/4 v10, 0x2
 
-    .line 621
+    .line 625
     sget-object v11, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->IsExist:Lde/greenrobot/dao/Property;
 
     const/4 v12, 0x1
@@ -2825,15 +2821,15 @@
 
     aput-object v11, v9, v10
 
-    .line 618
+    .line 622
     invoke-virtual {v5, v8, v9}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
 
-    .line 622
+    .line 626
     invoke-virtual {v5}, Lde/greenrobot/dao/query/QueryBuilder;->list()Ljava/util/List;
 
     move-result-object v7
 
-    .line 646
+    .line 650
     :cond_0
     :goto_0
     if-eqz v7, :cond_1
@@ -2844,7 +2840,7 @@
 
     if-nez v8, :cond_1
 
-    .line 647
+    .line 651
     invoke-interface {v7}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v8
@@ -2856,7 +2852,7 @@
 
     if-nez v9, :cond_5
 
-    .line 651
+    .line 655
     :cond_1
     sget-object v8, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->tag:Ljava/lang/String;
 
@@ -2884,10 +2880,10 @@
 
     invoke-static {v8, v9}, Lcom/cnlaunch/framework/utils/NLog;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 652
+    .line 656
     return-object v7
 
-    .line 623
+    .line 627
     :cond_2
     const-string/jumbo v8, "EN"
 
@@ -2897,7 +2893,7 @@
 
     if-eqz v8, :cond_3
 
-    .line 624
+    .line 628
     sget-object v8, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->SerialNo:Lde/greenrobot/dao/Property;
 
     invoke-virtual {v8, p1}, Lde/greenrobot/dao/Property;->eq(Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
@@ -2910,7 +2906,7 @@
 
     const/4 v10, 0x0
 
-    .line 625
+    .line 629
     sget-object v11, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->SoftPackageId:Lde/greenrobot/dao/Property;
 
     invoke-virtual {v11, p2}, Lde/greenrobot/dao/Property;->eq(Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
@@ -2921,7 +2917,7 @@
 
     const/4 v10, 0x1
 
-    .line 626
+    .line 630
     sget-object v11, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->IsExist:Lde/greenrobot/dao/Property;
 
     const/4 v12, 0x1
@@ -2938,7 +2934,7 @@
 
     const/4 v10, 0x2
 
-    .line 627
+    .line 631
     sget-object v11, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->Languagelist:Lde/greenrobot/dao/Property;
 
     invoke-virtual {v11, v2}, Lde/greenrobot/dao/Property;->like(Ljava/lang/String;)Lde/greenrobot/dao/query/WhereCondition;
@@ -2947,18 +2943,18 @@
 
     aput-object v11, v9, v10
 
-    .line 624
+    .line 628
     invoke-virtual {v5, v8, v9}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
 
-    .line 628
+    .line 632
     invoke-virtual {v5}, Lde/greenrobot/dao/query/QueryBuilder;->list()Ljava/util/List;
 
     move-result-object v7
 
-    .line 629
+    .line 633
     goto :goto_0
 
-    .line 631
+    .line 635
     :cond_3
     sget-object v8, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->SerialNo:Lde/greenrobot/dao/Property;
 
@@ -2972,7 +2968,7 @@
 
     const/4 v10, 0x0
 
-    .line 632
+    .line 636
     sget-object v11, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->SoftPackageId:Lde/greenrobot/dao/Property;
 
     invoke-virtual {v11, p2}, Lde/greenrobot/dao/Property;->eq(Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
@@ -2983,7 +2979,7 @@
 
     const/4 v10, 0x1
 
-    .line 633
+    .line 637
     sget-object v11, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->IsExist:Lde/greenrobot/dao/Property;
 
     const/4 v12, 0x1
@@ -3000,7 +2996,7 @@
 
     const/4 v10, 0x2
 
-    .line 634
+    .line 638
     sget-object v11, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->Languagelist:Lde/greenrobot/dao/Property;
 
     invoke-virtual {v11, v2}, Lde/greenrobot/dao/Property;->like(Ljava/lang/String;)Lde/greenrobot/dao/query/WhereCondition;
@@ -3009,15 +3005,15 @@
 
     aput-object v11, v9, v10
 
-    .line 631
+    .line 635
     invoke-virtual {v5, v8, v9}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
 
-    .line 635
+    .line 639
     invoke-virtual {v5}, Lde/greenrobot/dao/query/QueryBuilder;->list()Ljava/util/List;
 
     move-result-object v7
 
-    .line 636
+    .line 640
     if-eqz v7, :cond_4
 
     invoke-interface {v7}, Ljava/util/List;->isEmpty()Z
@@ -3026,7 +3022,7 @@
 
     if-eqz v8, :cond_0
 
-    .line 637
+    .line 641
     :cond_4
     iget-object v8, p0, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->carVersionDao:Lcom/cnlaunch/x431pro/utils/db/CarVersionDao;
 
@@ -3034,7 +3030,7 @@
 
     move-result-object v6
 
-    .line 638
+    .line 642
     .local v6, qbEN:Lde/greenrobot/dao/query/QueryBuilder;,"Lde/greenrobot/dao/query/QueryBuilder<Lcom/cnlaunch/x431pro/utils/db/CarVersion;>;"
     sget-object v8, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->SerialNo:Lde/greenrobot/dao/Property;
 
@@ -3048,7 +3044,7 @@
 
     const/4 v10, 0x0
 
-    .line 639
+    .line 643
     sget-object v11, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->SoftPackageId:Lde/greenrobot/dao/Property;
 
     invoke-virtual {v11, p2}, Lde/greenrobot/dao/Property;->eq(Ljava/lang/Object;)Lde/greenrobot/dao/query/WhereCondition;
@@ -3059,7 +3055,7 @@
 
     const/4 v10, 0x1
 
-    .line 640
+    .line 644
     sget-object v11, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->IsExist:Lde/greenrobot/dao/Property;
 
     const/4 v12, 0x1
@@ -3076,7 +3072,7 @@
 
     const/4 v10, 0x2
 
-    .line 641
+    .line 645
     sget-object v11, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->Languagelist:Lde/greenrobot/dao/Property;
 
     const-string/jumbo v12, "%EN%"
@@ -3087,17 +3083,17 @@
 
     aput-object v11, v9, v10
 
-    .line 638
+    .line 642
     invoke-virtual {v6, v8, v9}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
 
-    .line 642
+    .line 646
     invoke-virtual {v6}, Lde/greenrobot/dao/query/QueryBuilder;->list()Ljava/util/List;
 
     move-result-object v7
 
     goto/16 :goto_0
 
-    .line 647
+    .line 651
     .end local v6           #qbEN:Lde/greenrobot/dao/query/QueryBuilder;,"Lde/greenrobot/dao/query/QueryBuilder<Lcom/cnlaunch/x431pro/utils/db/CarVersion;>;"
     :cond_5
     invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -3106,7 +3102,7 @@
 
     check-cast v0, Lcom/cnlaunch/x431pro/utils/db/CarVersion;
 
-    .line 648
+    .line 652
     .local v0, carVersion:Lcom/cnlaunch/x431pro/utils/db/CarVersion;
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/utils/db/CarVersion;->getVersionNo()Ljava/lang/String;
 
@@ -3553,14 +3549,14 @@
     .parameter "versionNo"
 
     .prologue
-    .line 656
+    .line 660
     iget-object v2, p0, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->carVersionDao:Lcom/cnlaunch/x431pro/utils/db/CarVersionDao;
 
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao;->queryBuilder()Lde/greenrobot/dao/query/QueryBuilder;
 
     move-result-object v1
 
-    .line 657
+    .line 661
     .local v1, qb:Lde/greenrobot/dao/query/QueryBuilder;,"Lde/greenrobot/dao/query/QueryBuilder<Lcom/cnlaunch/x431pro/utils/db/CarVersion;>;"
     sget-object v2, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao$Properties;->SerialNo:Lde/greenrobot/dao/Property;
 
@@ -3594,20 +3590,20 @@
 
     invoke-virtual {v1, v2, v3}, Lde/greenrobot/dao/query/QueryBuilder;->where(Lde/greenrobot/dao/query/WhereCondition;[Lde/greenrobot/dao/query/WhereCondition;)Lde/greenrobot/dao/query/QueryBuilder;
 
-    .line 658
+    .line 662
     invoke-virtual {v1}, Lde/greenrobot/dao/query/QueryBuilder;->unique()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/cnlaunch/x431pro/utils/db/CarVersion;
 
-    .line 659
+    .line 663
     .local v0, entity:Lcom/cnlaunch/x431pro/utils/db/CarVersion;
     iget-object v2, p0, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;->carVersionDao:Lcom/cnlaunch/x431pro/utils/db/CarVersionDao;
 
     invoke-virtual {v2, v0}, Lcom/cnlaunch/x431pro/utils/db/CarVersionDao;->delete(Ljava/lang/Object;)V
 
-    .line 660
+    .line 664
     return-void
 .end method
 

@@ -3,6 +3,10 @@
 .source "ViewPagerAdapter.java"
 
 
+# static fields
+.field private static final TAG:Ljava/lang/String;
+
+
 # instance fields
 .field private pageViews:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -17,6 +21,22 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    .line 28
+    const-class v0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ViewPagerAdapter;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ViewPagerAdapter;->TAG:Ljava/lang/String;
+
+    return-void
+.end method
+
 .method public constructor <init>(Ljava/util/ArrayList;)V
     .locals 0
     .parameter
@@ -31,14 +51,14 @@
     .end annotation
 
     .prologue
-    .line 32
+    .line 35
     .local p1, pageViews:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/view/View;>;"
     invoke-direct {p0}, Landroid/support/v4/view/PagerAdapter;-><init>()V
 
-    .line 33
+    .line 36
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ViewPagerAdapter;->pageViews:Ljava/util/ArrayList;
 
-    .line 34
+    .line 37
     return-void
 .end method
 
@@ -51,7 +71,7 @@
     .parameter "arg2"
 
     .prologue
-    .line 53
+    .line 56
     check-cast p1, Landroid/support/v4/view/ViewPager;
 
     .end local p1
@@ -65,7 +85,7 @@
 
     invoke-virtual {p1, v0}, Landroid/support/v4/view/ViewPager;->removeView(Landroid/view/View;)V
 
-    .line 54
+    .line 57
     return-void
 .end method
 
@@ -74,7 +94,7 @@
     .parameter "arg0"
 
     .prologue
-    .line 80
+    .line 90
     return-void
 .end method
 
@@ -82,7 +102,7 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 41
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ViewPagerAdapter;->pageViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -97,7 +117,7 @@
     .parameter "object"
 
     .prologue
-    .line 48
+    .line 51
     invoke-super {p0, p1}, Landroid/support/v4/view/PagerAdapter;->getItemPosition(Ljava/lang/Object;)I
 
     move-result v0
@@ -106,33 +126,116 @@
 .end method
 
 .method public instantiateItem(Landroid/view/View;I)Ljava/lang/Object;
-    .locals 1
+    .locals 7
     .parameter "arg0"
     .parameter "arg1"
 
     .prologue
-    .line 58
-    check-cast p1, Landroid/support/v4/view/ViewPager;
+    const/4 v5, 0x1
 
-    .end local p1
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ViewPagerAdapter;->pageViews:Ljava/util/ArrayList;
+    const/4 v6, 0x0
 
-    invoke-virtual {v0, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 61
+    sget-object v2, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ViewPagerAdapter;->TAG:Ljava/lang/String;
+
+    new-array v3, v5, [Ljava/lang/Object;
+
+    const-string/jumbo v4, "instantiateItem enter."
+
+    aput-object v4, v3, v6
+
+    invoke-static {v2, v3}, Lcom/cnlaunch/framework/utils/NLog;->d(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 62
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ViewPagerAdapter;->pageViews:Ljava/util/ArrayList;
+
+    invoke-virtual {v2, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/View;
 
-    invoke-virtual {p1, v0}, Landroid/support/v4/view/ViewPager;->addView(Landroid/view/View;)V
+    .line 63
+    .local v0, childView:Landroid/view/View;
+    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
-    .line 59
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ViewPagerAdapter;->pageViews:Ljava/util/ArrayList;
+    move-result-object v1
 
-    invoke-virtual {v0, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    check-cast v1, Landroid/view/ViewGroup;
 
-    move-result-object v0
+    .line 64
+    .local v1, viewGroup:Landroid/view/ViewGroup;
+    sget-object v2, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ViewPagerAdapter;->TAG:Ljava/lang/String;
 
-    return-object v0
+    new-array v3, v5, [Ljava/lang/Object;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    const-string/jumbo v5, "viewGroup="
+
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string/jumbo v5, ",arg1="
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string/jumbo v5, ",childView="
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    aput-object v4, v3, v6
+
+    invoke-static {v2, v3}, Lcom/cnlaunch/framework/utils/NLog;->d(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 65
+    if-eqz v1, :cond_0
+
+    .line 66
+    invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
+    .line 68
+    :cond_0
+    check-cast p1, Landroid/support/v4/view/ViewPager;
+
+    .end local p1
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ViewPagerAdapter;->pageViews:Ljava/util/ArrayList;
+
+    invoke-virtual {v2, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/view/View;
+
+    invoke-virtual {p1, v2}, Landroid/support/v4/view/ViewPager;->addView(Landroid/view/View;)V
+
+    .line 69
+    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/ViewPagerAdapter;->pageViews:Ljava/util/ArrayList;
+
+    invoke-virtual {v2, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    return-object v2
 .end method
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
@@ -141,7 +244,7 @@
     .parameter "arg1"
 
     .prologue
-    .line 43
+    .line 46
     if-ne p1, p2, :cond_0
 
     const/4 v0, 0x1
@@ -161,7 +264,7 @@
     .parameter "arg1"
 
     .prologue
-    .line 65
+    .line 75
     return-void
 .end method
 
@@ -169,7 +272,7 @@
     .locals 1
 
     .prologue
-    .line 69
+    .line 79
     const/4 v0, 0x0
 
     return-object v0
@@ -180,6 +283,6 @@
     .parameter "arg0"
 
     .prologue
-    .line 75
+    .line 85
     return-void
 .end method

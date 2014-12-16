@@ -35,7 +35,7 @@
 
     iput-object p2, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick$1;->val$goloRemoteOrderInfo:Lcom/cnlaunch/x431pro/module/golo/model/GoloRemoteOrderInfo;
 
-    .line 735
+    .line 734
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,7 +49,7 @@
     .parameter "which"
 
     .prologue
-    .line 739
+    .line 738
     const-string/jumbo v0, "GoloFragment"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -90,7 +90,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 740
+    .line 739
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick$1;->this$1:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$OnItemLongClick;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -117,13 +117,13 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/cnlaunch/newgolo/manager/LaunchIMManager;->sendRemoteDiagnoseStatus(Ljava/lang/String;I)V
 
-    .line 741
+    .line 740
     if-eqz p1, :cond_0
 
-    .line 742
+    .line 741
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 744
+    .line 743
     :cond_0
     return-void
 .end method

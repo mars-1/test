@@ -62,12 +62,12 @@
     invoke-direct {p0, p1, p2}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 27
-    const v0, 0x7f030163
+    const v0, 0x7f030165
 
     iput v0, p0, Lcom/cnlaunch/x431pro/widget/switchbutton/CheckBoxPreference;->mLayoutResId:I
 
     .line 28
-    const v0, 0x7f030164
+    const v0, 0x7f030166
 
     iput v0, p0, Lcom/cnlaunch/x431pro/widget/switchbutton/CheckBoxPreference;->mWidgetLayoutResId:I
 
@@ -198,7 +198,7 @@
     .parameter "view"
 
     .prologue
-    const v11, 0x7f0d03f2
+    const v11, 0x7f0c0408
 
     const/16 v9, 0x8
 
@@ -208,7 +208,7 @@
     invoke-virtual {p1, v10}, Landroid/view/View;->setClickable(Z)V
 
     .line 90
-    const v8, 0x7f0d006e
+    const v8, 0x7f0c006e
 
     invoke-virtual {p1, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -288,7 +288,7 @@
 
     .line 115
     :cond_3
-    const v8, 0x7f0d03f4
+    const v8, 0x7f0c040a
 
     invoke-virtual {p1, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -526,7 +526,7 @@
     if-eqz v3, :cond_0
 
     .line 79
-    const v3, 0x7f0d03f3
+    const v3, 0x7f0c0409
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

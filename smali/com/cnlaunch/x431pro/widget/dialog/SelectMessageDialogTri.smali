@@ -55,7 +55,7 @@
 
     .line 58
     .local v0, messageDialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
-    const v1, 0x7f070044
+    const v1, 0x7f07002b
 
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialogTri$4;
 
@@ -64,7 +64,7 @@
     invoke-virtual {v0, v1, v3, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 65
-    const v1, 0x7f070042
+    const v1, 0x7f070029
 
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialogTri$5;
 
@@ -73,7 +73,7 @@
     invoke-virtual {v0, v1, v3, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setBetaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 71
-    const v1, 0x7f070510
+    const v1, 0x7f070512
 
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialogTri$6;
 
@@ -110,7 +110,7 @@
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setButtonBackground(I)V
 
     .line 25
-    const v1, 0x7f070044
+    const v1, 0x7f07002b
 
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialogTri$1;
 
@@ -119,7 +119,7 @@
     invoke-virtual {v0, v1, v3, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 32
-    const v1, 0x7f070042
+    const v1, 0x7f070029
 
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialogTri$2;
 
@@ -128,7 +128,7 @@
     invoke-virtual {v0, v1, v3, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setBetaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 38
-    const v1, 0x7f070510
+    const v1, 0x7f070512
 
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialogTri$3;
 
@@ -160,7 +160,7 @@
 
     .line 103
     .local v0, messageDialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
-    const v1, 0x7f07062a
+    const v1, 0x7f07062c
 
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialogTri$7;
 
@@ -169,7 +169,7 @@
     invoke-virtual {v0, v1, v3, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 110
-    const v1, 0x7f070618
+    const v1, 0x7f07061a
 
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialogTri$8;
 
@@ -178,7 +178,7 @@
     invoke-virtual {v0, v1, v3, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setBetaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 116
-    const v1, 0x7f070510
+    const v1, 0x7f070512
 
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialogTri$9;
 
@@ -220,7 +220,7 @@
 
     .line 138
     .local v0, messageDialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
-    const v1, 0x7f070044
+    const v1, 0x7f07002b
 
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialogTri$10;
 
@@ -229,7 +229,7 @@
     invoke-virtual {v0, v1, v3, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 145
-    const v1, 0x7f070042
+    const v1, 0x7f070029
 
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialogTri$11;
 
@@ -238,7 +238,7 @@
     invoke-virtual {v0, v1, v3, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setBetaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 151
-    const v1, 0x7f070510
+    const v1, 0x7f070512
 
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialogTri$12;
 

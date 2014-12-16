@@ -103,7 +103,7 @@
 
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothActivity$1;->this$0:Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothActivity;
 
-    const v2, 0x7f0d003e
+    const v2, 0x7f0c003e
 
     invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothActivity;->findViewById(I)Landroid/view/View;
 

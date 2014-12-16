@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">Ajoneuvon diagnoosiraportti</string>
+    <string name="print_success">Tulostus onnistui!</string>
+    <string name="print_jam">Paperitukos</string>
+    <string name="print_will_nopaper">Tulostimesta loppuu kohta paperi</string>
+    <string name="print_no_paper">Tulostimesta loppui paperi</string>
+    <string name="print_actuator_fault">Tulostimen häiriö!</string>
+    <string name="print_head_overheating">Tulostin ylikuumenee</string>
+    <string name="print_connect_printer">Liitä ensin Wi-Fi tulostimesi</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">Vahvista</string>
     <string name="bluetooth_close_connected">Katkaisu:</string>
     <string name="bluetooth_connecting">Liittyminen</string>
     <string name="bluetooth_no_search_device">Bluetooth liitintä ei havaittu, varmista että liitin on päällä ja etsi uudelleen</string>
@@ -15,18 +27,6 @@
     <string name="no">Ei</string>
     <string name="tv_unconnect">Ei Yhteyttä</string>
     <string name="tv_unpair">Ei paritettu</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">Ajoneuvon diagnoosiraportti</string>
-    <string name="print_success">Tulostus onnistui!</string>
-    <string name="print_jam">Paperitukos</string>
-    <string name="print_will_nopaper">Tulostimesta loppuu kohta paperi</string>
-    <string name="print_no_paper">Tulostimesta loppui paperi</string>
-    <string name="print_actuator_fault">Tulostimen häiriö!</string>
-    <string name="print_head_overheating">Tulostin ylikuumenee</string>
-    <string name="print_connect_printer">Liitä ensin Wi-Fi tulostimesi</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">Vahvista</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

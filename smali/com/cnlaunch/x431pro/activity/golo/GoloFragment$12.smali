@@ -40,7 +40,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$12;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
-    .line 864
+    .line 863
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +62,7 @@
     .end annotation
 
     .prologue
-    .line 868
+    .line 867
     .local p1, refreshView:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshBase;,"Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshBase<Landroid/widget/ListView;>;"
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$12;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -73,7 +73,7 @@
 
     if-nez v0, :cond_0
 
-    .line 869
+    .line 868
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$12;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
@@ -83,11 +83,11 @@
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->onRefreshComplete()V
 
-    .line 873
+    .line 872
     :goto_0
     return-void
 
-    .line 872
+    .line 871
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$12;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 

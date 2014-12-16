@@ -325,7 +325,7 @@
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/info/P_DFScanActivity;->context:Landroid/content/Context;
 
-    const v6, 0x7f0704d7
+    const v6, 0x7f0704d9
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -340,7 +340,7 @@
 
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/info/P_DFScanActivity;->context:Landroid/content/Context;
 
-    const v7, 0x7f070580
+    const v7, 0x7f070582
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -421,12 +421,12 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 56
-    const v4, 0x7f03015b
+    const v4, 0x7f03015d
 
     invoke-virtual {p0, v4}, Lcom/cnlaunch/x431pro/activity/info/P_DFScanActivity;->setContentView(I)V
 
     .line 57
-    const v4, 0x7f0d03d3
+    const v4, 0x7f0c03e9
 
     invoke-virtual {p0, v4}, Lcom/cnlaunch/x431pro/activity/info/P_DFScanActivity;->findViewById(I)Landroid/view/View;
 
@@ -782,14 +782,14 @@
     .line 105
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/info/P_DFScanActivity;->progressDialog:Landroid/app/ProgressDialog;
 
-    const v3, 0x7f0300e9
+    const v3, 0x7f0300ea
 
     invoke-virtual {v2, v3}, Landroid/app/ProgressDialog;->setContentView(I)V
 
     .line 107
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/info/P_DFScanActivity;->progressDialog:Landroid/app/ProgressDialog;
 
-    const v3, 0x7f0d02ae
+    const v3, 0x7f0c02b2
 
     invoke-virtual {v2, v3}, Landroid/app/ProgressDialog;->findViewById(I)Landroid/view/View;
 

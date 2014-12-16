@@ -252,7 +252,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0706f5
+    const v5, 0x7f0706f7
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -295,9 +295,9 @@
     .line 269
     iget-object v1, p0, Lcom/cnlaunch/x431pro/common/RTUHelper;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0706f3
+    const v2, 0x7f0706f5
 
-    const v3, 0x7f0706f4
+    const v3, 0x7f0706f6
 
     const/4 v4, 0x0
 
@@ -319,9 +319,9 @@
     .line 303
     iget-object v1, p0, Lcom/cnlaunch/x431pro/common/RTUHelper;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0706f3
+    const v2, 0x7f0706f5
 
-    const v3, 0x7f0706f4
+    const v3, 0x7f0706f6
 
     const/4 v4, 0x0
 
@@ -339,7 +339,7 @@
 
     const-wide/32 v11, 0x240c8400
 
-    const v10, 0x7f0706f5
+    const v10, 0x7f0706f7
 
     const-wide/16 v8, 0x0
 

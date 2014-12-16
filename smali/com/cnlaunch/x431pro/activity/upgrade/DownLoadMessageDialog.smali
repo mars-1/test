@@ -38,12 +38,12 @@
     const/4 v2, 0x1
 
     .line 42
-    const v0, 0x7f0704ea
+    const v0, 0x7f0704ec
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/upgrade/DownLoadMessageDialog;->setTitle(I)V
 
     .line 43
-    const v0, 0x7f070588
+    const v0, 0x7f07058a
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/upgrade/DownLoadMessageDialog;->setMessage(I)V
 
@@ -51,7 +51,7 @@
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/upgrade/DownLoadMessageDialog;->setCancelable(Z)V
 
     .line 46
-    const v0, 0x7f0704e1
+    const v0, 0x7f0704e3
 
     .line 47
     new-instance v1, Lcom/cnlaunch/x431pro/activity/upgrade/DownLoadMessageDialog$1;
@@ -62,7 +62,7 @@
     invoke-virtual {p0, v0, v2, v1}, Lcom/cnlaunch/x431pro/activity/upgrade/DownLoadMessageDialog;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 54
-    const v0, 0x7f07071c
+    const v0, 0x7f07071e
 
     .line 55
     new-instance v1, Lcom/cnlaunch/x431pro/activity/upgrade/DownLoadMessageDialog$2;

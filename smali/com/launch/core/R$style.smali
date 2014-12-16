@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final AppBaseTheme:I = 0x7f0a0004
+.field public static final AppBaseTheme:I = 0x7f080000
 
-.field public static final AppTheme:I = 0x7f0a0005
+.field public static final AppTheme:I = 0x7f080001
 
 
 # direct methods

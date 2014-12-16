@@ -87,7 +87,7 @@
 
     iput-wide v0, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->firstClickTime:J
 
-    .line 216
+    .line 218
     new-instance v0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$1;
 
     invoke-direct {v0, p0}, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$1;-><init>(Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;)V
@@ -191,7 +191,7 @@
     .parameter
 
     .prologue
-    .line 216
+    .line 218
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->mHandler:Landroid/os/Handler;
 
     return-object v0
@@ -203,10 +203,10 @@
     .prologue
     const/4 v10, 0x0
 
-    .line 231
+    .line 233
     const/4 v3, 0x0
 
-    .line 233
+    .line 235
     .local v3, iniStr:Ljava/lang/String;
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -224,7 +224,7 @@
 
     move-result-object v5
 
-    .line 235
+    .line 237
     .local v5, lan:Ljava/lang/String;
     const/4 v2, 0x0
 
@@ -238,10 +238,10 @@
 
     if-lt v2, v6, :cond_0
 
-    .line 259
+    .line 261
     return-void
 
-    .line 236
+    .line 238
     :cond_0
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->pathUtils:Lcom/cnlaunch/x431pro/utils/PathUtils;
 
@@ -265,7 +265,7 @@
 
     move-result-object v1
 
-    .line 237
+    .line 239
     .local v1, filePath:Ljava/lang/String;
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -295,7 +295,7 @@
 
     move-result-object v0
 
-    .line 238
+    .line 240
     .local v0, file:Ljava/lang/String;
     invoke-static {v0}, Lcom/cnlaunch/x431pro/utils/file/FileUtils;->isFileExits(Ljava/lang/String;)Z
 
@@ -303,7 +303,7 @@
 
     if-eqz v6, :cond_1
 
-    .line 240
+    .line 242
     invoke-static {v5}, Lcom/cnlaunch/x431pro/utils/conversion/LanChaset;->getChaset(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
@@ -312,11 +312,11 @@
 
     move-result-object v3
 
-    .line 249
+    .line 251
     :goto_1
     const/4 v4, 0x0
 
-    .line 250
+    .line 252
     .local v4, items:[Ljava/lang/String;
     const-string/jumbo v6, "\n"
 
@@ -324,14 +324,14 @@
 
     move-result-object v4
 
-    .line 251
+    .line 253
     array-length v6, v4
 
     const/4 v7, 0x1
 
     if-le v6, v7, :cond_3
 
-    .line 252
+    .line 254
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->verlist:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -344,7 +344,7 @@
 
     invoke-virtual {v6, v7}, Lcom/cnlaunch/x431pro/module/diagnose/model/CarVersionInfo;->setIniTitle(Ljava/lang/String;)V
 
-    .line 253
+    .line 255
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->verlist:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -363,13 +363,13 @@
 
     invoke-virtual {v6, v7}, Lcom/cnlaunch/x431pro/module/diagnose/model/CarVersionInfo;->setIniText(Ljava/lang/String;)V
 
-    .line 235
+    .line 237
     :goto_2
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 242
+    .line 244
     .end local v4           #items:[Ljava/lang/String;
     :cond_1
     new-instance v6, Ljava/lang/StringBuilder;
@@ -396,14 +396,14 @@
 
     move-result-object v0
 
-    .line 243
+    .line 245
     invoke-static {v0}, Lcom/cnlaunch/x431pro/utils/file/FileUtils;->isFileExits(Ljava/lang/String;)Z
 
     move-result v6
 
     if-eqz v6, :cond_2
 
-    .line 244
+    .line 246
     const-string/jumbo v6, "GB2312"
 
     invoke-static {v0, v6}, Lcom/cnlaunch/x431pro/utils/file/FileUtils;->readFileAddNewLine(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -412,13 +412,13 @@
 
     goto :goto_1
 
-    .line 246
+    .line 248
     :cond_2
     const-string/jumbo v3, " "
 
     goto :goto_1
 
-    .line 255
+    .line 257
     .restart local v4       #items:[Ljava/lang/String;
     :cond_3
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->verlist:Ljava/util/ArrayList;
@@ -433,7 +433,7 @@
 
     invoke-virtual {v6, v7}, Lcom/cnlaunch/x431pro/module/diagnose/model/CarVersionInfo;->setIniTitle(Ljava/lang/String;)V
 
-    .line 256
+    .line 258
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->verlist:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -465,7 +465,7 @@
     .end annotation
 
     .prologue
-    .line 145
+    .line 147
     .local p1, versionSet:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/CarVersion;>;"
     if-eqz p1, :cond_0
 
@@ -475,21 +475,21 @@
 
     if-eqz v3, :cond_2
 
-    .line 146
+    .line 148
     :cond_0
     const/4 v2, 0x0
 
-    .line 157
+    .line 159
     :cond_1
     return-object v2
 
-    .line 148
+    .line 150
     :cond_2
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 149
+    .line 151
     .local v2, infoList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/x431pro/module/diagnose/model/CarVersionInfo;>;"
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -509,7 +509,7 @@
 
     check-cast v0, Lcom/cnlaunch/x431pro/utils/db/CarVersion;
 
-    .line 150
+    .line 152
     .local v0, bean:Lcom/cnlaunch/x431pro/utils/db/CarVersion;
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/utils/db/CarVersion;->getSoftPackageId()Ljava/lang/String;
 
@@ -521,12 +521,12 @@
 
     if-nez v4, :cond_3
 
-    .line 151
+    .line 153
     new-instance v1, Lcom/cnlaunch/x431pro/module/diagnose/model/CarVersionInfo;
 
     invoke-direct {v1}, Lcom/cnlaunch/x431pro/module/diagnose/model/CarVersionInfo;-><init>()V
 
-    .line 152
+    .line 154
     .local v1, info:Lcom/cnlaunch/x431pro/module/diagnose/model/CarVersionInfo;
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/utils/db/CarVersion;->getVersionNo()Ljava/lang/String;
 
@@ -534,23 +534,25 @@
 
     invoke-virtual {v1, v4}, Lcom/cnlaunch/x431pro/module/diagnose/model/CarVersionInfo;->setVersion(Ljava/lang/String;)V
 
-    .line 153
+    .line 155
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/utils/db/CarVersion;->getLanguageList()Ljava/lang/String;
 
     move-result-object v4
 
     invoke-virtual {v1, v4}, Lcom/cnlaunch/x431pro/module/diagnose/model/CarVersionInfo;->setLanguage(Ljava/lang/String;)V
 
-    .line 154
+    .line 156
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 .end method
 
 .method private initView()V
-    .locals 5
+    .locals 6
 
     .prologue
+    const/16 v5, 0x8
+
     .line 128
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->carIconUtils:Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;
 
@@ -575,7 +577,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d01d0
+    const v2, 0x7f0c01d0
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -617,7 +619,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d01d2
+    const v2, 0x7f0c01d3
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -632,7 +634,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d01d1
+    const v2, 0x7f0c01d2
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -651,22 +653,33 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
-    .line 138
+    .line 139
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const v2, 0x7f0d003b
+    const v2, 0x7f0c003b
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    const/16 v2, 0x8
+    invoke-virtual {v1, v5}, Landroid/view/View;->setVisibility(I)V
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    .line 140
+    invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->getActivity()Landroid/app/Activity;
 
-    .line 139
+    move-result-object v1
+
+    const v2, 0x7f0c01d1
+
+    invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v5}, Landroid/view/View;->setVisibility(I)V
+
+    .line 141
     return-void
 .end method
 
@@ -679,8 +692,8 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 164
-    const v1, 0x7f0704fd
+    .line 166
+    const v1, 0x7f0704ff
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->getString(I)Ljava/lang/String;
 
@@ -740,18 +753,18 @@
 
     move-result-object v0
 
-    .line 165
+    .line 167
     .local v0, noticeStr:Ljava/lang/String;
     new-instance v1, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$2;
 
     invoke-direct {v1, p0, p1}, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$2;-><init>(Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;I)V
 
-    .line 184
+    .line 186
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    const v3, 0x7f0704fa
+    const v3, 0x7f0704fc
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->getString(I)Ljava/lang/String;
 
@@ -759,7 +772,7 @@
 
     invoke-virtual {v1, v2, v3, v0, v5}, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$2;->showDialog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 185
+    .line 187
     return-void
 .end method
 
@@ -773,10 +786,10 @@
     .end annotation
 
     .prologue
-    .line 189
+    .line 191
     packed-switch p1, :pswitch_data_0
 
-    .line 198
+    .line 200
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->doInBackground(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -784,13 +797,13 @@
     :goto_0
     return-object v0
 
-    .line 191
+    .line 193
     :pswitch_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->verlist:Ljava/util/ArrayList;
 
     if-nez v0, :cond_0
 
-    .line 192
+    .line 194
     const/4 v0, 0x0
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -799,11 +812,11 @@
 
     goto :goto_0
 
-    .line 194
+    .line 196
     :cond_0
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->getINIText()V
 
-    .line 195
+    .line 197
     const/4 v0, 0x1
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -812,7 +825,7 @@
 
     goto :goto_0
 
-    .line 189
+    .line 191
     nop
 
     :pswitch_data_0
@@ -1115,19 +1128,19 @@
     .parameter "result"
 
     .prologue
-    .line 204
+    .line 206
     packed-switch p1, :pswitch_data_0
 
-    .line 211
+    .line 213
     invoke-super {p0, p1, p2}, Lcom/cnlaunch/x431pro/activity/BaseFragment;->onSuccess(ILjava/lang/Object;)V
 
-    .line 213
+    .line 215
     .end local p2
     :cond_0
     :goto_0
     return-void
 
-    .line 206
+    .line 208
     .restart local p2
     :pswitch_0
     check-cast p2, Ljava/lang/Boolean;
@@ -1139,7 +1152,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 207
+    .line 209
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x0
@@ -1152,7 +1165,7 @@
 
     goto :goto_0
 
-    .line 204
+    .line 206
     :pswitch_data_0
     .packed-switch 0x2717
         :pswitch_0

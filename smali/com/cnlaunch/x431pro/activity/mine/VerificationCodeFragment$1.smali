@@ -63,7 +63,7 @@
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/VerificationCodeFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/VerificationCodeFragment;
 
-    const v2, 0x7f0705de
+    const v2, 0x7f0705e0
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/activity/mine/VerificationCodeFragment;->getString(I)Ljava/lang/String;
 
@@ -129,7 +129,7 @@
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/VerificationCodeFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/VerificationCodeFragment;
 
-    const v2, 0x7f0705dd
+    const v2, 0x7f0705df
 
     const/4 v3, 0x1
 

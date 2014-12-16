@@ -22,17 +22,17 @@
     iput-object p1, p0, Lcom/cnlaunch/x431pro/widget/dialog/PrinterFailrueDialog;->mcontext:Landroid/content/Context;
 
     .line 20
-    const v0, 0x7f0706b5
+    const v0, 0x7f0706b7
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/widget/dialog/PrinterFailrueDialog;->setTitle(I)V
 
     .line 21
-    const v0, 0x7f0706b6
+    const v0, 0x7f0706b8
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/widget/dialog/PrinterFailrueDialog;->setDialogHtmlMessage(I)V
 
     .line 22
-    const v0, 0x7f0706ab
+    const v0, 0x7f0706ad
 
     new-instance v1, Lcom/cnlaunch/x431pro/widget/dialog/PrinterFailrueDialog$1;
 
@@ -41,7 +41,7 @@
     invoke-virtual {p0, v0, v2, v1}, Lcom/cnlaunch/x431pro/widget/dialog/PrinterFailrueDialog;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 31
-    const v0, 0x7f070661
+    const v0, 0x7f070663
 
     new-instance v1, Lcom/cnlaunch/x431pro/widget/dialog/PrinterFailrueDialog$2;
 

@@ -40,7 +40,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
-    .line 817
+    .line 816
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -71,7 +71,7 @@
 
     const/4 v5, 0x0
 
-    .line 821
+    .line 820
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #calls: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->checkNetWork()Z
@@ -81,7 +81,7 @@
 
     if-nez v0, :cond_1
 
-    .line 822
+    .line 821
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
@@ -91,12 +91,12 @@
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->onRefreshComplete()V
 
-    .line 862
+    .line 861
     :cond_0
     :goto_0
     return-void
 
-    .line 826
+    .line 825
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -107,7 +107,7 @@
 
     if-ne v0, v7, :cond_5
 
-    .line 827
+    .line 826
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_remind:Landroid/widget/RelativeLayout;
@@ -117,7 +117,7 @@
 
     invoke-virtual {v0, v5}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 828
+    .line 827
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
@@ -127,7 +127,7 @@
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 829
+    .line 828
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->assortView_remind:Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;
@@ -137,7 +137,7 @@
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;->setVisibility(I)V
 
-    .line 830
+    .line 829
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_client:Landroid/widget/RelativeLayout;
@@ -147,7 +147,7 @@
 
     invoke-virtual {v0, v6}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 831
+    .line 830
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
@@ -157,7 +157,7 @@
 
     invoke-virtual {v0, v6}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 832
+    .line 831
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
@@ -167,7 +167,7 @@
 
     if-nez v0, :cond_2
 
-    .line 833
+    .line 832
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     new-instance v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
@@ -198,7 +198,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mFocusClientAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$46(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Lcom/cnlaunch/x431pro/activity/golo/adapter/FocusClientAdapter;)V
 
-    .line 835
+    .line 834
     :cond_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -216,7 +216,7 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 836
+    .line 835
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
@@ -232,12 +232,12 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 838
+    .line 837
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     invoke-virtual {v0, v8}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V
 
-    .line 843
+    .line 842
     :cond_3
     :goto_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -249,7 +249,7 @@
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 844
+    .line 843
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
@@ -261,7 +261,7 @@
 
     goto/16 :goto_0
 
-    .line 839
+    .line 838
     :cond_4
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -278,14 +278,14 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 841
+    .line 840
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     invoke-virtual {v0, v8}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V
 
     goto :goto_1
 
-    .line 845
+    .line 844
     :cond_5
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -298,7 +298,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 846
+    .line 845
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
@@ -308,7 +308,7 @@
 
     if-nez v0, :cond_6
 
-    .line 847
+    .line 846
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     new-instance v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
@@ -339,7 +339,7 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mRemoteUserAdapter:Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$12(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Lcom/cnlaunch/x431pro/activity/golo/adapter/RemoteUserAdapter;)V
 
-    .line 849
+    .line 848
     :cond_6
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -357,7 +357,7 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 850
+    .line 849
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
@@ -373,12 +373,12 @@
 
     if-ne v0, v1, :cond_8
 
-    .line 851
+    .line 850
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     invoke-virtual {v0, v7}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V
 
-    .line 856
+    .line 855
     :cond_7
     :goto_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -390,7 +390,7 @@
 
     invoke-virtual {v0, v5}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 857
+    .line 856
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mListFocusClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
@@ -400,7 +400,7 @@
 
     invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 858
+    .line 857
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->assortView_remind:Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;
@@ -410,7 +410,7 @@
 
     invoke-virtual {v0, v6}, Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;->setVisibility(I)V
 
-    .line 859
+    .line 858
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->layout_client:Landroid/widget/RelativeLayout;
@@ -420,7 +420,7 @@
 
     invoke-virtual {v0, v6}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 860
+    .line 859
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->listClient:Lcom/cnlaunch/x431pro/widget/pulltorefresh/PullToRefreshListView;
@@ -432,7 +432,7 @@
 
     goto/16 :goto_0
 
-    .line 852
+    .line 851
     :cond_8
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
@@ -449,7 +449,7 @@
 
     if-ne v0, v1, :cond_7
 
-    .line 853
+    .line 852
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$11;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     invoke-virtual {v0, v7}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->request(I)V

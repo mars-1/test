@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;
 
-    .line 216
+    .line 218
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
@@ -40,7 +40,7 @@
     .parameter "msg"
 
     .prologue
-    .line 220
+    .line 222
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SelectCarVerAdapter;
@@ -52,7 +52,7 @@
 
     move-result v0
 
-    .line 221
+    .line 223
     .local v0, index:I
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;
 
@@ -76,7 +76,7 @@
 
     if-lt v1, v0, :cond_0
 
-    .line 222
+    .line 224
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->mAdapter:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SelectCarVerAdapter;
@@ -93,7 +93,7 @@
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/SelectCarVerAdapter;->updateList(Ljava/util/ArrayList;)V
 
-    .line 223
+    .line 225
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->tvINITitle:Landroid/widget/TextView;
@@ -120,7 +120,7 @@
 
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 224
+    .line 226
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/setting/ClearDiagSingleCarVersionFragment;->tvINIText:Landroid/widget/TextView;
@@ -147,7 +147,7 @@
 
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 227
+    .line 229
     :cond_0
     return-void
 .end method

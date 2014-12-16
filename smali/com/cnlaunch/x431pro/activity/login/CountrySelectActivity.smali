@@ -3,8 +3,8 @@
 .source "CountrySelectActivity.java"
 
 # interfaces
-.implements Landroid/widget/AdapterView$OnItemClickListener;
 .implements Landroid/view/View$OnClickListener;
+.implements Landroid/widget/AdapterView$OnItemClickListener;
 
 
 # annotations
@@ -530,7 +530,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/CountrySelectActivity;->pinyinComparator:Lcom/cnlaunch/x431pro/widget/sortlistview/PinyinComparator;
 
     .line 88
-    const v0, 0x7f0d035b
+    const v0, 0x7f0c0372
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/CountrySelectActivity;->findViewById(I)Landroid/view/View;
 
@@ -546,7 +546,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 90
-    const v0, 0x7f0d035a
+    const v0, 0x7f0c0371
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/CountrySelectActivity;->findViewById(I)Landroid/view/View;
 
@@ -564,7 +564,7 @@
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/widget/ClearEditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 92
-    const v0, 0x7f0d035c
+    const v0, 0x7f0c0373
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/CountrySelectActivity;->findViewById(I)Landroid/view/View;
 
@@ -582,7 +582,7 @@
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar;->setOnTouchingLetterChangedListener(Lcom/cnlaunch/x431pro/widget/sortlistview/SideBar$OnTouchingLetterChangedListener;)V
 
     .line 94
-    const v0, 0x7f0d0050
+    const v0, 0x7f0c0050
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/CountrySelectActivity;->findViewById(I)Landroid/view/View;
 
@@ -755,7 +755,7 @@
 
     .line 298
     :pswitch_data_0
-    .packed-switch 0x7f0d0050
+    .packed-switch 0x7f0c0050
         :pswitch_0
     .end packed-switch
 .end method
@@ -769,7 +769,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 69
-    const v0, 0x7f03016e
+    const v0, 0x7f030170
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/CountrySelectActivity;->setContentView(I)V
 
@@ -845,7 +845,7 @@
     .prologue
     .line 225
     .local p1, arg0:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
-    const v1, 0x7f0d035e
+    const v1, 0x7f0c0375
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

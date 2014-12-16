@@ -64,7 +64,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->useraction:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
     .line 66
-    const v0, 0x7f0d040d
+    const v0, 0x7f0c042b
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->findViewById(I)Landroid/view/View;
 
@@ -84,7 +84,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/RadioGroup;->setOnCheckedChangeListener(Landroid/widget/RadioGroup$OnCheckedChangeListener;)V
 
     .line 76
-    const v0, 0x7f0d040e
+    const v0, 0x7f0c042c
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->findViewById(I)Landroid/view/View;
 
@@ -95,7 +95,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->radio_male:Landroid/widget/RadioButton;
 
     .line 77
-    const v0, 0x7f0d040f
+    const v0, 0x7f0c042d
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->findViewById(I)Landroid/view/View;
 
@@ -106,7 +106,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->radio_female:Landroid/widget/RadioButton;
 
     .line 79
-    const v0, 0x7f0d0410
+    const v0, 0x7f0c042e
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->findViewById(I)Landroid/view/View;
 
@@ -117,7 +117,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->edit_workshop:Landroid/widget/EditText;
 
     .line 80
-    const v0, 0x7f0d0411
+    const v0, 0x7f0c042f
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->findViewById(I)Landroid/view/View;
 
@@ -128,7 +128,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->edit_address:Landroid/widget/EditText;
 
     .line 81
-    const v0, 0x7f0d0413
+    const v0, 0x7f0c0431
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->findViewById(I)Landroid/view/View;
 
@@ -139,7 +139,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->edit_mobile:Landroid/widget/EditText;
 
     .line 82
-    const v0, 0x7f0d0414
+    const v0, 0x7f0c0432
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->findViewById(I)Landroid/view/View;
 
@@ -150,7 +150,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->edit_telephont:Landroid/widget/EditText;
 
     .line 83
-    const v0, 0x7f0d0415
+    const v0, 0x7f0c0433
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->findViewById(I)Landroid/view/View;
 
@@ -161,7 +161,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->edit_fax:Landroid/widget/EditText;
 
     .line 84
-    const v0, 0x7f0d0417
+    const v0, 0x7f0c0435
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->findViewById(I)Landroid/view/View;
 
@@ -172,7 +172,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->btn_save:Landroid/widget/Button;
 
     .line 85
-    const v0, 0x7f0d0418
+    const v0, 0x7f0c0436
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->findViewById(I)Landroid/view/View;
 
@@ -215,7 +215,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 48
-    const v0, 0x7f03016f
+    const v0, 0x7f030172
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/RegisterProfileActivity;->setContentView(I)V
 

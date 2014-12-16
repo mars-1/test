@@ -377,7 +377,7 @@
     .line 184
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/ReportShowFragment;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f070563
+    const v4, 0x7f070565
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -615,7 +615,7 @@
     .line 195
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/diagnose/ReportShowFragment;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f070563
+    const v4, 0x7f070565
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -689,7 +689,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d017f
+    const v1, 0x7f0c017f
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -704,7 +704,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01c5
+    const v1, 0x7f0c01c5
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -719,7 +719,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01c6
+    const v1, 0x7f0c01c6
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -734,7 +734,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01c7
+    const v1, 0x7f0c01c7
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -749,7 +749,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01c9
+    const v1, 0x7f0c01c9
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -764,7 +764,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01ca
+    const v1, 0x7f0c01ca
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -779,7 +779,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01c8
+    const v1, 0x7f0c01c8
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -794,7 +794,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const v2, 0x7f07055a
+    const v2, 0x7f07055c
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/ReportShowFragment;->getString(I)Ljava/lang/String;
 
@@ -823,7 +823,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const v2, 0x7f07055b
+    const v2, 0x7f07055d
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/ReportShowFragment;->getString(I)Ljava/lang/String;
 
@@ -852,7 +852,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const v2, 0x7f07055c
+    const v2, 0x7f07055e
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/ReportShowFragment;->getString(I)Ljava/lang/String;
 
@@ -881,7 +881,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const v2, 0x7f07055d
+    const v2, 0x7f07055f
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/ReportShowFragment;->getString(I)Ljava/lang/String;
 
@@ -910,7 +910,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const v2, 0x7f07055e
+    const v2, 0x7f070560
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/ReportShowFragment;->getString(I)Ljava/lang/String;
 
@@ -939,7 +939,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const v2, 0x7f07055f
+    const v2, 0x7f070561
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/ReportShowFragment;->getString(I)Ljava/lang/String;
 
@@ -968,7 +968,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const v2, 0x7f070560
+    const v2, 0x7f070562
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/ReportShowFragment;->getString(I)Ljava/lang/String;
 
@@ -997,7 +997,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01cb
+    const v1, 0x7f0c01cb
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1039,7 +1039,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01c2
+    const v1, 0x7f0c01c2
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1059,7 +1059,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01c3
+    const v1, 0x7f0c01c3
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1116,7 +1116,7 @@
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/ReportShowFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f070559
+    const v1, 0x7f07055b
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -1130,7 +1130,7 @@
 
     .prologue
     .line 150
-    const v0, 0x7f070503
+    const v0, 0x7f070505
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/ReportShowFragment;->getString(I)Ljava/lang/String;
 
@@ -1330,7 +1330,7 @@
 
     .line 117
     .local v1, id:I
-    const v3, 0x7f0d01c2
+    const v3, 0x7f0c01c2
 
     if-ne v1, v3, :cond_1
 
@@ -1381,7 +1381,7 @@
 
     .line 126
     :cond_1
-    const v3, 0x7f0d01c3
+    const v3, 0x7f0c01c3
 
     if-ne v1, v3, :cond_0
 
@@ -1395,9 +1395,9 @@
 
     move-result-object v4
 
-    const v5, 0x7f0704fa
+    const v5, 0x7f0704fc
 
-    const v6, 0x7f0705e9
+    const v6, 0x7f0705eb
 
     const/4 v7, 0x1
 

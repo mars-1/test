@@ -88,7 +88,7 @@
     iput-object p1, p0, Lcom/cnlaunch/x431pro/widget/dialog/SetMaxMinValue;->mcontext:Landroid/content/Context;
 
     .line 71
-    const v0, 0x7f07050e
+    const v0, 0x7f070510
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/widget/dialog/SetMaxMinValue;->setTitle(I)V
 
@@ -97,7 +97,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f030186
+    const v1, 0x7f030189
 
     invoke-virtual {v0, v1, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -108,7 +108,7 @@
     .line 73
     iget-object v0, p0, Lcom/cnlaunch/x431pro/widget/dialog/SetMaxMinValue;->mContentView:Landroid/view/View;
 
-    const v1, 0x7f0d046e
+    const v1, 0x7f0c048c
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -121,7 +121,7 @@
     .line 74
     iget-object v0, p0, Lcom/cnlaunch/x431pro/widget/dialog/SetMaxMinValue;->mContentView:Landroid/view/View;
 
-    const v1, 0x7f0d046f
+    const v1, 0x7f0c048d
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -164,7 +164,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 159
-    const v0, 0x7f0704e1
+    const v0, 0x7f0704e3
 
     new-instance v1, Lcom/cnlaunch/x431pro/widget/dialog/SetMaxMinValue$3;
 
@@ -173,7 +173,7 @@
     invoke-virtual {p0, v0, v3, v1}, Lcom/cnlaunch/x431pro/widget/dialog/SetMaxMinValue;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 168
-    const v0, 0x7f0704e2
+    const v0, 0x7f0704e4
 
     new-instance v1, Lcom/cnlaunch/x431pro/widget/dialog/SetMaxMinValue$4;
 
@@ -182,7 +182,7 @@
     invoke-virtual {p0, v0, v3, v1}, Lcom/cnlaunch/x431pro/widget/dialog/SetMaxMinValue;->setBetaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
     .line 174
-    const v0, 0x7f0d007e
+    const v0, 0x7f0c007e
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/widget/dialog/SetMaxMinValue;->findViewById(I)Landroid/view/View;
 

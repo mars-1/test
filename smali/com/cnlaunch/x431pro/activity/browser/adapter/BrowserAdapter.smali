@@ -155,7 +155,7 @@
     .line 58
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/browser/adapter/BrowserAdapter;->holder:Lcom/cnlaunch/x431pro/activity/browser/adapter/BrowserAdapter$ViewHolder;
 
-    const v0, 0x7f0d0080
+    const v0, 0x7f0c0080
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

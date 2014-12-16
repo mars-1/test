@@ -4,9 +4,9 @@
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
-.implements Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelectionRecorder;
-.implements Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ICallKeyDownFragment;
 .implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ICallKeyDownFragment;
+.implements Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelectionRecorder;
 
 
 # annotations
@@ -203,14 +203,14 @@
 
     iput-boolean v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->isSort:Z
 
-    .line 186
+    .line 187
     new-instance v0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$1;
 
     invoke-direct {v0, p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$1;-><init>(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;)V
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 340
+    .line 341
     iput-boolean v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->channgelChanged:Z
 
     .line 73
@@ -222,7 +222,7 @@
     .parameter
 
     .prologue
-    .line 506
+    .line 507
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->stopAndSaveRecord()V
 
     return-void
@@ -299,7 +299,7 @@
     .parameter
 
     .prologue
-    .line 495
+    .line 496
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->stopRecord()V
 
     return-void
@@ -421,7 +421,7 @@
     .locals 3
 
     .prologue
-    .line 444
+    .line 445
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
@@ -436,21 +436,21 @@
 
     if-eqz v0, :cond_0
 
-    .line 445
+    .line 446
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f070550
+    const v1, 0x7f070552
 
     const/16 v2, 0x11
 
     invoke-static {v0, v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
-    .line 446
+    .line 447
     const/4 v0, 0x0
 
-    .line 448
+    .line 449
     :goto_0
     return v0
 
@@ -472,12 +472,12 @@
 
     const/4 v11, 0x0
 
-    .line 237
+    .line 238
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const v2, 0x7f0d0158
+    const v2, 0x7f0c0158
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -487,12 +487,12 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnMultipleGraph:Landroid/widget/Button;
 
-    .line 238
+    .line 239
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const v2, 0x7f0d0159
+    const v2, 0x7f0c0159
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -502,12 +502,12 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnCombineGraph:Landroid/widget/Button;
 
-    .line 239
+    .line 240
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const v2, 0x7f0d0146
+    const v2, 0x7f0c0146
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -517,12 +517,12 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnTextList:Landroid/widget/Button;
 
-    .line 240
+    .line 241
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const v2, 0x7f0d0142
+    const v2, 0x7f0c0142
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -530,7 +530,7 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->subView:Landroid/view/View;
 
-    .line 241
+    .line 242
     new-instance v1, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;
 
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
@@ -541,14 +541,14 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->actionBar:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;
 
-    .line 243
+    .line 244
     new-instance v7, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$2;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnCombineGraph:Landroid/widget/Button;
 
     invoke-direct {v7, p0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$2;-><init>(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;Landroid/view/View;)V
 
-    .line 264
+    .line 265
     .local v7, combineGraphTab:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;
     new-instance v0, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/TabListener;
 
@@ -573,20 +573,20 @@
 
     move-object v5, p0
 
-    .line 265
+    .line 266
     invoke-direct/range {v0 .. v5}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/TabListener;-><init>(Landroid/app/Activity;Ljava/lang/Class;Landroid/os/Bundle;Ljava/lang/Runnable;Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelectionRecorder;)V
 
-    .line 264
+    .line 265
     invoke-virtual {v7, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;->setTabListener(Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$TabListener;)Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;
 
-    .line 267
+    .line 268
     new-instance v8, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$3;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnMultipleGraph:Landroid/widget/Button;
 
     invoke-direct {v8, p0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$3;-><init>(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;Landroid/view/View;)V
 
-    .line 289
+    .line 290
     .local v8, multipleGraphTab:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;
     new-instance v0, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/TabListener;
 
@@ -613,21 +613,21 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/TabListener;-><init>(Landroid/app/Activity;Ljava/lang/Class;Landroid/os/Bundle;Ljava/lang/Runnable;Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelectionRecorder;)V
 
-    .line 291
+    .line 292
     .local v0, ggftablister:Lcom/cnlaunch/x431pro/activity/diagnose/listenter/TabListener;,"Lcom/cnlaunch/x431pro/activity/diagnose/listenter/TabListener<Lcom/cnlaunch/x431pro/activity/diagnose/fragment/GraphGridFragment;>;"
     invoke-virtual {v0, p0}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/TabListener;->setCallKeyDownFragment(Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ICallKeyDownFragment;)V
 
-    .line 292
+    .line 293
     invoke-virtual {v8, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;->setTabListener(Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$TabListener;)Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;
 
-    .line 294
+    .line 295
     new-instance v9, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$4;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnTextList:Landroid/widget/Button;
 
     invoke-direct {v9, p0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$4;-><init>(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;Landroid/view/View;)V
 
-    .line 310
+    .line 311
     .local v9, textListTab:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;
     new-instance v1, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/TabListener;
 
@@ -652,53 +652,53 @@
 
     move-object v6, p0
 
-    .line 311
+    .line 312
     invoke-direct/range {v1 .. v6}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/TabListener;-><init>(Landroid/app/Activity;Ljava/lang/Class;Landroid/os/Bundle;Ljava/lang/Runnable;Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelectionRecorder;)V
 
-    .line 310
+    .line 311
     invoke-virtual {v9, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;->setTabListener(Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$TabListener;)Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;
-
-    .line 313
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->actionBar:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;
-
-    invoke-virtual {v1, v7}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;->addTab(Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;)V
 
     .line 314
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->actionBar:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;
 
-    invoke-virtual {v1, v8}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;->addTab(Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;)V
+    invoke-virtual {v1, v7}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;->addTab(Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;)V
 
     .line 315
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->actionBar:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;
 
+    invoke-virtual {v1, v8}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;->addTab(Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;)V
+
+    .line 316
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->actionBar:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;
+
     invoke-virtual {v1, v9}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;->addTab(Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;)V
 
-    .line 317
+    .line 318
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJumpType:I
 
     if-nez v1, :cond_4
 
-    .line 318
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnTextList:Landroid/widget/Button;
-
-    invoke-virtual {v1, v12}, Landroid/widget/Button;->setVisibility(I)V
-
     .line 319
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnCombineGraph:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnTextList:Landroid/widget/Button;
 
     invoke-virtual {v1, v12}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 320
+    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnCombineGraph:Landroid/widget/Button;
+
+    invoke-virtual {v1, v12}, Landroid/widget/Button;->setVisibility(I)V
+
+    .line 321
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnMultipleGraph:Landroid/widget/Button;
 
     invoke-virtual {v1, v11}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 321
+    .line 322
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnTextList:Landroid/widget/Button;
 
     invoke-virtual {v1}, Landroid/widget/Button;->performClick()Z
 
-    .line 333
+    .line 334
     :cond_0
     :goto_3
     return-void
@@ -709,14 +709,14 @@
     :cond_1
     move v5, v11
 
-    .line 264
+    .line 265
     goto :goto_0
 
     .restart local v8       #multipleGraphTab:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;
     :cond_2
     move v5, v11
 
-    .line 289
+    .line 290
     goto :goto_1
 
     .restart local v0       #ggftablister:Lcom/cnlaunch/x431pro/activity/diagnose/listenter/TabListener;,"Lcom/cnlaunch/x431pro/activity/diagnose/listenter/TabListener<Lcom/cnlaunch/x431pro/activity/diagnose/fragment/GraphGridFragment;>;"
@@ -724,59 +724,59 @@
     :cond_3
     move v6, v11
 
-    .line 310
+    .line 311
     goto :goto_2
 
-    .line 322
+    .line 323
     :cond_4
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJumpType:I
 
     if-ne v1, v10, :cond_5
 
-    .line 323
+    .line 324
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnMultipleGraph:Landroid/widget/Button;
 
     invoke-virtual {v1, v12}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 324
+    .line 325
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnCombineGraph:Landroid/widget/Button;
 
     invoke-virtual {v1, v11}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 325
+    .line 326
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnTextList:Landroid/widget/Button;
 
     invoke-virtual {v1, v11}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 326
+    .line 327
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnMultipleGraph:Landroid/widget/Button;
 
     invoke-virtual {v1}, Landroid/widget/Button;->performClick()Z
 
     goto :goto_3
 
-    .line 327
+    .line 328
     :cond_5
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJumpType:I
 
     if-ne v1, v13, :cond_0
 
-    .line 328
+    .line 329
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnMultipleGraph:Landroid/widget/Button;
 
     invoke-virtual {v1, v11}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 329
+    .line 330
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnCombineGraph:Landroid/widget/Button;
 
     invoke-virtual {v1, v12}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 330
+    .line 331
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnTextList:Landroid/widget/Button;
 
     invoke-virtual {v1, v11}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 331
+    .line 332
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnCombineGraph:Landroid/widget/Button;
 
     invoke-virtual {v1}, Landroid/widget/Button;->performClick()Z
@@ -790,12 +790,12 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 196
+    .line 197
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0169
+    const v1, 0x7f0c0169
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -805,19 +805,19 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mChronometer:Landroid/widget/Chronometer;
 
-    .line 197
+    .line 198
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mChronometer:Landroid/widget/Chronometer;
 
     const-string/jumbo v1, "%s"
 
     invoke-virtual {v0, v1}, Landroid/widget/Chronometer;->setFormat(Ljava/lang/String;)V
 
-    .line 198
+    .line 199
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0168
+    const v1, 0x7f0c0168
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -827,12 +827,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnStopRecord:Landroid/widget/Button;
 
-    .line 199
+    .line 200
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0149
+    const v1, 0x7f0c0149
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -842,12 +842,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnHelp:Landroid/widget/Button;
 
-    .line 200
+    .line 201
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0164
+    const v1, 0x7f0c0164
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -857,12 +857,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnCustom:Landroid/widget/Button;
 
-    .line 201
+    .line 202
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0163
+    const v1, 0x7f0c0163
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -872,12 +872,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnRecord:Landroid/widget/Button;
 
-    .line 202
+    .line 203
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0143
+    const v1, 0x7f0c0143
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -887,12 +887,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnHome:Landroid/widget/Button;
 
-    .line 203
+    .line 204
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0147
+    const v1, 0x7f0c0147
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -902,7 +902,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnSetMaxMin:Landroid/widget/Button;
 
-    .line 206
+    .line 207
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
@@ -919,18 +919,18 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 207
+    .line 208
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnRecord:Landroid/widget/Button;
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 209
+    .line 210
     :cond_0
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d00ef
+    const v1, 0x7f0c00ef
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -940,12 +940,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mBtnSelectAll:Landroid/widget/CheckBox;
 
-    .line 210
+    .line 211
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0166
+    const v1, 0x7f0c0166
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -955,12 +955,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnVWUpChannel:Landroid/widget/Button;
 
-    .line 211
+    .line 212
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0167
+    const v1, 0x7f0c0167
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -970,12 +970,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnVWNextChannel:Landroid/widget/Button;
 
-    .line 212
+    .line 213
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d003d
+    const v1, 0x7f0c003d
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -985,12 +985,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnVWExit:Landroid/widget/Button;
 
-    .line 213
+    .line 214
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d015c
+    const v1, 0x7f0c015c
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -998,12 +998,12 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->recordView:Landroid/view/View;
 
-    .line 215
+    .line 216
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d0165
+    const v1, 0x7f0c0165
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1013,7 +1013,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mVWDatastreamLayout:Landroid/widget/LinearLayout;
 
-    .line 216
+    .line 217
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mCurrentDatastreamType:Ljava/lang/String;
 
     const-string/jumbo v1, "810"
@@ -1024,12 +1024,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 217
+    .line 218
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mVWDatastreamLayout:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 220
+    .line 221
     :cond_1
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->isOnClickable()Z
 
@@ -1037,53 +1037,53 @@
 
     if-eqz v0, :cond_2
 
-    .line 221
+    .line 222
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnStopRecord:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 222
+    .line 223
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnCustom:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 223
+    .line 224
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnRecord:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 224
+    .line 225
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnVWUpChannel:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 225
+    .line 226
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnVWNextChannel:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 226
+    .line 227
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnVWExit:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 227
+    .line 228
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnSetMaxMin:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 228
+    .line 229
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mBtnSelectAll:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, p0}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 230
+    .line 231
     :cond_2
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d003b
+    const v1, 0x7f0c003b
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1093,7 +1093,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->linearLayout:Landroid/widget/LinearLayout;
 
-    .line 231
+    .line 232
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->linearLayout:Landroid/widget/LinearLayout;
 
     invoke-static {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/BottomButtonTransition;->getLayoutTransition(Ljava/lang/Object;)Landroid/animation/LayoutTransition;
@@ -1102,10 +1102,10 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setLayoutTransition(Landroid/animation/LayoutTransition;)V
 
-    .line 232
+    .line 233
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->initBottomActionBar()V
 
-    .line 233
+    .line 234
     return-void
 .end method
 
@@ -1123,13 +1123,13 @@
     .end annotation
 
     .prologue
-    .line 533
+    .line 534
     .local p1, list:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;>;"
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->isRecordUnit:Z
 
-    .line 534
+    .line 535
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJniFile:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mRecoredGroupID:I
@@ -1140,7 +1140,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 535
+    .line 536
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
@@ -1153,23 +1153,23 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->setDatastreamRecord(Z)V
 
-    .line 540
+    .line 541
     :goto_0
     return-void
 
-    .line 537
+    .line 538
     :cond_0
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f070551
+    const v1, 0x7f070553
 
     const/16 v2, 0x11
 
     invoke-static {v0, v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
-    .line 538
+    .line 539
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->stopAndSaveRecord()V
 
     goto :goto_0
@@ -1179,18 +1179,18 @@
     .locals 3
 
     .prologue
-    .line 181
+    .line 182
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 182
+    .line 183
     .local v0, filter:Landroid/content/IntentFilter;
     const-string/jumbo v1, "android.bluetooth.device.action.ACL_DISCONNECTED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 183
+    .line 184
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -1199,7 +1199,7 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 184
+    .line 185
     return-void
 .end method
 
@@ -1213,17 +1213,17 @@
 
     const/4 v5, 0x0
 
-    .line 453
+    .line 454
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnHome:Landroid/widget/Button;
 
     invoke-virtual {v0, v5}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 454
+    .line 455
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnRecord:Landroid/widget/Button;
 
     invoke-virtual {v0, v5}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 455
+    .line 456
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
@@ -1234,7 +1234,7 @@
 
     invoke-virtual {v0, v6}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->setDatastreamRecord(Z)V
 
-    .line 456
+    .line 457
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
@@ -1243,7 +1243,7 @@
 
     invoke-interface {v0, v6, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->setDatastreamRecordFlag(ZI)V
 
-    .line 457
+    .line 458
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mCurrentDatastreamType:Ljava/lang/String;
 
     const-string/jumbo v1, "900"
@@ -1260,22 +1260,22 @@
 
     if-le v0, v1, :cond_0
 
-    .line 458
+    .line 459
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f070541
+    const v1, 0x7f070543
 
     invoke-static {v0, v1, v8}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
-    .line 459
+    .line 460
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->recordView:Landroid/view/View;
 
     invoke-virtual {v0, v5}, Landroid/view/View;->setVisibility(I)V
 
-    .line 460
+    .line 461
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mChronometer:Landroid/widget/Chronometer;
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -1284,12 +1284,12 @@
 
     invoke-virtual {v0, v5, v6}, Landroid/widget/Chronometer;->setBase(J)V
 
-    .line 461
+    .line 462
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mChronometer:Landroid/widget/Chronometer;
 
     invoke-virtual {v0}, Landroid/widget/Chronometer;->start()V
 
-    .line 462
+    .line 463
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -1304,7 +1304,7 @@
 
     move-result-object v4
 
-    .line 463
+    .line 464
     .local v4, serialNum:Ljava/lang/String;
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -1322,7 +1322,7 @@
 
     move-result-object v2
 
-    .line 465
+    .line 466
     .local v2, language:Ljava/lang/String;
     new-instance v0, Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
@@ -1330,7 +1330,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJniFile:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
-    .line 466
+    .line 467
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJniFile:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     invoke-virtual {v0}, Lcom/cnlaunch/mycar/jni/JniX431FileTest;->init()I
@@ -1339,7 +1339,7 @@
 
     iput v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mRecoredInit:I
 
-    .line 467
+    .line 468
     sget-object v0, Lcom/cnlaunch/x431pro/utils/date/DateStyle;->YYYY_MM_DD_HH_MM_SS:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/utils/date/DateUtils;->currentDateTime(Ljava/lang/String;)Ljava/lang/String;
@@ -1372,7 +1372,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mRecoredDate:Ljava/lang/String;
 
-    .line 468
+    .line 469
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
@@ -1393,7 +1393,7 @@
 
     move-result-object v7
 
-    .line 469
+    .line 470
     .local v7, name:Ljava/lang/String;
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1449,10 +1449,10 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mRecoredFileName:Ljava/lang/String;
 
-    .line 471
+    .line 472
     const-string/jumbo v3, "1.0"
 
-    .line 472
+    .line 473
     .local v3, diagversion:Ljava/lang/String;
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJniFile:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
@@ -1470,12 +1470,12 @@
 
     iput v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mRecoredFileId:I
 
-    .line 473
+    .line 474
     iget v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mRecoredFileId:I
 
     if-lez v0, :cond_1
 
-    .line 474
+    .line 475
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJniFile:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mRecoredFileId:I
@@ -1488,29 +1488,29 @@
 
     iput v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mRecoredGroupID:I
 
-    .line 476
+    .line 477
     new-instance v0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$6;
 
     invoke-direct {v0, p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$6;-><init>(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;)V
 
-    .line 487
+    .line 488
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$6;->start()V
 
-    .line 492
+    .line 493
     :goto_0
     return-void
 
-    .line 489
+    .line 490
     :cond_1
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f070552
+    const v1, 0x7f070554
 
     invoke-static {v0, v1, v8}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
-    .line 490
+    .line 491
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->stopRecord()V
 
     goto :goto_0
@@ -1526,17 +1526,17 @@
 
     const/4 v2, 0x0
 
-    .line 507
+    .line 508
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnHome:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 508
+    .line 509
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnRecord:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 509
+    .line 510
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
@@ -1545,7 +1545,7 @@
 
     invoke-interface {v0, v2, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->setDatastreamRecordFlag(ZI)V
 
-    .line 510
+    .line 511
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
@@ -1556,19 +1556,19 @@
 
     invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->setDatastreamRecord(Z)V
 
-    .line 511
+    .line 512
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->recordView:Landroid/view/View;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 512
+    .line 513
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mChronometer:Landroid/widget/Chronometer;
 
     invoke-virtual {v0}, Landroid/widget/Chronometer;->stop()V
 
-    .line 514
+    .line 515
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJniFile:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mRecoredGroupID:I
@@ -1577,20 +1577,20 @@
 
     move-result v7
 
-    .line 515
+    .line 516
     .local v7, frameCount:I
     if-gtz v7, :cond_1
 
-    .line 516
+    .line 517
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f070553
+    const v1, 0x7f070555
 
     invoke-static {v0, v1, v8}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
-    .line 517
+    .line 518
     new-instance v6, Ljava/io/File;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1617,7 +1617,7 @@
 
     invoke-direct {v6, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 518
+    .line 519
     .local v6, file:Ljava/io/File;
     invoke-virtual {v6}, Ljava/io/File;->exists()Z
 
@@ -1625,20 +1625,20 @@
 
     if-eqz v0, :cond_0
 
-    .line 519
+    .line 520
     invoke-virtual {v6}, Ljava/io/File;->delete()Z
 
-    .line 528
+    .line 529
     :cond_0
     :goto_0
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJniFile:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
-    .line 529
+    .line 530
     return-void
 
-    .line 521
+    .line 522
     .end local v6           #file:Ljava/io/File;
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJniFile:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
@@ -1655,7 +1655,7 @@
 
     invoke-virtual/range {v0 .. v5}, Lcom/cnlaunch/mycar/jni/JniX431FileTest;->writeEndCloseFile(ILjava/lang/String;IILjava/lang/String;)V
 
-    .line 522
+    .line 523
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/PathUtils;->getTempImagesPath()Ljava/lang/String;
@@ -1702,7 +1702,7 @@
 
     invoke-static {v0, v1}, Lcom/cnlaunch/diagnosemodule/utils/CopyFile;->CopySdcardFile(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 523
+    .line 524
     new-instance v6, Ljava/io/File;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1729,7 +1729,7 @@
 
     invoke-direct {v6, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 524
+    .line 525
     .restart local v6       #file:Ljava/io/File;
     invoke-virtual {v6}, Ljava/io/File;->exists()Z
 
@@ -1737,10 +1737,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 525
+    .line 526
     invoke-virtual {v6}, Ljava/io/File;->delete()Z
 
-    .line 526
+    .line 527
     :cond_2
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
@@ -1748,7 +1748,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const v2, 0x7f070554
+    const v2, 0x7f070556
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getString(I)Ljava/lang/String;
 
@@ -1789,7 +1789,7 @@
 
     const/4 v2, 0x0
 
-    .line 496
+    .line 497
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
@@ -1798,7 +1798,7 @@
 
     invoke-interface {v0, v2, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->setDatastreamRecordFlag(ZI)V
 
-    .line 497
+    .line 498
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
@@ -1809,34 +1809,34 @@
 
     invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->setDatastreamRecord(Z)V
 
-    .line 498
+    .line 499
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->recordView:Landroid/view/View;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 499
+    .line 500
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mChronometer:Landroid/widget/Chronometer;
 
     invoke-virtual {v0}, Landroid/widget/Chronometer;->stop()V
 
-    .line 500
+    .line 501
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJniFile:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
-    .line 501
+    .line 502
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnHome:Landroid/widget/Button;
 
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 502
+    .line 503
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnRecord:Landroid/widget/Button;
 
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 503
+    .line 504
     return-void
 .end method
 
@@ -1846,17 +1846,17 @@
     .locals 1
 
     .prologue
-    .line 679
+    .line 680
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mCallKeyDownFragment:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ICallKeyDownFragment;
 
     if-eqz v0, :cond_0
 
-    .line 680
+    .line 681
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mCallKeyDownFragment:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ICallKeyDownFragment;
 
     invoke-interface {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ICallKeyDownFragment;->callBackonSetMaxMinClick()V
 
-    .line 682
+    .line 683
     :cond_0
     return-void
 .end method
@@ -1865,7 +1865,7 @@
     .locals 1
 
     .prologue
-    .line 655
+    .line 656
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mCallKeyDownFragment:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ICallKeyDownFragment;
 
     return-object v0
@@ -1875,14 +1875,14 @@
     .locals 4
 
     .prologue
-    .line 627
+    .line 628
     iget v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->helpIndex:I
 
     const/4 v3, -0x1
 
     if-le v2, v3, :cond_1
 
-    .line 629
+    .line 630
     :try_start_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->dataStreamList:Ljava/util/ArrayList;
 
@@ -1898,7 +1898,7 @@
 
     move-result-object v1
 
-    .line 630
+    .line 631
     .local v1, info:Ljava/lang/String;
     const-string/jumbo v2, " "
 
@@ -1914,24 +1914,24 @@
 
     if-eqz v2, :cond_0
 
-    .line 631
+    .line 632
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/BaseDiagnoseFragment;->getHelpInfo()Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v1
 
-    .line 639
+    .line 640
     .end local v1           #info:Ljava/lang/String;
     :cond_0
     :goto_0
     return-object v1
 
-    .line 635
+    .line 636
     :catch_0
     move-exception v0
 
-    .line 636
+    .line 637
     .local v0, e:Ljava/lang/Exception;
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/BaseDiagnoseFragment;->getHelpInfo()Ljava/lang/String;
 
@@ -1939,10 +1939,10 @@
 
     goto :goto_0
 
-    .line 639
+    .line 640
     .end local v0           #e:Ljava/lang/Exception;
     :cond_1
-    const v2, 0x7f070540
+    const v2, 0x7f070542
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getString(I)Ljava/lang/String;
 
@@ -1955,8 +1955,8 @@
     .locals 1
 
     .prologue
-    .line 556
-    const v0, 0x7f070500
+    .line 557
+    const v0, 0x7f070502
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getString(I)Ljava/lang/String;
 
@@ -1969,7 +1969,7 @@
     .locals 3
 
     .prologue
-    .line 611
+    .line 612
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->dataStreamList:Ljava/util/ArrayList;
 
     if-eqz v1, :cond_0
@@ -1982,17 +1982,17 @@
 
     if-nez v1, :cond_1
 
-    .line 612
+    .line 613
     :cond_0
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/BaseDiagnoseFragment;->getPrintData()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 616
+    .line 617
     :goto_0
     return-object v0
 
-    .line 614
+    .line 615
     :cond_1
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
@@ -2012,7 +2012,7 @@
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->dataStreamList:Ljava/util/ArrayList;
 
-    .line 615
+    .line 616
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -2023,7 +2023,7 @@
 
     move-result-object v0
 
-    .line 616
+    .line 617
     .local v0, data:Ljava/lang/String;
     goto :goto_0
 .end method
@@ -2032,7 +2032,7 @@
     .locals 1
 
     .prologue
-    .line 621
+    .line 622
     const/4 v0, 0x1
 
     return v0
@@ -2043,23 +2043,23 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 174
+    .line 175
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/BaseDiagnoseFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
-    .line 175
+    .line 176
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->initView()V
 
-    .line 176
+    .line 177
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->registerBroadcastReceiver()V
 
-    .line 177
+    .line 178
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
 
     invoke-interface {v0, p0}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->setOnDataUpdateListener(Lcom/cnlaunch/x431pro/activity/diagnose/listenter/OnDiagnoseDataUpdateListenter;)V
 
-    .line 178
+    .line 179
     return-void
 .end method
 
@@ -2068,7 +2068,7 @@
     .parameter "activity"
 
     .prologue
-    const v7, 0x7f07070e
+    const v7, 0x7f070710
 
     const/4 v8, 0x0
 
@@ -2297,18 +2297,25 @@
     iput-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mDSManager:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/DataStreamManager;
 
     .line 153
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mDSManager:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/DataStreamManager;
+
+    const-string/jumbo v5, "DATASTREAM"
+
+    invoke-virtual {v4, v5}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/DataStreamManager;->setData_type(Ljava/lang/String;)V
+
+    .line 154
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->dataStreamList:Ljava/util/ArrayList;
 
     if-eqz v4, :cond_6
 
-    .line 154
+    .line 155
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mDSManager:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/DataStreamManager;
 
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->dataStreamList:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v5}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/DataStreamManager;->addDataStreamItem(Ljava/util/List;)V
 
-    .line 157
+    .line 158
     :cond_6
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
@@ -2324,7 +2331,7 @@
 
     iput v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJumpType:I
 
-    .line 158
+    .line 159
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v4
@@ -2333,7 +2340,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f070500
+    const v5, 0x7f070502
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getString(I)Ljava/lang/String;
 
@@ -2341,7 +2348,7 @@
 
     invoke-virtual {v4, v5}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->setSubTitle(Ljava/lang/String;)V
 
-    .line 159
+    .line 160
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v4
@@ -2352,7 +2359,7 @@
 
     invoke-virtual {v4, v8}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->setDatastreamRecord(Z)V
 
-    .line 160
+    .line 161
     return-void
 
     .line 122
@@ -2477,20 +2484,20 @@
 
     const/4 v2, 0x0
 
-    .line 660
-    if-ne p1, v1, :cond_1
-
     .line 661
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnSetMaxMin:Landroid/widget/Button;
-
-    invoke-virtual {v0, v3}, Landroid/widget/Button;->setVisibility(I)V
+    if-ne p1, v1, :cond_1
 
     .line 662
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnSetMaxMin:Landroid/widget/Button;
 
-    invoke-virtual {v0, v2}, Landroid/widget/Button;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 663
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnSetMaxMin:Landroid/widget/Button;
+
+    invoke-virtual {v0, v2}, Landroid/widget/Button;->setEnabled(Z)V
+
+    .line 664
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mCurrentDatastreamType:Ljava/lang/String;
 
     const-string/jumbo v1, "810"
@@ -2501,31 +2508,31 @@
 
     if-eqz v0, :cond_0
 
-    .line 664
+    .line 665
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mVWDatastreamLayout:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 673
+    .line 674
     :cond_0
     :goto_0
     return v2
 
-    .line 666
+    .line 667
     :cond_1
     if-nez p1, :cond_0
-
-    .line 667
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnSetMaxMin:Landroid/widget/Button;
-
-    invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 668
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnSetMaxMin:Landroid/widget/Button;
 
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 669
+    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnSetMaxMin:Landroid/widget/Button;
+
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
+
+    .line 670
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mCurrentDatastreamType:Ljava/lang/String;
 
     const-string/jumbo v1, "810"
@@ -2536,7 +2543,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 670
+    .line 671
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mVWDatastreamLayout:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
@@ -2550,17 +2557,17 @@
     .parameter "isChecked"
 
     .prologue
-    .line 561
+    .line 562
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mDataStreamSelector:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelector;
 
     if-eqz v0, :cond_0
 
-    .line 562
+    .line 563
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mDataStreamSelector:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelector;
 
     invoke-interface {v0, p2}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelector;->setAllItemChecked(Z)V
 
-    .line 564
+    .line 565
     :cond_0
     return-void
 .end method
@@ -2576,15 +2583,15 @@
 
     const/4 v10, 0x1
 
-    .line 372
+    .line 373
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/BaseDiagnoseFragment;->onClick(Landroid/view/View;)V
 
-    .line 373
+    .line 374
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v5
 
-    .line 374
+    .line 375
     .local v5, id:I
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
@@ -2600,38 +2607,38 @@
 
     if-eqz v6, :cond_1
 
-    const v6, 0x7f0d0143
+    const v6, 0x7f0c0143
 
     if-ne v5, v6, :cond_1
 
-    .line 375
+    .line 376
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
-    const v7, 0x7f07053f
+    const v7, 0x7f070541
 
     const/16 v8, 0x11
 
     invoke-static {v6, v7, v8}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
-    .line 441
+    .line 442
     :cond_0
     :goto_0
     return-void
 
-    .line 378
+    .line 379
     :cond_1
-    const v6, 0x7f0d0147
+    const v6, 0x7f0c0147
 
     if-ne v5, v6, :cond_2
 
-    .line 379
+    .line 380
     iget v6, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJumpType:I
 
     if-ne v6, v10, :cond_0
 
-    .line 380
+    .line 381
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getFragment()Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ICallKeyDownFragment;
 
     move-result-object v6
@@ -2640,24 +2647,24 @@
 
     goto :goto_0
 
-    .line 382
+    .line 383
     :cond_2
-    const v6, 0x7f0d0164
+    const v6, 0x7f0c0164
 
     if-ne v5, v6, :cond_3
 
-    .line 383
+    .line 384
     new-instance v1, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamCustomSelectFragment;
 
     invoke-direct {v1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamCustomSelectFragment;-><init>()V
 
-    .line 384
+    .line 385
     .local v1, customFragment:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamCustomSelectFragment;
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 385
+    .line 386
     .local v0, bundle:Landroid/os/Bundle;
     const-string/jumbo v6, "DataStreamSelect"
 
@@ -2665,10 +2672,10 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 
-    .line 386
+    .line 387
     invoke-virtual {v1, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamCustomSelectFragment;->setBundle(Landroid/os/Bundle;)V
 
-    .line 387
+    .line 388
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v6
@@ -2683,15 +2690,15 @@
 
     goto :goto_0
 
-    .line 388
+    .line 389
     .end local v0           #bundle:Landroid/os/Bundle;
     .end local v1           #customFragment:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamCustomSelectFragment;
     :cond_3
-    const v6, 0x7f0d0163
+    const v6, 0x7f0c0163
 
     if-ne v5, v6, :cond_5
 
-    .line 389
+    .line 390
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v6
@@ -2706,7 +2713,7 @@
 
     if-nez v6, :cond_0
 
-    .line 390
+    .line 391
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/file/FileUtils;->getSDFreeSize()J
 
     move-result-wide v6
@@ -2717,7 +2724,7 @@
 
     if-lez v6, :cond_4
 
-    .line 391
+    .line 392
     new-instance v3, Ljava/io/File;
 
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/PathUtils;->getTempImagesPath()Ljava/lang/String;
@@ -2726,39 +2733,39 @@
 
     invoke-direct {v3, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 392
+    .line 393
     .local v3, file:Ljava/io/File;
     invoke-virtual {v3}, Ljava/io/File;->mkdirs()Z
 
-    .line 393
+    .line 394
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->startRecord()V
 
-    .line 394
+    .line 395
     invoke-static {v10}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/CombinedGraphFragment;->setRecordingStatus(Z)V
 
-    .line 395
+    .line 396
     invoke-static {v10}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/GraphGridFragment;->setRecordingStatus(Z)V
 
     goto :goto_0
 
-    .line 397
+    .line 398
     .end local v3           #file:Ljava/io/File;
     :cond_4
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f070552
+    const v7, 0x7f070554
 
     invoke-static {v6, v7}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
-    .line 400
+    .line 401
     :cond_5
-    const v6, 0x7f0d0168
+    const v6, 0x7f0c0168
 
     if-ne v5, v6, :cond_7
 
-    .line 401
+    .line 402
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v6
@@ -2773,7 +2780,7 @@
 
     if-eqz v6, :cond_0
 
-    .line 402
+    .line 403
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJniFile:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     iget v7, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mRecoredGroupID:I
@@ -2782,37 +2789,37 @@
 
     move-result v4
 
-    .line 403
+    .line 404
     .local v4, frameCount:I
     if-gtz v4, :cond_6
 
-    .line 404
+    .line 405
     new-instance v2, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
 
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mContext:Landroid/content/Context;
 
     invoke-direct {v2, v6}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;-><init>(Landroid/content/Context;)V
 
-    .line 405
+    .line 406
     .local v2, dialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
-    const v6, 0x7f0704df
+    const v6, 0x7f0704e1
 
     invoke-virtual {v2, v6}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setTitle(I)V
 
-    .line 406
-    const v6, 0x7f07053b
+    .line 407
+    const v6, 0x7f07053d
 
     invoke-virtual {v2, v6}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setMessage(I)V
 
-    .line 407
-    const v6, 0x7f07003d
+    .line 408
+    const v6, 0x7f070024
 
     const/4 v7, 0x0
 
     invoke-virtual {v2, v6, v10, v7}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
-    .line 408
-    const v6, 0x7f070038
+    .line 409
+    const v6, 0x7f07001f
 
     new-instance v7, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$5;
 
@@ -2820,51 +2827,51 @@
 
     invoke-virtual {v2, v6, v10, v7}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setBetaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
-    .line 418
+    .line 419
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->show()V
 
     goto/16 :goto_0
 
-    .line 420
+    .line 421
     .end local v2           #dialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
     :cond_6
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnRecord:Landroid/widget/Button;
 
     invoke-virtual {v6, v10}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 421
+    .line 422
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->btnRecord:Landroid/widget/Button;
 
-    const v7, 0x7f070529
+    const v7, 0x7f07052b
 
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setText(I)V
 
-    .line 422
+    .line 423
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->stopAndSaveRecord()V
 
-    .line 423
+    .line 424
     invoke-static {v8}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/CombinedGraphFragment;->setRecordingStatus(Z)V
 
-    .line 424
+    .line 425
     invoke-static {v8}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/GraphGridFragment;->setRecordingStatus(Z)V
 
     goto/16 :goto_0
 
-    .line 427
+    .line 428
     .end local v4           #frameCount:I
     :cond_7
-    const v6, 0x7f0d0166
+    const v6, 0x7f0c0166
 
     if-ne v5, v6, :cond_8
 
-    .line 428
+    .line 429
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->checkRecordStatus()Z
 
     move-result v6
 
     if-eqz v6, :cond_0
 
-    .line 429
+    .line 430
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v6
@@ -2875,25 +2882,25 @@
 
     invoke-interface {v6, v7, v8, v9}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->SendFeedbackMessage(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 430
+    .line 431
     iput-boolean v10, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->channgelChanged:Z
 
     goto/16 :goto_0
 
-    .line 432
+    .line 433
     :cond_8
-    const v6, 0x7f0d0167
+    const v6, 0x7f0c0167
 
     if-ne v5, v6, :cond_9
 
-    .line 433
+    .line 434
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->checkRecordStatus()Z
 
     move-result v6
 
     if-eqz v6, :cond_0
 
-    .line 434
+    .line 435
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v6
@@ -2904,25 +2911,25 @@
 
     invoke-interface {v6, v7, v8, v9}, Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;->SendFeedbackMessage(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 435
+    .line 436
     iput-boolean v10, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->channgelChanged:Z
 
     goto/16 :goto_0
 
-    .line 437
+    .line 438
     :cond_9
-    const v6, 0x7f0d003d
+    const v6, 0x7f0c003d
 
     if-ne v5, v6, :cond_0
 
-    .line 438
+    .line 439
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->checkRecordStatus()Z
 
     move-result v6
 
     if-eqz v6, :cond_0
 
-    .line 439
+    .line 440
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v6
@@ -2941,15 +2948,15 @@
     .parameter "newConfig"
 
     .prologue
-    .line 707
+    .line 708
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/BaseDiagnoseFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 708
+    .line 709
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f0d003b
+    const v1, 0x7f0c003b
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -2959,7 +2966,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->linearLayout:Landroid/widget/LinearLayout;
 
-    .line 709
+    .line 710
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->linearLayout:Landroid/widget/LinearLayout;
 
     invoke-static {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/view/BottomButtonTransition;->getLayoutTransition(Ljava/lang/Object;)Landroid/animation/LayoutTransition;
@@ -2968,14 +2975,14 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setLayoutTransition(Landroid/animation/LayoutTransition;)V
 
-    .line 710
+    .line 711
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->linearLayout:Landroid/widget/LinearLayout;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 711
+    .line 712
     return-void
 .end method
 
@@ -2986,7 +2993,7 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 337
+    .line 338
     const v0, 0x7f030070
 
     const/4 v1, 0x0
@@ -3002,15 +3009,15 @@
     .locals 2
 
     .prologue
-    .line 164
+    .line 165
     invoke-super {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/BaseDiagnoseFragment;->onDestroy()V
 
-    .line 165
+    .line 166
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mDSManager:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/DataStreamManager;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/DataStreamManager;->clear()V
 
-    .line 166
+    .line 167
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
@@ -3025,10 +3032,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 167
+    .line 168
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->stopAndSaveRecord()V
 
-    .line 168
+    .line 169
     :cond_0
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
@@ -3042,7 +3049,7 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;->setDatastreamRecord(Z)V
 
-    .line 169
+    .line 170
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -3051,7 +3058,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 170
+    .line 171
     return-void
 .end method
 
@@ -3065,12 +3072,12 @@
 
     const/4 v3, 0x1
 
-    .line 585
+    .line 586
     const/4 v0, 0x4
 
     if-ne p1, v0, :cond_0
 
-    .line 586
+    .line 587
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
@@ -3085,29 +3092,29 @@
 
     if-eqz v0, :cond_1
 
-    .line 587
+    .line 588
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const v1, 0x7f07053f
+    const v1, 0x7f070541
 
     const/16 v2, 0x11
 
     invoke-static {v0, v1, v2}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
-    .line 606
+    .line 607
     :cond_0
     :goto_0
     return v3
 
-    .line 592
+    .line 593
     :cond_1
     iget v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJumpType:I
 
     if-ne v3, v0, :cond_2
 
-    .line 593
+    .line 594
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getFragment()Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ICallKeyDownFragment;
 
     move-result-object v0
@@ -3118,7 +3125,7 @@
 
     if-nez v0, :cond_0
 
-    .line 596
+    .line 597
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
     move-result-object v0
@@ -3131,7 +3138,7 @@
 
     goto :goto_0
 
-    .line 602
+    .line 603
     :cond_2
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
@@ -3151,10 +3158,10 @@
     .parameter "newMask"
 
     .prologue
-    .line 550
+    .line 551
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mMaskString:Ljava/lang/String;
 
-    .line 551
+    .line 552
     const-string/jumbo v0, "DataStreamShowFragment"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3175,7 +3182,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 552
+    .line 553
     return-void
 .end method
 
@@ -3184,10 +3191,10 @@
     .parameter "index"
 
     .prologue
-    .line 645
+    .line 646
     iput p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->helpIndex:I
 
-    .line 646
+    .line 647
     return-void
 .end method
 
@@ -3196,10 +3203,10 @@
     .parameter "fragment"
 
     .prologue
-    .line 650
+    .line 651
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mCallKeyDownFragment:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/ICallKeyDownFragment;
 
-    .line 651
+    .line 652
     return-void
 .end method
 
@@ -3208,10 +3215,10 @@
     .parameter "selector"
 
     .prologue
-    .line 544
+    .line 545
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mDataStreamSelector:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/IDataStreamSelector;
 
-    .line 545
+    .line 546
     const-string/jumbo v0, "DataStreamShowFragment"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3230,7 +3237,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 546
+    .line 547
     return-void
 .end method
 
@@ -3248,7 +3255,7 @@
     .end annotation
 
     .prologue
-    .line 344
+    .line 345
     .local p1, list:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/cnlaunch/diagnosemodule/bean/BasicDataStreamBean;>;"
     iget-boolean v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->isSort:Z
 
@@ -3264,31 +3271,31 @@
 
     if-nez v0, :cond_0
 
-    .line 345
+    .line 346
     new-instance v0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$SortRuleCollator;
 
     invoke-direct {v0, p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$SortRuleCollator;-><init>(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;)V
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mCollator:Ljava/util/Comparator;
 
-    .line 346
+    .line 347
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mCollator:Ljava/util/Comparator;
 
     invoke-static {p1, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 348
+    .line 349
     :cond_0
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->dataStreamList:Ljava/util/ArrayList;
 
-    .line 349
+    .line 350
     iget-boolean v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->isRecordUnit:Z
 
     if-eqz v0, :cond_1
 
-    .line 350
+    .line 351
     invoke-direct {p0, p1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->recordUnit(Ljava/util/ArrayList;)V
 
-    .line 352
+    .line 353
     :cond_1
     invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->getCallBack()Lcom/cnlaunch/x431pro/activity/diagnose/listenter/IFragmentCallback;
 
@@ -3304,25 +3311,25 @@
 
     if-eqz v0, :cond_2
 
-    .line 353
+    .line 354
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mJniFile:Lcom/cnlaunch/mycar/jni/JniX431FileTest;
 
     iget v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mRecoredGroupID:I
 
     invoke-virtual {v0, v1, p1}, Lcom/cnlaunch/mycar/jni/JniX431FileTest;->writeDSDate(ILjava/util/ArrayList;)V
 
-    .line 357
+    .line 358
     :cond_2
     iget-boolean v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->channgelChanged:Z
 
     if-eqz v0, :cond_4
 
-    .line 358
+    .line 359
     iget-boolean v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->channgelChanged:Z
 
     invoke-static {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/BaseDataStreamShowingFragment;->setChanngelChangedStatus(Z)V
 
-    .line 359
+    .line 360
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->actionBar:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;->getLastClickView()Landroid/view/View;
@@ -3331,7 +3338,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 361
+    .line 362
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->actionBar:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->actionBar:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;
@@ -3342,22 +3349,22 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar;->onClick(Landroid/view/View;)V
 
-    .line 363
+    .line 364
     :cond_3
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mDSManager:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/DataStreamManager;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/DataStreamManager;->resetData()V
 
-    .line 364
+    .line 365
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->channgelChanged:Z
 
-    .line 368
+    .line 369
     :goto_0
     return-void
 
-    .line 367
+    .line 368
     :cond_4
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->mDSManager:Lcom/cnlaunch/x431pro/activity/diagnose/datastream/DataStreamManager;
 

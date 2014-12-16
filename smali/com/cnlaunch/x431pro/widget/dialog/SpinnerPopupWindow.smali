@@ -48,7 +48,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0300db
+    const v2, 0x7f0300dc
 
     invoke-virtual {v1, v2, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -63,7 +63,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/widget/dialog/SpinnerPopupWindow;->popupWindow:Landroid/widget/PopupWindow;
 
     .line 55
-    const v1, 0x7f0d0046
+    const v1, 0x7f0c0046
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

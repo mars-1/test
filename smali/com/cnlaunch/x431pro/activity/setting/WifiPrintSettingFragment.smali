@@ -275,17 +275,9 @@
 
     .prologue
     .line 91
-    invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/setting/WifiPrintSettingFragment;->getResources()Landroid/content/res/Resources;
+    const v2, 0x7f0706ab
 
-    move-result-object v2
-
-    const v3, 0x7f0706a9
-
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/setting/WifiPrintSettingFragment;->setTitle(Ljava/lang/String;)V
+    invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/setting/WifiPrintSettingFragment;->setTitle(I)V
 
     .line 92
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/setting/WifiPrintSettingFragment;->mContext:Landroid/content/Context;
@@ -294,7 +286,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f020521
+    const v3, 0x7f020525
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -316,7 +308,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d04de
+    const v3, 0x7f0c04f7
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -331,7 +323,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d04e1
+    const v3, 0x7f0c04fa
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -346,7 +338,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d04df
+    const v3, 0x7f0c04f8
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -366,7 +358,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d04e0
+    const v3, 0x7f0c04f9
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -386,7 +378,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d04dd
+    const v3, 0x7f0c04f6
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -406,7 +398,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d04e2
+    const v3, 0x7f0c04fb
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -643,7 +635,7 @@
 .end method
 
 .method public onClick(Landroid/view/View;)V
-    .locals 6
+    .locals 5
     .parameter "v"
 
     .prologue
@@ -671,17 +663,9 @@
     .line 153
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/WifiPrintSettingFragment;->attachprintButton:Landroid/widget/Button;
 
-    invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/setting/WifiPrintSettingFragment;->getResources()Landroid/content/res/Resources;
+    const v4, 0x7f07009f
 
-    move-result-object v4
-
-    const v5, 0x7f070001
-
-    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v4}, Landroid/widget/Button;->setText(I)V
 
     .line 154
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/WifiPrintSettingFragment;->connectresult:Landroid/widget/TextView;
@@ -803,17 +787,15 @@
     .line 182
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/setting/WifiPrintSettingFragment;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0706b7
+    const v4, 0x7f0706b9
 
     invoke-static {v3, v4}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;I)V
 
-    goto/16 :goto_0
+    goto :goto_0
 
     .line 150
-    nop
-
     :pswitch_data_0
-    .packed-switch 0x7f0d04dd
+    .packed-switch 0x7f0c04f6
         :pswitch_3
         :pswitch_0
         :pswitch_2
@@ -831,7 +813,7 @@
 
     .prologue
     .line 71
-    const v0, 0x7f0301ba
+    const v0, 0x7f0301bd
 
     const/4 v1, 0x0
 
@@ -887,7 +869,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0706a6
+    const v1, 0x7f0706a8
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -908,7 +890,7 @@
 .end method
 
 .method public onResume()V
-    .locals 3
+    .locals 2
 
     .prologue
     .line 82
@@ -938,17 +920,9 @@
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/WifiPrintSettingFragment;->wifiname:Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Lcom/cnlaunch/x431pro/activity/setting/WifiPrintSettingFragment;->getResources()Landroid/content/res/Resources;
+    const v1, 0x7f0700ad
 
-    move-result-object v1
-
-    const v2, 0x7f07000f
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_0
 .end method
@@ -1007,7 +981,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070022
+    const v1, 0x7f070009
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 

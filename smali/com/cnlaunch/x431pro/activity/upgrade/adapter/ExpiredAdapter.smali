@@ -74,7 +74,7 @@
     .line 51
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/ExpiredAdapter;->holder:Lcom/cnlaunch/x431pro/activity/upgrade/adapter/ExpiredAdapter$ViewHolder;
 
-    const v2, 0x7f0d010d
+    const v2, 0x7f0c010d
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -87,7 +87,7 @@
     .line 52
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/ExpiredAdapter;->holder:Lcom/cnlaunch/x431pro/activity/upgrade/adapter/ExpiredAdapter$ViewHolder;
 
-    const v2, 0x7f0d010e
+    const v2, 0x7f0c010e
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -100,7 +100,7 @@
     .line 53
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/ExpiredAdapter;->holder:Lcom/cnlaunch/x431pro/activity/upgrade/adapter/ExpiredAdapter$ViewHolder;
 
-    const v2, 0x7f0d010f
+    const v2, 0x7f0c010f
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -113,7 +113,7 @@
     .line 54
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/ExpiredAdapter;->holder:Lcom/cnlaunch/x431pro/activity/upgrade/adapter/ExpiredAdapter$ViewHolder;
 
-    const v2, 0x7f0d0110
+    const v2, 0x7f0c0110
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -126,7 +126,7 @@
     .line 55
     iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/ExpiredAdapter;->holder:Lcom/cnlaunch/x431pro/activity/upgrade/adapter/ExpiredAdapter$ViewHolder;
 
-    const v2, 0x7f0d0111
+    const v2, 0x7f0c0111
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -158,7 +158,7 @@
 
     move-result-object v2
 
-    const v4, 0x7f020170
+    const v4, 0x7f020171
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

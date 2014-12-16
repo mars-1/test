@@ -37,7 +37,7 @@
     .parameter
 
     .prologue
-    .line 918
+    .line 924
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$PinyinComparator;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,7 +53,7 @@
     .parameter "obj2"
 
     .prologue
-    .line 923
+    .line 929
     move-object v1, p1
 
     check-cast v1, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
@@ -61,10 +61,10 @@
     .local v1, soft1:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
     move-object v2, p2
 
-    .line 924
+    .line 930
     check-cast v2, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
 
-    .line 925
+    .line 931
     .local v2, soft2:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->getSoftName()Ljava/lang/String;
 
@@ -74,7 +74,7 @@
 
     move-result-object v3
 
-    .line 926
+    .line 932
     .local v3, str1:Ljava/lang/String;
     invoke-virtual {v2}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->getSoftName()Ljava/lang/String;
 
@@ -84,13 +84,13 @@
 
     move-result-object v4
 
-    .line 927
+    .line 933
     .local v4, str2:Ljava/lang/String;
     invoke-virtual {v3, v4}, Ljava/lang/String;->compareToIgnoreCase(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 928
+    .line 934
     .local v0, flag:I
     return v0
 .end method
@@ -102,28 +102,28 @@
     .prologue
     const/4 v10, 0x0
 
-    .line 938
+    .line 944
     new-instance v1, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;
 
     invoke-direct {v1}, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;-><init>()V
 
-    .line 939
+    .line 945
     .local v1, format:Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;
     sget-object v6, Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;->LOWERCASE:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
 
     invoke-virtual {v1, v6}, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->setCaseType(Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;)V
 
-    .line 940
+    .line 946
     sget-object v6, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->WITHOUT_TONE:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
     invoke-virtual {v1, v6}, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->setToneType(Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;)V
 
-    .line 941
+    .line 947
     sget-object v6, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;->WITH_V:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
 
     invoke-virtual {v1, v6}, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->setVCharType(Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;)V
 
-    .line 943
+    .line 949
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v6
@@ -132,11 +132,11 @@
 
     move-result-object v3
 
-    .line 944
+    .line 950
     .local v3, input:[C
     const-string/jumbo v4, ""
 
-    .line 947
+    .line 953
     .local v4, output:Ljava/lang/String;
     const/4 v2, 0x0
 
@@ -149,7 +149,7 @@
 
     if-lt v2, v6, :cond_0
 
-    .line 970
+    .line 976
     :goto_1
     iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$PinyinComparator;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
@@ -180,10 +180,10 @@
 
     invoke-static {v6, v7}, Lcom/cnlaunch/framework/utils/NLog;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 971
+    .line 977
     return-object v4
 
-    .line 949
+    .line 955
     :cond_0
     :try_start_1
     aget-char v6, v3, v2
@@ -192,26 +192,26 @@
 
     move-result-object v6
 
-    .line 950
+    .line 956
     const-string/jumbo v7, "[\\u4E00-\\u9FA5]+"
 
-    .line 949
+    .line 955
     invoke-virtual {v6, v7}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
 
     move-result v6
 
-    .line 950
+    .line 956
     if-eqz v6, :cond_1
 
-    .line 953
+    .line 959
     aget-char v6, v3, v2
 
-    .line 952
+    .line 958
     invoke-static {v6, v1}, Lnet/sourceforge/pinyin4j/PinyinHelper;->toHanyuPinyinStringArray(CLnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;)[Ljava/lang/String;
 
     move-result-object v5
 
-    .line 955
+    .line 961
     .local v5, temp:[Ljava/lang/String;
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -233,14 +233,14 @@
 
     move-result-object v4
 
-    .line 947
+    .line 953
     .end local v5           #temp:[Ljava/lang/String;
     :goto_2
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 958
+    .line 964
     :cond_1
     aget-char v6, v3, v2
 
@@ -254,7 +254,7 @@
 
     if-gt v6, v7, :cond_2
 
-    .line 959
+    .line 965
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-static {v4}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -281,10 +281,10 @@
 
     move-result-object v4
 
-    .line 960
+    .line 966
     goto :goto_2
 
-    .line 962
+    .line 968
     :cond_2
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -312,11 +312,11 @@
 
     goto :goto_2
 
-    .line 965
+    .line 971
     :catch_0
     move-exception v0
 
-    .line 966
+    .line 972
     .local v0, e:Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 

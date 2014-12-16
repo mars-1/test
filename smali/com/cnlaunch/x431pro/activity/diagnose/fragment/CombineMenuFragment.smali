@@ -3,8 +3,8 @@
 .source "CombineMenuFragment.java"
 
 # interfaces
-.implements Landroid/widget/AdapterView$OnItemClickListener;
 .implements Landroid/view/View$OnClickListener;
+.implements Landroid/widget/AdapterView$OnItemClickListener;
 
 
 # annotations
@@ -73,7 +73,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0155
+    const v1, 0x7f0c0155
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -88,7 +88,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0153
+    const v1, 0x7f0c0153
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -103,7 +103,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0152
+    const v1, 0x7f0c0152
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -118,7 +118,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0154
+    const v1, 0x7f0c0154
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -167,7 +167,7 @@
 
     .prologue
     .line 98
-    const v0, 0x7f070506
+    const v0, 0x7f070508
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/CombineMenuFragment;->getString(I)Ljava/lang/String;
 
@@ -280,7 +280,7 @@
 
     .line 79
     .local v0, id:I
-    const v1, 0x7f0d0153
+    const v1, 0x7f0c0153
 
     if-ne v0, v1, :cond_2
 
@@ -345,7 +345,7 @@
 
     .line 82
     :cond_2
-    const v1, 0x7f0d0152
+    const v1, 0x7f0c0152
 
     if-ne v0, v1, :cond_4
 
@@ -406,7 +406,7 @@
 
     .line 85
     :cond_4
-    const v1, 0x7f0d0154
+    const v1, 0x7f0c0154
 
     if-ne v0, v1, :cond_0
 

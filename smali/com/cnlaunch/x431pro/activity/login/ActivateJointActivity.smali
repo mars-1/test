@@ -169,7 +169,7 @@
 .end method
 
 .method private ActivateConnectorFailPrompt(I)V
-    .locals 2
+    .locals 1
     .parameter "code"
 
     .prologue
@@ -182,61 +182,49 @@
 
     .line 141
     :sswitch_0
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
+    const v0, 0x7f0705ca
 
-    const v1, 0x7f0705c8
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
+    invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
     .line 144
     :sswitch_1
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
+    const v0, 0x7f0705cb
 
-    const v1, 0x7f0705c9
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
+    invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
     .line 147
     :sswitch_2
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
+    const v0, 0x7f0705cc
 
-    const v1, 0x7f0705ca
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
+    invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
     .line 150
     :sswitch_3
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
+    const v0, 0x7f0705cd
 
-    const v1, 0x7f0705cb
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
+    invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
     .line 153
     :sswitch_4
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
+    const v0, 0x7f0705ce
 
-    const v1, 0x7f0705cc
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
+    invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
     .line 156
     :sswitch_5
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
+    const v0, 0x7f0706e6
 
-    const v1, 0x7f0706e4
-
-    invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
+    invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
@@ -285,9 +273,7 @@
     .line 89
     new-instance v1, Lcom/cnlaunch/x431pro/module/mine/action/ConnectorAction;
 
-    iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
-
-    invoke-direct {v1, v2}, Lcom/cnlaunch/x431pro/module/mine/action/ConnectorAction;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p0}, Lcom/cnlaunch/x431pro/module/mine/action/ConnectorAction;-><init>(Landroid/content/Context;)V
 
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->action:Lcom/cnlaunch/x431pro/module/mine/action/ConnectorAction;
 
@@ -323,7 +309,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->serialNo_Prefix:Ljava/lang/String;
 
     .line 93
-    const v1, 0x7f0d0282
+    const v1, 0x7f0c0286
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->findViewById(I)Landroid/view/View;
 
@@ -334,7 +320,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->edit_serialNumber:Landroid/widget/EditText;
 
     .line 94
-    const v1, 0x7f0d0283
+    const v1, 0x7f0c0287
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->findViewById(I)Landroid/view/View;
 
@@ -345,7 +331,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->edit_verifyCode:Landroid/widget/EditText;
 
     .line 95
-    const v1, 0x7f0d0285
+    const v1, 0x7f0c0289
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->findViewById(I)Landroid/view/View;
 
@@ -356,7 +342,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->bt_activate_comfirm:Landroid/widget/Button;
 
     .line 96
-    const v1, 0x7f0d0286
+    const v1, 0x7f0c028a
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->findViewById(I)Landroid/view/View;
 
@@ -367,7 +353,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->tv_skip:Landroid/widget/TextView;
 
     .line 97
-    const v1, 0x7f0d0284
+    const v1, 0x7f0c0288
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->findViewById(I)Landroid/view/View;
 
@@ -607,7 +593,7 @@
     if-eqz v1, :cond_0
 
     .line 309
-    const v1, 0x7f0705cd
+    const v1, 0x7f0705cf
 
     invoke-static {p0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -624,7 +610,7 @@
     if-eqz v1, :cond_1
 
     .line 314
-    const v1, 0x7f0705ce
+    const v1, 0x7f0705d0
 
     invoke-static {p0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -664,7 +650,7 @@
 
     .line 321
     :cond_2
-    const v1, 0x7f0706d5
+    const v1, 0x7f0706d7
 
     invoke-static {p0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -699,7 +685,7 @@
 
     .line 328
     :cond_4
-    const v1, 0x7f0706d8
+    const v1, 0x7f0706da
 
     invoke-static {p0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -718,7 +704,7 @@
 
     .line 304
     :pswitch_data_0
-    .packed-switch 0x7f0d0285
+    .packed-switch 0x7f0c0289
         :pswitch_0
     .end packed-switch
 .end method
@@ -732,7 +718,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 81
-    const v0, 0x7f0300ce
+    const v0, 0x7f0300cf
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->setContentView(I)V
 
@@ -760,7 +746,7 @@
 .end method
 
 .method public onFailure(IILjava/lang/Object;)V
-    .locals 1
+    .locals 0
     .parameter "requestCode"
     .parameter "state"
     .parameter "result"
@@ -778,17 +764,13 @@
 
     .line 284
     :pswitch_0
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
-
-    invoke-static {v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
     goto :goto_0
 
     .line 287
     :pswitch_1
-    iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
-
-    invoke-static {v0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -872,11 +854,9 @@
     if-eqz v10, :cond_5
 
     .line 191
-    iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
+    const v10, 0x7f070690
 
-    const v11, 0x7f07068e
-
-    invoke-static {v10, v11}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
+    invoke-static {p0, v10}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
     .line 194
     new-instance v7, Lcom/cnlaunch/x431pro/module/rtu/RegisterAndLoadInfomation;
@@ -1182,9 +1162,7 @@
     .line 239
     .end local v9           #sn:Lcom/cnlaunch/x431pro/utils/db/SerialNumber;
     :cond_4
-    iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
-
-    invoke-static {v10}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
     goto/16 :goto_0
 
@@ -1194,9 +1172,7 @@
     .end local v4           #listTemp:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/SerialNumber;>;"
     .end local v7           #registAndLoadInfo:Lcom/cnlaunch/x431pro/module/rtu/RegisterAndLoadInfomation;
     :cond_5
-    iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
-
-    invoke-static {v10}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
     .line 244
     invoke-virtual {v8}, Lcom/cnlaunch/x431pro/module/base/CommonResponse;->getCode()I
@@ -1210,27 +1186,21 @@
     .line 247
     .end local v8           #res:Lcom/cnlaunch/x431pro/module/base/CommonResponse;
     :cond_6
-    iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
-
-    invoke-static {v10}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
     goto/16 :goto_0
 
     .line 251
     :pswitch_1
-    iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
-
-    invoke-static {v10}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->dismiss(Landroid/content/Context;)V
 
     .line 252
     if-nez p2, :cond_8
 
     .line 253
-    iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
+    const v10, 0x7f0705c9
 
-    const v11, 0x7f0705c7
-
-    invoke-static {v10, v11}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
+    invoke-static {p0, v10}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
     .line 272
     :cond_7
@@ -1313,11 +1283,9 @@
     .end local v5           #productsRegDateDTO:Lcom/cnlaunch/x431pro/module/mine/model/ProductsRegDateDTO;
     .end local v6           #productsRegDateDTOList:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/module/mine/model/ProductsRegDateDTO;>;"
     :cond_9
-    iget-object v10, p0, Lcom/cnlaunch/x431pro/activity/login/ActivateJointActivity;->mContext:Landroid/content/Context;
+    const v10, 0x7f0705c9
 
-    const v11, 0x7f0705c7
-
-    invoke-static {v10, v11}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
+    invoke-static {p0, v10}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
     goto :goto_3
 

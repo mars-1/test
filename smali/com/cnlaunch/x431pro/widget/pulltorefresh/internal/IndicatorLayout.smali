@@ -176,7 +176,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0204ac
+    const v1, 0x7f0204b0
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -193,7 +193,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c00e1
+    const v1, 0x7f0b00e1
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -232,7 +232,7 @@
 
     .line 74
     .local v11, outAnimResId:I
-    const v0, 0x7f0204a9
+    const v0, 0x7f0204ad
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/internal/IndicatorLayout;->setBackgroundResource(I)V
 
@@ -363,7 +363,7 @@
 
     .line 62
     .restart local v11       #outAnimResId:I
-    const v0, 0x7f0204a8
+    const v0, 0x7f0204ac
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/widget/pulltorefresh/internal/IndicatorLayout;->setBackgroundResource(I)V
 

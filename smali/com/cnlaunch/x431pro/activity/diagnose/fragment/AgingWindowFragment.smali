@@ -36,7 +36,7 @@
 
     .prologue
     .line 54
-    const v0, 0x7f070501
+    const v0, 0x7f070503
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/AgingWindowFragment;->getString(I)Ljava/lang/String;
 
@@ -86,7 +86,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d014f
+    const v1, 0x7f0c014f
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -119,7 +119,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070501
+    const v1, 0x7f070503
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/AgingWindowFragment;->getString(I)Ljava/lang/String;
 

@@ -111,7 +111,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f07000a
+    const v2, 0x7f0700a8
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setText(I)V
 
@@ -138,7 +138,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f070009
+    const v2, 0x7f0700a7
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setText(I)V
     :try_end_1

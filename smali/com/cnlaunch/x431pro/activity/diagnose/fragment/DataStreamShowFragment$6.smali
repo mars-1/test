@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$6;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;
 
-    .line 476
+    .line 477
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
     return-void
@@ -39,7 +39,7 @@
     .locals 3
 
     .prologue
-    .line 478
+    .line 479
     :goto_0
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$6;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;
 
@@ -61,7 +61,7 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 485
+    .line 486
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment$6;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;
 
     const/4 v2, 0x1
@@ -69,10 +69,10 @@
     #setter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->isRecordUnit:Z
     invoke-static {v1, v2}, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;->access$17(Lcom/cnlaunch/x431pro/activity/diagnose/fragment/DataStreamShowFragment;Z)V
 
-    .line 486
+    .line 487
     return-void
 
-    .line 480
+    .line 481
     :cond_0
     const-wide/16 v1, 0x3e8
 
@@ -83,11 +83,11 @@
 
     goto :goto_0
 
-    .line 481
+    .line 482
     :catch_0
     move-exception v0
 
-    .line 482
+    .line 483
     .local v0, e:Ljava/lang/InterruptedException;
     invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
 

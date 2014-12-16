@@ -41,7 +41,7 @@
     .parameter "intent"
 
     .prologue
-    const v10, 0x7f0d02de
+    const v10, 0x7f0c02f5
 
     const/4 v9, 0x1
 
@@ -63,7 +63,7 @@
     .line 772
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/MainActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/MainActivity;
 
-    const v8, 0x7f0d02da
+    const v8, 0x7f0c02f1
 
     invoke-virtual {v7, v8}, Lcom/cnlaunch/x431pro/activity/MainActivity;->showActivity(I)V
 
@@ -85,7 +85,7 @@
     .line 775
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/MainActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/MainActivity;
 
-    const v8, 0x7f0d02d8
+    const v8, 0x7f0c02ef
 
     invoke-virtual {v7, v8}, Lcom/cnlaunch/x431pro/activity/MainActivity;->showActivity(I)V
 
@@ -294,7 +294,7 @@
     .line 799
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/MainActivity$7;->this$0:Lcom/cnlaunch/x431pro/activity/MainActivity;
 
-    const v8, 0x7f0d02db
+    const v8, 0x7f0c02f2
 
     invoke-virtual {v7, v8}, Lcom/cnlaunch/x431pro/activity/MainActivity;->showActivity(I)V
 

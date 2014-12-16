@@ -28,7 +28,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;
 
-    .line 139
+    .line 151
     invoke-direct {p0, p2}, Lcom/cnlaunch/x431pro/activity/diagnose/datastream/BottomActionBar$Tab;-><init>(Landroid/view/View;)V
 
     return-void
@@ -42,11 +42,11 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 142
+    .line 154
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->mMaskString:Ljava/lang/String;
-    invoke-static {v1}, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->access$7(Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->access$14(Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -58,17 +58,17 @@
 
     if-eqz v1, :cond_0
 
-    .line 143
+    .line 155
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;
 
     #setter for: Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->mJumpType:I
-    invoke-static {v1, v0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->access$11(Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;I)V
+    invoke-static {v1, v0}, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;->access$18(Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;I)V
 
-    .line 147
+    .line 159
     :goto_0
     return v0
 
-    .line 146
+    .line 158
     :cond_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/mine/replay/DataStreamReplayFragment;
 
@@ -76,11 +76,11 @@
 
     move-result-object v0
 
-    const v1, 0x7f07053e
+    const v1, 0x7f070540
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
-    .line 147
+    .line 159
     const/4 v0, 0x0
 
     goto :goto_0

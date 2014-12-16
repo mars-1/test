@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
-    .line 1338
+    .line 1341
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +43,7 @@
     .parameter "panel"
 
     .prologue
-    .line 1363
+    .line 1366
     return-void
 .end method
 
@@ -52,7 +52,7 @@
     .parameter "panel"
 
     .prologue
-    .line 1359
+    .line 1362
     return-void
 .end method
 
@@ -61,7 +61,7 @@
     .parameter "panel"
 
     .prologue
-    .line 1355
+    .line 1358
     return-void
 .end method
 
@@ -73,14 +73,14 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1341
+    .line 1344
     const/high16 v0, 0x3f80
 
     cmpl-float v0, p2, v0
 
     if-nez v0, :cond_1
 
-    .line 1342
+    .line 1345
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->btnVoice:Landroid/widget/Button;
@@ -90,17 +90,17 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 1343
+    .line 1346
     const/4 v0, 0x1
 
     sput-boolean v0, Lcom/cnlaunch/newgolo/task/ReceiveTask;->isAutoPlay:Z
 
-    .line 1350
+    .line 1353
     :cond_0
     :goto_0
     return-void
 
-    .line 1345
+    .line 1348
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
@@ -115,7 +115,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1346
+    .line 1349
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$4;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->btnVoice:Landroid/widget/Button;
@@ -127,7 +127,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 1347
+    .line 1350
     sput-boolean v2, Lcom/cnlaunch/newgolo/task/ReceiveTask;->isAutoPlay:Z
 
     goto :goto_0

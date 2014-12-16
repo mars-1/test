@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/CarIconFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/CarIconFragment;
 
-    .line 114
+    .line 115
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,7 +44,7 @@
     .parameter "arg1"
 
     .prologue
-    .line 117
+    .line 118
     const/4 v0, 0x1
 
     return v0

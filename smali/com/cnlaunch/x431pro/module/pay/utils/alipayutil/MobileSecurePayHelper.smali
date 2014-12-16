@@ -692,7 +692,7 @@
 
     .line 97
     .local v0, tDialog:Landroid/app/AlertDialog$Builder;
-    const v1, 0x7f020394
+    const v1, 0x7f020398
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setIcon(I)Landroid/app/AlertDialog$Builder;
 
@@ -701,7 +701,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0704d2
+    const v2, 0x7f0704d4
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -714,7 +714,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0704d3
+    const v2, 0x7f0704d5
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -723,7 +723,7 @@
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 101
-    const v1, 0x7f0704d4
+    const v1, 0x7f0704d6
 
     .line 102
     new-instance v2, Lcom/cnlaunch/x431pro/module/pay/utils/alipayutil/MobileSecurePayHelper$3;
@@ -738,7 +738,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f070038
+    const v2, 0x7f07001f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

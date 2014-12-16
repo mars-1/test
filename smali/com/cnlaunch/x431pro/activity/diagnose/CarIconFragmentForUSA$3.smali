@@ -28,7 +28,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/CarIconFragmentForUSA$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/CarIconFragmentForUSA;
 
-    .line 510
+    .line 511
     invoke-direct {p0, p2}, Lcom/cnlaunch/x431pro/common/RTUHelper;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -40,7 +40,7 @@
     .locals 1
 
     .prologue
-    .line 513
+    .line 514
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/CarIconFragmentForUSA$3;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/CarIconFragmentForUSA;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/CarIconFragmentForUSA;->getActivity()Landroid/app/Activity;
@@ -49,6 +49,6 @@
 
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
-    .line 514
+    .line 515
     return-void
 .end method

@@ -3,8 +3,8 @@
 .source "PdfStamper.java"
 
 # interfaces
-.implements Lcom/itextpdf/text/pdf/interfaces/PdfViewerPreferences;
 .implements Lcom/itextpdf/text/pdf/interfaces/PdfEncryptionSettings;
+.implements Lcom/itextpdf/text/pdf/interfaces/PdfViewerPreferences;
 
 
 # instance fields

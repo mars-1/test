@@ -48,7 +48,7 @@
 
     .prologue
     .line 68
-    const v3, 0x7f0705f0
+    const v3, 0x7f0705f2
 
     invoke-virtual {p0, v3}, Lcom/cnlaunch/x431pro/activity/setting/AboutFragment;->setTitle(I)V
 
@@ -59,7 +59,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f020521
+    const v4, 0x7f020525
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -72,7 +72,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0444
+    const v4, 0x7f0c0462
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -92,7 +92,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0447
+    const v4, 0x7f0c0465
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -112,7 +112,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0442
+    const v4, 0x7f0c0460
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -127,7 +127,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f070019
+    const/high16 v4, 0x7f07
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -140,7 +140,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f07060e
+    const v4, 0x7f070610
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -319,7 +319,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f030189
+    const v1, 0x7f03018c
 
     const/4 v2, 0x0
 
@@ -334,7 +334,7 @@
     .line 191
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/AboutFragment;->reput_lay:Landroid/widget/RelativeLayout;
 
-    const v1, 0x7f0d0480
+    const v1, 0x7f0c049b
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -347,7 +347,7 @@
     .line 192
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/AboutFragment;->reput_lay:Landroid/widget/RelativeLayout;
 
-    const v1, 0x7f0d0482
+    const v1, 0x7f0c0425
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -603,7 +603,7 @@
 
     .line 112
     .local v1, verDialog:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
-    const v2, 0x7f070612
+    const v2, 0x7f070614
 
     invoke-virtual {v1, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setTitle(I)V
 
@@ -618,7 +618,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f070611
+    const v4, 0x7f070613
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -668,7 +668,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f070019
+    const/high16 v3, 0x7f07
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -681,7 +681,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f07060e
+    const v3, 0x7f070610
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -700,7 +700,7 @@
 
     .line 123
     .local v0, rl_about_statment:Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;
-    const v2, 0x7f07060f
+    const v2, 0x7f070611
 
     invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setTitle(I)V
 
@@ -722,7 +722,7 @@
     invoke-virtual {v0, v2}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setMessage(Ljava/lang/String;)V
 
     .line 125
-    const v2, 0x7f070610
+    const v2, 0x7f070612
 
     invoke-virtual {v0, v2, v6, v8}, Lcom/cnlaunch/x431pro/widget/dialog/MessageDialog;->setAlphaOnClickListener(IZLandroid/view/View$OnClickListener;)V
 
@@ -735,10 +735,8 @@
     goto/16 :goto_0
 
     .line 101
-    nop
-
     :pswitch_data_0
-    .packed-switch 0x7f0d0444
+    .packed-switch 0x7f0c0462
         :pswitch_1
         :pswitch_0
         :pswitch_0
@@ -766,7 +764,7 @@
 
     .prologue
     .line 61
-    const v0, 0x7f030180
+    const v0, 0x7f030183
 
     const/4 v1, 0x0
 

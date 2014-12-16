@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
-    .line 594
+    .line 573
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,14 +48,14 @@
 
     const/4 v1, 0x1
 
-    .line 597
+    .line 576
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/Tools;->isUSAProject()Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    .line 598
+    .line 577
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->listCountry:Ljava/util/ArrayList;
@@ -65,37 +65,37 @@
 
     if-nez v3, :cond_1
 
-    .line 599
+    .line 578
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v3
 
     if-ne v3, v1, :cond_0
 
-    .line 600
+    .line 579
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     const/16 v3, 0xca
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->request(I)V
 
-    .line 614
+    .line 593
     :goto_0
     return v1
 
     :cond_0
     move v1, v2
 
-    .line 603
+    .line 582
     goto :goto_0
 
     :cond_1
     move v1, v2
 
-    .line 606
+    .line 585
     goto :goto_0
 
-    .line 608
+    .line 587
     :cond_2
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -103,12 +103,12 @@
 
     if-nez v3, :cond_3
 
-    .line 609
+    .line 588
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 610
+    .line 589
     .local v0, intent:Landroid/content/Intent;
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
@@ -121,7 +121,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 611
+    .line 590
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/login/RegistActivity$9;->this$0:Lcom/cnlaunch/x431pro/activity/login/RegistActivity;
 
     invoke-virtual {v2, v0, v1}, Lcom/cnlaunch/x431pro/activity/login/RegistActivity;->startActivityForResult(Landroid/content/Intent;I)V
@@ -132,6 +132,6 @@
     :cond_3
     move v1, v2
 
-    .line 614
+    .line 593
     goto :goto_0
 .end method

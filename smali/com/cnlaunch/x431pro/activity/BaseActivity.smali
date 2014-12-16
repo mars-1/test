@@ -92,7 +92,7 @@
     .line 158
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/BaseActivity;->layout_head:Landroid/widget/RelativeLayout;
 
-    const v3, 0x7f0d028a
+    const v3, 0x7f0c028e
 
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -208,7 +208,7 @@
     .local v0, id:I
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/BaseActivity;->layout_head:Landroid/widget/RelativeLayout;
 
-    const v6, 0x7f0d028a
+    const v6, 0x7f0c028e
 
     invoke-virtual {v5, v6}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -236,19 +236,19 @@
 
     :array_0
     .array-data 0x4
-        0x92t 0x2t 0xdt 0x7ft
-        0x8ct 0x2t 0xdt 0x7ft
-        0x8dt 0x2t 0xdt 0x7ft
-        0x8et 0x2t 0xdt 0x7ft
+        0x96t 0x2t 0xct 0x7ft
+        0x90t 0x2t 0xct 0x7ft
+        0x91t 0x2t 0xct 0x7ft
+        0x92t 0x2t 0xct 0x7ft
     .end array-data
 
     .line 134
     :array_1
     .array-data 0x4
-        0x8ct 0x2t 0xdt 0x7ft
-        0x8dt 0x2t 0xdt 0x7ft
-        0x8et 0x2t 0xdt 0x7ft
-        0x8ft 0x2t 0xdt 0x7ft
+        0x90t 0x2t 0xct 0x7ft
+        0x91t 0x2t 0xct 0x7ft
+        0x92t 0x2t 0xct 0x7ft
+        0x93t 0x2t 0xct 0x7ft
     .end array-data
 .end method
 
@@ -342,7 +342,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0052
+    const v2, 0x7f0c0052
 
     invoke-virtual {v1, v2, v0, p1}, Landroid/app/FragmentTransaction;->add(ILandroid/app/Fragment;Ljava/lang/String;)Landroid/app/FragmentTransaction;
 
@@ -493,7 +493,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0052
+    const v2, 0x7f0c0052
 
     invoke-virtual {v1, v2, v0, p1}, Landroid/app/FragmentTransaction;->replace(ILandroid/app/Fragment;Ljava/lang/String;)Landroid/app/FragmentTransaction;
 
@@ -627,7 +627,7 @@
     if-eqz v1, :cond_3
 
     .line 90
-    const v1, 0x7f0300d0
+    const v1, 0x7f0300d1
 
     invoke-super {p0, v1}, Landroid/support/v4/app/FragmentActivity;->setContentView(I)V
 
@@ -642,7 +642,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/BaseActivity;->preferManager:Lcom/cnlaunch/framework/common/PreferencesManager;
 
     .line 96
-    const v1, 0x7f0d0291
+    const v1, 0x7f0c0295
 
     invoke-super {p0, v1}, Landroid/support/v4/app/FragmentActivity;->findViewById(I)Landroid/view/View;
 
@@ -653,7 +653,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/BaseActivity;->mLayoutBase:Landroid/widget/ViewFlipper;
 
     .line 97
-    const v1, 0x7f0d0288
+    const v1, 0x7f0c028c
 
     invoke-super {p0, v1}, Landroid/support/v4/app/FragmentActivity;->findViewById(I)Landroid/view/View;
 
@@ -664,7 +664,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/activity/BaseActivity;->layout_head:Landroid/widget/RelativeLayout;
 
     .line 98
-    const v1, 0x7f0d0289
+    const v1, 0x7f0c028d
 
     invoke-super {p0, v1}, Landroid/support/v4/app/FragmentActivity;->findViewById(I)Landroid/view/View;
 
@@ -684,7 +684,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 105
-    const v1, 0x7f0d028b
+    const v1, 0x7f0c028f
 
     invoke-super {p0, v1}, Landroid/support/v4/app/FragmentActivity;->findViewById(I)Landroid/view/View;
 
@@ -704,7 +704,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 114
-    const v1, 0x7f0d004d
+    const v1, 0x7f0c004d
 
     invoke-super {p0, v1}, Landroid/support/v4/app/FragmentActivity;->findViewById(I)Landroid/view/View;
 
@@ -786,7 +786,7 @@
 
     .line 92
     :cond_3
-    const v1, 0x7f0300cf
+    const v1, 0x7f0300d0
 
     invoke-super {p0, v1}, Landroid/support/v4/app/FragmentActivity;->setContentView(I)V
 
@@ -853,7 +853,7 @@
     .line 297
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/BaseActivity;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0704dd
+    const v1, 0x7f0704df
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -868,7 +868,7 @@
     .line 305
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/BaseActivity;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0704de
+    const v1, 0x7f0704e0
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -933,9 +933,9 @@
     .line 244
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/BaseActivity;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0704f0
+    const v3, 0x7f0704f2
 
-    const v4, 0x7f0704f1
+    const v4, 0x7f0704f3
 
     invoke-virtual {v1, v2, v3, v4, v0}, Lcom/cnlaunch/x431pro/activity/BaseActivity$4;->showDifDialog(Landroid/content/Context;IIZ)V
 
@@ -1008,7 +1008,7 @@
     :cond_0
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/BaseActivity;->btn_right:Landroid/widget/TextView;
 
-    const v2, 0x7f070628
+    const v2, 0x7f07062a
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 

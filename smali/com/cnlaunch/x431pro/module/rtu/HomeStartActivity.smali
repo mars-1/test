@@ -98,7 +98,7 @@
     .parameter "context"
 
     .prologue
-    const v11, 0x7f0706d6
+    const v11, 0x7f0706d8
 
     const/4 v10, 0x1
 
@@ -574,7 +574,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0706fe
+    const v10, 0x7f070700
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -633,7 +633,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0706fe
+    const v10, 0x7f070700
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -669,7 +669,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0706fe
+    const v10, 0x7f070700
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -937,7 +937,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d005b
+    const v2, 0x7f0c005b
 
     const-string/jumbo v3, "rtuFragmentTag"
 
@@ -1313,7 +1313,7 @@
     move-result-object v0
 
     .line 124
-    const v3, 0x7f0d005b
+    const v3, 0x7f0c005b
 
     const-string/jumbo v4, "rtuFragmentTag"
 

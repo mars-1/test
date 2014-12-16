@@ -121,7 +121,7 @@
     .parameter "result"
 
     .prologue
-    const v1, 0x7f0704de
+    const v1, 0x7f0704e0
 
     .line 58
     sparse-switch p2, :sswitch_data_0
@@ -134,7 +134,7 @@
     :sswitch_0
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/NetworkBase;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0704dd
+    const v1, 0x7f0704df
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 

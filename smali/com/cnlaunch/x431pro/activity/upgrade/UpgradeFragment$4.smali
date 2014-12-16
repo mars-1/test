@@ -37,7 +37,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
-    .line 661
+    .line 667
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +62,7 @@
     .end annotation
 
     .prologue
-    .line 666
+    .line 672
     .local p1, arg0:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
     :try_start_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
@@ -78,7 +78,7 @@
 
     check-cast v1, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
 
-    .line 667
+    .line 673
     .local v1, historybean:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
@@ -106,7 +106,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setVersionNo(Ljava/lang/String;)V
 
-    .line 668
+    .line 674
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->upgradeList:Ljava/util/List;
@@ -133,7 +133,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setVersionDetailId(Ljava/lang/String;)V
 
-    .line 669
+    .line 675
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->upgradeList:Ljava/util/List;
@@ -160,7 +160,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setSoftName(Ljava/lang/String;)V
 
-    .line 670
+    .line 676
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->upgradeList:Ljava/util/List;
@@ -187,7 +187,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setSoftId(Ljava/lang/String;)V
 
-    .line 671
+    .line 677
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->upgradeList:Ljava/util/List;
@@ -214,7 +214,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setSoftUpdateTime(Ljava/lang/String;)V
 
-    .line 672
+    .line 678
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->upgradeList:Ljava/util/List;
@@ -241,7 +241,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setSoftPackageID(Ljava/lang/String;)V
 
-    .line 673
+    .line 679
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->upgradeList:Ljava/util/List;
@@ -268,7 +268,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setDiagVehicleType(Ljava/lang/String;)V
 
-    .line 674
+    .line 680
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->upgradeList:Ljava/util/List;
@@ -295,7 +295,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setSoftApplicableArea(Ljava/lang/String;)V
 
-    .line 675
+    .line 681
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->upgradeList:Ljava/util/List;
@@ -322,7 +322,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setFileSize(J)V
 
-    .line 676
+    .line 682
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->upgradeList:Ljava/util/List;
@@ -349,7 +349,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setServerCurrentTime(Ljava/lang/String;)V
 
-    .line 677
+    .line 683
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->upgradeList:Ljava/util/List;
@@ -376,7 +376,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setFreeUseEndTime(Ljava/lang/String;)V
 
-    .line 678
+    .line 684
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->upgradeList:Ljava/util/List;
@@ -403,7 +403,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->setLanId(Ljava/lang/String;)V
 
-    .line 680
+    .line 686
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->adapter:Lcom/cnlaunch/x431pro/activity/upgrade/adapter/UpgradeAdapter;
@@ -420,7 +420,7 @@
 
     invoke-virtual {v2, v3}, Lcom/cnlaunch/x431pro/activity/upgrade/adapter/UpgradeAdapter;->setList(Ljava/util/List;)V
 
-    .line 681
+    .line 687
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$4;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->adapter:Lcom/cnlaunch/x431pro/activity/upgrade/adapter/UpgradeAdapter;
@@ -432,16 +432,16 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 685
+    .line 691
     .end local v1           #historybean:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
     :goto_0
     return-void
 
-    .line 682
+    .line 688
     :catch_0
     move-exception v0
 
-    .line 683
+    .line 689
     .local v0, e:Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 

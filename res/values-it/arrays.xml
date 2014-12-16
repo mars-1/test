@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="golo_detail_tag_array">
-        <item>Other</item>
-        <item>Designated Driver</item>
-        <item>Assistance</item>
+        <item>Altro</item>
+        <item>Conducente</item>
+        <item>Assistenza</item>
         <item>Carpool</item>
-        <item>Car Rental</item>
+        <item>Noleggio vettura</item>
         <item>Taxi</item>
-        <item>Agency</item>
+        <item>Agenzia</item>
     </string-array>
 </resources>

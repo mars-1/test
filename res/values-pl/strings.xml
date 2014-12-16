@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">Raport diagnostyczny samochodu</string>
+    <string name="print_success">Sukces druku!</string>
+    <string name="print_jam">Zacięcie papieru</string>
+    <string name="print_will_nopaper">Papier drukarki zabraknie wkrótce</string>
+    <string name="print_no_paper">Brak papieru drukarki</string>
+    <string name="print_actuator_fault">Błąd drukarki!</string>
+    <string name="print_head_overheating">Drukarka przegrzewa</string>
+    <string name="print_connect_printer">Proszę podłączyć drukarkę Wi-Fi najpierw</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">Potwierdź</string>
     <string name="bluetooth_close_connected">Odłączę:</string>
     <string name="bluetooth_connecting">Łączę</string>
     <string name="bluetooth_no_search_device">Złącze Bluetooth nie został wykryty, należy sprawdzić, czy złącze jest podłączone do zasilania i odświeżyć swoje wyszukiwanie</string>
@@ -15,18 +27,6 @@
     <string name="no">Nie</string>
     <string name="tv_unconnect">Brak połączenia</string>
     <string name="tv_unpair">Brak Sparowania</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">Raport diagnostyczny samochodu</string>
-    <string name="print_success">Sukces druku!</string>
-    <string name="print_jam">Zacięcie papieru</string>
-    <string name="print_will_nopaper">Papier drukarki zabraknie wkrótce</string>
-    <string name="print_no_paper">Brak papieru drukarki</string>
-    <string name="print_actuator_fault">Błąd drukarki!</string>
-    <string name="print_head_overheating">Drukarka przegrzewa</string>
-    <string name="print_connect_printer">Proszę podłączyć drukarkę Wi-Fi najpierw</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">Potwierdź</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

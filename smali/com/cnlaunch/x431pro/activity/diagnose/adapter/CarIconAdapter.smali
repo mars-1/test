@@ -47,7 +47,7 @@
     .locals 1
 
     .prologue
-    .line 35
+    .line 36
     const-class v0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -66,13 +66,13 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 47
+    .line 48
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
-    .line 48
+    .line 49
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->mContext:Landroid/content/Context;
 
-    .line 49
+    .line 50
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -81,7 +81,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    .line 50
+    .line 51
     new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;
 
     invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;-><init>()V
@@ -110,7 +110,7 @@
 
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    .line 51
+    .line 52
     return-void
 .end method
 
@@ -120,19 +120,19 @@
     .locals 1
 
     .prologue
-    .line 69
+    .line 70
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->list:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 70
+    .line 71
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->list:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    .line 72
+    .line 73
     :goto_0
     return v0
 
@@ -147,7 +147,7 @@
     .parameter "position"
 
     .prologue
-    .line 77
+    .line 78
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->list:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -162,7 +162,7 @@
     .parameter "position"
 
     .prologue
-    .line 82
+    .line 83
     int-to-long v0, p1
 
     return-wide v0
@@ -181,367 +181,346 @@
     .end annotation
 
     .prologue
-    .line 60
+    .line 61
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->list:Ljava/util/List;
 
     return-object v0
 .end method
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 10
+    .locals 9
     .parameter "position"
     .parameter "convertView"
     .parameter "parent"
 
     .prologue
-    const/16 v9, 0x8
+    const/16 v8, 0x8
 
-    const/4 v8, 0x0
-
-    .line 87
-    if-nez p2, :cond_0
+    const/4 v7, 0x0
 
     .line 88
-    new-instance v5, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
-
-    invoke-direct {v5, p0}, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;-><init>(Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;)V
-
-    iput-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+    if-nez p2, :cond_0
 
     .line 89
-    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->mInflater:Landroid/view/LayoutInflater;
+    new-instance v4, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
 
-    const v6, 0x7f030040
+    invoke-direct {v4, p0}, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;-><init>(Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;)V
 
-    invoke-virtual {v5, v6, p3, v8}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    iput-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+
+    .line 90
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->mInflater:Landroid/view/LayoutInflater;
+
+    const v5, 0x7f030040
+
+    invoke-virtual {v4, v5, p3, v7}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p2
 
-    .line 90
-    iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
-
-    const v5, 0x7f0d00e9
-
-    invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v5
-
-    check-cast v5, Landroid/widget/ImageView;
-
-    iput-object v5, v6, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_logo:Landroid/widget/ImageView;
-
     .line 91
-    iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
 
-    const v5, 0x7f0d00ea
+    const v4, 0x7f0c00e9
 
-    invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v5
+    move-result-object v4
 
-    check-cast v5, Landroid/widget/TextView;
+    check-cast v4, Landroid/widget/ImageView;
 
-    iput-object v5, v6, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name_zh:Landroid/widget/TextView;
+    iput-object v4, v5, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_logo:Landroid/widget/ImageView;
 
     .line 92
-    iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
 
-    const v5, 0x7f0d00e8
+    const v4, 0x7f0c00ea
 
-    invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v5
+    move-result-object v4
 
-    check-cast v5, Landroid/widget/TextView;
+    check-cast v4, Landroid/widget/TextView;
 
-    iput-object v5, v6, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name:Landroid/widget/TextView;
+    iput-object v4, v5, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name_zh:Landroid/widget/TextView;
 
     .line 93
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
 
-    invoke-virtual {p2, v5}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+    const v4, 0x7f0c00e8
 
-    .line 98
+    invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/widget/TextView;
+
+    iput-object v4, v5, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name:Landroid/widget/TextView;
+
+    .line 94
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+
+    invoke-virtual {p2, v4}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+
+    .line 99
     :goto_0
-    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->list:Ljava/util/List;
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->list:Ljava/util/List;
 
-    invoke-interface {v5, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v4, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/cnlaunch/x431pro/utils/db/CarIcon;
 
-    .line 100
+    .line 101
     .local v0, bean:Lcom/cnlaunch/x431pro/utils/db/CarIcon;
-    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
 
-    iget-object v5, v5, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name:Landroid/widget/TextView;
+    iget-object v4, v4, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getName()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v5
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
-    move-result-object v7
-
-    invoke-virtual {v6, v7}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
-
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 101
-    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
-
-    iget-object v5, v5, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name_zh:Landroid/widget/TextView;
-
-    invoke-virtual {v0}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getName_zh()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 103
-    invoke-static {}, Lcom/cnlaunch/framework/utils/lang/LangManager;->getLanguage()Ljava/lang/String;
+    invoke-virtual {v5, v6}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object v5
 
-    const-string/jumbo v6, "zh"
+    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v5, v6}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    .line 102
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
 
-    move-result v5
+    iget-object v4, v4, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name_zh:Landroid/widget/TextView;
 
-    if-eqz v5, :cond_2
-
-    .line 104
-    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
-
-    iget-object v5, v5, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name:Landroid/widget/TextView;
-
-    invoke-virtual {v5, v9}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 105
-    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
-
-    iget-object v5, v5, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_logo:Landroid/widget/ImageView;
-
-    invoke-virtual {v5, v8}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 106
-    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
-
-    iget-object v5, v5, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name_zh:Landroid/widget/TextView;
-
-    invoke-virtual {v5, v8}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 108
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->mContext:Landroid/content/Context;
 
-    invoke-static {v5}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
+    invoke-virtual {v0, v5}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getZhShowName(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v5
 
-    const-string/jumbo v6, "serialNo"
+    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v5, v6}, Lcom/cnlaunch/framework/common/PreferencesManager;->get(Ljava/lang/String;)Ljava/lang/String;
+    .line 104
+    invoke-static {}, Lcom/cnlaunch/framework/utils/lang/LangManager;->getLanguage()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
+
+    const-string/jumbo v5, "zh"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    .line 105
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+
+    iget-object v4, v4, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name:Landroid/widget/TextView;
+
+    invoke-virtual {v4, v8}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 106
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+
+    iget-object v4, v4, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_logo:Landroid/widget/ImageView;
+
+    invoke-virtual {v4, v7}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 107
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+
+    iget-object v4, v4, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name_zh:Landroid/widget/TextView;
+
+    invoke-virtual {v4, v7}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 109
-    .local v3, serialNo:Ljava/lang/String;
-    const/4 v4, 0x0
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->mContext:Landroid/content/Context;
 
-    .line 111
-    .local v4, uri:Ljava/lang/String;
-    invoke-virtual {v0}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getIcon()Ljava/lang/String;
+    invoke-static {v4}, Lcom/cnlaunch/framework/common/PreferencesManager;->getInstance(Landroid/content/Context;)Lcom/cnlaunch/framework/common/PreferencesManager;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    const-string/jumbo v5, "serialNo"
 
-    move-result v5
+    invoke-virtual {v4, v5}, Lcom/cnlaunch/framework/common/PreferencesManager;->get(Ljava/lang/String;)Ljava/lang/String;
 
-    if-eqz v5, :cond_1
+    move-result-object v2
+
+    .line 110
+    .local v2, serialNo:Ljava/lang/String;
+    const/4 v3, 0x0
 
     .line 112
-    new-instance v5, Ljava/lang/StringBuilder;
+    .local v3, uri:Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getIcon()Ljava/lang/String;
 
-    const-string/jumbo v6, "file://"
+    move-result-object v4
 
-    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    invoke-static {v3}, Lcom/cnlaunch/x431pro/utils/PathUtils;->getVehiclesPath(Ljava/lang/String;)Ljava/lang/String;
+    move-result v4
 
-    move-result-object v6
+    if-eqz v4, :cond_1
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 113
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    const-string/jumbo v5, "file://"
+
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-static {v2}, Lcom/cnlaunch/x431pro/utils/PathUtils;->getVehiclesPath(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    sget-object v6, Ljava/io/File;->separator:Ljava/lang/String;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v4
 
-    move-result-object v5
+    sget-object v5, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getAreaId()Ljava/lang/String;
 
-    move-result-object v6
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     move-result-object v5
 
-    sget-object v6, Ljava/io/File;->separator:Ljava/lang/String;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v4
 
-    move-result-object v5
+    sget-object v5, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getSoftPackageId()Ljava/lang/String;
 
-    move-result-object v6
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     move-result-object v5
 
-    sget-object v6, Ljava/io/File;->separator:Ljava/lang/String;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v4
 
-    move-result-object v5
+    sget-object v5, Ljava/io/File;->separator:Ljava/lang/String;
 
-    .line 113
-    const-string/jumbo v6, "ICONCN.PNG"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    .line 112
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
     .line 114
+    const-string/jumbo v5, "ICONCN.PNG"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    .line 113
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 115
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
-    move-result-object v5
+    move-result-object v4
 
-    iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
-
-    iget-object v6, v6, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_logo:Landroid/widget/ImageView;
-
-    iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
-
-    invoke-virtual {v5, v4, v6, v7}, Lcom/nostra13/universalimageloader/core/ImageLoader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
-
-    .line 126
-    .end local v3           #serialNo:Ljava/lang/String;
-    .end local v4           #uri:Ljava/lang/String;
-    :goto_1
-    return-object p2
-
-    .line 95
-    .end local v0           #bean:Lcom/cnlaunch/x431pro/utils/db/CarIcon;
-    :cond_0
-    invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
-
-    iput-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
-
-    goto/16 :goto_0
-
-    .line 116
-    .restart local v0       #bean:Lcom/cnlaunch/x431pro/utils/db/CarIcon;
-    .restart local v3       #serialNo:Ljava/lang/String;
-    .restart local v4       #uri:Ljava/lang/String;
-    :cond_1
-    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v5
-
-    invoke-virtual {v0}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getIcon()Ljava/lang/String;
-
-    move-result-object v6
-
-    const-string/jumbo v7, "drawable"
-
-    iget-object v8, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v8}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-virtual {v5, v6, v7, v8}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
-
-    move-result v2
-
-    .line 118
-    .local v2, logoId:I
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    const-string/jumbo v6, "drawable://"
-
-    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 119
-    .local v1, imageUri:Ljava/lang/String;
-    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
-
-    move-result-object v5
-
-    iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
-
-    iget-object v6, v6, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_logo:Landroid/widget/ImageView;
-
-    iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
-
-    invoke-virtual {v5, v1, v6, v7}, Lcom/nostra13/universalimageloader/core/ImageLoader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
-
-    goto :goto_1
-
-    .line 122
-    .end local v1           #imageUri:Ljava/lang/String;
-    .end local v2           #logoId:I
-    .end local v3           #serialNo:Ljava/lang/String;
-    .end local v4           #uri:Ljava/lang/String;
-    :cond_2
-    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
-
-    iget-object v5, v5, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name:Landroid/widget/TextView;
-
-    invoke-virtual {v5, v8}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 123
     iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
 
     iget-object v5, v5, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_logo:Landroid/widget/ImageView;
 
-    invoke-virtual {v5, v9}, Landroid/widget/ImageView;->setVisibility(I)V
+    iget-object v6, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+
+    invoke-virtual {v4, v3, v5, v6}, Lcom/nostra13/universalimageloader/core/ImageLoader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
+
+    .line 127
+    .end local v2           #serialNo:Ljava/lang/String;
+    .end local v3           #uri:Ljava/lang/String;
+    :goto_1
+    return-object p2
+
+    .line 96
+    .end local v0           #bean:Lcom/cnlaunch/x431pro/utils/db/CarIcon;
+    :cond_0
+    invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+
+    iput-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+
+    goto/16 :goto_0
+
+    .line 117
+    .restart local v0       #bean:Lcom/cnlaunch/x431pro/utils/db/CarIcon;
+    .restart local v2       #serialNo:Ljava/lang/String;
+    .restart local v3       #uri:Ljava/lang/String;
+    :cond_1
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    invoke-virtual {v0}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getIcon()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string/jumbo v6, "drawable"
+
+    iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v7}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v4, v5, v6, v7}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v1
+
+    .line 118
+    .local v1, logoId:I
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+
+    iget-object v4, v4, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_logo:Landroid/widget/ImageView;
+
+    invoke-virtual {v4, v1}, Landroid/widget/ImageView;->setImageResource(I)V
+
+    goto :goto_1
+
+    .line 123
+    .end local v1           #logoId:I
+    .end local v2           #serialNo:Ljava/lang/String;
+    .end local v3           #uri:Ljava/lang/String;
+    :cond_2
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+
+    iget-object v4, v4, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name:Landroid/widget/TextView;
+
+    invoke-virtual {v4, v7}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 124
-    iget-object v5, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
 
-    iget-object v5, v5, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name_zh:Landroid/widget/TextView;
+    iget-object v4, v4, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_logo:Landroid/widget/ImageView;
 
-    invoke-virtual {v5, v9}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v4, v8}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 125
+    iget-object v4, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->holder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;
+
+    iget-object v4, v4, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter$ViewHolder;->car_name_zh:Landroid/widget/TextView;
+
+    invoke-virtual {v4, v8}, Landroid/widget/TextView;->setVisibility(I)V
 
     goto :goto_1
 .end method
@@ -560,10 +539,10 @@
     .end annotation
 
     .prologue
-    .line 64
+    .line 65
     .local p1, list:Ljava/util/List;,"Ljava/util/List<Lcom/cnlaunch/x431pro/utils/db/CarIcon;>;"
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/CarIconAdapter;->list:Ljava/util/List;
 
-    .line 65
+    .line 66
     return-void
 .end method

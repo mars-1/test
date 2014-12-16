@@ -114,7 +114,7 @@
     .line 62
     .local v0, gv:Landroid/widget/GridView;
     :goto_0
-    const v1, 0x7f0d0024
+    const v1, 0x7f0c0024
 
     invoke-virtual {v0, v1}, Landroid/widget/GridView;->setId(I)V
 

@@ -35,7 +35,7 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 3
+    .locals 2
     .parameter "context"
     .parameter "intent"
 
@@ -79,19 +79,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/setting/WifiPrintSettingFragment$WiFiChangeBroadcastReceiver;->this$0:Lcom/cnlaunch/x431pro/activity/setting/WifiPrintSettingFragment;
+    const v1, 0x7f0700ad
 
-    invoke-virtual {v1}, Lcom/cnlaunch/x431pro/activity/setting/WifiPrintSettingFragment;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    const v2, 0x7f07000f
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_0
 .end method

@@ -57,17 +57,17 @@
 
     .line 29
     .local v0, view:Landroid/view/View;
-    const v1, 0x7f07072a
+    const v1, 0x7f07072c
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/module/rtu/InternetAccessSelectFragment;->setTitle(I)V
 
     .line 30
-    const v1, 0x7f0706fb
+    const v1, 0x7f0706fd
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/module/rtu/InternetAccessSelectFragment;->setMessage(I)V
 
     .line 31
-    const v1, 0x7f0706ff
+    const v1, 0x7f070701
 
     .line 32
     new-instance v2, Lcom/cnlaunch/x431pro/module/rtu/InternetAccessSelectFragment$1;
@@ -78,7 +78,7 @@
     invoke-virtual {p0, v1, v2}, Lcom/cnlaunch/x431pro/module/rtu/InternetAccessSelectFragment;->setAlphaOnClickListener(ILandroid/view/View$OnClickListener;)V
 
     .line 38
-    const v1, 0x7f070700
+    const v1, 0x7f070702
 
     .line 39
     new-instance v2, Lcom/cnlaunch/x431pro/module/rtu/InternetAccessSelectFragment$2;
@@ -89,7 +89,7 @@
     invoke-virtual {p0, v1, v2}, Lcom/cnlaunch/x431pro/module/rtu/InternetAccessSelectFragment;->setBetaOnClickListener(ILandroid/view/View$OnClickListener;)V
 
     .line 45
-    const v1, 0x7f070728
+    const v1, 0x7f07072a
 
     .line 46
     new-instance v2, Lcom/cnlaunch/x431pro/module/rtu/InternetAccessSelectFragment$3;

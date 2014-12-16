@@ -47,7 +47,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 56
-    const v0, 0x7f0d02a6
+    const v0, 0x7f0c02aa
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/FindPassActivity;->findViewById(I)Landroid/view/View;
 
@@ -58,7 +58,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/FindPassActivity;->edit_username:Landroid/widget/EditText;
 
     .line 57
-    const v0, 0x7f0d02a7
+    const v0, 0x7f0c02ab
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/FindPassActivity;->findViewById(I)Landroid/view/View;
 
@@ -167,7 +167,7 @@
     .line 102
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/FindPassActivity;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0704e0
+    const v1, 0x7f0704e2
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -188,7 +188,7 @@
 
     .line 97
     :pswitch_data_0
-    .packed-switch 0x7f0d02a7
+    .packed-switch 0x7f0c02ab
         :pswitch_0
     .end packed-switch
 .end method
@@ -202,7 +202,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 49
-    const v0, 0x7f0300df
+    const v0, 0x7f0300e0
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/FindPassActivity;->setContentView(I)V
 

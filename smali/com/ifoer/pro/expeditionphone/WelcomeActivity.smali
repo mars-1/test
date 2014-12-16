@@ -217,7 +217,7 @@
     .local v2, shortcut:Landroid/content/Intent;
     const-string/jumbo v3, "android.intent.extra.shortcut.NAME"
 
-    const v4, 0x7f070019
+    const/high16 v4, 0x7f07
 
     invoke-virtual {p0, v4}, Lcom/ifoer/pro/expeditionphone/WelcomeActivity;->getString(I)Ljava/lang/String;
 
@@ -238,7 +238,7 @@
     invoke-virtual {v2, v3, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     .line 173
-    const v3, 0x7f02023a
+    const v3, 0x7f02023b
 
     invoke-static {p0, v3}, Landroid/content/Intent$ShortcutIconResource;->fromContext(Landroid/content/Context;I)Landroid/content/Intent$ShortcutIconResource;
 
@@ -1326,7 +1326,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 93
-    const v2, 0x7f0300f7
+    const v2, 0x7f0300f9
 
     invoke-virtual {p0, v2}, Lcom/ifoer/pro/expeditionphone/WelcomeActivity;->setContentView(I)V
 

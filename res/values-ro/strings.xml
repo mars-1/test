@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">Raport de diagnostic al vehicolului</string>
+    <string name="print_success">Imprimarea a fost un succes!</string>
+    <string name="print_jam">Hartie blocata</string>
+    <string name="print_will_nopaper">In curand imprimanta nu va mai avea hartie</string>
+    <string name="print_no_paper">Imprimanta nu are hartie</string>
+    <string name="print_actuator_fault">Eroare imprimanta</string>
+    <string name="print_head_overheating">Imprimanta se supraincalzeste</string>
+    <string name="print_connect_printer">Va rog sa conectati mai intai imprimanta Wi-Fi</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">Confirmare</string>
     <string name="bluetooth_close_connected">Se deconecteaza:</string>
     <string name="bluetooth_connecting">Se conecteaza</string>
     <string name="bluetooth_no_search_device">Conectorul bluetooth nu a fost detectat, va rog verificati daca conectorul este alimentat si reinprospatati cautarea</string>
@@ -15,18 +27,6 @@
     <string name="no">Nu</string>
     <string name="tv_unconnect">Nu este conectat</string>
     <string name="tv_unpair">Nu este asociat</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">Raport de diagnostic al vehicolului</string>
-    <string name="print_success">Imprimarea a fost un succes!</string>
-    <string name="print_jam">Hartie blocata</string>
-    <string name="print_will_nopaper">In curand imprimanta nu va mai avea hartie</string>
-    <string name="print_no_paper">Imprimanta nu are hartie</string>
-    <string name="print_actuator_fault">Eroare imprimanta</string>
-    <string name="print_head_overheating">Imprimanta se supraincalzeste</string>
-    <string name="print_connect_printer">Va rog sa conectati mai intai imprimanta Wi-Fi</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">Confirmare</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

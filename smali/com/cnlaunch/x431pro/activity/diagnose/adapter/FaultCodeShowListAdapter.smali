@@ -174,7 +174,7 @@
     .line 59
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/FaultCodeShowListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/FaultCodeShowListAdapter$ViewHolder;
 
-    const v1, 0x7f0d006e
+    const v1, 0x7f0c006e
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -187,7 +187,7 @@
     .line 60
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/FaultCodeShowListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/FaultCodeShowListAdapter$ViewHolder;
 
-    const v1, 0x7f0d013f
+    const v1, 0x7f0c013f
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -200,7 +200,7 @@
     .line 61
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/FaultCodeShowListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/diagnose/adapter/FaultCodeShowListAdapter$ViewHolder;
 
-    const v1, 0x7f0d0140
+    const v1, 0x7f0c0140
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -282,7 +282,7 @@
     .line 71
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/adapter/FaultCodeShowListAdapter;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f070563
+    const v2, 0x7f070565
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

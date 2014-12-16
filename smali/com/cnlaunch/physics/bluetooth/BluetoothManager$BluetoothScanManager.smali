@@ -440,9 +440,22 @@
 
     move-result v3
 
+    if-nez v3, :cond_3
+
+    invoke-virtual {v0}, Landroid/bluetooth/BluetoothDevice;->getName()Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string/jumbo v4, "98999"
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v3
+
     if-eqz v3, :cond_0
 
     .line 833
+    :cond_3
     const/4 v3, 0x1
 
     invoke-virtual {p0, v0, v3}, Lcom/cnlaunch/physics/bluetooth/BluetoothManager$BluetoothScanManager;->setListDto(Landroid/bluetooth/BluetoothDevice;Z)V

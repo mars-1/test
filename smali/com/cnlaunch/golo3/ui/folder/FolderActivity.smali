@@ -159,7 +159,7 @@
 
     invoke-virtual {p0, v5}, Lcom/cnlaunch/golo3/ui/folder/FolderActivity;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 69
+    .line 71
     .end local v1           #f:Ljava/io/File;
     .end local v3           #files:[Ljava/io/File;
     .end local v4           #i:I
@@ -192,7 +192,8 @@
 
     invoke-interface {v5, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
     .line 55
     add-int/lit8 v4, v4, 0x1
@@ -208,6 +209,17 @@
     move-exception v0
 
     .line 67
+    .local v0, e:Ljava/lang/NullPointerException;
+    invoke-virtual {v0}, Ljava/lang/NullPointerException;->printStackTrace()V
+
+    goto :goto_1
+
+    .line 68
+    .end local v0           #e:Ljava/lang/NullPointerException;
+    :catch_1
+    move-exception v0
+
+    .line 69
     .local v0, e:Ljava/lang/Exception;
     const-string/jumbo v5, "Sanda"
 
@@ -240,12 +252,12 @@
     .locals 2
 
     .prologue
-    .line 117
+    .line 127
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 118
+    .line 128
     .local v0, sdStutusString:Ljava/lang/String;
     const-string/jumbo v1, "mounted"
 
@@ -255,10 +267,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 119
+    .line 129
     const/4 v1, 0x1
 
-    .line 121
+    .line 131
     :goto_0
     return v1
 
@@ -275,12 +287,12 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 88
+    .line 98
     invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 89
+    .line 99
     .local v1, fileNameString:Ljava/lang/String;
     const-string/jumbo v3, "."
 
@@ -302,7 +314,7 @@
 
     move-result-object v0
 
-    .line 91
+    .line 101
     .local v0, endNameString:Ljava/lang/String;
     const-string/jumbo v3, "."
 
@@ -314,12 +326,12 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 98
+    .line 108
     :cond_0
     :goto_0
     return v2
 
-    .line 95
+    .line 105
     :cond_1
     const-string/jumbo v3, "txt"
 
@@ -329,7 +341,7 @@
 
     if-nez v3, :cond_0
 
-    .line 98
+    .line 108
     const/4 v2, 0x0
 
     goto :goto_0
@@ -339,21 +351,21 @@
     .locals 4
 
     .prologue
-    .line 103
+    .line 113
     const-string/jumbo v2, "FolderActivity"
 
     const-string/jumbo v3, "getSDDir"
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 104
+    .line 114
     invoke-virtual {p0}, Lcom/cnlaunch/golo3/ui/folder/FolderActivity;->checkSDcard()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 105
+    .line 115
     const-string/jumbo v2, "no sdcard"
 
     const/4 v3, 0x0
@@ -364,14 +376,14 @@
 
     invoke-virtual {v2}, Landroid/widget/Toast;->show()V
 
-    .line 106
+    .line 116
     const-string/jumbo v0, ""
 
-    .line 112
+    .line 122
     :goto_0
     return-object v0
 
-    .line 109
+    .line 119
     :cond_0
     :try_start_0
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
@@ -384,16 +396,16 @@
 
     move-result-object v0
 
-    .line 110
+    .line 120
     .local v0, SD_DIR:Ljava/lang/String;
     goto :goto_0
 
-    .line 111
+    .line 121
     .end local v0           #SD_DIR:Ljava/lang/String;
     :catch_0
     move-exception v1
 
-    .line 112
+    .line 122
     .local v1, e:Ljava/lang/Exception;
     const-string/jumbo v0, ""
 
@@ -444,96 +456,133 @@
     .locals 1
 
     .prologue
-    .line 127
+    .line 137
     invoke-static {}, Lcom/cnlaunch/newgolo/utils/ScreenManager;->getInstance()Lcom/cnlaunch/newgolo/utils/ScreenManager;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Lcom/cnlaunch/newgolo/utils/ScreenManager;->pop(Landroid/app/Activity;)V
 
-    .line 128
+    .line 138
     invoke-super {p0}, Landroid/app/ListActivity;->onDestroy()V
 
-    .line 129
+    .line 139
     return-void
 .end method
 
 .method protected onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
-    .locals 5
+    .locals 6
     .parameter "l"
     .parameter "v"
     .parameter "position"
     .parameter "id"
 
     .prologue
-    .line 74
-    new-instance v2, Ljava/io/File;
+    .line 77
+    :try_start_0
+    new-instance v3, Ljava/io/File;
 
-    iget-object v3, p0, Lcom/cnlaunch/golo3/ui/folder/FolderActivity;->paths:Ljava/util/List;
+    iget-object v4, p0, Lcom/cnlaunch/golo3/ui/folder/FolderActivity;->paths:Ljava/util/List;
 
-    invoke-interface {v3, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v4, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v4
 
-    check-cast v3, Ljava/lang/String;
+    check-cast v4, Ljava/lang/String;
 
-    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 75
-    .local v2, file:Ljava/io/File;
-    invoke-virtual {v2}, Ljava/io/File;->isDirectory()Z
+    .line 78
+    .local v3, file:Ljava/io/File;
+    invoke-virtual {v3}, Ljava/io/File;->isDirectory()Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_0
+    if-eqz v4, :cond_1
 
-    .line 76
-    iget-object v3, p0, Lcom/cnlaunch/golo3/ui/folder/FolderActivity;->paths:Ljava/util/List;
+    .line 79
+    invoke-virtual {v3}, Ljava/io/File;->getName()Ljava/lang/String;
 
-    invoke-interface {v3, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    move-result-object v4
 
-    move-result-object v3
+    const-string/jumbo v5, ".android_secure"
 
-    check-cast v3, Ljava/lang/String;
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-direct {p0, v3}, Lcom/cnlaunch/golo3/ui/folder/FolderActivity;->getFileDir(Ljava/lang/String;)V
+    move-result v4
 
-    .line 85
+    if-eqz v4, :cond_0
+
+    .line 95
+    .end local v3           #file:Ljava/io/File;
     :goto_0
     return-void
 
-    .line 78
+    .line 82
+    .restart local v3       #file:Ljava/io/File;
     :cond_0
+    iget-object v4, p0, Lcom/cnlaunch/golo3/ui/folder/FolderActivity;->paths:Ljava/util/List;
+
+    invoke-interface {v4, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/String;
+
+    invoke-direct {p0, v4}, Lcom/cnlaunch/golo3/ui/folder/FolderActivity;->getFileDir(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    .line 91
+    .end local v3           #file:Ljava/io/File;
+    :catch_0
+    move-exception v2
+
+    .line 92
+    .local v2, e:Ljava/lang/Exception;
+    invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
+
+    goto :goto_0
+
+    .line 84
+    .end local v2           #e:Ljava/lang/Exception;
+    .restart local v3       #file:Ljava/io/File;
+    :cond_1
+    :try_start_1
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 79
+    .line 85
     .local v1, data:Landroid/content/Intent;
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 80
+    .line 86
     .local v0, bundle:Landroid/os/Bundle;
-    const-string/jumbo v3, "file"
+    const-string/jumbo v4, "file"
 
-    invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/io/File;->getPath()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v0, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v4, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 81
+    .line 87
     invoke-virtual {v1, v0}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
-    .line 82
-    const/4 v3, -0x1
+    .line 88
+    const/4 v4, -0x1
 
-    invoke-virtual {p0, v3, v1}, Lcom/cnlaunch/golo3/ui/folder/FolderActivity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v4, v1}, Lcom/cnlaunch/golo3/ui/folder/FolderActivity;->setResult(ILandroid/content/Intent;)V
 
-    .line 83
+    .line 89
     invoke-virtual {p0}, Lcom/cnlaunch/golo3/ui/folder/FolderActivity;->finish()V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
     goto :goto_0
 .end method

@@ -4,39 +4,39 @@
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <LinearLayout android:orientation="vertical" android:background="@drawable/mine_info_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_area_margin" android:layout_marginTop="@dimen/mine_area_margin" android:layout_marginRight="@dimen/mine_area_margin">
             <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/mine_item_height">
-                <RadioButton android:id="@id/btn_myconnector" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mine_connector_title" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
+                <TextView android:id="@id/btn_myconnector" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mine_connector_title" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
                 <ImageView android:background="@drawable/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
             </LinearLayout>
             <ImageView android:background="@color/diver_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
             <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/mine_item_height">
-                <RadioButton android:id="@id/btn_connector_activate" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mine_activation_title" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
+                <TextView android:id="@id/btn_connector_activate" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mine_activation_title" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
                 <ImageView android:background="@drawable/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
             </LinearLayout>
             <ImageView android:background="@color/diver_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
             <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/mine_item_height">
-                <RadioButton android:id="@id/btn_firmware_fix" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mine_firmware_fix" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
+                <TextView android:id="@id/btn_firmware_fix" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mine_firmware_fix" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
                 <ImageView android:background="@drawable/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout android:orientation="vertical" android:background="@drawable/mine_info_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_area_margin" android:layout_marginTop="@dimen/mine_area_margin" android:layout_marginRight="@dimen/mine_area_margin">
             <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/mine_item_height">
-                <RadioButton android:id="@id/btn_myreport" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mine_myreport_title" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
+                <TextView android:id="@id/btn_myreport" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mine_myreport_title" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
                 <ImageView android:background="@drawable/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
             </LinearLayout>
             <ImageView android:background="@color/diver_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
             <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/mine_item_height">
-                <RadioButton android:id="@id/btn_mineinfo" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mine_info_title" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
+                <TextView android:id="@id/btn_mineinfo" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mine_info_title" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
                 <ImageView android:background="@drawable/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
             </LinearLayout>
             <ImageView android:background="@color/diver_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
             <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/mine_item_height">
-                <RadioButton android:id="@id/btn_modify_password" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mine_modify_password_title" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
+                <TextView android:id="@id/btn_modify_password" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mine_modify_password_title" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
                 <ImageView android:background="@drawable/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout android:orientation="vertical" android:background="@drawable/mine_info_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_area_margin" android:layout_marginTop="@dimen/mine_area_margin" android:layout_marginRight="@dimen/mine_area_margin">
             <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/mine_item_height">
-                <RadioButton android:id="@id/btn_help" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mine_help_title" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
+                <TextView android:id="@id/btn_help" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mine_help_title" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MiniInfoItemTextStyle" />
                 <ImageView android:background="@drawable/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
             </LinearLayout>
         </LinearLayout>

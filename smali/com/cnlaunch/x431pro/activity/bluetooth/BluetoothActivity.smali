@@ -192,7 +192,7 @@
 
     move-result-object v6
 
-    const/high16 v7, 0x7f09
+    const/high16 v7, 0x7f0d
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -204,7 +204,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f090001
+    const v7, 0x7f0d0001
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -281,7 +281,7 @@
 
     .prologue
     .line 74
-    const v0, 0x7f0d003c
+    const v0, 0x7f0c003c
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothActivity;->findViewById(I)Landroid/view/View;
 
@@ -301,12 +301,12 @@
     .line 76
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothActivity;->mBtnScan:Landroid/widget/Button;
 
-    const v1, 0x7f070009
+    const v1, 0x7f0700a7
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
     .line 77
-    const v0, 0x7f0d003d
+    const v0, 0x7f0c003d
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothActivity;->findViewById(I)Landroid/view/View;
 
@@ -344,7 +344,7 @@
 
     .line 126
     .local v0, id:I
-    const v1, 0x7f0d003c
+    const v1, 0x7f0c003c
 
     if-ne v0, v1, :cond_1
 
@@ -374,7 +374,7 @@
 
     .line 131
     :cond_1
-    const v1, 0x7f0d003d
+    const v1, 0x7f0c003d
 
     if-ne v0, v1, :cond_0
 
@@ -505,7 +505,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothActivity;->mBluetoothListAdapter:Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothListAdapter;
 
     .line 52
-    const v0, 0x7f0d003e
+    const v0, 0x7f0c003e
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothActivity;->findViewById(I)Landroid/view/View;
 

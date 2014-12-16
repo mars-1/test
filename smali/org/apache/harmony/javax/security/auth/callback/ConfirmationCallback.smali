@@ -3,8 +3,8 @@
 .source "ConfirmationCallback.java"
 
 # interfaces
-.implements Lorg/apache/harmony/javax/security/auth/callback/Callback;
 .implements Ljava/io/Serializable;
+.implements Lorg/apache/harmony/javax/security/auth/callback/Callback;
 
 
 # static fields

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 331
+    .line 330
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$RemoteOrderObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .parameter
 
     .prologue
-    .line 331
+    .line 330
     invoke-direct {p0, p1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$RemoteOrderObserver;-><init>(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;)V
 
     return-void
@@ -52,7 +52,7 @@
     .parameter
 
     .prologue
-    .line 331
+    .line 330
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$RemoteOrderObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     return-object v0
@@ -66,7 +66,7 @@
     .parameter "data"
 
     .prologue
-    .line 335
+    .line 334
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$RemoteOrderObserver;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->mHandler:Landroid/os/Handler;
@@ -80,6 +80,6 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 390
+    .line 389
     return-void
 .end method

@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$6;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
-    .line 538
+    .line 537
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +43,7 @@
     .parameter "s"
 
     .prologue
-    .line 553
+    .line 552
     return-void
 .end method
 
@@ -55,7 +55,7 @@
     .parameter "after"
 
     .prologue
-    .line 549
+    .line 548
     return-void
 .end method
 
@@ -67,7 +67,7 @@
     .parameter "count"
 
     .prologue
-    .line 543
+    .line 542
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$6;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
 
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment$6;->this$0:Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;
@@ -88,6 +88,6 @@
     #calls: Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->filterData(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;->access$39(Lcom/cnlaunch/x431pro/activity/golo/GoloFragment;Ljava/lang/String;)V
 
-    .line 544
+    .line 543
     return-void
 .end method

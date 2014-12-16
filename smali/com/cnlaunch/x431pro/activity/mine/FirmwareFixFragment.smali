@@ -409,7 +409,7 @@
     iput-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/FirmwareFixFragment;->mBluetoothManager:Lcom/cnlaunch/physics/bluetooth/BluetoothManager;
 
     .line 95
-    const v7, 0x7f07056e
+    const v7, 0x7f070570
 
     invoke-virtual {p0, v7}, Lcom/cnlaunch/x431pro/activity/mine/FirmwareFixFragment;->setTitle(I)V
 
@@ -420,7 +420,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f020521
+    const v8, 0x7f020525
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -433,7 +433,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d0365
+    const v8, 0x7f0c037c
 
     invoke-virtual {v7, v8}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -452,7 +452,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f070570
+    const v8, 0x7f070572
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -500,7 +500,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d0071
+    const v8, 0x7f0c0071
 
     invoke-virtual {v7, v8}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -520,7 +520,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d0367
+    const v8, 0x7f0c037e
 
     invoke-virtual {v7, v8}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -535,7 +535,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d0369
+    const v8, 0x7f0c0380
 
     invoke-virtual {v7, v8}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -563,7 +563,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d0368
+    const v8, 0x7f0c037f
 
     invoke-virtual {v7, v8}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -636,7 +636,7 @@
     .line 121
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/FirmwareFixFragment;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0705ea
+    const v8, 0x7f0705ec
 
     invoke-static {v7, v8, v13}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
@@ -662,7 +662,7 @@
     .line 131
     iget-object v7, p0, Lcom/cnlaunch/x431pro/activity/mine/FirmwareFixFragment;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f07006c
+    const v8, 0x7f070053
 
     invoke-static {v7, v8, v13}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;II)V
 
@@ -859,7 +859,7 @@
     .line 263
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/mine/FirmwareFixFragment;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f07056f
+    const v2, 0x7f070571
 
     const/16 v3, 0x11
 
@@ -913,7 +913,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0d0071
+    .packed-switch 0x7f0c0071
         :pswitch_0
         :pswitch_1
     .end packed-switch
@@ -927,7 +927,7 @@
 
     .prologue
     .line 86
-    const v0, 0x7f030139
+    const v0, 0x7f03013b
 
     const/4 v1, 0x0
 

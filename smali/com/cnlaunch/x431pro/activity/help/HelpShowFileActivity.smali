@@ -90,7 +90,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 31
-    const v2, 0x7f0301a1
+    const v2, 0x7f0301a4
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/help/HelpShowFileActivity;->setContentView(I)V
 
@@ -116,7 +116,7 @@
     iput-object v2, p0, Lcom/cnlaunch/x431pro/activity/help/HelpShowFileActivity;->strShowFilePath:Ljava/lang/String;
 
     .line 37
-    const v2, 0x7f0d04bb
+    const v2, 0x7f0c04d4
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/activity/help/HelpShowFileActivity;->findViewById(I)Landroid/view/View;
 
@@ -233,7 +233,7 @@
     if-nez v0, :cond_0
 
     .line 92
-    const v0, 0x7f0d04bb
+    const v0, 0x7f0c04d4
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/help/HelpShowFileActivity;->findViewById(I)Landroid/view/View;
 

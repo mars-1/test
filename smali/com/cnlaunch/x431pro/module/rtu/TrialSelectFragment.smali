@@ -85,7 +85,7 @@
 
     .line 36
     .local v1, view:Landroid/view/View;
-    const v2, 0x7f07072d
+    const v2, 0x7f07072f
 
     invoke-virtual {p0, v2}, Lcom/cnlaunch/x431pro/module/rtu/TrialSelectFragment;->setTitle(I)V
 
@@ -105,7 +105,7 @@
 
     .line 45
     :goto_0
-    const v2, 0x7f07072b
+    const v2, 0x7f07072d
 
     .line 46
     new-instance v3, Lcom/cnlaunch/x431pro/module/rtu/TrialSelectFragment$1;
@@ -132,7 +132,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0706fd
+    const v6, 0x7f0706ff
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -147,7 +147,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0706fe
+    const v6, 0x7f070700
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

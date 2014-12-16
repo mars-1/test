@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO JP</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">車両診断報告</string>
+    <string name="print_success">プリントに成功しました！</string>
+    <string name="print_jam">紙詰まり</string>
+    <string name="print_will_nopaper">プリンターはすぐに用紙切れになります</string>
+    <string name="print_no_paper">プリンターが用紙切れです</string>
+    <string name="print_actuator_fault">プリンター故障！</string>
+    <string name="print_head_overheating">プリンターが過熱しています</string>
+    <string name="print_connect_printer">まずWi-Fiプリンターに接続してください</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">確認</string>
     <string name="bluetooth_close_connected">切断：</string>
     <string name="bluetooth_connecting">接続中</string>
     <string name="bluetooth_no_search_device">ブルートゥースコネクターを検出しません。コネクターが通電しているかを確認し、検索を刷新してください</string>
@@ -15,18 +27,6 @@
     <string name="no">いいえ</string>
     <string name="tv_unconnect">未接続</string>
     <string name="tv_unpair">アンペアリング</string>
-    <string name="app_name">X-431 PRO JP</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">車両診断報告</string>
-    <string name="print_success">プリントに成功しました！</string>
-    <string name="print_jam">紙詰まり</string>
-    <string name="print_will_nopaper">プリンターはすぐに用紙切れになります</string>
-    <string name="print_no_paper">プリンターが用紙切れです</string>
-    <string name="print_actuator_fault">プリンター故障！</string>
-    <string name="print_head_overheating">プリンターが過熱しています</string>
-    <string name="print_connect_printer">まずWi-Fiプリンターに接続してください</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">確認</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 
@@ -315,7 +315,7 @@ Click confirmation to install immediately."</string>
     <string name="setting_printinfo_txt">印刷情報設定</string>
     <string name="setting_onekey_feedback_txt">診断フィードバック</string>
     <string name="setting_check_server_txt">サーバー点検</string>
-    <string name="setting_about_txt">～について</string>
+    <string name="setting_about_txt">アバウト</string>
     <string name="setting_upload_log_success">診断ログアップロードに成功しました</string>
     <string name="setting_upload_log_failure">診断ログアップロードに失敗しました</string>
     <string name="setting_feedback_log_opinion">何か問題がございましたら</string>
@@ -659,4 +659,25 @@ Click confirmation to install immediately."</string>
     <string name="remote_dialog_y">Yes</string>
     <string name="remote_dialog_n">No</string>
     <string name="setting_freedom_txt">Freedom</string>
+    <string name="register_sex">性別</string>
+    <string name="register_birthday">生年月日</string>
+    <string name="register_phonenum">携帯番号</string>
+    <string name="register_mobilephone">携帯番号</string>
+    <string name="register_company_name">会社名</string>
+    <string name="register_address">住所</string>
+    <string name="register_code">郵便番号</string>
+    <string name="register_fax">FAX</string>
+    <string name="register_name">担当者</string>
+    <string name="data_sex">性別</string>
+    <string name="register_agree">同意</string>
+    <string name="register_disagree">同意しない</string>
+    <string name="register_inputdata">数字を入力してください</string>
+    <string name="register_username_notnull">ユーザー名を入力してください</string>
+    <string name="register_pwd_notnull">パスワードを入力してください</string>
+    <string name="register_email_notnull">メールアドレスを入力してください</string>
+    <string name="register_companyname_notnull">会社名を入力してください</string>
+    <string name="register_code_notnull">郵便番号を入力してください</string>
+    <string name="register_address_notnull">住所を入力してください</string>
+    <string name="register_phonenum_notnull">携帯番号を入力してください</string>
+    <string name="reg_guding_phone_wrong">携帯番号の形式が正しくありません！</string>
 </resources>

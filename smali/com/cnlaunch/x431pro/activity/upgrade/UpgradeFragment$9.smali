@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$9;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
-    .line 1073
+    .line 1079
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,7 +44,7 @@
     .parameter "obj2"
 
     .prologue
-    .line 1075
+    .line 1081
     move-object v0, p1
 
     check-cast v0, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
@@ -52,10 +52,10 @@
     .local v0, soft1:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
     move-object v1, p2
 
-    .line 1076
+    .line 1082
     check-cast v1, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
 
-    .line 1078
+    .line 1084
     .local v1, soft2:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->getVersionNo()Ljava/lang/String;
 

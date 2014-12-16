@@ -30,15 +30,15 @@
     .parameter "showAllSelection"
 
     .prologue
-    .line 374
+    .line 377
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$TabChangedPostAction;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 375
+    .line 378
     iput-boolean p2, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$TabChangedPostAction;->mShowAllSelection:Z
 
-    .line 376
+    .line 379
     return-void
 .end method
 
@@ -48,7 +48,7 @@
     .locals 3
 
     .prologue
-    .line 380
+    .line 383
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$TabChangedPostAction;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->mBundle:Landroid/os/Bundle;
@@ -62,7 +62,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 381
+    .line 384
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$TabChangedPostAction;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->mBundle:Landroid/os/Bundle;
@@ -81,7 +81,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 382
+    .line 385
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$TabChangedPostAction;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->mBundle:Landroid/os/Bundle;
@@ -100,7 +100,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 383
+    .line 386
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$TabChangedPostAction;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->mBundle:Landroid/os/Bundle;
@@ -119,7 +119,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 
-    .line 384
+    .line 387
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment$TabChangedPostAction;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/fragment/ActiveTestFragment;->mBundle:Landroid/os/Bundle;
@@ -138,6 +138,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 
-    .line 385
+    .line 388
     return-void
 .end method

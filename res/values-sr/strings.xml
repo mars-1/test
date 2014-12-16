@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">Dijagnostički izveštaj za vozilo</string>
+    <string name="print_success">Štampa je uspela!</string>
+    <string name="print_jam">Izgužvan papir</string>
+    <string name="print_will_nopaper">Štampač će ubrzo ostati bez papira</string>
+    <string name="print_no_paper">U štampaču nema papira</string>
+    <string name="print_actuator_fault">Štampač kriv!</string>
+    <string name="print_head_overheating">Štampač se previše greje</string>
+    <string name="print_connect_printer">Povežite prvo vaš WI-Fi štampač</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">Potvrdi</string>
     <string name="bluetooth_close_connected">Prekid veze:</string>
     <string name="bluetooth_connecting">Povezivanje</string>
     <string name="bluetooth_no_search_device">BT connector nije detected, da proverite konektor povered se i osvežite pretragu</string>
@@ -15,18 +27,6 @@
     <string name="no">Broj</string>
     <string name="tv_unconnect">Nije povezan</string>
     <string name="tv_unpair">Nije upareno</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">Dijagnostički izveštaj za vozilo</string>
-    <string name="print_success">Štampa je uspela!</string>
-    <string name="print_jam">Izgužvan papir</string>
-    <string name="print_will_nopaper">Štampač će ubrzo ostati bez papira</string>
-    <string name="print_no_paper">U štampaču nema papira</string>
-    <string name="print_actuator_fault">Štampač kriv!</string>
-    <string name="print_head_overheating">Štampač se previše greje</string>
-    <string name="print_connect_printer">Povežite prvo vaš WI-Fi štampač</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">Potvrdi</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

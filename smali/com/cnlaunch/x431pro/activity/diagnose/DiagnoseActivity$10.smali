@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$10;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
-    .line 955
+    .line 958
     invoke-direct {p0}, Lcom/cnlaunch/x431pro/widget/dialog/SelectMessageDialog;-><init>()V
 
     return-void
@@ -39,7 +39,7 @@
     .locals 0
 
     .prologue
-    .line 975
+    .line 978
     return-void
 .end method
 
@@ -47,7 +47,7 @@
     .locals 2
 
     .prologue
-    .line 958
+    .line 961
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$10;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->getDiagnoseRunningInfo()Lcom/cnlaunch/x431pro/module/diagnose/model/DiagnoseRunningInfo;
@@ -62,7 +62,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 959
+    .line 962
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$10;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->mRemoteDiagHandler:Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;
@@ -74,11 +74,11 @@
 
     invoke-virtual {v0, v1}, Lcom/cnlaunch/x431pro/activity/diagnose/view/RemoteDiagHandler;->handlerStatue(I)V
 
-    .line 971
+    .line 974
     :goto_0
     return-void
 
-    .line 961
+    .line 964
     :cond_0
     invoke-static {}, Lcom/cnlaunch/x431pro/utils/Tools;->isUSAProject()Z
 
@@ -86,29 +86,29 @@
 
     if-eqz v0, :cond_1
 
-    .line 962
+    .line 965
     sget-boolean v0, Lcom/cnlaunch/x431pro/common/Constants;->FactoryPattern:Z
 
     if-nez v0, :cond_1
 
-    .line 963
+    .line 966
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$10;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->tryDiagTime()V
     invoke-static {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->access$9(Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;)V
 
-    .line 964
+    .line 967
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/cnlaunch/x431pro/common/Constants;->StartDiagFlag:Z
 
-    .line 968
+    .line 971
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$10;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->disconnectBluetooth()V
 
-    .line 969
+    .line 972
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity$10;->this$0:Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;
 
     #calls: Lcom/cnlaunch/x431pro/activity/diagnose/DiagnoseActivity;->doOnExitDiagnose()V

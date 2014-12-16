@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">تقرير تشخيص مركبة</string>
+    <string name="print_success">كانت الطباعة ناجحة!</string>
+    <string name="print_jam">ازدحام الورق</string>
+    <string name="print_will_nopaper">الطابعة سوف يكون خالية من الورق قريبا</string>
+    <string name="print_no_paper">الطابعة يكون خالية من الورق</string>
+    <string name="print_actuator_fault">خطأ الطابعة!</string>
+    <string name="print_head_overheating">الطابعة يتم الحرارة الزائدة</string>
+    <string name="print_connect_printer">يرجى توصيل الطابعة بواي فاي الخاص بك أولا</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">تحديد</string>
     <string name="bluetooth_close_connected">قطع اتصال:</string>
     <string name="bluetooth_connecting">يتم الاتصال</string>
     <string name="bluetooth_no_search_device">لم يتم الكشف عن موصل بلوتوث، يرجى التحقق من توصيل الموصل و تحديث عملية بحثك</string>
@@ -15,18 +27,6 @@
     <string name="no">لا</string>
     <string name="tv_unconnect">غير متصل</string>
     <string name="tv_unpair">لا يقرن</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">تقرير تشخيص مركبة</string>
-    <string name="print_success">كانت الطباعة ناجحة!</string>
-    <string name="print_jam">ازدحام الورق</string>
-    <string name="print_will_nopaper">الطابعة سوف يكون خالية من الورق قريبا</string>
-    <string name="print_no_paper">الطابعة يكون خالية من الورق</string>
-    <string name="print_actuator_fault">خطأ الطابعة!</string>
-    <string name="print_head_overheating">الطابعة يتم الحرارة الزائدة</string>
-    <string name="print_connect_printer">يرجى توصيل الطابعة بواي فاي الخاص بك أولا</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">تحديد</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

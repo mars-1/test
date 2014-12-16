@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final ProductListView:I = 0x7f0d0425
+.field public static final ProductListView:I = 0x7f0c0443
 
-.field public static final toast_message:I = 0x7f0d02df
+.field public static final toast_message:I = 0x7f0c02f6
 
 
 # direct methods

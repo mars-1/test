@@ -3,8 +3,8 @@
 .source "ArrayBuilders.java"
 
 # interfaces
-.implements Ljava/util/Iterator;
 .implements Ljava/lang/Iterable;
+.implements Ljava/util/Iterator;
 
 
 # annotations

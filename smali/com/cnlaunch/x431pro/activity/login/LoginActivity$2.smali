@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/login/LoginActivity;
 
-    .line 171
+    .line 172
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,12 +45,12 @@
     .parameter "arg2"
 
     .prologue
-    .line 174
+    .line 175
     const/4 v0, 0x6
 
     if-ne p2, v0, :cond_0
 
-    .line 175
+    .line 176
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/LoginActivity$2;->this$0:Lcom/cnlaunch/x431pro/activity/login/LoginActivity;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/login/LoginActivity;->btn_login:Landroid/widget/Button;
@@ -60,10 +60,10 @@
 
     invoke-virtual {v0}, Landroid/widget/Button;->performClick()Z
 
-    .line 176
+    .line 177
     const/4 v0, 0x1
 
-    .line 178
+    .line 179
     :goto_0
     return v0
 

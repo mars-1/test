@@ -91,13 +91,15 @@
 
     move-result-object v2
 
-    const v3, 0x7f07058d
+    const v3, 0x7f07058f
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;Ljava/lang/String;)V
+    const/4 v3, 0x1
+
+    invoke-static {v1, v2, v3}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;Ljava/lang/String;Z)V
 
     .line 266
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;

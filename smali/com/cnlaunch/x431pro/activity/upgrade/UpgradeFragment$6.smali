@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$6;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
-    .line 999
+    .line 1005
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -50,7 +50,7 @@
 
     const/4 v3, 0x1
 
-    .line 1001
+    .line 1007
     move-object v0, p1
 
     check-cast v0, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
@@ -58,10 +58,10 @@
     .local v0, soft1:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
     move-object v1, p2
 
-    .line 1002
+    .line 1008
     check-cast v1, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
 
-    .line 1004
+    .line 1010
     .local v1, soft2:Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->getType()I
 
@@ -69,12 +69,12 @@
 
     if-ne v5, v4, :cond_1
 
-    .line 1017
+    .line 1023
     :cond_0
     :goto_0
     return v2
 
-    .line 1007
+    .line 1013
     :cond_1
     invoke-virtual {v1}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->getType()I
 
@@ -84,10 +84,10 @@
 
     move v2, v3
 
-    .line 1008
+    .line 1014
     goto :goto_0
 
-    .line 1010
+    .line 1016
     :cond_2
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->getType()I
 
@@ -101,7 +101,7 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 1013
+    .line 1019
     :cond_3
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/upgrade/model/X431PadDtoSoft;->getType()I
 
@@ -117,10 +117,10 @@
 
     move v2, v3
 
-    .line 1014
+    .line 1020
     goto :goto_0
 
-    .line 1017
+    .line 1023
     :cond_4
     const/4 v2, 0x0
 

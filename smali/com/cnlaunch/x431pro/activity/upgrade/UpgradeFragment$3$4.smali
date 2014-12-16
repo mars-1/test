@@ -70,7 +70,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d02dd
+    const v4, 0x7f0c02f4
 
     invoke-virtual {v3, v4}, Lcom/cnlaunch/x431pro/activity/MainActivity;->showActivity(I)V
 

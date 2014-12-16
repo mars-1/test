@@ -3,8 +3,8 @@
 .source "Section.java"
 
 # interfaces
-.implements Lcom/itextpdf/text/TextElementArray;
 .implements Lcom/itextpdf/text/LargeElement;
+.implements Lcom/itextpdf/text/TextElementArray;
 
 
 # annotations

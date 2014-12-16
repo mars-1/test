@@ -28,7 +28,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;
 
-    .line 232
+    .line 233
     invoke-direct {p0, p2}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -42,14 +42,14 @@
     .parameter "result"
 
     .prologue
-    .line 235
+    .line 236
     invoke-super {p0, p1, p2}, Lcom/cnlaunch/x431pro/activity/login/LoginFunction;->onSuccess(ILjava/lang/Object;)V
 
-    .line 236
+    .line 237
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment$2;->this$0:Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;
 
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/activity/mine/PersonInformationFragment;->onResume()V
 
-    .line 237
+    .line 238
     return-void
 .end method

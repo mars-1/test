@@ -149,7 +149,7 @@
     .line 55
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothListAdapter$ViewHolder;
 
-    const v0, 0x7f0d0258
+    const v0, 0x7f0c025b
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -162,7 +162,7 @@
     .line 56
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothListAdapter$ViewHolder;
 
-    const v0, 0x7f0d0259
+    const v0, 0x7f0c025c
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -175,7 +175,7 @@
     .line 57
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothListAdapter$ViewHolder;
 
-    const v0, 0x7f0d025a
+    const v0, 0x7f0c025d
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -188,7 +188,7 @@
     .line 58
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothListAdapter$ViewHolder;
 
-    const v0, 0x7f0d025c
+    const v0, 0x7f0c025f
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -201,7 +201,7 @@
     .line 59
     iget-object v1, p0, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothListAdapter;->viewHolder:Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothListAdapter$ViewHolder;
 
-    const v0, 0x7f0d025b
+    const v0, 0x7f0c025e
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -293,7 +293,7 @@
 
     if-eqz v0, :cond_2
 
-    const v0, 0x7f070011
+    const v0, 0x7f0700af
 
     :goto_1
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(I)V
@@ -342,7 +342,7 @@
 
     iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothListAdapter$ViewHolder;->bluetoothStatus:Landroid/widget/ImageView;
 
-    const v1, 0x7f020246
+    const v1, 0x7f020247
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -364,7 +364,7 @@
 
     .line 67
     :cond_2
-    const v0, 0x7f070010
+    const v0, 0x7f0700ae
 
     goto :goto_1
 
@@ -383,7 +383,7 @@
 
     iget-object v0, v0, Lcom/cnlaunch/x431pro/activity/bluetooth/BluetoothListAdapter$ViewHolder;->bluetoothStatus:Landroid/widget/ImageView;
 
-    const v1, 0x7f020247
+    const v1, 0x7f020248
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

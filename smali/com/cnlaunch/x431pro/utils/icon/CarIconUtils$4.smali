@@ -40,7 +40,7 @@
     .line 1
     iput-object p1, p0, Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils$4;->this$0:Lcom/cnlaunch/x431pro/utils/icon/CarIconUtils;
 
-    .line 578
+    .line 582
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -54,7 +54,7 @@
     .parameter "entity2"
 
     .prologue
-    .line 581
+    .line 585
     invoke-virtual {p1}, Lcom/cnlaunch/x431pro/utils/db/CarIcon;->getSname()Ljava/lang/String;
 
     move-result-object v0

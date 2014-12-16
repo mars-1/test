@@ -23,7 +23,7 @@
 
     .prologue
     .line 42
-    const/4 v0, 0x2
+    const/4 v0, 0x3
 
     invoke-direct {p0, p1, p2, p3, v0}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
@@ -47,7 +47,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    const-string/jumbo v2, "Creating tables for schema version 2"
+    const-string/jumbo v2, "Creating tables for schema version 3"
 
     aput-object v2, v1, v3
 

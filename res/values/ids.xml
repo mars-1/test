@@ -434,9 +434,12 @@
     <item type="id" name="tv_carver">false</item>
     <item type="id" name="btn_check_bluetooth">false</item>
     <item type="id" name="lv_carver">false</item>
+    <item type="id" name="layout_ini">false</item>
     <item type="id" name="tv_ini_title">false</item>
     <item type="id" name="tv_ini_text">false</item>
     <item type="id" name="bottom_btn_layout">false</item>
+    <item type="id" name="specia_title">false</item>
+    <item type="id" name="specia_value">false</item>
     <item type="id" name="grid_specia_title">false</item>
     <item type="id" name="grid_specia_value">false</item>
     <item type="id" name="viewPager_layout">false</item>
@@ -576,6 +579,7 @@
     <item type="id" name="bluetooth_pair_status">false</item>
     <item type="id" name="delete">false</item>
     <item type="id" name="tv_report_name">false</item>
+    <item type="id" name="item_specia_layout">false</item>
     <item type="id" name="item_remind_name">false</item>
     <item type="id" name="item_remind_content">false</item>
     <item type="id" name="item_remind_image_flag">false</item>
@@ -688,6 +692,25 @@
     <item type="id" name="btn_regist">false</item>
     <item type="id" name="layout_up">false</item>
     <item type="id" name="layout_low">false</item>
+    <item type="id" name="login_content">false</item>
+    <item type="id" name="dictTable">false</item>
+    <item type="id" name="iv_company_name">false</item>
+    <item type="id" name="edit_company_name">false</item>
+    <item type="id" name="iv_address">false</item>
+    <item type="id" name="edit_address">false</item>
+    <item type="id" name="iv_realname">false</item>
+    <item type="id" name="edit_realname">false</item>
+    <item type="id" name="reg_radioGroup">false</item>
+    <item type="id" name="radioMale">false</item>
+    <item type="id" name="radioFemale">false</item>
+    <item type="id" name="iv_birthday">false</item>
+    <item type="id" name="edit_birthday">false</item>
+    <item type="id" name="iv_phonenum">false</item>
+    <item type="id" name="edit_phonenum">false</item>
+    <item type="id" name="iv_fax">false</item>
+    <item type="id" name="edit_fax">false</item>
+    <item type="id" name="iv_cellphone">false</item>
+    <item type="id" name="edit_cellphone">false</item>
     <item type="id" name="editText4_1">false</item>
     <item type="id" name="button_toupdate">false</item>
     <item type="id" name="button_later">false</item>
@@ -872,7 +895,6 @@
     <item type="id" name="cb_company_address">false</item>
     <item type="id" name="edit_telephone">false</item>
     <item type="id" name="cb_telephone">false</item>
-    <item type="id" name="edit_fax">false</item>
     <item type="id" name="cb_fax">false</item>
     <item type="id" name="edit_license_plate_number">false</item>
     <item type="id" name="cb_plate_number">false</item>
@@ -1001,6 +1023,14 @@
     <item type="id" name="load_more_view">false</item>
     <item type="id" name="load_more_tv">false</item>
     <item type="id" name="loading_layout">false</item>
+    <item type="id" name="rl_popdialog">false</item>
+    <item type="id" name="rl_statement_top">false</item>
+    <item type="id" name="tv_statement_title">false</item>
+    <item type="id" name="rl_statement_bottom">false</item>
+    <item type="id" name="btn_agree">false</item>
+    <item type="id" name="btn_no">false</item>
+    <item type="id" name="sv_statement_text">false</item>
+    <item type="id" name="tv_statement_content">false</item>
     <item type="id" name="layoutprofile_top">false</item>
     <item type="id" name="profile_regiter_editText">false</item>
     <item type="id" name="editText3">false</item>
@@ -1118,12 +1148,7 @@
     <item type="id" name="btn_setting_horizontal ">false</item>
     <item type="id" name="btn_setting_vertical">false</item>
     <item type="id" name="btn_apply">false</item>
-    <item type="id" name="rl_popdialog">false</item>
-    <item type="id" name="rl_statement_top">false</item>
-    <item type="id" name="rl_statement_bottom">false</item>
     <item type="id" name="btn_statement">false</item>
-    <item type="id" name="sv_statement_text">false</item>
-    <item type="id" name="tv_statement_content">false</item>
     <item type="id" name="btn_redrose">false</item>
     <item type="id" name="btn_bluevoilet">false</item>
     <item type="id" name="btn_green">false</item>

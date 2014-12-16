@@ -40,7 +40,7 @@
     .parameter "msg"
 
     .prologue
-    const v7, 0x7f020236
+    const v7, 0x7f020237
 
     const/4 v6, 0x1
 
@@ -232,7 +232,7 @@
 
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonDetailFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/PersonDetailFragment;
 
-    const v5, 0x7f0705ae
+    const v5, 0x7f0705b0
 
     invoke-virtual {v3, v5}, Lcom/cnlaunch/x431pro/activity/mine/PersonDetailFragment;->getString(I)Ljava/lang/String;
 
@@ -460,7 +460,7 @@
     :cond_3
     iget-object v3, p0, Lcom/cnlaunch/x431pro/activity/mine/PersonDetailFragment$1;->this$0:Lcom/cnlaunch/x431pro/activity/mine/PersonDetailFragment;
 
-    const v5, 0x7f0705af
+    const v5, 0x7f0705b1
 
     invoke-virtual {v3, v5}, Lcom/cnlaunch/x431pro/activity/mine/PersonDetailFragment;->getString(I)Ljava/lang/String;
 

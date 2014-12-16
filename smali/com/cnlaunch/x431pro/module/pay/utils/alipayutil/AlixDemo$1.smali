@@ -123,7 +123,7 @@
 
     const-string/jumbo v6, "\u63d0\u793a"
 
-    const v7, 0x7f020395
+    const v7, 0x7f020399
 
     invoke-static {v5, v6, v3, v7}, Lcom/cnlaunch/x431pro/module/pay/utils/alipayutil/BaseHelper;->showDialog(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;I)V
     :try_end_2

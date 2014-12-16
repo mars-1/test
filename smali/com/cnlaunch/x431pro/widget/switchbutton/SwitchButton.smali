@@ -385,7 +385,7 @@
     iput-object v2, p0, Lcom/cnlaunch/x431pro/widget/switchbutton/SwitchButton;->mBtnNormal:Landroid/graphics/Bitmap;
 
     .line 129
-    const v2, 0x7f0201f7
+    const v2, 0x7f0201f8
 
     invoke-static {v1, v2}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -394,7 +394,7 @@
     iput-object v2, p0, Lcom/cnlaunch/x431pro/widget/switchbutton/SwitchButton;->mFrame:Landroid/graphics/Bitmap;
 
     .line 130
-    const v2, 0x7f020407
+    const v2, 0x7f02040b
 
     invoke-static {v1, v2}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 

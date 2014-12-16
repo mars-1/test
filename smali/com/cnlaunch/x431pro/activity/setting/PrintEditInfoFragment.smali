@@ -201,18 +201,18 @@
     .locals 8
 
     .prologue
-    const v7, 0x7f0d0389
+    const v7, 0x7f0c039f
 
-    const v6, 0x7f0d0387
+    const v6, 0x7f0c039c
 
-    const v5, 0x7f0d0385
+    const v5, 0x7f0c039a
 
-    const v4, 0x7f0d0383
+    const v4, 0x7f0c0398
 
-    const v3, 0x7f0d0381
+    const v3, 0x7f0c02e3
 
     .line 81
-    const v0, 0x7f0705ed
+    const v0, 0x7f0705ef
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;->setTitle(I)V
 
@@ -223,7 +223,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020521
+    const v1, 0x7f020525
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -245,7 +245,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -263,7 +263,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v5}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -281,7 +281,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v5}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -299,7 +299,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -335,7 +335,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d038b
+    const v1, 0x7f0c03a1
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -355,7 +355,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0382
+    const v1, 0x7f0c0399
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -375,7 +375,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0384
+    const v1, 0x7f0c039b
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -395,7 +395,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0386
+    const v1, 0x7f0c039d
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -415,7 +415,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0388
+    const v1, 0x7f0c039e
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -435,7 +435,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d038a
+    const v1, 0x7f0c03a0
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -520,7 +520,7 @@
 
     new-instance v1, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;
 
-    invoke-direct {v1, p0, v3}, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;-><init>(Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;I)V
+    invoke-direct {v1, p0, v4}, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;-><init>(Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;I)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -529,7 +529,7 @@
 
     new-instance v1, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;
 
-    invoke-direct {v1, p0, v4}, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;-><init>(Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;I)V
+    invoke-direct {v1, p0, v5}, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;-><init>(Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;I)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -538,7 +538,7 @@
 
     new-instance v1, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;
 
-    invoke-direct {v1, p0, v5}, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;-><init>(Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;I)V
+    invoke-direct {v1, p0, v6}, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;-><init>(Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;I)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -547,7 +547,7 @@
 
     new-instance v1, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;
 
-    invoke-direct {v1, p0, v6}, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;-><init>(Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;I)V
+    invoke-direct {v1, p0, v3}, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment$PrintTextWatcher;-><init>(Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;I)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -708,7 +708,7 @@
     .line 165
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f070609
+    const v1, 0x7f07060b
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -727,7 +727,7 @@
     :cond_1
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f070608
+    const v1, 0x7f07060a
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
@@ -822,7 +822,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0d038b
+    .packed-switch 0x7f0c03a1
         :pswitch_0
     .end packed-switch
 .end method
@@ -835,7 +835,7 @@
 
     .prologue
     .line 74
-    const v0, 0x7f03013e
+    const v0, 0x7f030140
 
     const/4 v1, 0x0
 
@@ -863,16 +863,15 @@
 
     move-result v0
 
-    packed-switch v0, :pswitch_data_0
+    sparse-switch v0, :sswitch_data_0
 
     .line 224
     :cond_0
     :goto_0
-    :pswitch_0
     return-void
 
     .line 173
-    :pswitch_1
+    :sswitch_0
     if-nez p2, :cond_0
 
     .line 174
@@ -908,7 +907,7 @@
     goto :goto_0
 
     .line 182
-    :pswitch_2
+    :sswitch_1
     if-nez p2, :cond_0
 
     .line 183
@@ -944,7 +943,7 @@
     goto :goto_0
 
     .line 191
-    :pswitch_3
+    :sswitch_2
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;->edit_telephone:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -1011,14 +1010,14 @@
     .line 202
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f070608
+    const v1, 0x7f07060a
 
     invoke-static {v0, v1}, Lcom/cnlaunch/framework/utils/NToast;->longToast(Landroid/content/Context;I)V
 
     goto :goto_0
 
     .line 207
-    :pswitch_4
+    :sswitch_3
     if-nez p2, :cond_0
 
     .line 208
@@ -1054,7 +1053,7 @@
     goto/16 :goto_0
 
     .line 217
-    :pswitch_5
+    :sswitch_4
     iget-object v0, p0, Lcom/cnlaunch/x431pro/activity/setting/PrintEditInfoFragment;->edit_license_plate_number:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -1089,16 +1088,12 @@
     .line 171
     nop
 
-    :pswitch_data_0
-    .packed-switch 0x7f0d0381
-        :pswitch_1
-        :pswitch_0
-        :pswitch_2
-        :pswitch_0
-        :pswitch_3
-        :pswitch_0
-        :pswitch_4
-        :pswitch_0
-        :pswitch_5
-    .end packed-switch
+    :sswitch_data_0
+    .sparse-switch
+        0x7f0c02e3 -> :sswitch_3
+        0x7f0c0398 -> :sswitch_0
+        0x7f0c039a -> :sswitch_1
+        0x7f0c039c -> :sswitch_2
+        0x7f0c039f -> :sswitch_4
+    .end sparse-switch
 .end method

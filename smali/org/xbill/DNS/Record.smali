@@ -3,9 +3,9 @@
 .source "Record.java"
 
 # interfaces
+.implements Ljava/io/Serializable;
 .implements Ljava/lang/Cloneable;
 .implements Ljava/lang/Comparable;
-.implements Ljava/io/Serializable;
 
 
 # static fields

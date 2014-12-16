@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">X-431 PRO</string>
+    <string name="print_launch">LAUNCH</string>
+    <string name="print_automobile_fault_diagnosis_test_report">Araç tanılayıcı rapor</string>
+    <string name="print_success">Yazdırma başarılı!</string>
+    <string name="print_jam">Kağıt sıkışması</string>
+    <string name="print_will_nopaper">Yazdırıcıdaki kağıt bitmak üzere</string>
+    <string name="print_no_paper">Yazdırıcıda kağıt yok</string>
+    <string name="print_actuator_fault">Yazdırıcı hatası!</string>
+    <string name="print_head_overheating">Yazdırıcı aşırı ısındı</string>
+    <string name="print_connect_printer">Lütfen önce Wi-fi yazdırıcıyı bağlayınız</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_confirm">Onayla</string>
     <string name="bluetooth_close_connected">Bağlantıyı kesme:</string>
     <string name="bluetooth_connecting">Bağlanma</string>
     <string name="bluetooth_no_search_device">Bluetooth konnektörü saptanamadı, lütfen konnektörün açık olduğunu doğrulayınız ve aramanızı yenileyiniz.</string>
@@ -15,18 +27,6 @@
     <string name="no">Hayır</string>
     <string name="tv_unconnect">Bağlı değil</string>
     <string name="tv_unpair">Eşleşmedi</string>
-    <string name="app_name">X-431 PRO</string>
-    <string name="print_launch">LAUNCH</string>
-    <string name="print_automobile_fault_diagnosis_test_report">Araç tanılayıcı rapor</string>
-    <string name="print_success">Yazdırma başarılı!</string>
-    <string name="print_jam">Kağıt sıkışması</string>
-    <string name="print_will_nopaper">Yazdırıcıdaki kağıt bitmak üzere</string>
-    <string name="print_no_paper">Yazdırıcıda kağıt yok</string>
-    <string name="print_actuator_fault">Yazdırıcı hatası!</string>
-    <string name="print_head_overheating">Yazdırıcı aşırı ısındı</string>
-    <string name="print_connect_printer">Lütfen önce Wi-fi yazdırıcıyı bağlayınız</string>
-    <string name="cancel">Cancel</string>
-    <string name="btn_confirm">Onayla</string>
     <string name="confirm_install_hint">Installations tips</string>
     <string name="confirm_install">"To ensure a safe transaction, please install Alipay first.
 

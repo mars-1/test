@@ -17,7 +17,7 @@
 # static fields
 .field public static final alert_dialog:I = 0x7f030015
 
-.field public static final layout_dialog_loading:I = 0x7f0300d6
+.field public static final layout_dialog_loading:I = 0x7f0300d7
 
 
 # direct methods

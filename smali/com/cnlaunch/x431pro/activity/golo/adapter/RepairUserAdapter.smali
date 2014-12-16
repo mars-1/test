@@ -211,7 +211,7 @@
     .locals 3
 
     .prologue
-    const v2, 0x7f02023a
+    const v2, 0x7f02023b
 
     const/4 v1, 0x1
 
@@ -424,7 +424,7 @@
     .line 93
     iget-object v3, v1, Lcom/cnlaunch/x431pro/activity/golo/adapter/RepairUserAdapter$TitleViewHold;->title:Landroid/widget/TextView;
 
-    const v4, 0x7f0204d7
+    const v4, 0x7f0204db
 
     invoke-virtual {v3, v5, v5, v5, v4}, Landroid/widget/TextView;->setCompoundDrawablesRelativeWithIntrinsicBounds(IIII)V
 
@@ -462,7 +462,7 @@
     move-result-object p2
 
     .line 99
-    const v3, 0x7f0d00b0
+    const v3, 0x7f0c00b0
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -474,7 +474,7 @@
     iput-object v3, v2, Lcom/cnlaunch/x431pro/activity/golo/adapter/RepairUserAdapter$ViewHold;->userName:Landroid/widget/TextView;
 
     .line 101
-    const v3, 0x7f0d00b1
+    const v3, 0x7f0c00b1
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -486,7 +486,7 @@
     iput-object v3, v2, Lcom/cnlaunch/x431pro/activity/golo/adapter/RepairUserAdapter$ViewHold;->userCar:Landroid/widget/TextView;
 
     .line 103
-    const v3, 0x7f0d00ae
+    const v3, 0x7f0c00ae
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -498,7 +498,7 @@
     iput-object v3, v2, Lcom/cnlaunch/x431pro/activity/golo/adapter/RepairUserAdapter$ViewHold;->userImage:Landroid/widget/ImageView;
 
     .line 105
-    const v3, 0x7f0d00b4
+    const v3, 0x7f0c00b4
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -510,7 +510,7 @@
     iput-object v3, v2, Lcom/cnlaunch/x431pro/activity/golo/adapter/RepairUserAdapter$ViewHold;->msgTime:Landroid/widget/TextView;
 
     .line 106
-    const v3, 0x7f0d00b2
+    const v3, 0x7f0c00b2
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

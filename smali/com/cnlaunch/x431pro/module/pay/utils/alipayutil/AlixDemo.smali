@@ -578,7 +578,7 @@
     iput-object v1, p0, Lcom/cnlaunch/x431pro/module/pay/utils/alipayutil/AlixDemo;->mproductlist:Ljava/util/ArrayList;
 
     .line 68
-    const v1, 0x7f0d0425
+    const v1, 0x7f0c0443
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/module/pay/utils/alipayutil/AlixDemo;->findViewById(I)Landroid/view/View;
 
@@ -654,7 +654,7 @@
     invoke-virtual {v0}, Lcom/cnlaunch/x431pro/module/pay/utils/alipayutil/MobileSecurePayHelper;->detectMobile_sp()Z
 
     .line 55
-    const v1, 0x7f030175
+    const v1, 0x7f030178
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/module/pay/utils/alipayutil/AlixDemo;->setContentView(I)V
 

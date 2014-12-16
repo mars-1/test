@@ -42,7 +42,7 @@
 
     iput-object p2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$5;->val$spinnerlist:Ljava/util/List;
 
-    .line 803
+    .line 809
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -67,11 +67,11 @@
     .end annotation
 
     .prologue
-    .line 807
+    .line 813
     .local p1, arg0:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
     if-ltz p3, :cond_0
 
-    .line 808
+    .line 814
     :try_start_0
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$5;->val$spinnerlist:Ljava/util/List;
 
@@ -81,7 +81,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 809
+    .line 815
     .local v1, sn:Ljava/lang/String;
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$5;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
@@ -104,13 +104,13 @@
 
     if-nez v2, :cond_0
 
-    .line 810
+    .line 816
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$5;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #calls: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->setSN(Ljava/lang/String;)V
     invoke-static {v2, v1}, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->access$26(Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;Ljava/lang/String;)V
 
-    .line 811
+    .line 817
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$5;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     #getter for: Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;->mContext:Landroid/content/Context;
@@ -125,15 +125,17 @@
 
     move-result-object v3
 
-    const v4, 0x7f07058d
+    const v4, 0x7f07058f
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;Ljava/lang/String;)V
+    const/4 v4, 0x1
 
-    .line 812
+    invoke-static {v2, v3, v4}, Lcom/cnlaunch/x431pro/widget/dialog/LoadDialog;->show(Landroid/content/Context;Ljava/lang/String;Z)V
+
+    .line 818
     iget-object v2, p0, Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment$5;->this$0:Lcom/cnlaunch/x431pro/activity/upgrade/UpgradeFragment;
 
     const/16 v3, 0x835
@@ -142,17 +144,17 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 818
+    .line 824
     .end local v1           #sn:Ljava/lang/String;
     :cond_0
     :goto_0
     return-void
 
-    .line 815
+    .line 821
     :catch_0
     move-exception v0
 
-    .line 816
+    .line 822
     .local v0, e:Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 

@@ -102,7 +102,7 @@
     sparse-switch p1, :sswitch_data_0
 
     .line 135
-    const v0, 0x7f070688
+    const v0, 0x7f07068a
 
     invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -112,7 +112,7 @@
 
     .line 129
     :sswitch_0
-    const v0, 0x7f070689
+    const v0, 0x7f07068b
 
     invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -120,7 +120,7 @@
 
     .line 132
     :sswitch_1
-    const v0, 0x7f07068a
+    const v0, 0x7f07068c
 
     invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -163,7 +163,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/ResetPasswordActivity;->action:Lcom/cnlaunch/x431pro/module/user/action/UserAction;
 
     .line 61
-    const v0, 0x7f0d02d2
+    const v0, 0x7f0c02e9
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/ResetPasswordActivity;->findViewById(I)Landroid/view/View;
 
@@ -174,7 +174,7 @@
     iput-object v0, p0, Lcom/cnlaunch/x431pro/activity/login/ResetPasswordActivity;->edit_username:Landroid/widget/EditText;
 
     .line 62
-    const v0, 0x7f0d02d3
+    const v0, 0x7f0c02ea
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/ResetPasswordActivity;->findViewById(I)Landroid/view/View;
 
@@ -198,7 +198,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     .line 64
-    const v0, 0x7f0d02d4
+    const v0, 0x7f0c02eb
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/ResetPasswordActivity;->findViewById(I)Landroid/view/View;
 
@@ -222,7 +222,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     .line 67
-    const v0, 0x7f0d02d5
+    const v0, 0x7f0c02ec
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/ResetPasswordActivity;->findViewById(I)Landroid/view/View;
 
@@ -250,7 +250,7 @@
     invoke-virtual {v0}, Landroid/widget/EditText;->requestFocus()Z
 
     .line 71
-    const v0, 0x7f0d02d6
+    const v0, 0x7f0c02ed
 
     invoke-virtual {p0, v0}, Lcom/cnlaunch/x431pro/activity/login/ResetPasswordActivity;->findViewById(I)Landroid/view/View;
 
@@ -341,7 +341,7 @@
     invoke-super {p0, p1}, Lcom/cnlaunch/x431pro/activity/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 51
-    const v1, 0x7f0300f3
+    const v1, 0x7f0300f5
 
     invoke-virtual {p0, v1}, Lcom/cnlaunch/x431pro/activity/login/ResetPasswordActivity;->setContentView(I)V
 
@@ -395,7 +395,7 @@
 
     .prologue
     .line 176
-    const v0, 0x7f070688
+    const v0, 0x7f07068a
 
     invoke-static {p0, v0}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
@@ -483,7 +483,7 @@
     if-eqz v1, :cond_1
 
     .line 163
-    const v1, 0x7f070687
+    const v1, 0x7f070689
 
     invoke-static {p0, v1}, Lcom/cnlaunch/framework/utils/NToast;->shortToast(Landroid/content/Context;I)V
 
